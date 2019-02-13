@@ -1,0 +1,33 @@
+namespace = pjs_systems_machineworlds_event
+
+event = {
+	id = pjs_systems_machineworlds_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+		    every_planet = {
+                limit = { has_planet_flag = machine_world_start }
+
+	            clear_deposits = yes
+
+                change_pc = "pc_machine"
+
+                while = {
+                    count = 4
+                    add_district = district_nexus
+                }
+                while = {
+                    count = 4
+                    add_district = district_generator_uncapped
+                }
+                while = {
+                    count = 4
+                    add_district = district_mining_uncapped
+                }
+            }
+        }
+	}
+}

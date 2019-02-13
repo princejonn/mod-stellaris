@@ -1,0 +1,36 @@
+pjs_base_candidate_category = {
+	desc = "pjs_base_candidate_category_desc"
+	picture = GFX_evt_drilling_for_gas
+	level = 2
+
+	spawn_chance = {
+		modifier = {
+			add = 0.5
+			NOT = { has_modifier = pjs_base_candidate }
+			OR = {
+				is_planet_class = pc_asteroid
+				is_planet_class = pc_molten
+				is_planet_class = pc_barren
+				is_planet_class = pc_barren_cold
+				is_planet_class = pc_toxic
+				is_planet_class = pc_frozen
+			}
+			planet_size > 4
+			planet_size < 9
+			solar_system = {
+				NOR = {
+					is_star_class = sc_black_hole
+					is_star_class = sc_neutron_star
+					is_star_class = sc_pulsar
+				}
+			}
+		}
+	}
+
+	on_success = {
+		1 = {
+			anomaly_event = pjs_amb_event.1
+			max_once = no
+		}
+	}
+}

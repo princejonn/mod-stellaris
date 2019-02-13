@@ -1,0 +1,232 @@
+namespace = pjs_exalted_start_event
+
+country_event = {
+	id = pjs_exalted_start_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		country_event = { id = pjs_exalted_start_event.100 }
+		country_event = { id = pjs_exalted_start_event.101 }
+		country_event = { id = pjs_exalted_start_event.102 }
+		country_event = { id = pjs_exalted_start_event.103 }
+		country_event = { id = pjs_exalted_start_event.104 }
+		country_event = { id = pjs_exalted_start_event.105 }
+		country_event = { id = pjs_exalted_start_event.106 }
+		country_event = { id = pjs_exalted_start_event.107 }
+		country_event = { id = pjs_exalted_start_event.108 }
+		country_event = { id = pjs_exalted_start_event.109 }
+	}
+}
+
+country_event = {
+	id = pjs_exalted_start_event.100
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        pjs_give_eng_tech = yes
+        pjs_give_eng_weapon_tech = yes
+        pjs_give_phys_tech = yes
+        pjs_give_phys_weapon_tech = yes
+        pjs_give_soc_tech = yes
+        pjs_give_strategic_resources_tech = yes
+        pjs_give_fallen_empire_tech = yes
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.101
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                is_gestalt = no
+            }
+
+            pjs_give_eng_tech_nongestalt = yes
+            pjs_give_soc_tech_nongestalit = yes
+            pjs_give_synthetic_dawn_tech_nongestalt = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.102
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                OR = {
+                    has_ethic = ethic_spiritualist
+                    has_ethic = ethic_fanatic_spiritualist
+                }
+            }
+
+            pjs_give_soc_tech_spiritualist = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.103
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                AND = {
+                    OR = {
+                        is_gestalt = no
+                        has_valid_civic = civic_machine_servitor
+                    }
+                    NOT = { has_ethic = ethic_spiritualist }
+                    NOT = { has_ethic = ethic_fanatic_spiritualist }
+                }
+            }
+
+            pjs_give_soc_tech_nonspiritualist_or_servitor = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.104
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                OR = {
+                    is_gestalt = no
+                    has_valid_civic = civic_machine_servitor
+                }
+            }
+
+            pjs_give_eng_tech_nongestalt_or_servitor = yes
+            pjs_give_soc_tech_nongestalt_or_servitor = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.105
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                is_machine_empire = no
+            }
+
+            pjs_give_soc_tech_nonmachine = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.106
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                OR = {
+                    is_machine_empire = no
+                    has_valid_civic = civic_machine_assimilator
+                }
+            }
+
+            pjs_give_soc_tech_nonmachine_or_assimilator = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.107
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                OR = {
+                    is_machine_empire = no
+                    has_valid_civic = civic_machine_servitor
+                    has_valid_civic = civic_machine_assimilator
+                }
+            }
+
+            pjs_give_soc_tech_nonmachine_or_assimilator_or_servitor = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.108
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                is_machine_empire = yes
+            }
+
+            pjs_give_soc_tech_machine = yes
+            pjs_give_synthetic_dawn_tech_machine = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.109
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                is_gestalt = yes
+            }
+
+            pjs_give_soc_tech_gestalt = yes
+        }
+    }
+}
+
+country_event = {
+	id = pjs_exalted_start_event.110
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = {
+                is_hive_empire = yes
+            }
+
+            pjs_give_soc_tech_hive = yes
+        }
+    }
+}

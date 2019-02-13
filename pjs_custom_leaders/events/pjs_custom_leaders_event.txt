@@ -1,0 +1,38 @@
+namespace = pjs_custom_leaders_event
+
+country_event = {
+    id = pjs_custom_leaders_event.1
+    is_triggered_only = yes
+
+    title = "pjs_custom_leaders_event_header"
+    desc = "pjs_custom_leaders_event_description"
+    picture = GFX_evt_throne_room
+
+
+    option = {
+        name = "pjs_custom_leaders_option_ruler"
+        hidden_effect = { country_event = { id = "pjs_custom_ruler_event.1" } }
+    }
+    option = {
+        name = "pjs_custom_leaders_option_governors"
+        hidden_effect = { country_event = { id = "pjs_custom_governors_event.1" } }
+    }
+    option = {
+        name = "pjs_custom_leaders_option_scientists"
+        hidden_effect = { country_event = { id = "pjs_custom_scientists_event.1" } }
+    }
+    option = {
+        name = "pjs_custom_leaders_option_admirals"
+        hidden_effect = { country_event = { id = "pjs_custom_admirals_event.1" } }
+    }
+    option = {
+        name = "pjs_custom_leaders_option_generals"
+        hidden_effect = { country_event = { id = "pjs_custom_generals_event.1" } }
+    }
+
+
+    option = {
+        name = "pjs_custom_leaders_option_done"
+        hidden_effect = { country_event = { id = "pjs_custom_leaders_project_event.1" } }
+    }
+}

@@ -1,0 +1,5 @@
+pjs_give_leviathans_tech = {
+    give_technology = { tech = "tech_dragon_armor" message = no }
+    give_technology = { tech = "tech_enigmatic_encoder" message = no }
+    give_technology = { tech = "tech_enigmatic_decoder" message = no }
+}

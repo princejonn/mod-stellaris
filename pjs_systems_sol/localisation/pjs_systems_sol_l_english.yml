@@ -1,0 +1,17 @@
+﻿l_english:
+
+  ## Systems
+
+  custom_pjs_deneb_augmented_NAME:0 "§SDeneb Augmented"
+  custom_pjs_deneb_augmented_DESC:0 "§R-UNFAIR ADVANTAGE-§!\n\nThe first scouts could not believe their eyes when they reached the Deneb Cluster.\n\n$system_initializer_DESC$"
+
+  custom_pjs_sol_augmented_NAME:0 "§SSol Augmented"
+  custom_pjs_sol_augmented_DESC:0 "§R-UNFAIR ADVANTAGE-§!\n\nSol System augmented with already terraformed Mars and many mining station resources.\n\n$system_initializer_DESC$"
+
+  custom_pjs_sol_detailed_NAME:0 "§SSol Detailed"
+  custom_pjs_sol_detailed_DESC:0 "Sol System in greater detail than base game.\n\n$system_initializer_DESC$"
+
+  ## Static Modifiers
+
+  pjs_base_candidate:0 "Base Candidate"
+  pjs_base_candidate_desc:0 "With the right technology, this planetoid could be terraformed into a semi-habitable world. It will be a harsh climate, but with a proper shield generator our people will come to no harm. The planet tile size will be set to 12, but the planet scaled size scale will basically stay the same.§RRequires Beltalowda Asteroid & Moon Bases§!"

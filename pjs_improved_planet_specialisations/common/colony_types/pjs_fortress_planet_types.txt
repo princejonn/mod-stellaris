@@ -1,0 +1,95 @@
+col_fortress_2 = {
+	icon = 9
+
+	potential = {
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -0.15
+		army_defense_damage_mult = 0.15
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 1.75
+			num_buildings = { type = building_stronghold value > 0 }
+		}
+		modifier = {
+			add = 1.75
+			num_buildings = { type = building_stronghold value > 1 }
+		}
+		modifier = {
+			add = 1.75
+			num_buildings = { type = building_stronghold value > 2 }
+		}
+		modifier = {
+			add = 1.75
+			num_buildings = { type = building_stronghold value > 3 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_stronghold value > 4 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_stronghold value > 5 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_stronghold value > 6 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_stronghold value > 7 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_stronghold value > 8 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_stronghold value > 9 }
+		}
+		modifier = {
+			add = 2.25
+			num_buildings = { type = building_fortress value > 0 }
+		}
+		modifier = {
+			add = 2.25
+			num_buildings = { type = building_fortress value > 1 }
+		}
+		modifier = {
+			add = 2.25
+			num_buildings = { type = building_fortress value > 2 }
+		}
+		modifier = {
+			add = 2.25
+			num_buildings = { type = building_fortress value > 3 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_fortress value > 4 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_fortress value > 5 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_fortress value > 6 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_fortress value > 7 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_fortress value > 8 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_fortress value > 9 }
+		}
+	}
+}

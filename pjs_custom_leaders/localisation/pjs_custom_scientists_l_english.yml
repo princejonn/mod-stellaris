@@ -1,0 +1,109 @@
+﻿l_english:
+
+  ## Event
+
+  pjs_custom_scientists_event_header:0 "Customize Scientists"
+  pjs_custom_scientists_event_description:0 "Pick a category. You can always go back."
+
+  pjs_custom_scientists_option_category_general:0 "General"
+  pjs_custom_scientists_option_category_expertises:0 "Expertises"
+  pjs_custom_scientists_option_category_special:0 "Special"
+  pjs_custom_scientists_option_category_generic:0 "Generic"
+
+  ## General
+
+  pjs_custom_scientists_leader_trait_meticulous_NAME:0 "Meticulous"
+  pjs_custom_scientists_leader_trait_meticulous_DESC:0 "Anomaly chance §G+10%§!"
+
+  pjs_custom_scientists_leader_trait_spark_of_genius_NAME:0 "Spark of Genius"
+  pjs_custom_scientists_leader_trait_spark_of_genius_DESC:0 "Research speed §G+10%§!"
+
+  pjs_custom_scientists_leader_trait_carefree_NAME:0 "Carefree"
+  pjs_custom_scientists_leader_trait_carefree_DESC:0 "Anomaly research speed §G+35%§!"
+
+  pjs_custom_scientists_leader_trait_roamer_NAME:0 "Roamer"
+  pjs_custom_scientists_leader_trait_roamer_DESC:0 "Survey speed §G+25%§!"
+
+  pjs_custom_scientists_leader_trait_archaeologist_NAME:0 "Archaeologist"
+  pjs_custom_scientists_leader_trait_archaeologist_DESC:0 "Precursor research speed §G+5%§!"
+
+  pjs_custom_scientists_leader_trait_maniacal_NAME:0 "Maniacal"
+  pjs_custom_scientists_leader_trait_maniacal_DESC:0 "Research speed §G+5%§!"
+
+  pjs_custom_scientists_leader_trait_custom_AI_assistant_NAME:0 "Custom AI assistant"
+  pjs_custom_scientists_leader_trait_custom_AI_assistant_DESC:0 "Research speed §G+5%§!\nSurvey speed §G+10%§!\nAnomaly research speed §G+15%§!"
+
+  pjs_custom_scientists_leader_trait_sapient_AI_assistant_NAME:0 "Sapient AI assistant"
+  pjs_custom_scientists_leader_trait_sapient_AI_assistant_DESC:0 "Research speed §G+10%§!\nSurvey speed §G+20%§!\nAnomaly research speed §G+30%§!"
+
+  pjs_custom_scientists_leader_trait_curator_NAME:0 "Curator"
+  pjs_custom_scientists_leader_trait_curator_DESC:0 "Research speed §G+15%§!\nSurvey speed §G+25%§!"
+
+  pjs_custom_scientists_leader_trait_towel_NAME:0 "Towel"
+  pjs_custom_scientists_leader_trait_towel_DESC:0 "Survey speed §G+40%§!"
+
+  ## Expertise
+
+  pjs_custom_scientists_leader_trait_expertise_materials_NAME:0 "Expertise - Materials"
+  pjs_custom_scientists_leader_trait_expertise_materials_DESC:0 "§G+15%§! Research speed in Materials"
+
+  pjs_custom_scientists_leader_trait_expertise_propulsion_NAME:0 "Expertise - Propulsion"
+  pjs_custom_scientists_leader_trait_expertise_propulsion_DESC:0 "§G+15%§! Research speed in Propulsion"
+
+  pjs_custom_scientists_leader_trait_expertise_voidcraft_NAME:0 "Expertise - Voidcraft"
+  pjs_custom_scientists_leader_trait_expertise_voidcraft_DESC:0 "§G+15%§! Research speed in Voidcraft"
+
+  pjs_custom_scientists_leader_trait_expertise_industry_NAME:0 "Expertise - Industry"
+  pjs_custom_scientists_leader_trait_expertise_industry_DESC:0 "§G+15%§! Research speed in Industry"
+
+  pjs_custom_scientists_leader_trait_expertise_field_manipulation_NAME:0 "Expertise - Field Manipulation"
+  pjs_custom_scientists_leader_trait_expertise_field_manipulation_DESC:0 "§G+15%§! Research speed in Field Manipulation"
+
+  pjs_custom_scientists_leader_trait_expertise_particles_NAME:0 "Expertise - Particles"
+  pjs_custom_scientists_leader_trait_expertise_particles_DESC:0 "§G+15%§! Research speed in Particles"
+
+  pjs_custom_scientists_leader_trait_expertise_computing_NAME:0 "Expertise - Computing"
+  pjs_custom_scientists_leader_trait_expertise_computing_DESC:0 "§G+15%§! Research speed in Computing"
+
+  pjs_custom_scientists_leader_trait_expertise_psionics_NAME:0 "Expertise - Psionics"
+  pjs_custom_scientists_leader_trait_expertise_psionics_DESC:0 "§G+15%§! Research speed in Psionics"
+
+  pjs_custom_scientists_leader_trait_expertise_new_worlds_NAME:0 "Expertise - New Worlds"
+  pjs_custom_scientists_leader_trait_expertise_new_worlds_DESC:0 "§G+15%§! Research speed in New Worlds"
+
+  pjs_custom_scientists_leader_trait_expertise_statecraft_NAME:0 "Expertise - Statecraft"
+  pjs_custom_scientists_leader_trait_expertise_statecraft_DESC:0 "§G+15%§! Research speed in Statecraft"
+
+  pjs_custom_scientists_leader_trait_expertise_biology_NAME:0 "Expertise - Biology"
+  pjs_custom_scientists_leader_trait_expertise_biology_DESC:0 "§G+15%§! Research speed in Biology"
+
+  pjs_custom_scientists_leader_trait_expertise_military_theory_NAME:0 "Expertise - Military Theory"
+  pjs_custom_scientists_leader_trait_expertise_military_theory_DESC:0 "§G+15%§! Research speed in Military Theory"
+
+  ## Special
+
+  pjs_custom_scientists_leader_trait_scientist_erudite_NAME:0 "Erudite"
+  pjs_custom_scientists_leader_trait_scientist_erudite_DESC:0 "Research speed §G+5%§!"
+
+  pjs_custom_scientists_leader_trait_scientist_cyborg_NAME:0 "Cyborg"
+  pjs_custom_scientists_leader_trait_scientist_cyborg_DESC:0 "Research speed §G+5%§!"
+
+  pjs_custom_scientists_leader_trait_scientist_synthetic_NAME:0 "Synthetic"
+  pjs_custom_scientists_leader_trait_scientist_synthetic_DESC:0 "Research speed §G+5%§!\nAnomaly research speed §G+15%§!"
+
+  pjs_custom_scientists_leader_trait_scientist_psionic_NAME:0 "Psionic"
+  pjs_custom_scientists_leader_trait_scientist_psionic_DESC:0 "Research speed §G+10%§!\nSurvey speed §G+25%§!"
+
+  pjs_custom_scientists_leader_trait_scientist_chosen_NAME:0 "Chosen"
+  pjs_custom_scientists_leader_trait_scientist_chosen_DESC:0 "Research speed §G+20%§!\nSurvey speed §G+50%§!\n§GImmortal§!"
+
+  ## Generic
+
+  pjs_custom_scientists_leader_trait_adaptable_NAME:0 "Adaptable"
+  pjs_custom_scientists_leader_trait_adaptable_DESC:0 "Experience gain §G+25%§!"
+
+  pjs_custom_scientists_leader_trait_resilient_NAME:0 "Resilient"
+  pjs_custom_scientists_leader_trait_resilient_DESC:0 "Leader age §G+25§!"
+
+  pjs_custom_scientists_leader_trait_shroud_age_NAME:0 "Shroud Age"
+  pjs_custom_scientists_leader_trait_shroud_age_DESC:0 "Leader age §G+40§!"

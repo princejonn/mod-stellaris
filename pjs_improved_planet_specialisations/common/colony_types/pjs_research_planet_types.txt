@@ -1,0 +1,134 @@
+col_research_2 = {
+	icon = 8
+
+	potential = {
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_researchers_produces_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 1.75
+			num_buildings = { type = building_research_lab_1 value > 0 }
+		}
+		modifier = {
+			add = 1.75
+			num_buildings = { type = building_research_lab_1 value > 1 }
+		}
+		modifier = {
+			add = 1.75
+			num_buildings = { type = building_research_lab_1 value > 2 }
+		}
+		modifier = {
+			add = 1.75
+			num_buildings = { type = building_research_lab_1 value > 3 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_research_lab_1 value > 4 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_research_lab_1 value > 5 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_research_lab_1 value > 6 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_research_lab_1 value > 7 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_research_lab_1 value > 8 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_research_lab_1 value > 9 }
+		}
+		modifier = {
+			add = 2
+			num_buildings = { type = building_research_lab_2 value > 0 }
+		}
+		modifier = {
+			add = 2
+			num_buildings = { type = building_research_lab_2 value > 1 }
+		}
+		modifier = {
+			add = 2
+			num_buildings = { type = building_research_lab_2 value > 2 }
+		}
+		modifier = {
+			add = 2
+			num_buildings = { type = building_research_lab_2 value > 3 }
+		}
+		modifier = {
+			add = 4.5
+			num_buildings = { type = building_research_lab_2 value > 4 }
+		}
+		modifier = {
+			add = 4.5
+			num_buildings = { type = building_research_lab_2 value > 5 }
+		}
+		modifier = {
+			add = 4.5
+			num_buildings = { type = building_research_lab_2 value > 6 }
+		}
+		modifier = {
+			add = 4.5
+			num_buildings = { type = building_research_lab_2 value > 7 }
+		}
+		modifier = {
+			add = 4.5
+			num_buildings = { type = building_research_lab_2 value > 8 }
+		}
+		modifier = {
+			add = 4.5
+			num_buildings = { type = building_research_lab_2 value > 9 }
+		}
+		modifier = {
+			add = 2.25
+			num_buildings = { type = building_research_lab_3 value > 0 }
+		}
+		modifier = {
+			add = 2.25
+			num_buildings = { type = building_research_lab_3 value > 1 }
+		}
+		modifier = {
+			add = 2.25
+			num_buildings = { type = building_research_lab_3 value > 2 }
+		}
+		modifier = {
+			add = 2.25
+			num_buildings = { type = building_research_lab_3 value > 3 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_research_lab_3 value > 4 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_research_lab_3 value > 5 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_research_lab_3 value > 6 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_research_lab_3 value > 7 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_research_lab_3 value > 8 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_research_lab_3 value > 9 }
+		}
+	}
+}

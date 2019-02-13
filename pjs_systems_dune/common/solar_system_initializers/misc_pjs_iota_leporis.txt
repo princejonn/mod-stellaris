@@ -1,0 +1,57 @@
+misc_pjs_iota_leporis = {
+    name = "Iota Leporis"
+    class = "sc_a"
+
+    usage = misc_system_init
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 100
+
+    planet = {
+        class = "pc_a_star"
+        size = { min = 21 max = 28 }
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+        has_ring = no
+    }
+
+    change_orbit = 30
+
+    planet = {
+        count = 2
+        class = random_non_colonizable
+        size = { min = 8 max = 20 }
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 10 max = 350 }
+    }
+
+    planet = {
+        class = random_non_colonizable
+        size = { min = 8 max = 20 }
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 10 max = 350 }
+
+        moon = {
+            class = random_non_colonizable
+            size = { min = 4 max = 6 }
+            orbit_distance = { min = 8 max = 10 }
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+        }
+    }
+
+    planet = {
+        class = random_non_colonizable
+        size = { min = 8 max = 20 }
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 10 max = 350 }
+    }
+
+    planet = {
+        name = "Bela Tegeuse"
+        class = "pc_continental"
+        size = 25
+        orbit_distance = 25
+        orbit_angle = { min = 10 max = 350 }
+    }
+}

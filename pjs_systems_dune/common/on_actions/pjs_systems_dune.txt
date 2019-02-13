@@ -1,0 +1,5 @@
+on_game_start = {
+	events = {
+		pjs_dune_gamestart_event.1
+	}
+}

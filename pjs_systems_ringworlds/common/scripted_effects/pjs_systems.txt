@@ -1,0 +1,63 @@
+generate_energy_deposits = {
+    while = {
+        count = 3
+        random_list = {
+            33 = { add_deposit = d_geothermal_vent }
+            33 = { add_deposit = d_underwater_vent }
+            33 = { add_deposit = d_tempestous_mountain }
+        }
+    }
+}
+
+generate_food_deposits = {
+    while = {
+        count = 3
+        random_list = {
+            20 = { add_deposit = d_black_soil }
+            20 = { add_deposit = d_teeming_reef }
+            20 = { add_deposit = d_marvelous_oasis }
+            20 = { add_deposit = d_tropical_island }
+            20 = { add_deposit = d_fungal_forest }
+        }
+    }
+}
+
+generate_mineral_deposits = {
+    while = {
+        count = 3
+        random_list = {
+            50 = { add_deposit = d_rich_mountain }
+            50 = { add_deposit = d_submerged_ore_veins }
+        }
+    }
+}
+
+generate_betharian_deposit = {
+    add_deposit = d_betharian_deposit
+}
+
+generate_pets_deposit = {
+    add_deposit = d_alien_pets_deposit
+}
+
+generate_crystals_deposit = {
+    random_list = {
+        33 = { add_deposit = d_crystalline_caverns }
+        33 = { add_deposit = d_crystal_forest }
+        33 = { add_deposit = d_crystal_reef }
+    }
+}
+
+generate_motes_deposit = {
+    random_list = {
+        50 = { add_deposit = d_dust_caverns }
+        50 = { add_deposit = d_dust_desert }
+    }
+}
+
+generate_gases_deposit = {
+    random_list = {
+        50 = { add_deposit = d_bubbling_swamp }
+        50 = { add_deposit = d_fuming_bog }
+    }
+}

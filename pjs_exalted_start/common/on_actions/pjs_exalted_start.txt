@@ -1,0 +1,5 @@
+on_game_start = {
+	events = {
+		pjs_exalted_start_project_event.1
+	}
+}

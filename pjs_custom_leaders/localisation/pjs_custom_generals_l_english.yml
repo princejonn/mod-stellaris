@@ -1,0 +1,58 @@
+﻿l_english:
+
+  ## Event
+
+  pjs_custom_generals_event_header:0 "Customize Governors"
+  pjs_custom_generals_event_description:0 "Pick a category. You can always go back."
+
+  pjs_custom_generals_option_category_general:0 "General"
+  pjs_custom_generals_option_category_special:0 "Special"
+  pjs_custom_generals_option_category_generic:0 "Generic"
+
+  ## General
+
+  pjs_custom_generals_leader_trait_restrained_NAME:0 "Restrained"
+  pjs_custom_generals_leader_trait_restrained_DESC:0 "Disengage chance §G+20%§!\nCollateral damage §G-33%§!"
+
+  pjs_custom_generals_leader_trait_charismatic_NAME:0 "Charismatic"
+  pjs_custom_generals_leader_trait_charismatic_DESC:0 "Morale §G+25%§!"
+
+  pjs_custom_generals_leader_trait_butcher_NAME:0 "Butcher"
+  pjs_custom_generals_leader_trait_butcher_DESC:0 "Damage §G+10%§!\nCollateral damage §R+33%§!"
+
+  pjs_custom_generals_leader_trait_glory_seeker_NAME:0 "Glory Seeker"
+  pjs_custom_generals_leader_trait_glory_seeker_DESC:0 "Morale §G+10%§!\nDamage §G+5%§!"
+
+  pjs_custom_generals_leader_trait_army_logistician_NAME:0 "Logistician"
+  pjs_custom_generals_leader_trait_army_logistician_DESC:0 "Upkeep §G-20%§!"
+
+  pjs_custom_generals_leader_trait_general_mercenary_warrior_NAME:0 "Mercenary Warrior"
+  pjs_custom_generals_leader_trait_general_mercenary_warrior_DESC:0 ""
+
+  ## Special
+
+  pjs_custom_generals_leader_trait_general_erudite_NAME:0 "Erudite"
+  pjs_custom_generals_leader_trait_general_erudite_DESC:0 "Damage §G+5%§!\nDisengage chance §G+10%§!"
+
+  pjs_custom_generals_leader_trait_general_cyborg_NAME:0 "Cyborg"
+  pjs_custom_generals_leader_trait_general_cyborg_DESC:0 "Damage §G+5%§!"
+
+  pjs_custom_generals_leader_trait_general_synthetic_NAME:0 "Synthetic"
+  pjs_custom_generals_leader_trait_general_synthetic_DESC:0 "Damage §G+10%§!"
+
+  pjs_custom_generals_leader_trait_general_psionic_NAME:0 "Psionic"
+  pjs_custom_generals_leader_trait_general_psionic_DESC:0 "Morale §G+15%§!\nMorale damage §G+15%§"
+
+  pjs_custom_generals_leader_trait_general_chosen_NAME:0 "Chosen"
+  pjs_custom_generals_leader_trait_general_chosen_DESC:0 "Morale §G+30%§!\nMorale damage §G+20%§!\n§GImmortal§!"
+
+  ## Generic
+
+  pjs_custom_generals_leader_trait_adaptable_NAME:0 "Adaptable"
+  pjs_custom_generals_leader_trait_adaptable_DESC:0 "Experience gain §G+25%§!"
+
+  pjs_custom_generals_leader_trait_resilient_NAME:0 "Resilient"
+  pjs_custom_generals_leader_trait_resilient_DESC:0 "Leader age §G+25§!"
+
+  pjs_custom_generals_leader_trait_shroud_age_NAME:0 "Shroud Age"
+  pjs_custom_generals_leader_trait_shroud_age_DESC:0 "Leader age §G+40§!"

@@ -1,0 +1,40 @@
+
+pjs_give_extra_ascension_perks = {
+    give_technology = { tech = "pjs_extra_ascension_perks_1" message = no }
+    give_technology = { tech = "pjs_extra_ascension_perks_2" message = no }
+    give_technology = { tech = "pjs_extra_ascension_perks_3" message = no }
+    give_technology = { tech = "pjs_extra_ascension_perks_4" message = no }
+}
+
+pjs_give_trait_point_biological = {
+    give_technology = { tech = "tech_pjs_biological_points_1" message = no }
+    give_technology = { tech = "tech_pjs_biological_points_2" message = no }
+    give_technology = { tech = "tech_pjs_biological_points_3" message = no }
+}
+
+pjs_give_trait_point_machine = {
+    give_technology = { tech = "tech_pjs_machine_points_1" message = no }
+    give_technology = { tech = "tech_pjs_machine_points_2" message = no }
+    give_technology = { tech = "tech_pjs_machine_points_3" message = no }
+}
+
+pjs_give_trait_point_robot = {
+    give_technology = { tech = "tech_pjs_robot_points_1" message = no }
+    give_technology = { tech = "tech_pjs_robot_points_2" message = no }
+    give_technology = { tech = "tech_pjs_robot_points_3" message = no }
+}
+
+pjs_give_enigmatic_ascension = {
+    give_technology = { tech = "tech_pjs_enigmatic_ascension_engineering" message = no }
+    give_technology = { tech = "tech_pjs_enigmatic_ascension_physics" message = no }
+    give_technology = { tech = "tech_pjs_enigmatic_ascension_society" message = no }
+    give_technology = { tech = "tech_dark_matter_deflector" message = no }
+    give_technology = { tech = "tech_dark_matter_power_core" message = no }
+    give_technology = { tech = "tech_dark_matter_propulsion" message = no }
+    give_technology = { tech = "tech_enigmatic_encoder" message = no }
+    give_technology = { tech = "tech_enigmatic_decoder" message = no }
+    give_technology = { tech = "tech_pjs_escort" message = no }
+    give_technology = { tech = "tech_pjs_battlecruiser" message = no }
+    give_technology = { tech = "tech_pjs_mothership" message = no }
+    give_technology = { tech = "tech_pjs_goliath" message = no }
+}

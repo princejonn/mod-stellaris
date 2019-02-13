@@ -1,0 +1,56 @@
+namespace = pjs_beltalowda_asteroid_moon_bases_event
+
+planet_event = {
+	id = pjs_beltalowda_asteroid_moon_bases_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { has_planet_flag = planet_asteroid_base }
+			change_pc = pc_asteroid_base
+		}
+		if = {
+			limit = { has_planet_flag = planet_moon_base }
+			change_pc = pc_moon_base
+		}
+		if = {
+		    limit = {
+		        OR = {
+		            has_planet_flag = planet_asteroid_base
+		            has_planet_flag = planet_moon_base
+		        }
+		    }
+		    clear_blockers = yes
+            clear_deposits = yes
+
+            remove_district = district_city
+            remove_district = district_city
+            remove_district = district_city
+            remove_district = district_generator
+            remove_district = district_generator
+            remove_district = district_generator
+            remove_district = district_farming
+            remove_district = district_farming
+            remove_district = district_farming
+            remove_district = district_mining
+            remove_district = district_mining
+            remove_district = district_mining
+
+            remove_building = building_capital
+
+            add_building = building_base_capital
+            add_building = building_factory_1
+            add_building = building_holo_theatres
+            add_building = building_precinct_house
+
+            add_district = district_base_housing
+            add_district = district_base_housing
+            add_district = district_base_energy_farming
+            add_district = district_base_energy_farming
+            add_district = district_base_mining
+            add_district = district_base_mining
+            add_district = district_base_science
+		}
+	}
+}

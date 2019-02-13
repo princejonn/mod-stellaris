@@ -1,0 +1,39 @@
+tech_repeatable_pop_growth_speed = {
+    area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	weight = 1
+	category = { biology }
+	is_rare = yes
+	levels = 4
+	icon = "tech_cloning"
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+
+	ai_weight = {
+		factor = 1.0
+	}
+
+	weight_groups = {
+        repeatable
+    }
+
+    mod_weight_if_group_picked = {
+        repeatable = 0.01
+    }
+
+	prerequisites = {
+	    "tech_titans"
+	    "tech_mega_engineering"
+	    "tech_gateway_construction"
+	    "tech_jump_drive_1"
+	    "tech_ascension_theory"
+	}
+
+    modifier = {
+		pop_growth_speed = 0.05
+    }
+}

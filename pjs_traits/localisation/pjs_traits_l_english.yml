@@ -1,0 +1,10 @@
+﻿l_english:
+
+  trait_pjs_partial_photosynthesis:0 "Partial Photosynthesis"
+  trait_pjs_partial_photosynthesis_desc:0 "$trait_pjs_photosynthesis_desc$"
+
+  trait_pjs_photosynthesis:0 "Photosynthesis"
+  trait_pjs_photosynthesis_desc:0 "This species has by evolution, or technology, been able to physiologically photosynthesize, thus saving a lot on food costs."
+
+  trait_pjs_psionic:0 "Psionic Heritage"
+  trait_pjs_psionic_desc:0 "All members of this species possess powerful psionic abilities. They start with §YPsionic Theory§!."

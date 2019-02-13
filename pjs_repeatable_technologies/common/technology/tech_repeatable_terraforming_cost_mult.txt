@@ -1,0 +1,35 @@
+tech_repeatable_terraforming_cost_mult = {
+    area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	weight = 1
+	category = { new_worlds }
+	is_rare = yes
+	levels = 4
+	icon = "tech_assault_armies"
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+
+	weight_groups = {
+        repeatable
+    }
+
+    mod_weight_if_group_picked = {
+        repeatable = 0.01
+    }
+
+	prerequisites = {
+	    "tech_titans"
+	    "tech_mega_engineering"
+	    "tech_gateway_construction"
+	    "tech_jump_drive_1"
+	    "tech_ascension_theory"
+	}
+
+    modifier = {
+        terraforming_cost_mult = -0.05
+    }
+}

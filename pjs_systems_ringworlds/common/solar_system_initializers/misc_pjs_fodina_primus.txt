@@ -1,0 +1,102 @@
+misc_pjs_fodina_primus = {
+    name = "Fodina Primus"
+	class = "sc_b"
+
+    usage = misc_system_init
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 0
+
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 90
+    }
+
+	planet = {
+		class = "pc_b_star"
+		size = 24
+        orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 90
+
+	planet = {
+		name = "FPA II"
+		class = "pc_asteroid"
+		size = 4
+		orbit_distance = 0
+		orbit_angle = 20
+		has_ring = no
+
+		init_effect = {
+            set_deposit = d_minerals_5
+		}
+	}
+
+	planet = {
+		name = "FPA IV"
+		class = "pc_asteroid"
+		size = 6
+		orbit_distance = 0
+		orbit_angle = 80
+		has_ring = no
+
+		init_effect = {
+            set_deposit = d_volatile_motes_2
+		}
+	}
+
+	planet = {
+		name = "FPA X"
+		class = "pc_asteroid"
+		size = 6
+		orbit_distance = 0
+		orbit_angle = 100
+		has_ring = no
+
+		init_effect = {
+            set_deposit = d_crystals_2
+		}
+	}
+
+	planet = {
+		name = "FPA XVII"
+		class = "pc_asteroid"
+		size = 5
+		orbit_distance = 0
+		orbit_angle = 90
+		has_ring = no
+
+		init_effect = {
+            set_deposit = d_minerals_4
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		class = "pc_shattered"
+		size = 28
+		orbit_distance = 20
+		orbit_angle = { min = 10 max = 350 }
+		has_ring = yes
+
+		init_effect = {
+            set_deposit = d_minerals_10
+            add_deposit = d_minerals_2
+		}
+	}
+
+	planet = {
+		class = "pc_broken"
+		size = 18
+		orbit_distance = 20
+		orbit_angle = { min = 10 max = 350 }
+		has_ring = yes
+
+		init_effect = {
+            set_deposit = d_minerals_6
+		}
+	}
+}

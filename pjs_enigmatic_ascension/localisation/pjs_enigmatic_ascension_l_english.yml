@@ -1,0 +1,152 @@
+﻿l_english:
+
+  ##
+  # Component Templates
+  ##
+
+  PJS_GOLIATH_SHIP_AURA_SHIELD_DAMPENER:0 "Shield Dampener"
+  PJS_GOLIATH_SHIP_AURA_QUANTUM_DESTABILIZER:0 "Quantum Destabilizer"
+  PJS_GOLIATH_SHIP_AURA_SUBSPACE_SNARE:0 "Subspace Snare"
+  PJS_GOLIATH_SHIP_AURA_INSPIRING_PRESENCE:0 "Inspiring Presence"
+  PJS_GOLIATH_SHIP_AURA_TARGETING_GRID:0 "Targeting Grid"
+  PJS_GOLIATH_SHIP_AURA_NANOBOT_CLOUD:0 "Nanobot Cloud"
+
+  PJS_REACTOR_ESCORT:0 "$DARK_MATTER_REACTOR$"
+  PJS_REACTOR_ESCORT_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
+  PJS_REACTOR_BATTLECRUISER:0 "$DARK_MATTER_REACTOR$"
+  PJS_REACTOR_BATTLECRUISER_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
+  PJS_REACTOR_MOTHERSHIP:0 "$DARK_MATTER_REACTOR$"
+  PJS_REACTOR_MOTHERSHIP_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
+  PJS_REACTOR_GOLIATH:0 "$DARK_MATTER_REACTOR$"
+  PJS_REACTOR_GOLIATH_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
+  PJS_REACTOR_WARMIND:0 "$DARK_MATTER_REACTOR$"
+  PJS_REACTOR_WARMIND_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
+
+  PJS_COMBAT_COMPUTER_ESCORT:0 "Escort Combat Computer (Picket)"
+  PJS_COMBAT_COMPUTER_ESCORT_PRECOG:0 "Escort Combat Computer (Precognition)"
+  PJS_COMBAT_COMPUTER_BATTLECRUISER:0 "Battlecruiser Combat Computer (Line)"
+  PJS_COMBAT_COMPUTER_BATTLECRUISER_PRECOG:0 "Battlecruiser Combat Computer (Precognition)"
+  PJS_COMBAT_COMPUTER_MOTHERSHIP:0 "Mothership Combat Computer (Line)"
+  PJS_COMBAT_COMPUTER_MOTHERSHIP_PRECOG:0 "Mothership Combat Computer (Precognition)"
+  PJS_COMBAT_COMPUTER_GOLIATH:0 "Goliath Combat Computer (Artillery)"
+  PJS_COMBAT_COMPUTER_GOLIATH_PRECOG:0 "Goliath Combat Computer (Precognition)"
+  PJS_COMBAT_COMPUTER_WARMIND:0 "Warmind Combat Computer (Artillery)"
+  PJS_COMBAT_COMPUTER_WARMIND_PRECOG:0 "Warmind Combat Computer (Precognition)"
+
+  PJS_THRUSTER_ESCORT:0 "$SHIP_THRUSTER_5$"
+  PJS_THRUSTER_ESCORT_DESC:0 "$SHIP_THRUSTER_5_DESC$"
+  PJS_THRUSTER_BATTLECRUISER:0 "$SHIP_THRUSTER_5$"
+  PJS_THRUSTER_BATTLECRUISER_DESC:0 "$SHIP_THRUSTER_5_DESC$"
+  PJS_THRUSTER_MOTHERSHIP:0 "$SHIP_THRUSTER_5$"
+  PJS_THRUSTER_MOTHERSHIP_DESC:0 "$SHIP_THRUSTER_5_DESC$"
+  PJS_THRUSTER_GOLIATH:0 "$SHIP_THRUSTER_5$"
+  PJS_THRUSTER_GOLIATH_DESC:0 "$SHIP_THRUSTER_5_DESC$"
+  PJS_THRUSTER_WARMIND:0 "$SHIP_THRUSTER_5$"
+  PJS_THRUSTER_WARMIND_DESC:0 "$SHIP_THRUSTER_5_DESC$"
+
+  PJS_PERDITION_BEAM_GOLIATH:0 "$PERDITION_BEAM$"
+  PJS_PERDITION_BEAM_GOLIATH_DESC:0 "$PERDITION_BEAM_DESC$"
+
+  ##
+  # Section Templates
+  ##
+
+  PJS_BATTLECRUISER_BOW_XL:0 "Edict Bow"
+  PJS_BATTLECRUISER_APEX_L3:0 "Judgment Apex"
+  PJS_BATTLECRUISER_APEX_L2M1:0 "Decree Apex"
+  PJS_BATTLECRUISER_APEX_L2T1:0 "Commandment Apex"
+  PJS_BATTLECRUISER_MID_M3:0 "Decree Core"
+  PJS_BATTLECRUISER_MID_T3:0 "Commandment Core"
+  PJS_BATTLECRUISER_MID_H2:0 "Locus Core"
+
+  PJS_ESCORT_BOW_L1:0 "Judgment Bow"
+  PJS_ESCORT_BOW_T2:0 "Commandment Bow"
+  PJS_ESCORT_APEX_M3:0 "Decree Core"
+  PJS_ESCORT_APEX_S4:0 "Abjudication Core"
+  PJS_ESCORT_STERN_P4:0 "Wisdom Aegis"
+
+  PJS_MOTHERSHIP_BOW:0 "Bow"
+  PJS_MOTHERSHIP_MID:0 "Core"
+  PJS_MOTHERSHIP_STERN:0 "Stern"
+
+  PJS_GOLIATH_BOW_T:0 "Bow"
+  PJS_GOLIATH_APEX_L6:0 "Apex"
+  PJS_GOLIATH_MID_L2M4:0 "Judgement Core"
+  PJS_GOLIATH_MID_M6:0 "Decree Core"
+  PJS_GOLIATH_STERN_H4:0 "Locus Stern"
+  PJS_GOLIATH_STERN_T4:0 "Commandment Stern"
+
+  PJS_WARMIND_HEAVY:0 "Heavy"
+  PJS_WARMIND_LARGE:0 "Large"
+  PJS_WARMIND_MEDIUM:0 "Medium"
+  PJS_WARMIND_HANGAR:0 "Hangar"
+
+  ##
+  # Ship Sizes
+  ##
+
+  pjs_escort:0 "Escort"
+  pjs_escort_plural:0 "Escorts"
+
+  pjs_battlecruiser:0 "Battlecruiser"
+  pjs_battlecruiser_plural:0 "Battlecruisers"
+
+  pjs_mothership:0 "Mothership"
+  pjs_mothership_plural:0 "Mothership"
+
+  pjs_goliath:0 "Goliath"
+  pjs_goliath_plural:0 "Goliaths"
+
+  pjs_warmind:0 "Warmind"
+  pjs_warmind_plural:0 "Warminds"
+
+  ##
+  # Species Classes
+  ##
+
+  PJS_ENIGMATIC_SPIRITUALIST:0 "Enigmatic Spiritualist"
+  PJS_ENIGMATIC_MATERIALIST:0 "Enigmatic Materialist"
+  PJS_ENIGMATIC_XENOPHILE:0 "Enigmatic Xenophile"
+  PJS_ENIGMATIC_XENOPHOBE:0 "Enigmatic Xenophobe"
+  PJS_ENIGMATIC_MACHINE:0 "Enigmatic Machine"
+
+  ##
+  # Technology
+  ##
+
+  tech_pjs_enigmatic_ascension_engineering:0 "Enigmatic Leaps"
+  tech_pjs_enigmatic_ascension_engineering_desc:0 "This technologies will lead us into truly advanced technologies."
+
+  tech_pjs_enigmatic_ascension_physics:0 "Enigmatic Breakthroughs"
+  tech_pjs_enigmatic_ascension_physics_desc:0 "This technologies will lead us into truly advanced technologies."
+
+  tech_pjs_enigmatic_ascension_society:0 "Enigmatic Culture"
+  tech_pjs_enigmatic_ascension_society_desc:0 "This technologies will lead us into truly advanced technologies."
+
+  tech_pjs_escort:0 "Escorts"
+  tech_pjs_escort_desc:0 "Modeled after the agile ships looming in the core systems of Stagnant Ascendancies, the Escort class is a great improvement on the Corvette and Destroyer classes, and can be fitted with a decent amount of weapons."
+
+  tech_pjs_battlecruiser:0 "Battlecruisers"
+  tech_pjs_battlecruiser_desc:0 "Modeled after the technological marvels in the core systems of Stagnant Ascendancies, the Battlecruiser class is a mix of both Cruisers and Battleships, and can be fitted with a formidable amount of weapons."
+
+  tech_pjs_mothership:0 "Motherships"
+  tech_pjs_mothership_desc:0 "Modeled after the technological marvels in the core systems of Stagnant Ascendancies, the Mothership is a perfect carrier, and is equipped with a formidable amount of hangar bays."
+
+  tech_pjs_goliath:0 "Goliaths"
+  tech_pjs_goliath_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Goliath class is a fearsome ship to meet in a battle."
+
+  tech_pjs_warmind:0 "Warminds"
+  tech_pjs_warmind_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Warmind class is a fearsome ship to meet in a battle."
+
+  ##
+  # Events
+  ##
+
+  pjs_enigmatic_ascension_event.200.name:0 "Fallen Empire Ships"
+  pjs_enigmatic_ascension_event.200.desc:0 "Do you want to change your graphical culture of your empire? This will (sadly) not affect your currently built ships or stations, but all new constructions will have the style you pick.\n\n(I have reported this as a bug. If you want to change all styles you can do so with the console command \"gfxculture fallen_empire_01\"."
+  pjs_enigmatic_ascension_event.200.a:0 "§EFallen Spiritualist Empire§!"
+  pjs_enigmatic_ascension_event.200.b:0 "§GFallen Materialist Empire§!"
+  pjs_enigmatic_ascension_event.200.c:0 "§BFallen Xenophile Empire§!"
+  pjs_enigmatic_ascension_event.200.d:0 "§RFallen Xenophobe Empire§!"
+  pjs_enigmatic_ascension_event.200.e:0 "§YFallen Machine Empire§!"
+  pjs_enigmatic_ascension_event.200.f:0 "No - Keep my current style"

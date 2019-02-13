@@ -1,0 +1,62 @@
+misc_pjs_sigma_draconis = {
+    name = "Sigma Draconis"
+    class = "sc_k"
+
+    usage = misc_system_init
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 100
+
+    planet = {
+        class = "pc_k_star"
+        size = 25
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+        has_ring = no
+    }
+
+    change_orbit = 50
+
+    planet = {
+        name = "Corrin"
+        class = rl_habitable_normal
+        size = 15
+        orbit_distance = 28
+        orbit_angle = { min = 10 max = 350 }
+
+        moon = {
+            name = "Meliton"
+            class = random_non_colonizable
+            size = 4
+            orbit_distance = 12
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+        }
+
+        moon = {
+            name = "Pelagia"
+            class = random_non_colonizable
+            size = 5
+            orbit_distance = { min = 4 max = 6 }
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+        }
+    }
+
+    planet = {
+        name = "Ishkal"
+        class = rl_habitable_normal
+        size = 13
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 10 max = 350 }
+        has_ring = yes
+
+        moon = {
+            name = "Ampelios"
+            class = random_non_colonizable
+            size = 6
+            orbit_distance = 10
+            orbit_angle = { min = 10 max = 350 }
+        }
+    }
+}

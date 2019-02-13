@@ -1,0 +1,118 @@
+misc_pjs_alnilam = {
+    name = "Alnilam"
+	class = "sc_b"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+	planet = {
+		class = "pc_b_star"
+		size = 45
+        orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 60
+
+	planet = {
+		class = "pc_molten"
+		size = 15
+		orbit_distance = 0
+		orbit_angle = 125
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_engineering_2
+		}
+	}
+
+    planet = {
+        class = ideal_planet_class
+        size = 20
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 120 }
+		has_ring = no
+        modifiers = none
+		deposit_blockers = none
+    }
+
+	planet = {
+		class = "pc_toxic"
+		size = 20
+		orbit_distance = 20
+		orbit_angle = { min = 20 max = 120 }
+		has_ring = yes
+
+		init_effect = {
+		    set_deposit = d_society_3
+		}
+	}
+
+    planet = {
+        class = "pc_gaia"
+        size = 18
+        orbit_distance = 30
+        orbit_angle = { min = 10 max = 90 }
+		has_ring = no
+        modifiers = none
+		deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+            generate_energy_deposits = yes
+            generate_betharian_deposit = yes
+        }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+		    count = 2
+		    class = "pc_barren"
+            size = 6
+			orbit_distance = 4
+		}
+    }
+
+	planet = {
+		class = "pc_barren"
+		size = 24
+		orbit_distance = 20
+		orbit_angle = { min = 20 max = 120 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		size = 28
+		orbit_distance = 30
+		orbit_angle = 100
+		has_ring = yes
+
+		moon = {
+			class = "pc_barren"
+			size = 3
+			orbit_distance = 11
+			orbit_angle = { min = 90 max = 270 }
+		}
+
+		moon = {
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 2
+			orbit_angle = 40
+		}
+
+		moon = {
+			class = "pc_frozen"
+			size = 3
+			orbit_distance = 2
+			orbit_angle = 50
+
+            init_effect = {
+                set_deposit = d_minerals_3
+            }
+		}
+	}
+}

@@ -1,0 +1,104 @@
+custom_pjs_delta_pavonis = {
+    name = "Delta Pavonis"
+    class = "sc_g"
+    flags = { empire_home_system pjs_dune_delta_pavonis }
+	usage_odds = { base = 0 }
+
+    usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+
+		generate_home_system_resources = yes
+	}
+
+    planet = {
+        class = "pc_g_star"
+        size = { min = 21 max = 28 }
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+        has_ring = no
+    }
+
+    change_orbit = 30
+
+    planet = {
+        class = random_non_colonizable
+        size = { min = 16 max = 20 }
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 10 max = 350 }
+
+        moon = {
+            class = random_non_colonizable
+            size = 5
+            orbit_distance = { min = 8 max = 10 }
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+        }
+
+        moon = {
+            class = random_non_colonizable
+            size = 7
+            orbit_distance = { min = 6 max = 8 }
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+        }
+    }
+
+    planet = {
+        name = "Harmonthep"
+        class = "pc_ocean"
+        size = 20
+        orbit_distance = 27
+        orbit_angle = { min = 10 max = 350 }
+
+        moon = {
+            name = "Doris"
+            class = random_non_colonizable
+            size = 5
+            orbit_distance = 9
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+        }
+    }
+
+    planet = {
+        name = "Caladan"
+        class = "pc_ocean"
+        size = 25
+        orbit_distance = { min = 25 max = 30 }
+        orbit_angle = { min = 10 max = 350 }
+        modifiers = none
+
+        starting_planet = yes
+        deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+
+        moon = {
+            name = "Artemis"
+            class = random_non_colonizable
+            size = 4
+            orbit_distance = 9
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+        }
+    }
+
+    neighbor_system = {
+        distance = { min = 0 max = 40 }
+        initializer = "neighbor_t1_first_colony"
+    }
+
+    neighbor_system = {
+        distance = { min = 0 max = 40 }
+        initializer = "neighbor_t1"
+    }
+}

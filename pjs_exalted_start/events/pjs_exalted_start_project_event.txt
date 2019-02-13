@@ -1,0 +1,34 @@
+namespace = pjs_exalted_start_project_event
+
+event = {
+	id = pjs_exalted_start_project_event.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+	    every_country = {
+            limit = {
+                is_ai = no
+                NOT = { has_country_flag = pjs_exalted_start_project }
+            }
+            country_event = { id = pjs_exalted_start_project_event.2 }
+        }
+	}
+}
+
+country_event = {
+    id = pjs_exalted_start_project_event.2
+	is_triggered_only = yes
+	hide_window = yes
+
+    immediate = {
+        capital_scope = {
+            enable_special_project = {
+                name = "PJS_EXALTED_START_PROJECT"
+                location = this
+                owner = root
+            }
+        }
+        set_country_flag = pjs_exalted_start_project
+    }
+}

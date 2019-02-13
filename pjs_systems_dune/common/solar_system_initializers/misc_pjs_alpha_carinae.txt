@@ -1,0 +1,44 @@
+misc_pjs_alpha_carinae = {
+    name = "Alpha Carinae"
+    class = "sc_f"
+
+    usage = misc_system_init
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 100
+
+    planet = {
+        class = "pc_f_star"
+        size = 60
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+        has_ring = no
+    }
+
+    planet = {
+        name = "Arrakis"
+        class = "pc_desert"
+        size = 30
+        has_ring = no
+        orbit_distance = 100
+        orbit_angle = { min = 10 max = 350 }
+        modifiers = none
+        deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+
+            generate_energy_deposits = yes
+            generate_food_deposits = yes
+            generate_mineral_deposits = yes
+            generate_betharian_deposit = yes
+            generate_pets_deposit = yes
+            generate_crystals_deposit = yes
+            generate_crystals_deposit = yes
+            generate_motes_deposit = yes
+            generate_motes_deposit = yes
+            generate_gases_deposit = yes
+            generate_gases_deposit = yes
+        }
+    }
+}

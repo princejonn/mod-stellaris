@@ -1,0 +1,35 @@
+namespace = pjs_systems_ringworlds_event
+
+event = {
+	id = pjs_systems_ringworlds_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+		    every_planet = {
+                limit = { has_planet_flag = ring_world_start }
+
+                change_pc = "pc_ringworld_habitable"
+
+	            clear_deposits = yes
+
+	            while = {
+                    count = 6
+                    remove_district = district_generator
+                }
+
+	            while = {
+                    count = 6
+                    remove_district = district_mining
+                }
+
+	            while = {
+                    count = 6
+                    remove_district = district_farming
+                }
+            }
+        }
+	}
+}

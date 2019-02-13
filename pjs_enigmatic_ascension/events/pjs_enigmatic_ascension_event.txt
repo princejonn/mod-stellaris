@@ -1,0 +1,84 @@
+namespace = pjs_enigmatic_ascension_event
+
+country_event = {
+	id = pjs_enigmatic_ascension_event.100
+
+	hide_window = yes
+
+	trigger = {
+        is_ai = no
+        is_country_type = default
+
+        AND = {
+            has_technology = tech_pjs_enigmatic_ascension_engineering
+            has_technology = tech_pjs_enigmatic_ascension_physics
+            has_technology = tech_pjs_enigmatic_ascension_society
+        }
+
+        NOT = { has_country_flag = player_pjs_enigmatic_ascension }
+    }
+
+	immediate = {
+	    root = {
+            set_country_flag = player_pjs_enigmatic_ascension
+            country_event = { id = pjs_enigmatic_ascension_event.200 }
+        }
+	}
+}
+
+country_event = {
+    id = pjs_enigmatic_ascension_event.200
+
+    title = "pjs_enigmatic_ascension_event.200.name"
+    desc = "pjs_enigmatic_ascension_event.200.desc"
+
+    picture = GFX_evt_fallen_empire
+    show_sound = event_alien_signal
+	location = from
+
+    is_triggered_only = yes
+
+    option = {
+        name = pjs_enigmatic_ascension_event.200.a
+        hidden_effect = {
+            set_graphical_culture = fallen_empire_01
+            set_city_graphical_culture = fallen_empire_01
+        }
+    }
+
+    option = {
+        name = pjs_enigmatic_ascension_event.200.b
+        hidden_effect = {
+            set_graphical_culture = fallen_empire_02
+            set_city_graphical_culture = fallen_empire_02
+        }
+    }
+
+    option = {
+        name = pjs_enigmatic_ascension_event.200.c
+        hidden_effect = {
+            set_graphical_culture = fallen_empire_03
+            set_city_graphical_culture = fallen_empire_03
+        }
+    }
+
+    option = {
+        name = pjs_enigmatic_ascension_event.200.d
+        hidden_effect = {
+            set_graphical_culture = fallen_empire_04
+            set_city_graphical_culture = fallen_empire_04
+        }
+    }
+
+    option = {
+        name = pjs_enigmatic_ascension_event.200.e
+        hidden_effect = {
+            set_graphical_culture = fallen_machine_empire_01
+            set_city_graphical_culture = fallen_machine_empire_01
+        }
+    }
+
+    option = {
+        name = pjs_enigmatic_ascension_event.200.f
+    }
+}

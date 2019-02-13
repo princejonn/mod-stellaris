@@ -1,0 +1,32 @@
+trait_pjs_photosynthesis = {
+	cost = 4
+	potential_crossbreeding_chance = 0.15
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_pjs_partial_photosynthesis" }
+	modifier = {
+		planet_pops_organics_food_upkeep_mult = -1
+	}
+}
+
+trait_pjs_partial_photosynthesis = {
+	cost = 2
+	potential_crossbreeding_chance = 0.5
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_pjs_photosynthesis" }
+	modifier = {
+		planet_pops_organics_food_upkeep_mult = -0.5
+	}
+}
+
+trait_pjs_psionic = {
+	cost = 2
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_traditional" "trait_quarrelsome" }
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
