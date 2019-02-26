@@ -1,7 +1,6 @@
 # see README.txt for example
 
 gateway_0 = {
-	construction_blocks_others = no
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
@@ -17,6 +16,7 @@ gateway_0 = {
 			influence = 100
 		}
 	}
+	construction_blocks_others = no
 
 	potential = {
 		has_technology = tech_gateway_construction
@@ -88,7 +88,6 @@ gateway_0 = {
 }
 
 gateway_final = {
-	construction_blocks_others = no
 	entity = "gateway_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
@@ -116,6 +115,7 @@ gateway_final = {
 			energy = 6000
 		}
 	}
+	construction_blocks_others = no
 	bypass_type = gateway
 	on_build_complete = {
 		activate_gateway = fromfrom
@@ -136,7 +136,6 @@ gateway_final = {
 
 # Disabled Gateway
 gateway_ruined = {
-	construction_blocks_others = no
 	entity = "deactivated_gateway_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
@@ -152,7 +151,6 @@ gateway_ruined = {
 
 # Restored Gateway
 gateway_restored = {
-	construction_blocks_others = no
 	entity = "reactivated_gateway_entity"
 	construction_entity = "gateway_portal_entity"
 	portrait = "GFX_megastructure_construction_background"
@@ -181,6 +179,7 @@ gateway_restored = {
 			energy = 6000
 		}
 	}
+	construction_blocks_others = no
 	bypass_type = gateway
 	on_build_complete = {
 		activate_gateway = fromfrom
