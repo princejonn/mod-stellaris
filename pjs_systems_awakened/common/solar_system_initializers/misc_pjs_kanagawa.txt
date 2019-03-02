@@ -1,0 +1,121 @@
+misc_pjs_kanagawa = {
+    name = "Kanagawa"
+    class = "sc_f"
+
+    usage = misc_system_init
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 0
+
+    planet = {
+        class = "pc_f_star"
+        size = 30
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+        has_ring = no
+
+		init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = interstellar_assembly_target
+		}
+    }
+
+    change_orbit = 40
+
+    planet = {
+        class = "pc_molten"
+        size = 18
+        orbit_distance = 30
+        orbit_angle = { min = 10 max = 350 }
+    }
+
+    planet = {
+        class = "pc_barren"
+        size = 16
+        orbit_distance = 10
+        orbit_angle = { min = 10 max = 350 }
+    }
+
+    planet = {
+        class = "pc_toxic"
+        size = 22
+        orbit_distance = 20
+        orbit_angle = { min = 10 max = 350 }
+
+		change_orbit = @base_moon_distance
+
+        moon = {
+            class = "pc_barren"
+            size = 7
+            orbit_distance = 3
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+        }
+    }
+
+    planet = {
+        class = "pc_gaia"
+        size = 25
+        orbit_distance = 30
+        orbit_angle = { min = 10 max = 350 }
+		has_ring = no
+        modifiers = none
+		deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+			generate_mineral_deposits = yes
+			generate_crystals_deposit = yes
+		}
+    }
+
+    planet = {
+        class = "pc_gaia"
+        size = 25
+        orbit_distance = 30
+        orbit_angle = { min = 10 max = 350 }
+		has_ring = no
+        modifiers = none
+		deposit_blockers = none
+
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+			generate_energy_deposits = yes
+			generate_gases_deposit = yes
+		}
+
+		change_orbit = @base_moon_distance
+
+        moon = {
+            class = "pc_barren"
+            size = 8
+            orbit_distance = 5
+            orbit_angle = { min = 10 max = 350 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                add_deposit = d_physics_10
+            }
+        }
+    }
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "interstellar_assembly_4"
+            location = event_target:interstellar_assembly_target
+            graphical_culture = "humanoid_01"
+        }
+    }
+}

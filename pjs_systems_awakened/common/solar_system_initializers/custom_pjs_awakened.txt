@@ -1,0 +1,190 @@
+custom_pjs_awakened = {
+	name = "Akita"
+	class = "sc_b"
+	usage = custom_empire
+	flags = { empire_home_system }
+	usage_odds = { base = 0 }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_b_star"
+		size = 20
+		orbit_distance = 0
+		orbit_angle = 1
+		has_ring = no
+        flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_energy_8
+		}
+	}
+
+	change_orbit = 45
+
+	planet = {
+	    name = "Akita"
+		class = "pc_ringworld_habitable"
+		size = 50
+		orbit_angle = 30
+		orbit_distance = 0
+		modifiers = none
+        deposit_blockers = none
+		flags = { awakened_start }
+
+		starting_planet = yes
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_building = building_affluence_center
+            add_building = building_nourishment_center
+			add_building = building_dimensional_fabricator
+            add_building = building_class_4_singularity
+		}
+	}
+	planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ajigasawa"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_affluence_center
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Tsuruta"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_nourishment_center
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Goshogawara"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+			add_building = building_dimensional_fabricator
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+	neighbor_system = {
+		distance = { min = 10 max = 40 }
+		initializer = "misc_pjs_hirosaki"
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 40 }
+		initializer = "misc_pjs_higashidori"
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 40 }
+		initializer = "misc_pjs_fukui"
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 40 }
+		initializer = "misc_pjs_nagano"
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 40 }
+		initializer = "misc_pjs_miyagi"
+	}
+}

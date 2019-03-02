@@ -1,7 +1,7 @@
-namespace = pjs_systems_ringworlds_event
+namespace = pjs_systems_awakened_event
 
 event = {
-	id = pjs_systems_ringworlds_event.1
+	id = pjs_systems_awakened_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
@@ -9,7 +9,7 @@ event = {
 	immediate = {
 		every_country = {
 		    every_planet = {
-                limit = { has_planet_flag = ring_world_start }
+                limit = { has_planet_flag = awakened_start }
 
                 change_pc = "pc_ringworld_habitable"
 
@@ -29,7 +29,15 @@ event = {
                     count = 10
                     remove_district = district_farming
                 }
+
+                add_deposit = d_stasis_chambers
+                add_deposit = d_stasis_chambers
+                add_deposit = d_stasis_chambers
+                add_deposit = d_stasis_chambers
+                add_deposit = d_stasis_chambers
             }
         }
+
+        set_graphical_culture = root.from
 	}
 }

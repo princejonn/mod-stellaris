@@ -1,6 +1,6 @@
 sc_pjs_trinary_galileo = {
     class = f_star
-    icon = a_trinary_star
+    icon = a_binary_star
 
     planet = {
         key = pc_f_star
