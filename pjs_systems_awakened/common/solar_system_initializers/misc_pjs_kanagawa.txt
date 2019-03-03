@@ -69,8 +69,12 @@ misc_pjs_kanagawa = {
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 
-			generate_mineral_deposits = yes
-			generate_crystals_deposit = yes
+            generate_mineral_deposits = yes
+            generate_crystals_deposit = yes
+            generate_motes_deposit = yes
+            generate_gases_deposit = yes
+            generate_betharian_deposit = yes
+            generate_pets_deposit = yes
 		}
     }
 
@@ -91,8 +95,12 @@ misc_pjs_kanagawa = {
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 
-			generate_energy_deposits = yes
-			generate_gases_deposit = yes
+            generate_mineral_deposits = yes
+            generate_crystals_deposit = yes
+            generate_motes_deposit = yes
+            generate_gases_deposit = yes
+            generate_betharian_deposit = yes
+            generate_pets_deposit = yes
 		}
 
 		change_orbit = @base_moon_distance
@@ -105,8 +113,7 @@ misc_pjs_kanagawa = {
             has_ring = no
 
             init_effect = {
-				prevent_anomaly = yes
-                add_deposit = d_physics_10
+                add_deposit = d_physics_8
             }
         }
     }

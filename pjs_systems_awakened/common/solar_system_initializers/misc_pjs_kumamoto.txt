@@ -17,6 +17,10 @@ misc_pjs_kumamoto = {
 		size = 28
         orbit_distance = 0
 		orbit_angle = 1
+
+		init_effect = {
+		    set_deposit = d_energy_10
+		}
 	}
 
 	change_orbit = 40
@@ -36,6 +40,13 @@ misc_pjs_kumamoto = {
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
+
+            generate_mineral_deposits = yes
+            generate_crystals_deposit = yes
+            generate_motes_deposit = yes
+            generate_gases_deposit = yes
+            generate_betharian_deposit = yes
+            generate_pets_deposit = yes
         }
 	}
 
@@ -146,10 +157,6 @@ misc_pjs_kumamoto = {
 			orbit_distance = 2
 			orbit_angle = { min = 10 max = 350 }
 			has_ring = no
-
-            init_effect = {
-                set_deposit = d_physics_4
-            }
 		}
 
 		moon = {

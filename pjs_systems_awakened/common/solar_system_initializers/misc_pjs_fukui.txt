@@ -110,6 +110,13 @@ misc_pjs_fukui = {
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
+
+            generate_mineral_deposits = yes
+            generate_crystals_deposit = yes
+            generate_motes_deposit = yes
+            generate_gases_deposit = yes
+            generate_betharian_deposit = yes
+            generate_pets_deposit = yes
         }
     }
 
