@@ -25,21 +25,21 @@ misc_pjs_kanagawa = {
     planet = {
         class = "pc_molten"
         size = 18
-        orbit_distance = 30
+        orbit_distance = 15
         orbit_angle = { min = 10 max = 350 }
     }
 
     planet = {
         class = "pc_barren"
         size = 16
-        orbit_distance = 10
+        orbit_distance = 20
         orbit_angle = { min = 10 max = 350 }
     }
 
     planet = {
         class = "pc_toxic"
         size = 22
-        orbit_distance = 20
+        orbit_distance = 25
         orbit_angle = { min = 10 max = 350 }
 
 		change_orbit = @base_moon_distance
@@ -113,6 +113,7 @@ misc_pjs_kanagawa = {
             has_ring = no
 
             init_effect = {
+			    prevent_anomaly = yes
                 add_deposit = d_physics_8
             }
         }

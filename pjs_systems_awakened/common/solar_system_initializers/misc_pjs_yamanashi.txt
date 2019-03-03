@@ -14,6 +14,7 @@ misc_pjs_yamanashi = {
 		orbit_angle = 1
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_zro_deposit_3
 		    add_deposit = d_zro_deposit_3
 		}

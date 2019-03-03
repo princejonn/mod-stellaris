@@ -21,6 +21,7 @@ misc_pjs_kochi = {
 		has_ring = no
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_energy_6
 		}
 	}
@@ -83,6 +84,7 @@ misc_pjs_kochi = {
 		orbit_angle = 20
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_minerals_5
 		}
 	}
@@ -94,6 +96,7 @@ misc_pjs_kochi = {
 		orbit_angle = 60
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_minerals_3
 		}
 	}
@@ -105,6 +108,7 @@ misc_pjs_kochi = {
 		orbit_angle = 90
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_minerals_3
 		}
 	}
@@ -116,6 +120,7 @@ misc_pjs_kochi = {
 		orbit_angle = 60
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_minerals_2
 		}
 	}
@@ -127,6 +132,7 @@ misc_pjs_kochi = {
 		orbit_angle = 70
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_minerals_2
 		}
 	}
@@ -154,6 +160,7 @@ misc_pjs_kochi = {
 		orbit_angle = { min = 20 max = 70 }
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_society_8
 		}
 

@@ -7,28 +7,18 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-		every_country = {
-		    every_planet = {
-                limit = { has_planet_flag = ring_world_start }
+        every_planet = {
+            limit = { has_planet_flag = ring_world_start }
 
-                change_pc = "pc_ringworld_habitable"
+            change_pc = "pc_ringworld_habitable"
 
-	            clear_deposits = yes
+            clear_deposits = yes
 
-	            while = {
-                    count = 10
-                    remove_district = district_generator
-                }
-
-	            while = {
-                    count = 10
-                    remove_district = district_mining
-                }
-
-	            while = {
-                    count = 10
-                    remove_district = district_farming
-                }
+            while = {
+                count = 10
+                remove_district = district_generator
+                remove_district = district_mining
+                remove_district = district_farming
             }
         }
 	}

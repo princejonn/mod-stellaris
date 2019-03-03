@@ -14,6 +14,7 @@ misc_pjs_nagano = {
 		orbit_angle = 1
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_energy_8
 		}
 	}
@@ -49,6 +50,7 @@ misc_pjs_nagano = {
         orbit_distance = 0
 
         init_effect = {
+			prevent_anomaly = yes
             add_deposit = d_physics_8
         }
     }
@@ -84,10 +86,6 @@ misc_pjs_nagano = {
         class = "pc_ringworld_tech"
         orbit_angle = 30
         orbit_distance = 0
-
-        init_effect = {
-            add_deposit = d_engineering_8
-        }
     }
     planet = {
         name = "Ring Section"
@@ -123,6 +121,7 @@ misc_pjs_nagano = {
         orbit_distance = 0
 
         init_effect = {
+			prevent_anomaly = yes
             add_deposit = d_engineering_8
         }
     }

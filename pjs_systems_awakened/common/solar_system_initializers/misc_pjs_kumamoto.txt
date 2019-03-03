@@ -19,6 +19,7 @@ misc_pjs_kumamoto = {
 		orbit_angle = 1
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_energy_10
 		}
 	}
@@ -58,6 +59,7 @@ misc_pjs_kumamoto = {
 		has_ring = yes
 
 		init_effect = {
+			prevent_anomaly = yes
             set_deposit = d_alloys_5
 		}
 	}
@@ -72,6 +74,7 @@ misc_pjs_kumamoto = {
 		has_ring = no
 
 		init_effect = {
+			prevent_anomaly = yes
             set_deposit = d_minerals_8
 		}
 	}
@@ -92,6 +95,7 @@ misc_pjs_kumamoto = {
 		has_ring = no
 
 		init_effect = {
+			prevent_anomaly = yes
             set_deposit = d_volatile_motes_2
 		}
 	}
@@ -112,6 +116,7 @@ misc_pjs_kumamoto = {
 		has_ring = no
 
 		init_effect = {
+			prevent_anomaly = yes
             set_deposit = d_minerals_8
 		}
 	}
@@ -134,6 +139,7 @@ misc_pjs_kumamoto = {
 		has_ring = no
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_exotic_gases_2
         }
 
@@ -147,6 +153,7 @@ misc_pjs_kumamoto = {
 			has_ring = no
 
             init_effect = {
+			    prevent_anomaly = yes
                 set_deposit = d_physics_4
             }
 		}
@@ -165,6 +172,11 @@ misc_pjs_kumamoto = {
 			orbit_distance = 1
 			orbit_angle = { min = 10 max = 350 }
 			has_ring = no
+
+            init_effect = {
+			    prevent_anomaly = yes
+                set_deposit = d_zro_deposit_2
+            }
 		}
 	}
 }

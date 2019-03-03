@@ -28,6 +28,7 @@ misc_pjs_higashidori = {
         orbit_angle = { min = 30 max = 250 }
 
         init_effect = {
+			prevent_anomaly = yes
             set_deposit = d_rare_crystals_5
         }
     }
@@ -37,10 +38,6 @@ misc_pjs_higashidori = {
         size = 18
         orbit_distance = 20
         orbit_angle = { min = 30 max = 250 }
-
-        init_effect = {
-            prevent_anomaly = yes
-        }
     }
 
     planet = {

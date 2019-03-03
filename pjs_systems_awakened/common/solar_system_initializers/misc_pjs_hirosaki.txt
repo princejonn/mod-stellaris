@@ -15,6 +15,7 @@ misc_pjs_hirosaki = {
         has_ring = no
 
 		init_effect = {
+			prevent_anomaly = yes
 		    set_deposit = d_energy_8
 		}
     }
@@ -40,6 +41,7 @@ misc_pjs_hirosaki = {
         orbit_angle = { min = 30 max = 250 }
 
         init_effect = {
+			prevent_anomaly = yes
             set_deposit = d_physics_10
             add_deposit = d_society_10
             add_deposit = d_engineering_10
@@ -174,6 +176,7 @@ misc_pjs_hirosaki = {
         orbit_angle = { min = 30 max = 250 }
 
         init_effect = {
+			prevent_anomaly = yes
             set_deposit = d_volatile_motes_5
         }
     }
@@ -186,6 +189,7 @@ misc_pjs_hirosaki = {
         has_ring = yes
 
         init_effect = {
+			prevent_anomaly = yes
             set_deposit = d_exotic_gases_3
         }
 
@@ -198,6 +202,7 @@ misc_pjs_hirosaki = {
             orbit_angle = { min = 30 max = 250 }
 
             init_effect = {
+			    prevent_anomaly = yes
                 set_deposit = d_minerals_4
             }
         }
@@ -209,6 +214,7 @@ misc_pjs_hirosaki = {
             orbit_angle = { min = 30 max = 250 }
 
             init_effect = {
+			    prevent_anomaly = yes
                 set_deposit = d_minerals_5
             }
         }
