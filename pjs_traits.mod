@@ -2,7 +2,7 @@ name="PJs :: Traits"
 path="mod/pjs_traits"
 tags={
 	"PJs"
-	"Traits"
+	"Species"
 }
 picture="thumb.jpg"
 remote_file_id="1439177631"

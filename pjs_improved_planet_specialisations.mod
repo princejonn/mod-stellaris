@@ -1,9 +1,9 @@
 name="PJs :: Improved Planet Specialisations"
 path="mod/pjs_improved_planet_specialisations"
 tags={
-	"Planet"
-	"Colony"
-	"Specialisation"
+	"PJs"
+	"Balance"
+	"Economy"
 }
 picture="thumb.jpg"
 remote_file_id="1588410356"

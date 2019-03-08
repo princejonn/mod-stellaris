@@ -2,9 +2,9 @@ name="PJs :: Increased Maximum Traits"
 path="mod/pjs_increased_maximum_traits"
 tags={
 	"PJs"
+	"Balance"
 	"Overhaul"
-	"Trait"
-	"Maximum"
+	"Technologies"
 }
 picture="thumb.jpg"
 remote_file_id="1442403409"

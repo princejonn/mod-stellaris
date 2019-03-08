@@ -3,8 +3,7 @@ path="mod/pjs_exalted_start"
 tags={
 	"PJs"
 	"Gameplay"
-	"Technology"
-	"Start"
+	"Technologies"
 }
 picture="thumb.jpg"
 remote_file_id="1264677063"

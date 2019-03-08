@@ -2,8 +2,9 @@ name="PJs :: Unlimited Megastructures"
 path="mod/pjs_unlimited_megastructures"
 tags={
 	"PJs"
+	"Balance"
 	"Economy"
-	"Megastructures"
+	"Overhaul"
 }
 picture="thumb.jpg"
 remote_file_id="1278999629"

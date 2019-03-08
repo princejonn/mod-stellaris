@@ -1,8 +1,8 @@
 name="PJs :: Favorite Flag Backgrounds"
 path="mod/pjs_favorite_flag_backgrounds"
 tags={
-	"Flags"
-	"Backgrounds"
+	"PJs"
+	"Graphics"
 }
 picture="thumb.jpg"
 remote_file_id="1560256860"

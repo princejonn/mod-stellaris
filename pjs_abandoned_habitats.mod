@@ -2,6 +2,7 @@ name="PJs :: Abandoned Habitats"
 path="mod/pjs_abandoned_habitats"
 tags={
 	"PJs"
+	"Balance"
 	"Galaxy Generation"
 }
 picture="thumb.jpg"

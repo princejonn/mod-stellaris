@@ -2,8 +2,8 @@ name="PJs :: Nerve Stapled Technology"
 path="mod/pjs_nerve_stapled_technology"
 tags={
 	"PJs"
-	"Traits"
-	"Technology"
+	"Species"
+	"Technologies"
 }
 picture="thumb.jpg"
 remote_file_id="1636790664"

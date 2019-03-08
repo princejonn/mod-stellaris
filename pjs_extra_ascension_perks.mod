@@ -2,7 +2,8 @@ name="PJs :: Extra Ascension Perks"
 path="mod/pjs_extra_ascension_perks"
 tags={
 	"PJs"
-	"Technology"
+	"Balance"
+	"Technologies"
 }
 picture="thumb.jpg"
 remote_file_id="1396886609"

@@ -2,6 +2,7 @@ name="PJs :: Enigmatic Ascension"
 path="mod/pjs_enigmatic_ascension"
 tags={
 	"PJs"
+	"Balance"
 	"Military"
 	"Spaceships"
 	"Technologies"
