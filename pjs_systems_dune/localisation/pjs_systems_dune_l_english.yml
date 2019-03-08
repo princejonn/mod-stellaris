@@ -8,3 +8,6 @@
 
   custom_pjs_tau_haruki_NAME:0 "§STau Haruki"
   custom_pjs_tau_haruki_DESC:0 "§RWARNING - Overpowered!§!\n\nHome to the imperial capital planet Kaitain (Gaia).\n\nHomeworld Name - Kaitain\nStar Name - Tau Haruki\n\n$system_initializer_DESC$"
+
+  d_arrakis_deposit:0 "Deep Desert"
+  d_arrakis_deposit_desc:0 "Extremely rare materials and resources hide in the deep deserts of Arrakis. Expedition parties frequently find more precious materials the deeper they go..."

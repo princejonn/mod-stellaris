@@ -9,10 +9,43 @@ misc_pjs_alpha_carinae = {
 
     planet = {
         class = "pc_f_star"
-        size = 60
+        size = 55
         orbit_distance = 0
-        orbit_angle = { min = 0 max = 350 }
+        orbit_angle = 1
         has_ring = no
+    }
+
+    change_orbit = 30
+
+    planet = {
+        class = pc_molten
+        size = 12
+        orbit_distance = 30
+        orbit_angle = { min = 30 max = 60 }
+        has_ring = no
+    }
+
+    planet = {
+        class = pc_barren
+        size = 20
+        orbit_distance = 30
+        orbit_angle = { min = 30 max = 60 }
+        has_ring = no
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			name = "Fist"
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 1
+			orbit_angle = { min = 30 max = 60 }
+			has_ring = no
+
+            init_effect = {
+                set_deposit = d_trade_value_6
+            }
+		}
     }
 
     planet = {
@@ -20,25 +53,50 @@ misc_pjs_alpha_carinae = {
         class = "pc_desert"
         size = 30
         has_ring = no
-        orbit_distance = 100
-        orbit_angle = { min = 10 max = 350 }
+        orbit_distance = 30
+        orbit_angle = { min = 30 max = 60 }
         modifiers = none
         deposit_blockers = none
 
         init_effect = {
             prevent_anomaly = yes
 
+            add_deposit = d_arrakis_deposit
+            add_deposit = d_arrakis_deposit
+            add_deposit = d_arrakis_deposit
+            add_deposit = d_arrakis_deposit
+
             generate_energy_deposits = yes
-            generate_food_deposits = yes
             generate_mineral_deposits = yes
             generate_betharian_deposit = yes
-            generate_pets_deposit = yes
-            generate_crystals_deposit = yes
+            generate_betharian_deposit = yes
             generate_crystals_deposit = yes
             generate_motes_deposit = yes
-            generate_motes_deposit = yes
-            generate_gases_deposit = yes
             generate_gases_deposit = yes
         }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			name = "Fist"
+			class = "pc_barren"
+			size = 8
+			orbit_distance = 3
+			orbit_angle = { min = 30 max = 60 }
+			has_ring = no
+
+            init_effect = {
+                set_deposit = d_trade_value_8
+            }
+		}
+
+		moon = {
+			name = "Mouse"
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 3
+			orbit_angle = { min = 30 max = 60 }
+			has_ring = no
+		}
     }
 }

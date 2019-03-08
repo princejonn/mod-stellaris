@@ -1,0 +1,32 @@
+d_arrakis_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	icon = d_dust_desert
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = {
+		trade_value_add = 8
+	}
+
+    resources = {
+		category = planet_deposits
+		produces = {
+		    exotic_gases = 2
+		    volatile_motes = 2
+		    rare_crystals = 2
+			sr_zro = 2
+			sr_zro = 2
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}

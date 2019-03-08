@@ -1,18 +1,18 @@
-trait_pjs_photosynthesis = {
+trait_pjs_photosynthetic = {
 	cost = 4
 	potential_crossbreeding_chance = 0.15
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_pjs_partial_photosynthesis" }
+	opposites = { "trait_pjs_partial_photosynthetic" }
 	modifier = {
 		planet_pops_organics_food_upkeep_mult = -1
 	}
 }
 
-trait_pjs_partial_photosynthesis = {
+trait_pjs_partial_photosynthetic = {
 	cost = 2
 	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_pjs_photosynthesis" }
+	opposites = { "trait_pjs_photosynthetic" }
 	modifier = {
 		planet_pops_organics_food_upkeep_mult = -0.5
 	}
