@@ -268,6 +268,43 @@ spy_orb_ruined = {
 	}
 }
 
+# Improvised Sentry Array
+spy_orb_improvised = {
+	construction_blocks_others = no
+	entity = "spy_orb_destroyed_entity"
+	construction_entity = "spy_orb_destroyed_entity"
+	portrait = "GFX_megastructure_spy_orb_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @entity_x y = @entity_y }
+	upgrade_from = {
+		spy_orb_ruined
+	}
+	build_time = 1200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1500
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	possible = {
+		from = { has_technology = tech_starbase_4 }
+	}
+
+	on_build_start = {
+		fromfrom = {
+			set_graphical_culture = root.from
+		}
+	}
+
+	sensor_range = 20
+	hyperlane_range = 30
+}
+
 # Restored Sentry Array
 spy_orb_restored = {
 	construction_blocks_others = no
@@ -277,13 +314,13 @@ spy_orb_restored = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
 	upgrade_from = {
-		spy_orb_ruined
+		spy_orb_improvised
 	}
-	build_time = 4800
+	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 13500
 		}
 
 		upkeep = {

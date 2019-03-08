@@ -66,8 +66,6 @@ misc_pjs_hirosaki = {
             add_deposit = d_stasis_chambers
 
             generate_mineral_deposits = yes
-            generate_crystals_deposit = yes
-            generate_motes_deposit = yes
             generate_gases_deposit = yes
             generate_betharian_deposit = yes
             generate_pets_deposit = yes
@@ -236,9 +234,14 @@ misc_pjs_hirosaki = {
 
 	init_effect = {
         spawn_megastructure = {
-            type = "think_tank_4"
+            type = "think_tank_1"
             location = event_target:think_tank_target
             graphical_culture = "humanoid_01"
         }
     }
+
+	neighbor_system = {
+		distance = { min = 10 max = 40 }
+		initializer = "misc_pjs_kochi"
+	}
 }

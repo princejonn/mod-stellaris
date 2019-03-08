@@ -70,8 +70,6 @@ misc_pjs_kanagawa = {
             add_deposit = d_stasis_chambers
 
             generate_mineral_deposits = yes
-            generate_crystals_deposit = yes
-            generate_motes_deposit = yes
             generate_gases_deposit = yes
             generate_betharian_deposit = yes
             generate_pets_deposit = yes
@@ -97,8 +95,6 @@ misc_pjs_kanagawa = {
 
             generate_mineral_deposits = yes
             generate_crystals_deposit = yes
-            generate_motes_deposit = yes
-            generate_gases_deposit = yes
             generate_betharian_deposit = yes
             generate_pets_deposit = yes
 		}
@@ -121,9 +117,14 @@ misc_pjs_kanagawa = {
 
     init_effect = {
         spawn_megastructure = {
-            type = "interstellar_assembly_4"
+            type = "interstellar_assembly_ruined"
             location = event_target:interstellar_assembly_target
             graphical_culture = "humanoid_01"
         }
     }
+
+	neighbor_system = {
+		distance = { min = 10 max = 40 }
+		initializer = "misc_pjs_yamanashi"
+	}
 }

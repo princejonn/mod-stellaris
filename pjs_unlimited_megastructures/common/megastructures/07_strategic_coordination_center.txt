@@ -243,6 +243,48 @@ strategic_coordination_center_ruined = {
 	potential = { always = no }
 }
 
+# Improvised Strategic Coordination Center
+strategic_coordination_center_improvised = {
+	construction_blocks_others = no
+	entity = "strategic_coordination_center_01_destroyed_entity"
+	construction_entity = "strategic_coordination_center_01_destroyed_entity"
+	portrait = "GFX_megastructure_strategic_coordination_center_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = {
+		strategic_coordination_center_ruined
+	}
+
+	build_time = 1200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1500
+		}
+
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 15
+		country_starbase_capacity_add = 1
+		starbase_defense_platform_capacity_add = 2
+		ship_speed_mult = 0.025
+	}
+
+	possible = {
+		from = { has_technology = tech_starbase_4 }
+	}
+
+	on_build_start = {
+		fromfrom = {
+			set_graphical_culture = root.from
+		}
+	}
+}
+
 # Restored Strategic Coordination Center
 strategic_coordination_center_restored = {
 	construction_blocks_others = no
@@ -252,14 +294,14 @@ strategic_coordination_center_restored = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
 	upgrade_from = {
-		strategic_coordination_center_ruined
+		strategic_coordination_center_improvised
 	}
 
-	build_time = 4800
+	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 13500
 		}
 
 		upkeep = {

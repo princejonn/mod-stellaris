@@ -67,9 +67,7 @@ misc_pjs_kochi = {
             add_deposit = d_stasis_chambers
 
             generate_mineral_deposits = yes
-            generate_crystals_deposit = yes
             generate_motes_deposit = yes
-            generate_gases_deposit = yes
             generate_betharian_deposit = yes
             generate_pets_deposit = yes
         }
@@ -176,7 +174,7 @@ misc_pjs_kochi = {
 
     init_effect = {
         spawn_megastructure = {
-            type = "mega_art_installation_3"
+            type = "mega_art_installation_1"
             location = event_target:mega_art_installation_target
             graphical_culture = "humanoid_01"
         }

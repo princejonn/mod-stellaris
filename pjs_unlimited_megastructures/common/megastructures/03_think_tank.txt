@@ -302,6 +302,53 @@ think_tank_ruined = {
 	}
 }
 
+# Improvised Science Nexus
+think_tank_improvised = {
+	construction_blocks_others = no
+	entity = "think_tank_destroyed_01_entity"
+	construction_entity = "think_tank_destroyed_01_entity"
+	portrait = "GFX_megastructure_think_tank_background"
+
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @entity_x y = @entity_y }
+
+	upgrade_from = {
+		think_tank_ruined
+	}
+
+	country_modifier = {
+		all_technology_research_speed = 0.025
+	}
+
+	build_time = 1200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1500
+		}
+
+		upkeep = {
+			energy = 15
+		}
+
+		produces = {
+			society_research = 50
+			engineering_research = 50
+			physics_research = 50
+		}
+	}
+
+	possible = {
+		from = { has_technology = tech_starbase_4 }
+	}
+
+	on_build_start = {
+		fromfrom = {
+			set_graphical_culture = root.from
+		}
+	}
+}
+
 # Restored Science Nexus
 think_tank_restored = {
 	construction_blocks_others = no
@@ -313,18 +360,18 @@ think_tank_restored = {
 	entity_offset = { x = @entity_x y = @entity_y }
 
 	upgrade_from = {
-		think_tank_ruined
+		think_tank_improvised
 	}
 
 	country_modifier = {
 		all_technology_research_speed = 0.15
 	}
 
-	build_time = 4800
+	build_time = 3000
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
+			alloys = 1350
 		}
 
 		upkeep = {

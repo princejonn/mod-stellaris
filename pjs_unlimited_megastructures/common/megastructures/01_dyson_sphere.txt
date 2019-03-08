@@ -284,6 +284,38 @@ dyson_sphere_ruined = {
 	}
 }
 
+# Improvised Dyson Sphere
+dyson_sphere_improvised = {
+	construction_blocks_others = no
+	entity = "dyson_sphere_destroyed_entity"
+	construction_entity = "dyson_sphere_destroyed_entity"
+	portrait = "GFX_megastructure_dyson_sphere_background"
+	upgrade_from = {
+		dyson_sphere_ruined
+	}
+	build_time = 1200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+
+		produces = {
+			energy = 100
+		}
+	}
+
+	possible = {
+		from = { has_technology = tech_starbase_4 }
+	}
+
+	on_build_start = {
+		fromfrom = {
+			set_graphical_culture = root.from
+		}
+	}
+}
+
 # Restored Dyson Sphere
 dyson_sphere_restored = {
 	construction_blocks_others = no
@@ -291,13 +323,13 @@ dyson_sphere_restored = {
 	construction_entity = "dyson_sphere_part_4_entity"
 	portrait = "GFX_megastructure_dyson_sphere_background"
 	upgrade_from = {
-		dyson_sphere_ruined
+		dyson_sphere_improvised
 	}
-	build_time = 7200
+	build_time = 6000
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
+			alloys = 18000
 		}
 
 		produces = {

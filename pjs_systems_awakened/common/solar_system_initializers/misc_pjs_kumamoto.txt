@@ -44,8 +44,6 @@ misc_pjs_kumamoto = {
 
             generate_mineral_deposits = yes
             generate_crystals_deposit = yes
-            generate_motes_deposit = yes
-            generate_gases_deposit = yes
             generate_betharian_deposit = yes
             generate_pets_deposit = yes
         }

@@ -281,6 +281,49 @@ matter_decompressor_ruined = {
 	}
 }
 
+# Improvised Matter Decompressor
+matter_decompressor_improvised = {
+	construction_blocks_others = no
+	entity = "matter_decompressor_destroyed_01_entity"
+	construction_entity = "matter_decompressor_destroyed_01_entity"
+	portrait = "GFX_megastructure_matter_decompressor_background"
+	entity_offset = { x = -20 y = -20 }
+	rotate_to_center = yes
+	scale_offset = yes
+	place_entity_on_planet_plane = no
+
+	upgrade_from = {
+		matter_decompressor_ruined
+	}
+
+	build_time = 1200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+
+		produces = {
+			minerals = 100
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	possible = {
+		from = { has_technology = tech_starbase_4 }
+	}
+
+	on_build_start = {
+		fromfrom = {
+			set_graphical_culture = root.from
+		}
+	}
+}
+
 # Restored Matter Decompressor
 matter_decompressor_restored = {
 	construction_blocks_others = no
@@ -293,15 +336,15 @@ matter_decompressor_restored = {
 	place_entity_on_planet_plane = no
 
 	upgrade_from = {
-		matter_decompressor_ruined
+		matter_decompressor_improvised
 	}
 
-	build_time = 4800
+	build_time = 3600
 
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
+			alloys = 18000
 		}
 
 		produces = {

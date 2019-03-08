@@ -204,12 +204,7 @@ misc_pjs_miyagi = {
     }
 
 	neighbor_system = {
-		distance = { min = 10 max = 30 }
-		initializer = "misc_pjs_kochi"
-	}
-
-	neighbor_system = {
-		distance = { min = 10 max = 30 }
+		distance = { min = 10 max = 40 }
 		initializer = "misc_pjs_kumamoto"
 	}
 }
