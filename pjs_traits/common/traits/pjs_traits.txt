@@ -1,11 +1,30 @@
-trait_pjs_photosynthetic = {
+trait_pjs_eldar = {
 	cost = 4
+	potential_crossbreeding_chance = 0.25
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_solitary" "trait_communal" }
+    modifier = {
+        leader_age = 800
+		army_damage_mult = 0.25
+        planet_pops_organics_food_upkeep_mult = -0.25
+		pop_growth_from_immigration = 0.1
+		pop_government_ethic_attraction = 0.1
+		planet_pops_consumer_goods_upkeep_mult = -0.1
+		pop_happiness = 0.05
+		pop_housing_usage_mult = 0.1
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_pjs_photosynthetic = {
+	cost = 3
 	potential_crossbreeding_chance = 0.15
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_pjs_partial_photosynthetic" }
 	modifier = {
 		planet_pops_organics_food_upkeep_mult = -1
 	}
+    ai_weight = { weight = 0 }
 }
 
 trait_pjs_partial_photosynthetic = {
@@ -16,6 +35,7 @@ trait_pjs_partial_photosynthetic = {
 	modifier = {
 		planet_pops_organics_food_upkeep_mult = -0.5
 	}
+    ai_weight = { weight = 0 }
 }
 
 trait_pjs_psionic = {
@@ -29,4 +49,5 @@ trait_pjs_psionic = {
 	ai_weight = {
 		weight = 0
 	}
+    ai_weight = { weight = 0 }
 }

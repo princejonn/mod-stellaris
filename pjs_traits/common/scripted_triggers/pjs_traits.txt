@@ -1,3 +1,9 @@
+is_eldar_trait = {
+	owner_species = {
+		has_trait = trait_pjs_eldar
+	}
+}
+
 is_psionic_trait = {
 	owner_species = {
 		has_trait = trait_pjs_psionic

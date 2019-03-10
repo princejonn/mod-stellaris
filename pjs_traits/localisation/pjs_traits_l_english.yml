@@ -1,5 +1,8 @@
 ﻿l_english:
 
+  trait_pjs_eldar:0 "Eldar"
+  trait_pjs_eldar_desc:0 "Eldar (singular Elda) was the name given to the Elves by the Vala Oromë when he first found them wandering in the starlight of Cuiviénen. At first, the name was applied to all Elves, but after the summons of the Valar, it came to be used only for the West-elves who followed the summons and began the Great Journey."
+
   trait_pjs_partial_photosynthetic:0 "Partially Photosynthetic"
   trait_pjs_partial_photosynthetic_desc:0 "$trait_pjs_photosynthetic_desc$"
 

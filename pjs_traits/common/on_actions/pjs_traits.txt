@@ -1,5 +1,6 @@
 on_game_start = {
 	events = {
+		pjs_traits_eldar_event.1
 		pjs_traits_psionic_event.1
 	}
 }
