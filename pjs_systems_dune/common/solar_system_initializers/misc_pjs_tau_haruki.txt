@@ -59,8 +59,16 @@ misc_pjs_tau_haruki = {
         init_effect = {
             prevent_anomaly = yes
 
+            add_deposit = d_kaitain_hassik_iii_center_deposit
+            add_deposit = d_kaitain_imperial_necropolis_deposit
+            add_deposit = d_kaitain_imperial_observatory_deposit
+            add_deposit = d_kaitain_imperial_palace_deposit
+            add_deposit = d_kaitain_imperial_prison_deposit
+            add_deposit = d_kaitain_ishaq_hall_deposit
+            add_deposit = d_kaitain_landsraad_hall_deposit
+
             while = {
-                count = 10
+                count = 5
 			    add_deposit = d_ruined_arcology
             }
         }

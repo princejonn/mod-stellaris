@@ -1,11 +1,14 @@
 d_arrakis_deposit = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
-
 	icon = d_dust_desert
 
 	potential = {
 		can_have_habitable_deposits = yes
+	}
+
+	drop_weight = {
+		weight = 0
 	}
 
 	planet_modifier = {
@@ -22,11 +25,143 @@ d_arrakis_deposit = {
 			sr_zro = 2
 		}
 	}
+}
+
+d_kaitain_hassik_iii_center_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_building
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
 
 	drop_weight = {
 		weight = 0
-		modifier = {
-			factor = 0
+	}
+
+    resources = {
+		category = planet_deposits
+		produces = {
+            unity = 10
+		}
+	}
+}
+
+d_kaitain_imperial_necropolis_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_building_complex
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+	planet_modifier = {
+        pop_ethic_spiritualist_attraction_mult = 0.1
+	}
+}
+
+d_kaitain_imperial_observatory_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_building
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+    resources = {
+		category = planet_deposits
+		produces = {
+            physics_research = 20
+            engineering_research = 20
+		}
+	}
+}
+
+d_kaitain_imperial_palace_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_city
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+	planet_modifier = {
+        pop_government_ethic_attraction = 0.5
+	}
+}
+
+d_kaitain_imperial_prison_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_quarantine_zone
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+	planet_modifier = {
+        planet_stability_add = 5
+	}
+}
+
+d_kaitain_ishaq_hall_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_monument
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+    resources = {
+		category = planet_deposits
+		produces = {
+            society_research = 20
+		}
+	}
+}
+
+d_kaitain_landsraad_hall_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_city
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+    resources = {
+		category = planet_deposits
+		produces = {
+            unity = 10
 		}
 	}
 }
