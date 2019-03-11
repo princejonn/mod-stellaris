@@ -202,9 +202,4 @@ misc_pjs_miyagi = {
             }
         }
     }
-
-	neighbor_system = {
-		distance = { min = 10 max = 40 }
-		initializer = "misc_pjs_kumamoto"
-	}
 }

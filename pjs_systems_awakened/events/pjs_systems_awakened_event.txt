@@ -47,6 +47,46 @@ event = {
             }
 
             set_graphical_culture = root.from
+
+            owner = {
+                give_technology = { tech = "tech_physics_1" message = no }
+                give_technology = { tech = "tech_society_1" message = no }
+                give_technology = { tech = "tech_engineering_1" message = no }
+                give_technology = { tech = "tech_planetary_unification" message = no }
+
+                give_technology = { tech = "tech_wormhole_stabilization" message = no }
+                give_technology = { tech = "tech_experimental_subspace_navigation" message = no }
+                give_technology = { tech = "tech_psionic_theory" message = no }
+                give_technology = { tech = "tech_mine_zro" message = no }
+
+                add_resource = { energy = 2000 }
+                add_resource = { minerals = 2000 }
+                if = {
+                    limit = { is_machine_empire = no }
+                    add_resource = { food = 2000 }
+                }
+                add_resource = { alloys = 500 }
+                if = {
+                    limit = { is_gestalt = no }
+                    add_resource = { consumer_goods = 500 }
+                }
+                add_resource = { influence = 500 }
+                add_resource = { unity = 500 }
+            }
+
+            owner_species = {
+                remove_trait = trait_pc_desert_preference
+                remove_trait = trait_pc_arid_preference
+                remove_trait = trait_pc_savannah_preference
+                remove_trait = trait_pc_tropical_preference
+                remove_trait = trait_pc_continental_preference
+                remove_trait = trait_pc_ocean_preference
+                remove_trait = trait_pc_arctic_preference
+                remove_trait = trait_pc_tundra_preference
+                remove_trait = trait_pc_alpine_preference
+
+                add_trait = trait_pc_gaia_preference
+            }
         }
 	}
 }

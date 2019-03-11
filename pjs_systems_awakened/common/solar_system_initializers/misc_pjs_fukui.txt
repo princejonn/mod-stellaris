@@ -120,14 +120,9 @@ misc_pjs_fukui = {
 
 	init_effect = {
         spawn_megastructure = {
-            type = "spy_orb_2"
+            type = "spy_orb_ruined"
             location = event_target:spy_orb_target
             graphical_culture = "humanoid_01"
         }
     }
-
-	neighbor_system = {
-		distance = { min = 10 max = 40 }
-		initializer = "misc_pjs_aomori"
-	}
 }

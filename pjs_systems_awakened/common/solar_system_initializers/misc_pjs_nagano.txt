@@ -187,9 +187,4 @@ misc_pjs_nagano = {
             graphical_culture = "humanoid_01"
         }
     }
-
-	neighbor_system = {
-		distance = { min = 10 max = 40 }
-		initializer = "misc_pjs_shizuoka"
-	}
 }

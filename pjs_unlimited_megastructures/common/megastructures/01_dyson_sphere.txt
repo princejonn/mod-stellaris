@@ -306,7 +306,7 @@ dyson_sphere_improvised = {
 	}
 
 	possible = {
-		from = { has_technology = tech_starbase_4 }
+		from = { has_technology = tech_starbase_5 }
 	}
 
 	on_build_start = {

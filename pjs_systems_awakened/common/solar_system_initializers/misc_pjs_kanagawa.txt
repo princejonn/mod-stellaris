@@ -122,9 +122,4 @@ misc_pjs_kanagawa = {
             graphical_culture = "humanoid_01"
         }
     }
-
-	neighbor_system = {
-		distance = { min = 10 max = 40 }
-		initializer = "misc_pjs_yamanashi"
-	}
 }
