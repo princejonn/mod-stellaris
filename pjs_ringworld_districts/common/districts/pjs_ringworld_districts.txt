@@ -1,0 +1,122 @@
+district_ringworld_regular = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_ringworld_habitable
+		from = { is_gestalt = no }
+	}
+
+	potential = {
+		is_planet_class = pc_ringworld_habitable
+		from = { is_gestalt = no }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+
+        job_researcher_add = 2
+        job_fabricator_add = 2
+        job_artisan_add = 2
+	}
+
+	triggered_desc = {
+		text = job_district_ringworld_regular_desc
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+district_ringworld_hive = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_ringworld_habitable
+		from = { is_hive_empire = yes }
+	}
+
+	potential = {
+		is_planet_class = pc_ringworld_habitable
+		from = { is_hive_empire = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+
+        job_brain_drone_add = 2
+        job_alloy_drone_add = 2
+        job_technician_drone_add = 2
+	}
+
+	triggered_desc = {
+		text = job_district_ringworld_hive_desc
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+district_ringworld_machine = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_ringworld_habitable
+		from = { is_machine_empire = yes }
+	}
+
+	potential = {
+		is_planet_class = pc_ringworld_habitable
+		from = { is_machine_empire = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+
+        job_calculator_add = 2
+        job_fabricator_add = 2
+        job_technician_drone_add = 2
+	}
+
+	triggered_desc = {
+		text = job_district_ringworld_machine_desc
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
