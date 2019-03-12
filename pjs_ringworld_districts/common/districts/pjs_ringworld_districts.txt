@@ -1,15 +1,13 @@
-district_ringworld_regular = {
+district_ringworld_uncapped = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
 		is_planet_class = pc_ringworld_habitable
-		from = { is_gestalt = no }
 	}
 
 	potential = {
 		is_planet_class = pc_ringworld_habitable
-		from = { is_gestalt = no }
 	}
 
 	resources = {
@@ -18,101 +16,71 @@ district_ringworld_regular = {
 			minerals = @base_cost
 		}
 		upkeep = {
-			energy = 6
+			energy = 4
 		}
 	}
 
 	planet_modifier = {
-		planet_housing_add = 4
+		planet_housing_add = 2
+	}
 
-        job_researcher_add = 1
-        job_fabricator_add = 1
-        job_artisan_add = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+            job_researcher_add = 1
+            job_fabricator_add = 1
+            job_artisan_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+            job_brain_drone_add = 1
+            job_alloy_drone_add = 1
+            job_technician_drone_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+            job_calculator_add = 1
+            job_fabricator_add = 1
+            job_technician_drone_add = 1
+		}
 	}
 
 	triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
 		text = job_district_ringworld_regular_desc
 	}
 
-	ai_weight = {
-		weight = 2
-	}
-}
-
-district_ringworld_hive = {
-	base_buildtime = 240
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-		is_planet_class = pc_ringworld_habitable
-		from = { is_hive_empire = yes }
-	}
-
-	potential = {
-		is_planet_class = pc_ringworld_habitable
-		from = { is_hive_empire = yes }
-	}
-
-	resources = {
-		category = planet_districts
-		cost = {
-			minerals = @base_cost
-		}
-		upkeep = {
-			energy = 6
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 4
-
-        job_brain_drone_add = 1
-        job_alloy_drone_add = 1
-        job_technician_drone_add = 1
-	}
-
 	triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_hive_empire = yes }
+        }
 		text = job_district_ringworld_hive_desc
 	}
 
-	ai_weight = {
-		weight = 2
-	}
-}
-
-district_ringworld_machine = {
-	base_buildtime = 240
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-		is_planet_class = pc_ringworld_habitable
-		from = { is_machine_empire = yes }
-	}
-
-	potential = {
-		is_planet_class = pc_ringworld_habitable
-		from = { is_machine_empire = yes }
-	}
-
-	resources = {
-		category = planet_districts
-		cost = {
-			minerals = @base_cost
-		}
-		upkeep = {
-			energy = 6
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 4
-
-        job_calculator_add = 1
-        job_fabricator_add = 1
-        job_technician_drone_add = 1
-	}
-
 	triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_machine_empire = yes }
+        }
 		text = job_district_ringworld_machine_desc
 	}
 

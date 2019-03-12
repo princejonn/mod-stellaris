@@ -1,16 +1,8 @@
 ﻿l_english:
 
-  district_ringworld_regular:0 "Ringworld District"
-  district_ringworld_regular_plural:0 "Ringworld Districts"
-  district_ringworld_regular_desc:0 "Specialized Ringworld district custom built to accommodate some of our more complex undertakings."
-
-  district_ringworld_hive:0 "$district_ringworld_regular$"
-  district_ringworld_hive_plural:0 "$district_ringworld_regular_plural$"
-  district_ringworld_hive_desc:0 "$district_ringworld_regular_desc$"
-
-  district_ringworld_machine:0 "$district_ringworld_regular$"
-  district_ringworld_machine_plural:0 "$district_ringworld_regular_plural$"
-  district_ringworld_machine_desc:0 "$district_ringworld_regular_desc$"
+  district_ringworld_uncapped:0 "Ringworld District"
+  district_ringworld_uncapped_plural:0 "Ringworld Districts"
+  district_ringworld_uncapped_desc:0 "Specialized Ringworld district custom built to accommodate some of our more complex undertakings."
 
   job_district_ringworld_regular_desc:0 "$job_researcher_effect_desc$\n$job_fabricator_effect_desc$\n$job_artisan_effect_desc$"
   job_district_ringworld_hive_desc:0 "$job_brain_drone_effect_desc$\n$job_alloy_drone_effect_desc$\n$job_technician_drone_effect_desc$"
