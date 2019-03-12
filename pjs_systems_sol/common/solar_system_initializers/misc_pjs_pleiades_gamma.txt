@@ -108,7 +108,7 @@ misc_pjs_pleiades_gamma = {
 		class = "pc_frozen"
 		size = 30
 		orbit_distance = 50
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = yes
 	}
 

@@ -1,5 +1,11 @@
 on_game_start = {
 	events = {
-		pjs_dune_gamestart_event.1
+		pjs_systems_dune.1
+	}
+}
+
+empire_init_capital_planet = {
+	events = {
+		pjs_systems_dune.2
 	}
 }

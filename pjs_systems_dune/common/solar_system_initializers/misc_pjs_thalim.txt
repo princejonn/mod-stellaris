@@ -8,54 +8,56 @@ misc_pjs_thalim = {
 
     planet = {
         class = "pc_a_star"
-        size = 42
+        size = 36
         orbit_distance = 0
-        orbit_angle = { min = 0 max = 350 }
+        orbit_angle = 1
         has_ring = no
     }
 
-    change_orbit = 40
+    change_orbit = 30
 
     planet = {
         name = "Tleilaxa"
         class = "pc_continental"
         size = 25
-        orbit_distance = 40
-        orbit_angle = { min = 10 max = 350 }
+        orbit_distance = 50
+        orbit_angle = { min = 20 max = 220 }
+
+		change_orbit = @base_moon_distance
 
         moon = {
             name = "Alexander"
-            class = random_non_colonizable
+            class = "pc_barren"
             size = 5
-            orbit_distance = 11
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
         moon = {
             name = "Zephyros"
-            class = random_non_colonizable
+            class = "pc_barren_cold"
             size = 4
-            orbit_distance = { min = 4 max = 6 }
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
         moon = {
             name = "Corinna"
-            class = random_non_colonizable
+            class = "pc_frozen"
             size = 6
-            orbit_distance = { min = 4 max = 6 }
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
         moon = {
             name = "Euripides"
-            class = random_non_colonizable
+            class = "pc_frozen"
             size = 5
-            orbit_distance = { min = 4 max = 6 }
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }

@@ -31,7 +31,7 @@ misc_pjs_delta_ridge = {
         class = ideal_planet_class
         size = 20
         orbit_distance = 25
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
@@ -47,7 +47,7 @@ misc_pjs_delta_ridge = {
             class = "pc_molten"
             size = 7
             orbit_distance = 2
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -61,7 +61,7 @@ misc_pjs_delta_ridge = {
         class = ideal_planet_class
         size = 20
         orbit_distance = 40
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
@@ -121,7 +121,7 @@ misc_pjs_delta_ridge = {
         class = "pc_shattered"
         size = 20
         orbit_distance = 5
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 
 		init_effect = {
             prevent_anomaly = yes
@@ -135,7 +135,7 @@ misc_pjs_delta_ridge = {
             class = "pc_broken"
             size = 5
             orbit_distance = 8
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -149,7 +149,7 @@ misc_pjs_delta_ridge = {
         class = "pc_gas_giant"
         size = 28
         orbit_distance = 25
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 
 		change_orbit = @base_moon_distance
 
@@ -157,7 +157,7 @@ misc_pjs_delta_ridge = {
             class = "pc_frozen"
             size = 5
             orbit_distance = 2
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
@@ -165,7 +165,7 @@ misc_pjs_delta_ridge = {
             class = "pc_frozen"
             size = 4
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
@@ -173,7 +173,7 @@ misc_pjs_delta_ridge = {
             class = "pc_frozen"
             size = 4
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }
@@ -182,6 +182,6 @@ misc_pjs_delta_ridge = {
         class = "pc_barren_cold"
         size = 18
         orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
     }
 }

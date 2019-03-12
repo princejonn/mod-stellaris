@@ -26,7 +26,7 @@ misc_pjs_stephen_hawkings_void = {
 		class = "pc_gas_giant"
 		size = 30
 		orbit_distance = 35
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
 		init_effect = {
@@ -40,7 +40,7 @@ misc_pjs_stephen_hawkings_void = {
             class = "pc_barren_cold"
             size = 8
             orbit_distance = 4
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -53,7 +53,7 @@ misc_pjs_stephen_hawkings_void = {
             class = "pc_frozen"
             size = 6
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {

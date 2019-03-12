@@ -1,46 +1,49 @@
 misc_pjs_tau_haruki = {
     name = "Tau Haruki"
-    class = rl_standard_stars
-    flags = { pjs_dune_tau_haruki }
+	class = "sc_b"
 
     usage = misc_system_init
-	usage_odds = { base = 0 }
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 0
 
     planet = {
-        class = star
-        size = 31
+        class = "pc_b_star"
+        size = 30
         orbit_distance = 0
-        orbit_angle = { min = 0 max = 350 }
+        orbit_angle = 1
         has_ring = no
     }
 
     change_orbit = 45
 
     planet = {
-        class = random_non_colonizable
+        class = "pc_toxic"
         size = 18
-        orbit_distance = 20
-        orbit_angle = { min = 10 max = 350 }
-    }
-
-    planet = {
-        class = rl_habitable_normal
-        size = 12
         orbit_distance = 25
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
     }
 
     planet = {
-        class = rl_habitable_normal
+        class = ideal_planet_class
         size = 14
         orbit_distance = 25
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
+    }
+
+    planet = {
+        class = ideal_planet_class
+        size = 16
+        orbit_distance = 25
+        orbit_angle = { min = 20 max = 220 }
+
+		change_orbit = @base_moon_distance
 
         moon = {
             class = random_non_colonizable
             size = { min = 4 max = 6 }
-            orbit_distance = { min = 8 max = 10 }
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }
@@ -48,9 +51,9 @@ misc_pjs_tau_haruki = {
     planet = {
         name = "Kaitain"
         class = "pc_city"
-        size = 30
-        orbit_distance = 35
-        orbit_angle = { min = 10 max = 350 }
+        size = 28
+        orbit_distance = 40
+        orbit_angle = { min = 20 max = 220 }
         modifiers = none
         has_ring = yes
 
@@ -58,6 +61,12 @@ misc_pjs_tau_haruki = {
 
         init_effect = {
             prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_building = building_affluence_center
+            add_building = building_nourishment_center
+			add_building = building_dimensional_fabricator
+            add_building = building_class_4_singularity
 
             add_deposit = d_kaitain_hassik_iii_center_deposit
             add_deposit = d_kaitain_imperial_necropolis_deposit
@@ -68,7 +77,7 @@ misc_pjs_tau_haruki = {
             add_deposit = d_kaitain_landsraad_hall_deposit
 
             while = {
-                count = 5
+                count = 8
 			    add_deposit = d_ruined_arcology
             }
         }
@@ -79,8 +88,8 @@ misc_pjs_tau_haruki = {
             name = "Vutier II"
             class = "pc_barren"
             size = 5
-            orbit_distance = 4
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 6
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
@@ -89,7 +98,7 @@ misc_pjs_tau_haruki = {
             class = "pc_barren_cold"
             size = 6
             orbit_distance = 2
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
@@ -98,7 +107,7 @@ misc_pjs_tau_haruki = {
             class = "pc_barren_cold"
             size = 4
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
@@ -107,29 +116,40 @@ misc_pjs_tau_haruki = {
             class = "pc_frozen"
             size = 5
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }
 
     planet = {
-        class = random_non_colonizable
+        class = "pc_barren"
         size = 22
         orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
     }
 
     planet = {
-        class = random_non_colonizable
-        size = 26
-        orbit_distance = 25
-        orbit_angle = { min = 10 max = 350 }
+        class = "pc_gas_giant"
+        size = 29
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+        has_ring = yes
+
+		change_orbit = @base_moon_distance
 
         moon = {
-            class = random_non_colonizable
+            class = "pc_barren_cold"
+            size = 6
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+
+        moon = {
+            class = "pc_barren_cold"
             size = 7
-            orbit_distance = 13
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }

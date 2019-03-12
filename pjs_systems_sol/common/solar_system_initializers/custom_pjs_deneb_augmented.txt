@@ -131,7 +131,7 @@ custom_pjs_deneb_augmented = {
 		class = ideal_planet_class
 		size = 22
 		orbit_distance = 25
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
         deposit_blockers = none
@@ -141,7 +141,7 @@ custom_pjs_deneb_augmented = {
 		name = "Marble"
 		class = "pc_barren_cold"
 		orbit_distance = 20
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		size = 10
 		has_ring = no
 	}
@@ -151,7 +151,7 @@ custom_pjs_deneb_augmented = {
 		class = "pc_gas_giant"
 		size = 30
 		orbit_distance = 20
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 		entity = "gas_giant_05_entity"
 
@@ -174,7 +174,7 @@ custom_pjs_deneb_augmented = {
 		class = "pc_barren"
 		size = 15
 		orbit_distance = 20
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 	}
 
@@ -183,7 +183,7 @@ custom_pjs_deneb_augmented = {
 		class = "pc_frozen"
 		size = 20
 		orbit_distance = 20
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
         init_effect = {

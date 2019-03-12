@@ -26,7 +26,7 @@ misc_pjs_catana_118 = {
 		class = "pc_shattered"
 		size = 27
 		orbit_distance = 55
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
 		init_effect = {
@@ -42,7 +42,7 @@ misc_pjs_catana_118 = {
 	        name = "Catana 118 Ia"
 			class = "pc_broken"
 		    size = 13
-			orbit_angle = { min = 10 max = 350 }
+			orbit_angle = { min = 20 max = 220 }
 			orbit_distance = 6
 
             init_effect = {

@@ -11,7 +11,7 @@ misc_pjs_psi_draconis = {
         class = "pc_f_star"
         size = 26
         orbit_distance = 0
-        orbit_angle = { min = 0 max = 350 }
+        orbit_angle = 1
         has_ring = no
     }
 
@@ -21,23 +21,25 @@ misc_pjs_psi_draconis = {
         name = "Gamont"
         class = rl_habitable_normal
         size = 16
-        orbit_distance = 31
-        orbit_angle = { min = 10 max = 350 }
+        orbit_distance = 25
+        orbit_angle = { min = 20 max = 220 }
     }
 
     planet = {
         name = "Grumman"
         class = rl_habitable_normal
-        size = 14
-        orbit_distance = 28
-        orbit_angle = { min = 10 max = 350 }
+        size = 16
+        orbit_distance = 25
+        orbit_angle = { min = 20 max = 220 }
+
+		change_orbit = @base_moon_distance
 
         moon = {
             name = "Eustathius"
-            class = random_non_colonizable
+            class = "pc_barren"
             size = 4
-            orbit_distance = 9
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }
@@ -45,25 +47,27 @@ misc_pjs_psi_draconis = {
     planet = {
         name = "Niushe"
         class = rl_habitable_normal
-        size = 20
-        orbit_distance = 32
-        orbit_angle = { min = 10 max = 350 }
+        size = 25
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+
+		change_orbit = @base_moon_distance
 
         moon = {
             name = "Nike"
-            class = random_non_colonizable
+            class = "pc_barren"
             size = 5
-            orbit_distance = 8
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 1
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
         moon = {
             name = "Daphne"
-            class = random_non_colonizable
+            class = "pc_barren"
             size = 4
-            orbit_distance = { min = 4 max = 6 }
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }

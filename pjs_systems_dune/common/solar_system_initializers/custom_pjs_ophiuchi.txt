@@ -1,14 +1,9 @@
 custom_pjs_ophiuchi = {
     name = "Ophiuchi"
     class = "sc_k"
-    usage = custom_empire
-    flags = { empire_home_system pjs_dune_ophiuchi }
+	usage = custom_empire
+	flags = { empire_home_system dune_ophiuchi }
 	usage_odds = { base = 0 }
-
-    asteroid_belt = {
-        type = rocky_asteroid_belt
-        radius = 90
-    }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -17,39 +12,43 @@ custom_pjs_ophiuchi = {
 				set_star_flag = empire_cluster
 			}
 		}
-
-		generate_home_system_resources = yes
 	}
+
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 90
+    }
 
     planet = {
         class = "pc_k_star"
         size = 35
         orbit_distance = 0
-        orbit_angle = { min = 0 max = 350 }
+        orbit_angle = 1
         has_ring = no
     }
 
     change_orbit = 30
 
     planet = {
-        class = random_non_colonizable
+        class = "pc_molten"
         size = 20
         orbit_distance = 15
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
     }
 
     planet = {
-        class = random_non_colonizable
+        class = "pc_toxic"
         size = 12
         orbit_distance = 15
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
     }
 
+    change_orbit = 30
+
 	planet = {
-		name = "OPC-2"
 		class = "pc_asteroid"
-		size = 5
-		orbit_distance = 30
+		size = 6
+		orbit_distance = 0
 		orbit_angle = 20
 		has_ring = no
 
@@ -59,9 +58,8 @@ custom_pjs_ophiuchi = {
 	}
 
 	planet = {
-		name = "OPC-4"
 		class = "pc_asteroid"
-		size = 5
+		size = 7
 		orbit_distance = 0
 		orbit_angle = 120
 		has_ring = no
@@ -71,12 +69,26 @@ custom_pjs_ophiuchi = {
 		}
 	}
 
+	planet = {
+		class = "pc_asteroid"
+		size = 7
+		orbit_distance = 0
+		orbit_angle = 80
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_minerals_2
+		}
+	}
+
+    change_orbit = 30
+
     planet = {
         name = "Giedi Prime"
-        class = "pc_nuked"
+        class = ideal_planet_class
         size = 16
-        orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_distance = 10
+        orbit_angle = { min = 20 max = 220 }
         modifiers = none
 
         starting_planet = yes
@@ -84,7 +96,6 @@ custom_pjs_ophiuchi = {
 
         init_effect = {
             prevent_anomaly = yes
-            change_pc = pc_nuked
         }
     }
 

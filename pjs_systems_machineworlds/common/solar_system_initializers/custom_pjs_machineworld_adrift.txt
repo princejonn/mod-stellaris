@@ -33,7 +33,7 @@ custom_pjs_machineworld_adrift = {
         class = "pc_machine"
         size = 25
         orbit_distance = 55
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = no
         modifiers = none
         deposit_blockers = none
@@ -50,7 +50,7 @@ custom_pjs_machineworld_adrift = {
             class = "pc_machine"
             size = 16
             orbit_distance = 16
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
             modifiers = none
             deposit_blockers = none
@@ -61,7 +61,7 @@ custom_pjs_machineworld_adrift = {
             class = "pc_nuked"
             size = 16
             orbit_distance = 14
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
             modifiers = none
             deposit_blockers = none

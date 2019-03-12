@@ -27,7 +27,7 @@ misc_pjs_olympus = {
         class = "pc_molten"
         size = 16
         orbit_distance = 15
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
     }
 
     planet = {
@@ -35,7 +35,7 @@ misc_pjs_olympus = {
         class = "pc_barren"
         size = 22
         orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 
 		change_orbit = @base_moon_distance
 
@@ -44,7 +44,7 @@ misc_pjs_olympus = {
             class = "pc_barren"
             size = 7
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -59,7 +59,7 @@ misc_pjs_olympus = {
         class = "pc_gaia"
         size = 22
         orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
@@ -76,7 +76,7 @@ misc_pjs_olympus = {
             class = "pc_barren_cold"
             size = 5
             orbit_distance = 1
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -90,7 +90,7 @@ misc_pjs_olympus = {
             class = "pc_barren_cold"
             size = 4
             orbit_distance = 4
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -105,7 +105,7 @@ misc_pjs_olympus = {
         class = "pc_gaia"
         size = 22
         orbit_distance = 25
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
@@ -121,7 +121,7 @@ misc_pjs_olympus = {
         class = "pc_gas_giant"
         size = 30
         orbit_distance = 35
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = yes
 
 		change_orbit = @base_moon_distance
@@ -131,7 +131,7 @@ misc_pjs_olympus = {
             class = "pc_barren"
             size = 5
             orbit_distance = 4
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -145,7 +145,7 @@ misc_pjs_olympus = {
             class = "pc_barren_cold"
             size = 4
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -159,7 +159,7 @@ misc_pjs_olympus = {
             class = "pc_frozen"
             size = 6
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {

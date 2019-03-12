@@ -132,7 +132,7 @@ custom_pjs_machineworld_trinary = {
         class = "pc_machine"
         size = 25
         orbit_distance = 25
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = no
         modifiers = none
         deposit_blockers = none
@@ -150,7 +150,7 @@ custom_pjs_machineworld_trinary = {
         class = "pc_machine"
         size = 20
         orbit_distance = 20
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = no
         modifiers = none
         deposit_blockers = none

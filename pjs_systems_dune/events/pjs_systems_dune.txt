@@ -1,22 +1,22 @@
-namespace = pjs_dune_gamestart_event
+namespace = pjs_systems_dune
 
 event = {
-	id = pjs_dune_gamestart_event.1
+	id = pjs_systems_dune.1
 
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
 		if = {
-			limit = { NOT = { any_system = { has_star_flag = pjs_dune_delta_pavonis } } }
+			limit = { NOT = { any_system = { has_star_flag = dune_delta_pavonis } } }
 			random_system = { spawn_system = { initializer = misc_pjs_delta_pavonis } }
 		}
 		if = {
-			limit = { NOT = { any_system = { has_star_flag = pjs_dune_ophiuchi } } }
+			limit = { NOT = { any_system = { has_star_flag = dune_ophiuchi } } }
 			random_system = { spawn_system = { initializer = misc_pjs_ophiuchi } }
 		}
 		if = {
-			limit = { NOT = { any_system = { has_star_flag = pjs_dune_tau_haruki } } }
+			limit = { NOT = { any_system = { has_star_flag = dune_tau_haruki } } }
 			random_system = { spawn_system = { initializer = misc_pjs_tau_haruki } }
 		}
 	}

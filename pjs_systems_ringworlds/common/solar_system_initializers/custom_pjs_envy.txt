@@ -111,7 +111,7 @@ custom_pjs_envy = {
         class = ideal_planet_class
         size = 25
         orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
         modifiers = none
         deposit_blockers = none
 
@@ -128,7 +128,7 @@ custom_pjs_envy = {
             class = random_non_colonizable
             size = 6
             orbit_distance = 2
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
         }
     }
 
@@ -153,7 +153,7 @@ custom_pjs_envy = {
             class = "pc_broken"
             size = 6
             orbit_distance = 4
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = yes
 
             init_effect = {
@@ -166,7 +166,7 @@ custom_pjs_envy = {
             class = "pc_broken"
             size = 5
             orbit_distance = 3
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = yes
 
             init_effect = {

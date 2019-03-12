@@ -25,7 +25,7 @@ misc_pjs_miyagi = {
 		class = "pc_molten"
 		size = 14
 		orbit_distance = 10
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = yes
 
         init_effect = {
@@ -38,7 +38,7 @@ misc_pjs_miyagi = {
 		class = "pc_toxic"
 		size = 18
 		orbit_distance = 20
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
         init_effect = {
@@ -51,7 +51,7 @@ misc_pjs_miyagi = {
 		class = "pc_gas_giant"
 		size = 35
 		orbit_distance = 60
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
 		change_orbit = @base_moon_distance
@@ -61,7 +61,7 @@ misc_pjs_miyagi = {
 			class = "pc_city"
 			size = 25
 			orbit_distance = 10
-			orbit_angle = { min = 10 max = 350 }
+			orbit_angle = { min = 20 max = 220 }
 			has_ring = no
 
             init_effect = {
@@ -127,7 +127,7 @@ misc_pjs_miyagi = {
 		class = "pc_shielded"
 		size = 20
 		orbit_distance = 40
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
 		init_effect = {
@@ -141,7 +141,7 @@ misc_pjs_miyagi = {
 		class = "pc_gas_giant"
 		size = 30
 		orbit_distance = 40
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = yes
 
         init_effect = {
@@ -155,7 +155,7 @@ misc_pjs_miyagi = {
 			class = "pc_barren_cold"
 			size = 7
 			orbit_distance = 2
-			orbit_angle = { min = 10 max = 350 }
+			orbit_angle = { min = 20 max = 220 }
 			has_ring = no
 
             init_effect = {
@@ -168,7 +168,7 @@ misc_pjs_miyagi = {
 			class = "pc_frozen"
 			size = 6
 			orbit_distance = 2
-			orbit_angle = { min = 10 max = 350 }
+			orbit_angle = { min = 20 max = 220 }
 			has_ring = no
 		}
 
@@ -176,7 +176,7 @@ misc_pjs_miyagi = {
 			class = "pc_frozen"
 			size = 6
 			orbit_distance = 2
-			orbit_angle = { min = 10 max = 350 }
+			orbit_angle = { min = 20 max = 220 }
 			has_ring = no
 		}
 	}

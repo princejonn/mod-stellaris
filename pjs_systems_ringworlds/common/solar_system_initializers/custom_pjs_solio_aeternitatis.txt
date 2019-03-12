@@ -18,7 +18,7 @@ custom_pjs_solio_aeternitatis = {
 		class = "pc_black_hole"
 		size = 20
         orbit_distance = 0
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 
 		init_effect = {
 		    set_deposit = d_physics_10

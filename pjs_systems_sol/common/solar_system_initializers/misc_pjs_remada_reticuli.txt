@@ -30,7 +30,7 @@ misc_pjs_remada_reticuli = {
 		class = "pc_molten"
 		size = 16
 		orbit_distance = 15
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 	}
 
@@ -107,7 +107,7 @@ misc_pjs_remada_reticuli = {
 		class = "pc_gas_giant"
 		size = 30
 		orbit_distance = 10
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = yes
 
 		init_effect = {
@@ -131,7 +131,7 @@ misc_pjs_remada_reticuli = {
 		class = "pc_frozen"
 		size = 18
 		orbit_distance = 24
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
 		init_effect = {
@@ -143,7 +143,7 @@ misc_pjs_remada_reticuli = {
 		class = "pc_frozen"
 		size = 12
 		orbit_distance = 20
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 		has_ring = yes
 	}
 

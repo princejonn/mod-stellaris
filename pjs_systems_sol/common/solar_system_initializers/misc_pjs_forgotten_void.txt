@@ -24,7 +24,7 @@ misc_pjs_forgotten_void = {
         class = "pc_gaia"
         size = 25
         orbit_distance = 100
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none

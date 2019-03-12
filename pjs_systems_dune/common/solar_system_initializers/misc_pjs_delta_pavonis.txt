@@ -8,33 +8,27 @@ misc_pjs_delta_pavonis = {
 
     planet = {
         class = "pc_g_star"
-        size = { min = 21 max = 28 }
+        size = 28
         orbit_distance = 0
-        orbit_angle = { min = 0 max = 350 }
+        orbit_angle = 1
         has_ring = no
     }
 
     change_orbit = 30
 
     planet = {
-        class = random_non_colonizable
-        size = { min = 16 max = 20 }
-        orbit_distance = { min = 30 max = 40 }
-        orbit_angle = { min = 10 max = 350 }
+        class = "pc_toxic"
+        size = 14
+        orbit_distance = 20
+        orbit_angle = { min = 20 max = 220 }
+
+		change_orbit = @base_moon_distance
 
         moon = {
-            class = random_non_colonizable
+            class = "pc_barren"
             size = 5
-            orbit_distance = { min = 8 max = 10 }
-            orbit_angle = { min = 10 max = 350 }
-            has_ring = no
-        }
-
-        moon = {
-            class = random_non_colonizable
-            size = 7
-            orbit_distance = { min = 6 max = 8 }
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }
@@ -43,15 +37,17 @@ misc_pjs_delta_pavonis = {
         name = "Harmonthep"
         class = "pc_ocean"
         size = 20
-        orbit_distance = 27
-        orbit_angle = { min = 10 max = 350 }
+        orbit_distance = 25
+        orbit_angle = { min = 20 max = 220 }
+
+		change_orbit = @base_moon_distance
 
         moon = {
             name = "Doris"
             class = random_non_colonizable
             size = 5
-            orbit_distance = 9
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }
@@ -60,16 +56,24 @@ misc_pjs_delta_pavonis = {
         name = "Caladan"
         class = "pc_ocean"
         size = 25
-        orbit_distance = { min = 25 max = 30 }
-        orbit_angle = { min = 10 max = 350 }
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
         modifiers = none
+
+        deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+
+		change_orbit = @base_moon_distance
 
         moon = {
             name = "Artemis"
-            class = random_non_colonizable
+            class = "pc_barren_cold"
             size = 4
-            orbit_distance = 9
-            orbit_angle = { min = 10 max = 350 }
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
     }

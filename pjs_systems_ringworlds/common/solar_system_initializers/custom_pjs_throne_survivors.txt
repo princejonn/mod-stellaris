@@ -18,7 +18,7 @@ custom_pjs_throne_survivors = {
 		class = "pc_black_hole"
 		size = 20
         orbit_distance = 0
-		orbit_angle = { min = 10 max = 350 }
+		orbit_angle = { min = 20 max = 220 }
 
 		init_effect = {
 		    save_event_target_as = dyson_sphere_target

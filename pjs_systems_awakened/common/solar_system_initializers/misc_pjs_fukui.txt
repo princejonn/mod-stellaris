@@ -26,7 +26,7 @@ misc_pjs_fukui = {
         class = "pc_barren"
         size = 14
         orbit_distance = 15
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 
 		init_effect = {
             prevent_anomaly = yes
@@ -39,7 +39,7 @@ misc_pjs_fukui = {
         class = "pc_city"
         size = 25
         orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
@@ -70,7 +70,7 @@ misc_pjs_fukui = {
         class = "pc_shielded"
         size = 25
         orbit_distance = 20
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = no
 
 		init_effect = {
@@ -85,7 +85,7 @@ misc_pjs_fukui = {
             class = "pc_barren_cold"
             size = 7
             orbit_distance = 5
-            orbit_angle = { min = 10 max = 350 }
+            orbit_angle = { min = 20 max = 220 }
             has_ring = no
 
             init_effect = {
@@ -99,7 +99,7 @@ misc_pjs_fukui = {
         class = "pc_gaia"
         size = 25
         orbit_distance = 20
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none

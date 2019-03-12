@@ -20,7 +20,7 @@ misc_pjs_antares = {
         class = ideal_planet_class
         size = 20
         orbit_distance = 50
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
@@ -35,7 +35,7 @@ misc_pjs_antares = {
         class = ideal_planet_class
         size = 20
         orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
@@ -50,7 +50,7 @@ misc_pjs_antares = {
         class = ideal_planet_class
         size = 20
         orbit_distance = 24
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none

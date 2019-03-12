@@ -15,31 +15,32 @@ misc_pjs_ophiuchi = {
         class = "pc_k_star"
         size = 35
         orbit_distance = 0
-        orbit_angle = { min = 0 max = 350 }
+        orbit_angle = 1
         has_ring = no
     }
 
     change_orbit = 30
 
     planet = {
-        class = random_non_colonizable
+        class = "pc_molten"
         size = 20
         orbit_distance = 15
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
     }
 
     planet = {
-        class = random_non_colonizable
+        class = "pc_toxic"
         size = 12
         orbit_distance = 15
-        orbit_angle = { min = 10 max = 350 }
+        orbit_angle = { min = 20 max = 220 }
     }
 
+    change_orbit = 30
+
 	planet = {
-		name = "OPC-2"
 		class = "pc_asteroid"
-		size = 5
-		orbit_distance = 30
+		size = 6
+		orbit_distance = 0
 		orbit_angle = 20
 		has_ring = no
 
@@ -49,9 +50,8 @@ misc_pjs_ophiuchi = {
 	}
 
 	planet = {
-		name = "OPC-4"
 		class = "pc_asteroid"
-		size = 5
+		size = 7
 		orbit_distance = 0
 		orbit_angle = 120
 		has_ring = no
@@ -61,12 +61,32 @@ misc_pjs_ophiuchi = {
 		}
 	}
 
+	planet = {
+		class = "pc_asteroid"
+		size = 7
+		orbit_distance = 0
+		orbit_angle = 80
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_minerals_2
+		}
+	}
+
+    change_orbit = 30
+
     planet = {
         name = "Giedi Prime"
         class = "pc_nuked"
         size = 16
-        orbit_distance = 30
-        orbit_angle = { min = 10 max = 350 }
+        orbit_distance = 10
+        orbit_angle = { min = 20 max = 220 }
         modifiers = none
+
+        deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
     }
 }
