@@ -19,10 +19,23 @@ misc_pjs_fodina_primus = {
 		orbit_angle = 1
 	}
 
-	change_orbit = 90
+	change_orbit = 30
 
 	planet = {
-		name = "FPA II"
+		class = "pc_broken"
+		size = 28
+		orbit_distance = 30
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+
+		init_effect = {
+            set_deposit = d_engineering_6
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
 		class = "pc_asteroid"
 		size = 4
 		orbit_distance = 0
@@ -35,7 +48,6 @@ misc_pjs_fodina_primus = {
 	}
 
 	planet = {
-		name = "FPA IV"
 		class = "pc_asteroid"
 		size = 6
 		orbit_distance = 0
@@ -48,7 +60,6 @@ misc_pjs_fodina_primus = {
 	}
 
 	planet = {
-		name = "FPA X"
 		class = "pc_asteroid"
 		size = 6
 		orbit_distance = 0
@@ -61,7 +72,6 @@ misc_pjs_fodina_primus = {
 	}
 
 	planet = {
-		name = "FPA XVII"
 		class = "pc_asteroid"
 		size = 5
 		orbit_distance = 0

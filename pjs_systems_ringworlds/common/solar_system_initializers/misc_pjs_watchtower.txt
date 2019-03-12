@@ -19,6 +19,8 @@ misc_pjs_watchtower = {
         }
     }
 
+	change_orbit = 45
+
     init_effect = {
         spawn_megastructure = {
             type = "ring_world_ruined"
