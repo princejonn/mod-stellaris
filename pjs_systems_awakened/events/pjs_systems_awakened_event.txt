@@ -25,8 +25,18 @@ event = {
             }
 
             while = {
-                count = 20
+                count = 18
                 add_district = district_city
+            }
+
+            while = {
+                count = 3
+                add_district = district_generator_uncapped
+            }
+
+            while = {
+                count = 3
+                add_district = district_farming_uncapped
             }
 
             while = {

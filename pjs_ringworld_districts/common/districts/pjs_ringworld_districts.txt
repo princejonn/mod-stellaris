@@ -13,7 +13,7 @@ district_ringworld_rural = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = 500
 		}
 		upkeep = {
 			energy = 2
@@ -245,7 +245,7 @@ district_ringworld_industrial = {
 }
 
 district_ringworld_commercial = {
-	base_buildtime = 240
+	base_buildtime = 600
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -259,10 +259,10 @@ district_ringworld_commercial = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = 1000
 		}
 		upkeep = {
-			energy = 2
+			energy = 5
 		}
 	}
 
@@ -276,17 +276,16 @@ district_ringworld_commercial = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-		    job_researcher_add = 2
-            job_entertainer_add = 1
-            job_culture_worker_add = 1
+		    job_calculator_add = 2
+			job_maintenance_drone_add = 2
 		}
 	}
     triggered_desc = {
         trigger = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_regular_empire = yes }
         }
-        text = job_district_ringworld_commercial_machine_desc
+        text = job_district_ringworld_commercial_regular_desc
     }
 
 	triggered_planet_modifier = {
@@ -313,16 +312,17 @@ district_ringworld_commercial = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-		    job_calculator_add = 2
-			job_maintenance_drone_add = 2
+		    job_researcher_add = 2
+            job_entertainer_add = 1
+            job_culture_worker_add = 1
 		}
 	}
     triggered_desc = {
         trigger = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = { is_machine_empire = yes }
         }
-        text = job_district_ringworld_commercial_regular_desc
+        text = job_district_ringworld_commercial_machine_desc
     }
 
 	ai_weight = {
