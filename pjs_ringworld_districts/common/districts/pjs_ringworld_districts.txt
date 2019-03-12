@@ -1,4 +1,4 @@
-district_ringworld_uncapped = {
+district_ringworld_rural = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
 
@@ -16,7 +16,7 @@ district_ringworld_uncapped = {
 			minerals = @base_cost
 		}
 		upkeep = {
-			energy = 4
+			energy = 2
 		}
 	}
 
@@ -27,12 +27,23 @@ district_ringworld_uncapped = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = { has_valid_civic = civic_agrarian_idyll }
 		}
 		modifier = {
-            job_researcher_add = 1
-            job_fabricator_add = 1
-            job_artisan_add = 1
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_agrarian_idyll
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
 		}
 	}
 
@@ -42,10 +53,136 @@ district_ringworld_uncapped = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-            job_brain_drone_add = 1
-            job_alloy_drone_add = 1
-            job_technician_drone_add = 1
+			job_technician_drone_add = 1
+			job_agri_drone_add = 1
 		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+        }
+        text = job_district_ringworld_rural_hive_desc
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			    is_machine_empire = yes
+                has_valid_civic = civic_machine_servitor
+            }
+		}
+		modifier = {
+			job_technician_drone_add = 1
+			job_agri_drone_add = 1
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = {
+			    is_machine_empire = yes
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+        text = job_district_ringworld_rural_servitor_desc
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			    is_machine_empire = yes
+                NOT = { has_valid_civic = civic_machine_servitor }
+            }
+		}
+		modifier = {
+			job_technician_drone_add = 2
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = {
+			    is_machine_empire = yes
+                NOT = { has_valid_civic = civic_machine_servitor }
+            }
+        }
+        text = job_district_ringworld_rural_machine_desc
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_technician_add = 1
+			job_farmer_add = 1
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+        }
+        text = job_district_ringworld_rural_regular_desc
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_generator_add = 1
+			job_fe_acolyte_farm_add = 1
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+        }
+        text = job_district_ringworld_rural_fe_spiritualist_desc
+    }
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+district_ringworld_industrial = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_ringworld_habitable
+	}
+
+	potential = {
+		is_planet_class = pc_ringworld_habitable
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 4
 	}
 
 	triggered_planet_modifier = {
@@ -54,35 +191,139 @@ district_ringworld_uncapped = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-            job_calculator_add = 1
-            job_fabricator_add = 1
-            job_technician_drone_add = 1
+			job_fabricator_add = 2
+			job_artisan_drone_add = 2
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+        }
+        text = job_district_ringworld_industrial_machine_desc
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_alloy_drone_add = 2
+			job_artisan_drone_add = 2
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+        }
+        text = job_district_ringworld_industrial_hive_desc
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_foundry_add = 2
+			job_artisan_add = 2
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+        }
+        text = job_district_ringworld_industrial_regular_desc
+    }
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+district_ringworld_commercial = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_ringworld_habitable
+	}
+
+	potential = {
+		is_planet_class = pc_ringworld_habitable
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 2
 		}
 	}
 
-	triggered_desc = {
-        trigger = {
-            exists = owner
-            owner = { is_gestalt = no }
-        }
-		text = job_district_ringworld_regular_desc
+	planet_modifier = {
+		planet_housing_add = 2
 	}
 
-	triggered_desc = {
-        trigger = {
-            exists = owner
-            owner = { is_hive_empire = yes }
-        }
-		text = job_district_ringworld_hive_desc
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+		    job_researcher_add = 2
+            job_entertainer_add = 1
+            job_culture_worker_add = 1
+		}
 	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+        }
+        text = job_district_ringworld_commercial_machine_desc
+    }
 
-	triggered_desc = {
-        trigger = {
-            exists = owner
-            owner = { is_machine_empire = yes }
-        }
-		text = job_district_ringworld_machine_desc
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+		    job_brain_drone_add = 2
+			job_maintenance_drone_add = 2
+		}
 	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+        }
+        text = job_district_ringworld_commercial_hive_desc
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+		    job_calculator_add = 2
+			job_maintenance_drone_add = 2
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+        }
+        text = job_district_ringworld_commercial_regular_desc
+    }
 
 	ai_weight = {
 		weight = 2
