@@ -24,7 +24,7 @@ misc_pjs_shizuoka = {
         class = "pc_broken"
         size = 18
         orbit_distance = 70
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
 
         init_effect = {
             prevent_anomaly = yes
@@ -36,7 +36,7 @@ misc_pjs_shizuoka = {
         class = "pc_shattered"
         size = 22
         orbit_distance = 15
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
 
         init_effect = {
 			prevent_anomaly = yes
@@ -49,14 +49,14 @@ misc_pjs_shizuoka = {
         class = "pc_frozen"
         size = 20
         orbit_distance = 25
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
     }
 
     planet = {
         class = "pc_shattered"
         size = 20
         orbit_distance = 20
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
 
         init_effect = {
 			prevent_anomaly = yes

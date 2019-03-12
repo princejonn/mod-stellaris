@@ -1,5 +1,0 @@
-empire_init_capital_planet = {
-	events = {
-		pjs_beltalowda_asteroid_moon_bases_event.1
-	}
-}

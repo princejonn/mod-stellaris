@@ -26,7 +26,7 @@ misc_pjs_hirosaki = {
         class = "pc_molten"
         size = 20
         orbit_distance = 20
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
 
         init_effect = {
             prevent_anomaly = yes
@@ -38,7 +38,7 @@ misc_pjs_hirosaki = {
         class = "pc_molten"
         size = 20
         orbit_distance = 20
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
 
         init_effect = {
 			prevent_anomaly = yes
@@ -52,7 +52,7 @@ misc_pjs_hirosaki = {
         class = "pc_gaia"
         size = 25
         orbit_distance = 20
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = no
         modifiers = none
         deposit_blockers = none
@@ -77,7 +77,7 @@ misc_pjs_hirosaki = {
             class = "pc_barren"
             size = 7
             orbit_distance = 2
-            orbit_angle = { min = 30 max = 250 }
+            orbit_angle = { min = 20 max = 220 }
         }
     }
 
@@ -86,7 +86,7 @@ misc_pjs_hirosaki = {
         class = "pc_city"
         size = 25
         orbit_distance = 20
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = no
         modifiers = none
         deposit_blockers = none
@@ -118,50 +118,40 @@ misc_pjs_hirosaki = {
             class = "pc_barren"
             size = 7
             orbit_distance = 3
-            orbit_angle = { min = 30 max = 250 }
+            orbit_angle = { min = 20 max = 220 }
         }
 
         moon = {
             class = "pc_barren"
             size = 7
             orbit_distance = 3
-            orbit_angle = { min = 30 max = 250 }
+            orbit_angle = { min = 20 max = 220 }
         }
     }
 
     planet = {
-        name = "Togane"
-        class = "pc_city"
+        class = "pc_gaia"
         size = 25
         orbit_distance = 20
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = no
         modifiers = none
         deposit_blockers = none
 
-        init_effect = {
-            prevent_anomaly = yes
+		init_effect = {
+			prevent_anomaly = yes
             clear_deposits = yes
 
-            graphical_culture = "humanoid_01"
-
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
+            generate_mineral_deposits = yes
+            generate_crystals_deposit = yes
+            generate_betharian_deposit = yes
+            generate_pets_deposit = yes
 
             add_building = building_class_4_singularity
         }
@@ -171,7 +161,7 @@ misc_pjs_hirosaki = {
         class = "pc_broken"
         size = 22
         orbit_distance = 30
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
 
         init_effect = {
 			prevent_anomaly = yes
@@ -183,7 +173,7 @@ misc_pjs_hirosaki = {
         class = "pc_gas_giant"
         size = 30
         orbit_distance = 40
-        orbit_angle = { min = 30 max = 250 }
+        orbit_angle = { min = 20 max = 220 }
         has_ring = yes
 
         init_effect = {
@@ -197,7 +187,7 @@ misc_pjs_hirosaki = {
             class = "pc_barren"
             size = 7
             orbit_distance = 4
-            orbit_angle = { min = 30 max = 250 }
+            orbit_angle = { min = 20 max = 220 }
 
             init_effect = {
 			    prevent_anomaly = yes
@@ -209,7 +199,7 @@ misc_pjs_hirosaki = {
             class = "pc_barren_cold"
             size = 8
             orbit_distance = 4
-            orbit_angle = { min = 30 max = 250 }
+            orbit_angle = { min = 20 max = 220 }
 
             init_effect = {
 			    prevent_anomaly = yes
@@ -221,14 +211,14 @@ misc_pjs_hirosaki = {
             class = "pc_barren_cold"
             size = 7
             orbit_distance = 4
-            orbit_angle = { min = 30 max = 250 }
+            orbit_angle = { min = 20 max = 220 }
         }
 
         moon = {
             class = "pc_frozen"
             size = 7
             orbit_distance = 4
-            orbit_angle = { min = 30 max = 250 }
+            orbit_angle = { min = 20 max = 220 }
         }
     }
 
