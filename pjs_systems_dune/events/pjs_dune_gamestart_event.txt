@@ -9,19 +9,15 @@ event = {
 	immediate = {
 		if = {
 			limit = { NOT = { any_system = { has_star_flag = pjs_dune_delta_pavonis } } }
-			random_system = { spawn_system = { initializer = pjs_dune_neighbour_delta_pavonis } }
+			random_system = { spawn_system = { initializer = misc_pjs_delta_pavonis } }
 		}
 		if = {
 			limit = { NOT = { any_system = { has_star_flag = pjs_dune_ophiuchi } } }
-			random_system = { spawn_system = { initializer = pjs_dune_neighbour_ophiuchi } }
+			random_system = { spawn_system = { initializer = misc_pjs_ophiuchi } }
 		}
 		if = {
 			limit = { NOT = { any_system = { has_star_flag = pjs_dune_tau_haruki } } }
-			random_system = { spawn_system = { initializer = pjs_dune_neighbour_tau_haruki } }
-		}
-		if = {
-			limit = { NOT = { any_system = { has_star_flag = pjs_dune_thalim } } }
-			random_system = { spawn_system = { initializer = pjs_dune_neighbour_thalim } }
+			random_system = { spawn_system = { initializer = misc_pjs_tau_haruki } }
 		}
 	}
 }

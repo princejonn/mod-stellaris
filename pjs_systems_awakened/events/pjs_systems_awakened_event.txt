@@ -18,8 +18,10 @@ event = {
                 count = 10
                 remove_district = district_city
                 remove_district = district_generator
+                remove_district = district_generator_uncapped
                 remove_district = district_mining
                 remove_district = district_farming
+                remove_district = district_farming_uncapped
             }
 
             while = {
@@ -35,6 +37,12 @@ event = {
             while = {
                 count = 5
                 add_district = district_farming_uncapped
+            }
+
+            if = {
+                limit = { owner = { is_gestalt = no } }
+                add_district = district_farming_uncapped
+                add_district = district_ringworld_regular
             }
 
             while = {
@@ -73,20 +81,20 @@ event = {
                 }
                 add_resource = { influence = 500 }
                 add_resource = { unity = 500 }
-            }
 
-            owner_species = {
-                remove_trait = trait_pc_desert_preference
-                remove_trait = trait_pc_arid_preference
-                remove_trait = trait_pc_savannah_preference
-                remove_trait = trait_pc_tropical_preference
-                remove_trait = trait_pc_continental_preference
-                remove_trait = trait_pc_ocean_preference
-                remove_trait = trait_pc_arctic_preference
-                remove_trait = trait_pc_tundra_preference
-                remove_trait = trait_pc_alpine_preference
+                owner_species = {
+                    add_trait = trait_pc_gaia_preference
 
-                add_trait = trait_pc_gaia_preference
+                    remove_trait = trait_pc_desert_preference
+                    remove_trait = trait_pc_arid_preference
+                    remove_trait = trait_pc_savannah_preference
+                    remove_trait = trait_pc_tropical_preference
+                    remove_trait = trait_pc_continental_preference
+                    remove_trait = trait_pc_ocean_preference
+                    remove_trait = trait_pc_arctic_preference
+                    remove_trait = trait_pc_tundra_preference
+                    remove_trait = trait_pc_alpine_preference
+                }
             }
         }
 	}

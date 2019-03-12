@@ -23,11 +23,11 @@ district_ringworld_regular = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 6
+		planet_housing_add = 4
 
-        job_researcher_add = 2
-        job_fabricator_add = 2
-        job_artisan_add = 2
+        job_researcher_add = 1
+        job_fabricator_add = 1
+        job_artisan_add = 1
 	}
 
 	triggered_desc = {
@@ -64,11 +64,11 @@ district_ringworld_hive = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 6
+		planet_housing_add = 4
 
-        job_brain_drone_add = 2
-        job_alloy_drone_add = 2
-        job_technician_drone_add = 2
+        job_brain_drone_add = 1
+        job_alloy_drone_add = 1
+        job_technician_drone_add = 1
 	}
 
 	triggered_desc = {
@@ -105,11 +105,11 @@ district_ringworld_machine = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 6
+		planet_housing_add = 4
 
-        job_calculator_add = 2
-        job_fabricator_add = 2
-        job_technician_drone_add = 2
+        job_calculator_add = 1
+        job_fabricator_add = 1
+        job_technician_drone_add = 1
 	}
 
 	triggered_desc = {
