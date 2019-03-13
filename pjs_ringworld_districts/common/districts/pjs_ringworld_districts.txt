@@ -13,7 +13,7 @@ district_ringworld_rural = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 500
+			minerals = 400
 		}
 		upkeep = {
 			energy = 2
@@ -160,7 +160,7 @@ district_ringworld_rural = {
 }
 
 district_ringworld_industrial = {
-	base_buildtime = 600
+	base_buildtime = 480
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -174,7 +174,7 @@ district_ringworld_industrial = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 1000
+			minerals = 800
 		}
 		upkeep = {
 			energy = 5
@@ -245,7 +245,7 @@ district_ringworld_industrial = {
 }
 
 district_ringworld_commercial = {
-	base_buildtime = 600
+	base_buildtime = 480
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -259,7 +259,7 @@ district_ringworld_commercial = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 1000
+			minerals = 800
 		}
 		upkeep = {
 			energy = 5
