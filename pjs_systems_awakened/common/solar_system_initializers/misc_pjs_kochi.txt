@@ -51,6 +51,7 @@ misc_pjs_kochi = {
 	}
 
 	planet = {
+	    name = "Anan"
         class = "pc_gaia"
         size = 25
         orbit_distance = 20
@@ -63,6 +64,7 @@ misc_pjs_kochi = {
 			prevent_anomaly = yes
             clear_deposits = yes
 
+            add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 

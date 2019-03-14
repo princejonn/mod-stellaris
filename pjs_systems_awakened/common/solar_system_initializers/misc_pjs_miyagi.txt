@@ -88,37 +88,29 @@ misc_pjs_miyagi = {
 
 		moon = {
             name = "Kuromatsunai"
-			class = "pc_city"
+			class = "pc_gaia"
 			size = 25
 			orbit_distance = 10
 			orbit_angle = 50
-			has_ring = no
+            has_ring = no
+            modifiers = none
+            deposit_blockers = none
 
             init_effect = {
                 prevent_anomaly = yes
                 clear_deposits = yes
 
-                graphical_culture = "humanoid_01"
-
-                add_deposit = d_stasis_chambers
-                add_deposit = d_stasis_chambers
                 add_deposit = d_stasis_chambers
                 add_deposit = d_stasis_chambers
                 add_deposit = d_stasis_chambers
 
-                add_deposit = d_ruined_arcology
-                add_deposit = d_ruined_arcology
-                add_deposit = d_ruined_arcology
-                add_deposit = d_ruined_arcology
-                add_deposit = d_ruined_arcology
+                generate_energy_deposits = yes
+                generate_food_deposits = yes
+                generate_mineral_deposits = yes
 
-                add_deposit = d_ruined_arcology
-                add_deposit = d_ruined_arcology
-                add_deposit = d_ruined_arcology
-                add_deposit = d_ruined_arcology
-                add_deposit = d_ruined_arcology
-
-                add_building = building_affluence_center
+                generate_crystals_deposit = yes
+                generate_betharian_deposit = yes
+                generate_pets_deposit = yes
             }
 		}
 	}
@@ -183,6 +175,7 @@ misc_pjs_miyagi = {
 
 	init_effect = {
         spawn_planet = {
+            name = "Nishiwaki"
             class = pc_habitat
             location = event_target:habitat_planet
             orbit_location = yes

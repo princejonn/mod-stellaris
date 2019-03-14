@@ -96,6 +96,7 @@ misc_pjs_fukui = {
     }
 
     planet = {
+        name = "Himeji"
         class = "pc_gaia"
         size = 25
         orbit_distance = 20
@@ -108,6 +109,7 @@ misc_pjs_fukui = {
 			prevent_anomaly = yes
             clear_deposits = yes
 
+            add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 

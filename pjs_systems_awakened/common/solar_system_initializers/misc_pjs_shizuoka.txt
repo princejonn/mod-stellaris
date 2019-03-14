@@ -67,6 +67,7 @@ misc_pjs_shizuoka = {
 
 	init_effect = {
         spawn_planet = {
+            name = "Ichikawa"
             class = pc_habitat
             location = event_target:habitat_planet
             orbit_location = yes

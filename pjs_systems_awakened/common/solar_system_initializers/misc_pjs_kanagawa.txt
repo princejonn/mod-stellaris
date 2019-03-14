@@ -54,6 +54,7 @@ misc_pjs_kanagawa = {
     }
 
     planet = {
+        name = "Sasayama"
         class = "pc_gaia"
         size = 25
         orbit_distance = 30
@@ -66,6 +67,7 @@ misc_pjs_kanagawa = {
 			prevent_anomaly = yes
             clear_deposits = yes
 
+            add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 
@@ -80,6 +82,7 @@ misc_pjs_kanagawa = {
     }
 
     planet = {
+        name = "Marugame"
         class = "pc_gaia"
         size = 25
         orbit_distance = 30
@@ -93,6 +96,7 @@ misc_pjs_kanagawa = {
 			prevent_anomaly = yes
             clear_deposits = yes
 
+            add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 

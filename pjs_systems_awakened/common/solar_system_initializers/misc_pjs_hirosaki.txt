@@ -49,6 +49,7 @@ misc_pjs_hirosaki = {
     }
 
     planet = {
+        name = "Hidaka"
         class = "pc_gaia"
         size = 25
         orbit_distance = 20
@@ -133,6 +134,7 @@ misc_pjs_hirosaki = {
     }
 
     planet = {
+        name = "Sukumo"
         class = "pc_gaia"
         size = 25
         orbit_distance = 20
@@ -145,8 +147,6 @@ misc_pjs_hirosaki = {
 			prevent_anomaly = yes
             clear_deposits = yes
 
-            add_deposit = d_stasis_chambers
-            add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
