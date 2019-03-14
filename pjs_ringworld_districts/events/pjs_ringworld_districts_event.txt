@@ -22,17 +22,17 @@ event = {
             }
 
             while = {
-                count = 6
+                count = 3
                 add_district = district_ringworld_rural
             }
 
             while = {
-                count = 2
+                count = 3
                 add_district = district_ringworld_industrial
             }
 
             while = {
-                count = 2
+                count = 3
                 add_district = district_ringworld_commercial
             }
         }

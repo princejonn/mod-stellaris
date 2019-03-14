@@ -1,5 +1,5 @@
 district_ringworld_rural = {
-	base_buildtime = 240
+	base_buildtime = 480
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -13,7 +13,7 @@ district_ringworld_rural = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 400
+			minerals = 800
 		}
 		upkeep = {
 			energy = 2
