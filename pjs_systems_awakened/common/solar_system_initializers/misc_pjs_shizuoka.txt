@@ -9,7 +9,7 @@ misc_pjs_shizuoka = {
 
 	planet = {
 		class = "pc_black_hole"
-		size = 26
+		size = 28
         orbit_distance = 0
 		orbit_angle = 1
 
@@ -20,10 +20,12 @@ misc_pjs_shizuoka = {
 		}
 	}
 
+	change_orbit = 60
+
     planet = {
         class = "pc_broken"
         size = 18
-        orbit_distance = 70
+        orbit_distance = 25
         orbit_angle = { min = 20 max = 220 }
 
         init_effect = {

@@ -19,12 +19,12 @@ misc_pjs_higashidori = {
 		}
 	}
 
-	change_orbit = 40
+	change_orbit = 50
 
     planet = {
         class = "pc_frozen"
         size = 16
-        orbit_distance = 30
+        orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 
         init_effect = {

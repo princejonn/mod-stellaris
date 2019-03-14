@@ -20,24 +20,12 @@ misc_pjs_hirosaki = {
 		}
     }
 
-	change_orbit = 40
+	change_orbit = 50
 
     planet = {
         class = "pc_molten"
         size = 20
-        orbit_distance = 20
-        orbit_angle = { min = 20 max = 220 }
-
-        init_effect = {
-            prevent_anomaly = yes
-            save_event_target_as = think_tank_target
-        }
-    }
-
-    planet = {
-        class = "pc_molten"
-        size = 20
-        orbit_distance = 20
+        orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 
         init_effect = {
@@ -52,7 +40,7 @@ misc_pjs_hirosaki = {
         name = "Hidaka"
         class = "pc_gaia"
         size = 25
-        orbit_distance = 20
+        orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
         has_ring = no
         modifiers = none

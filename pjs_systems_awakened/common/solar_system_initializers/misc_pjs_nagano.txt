@@ -9,7 +9,7 @@ misc_pjs_nagano = {
 
 	planet = {
 		class = "pc_b_star"
-		size = 24
+		size = 22
         orbit_distance = 0
 		orbit_angle = 1
 

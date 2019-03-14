@@ -24,7 +24,7 @@ misc_pjs_kumamoto = {
 		}
 	}
 
-	change_orbit = 40
+	change_orbit = 50
 
 	planet = {
 	    name = "Moriyama"

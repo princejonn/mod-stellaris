@@ -19,12 +19,12 @@ misc_pjs_miyagi = {
 		}
 	}
 
-	change_orbit = 40
+	change_orbit = 50
 
 	planet = {
 		class = "pc_molten"
 		size = 14
-		orbit_distance = 10
+		orbit_distance = 20
 		orbit_angle = { min = 20 max = 220 }
 		has_ring = yes
 
@@ -37,7 +37,7 @@ misc_pjs_miyagi = {
 	planet = {
 		class = "pc_toxic"
 		size = 18
-		orbit_distance = 20
+		orbit_distance = 30
 		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
@@ -50,7 +50,7 @@ misc_pjs_miyagi = {
 	planet = {
 		class = "pc_gas_giant"
 		size = 35
-		orbit_distance = 60
+		orbit_distance = 40
 		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
@@ -88,29 +88,31 @@ misc_pjs_miyagi = {
 
 		moon = {
             name = "Kuromatsunai"
-			class = "pc_gaia"
+			class = "pc_city"
 			size = 25
 			orbit_distance = 10
-			orbit_angle = 50
-            has_ring = no
-            modifiers = none
-            deposit_blockers = none
+			orbit_angle = { min = 20 max = 220 }
+			has_ring = no
 
             init_effect = {
                 prevent_anomaly = yes
                 clear_deposits = yes
 
+                graphical_culture = "humanoid_01"
+
+                add_deposit = d_stasis_chambers
+                add_deposit = d_stasis_chambers
                 add_deposit = d_stasis_chambers
                 add_deposit = d_stasis_chambers
                 add_deposit = d_stasis_chambers
 
-                generate_energy_deposits = yes
-                generate_food_deposits = yes
-                generate_mineral_deposits = yes
+                add_deposit = d_ruined_arcology
+                add_deposit = d_ruined_arcology
+                add_deposit = d_ruined_arcology
+                add_deposit = d_ruined_arcology
+                add_deposit = d_ruined_arcology
 
-                generate_crystals_deposit = yes
-                generate_betharian_deposit = yes
-                generate_pets_deposit = yes
+                add_building = building_nourishment_center
             }
 		}
 	}

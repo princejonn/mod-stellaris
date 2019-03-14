@@ -7,13 +7,7 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-        every_planet = {
-            limit = {
-                OR = {
-                    has_planet_flag = awakened_start
-                    has_planet_flag = ring_world_start
-                }
-            }
+        every_planet = { has_planet_flag = ring_world_start }
 
             while = {
                 count = 10
@@ -22,17 +16,17 @@ event = {
             }
 
             while = {
-                count = 3
+                count = 6
                 add_district = district_ringworld_rural
             }
 
             while = {
-                count = 3
+                count = 2
                 add_district = district_ringworld_industrial
             }
 
             while = {
-                count = 3
+                count = 2
                 add_district = district_ringworld_commercial
             }
         }

@@ -35,12 +35,12 @@ misc_pjs_kochi = {
 		has_ring = no
 	}
 
-	change_orbit = 40
+	change_orbit = 50
 
 	planet = {
         class = "pc_molten"
         size = 20
-        orbit_distance = 20
+        orbit_distance = 10
         orbit_angle = { min = 20 max = 70 }
 		has_ring = no
 

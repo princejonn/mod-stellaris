@@ -20,12 +20,12 @@ misc_pjs_kanagawa = {
 		}
     }
 
-    change_orbit = 40
+	change_orbit = 50
 
     planet = {
         class = "pc_molten"
         size = 18
-        orbit_distance = 15
+        orbit_distance = 10
         orbit_angle = { min = 20 max = 220 }
     }
 

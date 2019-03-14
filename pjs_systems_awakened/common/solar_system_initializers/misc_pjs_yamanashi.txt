@@ -9,7 +9,7 @@ misc_pjs_yamanashi = {
 
 	planet = {
 		class = "pc_black_hole"
-		size = 28
+		size = 20
         orbit_distance = 0
 		orbit_angle = 1
 
@@ -19,4 +19,150 @@ misc_pjs_yamanashi = {
 		    add_deposit = d_zro_deposit_3
 		}
 	}
+
+	change_orbit = 45
+
+	planet = {
+	    name = "Akita"
+		class = "pc_ringworld_habitable"
+		size = 50
+		orbit_angle = 30
+		orbit_distance = 0
+		modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_class_4_singularity
+		}
+	}
+	planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ajigasawa"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_affluence_center
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+
+        init_effect = {
+			prevent_anomaly = yes
+            add_deposit = d_physics_8
+        }
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Tsuruta"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_nourishment_center
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+
+        init_effect = {
+			prevent_anomaly = yes
+            add_deposit = d_engineering_8
+        }
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Goshogawara"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+			add_building = building_dimensional_fabricator
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
 }

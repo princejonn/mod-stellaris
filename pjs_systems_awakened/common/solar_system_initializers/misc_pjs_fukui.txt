@@ -25,7 +25,7 @@ misc_pjs_fukui = {
     planet = {
         class = "pc_barren"
         size = 14
-        orbit_distance = 15
+        orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 
 		init_effect = {

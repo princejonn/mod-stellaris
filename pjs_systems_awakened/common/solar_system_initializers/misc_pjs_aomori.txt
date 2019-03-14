@@ -14,7 +14,7 @@ misc_pjs_aomori = {
 
 	planet = {
 		class = "pc_g_star"
-		size = 23
+		size = 20
         orbit_distance = 0
 		orbit_angle = 1
 
@@ -24,10 +24,12 @@ misc_pjs_aomori = {
 		}
 	}
 
+	change_orbit = 50
+
 	planet = {
 		class = "pc_frozen"
 		size = 25
-		orbit_distance = 60
+		orbit_distance = 20
 		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 	}
