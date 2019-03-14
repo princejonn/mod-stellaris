@@ -17,7 +17,7 @@ trait_pjs_eldar = {
 }
 
 trait_pjs_photosynthetic = {
-	cost = 3
+	cost = 4
 	potential_crossbreeding_chance = 0.15
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_pjs_partial_photosynthetic" }
