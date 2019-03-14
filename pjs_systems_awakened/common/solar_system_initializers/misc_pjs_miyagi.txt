@@ -175,7 +175,6 @@ misc_pjs_miyagi = {
 
 	init_effect = {
         spawn_planet = {
-            name = "Nishiwaki"
             class = pc_habitat
             location = event_target:habitat_planet
             orbit_location = yes
@@ -185,7 +184,7 @@ misc_pjs_miyagi = {
             has_ring = no
 
             init_effect = {
-                set_name = "Abandoned Habitat"
+                set_name = "Nishiwaki"
                 set_planet_entity = {
                     entity = "orbital_habitat_entity"
                     graphical_culture = "humanoid_01"
