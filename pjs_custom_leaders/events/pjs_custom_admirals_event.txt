@@ -64,7 +64,7 @@ country_event = {
     immediate = {
         every_owned_leader = {
             limit = { leader_class = admiral }
-            
+
             remove_trait = leader_trait_stubborn
             remove_trait = leader_trait_substance_abuser
             remove_trait = leader_trait_arrested_development
@@ -91,13 +91,15 @@ country_event = {
             remove_trait = leader_trait_dragonslayer
             remove_trait = leader_trait_cybrex
             remove_trait = leader_trait_mercenary_warrior
-            remove_trait = leader_trait_great_khan
 
             remove_trait = leader_trait_admiral_erudite
             remove_trait = leader_trait_admiral_cyborg
             remove_trait = leader_trait_admiral_synthetic
             remove_trait = leader_trait_admiral_psionic
             remove_trait = leader_trait_admiral_chosen
+            remove_trait = leader_trait_great_khan
+            remove_trait = leader_trait_admiral_brainslug
+            remove_trait = leader_trait_admiral_hells_heart
 
             remove_trait = leader_trait_adaptable
             remove_trait = leader_trait_resilient
@@ -428,18 +430,6 @@ country_event = {
             country_event = { id = "pjs_custom_admirals_event.32" }
         }
     }
-    option = {
-        name = "pjs_custom_admirals_leader_trait_great_khan_NAME"
-        custom_tooltip = "pjs_custom_admirals_leader_trait_great_khan_DESC"
-
-        hidden_effect = {
-            every_owned_leader = {
-                limit = { leader_class = admiral }
-                add_trait = leader_trait_great_khan
-            }
-            country_event = { id = "pjs_custom_admirals_event.32" }
-        }
-    }
 
 
     option = {
@@ -513,6 +503,42 @@ country_event = {
             every_owned_leader = {
                 limit = { leader_class = admiral }
                 add_trait = leader_trait_admiral_chosen
+            }
+            country_event = { id = "pjs_custom_admirals_event.33" }
+        }
+    }
+    option = {
+        name = "pjs_custom_admirals_leader_trait_great_khan_NAME"
+        custom_tooltip = "pjs_custom_admirals_leader_trait_great_khan_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = admiral }
+                add_trait = leader_trait_great_khan
+            }
+            country_event = { id = "pjs_custom_admirals_event.33" }
+        }
+    }
+    option = {
+        name = "pjs_custom_admirals_leader_trait_admiral_brainslug_NAME"
+        custom_tooltip = "pjs_custom_admirals_leader_trait_admiral_brainslug_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = admiral }
+                add_trait = leader_trait_admiral_brainslug
+            }
+            country_event = { id = "pjs_custom_admirals_event.33" }
+        }
+    }
+    option = {
+        name = "pjs_custom_admirals_leader_trait_admiral_hells_heart_NAME"
+        custom_tooltip = "pjs_custom_admirals_leader_trait_admiral_hells_heart_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = admiral }
+                add_trait = leader_trait_admiral_hells_heart
             }
             country_event = { id = "pjs_custom_admirals_event.33" }
         }

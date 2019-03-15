@@ -60,7 +60,7 @@ country_event = {
     immediate = {
         every_owned_leader = {
             limit = { leader_class = general }
-            
+
             remove_trait = leader_trait_stubborn
             remove_trait = leader_trait_substance_abuser
             remove_trait = leader_trait_arrested_development
@@ -82,6 +82,7 @@ country_event = {
             remove_trait = leader_trait_general_synthetic
             remove_trait = leader_trait_general_psionic
             remove_trait = leader_trait_general_chosen
+            remove_trait = leader_trait_general_brainslug
 
             remove_trait = leader_trait_adaptable
             remove_trait = leader_trait_resilient
@@ -348,6 +349,18 @@ country_event = {
             every_owned_leader = {
                 limit = { leader_class = general }
                 add_trait = leader_trait_general_chosen
+            }
+            country_event = { id = "pjs_custom_generals_event.32" }
+        }
+    }
+    option = {
+        name = "pjs_custom_generals_leader_trait_general_brainslug_NAME"
+        custom_tooltip = "pjs_custom_generals_leader_trait_general_brainslug_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = general }
+                add_trait = leader_trait_general_brainslug
             }
             country_event = { id = "pjs_custom_generals_event.32" }
         }

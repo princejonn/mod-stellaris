@@ -36,9 +36,6 @@
   pjs_custom_scientists_leader_trait_sapient_AI_assistant_NAME:0 "Sapient AI assistant"
   pjs_custom_scientists_leader_trait_sapient_AI_assistant_DESC:0 "Research speed §G+10%§!\nSurvey speed §G+20%§!\nAnomaly research speed §G+30%§!"
 
-  pjs_custom_scientists_leader_trait_curator_NAME:0 "Curator"
-  pjs_custom_scientists_leader_trait_curator_DESC:0 "Research speed §G+15%§!\nSurvey speed §G+25%§!"
-
   pjs_custom_scientists_leader_trait_towel_NAME:0 "Towel"
   pjs_custom_scientists_leader_trait_towel_DESC:0 "Survey speed §G+40%§!"
 
@@ -96,6 +93,12 @@
 
   pjs_custom_scientists_leader_trait_scientist_chosen_NAME:0 "Chosen"
   pjs_custom_scientists_leader_trait_scientist_chosen_DESC:0 "Research speed §G+20%§!\nSurvey speed §G+50%§!\n§GImmortal§!"
+
+  pjs_custom_scientists_leader_trait_curator_NAME:0 "Curator"
+  pjs_custom_scientists_leader_trait_curator_DESC:0 "Research speed §G+15%§!\nSurvey speed §G+25%§!"
+
+  pjs_custom_scientists_leader_trait_scientist_brainslut_NAME:0 "Brain Slug"
+  pjs_custom_scientists_leader_trait_scientist_brainslut_DESC:0 "Research speed §G+10%§!\nSurvey Speed §G+15%§!\nAnomaly research speed §G+15%§!\n"
 
   ## Generic
 

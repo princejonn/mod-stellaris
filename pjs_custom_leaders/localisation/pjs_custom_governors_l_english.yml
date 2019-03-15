@@ -53,6 +53,12 @@
   pjs_custom_governors_leader_trait_governor_chosen_NAME:0 "Chosen"
   pjs_custom_governors_leader_trait_governor_chosen_DESC:0 "Stability §G+10§!\nUnity production from jobs §G+20%§!"
 
+  pjs_custom_governors_leader_trait_governor_brainslug_NAME:0 "Brain Slug"
+  pjs_custom_governors_leader_trait_governor_brainslug_DESC:0 "Building speed §G+10%§!\n Research §G+15%§!"
+
+  pjs_custom_governors_leader_trait_governor_gray_NAME:0 "Gray"
+  pjs_custom_governors_leader_trait_governor_gray_DESC:0 "Building cost §G-40%§!\nBuilding build speed §G+40%§!\nEnergy §G+15%§!\nMinerals §G+15%§!\nBlockers clear cost §G-40%§!\nBLockers clear time §G-40%§!\n"
+
   ## Generic
 
   pjs_custom_governors_leader_trait_adaptable_NAME:0 "Adaptable"

@@ -84,7 +84,6 @@ country_event = {
             remove_trait = leader_trait_custom_AI_assistant
             remove_trait = leader_trait_sapient_AI_assistant
             remove_trait = leader_trait_towel
-            remove_trait = leader_trait_curator
 
             remove_trait = leader_trait_expertise_materials
             remove_trait = leader_trait_expertise_propulsion
@@ -104,6 +103,8 @@ country_event = {
             remove_trait = leader_trait_scientist_synthetic
             remove_trait = leader_trait_scientist_psionic
             remove_trait = leader_trait_scientist_chosen
+            remove_trait = leader_trait_curator
+            remove_trait = leader_trait_scientist_brainslug
 
             remove_trait = leader_trait_adaptable
             remove_trait = leader_trait_resilient
@@ -317,18 +318,6 @@ country_event = {
             every_owned_leader = {
                 limit = { leader_class = scientist }
                 add_trait = leader_trait_sapient_AI_assistant
-            }
-            country_event = { id = "pjs_custom_scientists_event.31" }
-        }
-    }
-    option = {
-        name = "pjs_custom_scientists_leader_trait_curator_NAME"
-        custom_tooltip = "pjs_custom_scientists_leader_trait_curator_DESC"
-
-        hidden_effect = {
-            every_owned_leader = {
-                limit = { leader_class = scientist }
-                add_trait = leader_trait_curator
             }
             country_event = { id = "pjs_custom_scientists_event.31" }
         }
@@ -578,6 +567,30 @@ country_event = {
             every_owned_leader = {
                 limit = { leader_class = scientist }
                 add_trait = leader_trait_scientist_chosen
+            }
+            country_event = { id = "pjs_custom_scientists_event.33" }
+        }
+    }
+    option = {
+        name = "pjs_custom_scientists_leader_trait_curator_NAME"
+        custom_tooltip = "pjs_custom_scientists_leader_trait_curator_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = scientist }
+                add_trait = leader_trait_curator
+            }
+            country_event = { id = "pjs_custom_scientists_event.33" }
+        }
+    }
+    option = {
+        name = "pjs_custom_scientists_leader_trait_scientist_brainslut_NAME"
+        custom_tooltip = "pjs_custom_scientists_leader_trait_scientist_brainslut_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = scientist }
+                add_trait = leader_trait_scientist_brainslug
             }
             country_event = { id = "pjs_custom_scientists_event.33" }
         }

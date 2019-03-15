@@ -100,6 +100,9 @@
   pjs_custom_ruler_leader_trait_ruler_chosen_NAME:0 "Chosen"
   pjs_custom_ruler_leader_trait_ruler_chosen_DESC:0 "Ethics attraction §G+20%§!\nInfluence §G+1§!\n§GImmortal§!"
 
+  pjs_custom_ruler_leader_trait_ruler_brainslug_NAME:0 "Brain Slug"
+  pjs_custom_ruler_leader_trait_ruler_brainslug_DESC:0 "Naval cap §G+10%§!\nResearch §G+10%§!"
+
   ## Generic
 
   pjs_custom_ruler_leader_trait_shroud_age_NAME:0 "Shroud Age"

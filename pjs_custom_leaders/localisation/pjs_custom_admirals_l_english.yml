@@ -82,6 +82,12 @@
   pjs_custom_admirals_leader_trait_admiral_chosen_NAME:0 "Chosen"
   pjs_custom_admirals_leader_trait_admiral_chosen_DESC:0 "Weapon damage §G+20%§!\nEvasion §G+30%§!\n§GImmortal§!"
 
+  pjs_custom_admirals_leader_trait_admiral_brainslug_NAME:0 "Brain Slug"
+  pjs_custom_admirals_leader_trait_admiral_brainslug_DESC:0 "Fire Rate §G+5%§!\nEvasion §G+5%§!\nUpkeep §G-10%§!"
+
+  pjs_custom_admirals_leader_trait_admiral_hells_heart_NAME:0 "Hells Heart"
+  pjs_custom_admirals_leader_trait_admiral_hells_heart_DESC:0 "Fire Rate §G+10%§!\nWeapon damage §G+10%§!\nSpeed §G+10%§!\nEvasion §R-5%§!\nDisengage chance §R-33%§!\n"
+
   ## Generic
 
   pjs_custom_admirals_leader_trait_adaptable_NAME:0 "Adaptable"

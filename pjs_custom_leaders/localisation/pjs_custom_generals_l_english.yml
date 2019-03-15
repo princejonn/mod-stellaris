@@ -46,6 +46,9 @@
   pjs_custom_generals_leader_trait_general_chosen_NAME:0 "Chosen"
   pjs_custom_generals_leader_trait_general_chosen_DESC:0 "Morale §G+30%§!\nMorale damage §G+20%§!\n§GImmortal§!"
 
+  pjs_custom_generals_leader_trait_general_brainslug_NAME:0 "Brain Slug"
+  pjs_custom_generals_leader_trait_general_brainslug_DESC:0 "Upkeep §G-15%§!"
+
   ## Generic
 
   pjs_custom_generals_leader_trait_adaptable_NAME:0 "Adaptable"

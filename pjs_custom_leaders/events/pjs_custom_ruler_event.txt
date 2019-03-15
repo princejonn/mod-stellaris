@@ -100,6 +100,7 @@ country_event = {
             remove_trait = leader_trait_ruler_psionic
             remove_trait = leader_trait_ruler_chosen
             remove_trait = leader_trait_ruler_hive_mind
+            remove_trait = leader_trait_ruler_brainslug
 
             remove_trait = leader_trait_shroud_age
             remove_trait = leader_trait_resilient
@@ -562,6 +563,18 @@ country_event = {
             every_owned_leader = {
                 limit = { leader_class = ruler }
                 add_trait = leader_trait_ruler_chosen
+            }
+            country_event = { id = "pjs_custom_ruler_event.33" }
+        }
+    }
+    option = {
+        name = "pjs_custom_ruler_leader_trait_ruler_brainslug_NAME"
+        custom_tooltip = "pjs_custom_ruler_leader_trait_ruler_brainslug_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = ruler }
+                add_trait = leader_trait_ruler_brainslug
             }
             country_event = { id = "pjs_custom_ruler_event.33" }
         }

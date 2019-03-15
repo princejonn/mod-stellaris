@@ -82,6 +82,8 @@ country_event = {
             remove_trait = leader_trait_governor_synthetic
             remove_trait = leader_trait_governor_psionic
             remove_trait = leader_trait_governor_chosen
+            remove_trait = leader_trait_governor_brainslug
+            remove_trait = leader_trait_governor_gray
 
             remove_trait = leader_trait_adaptable
             remove_trait = leader_trait_resilient
@@ -372,6 +374,30 @@ country_event = {
             every_owned_leader = {
                 limit = { leader_class = governor }
                 add_trait = leader_trait_governor_chosen
+            }
+            country_event = { id = "pjs_custom_governors_event.32" }
+        }
+    }
+    option = {
+        name = "pjs_custom_governors_leader_trait_governor_brainslug_NAME"
+        custom_tooltip = "pjs_custom_governors_leader_trait_governor_brainslug_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = governor }
+                add_trait = leader_trait_governor_brainslug
+            }
+            country_event = { id = "pjs_custom_governors_event.32" }
+        }
+    }
+    option = {
+        name = "pjs_custom_governors_leader_trait_governor_gray_NAME"
+        custom_tooltip = "pjs_custom_governors_leader_trait_governor_gray_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = governor }
+                add_trait = leader_trait_governor_gray
             }
             country_event = { id = "pjs_custom_governors_event.32" }
         }
