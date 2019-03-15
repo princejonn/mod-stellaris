@@ -107,7 +107,6 @@ custom_pjs_sol_detailed = {
 		orbit_distance = 25
 		orbit_angle = 60
 		has_ring = no
-		flags = { planet_mars }
 
 		init_effect = {
 			add_modifier = { modifier = "terraforming_candidate" days = -1 }

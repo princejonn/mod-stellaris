@@ -110,7 +110,6 @@ custom_pjs_sol_augmented = {
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
-		flags = { planet_mars }
 
 		init_effect = {
 			prevent_anomaly = yes
