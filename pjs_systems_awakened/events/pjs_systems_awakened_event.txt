@@ -31,24 +31,47 @@ event = {
                 change_pc = "pc_city"
 
                 while = {
-                    count = 6
+                    count = 8
                     add_district = district_arcology_housing
                 }
                 while = {
-                    count = 3
+                    count = 1
                     add_district = district_arcology_arms_industry
                 }
                 while = {
-                    count = 3
+                    count = 1
                     add_district = district_arcology_civilian_industry
                 }
                 while = {
-                    count = 3
+                    count = 2
                     add_district = district_arcology_leisure
                 }
 
                 add_building = building_affluence_center
                 add_building = building_nourishment_center
+
+                if = {
+                    limit = { owner = {
+                        OR = {
+                            has_ethic = "ethic_spiritualist"
+                            has_ethic = "ethic_fanatic_spiritualist"
+                        }
+                    }
+
+                    give_technology = { tech = "tech_psionic_theory" message = no }
+                    give_technology = { tech = "null_void_beam" message = no }
+                }
+
+                if = {
+                    limit = { owner = {
+                        OR = {
+                            has_ethic = "ethic_materialist"
+                            has_ethic = "ethic_fanatic_materialist"
+                        }
+                    }
+
+                    give_technology = { tech = "tech_gene_tailoring" message = no }
+                }
             }
 
             if = {
@@ -57,7 +80,7 @@ event = {
                 change_pc = "pc_hive"
 
                 while = {
-                    count = 6
+                    count = 3
                     add_district = district_hive
                 }
                 while = {
@@ -86,7 +109,7 @@ event = {
                     add_district = district_nexus
                 }
                 while = {
-                    count = 6
+                    count = 3
                     add_district = district_generator_uncapped
                 }
                 while = {
@@ -118,6 +141,7 @@ event = {
 
                 give_technology = { tech = "tech_wormhole_stabilization" message = no }
                 give_technology = { tech = "tech_experimental_subspace_navigation" message = no }
+                give_technology = { tech = "tech_automated_exploration" message = no }
 
                 add_resource = { energy = 3000 }
                 add_resource = { minerals = 3000 }
