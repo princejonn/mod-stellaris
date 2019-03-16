@@ -20,6 +20,7 @@ event = {
                 remove_district = district_generator
                 remove_district = district_generator_uncapped
                 remove_district = district_mining
+                remove_district = district_mining_uncapped
                 remove_district = district_farming
                 remove_district = district_farming_uncapped
             }
@@ -40,7 +41,7 @@ event = {
             }
 
             while = {
-                count = 4
+                count = 5
                 create_pop = { species = owner_main_species }
             }
         }

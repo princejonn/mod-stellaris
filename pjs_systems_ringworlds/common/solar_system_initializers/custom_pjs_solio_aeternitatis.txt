@@ -164,6 +164,6 @@ custom_pjs_solio_aeternitatis = {
 
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
-		initializer = "misc_pjs_thuringwethil"
+		initializer = "misc_pjs_fodina_secundus"
 	}
 }

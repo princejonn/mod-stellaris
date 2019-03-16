@@ -7,11 +7,18 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-        every_planet = { has_planet_flag = ring_world_start }
+        every_planet = {
+            limit = { has_planet_flag = ring_world_start }
+
+            change_pc = "pc_ringworld_habitable"
 
             while = {
                 count = 10
+                remove_district = district_generator
                 remove_district = district_generator_uncapped
+                remove_district = district_mining
+                remove_district = district_mining_uncapped
+                remove_district = district_farming
                 remove_district = district_farming_uncapped
             }
 
@@ -21,13 +28,8 @@ event = {
             }
 
             while = {
-                count = 2
-                add_district = district_ringworld_industrial
-            }
-
-            while = {
-                count = 2
-                add_district = district_ringworld_commercial
+                count = 10
+                create_pop = { species = owner_main_species }
             }
         }
 	}
