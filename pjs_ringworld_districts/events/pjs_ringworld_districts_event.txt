@@ -8,7 +8,12 @@ event = {
 
 	immediate = {
         every_planet = {
-            limit = { has_planet_flag = ring_world_start }
+            limit = {
+                OR = {
+                    has_planet_flag = awakened_scientists_start
+                    has_planet_flag = ring_world_start
+                }
+            }
 
             change_pc = "pc_ringworld_habitable"
 

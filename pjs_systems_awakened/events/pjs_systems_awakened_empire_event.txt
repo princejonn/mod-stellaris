@@ -1,14 +1,14 @@
-namespace = pjs_systems_awakened_event
+namespace = pjs_systems_awakened_empire_event
 
 event = {
-	id = pjs_systems_awakened_event.1
+	id = pjs_systems_awakened_empire_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
         every_planet = {
-            limit = { has_planet_flag = awakened_start }
+            limit = { has_planet_flag = awakened_empire_start }
 
             clear_deposits = yes
 

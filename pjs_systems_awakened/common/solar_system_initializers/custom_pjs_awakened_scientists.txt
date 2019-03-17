@@ -1,4 +1,4 @@
-custom_pjs_awakened_directorate = {
+custom_pjs_awakened_scientists = {
 	name = "Thessaloniki"
 	class = "sc_k"
 	usage = custom_empire
@@ -41,7 +41,7 @@ custom_pjs_awakened_directorate = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
-        flags = { awakened_directorate_start }
+        flags = { awakened_scientists_start }
 
         starting_planet = yes
 

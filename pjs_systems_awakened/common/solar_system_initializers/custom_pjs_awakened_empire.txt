@@ -1,4 +1,4 @@
-custom_pjs_awakened = {
+custom_pjs_awakened_empire = {
 	name = "Kyoto"
 	class = "sc_b"
 	usage = custom_empire
@@ -44,7 +44,7 @@ custom_pjs_awakened = {
         has_ring = no
         modifiers = none
         deposit_blockers = none
-        flags = { awakened_start }
+        flags = { awakened_empire_start }
 
         starting_planet = yes
 

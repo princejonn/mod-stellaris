@@ -1,14 +1,14 @@
-namespace = pjs_systems_awakened_directorate_event
+namespace = pjs_systems_awakened_scientists_event
 
 event = {
-	id = pjs_systems_awakened_directorate_event.1
+	id = pjs_systems_awakened_scientists_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
         every_planet = {
-            limit = { has_planet_flag = awakened_directorate_start }
+            limit = { has_planet_flag = awakened_scientists_start }
 
             change_pc = "pc_ringworld_habitable"
 
@@ -23,6 +23,7 @@ event = {
                 remove_district = district_generator
                 remove_district = district_generator_uncapped
                 remove_district = district_mining
+                remove_district = district_mining_uncapped
                 remove_district = district_farming
                 remove_district = district_farming_uncapped
             }
@@ -86,19 +87,24 @@ event = {
 
             owner = {
                 give_technology = { tech = "tech_physics_1" message = no }
+                give_technology = { tech = "tech_physics_2" message = no }
+                give_technology = { tech = "tech_physics_3" message = no }
                 give_technology = { tech = "tech_society_1" message = no }
+                give_technology = { tech = "tech_society_2" message = no }
+                give_technology = { tech = "tech_society_3" message = no }
                 give_technology = { tech = "tech_engineering_1" message = no }
-                give_technology = { tech = "tech_planetary_unification" message = no }
+                give_technology = { tech = "tech_engineering_2" message = no }
+                give_technology = { tech = "tech_engineering_3" message = no }
 
                 give_technology = { tech = "tech_wormhole_stabilization" message = no }
                 give_technology = { tech = "tech_experimental_subspace_navigation" message = no }
                 give_technology = { tech = "tech_automated_exploration" message = no }
 
-                add_resource = { energy = 3000 }
-                add_resource = { minerals = 3000 }
+                add_resource = { energy = 600 }
+                add_resource = { minerals = 600 }
                 if = {
                     limit = { is_machine_empire = no }
-                    add_resource = { food = 3000 }
+                    add_resource = { food = 600 }
                 }
                 add_resource = { alloys = 600 }
                 if = {
