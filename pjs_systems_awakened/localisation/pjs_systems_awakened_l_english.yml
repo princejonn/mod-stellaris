@@ -5,3 +5,6 @@
 
   custom_pjs_awakened_NAME:0 "§SAwakened Empire"
   custom_pjs_awakened_DESC:0 "§R-CHEATING-§!\n\nYou are basically cheating by picking this system.\n\nAwaken again as an empire once forced into stasis chambers. Eons have passed, and the time has come again to claim your place.\n\n$system_initializer_DESC$"
+
+  custom_pjs_awakened_directorate_NAME:0 "§SAwakened Directorate"
+  custom_pjs_awakened_directorate_DESC:0 "§R-CHEATING-§!\n\nYou are basically cheating by picking this system.\n\nAwaken again as an empire once forced into stasis chambers. Eons have passed, and the time has come again to claim your place.\n\n$system_initializer_DESC$"

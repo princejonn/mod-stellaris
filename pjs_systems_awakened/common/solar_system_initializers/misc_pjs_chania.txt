@@ -1,0 +1,28 @@
+misc_pjs_chania = {
+    name = "Chania"
+	class = "sc_black_hole"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+	planet = {
+		class = "pc_black_hole"
+		size = 25
+        orbit_distance = 0
+		orbit_angle = 1
+
+		init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = matter_decompressor_target
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "matter_decompressor_ruined"
+            location = event_target:matter_decompressor_target
+        }
+    }
+}

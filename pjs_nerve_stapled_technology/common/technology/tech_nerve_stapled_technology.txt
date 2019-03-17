@@ -9,6 +9,10 @@ tech_nerve_stapled_technology = {
 		is_gestalt = no
 	}
 
+    modifier = {
+		planet_jobs_slave_produces_mult = 0.05
+    }
+
 	weight_modifier = {
 		factor = 4
 		modifier = {

@@ -2,7 +2,7 @@ trait_pjs_eldar = {
 	cost = 4
 	potential_crossbreeding_chance = 0.25
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_solitary" "trait_communal" }
+	opposites = { }
     modifier = {
         leader_age = 800
 		army_damage_mult = 0.25
@@ -42,9 +42,77 @@ trait_pjs_psionic = {
 	cost = 2
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_traditional" "trait_quarrelsome" }
+	opposites = { }
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+    ai_weight = { weight = 0 }
+}
+
+trait_pjs_spartans = {
+	cost = 4
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { }
+	modifier = {
+		pop_housing_usage_mult = -0.2
+		planet_amenities_no_happiness_mult = 0.2
+		planet_pops_consumer_goods_upkeep_mult = -0.2
+        planet_pops_organics_food_upkeep_mult = -0.2
+	}
+	ai_weight = {
+		weight = 0
+	}
+    ai_weight = { weight = 0 }
+}
+
+trait_pjs_vaulters = {
+	cost = 4
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { }
+	modifier = {
+		army_defense_damage_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.1
+		pop_environment_tolerance = 0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+    ai_weight = { weight = 0 }
+}
+
+trait_pjs_artisans = {
+	cost = 2
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { }
+	modifier = {
+		planet_metallurgists_produces_mult = 0.05
+		planet_artisans_produces_mult = 0.05
+		planet_amenities_mult = 0.05
+	}
+	ai_weight = {
+		weight = 0
+	}
+    ai_weight = { weight = 0 }
+}
+
+trait_pjs_militarists = {
+	cost = 2
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { }
+	modifier = {
+		army_attack_damage_mult = 0.1
+		army_health = 0.1
+	    army_morale = 0.1
+	    planet_army_build_speed_mult  = 0.1
+	    armies_upkeep_mult = -0.1
+		army_disengage_chance_mult = -0.25
 	}
 	ai_weight = {
 		weight = 0
