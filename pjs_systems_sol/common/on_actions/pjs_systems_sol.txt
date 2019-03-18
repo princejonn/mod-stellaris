@@ -1,5 +1,0 @@
-empire_init_capital_planet = {
-	events = {
-		pjs_systems_sol_event.1
-	}
-}

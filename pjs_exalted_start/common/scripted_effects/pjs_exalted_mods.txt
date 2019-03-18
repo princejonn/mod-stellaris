@@ -1,3 +1,0 @@
-pjs_give_extra_buildings = {
-    give_technology = { tech = "tech_pjs_massive_planetary_shield_generator" message = no }
-}

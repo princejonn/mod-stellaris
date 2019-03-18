@@ -1,6 +1,0 @@
-on_game_start = {
-	events = {
-		pjs_systems_awakened_empire_event.1
-		pjs_systems_awakened_scientists_event.1
-	}
-}
