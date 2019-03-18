@@ -1,5 +1,5 @@
-name="PJs :: Unlimited Megastructures"
-path="mod/pjs_unlimited_megastructures"
+name="PJs :: Build Multiple Megastructures"
+path="mod/pjs_build_multiple_megastructures"
 tags={
 	"PJs"
 	"Balance"

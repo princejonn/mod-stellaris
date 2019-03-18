@@ -1,5 +1,5 @@
 special_project = {
-	key = "PJS_EXALTED_START_PROJECT"
+	key = "PJS_START_WITH_ADVANCED_TECH_PROJECT"
 	days_to_research = 1
 	tech_department = society_technology
 	timelimit = -1
@@ -13,7 +13,7 @@ special_project = {
 
 	on_success = {
 	    owner = {
-	        country_event = { id = pjs_exalted_start_event.100 }
+	        country_event = { id = pjs_start_with_advanced_tech_event.3 }
 	    }
 	}
 

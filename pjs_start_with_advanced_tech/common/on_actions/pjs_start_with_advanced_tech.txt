@@ -1,0 +1,5 @@
+on_game_start = {
+	events = {
+		pjs_start_with_advanced_tech_event.1
+	}
+}

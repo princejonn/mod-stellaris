@@ -1,5 +1,0 @@
-pjs_give_fallen_empire_tech = {
-    give_technology = { tech = "tech_dark_matter_deflector" message = no }
-    give_technology = { tech = "tech_dark_matter_power_core" message = no }
-    give_technology = { tech = "tech_dark_matter_propulsion" message = no }
-}

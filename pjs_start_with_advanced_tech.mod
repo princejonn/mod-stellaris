@@ -1,5 +1,5 @@
-name="PJs :: Exalted Start"
-path="mod/pjs_exalted_start"
+name="PJs :: Start with advanced tech"
+path="mod/pjs_start_with_advanced_tech"
 tags={
 	"PJs"
 	"Gameplay"
