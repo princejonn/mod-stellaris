@@ -1,9 +1,9 @@
 tech_repeatable_terraform_speed_mult = {
     area = society
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	weight = 1
+	cost = 90000
+	cost_per_level = 12000
+	tier = 5
+	weight = 0.2
 	category = { new_worlds }
 	is_rare = yes
 	levels = 4

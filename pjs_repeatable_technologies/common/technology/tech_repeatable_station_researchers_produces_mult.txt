@@ -1,9 +1,9 @@
 tech_repeatable_station_researchers_produces_mult = {
     area = physics
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	weight = 1
+	cost = 90000
+	cost_per_level = 12000
+	tier = 5
+	weight = 0.2
 	category = { materials }
 	is_rare = yes
 	levels = 4

@@ -1,9 +1,9 @@
 tech_repeatable_num_tech_alternatives_add = {
     area = physics
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	weight = 1
+	cost = 90000
+	cost_per_level = 12000
+	tier = 5
+	weight = 0.2
 	category = { computing }
 	is_rare = yes
 	levels = 2
