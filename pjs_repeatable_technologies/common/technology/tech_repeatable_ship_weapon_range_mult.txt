@@ -10,7 +10,10 @@ tech_repeatable_ship_weapon_range_mult = {
 	icon = "tech_sensors_4"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

@@ -10,7 +10,10 @@ tech_repeatable_trade_value_mult = {
 	icon = "tech_offworld_trading"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

@@ -10,7 +10,10 @@ tech_repeatable_station_gatherers_produces_mult = {
 	icon = "tech_orbital_trash_dispersal"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

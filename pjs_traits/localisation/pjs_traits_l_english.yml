@@ -23,3 +23,13 @@ s
 
   trait_pjs_militarists:0 "Militarists"
   trait_pjs_militarists_desc:0 "This species has been in endless wars, and battles. They constantly yearn for conflict and the entire society is built upon this common need. Wars are not necessarily out of hatred, but their need to compete. Maybe they get enjoyment from it as well?"
+
+  trait_pjs_severed_nerves:0 "Severed Nerves"
+  trait_pjs_severed_nerves_desc:0 "§LInessential neural pathways relating to self-preservation and free will are severed, creating a docile and obedient client species.§!"
+
+  ## Technology
+
+  tech_pjs_severed_nerve:0 "Severed Nerves"
+  tech_pjs_severed_nerve_desc:0 "§LInessential neural pathways relating to self-preservation and free will are severed, creating a docile and obedient client species.§!"
+
+  TRAIT_SEVERED_NERVE_EFFECT:0 "$mod_planet_jobs_produces_mult$: §R-20%§!\nPop Political Power £political_power£: §R-100%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"

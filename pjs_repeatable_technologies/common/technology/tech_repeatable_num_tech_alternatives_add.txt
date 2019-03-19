@@ -10,7 +10,10 @@ tech_repeatable_num_tech_alternatives_add = {
 	icon = "tech_self_aware_logic"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

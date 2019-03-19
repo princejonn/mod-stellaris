@@ -10,7 +10,10 @@ tech_repeatable_pop_growth_speed = {
 	icon = "tech_cloning"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

@@ -10,7 +10,10 @@ tech_repeatable_station_researchers_produces_mult = {
 	icon = "tech_prescient_data_modeling"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

@@ -10,7 +10,10 @@ tech_repeatable_starbase_upgrade_cost_mult = {
 	icon = "tech_refit_standards"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

@@ -10,7 +10,10 @@ tech_repeatable_starbase_shipyard_build_cost_mult = {
 	icon = "tech_artificial_moral_codes"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

@@ -10,7 +10,10 @@ tech_repeatable_country_resource_max_add = {
 	icon = "tech_micro_replicators"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

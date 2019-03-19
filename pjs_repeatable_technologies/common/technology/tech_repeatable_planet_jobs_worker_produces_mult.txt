@@ -10,7 +10,10 @@ tech_repeatable_planet_jobs_worker_produces_mult = {
 	icon = "tech_mountain_range"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {

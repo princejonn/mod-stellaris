@@ -10,7 +10,10 @@ tech_repeatable_terraform_speed_mult = {
 	icon = "tech_climate_restoration"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	weight_groups = {

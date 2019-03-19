@@ -10,7 +10,10 @@ tech_repeatable_planet_housing_mult = {
 	icon = "tech_modular_engineering"
 
 	weight_modifier = {
-		factor = @repatableTechFactor
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 25
+        }
 	}
 
 	ai_weight = {
