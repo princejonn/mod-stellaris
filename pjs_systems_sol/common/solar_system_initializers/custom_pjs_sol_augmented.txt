@@ -637,16 +637,6 @@ custom_pjs_sol_augmented = {
 
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
-		initializer = "sol_neighbor_t1"
-	}
-
-	neighbor_system = {
-		distance = { min = 10 max = 60 }
-		initializer = "sol_neighbor_t1_first_colony"
-	}
-
-	neighbor_system = {
-		distance = { min = 10 max = 60 }
 		initializer = "misc_pjs_achird_omega"
 	}
 
@@ -678,5 +668,15 @@ custom_pjs_sol_augmented = {
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
 		initializer = "misc_pjs_7248_arietis"
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 60 }
+		initializer = "sol_neighbor_t1"
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 60 }
+		initializer = "sol_neighbor_t1_first_colony"
 	}
 }
