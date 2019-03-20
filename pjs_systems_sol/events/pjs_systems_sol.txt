@@ -12,12 +12,15 @@ planet_event = {
 			## energy
 			add_deposit = d_geothermal_vent
 			add_deposit = d_frozen_gas_lake
+			add_deposit = d_tempestous_mountain
 
 			## minerals
 			add_deposit = d_rich_mountain
+			add_deposit = d_submerged_ore_veins
 			add_deposit = d_prosperous_mesa
 
 			## food
+			add_deposit = d_black_soil
 			add_deposit = d_tropical_island
 			add_deposit = d_great_river
 		}
@@ -25,21 +28,22 @@ planet_event = {
 		if = {
 		    limit = { has_planet_flag = sol_augmented_start }
 
+            while = {
+                count = 4
+                add_district = district_city
+            }
+            while = {
+                count = 3
+                add_district = district_generator
+            }
+            while = {
+                count = 3
+                add_district = district_mining
+            }
+
             if = {
                 limit = { owner = { is_machine_empire = no } }
 
-                while = {
-                    count = 4
-                    add_district = district_city
-                }
-                while = {
-                    count = 3
-                    add_district = district_generator
-                }
-                while = {
-                    count = 3
-                    add_district = district_mining
-                }
                 while = {
                     count = 3
                     add_district = district_farming
@@ -50,21 +54,20 @@ planet_event = {
                 limit = { owner = { is_machine_empire = yes } }
 
                 while = {
-                    count = 4
-                    add_district = district_city
-                }
-                while = {
-                    count = 4
+                    count = 3
                     add_district = district_generator
-                }
-                while = {
-                    count = 4
-                    add_district = district_mining
                 }
             }
 
+            if = {
+                limit = { owner = { is_regular_empire = yes } }
+
+                add_building = building_holo_theatres
+                add_building = building_commercial_zone
+            }
+
             while = {
-                count = 22
+                count = 25
                 create_pop = { species = owner_main_species }
             }
 
