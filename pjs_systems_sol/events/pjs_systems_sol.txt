@@ -26,7 +26,10 @@ planet_event = {
 		}
 
 		if = {
-		    limit = { has_planet_flag = sol_augmented_start }
+		    limit = {
+		        has_planet_flag = sol_augmented_start
+		        owner = { is_regular_empire = yes }
+            }
 
             while = {
                 count = 4
@@ -40,31 +43,13 @@ planet_event = {
                 count = 3
                 add_district = district_mining
             }
-
-            if = {
-                limit = { owner = { is_machine_empire = no } }
-
-                while = {
-                    count = 3
-                    add_district = district_farming
-                }
+            while = {
+                count = 3
+                add_district = district_farming
             }
 
-            if = {
-                limit = { owner = { is_machine_empire = yes } }
-
-                while = {
-                    count = 3
-                    add_district = district_generator
-                }
-            }
-
-            if = {
-                limit = { owner = { is_regular_empire = yes } }
-
-                add_building = building_holo_theatres
-                add_building = building_commercial_zone
-            }
+            add_building = building_holo_theatres
+            add_building = building_commercial_zone
 
             while = {
                 count = 25
