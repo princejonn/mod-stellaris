@@ -64,7 +64,7 @@ planet_event = {
             }
 
             while = {
-                count = 23
+                count = 22
                 create_pop = { species = owner_main_species }
             }
 
