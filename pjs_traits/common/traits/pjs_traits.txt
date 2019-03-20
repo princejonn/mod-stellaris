@@ -137,7 +137,7 @@ trait_pjs_severed_nerves = {
 	forced_happiness = yes
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		planet_jobs_produces_mult = -0.2
+		planet_jobs_produces_mult = -0.05
 		leader_skill_levels = -4
 		pop_political_power = -1
 	}

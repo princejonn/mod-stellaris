@@ -32,4 +32,4 @@ s
   tech_pjs_severed_nerve:0 "Severed Nerves"
   tech_pjs_severed_nerve_desc:0 "§LInessential neural pathways relating to self-preservation and free will are severed, creating a docile and obedient client species.§!"
 
-  TRAIT_SEVERED_NERVE_EFFECT:0 "$mod_planet_jobs_produces_mult$: §R-20%§!\nPop Political Power £political_power£: §R-100%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"
+  TRAIT_SEVERED_NERVE_EFFECT:0 "$mod_planet_jobs_produces_mult$: §R-5%§!\nPop Political Power £political_power£: §R-100%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"
