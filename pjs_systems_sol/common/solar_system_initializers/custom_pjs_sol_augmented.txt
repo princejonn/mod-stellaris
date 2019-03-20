@@ -76,7 +76,7 @@ custom_pjs_sol_augmented = {
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
-		flags = { planet_earth }
+		flags = { planet_earth sol_augmented_start }
 
 		starting_planet = yes
 
@@ -653,6 +653,11 @@ custom_pjs_sol_augmented = {
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
 		initializer = "misc_pjs_pleiades_eta"
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 60 }
+		initializer = "misc_pjs_3459_xing_xiu"
 	}
 
 	neighbor_system = {
