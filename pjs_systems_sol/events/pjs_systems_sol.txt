@@ -48,18 +48,23 @@ planet_event = {
                 add_district = district_farming
             }
 
+            add_building = building_factory_1
             add_building = building_holo_theatres
             add_building = building_commercial_zone
+            add_building = building_research_lab_1
 
             while = {
-                count = 25
+                count = 33
                 create_pop = { species = owner_main_species }
             }
 
             owner = {
                 give_technology = { tech = "tech_physics_1" message = no }
+                give_technology = { tech = "tech_physics_2" message = no }
                 give_technology = { tech = "tech_society_1" message = no }
+                give_technology = { tech = "tech_society_2" message = no }
                 give_technology = { tech = "tech_engineering_1" message = no }
+                give_technology = { tech = "tech_engineering_2" message = no }
                 give_technology = { tech = "tech_automated_exploration" message = no }
 
                 add_resource = { energy = 500 }
