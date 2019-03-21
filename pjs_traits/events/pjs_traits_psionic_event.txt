@@ -21,9 +21,6 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		if = {
-			limit = { NOT = { has_technology = tech_psionic_theory } }
-			add_research_option = tech_psionic_theory
-		}
+        add_research_option = tech_psionic_theory
 	}
 }

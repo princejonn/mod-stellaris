@@ -188,11 +188,28 @@ district_ringworld_industrial = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { has_valid_civic = civic_machine_servitor  = yes }
 		}
 		modifier = {
 			job_artisan_drone_add = 3
 			job_fabricator_add = 2
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+        }
+        text = job_district_ringworld_industrial_servitor_desc
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_fabricator_add = 5
 		}
 	}
     triggered_desc = {

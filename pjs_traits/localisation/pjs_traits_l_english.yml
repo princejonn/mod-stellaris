@@ -3,6 +3,12 @@
   trait_pjs_eldar:0 "Eldar"
   trait_pjs_eldar_desc:0 "Eldar (singular Elda) was the name given to the Elves by the Vala Oromë when he first found them wandering in the starlight of Cuiviénen. At first, the name was applied to all Elves, but after the summons of the Valar, it came to be used only for the West-elves who followed the summons and began the Great Journey."
 
+  trait_pjs_asari:0 "Asari"
+  trait_pjs_asari_desc:0 "Asari have long lives and are naturally predisposed to interact with other intelligent species. On the other hand, their peculiar way of reproducing tends to make their communities plural and highly divergent in attitude and ideologies."
+
+  trait_pjs_quarian:0 "Quarian"
+  trait_pjs_quarian_desc:0 "The quarians are a nomadic species of humanoid aliens known for their skills with technology and synthetic intelligence. Since their homeworld Rannoch was conquered, the quarians live aboard the Migrant Fleet, a huge collection of starships that travel as a single fleet."
+
   trait_pjs_partial_photosynthetic:0 "Partially Photosynthetic"
   trait_pjs_partial_photosynthetic_desc:0 "$trait_pjs_photosynthetic_desc$"
 

@@ -8,7 +8,7 @@ event = {
 
 	immediate = {
 		every_country = {
-			limit = { is_psionic_trait = yes }
+			limit = { is_eldar_trait = yes }
 			country_event = { id = pjs_traits_eldar_event.2 }
 		}
 	}

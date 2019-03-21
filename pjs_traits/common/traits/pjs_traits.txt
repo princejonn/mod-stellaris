@@ -1,8 +1,24 @@
+trait_pjs_asari = {
+	cost = 4
+	randomized = no
+	potential_crossbreeding_chance = 0.1
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_venerable" }
+    modifier = {
+        leader_age = 800
+        pop_other_species_happiness = 0.1
+        pop_environment_tolerance = 0.1
+        pop_government_ethic_attraction = -0.2
+    }
+    ai_weight = { weight = 0 }
+}
+
 trait_pjs_eldar = {
 	cost = 4
-	potential_crossbreeding_chance = 0.25
+	randomized = no
+	potential_crossbreeding_chance = 0.1
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { }
+	opposites = { "trait_venerable" }
     modifier = {
         leader_age = 800
 		army_damage_mult = 0.25
@@ -16,9 +32,28 @@ trait_pjs_eldar = {
     ai_weight = { weight = 0 }
 }
 
+trait_pjs_quarian = {
+	cost = 2
+	randomized = no
+	potential_crossbreeding_chance = 0.1
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_venerable" }
+    modifier = {
+        tile_resource_engineering_research_mult = 0.2
+        tile_resource_physics_research_mult = 0.05
+        tile_resource_society_research_mult = 0.05
+		pop_growth_req_mult = 0.1
+		pop_migration_time = -0.5
+		pop_resettlement_cost_mult = -0.5
+		pop_happiness = 0.05
+        pop_environment_tolerance = -0.25
+    }
+    ai_weight = { weight = 0 }
+}
+
 trait_pjs_photosynthetic = {
 	cost = 4
-	potential_crossbreeding_chance = 0.15
+	potential_crossbreeding_chance = 0.1
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_pjs_partial_photosynthetic" }
 	modifier = {
@@ -54,7 +89,7 @@ trait_pjs_psionic = {
 
 trait_pjs_spartans = {
 	cost = 4
-	potential_crossbreeding_chance = 0
+	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { }
 	modifier = {
@@ -71,7 +106,7 @@ trait_pjs_spartans = {
 
 trait_pjs_vaulters = {
 	cost = 4
-	potential_crossbreeding_chance = 0
+	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { }
 	modifier = {
@@ -87,7 +122,7 @@ trait_pjs_vaulters = {
 
 trait_pjs_artisans = {
 	cost = 2
-	potential_crossbreeding_chance = 0
+	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { }
 	modifier = {
@@ -103,7 +138,7 @@ trait_pjs_artisans = {
 
 trait_pjs_militarists = {
 	cost = 2
-	potential_crossbreeding_chance = 0
+	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { }
 	modifier = {

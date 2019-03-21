@@ -1,3 +1,9 @@
+is_asari_trait = {
+	owner_species = {
+		has_trait = trait_pjs_asari
+	}
+}
+
 is_eldar_trait = {
 	owner_species = {
 		has_trait = trait_pjs_eldar
