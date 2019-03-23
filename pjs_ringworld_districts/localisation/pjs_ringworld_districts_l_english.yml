@@ -12,20 +12,20 @@
   district_ringworld_commercial_plural:0 "Commercial Districts"
   district_ringworld_commercial_desc:0 "Specialized Ringworld district custom built to suit our advanced social and commercial needs."
 
-  job_district_ringworld_rural_hive_desc:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
-  job_district_ringworld_rural_servitor_desc:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
-  job_district_ringworld_rural_machine_desc:0 "$job_technician_drone_effect_desc$"
   job_district_ringworld_rural_regular_desc:0 "$job_technician_effect_desc$\n$job_farmer_effect_desc$"
+  job_district_ringworld_rural_hive_desc:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
+  job_district_ringworld_rural_machine_desc:0 "$job_technician_drone_effect_desc$"
+  job_district_ringworld_rural_servitor_desc:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
   job_district_ringworld_rural_fe_spiritualist_desc:0 "$job_fe_acolyte_generator_effect_desc$\n$job_fe_acolyte_farm_effect_desc$"
 
-  job_district_ringworld_industrial_servitor_desc:0 "$job_artisan_drone_effect_desc$\n$job_fabricator_effect_desc$"
-  job_district_ringworld_industrial_machine_desc:0 "$job_fabricator_effect_desc$"
-  job_district_ringworld_industrial_hive_desc:0 "$job_alloy_drone_effect_desc$\n$job_artisan_drone_effect_desc$"
   job_district_ringworld_industrial_regular_desc:0 "$job_foundry_effect_desc$\n$job_artisan_effect_desc$"
+  job_district_ringworld_industrial_hive_desc:0 "$job_alloy_drone_effect_desc$\n$job_artisan_drone_effect_desc$"
+  job_district_ringworld_industrial_machine_desc:0 "$job_fabricator_effect_desc$"
+  job_district_ringworld_industrial_servitor_desc:0 "$job_artisan_drone_effect_desc$\n$job_fabricator_effect_desc$"
 
-  job_district_ringworld_commercial_machine_desc:0 "$job_researcher_effect_desc$\n$job_entertainer_effect_desc$\n$job_culture_worker_effect_desc$"
+  job_district_ringworld_commercial_regular_desc:0 "$job_researcher_effect_desc$\n$job_entertainer_effect_desc$\n$job_culture_worker_effect_desc$"
   job_district_ringworld_commercial_hive_desc:0 "$job_brain_drone_effect_desc$\n$job_maintenance_drone_effect_desc$"
-  job_district_ringworld_commercial_regular_desc:0 "$job_calculator_effect_desc$\n$job_maintenance_drone_effect_desc$"
+  job_district_ringworld_commercial_machine_desc:0 "$job_calculator_effect_desc$\n$job_maintenance_drone_effect_desc$"
 
   col_commercial_ringworld:0 "Commercial Ringworld"
   col_commercial_ringworld_desc:0 "This world is a seat of scientific research, culture, entertainment, and technological advancement."

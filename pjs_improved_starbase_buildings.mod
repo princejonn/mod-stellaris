@@ -6,5 +6,5 @@ tags={
 	"Buildings"
 }
 picture="thumb.jpg"
-remote_file_id=""
+remote_file_id="1691263324"
 supported_version="2.2.*"
