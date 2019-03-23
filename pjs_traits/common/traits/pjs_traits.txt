@@ -132,7 +132,6 @@ trait_pjs_artisans = {
 	modifier = {
 		planet_metallurgists_produces_mult = 0.05
 		planet_artisans_produces_mult = 0.05
-		planet_amenities_mult = 0.05
 	}
 	ai_weight = {
 		weight = 0
