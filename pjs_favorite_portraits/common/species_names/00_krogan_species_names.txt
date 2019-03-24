@@ -4,6 +4,6 @@ TUR = {
 		plural = "Krogan"
 		home_planet = "Tuchanka"
 		home_system = "Aralakh"
-		name_list = "krogan_names"
+		name_list = "MAM1"
 	}
 }

@@ -34,7 +34,6 @@
   GETH_sound_05:0 "chattering"
   GETH_organ:0 "motherboard"
   GETH_mouth:0 "energy intake port"
-  name_list_geth_names:0 "Geth"
 
   KRO:0 "Krogan"
   KRO_desc:0 "Krogan"
@@ -52,7 +51,6 @@
   KRO_sound_05:0 "moaning"
   KRO_organ:0 "stomach"
   KRO_mouth:0 "mouth"
-  name_list_krogan_names:0 "Krogan"
 
   QRN:0 "Quarian"
   QRN_desc:0 "Quarian"
@@ -88,4 +86,4 @@
   TUR_sound_05:0 "moaning"
   TUR_organ:0 "stomach"
   TUR_mouth:0 "mouth"
-  name_list_quarian_names:0 "Turian"
+  name_list_turian_names:0 "Turian"
