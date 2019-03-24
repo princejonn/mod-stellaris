@@ -1,6 +1,4 @@
-﻿### Asari Names
-### Asari
-asari_names = {
+﻿asari_names = {
 	randomized = no
 
 	ship_names = {

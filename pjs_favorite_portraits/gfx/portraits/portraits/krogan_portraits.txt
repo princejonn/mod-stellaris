@@ -1,0 +1,195 @@
+portraits = {
+	krogan_wrex = {	entity = "portrait_reptilian_14_dontmove_entity"	clothes_selector = "me_no_clothes" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_i_male"	
+		character_textures = {
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_wrex_red.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_wrex_new_2.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_wrex_new_3.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_wrex_new_4.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_wrex_new_5.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_wrex_new_6.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_wrex_new_7.dds"
+		}
+	}
+	
+	krogan_female = {	entity = "portrait_reptilian_14_dontmove_entity"	clothes_selector = "me_no_clothes" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_i_female"	
+		character_textures = {
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_female_pink.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_female_red.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_female_blue.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_female_green.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_female_grey.dds"
+			"gfx/models/portraits/krogan/krogan_reptilian_massive_14_female_black.dds"
+		}
+	}
+	
+	rep14_fix = {	entity = "portrait_reptilian_14_dontmove_entity"	clothes_selector = "no_texture" hair_selector = "no_texture" 
+		greeting_sound = "reptilian_01_greetings"
+		character_textures = {
+			"gfx/models/portraits/reptilian/reptilian_massive_14_yellow.dds"
+			"gfx/models/portraits/reptilian/reptilian_massive_14_green_yellow.dds"
+			"gfx/models/portraits/reptilian/reptilian_massive_14_green.dds"
+			"gfx/models/portraits/reptilian/reptilian_massive_14_black.dds"
+			"gfx/models/portraits/reptilian/reptilian_massive_14_brown.dds"
+			"gfx/models/portraits/reptilian/reptilian_massive_14_red.dds"
+		}				
+	}
+}
+
+portrait_groups = {
+	krogan {
+		default = krogan_wrex
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					krogan_wrex
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					krogan_female
+				}
+			}
+
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					is_species = "Krogan"
+				}
+				portraits = {
+					krogan_wrex
+				}
+			}
+			add = {
+				trigger = { 
+					NOT = { 
+						is_species = "Krogan"
+					}
+				}
+				portraits = {
+					krogan_wrex
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					is_species = "Krogan"
+				}
+				portraits = {
+					krogan_wrex
+					krogan_female
+				}
+			}
+			add = {
+				trigger = { 
+					NOT = { 
+						is_species = "Krogan"
+					}
+				}
+				portraits = {
+					krogan_wrex
+					krogan_female
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = male
+					is_species = "Krogan"
+				}
+				portraits = {
+					krogan_wrex
+				}
+			}
+			add = {
+				trigger = {
+					gender = female
+					is_species = "Krogan"
+				}
+				portraits = {
+					krogan_female
+				}
+			}
+			add = {
+				trigger = {
+					gender = female
+					NOT = { 
+						is_species = "Krogan"
+					}
+				}
+				portraits = {
+					krogan_female
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+					NOT = { 
+						is_species = "Krogan"
+					}
+				}
+				portraits = {
+					krogan_wrex
+				}
+			}
+		}
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = male
+					is_species = "Krogan"
+				}
+				portraits = {
+					krogan_wrex
+				}
+			}
+			add = {
+				trigger = {
+					gender = female
+					is_species = "Krogan"
+				}
+				portraits = {
+					krogan_female
+				}
+			}
+			add = {
+				trigger = {
+					gender = female
+					NOT = { 
+						is_species = "Krogan"
+					}
+				}
+				portraits = {
+					krogan_female
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+					NOT = { 
+						is_species = "Krogan"
+					}
+				}
+				portraits = {
+					krogan_wrex
+				}
+			}
+		}
+	}
+}

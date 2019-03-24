@@ -1,6 +1,4 @@
-﻿### quarian
-
-quarian_names = {
+﻿quarian_names = {
 	#selectable = yes
 	randomized = no
 

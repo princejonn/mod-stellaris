@@ -1,0 +1,9 @@
+TUR = {
+	krogan = {
+		name = "Krogan"
+		plural = "Krogan"
+		home_planet = "Tuchanka"
+		home_system = "Aralakh"
+		name_list = "krogan_names"
+	}
+}
