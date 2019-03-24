@@ -13,7 +13,7 @@ habitat_0 = {
 		category = megastructures
 		cost = {
 			alloys = 4500
-			influence = 200
+			influence = 120
 		}
 	}
 	construction_blocks_others = no
@@ -59,7 +59,6 @@ habitat_0 = {
 					}
 					is_planet_class = pc_ringworld_habitable
 					is_planet_class = pc_ringworld_habitable_damaged
-					is_planet_class = pc_ringworld_tech
 					is_planet_class = pc_ringworld_tech_damaged
 					is_planet_class = pc_ringworld_seam
 					is_planet_class = pc_ringworld_seam_damaged
@@ -114,7 +113,7 @@ habitat_0 = {
 			location = fromfrom.planet
 			orbit_location = yes
 			orbit_angle_offset = 45
-			orbit_distance_offset = 9.899
+			orbit_distance_offset = 9
 			size = 9
 			has_ring = no
 

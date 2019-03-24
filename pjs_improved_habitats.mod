@@ -1,5 +1,5 @@
-name="PJs :: Habitat Districts"
-path="mod/pjs_habitat_districts"
+name="PJs :: Improved Habitats"
+path="mod/pjs_improved_habitats"
 tags={
 	"PJs"
 	"Balance"
