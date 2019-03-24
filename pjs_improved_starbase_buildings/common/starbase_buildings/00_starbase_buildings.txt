@@ -622,7 +622,7 @@ deep_space_black_site = {
 		}
 
 		produces = {
-			unity = 2
+			unity = 4
 		}
 
 		upkeep = {
