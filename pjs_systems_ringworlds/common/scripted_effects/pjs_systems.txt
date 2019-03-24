@@ -1,6 +1,5 @@
 generate_energy_deposits = {
-    while = {
-        count = 4
+    while = { count = 4
         random_list = {
             40 = { add_deposit = d_geothermal_vent }
             40 = { add_deposit = d_underwater_vent }
@@ -14,8 +13,7 @@ generate_energy_deposits = {
 }
 
 generate_food_deposits = {
-    while = {
-        count = 4
+    while = { count = 4
         random_list = {
             40 = { add_deposit = d_black_soil }
             40 = { add_deposit = d_teeming_reef }
@@ -32,8 +30,7 @@ generate_food_deposits = {
 }
 
 generate_mineral_deposits = {
-    while = {
-        count = 4
+    while = { count = 4
         random_list = {
             40 = { add_deposit = d_rich_mountain }
             40 = { add_deposit = d_submerged_ore_veins }

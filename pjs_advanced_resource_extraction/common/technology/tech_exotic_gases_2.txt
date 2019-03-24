@@ -1,10 +1,10 @@
 tech_exotic_gases_2 = {
-	cost = @tier4cost1
+	cost = @tier5cost1
 	area = engineering
-	tier = 4
+	tier = 5
 	category = { materials }
 	prerequisites = { "tech_exotic_gases" }
-	weight = @tier4weight1
+	weight = @tier5weight1
 	icon = "tech_exotic_gases"
 
 	weight_modifier = {

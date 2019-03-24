@@ -31,23 +31,12 @@ district_hab_housing = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_clerk_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
 			job_maintenance_drone_add = 2
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner

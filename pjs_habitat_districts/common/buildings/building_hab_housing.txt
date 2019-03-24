@@ -9,7 +9,7 @@ building_hab_housing = {
 
 	planet_modifier = {
 		planet_housing_add = 4
-		planet_amenities_add = -8
+		planet_amenities_add = -4
 	}
 
 	triggered_planet_modifier = {

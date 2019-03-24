@@ -311,6 +311,10 @@ custom_pjs_awakened_scientists = {
                 }
                 set_planet_flag = "megastructure"
                 set_planet_flag = "habitat"
+
+                while = { count = 4
+                    add_deposit = d_stasis_chambers
+                }
             }
         }
         spawn_planet = {
@@ -330,8 +334,17 @@ custom_pjs_awakened_scientists = {
                 }
                 set_planet_flag = "megastructure"
                 set_planet_flag = "habitat"
+
+                while = { count = 4
+                    add_deposit = d_stasis_chambers
+                }
             }
         }
+    }
+
+    neighbor_system = {
+        distance = { min = 10 max = 60 }
+        initializer = "misc_pjs_macedonia"
     }
 
     neighbor_system = {
@@ -342,11 +355,6 @@ custom_pjs_awakened_scientists = {
     neighbor_system = {
         distance = { min = 10 max = 60 }
         initializer = "neighbor_t1_first_colony"
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1"
     }
 
     neighbor_system = {
