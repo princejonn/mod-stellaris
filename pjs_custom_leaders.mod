@@ -5,6 +5,6 @@ tags={
 	"Balance"
 	"Leaders"
 }
-picture="thumb.jpg"
+picture="thumb-cl.jpg"
 remote_file_id="1271263414"
 supported_version="2.2.*"

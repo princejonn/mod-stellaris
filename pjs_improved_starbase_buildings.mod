@@ -5,6 +5,6 @@ tags={
 	"Balance"
 	"Buildings"
 }
-picture="thumb.jpg"
+picture="thumb-is.jpg"
 remote_file_id="1691263324"
 supported_version="2.2.*"

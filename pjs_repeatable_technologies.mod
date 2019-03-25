@@ -4,6 +4,6 @@ tags={
 	"PJs"
 	"Technologies"
 }
-picture="thumb.jpg"
+picture="thumb-r.jpg"
 remote_file_id="1264675948"
 supported_version="2.2.*"

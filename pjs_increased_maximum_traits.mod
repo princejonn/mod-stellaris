@@ -6,6 +6,6 @@ tags={
 	"Overhaul"
 	"Technologies"
 }
-picture="thumb.jpg"
+picture="thumb-mt.jpg"
 remote_file_id="1442403409"
 supported_version="2.2.*"

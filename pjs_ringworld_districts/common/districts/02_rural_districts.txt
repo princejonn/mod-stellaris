@@ -129,47 +129,73 @@ district_generator = {
 	}
 
 	ai_weight = {
-		weight = 1
-		modifier =
-		{
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 8
-				}
-			}
-		}
-
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-
-		modifier = {
-			factor = 3
-			any_owned_pop = {
-				OR = {
-					is_unemployed = yes
-					has_job = servant
-				}
-			}
-		}
-
-		# No one to work it anyway
-		modifier = {
-			factor = 0
-			free_housing > 0
-			NOT = {
-				any_owned_pop = {
-					OR = {
-						is_unemployed = yes
-						has_job = servant
-					}
-				}
-			}
-		}
-	}
+        weight = 0
+        modifier = {
+            weight = 500
+            gai_build_district = yes
+            OR = {
+                owner = {
+                    has_monthly_income = {
+                        resource = energy
+                        value < 60
+                    }
+                }
+                num_free_districts = { type = district_mining value = 0 }
+            }
+        }
+        modifier = {
+            weight = 1
+            OR = {
+                gai_good_energy = yes
+                gai_focus_world = yes
+                NOT = { has_district = district_generator }
+            }
+        }
+        modifier = {
+            weight = 1000
+            has_planet_flag = gai_get_energy
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value < 60
+                }
+            }
+        }
+        modifier = {
+            weight = 1000
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value < 0
+                }
+                has_monthly_income = {
+                    resource = minerals
+                    value > 150
+                }
+            }
+        }
+        modifier = {
+            weight = 825
+            any_owned_pop = {
+                is_unemployed = yes
+                NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+            }
+            owner = {
+                has_valid_civic = civic_machine_servitor
+                has_monthly_income = {
+                    resource = energy
+                    value < 30
+                }
+            }
+        }#Servitors
+        modifier = {
+            weight = 850
+            any_owned_pop = {
+                is_unemployed = yes
+                has_citizenship_type = { type = citizenship_slavery }
+            }
+        }#Drones
+    }
 
 	ai_resource_production = {
 		energy = 1
@@ -308,43 +334,79 @@ district_mining = {
 	}
 
 	ai_weight = {
-		weight = 1
-		modifier =
-		{
-			factor = 3
+		weight = 0
+		modifier = {
+			weight = 600
+			gai_build_district = yes
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = food
+						value > 20
+					}
+					root = { num_free_districts = { type = district_farming value = 0 } }
+					NOR = {
+						NOT = { has_authority = auth_machine_intelligence }
+						has_valid_civic = civic_machine_servitor
+						has_valid_civic = civic_machine_assimilator
+					}
+				}
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value > 30
+					}
+					root = { num_free_districts = { type = district_generator value = 0 } }
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			gai_good_minerals = yes
+		}
+		modifier = {
+			weight = 850
+			any_owned_pop = {
+				is_unemployed = yes
+				OR = {
+					specialist_job_check_trigger = no
+					has_citizenship_type = { type = citizenship_slavery }
+				}
+				NOT = { has_citizenship_type = { type = citizenship_assimilation } }
+			}
+		}#Drones
+		modifier = {
+			weight = 850
+			any_owned_pop = {
+				is_unemployed = yes
+				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+			}
+			owner = {
+				has_valid_civic = civic_machine_servitor
+				OR = {
+					has_monthly_income = {
+						resource = food
+						value > 25
+					}
+					root = { num_free_districts = { type = district_farming value = 0 } }
+
+				}
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value > 25
+					}
+					root = { num_free_districts = { type = district_generator value = 0 } }
+				}
+			}
+		}#Servitors
+		modifier = {
+			weight = 1000
+			gai_build_district = yes
 			owner = {
 				has_monthly_income = {
 					resource = minerals
-					value < 0
-				}
-			}
-		}
-
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-
-		modifier = {
-			factor = 3
-			any_owned_pop = {
-				OR = {
-					is_unemployed = yes
-					has_job = servant
-				}
-			}
-		}
-
-		# No one to work it anyway
-		modifier = {
-			factor = 0
-			free_housing > 0
-			NOT = {
-				any_owned_pop = {
-					OR = {
-						is_unemployed = yes
-						has_job = servant
-					}
+					value < 45
 				}
 			}
 		}
@@ -499,42 +561,111 @@ district_farming = {
 	}
 
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 3
+			weight = 500
+			gai_build_district = yes
+			owner = { gai_uses_food = yes }
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = food
+						value < 20
+					}
+				}
+				owner = {
+					has_monthly_income = {
+						resource = energy
+						value > 20
+					}
+						has_monthly_income = {
+						resource = food
+						value < 40
+					}
+				}
+				AND = {
+					num_free_districts = { type = district_generator value = 0 }
+					num_free_districts = { type = district_mining value = 0 }
+				}
+			}
+		}
+		modifier = {
+			weight = 1
+			owner = { is_hive_empire = yes }
+			not = { has_district = district_farming }
+		}
+		modifier = {
+			weight = 1000
+			owner = { is_hive_empire = yes }
+			is_capital = yes
+		}
+		modifier = {
+			weight = 600
+			gai_build_district = yes
+			owner = { gai_uses_food = yes }
 			owner = {
 				has_monthly_income = {
 					resource = food
-					value < 5
+					value < 0
 				}
 			}
 		}
-
 		modifier = {
-			factor = 2
-			free_housing < 0
+			weight = 1000
+			has_planet_flag = gai_get_food
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 40
+				}
+			}
 		}
-
 		modifier = {
-			factor = 3
+			weight = 850
+			owner = { gai_uses_food = yes }
 			any_owned_pop = {
+				is_unemployed = yes
 				OR = {
-					is_unemployed = yes
-					has_job = servant
+					specialist_job_check_trigger = no
+					has_citizenship_type = { type = citizenship_slavery }
+				}
+				NOT = { has_citizenship_type = { type = citizenship_assimilation } }
+			}
+			OR = {
+				num_free_districts = { type = district_mining value = 0 }
+				owner = {
+					has_monthly_income = {
+						resource = food
+						value < 50
+					}
 				}
 			}
+		}#Drones
+		modifier = {
+			weight = 825
+			any_owned_pop = {
+				is_unemployed = yes
+				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+			}
+			owner = {
+				has_valid_civic = civic_machine_servitor
+				has_monthly_income = {
+					resource = food
+					value < 30
+				}
+			}
+		}#Servitors
+		modifier = {
+			weight = 1
+			gai_good_food = yes
 		}
-
-		# No one to work it anyway
 		modifier = {
 			factor = 0
-			free_housing > 0
-			NOT = {
-				any_owned_pop = {
-					OR = {
-						is_unemployed = yes
-						has_job = servant
-					}
+			NOT = { gai_good_food = yes }
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value > 80
 				}
 			}
 		}
@@ -673,43 +804,26 @@ district_generator_uncapped = {
 	}
 
 	ai_weight = {
-		weight = 1
-		modifier =
-		{
-			factor = 3
+		weight = 0
+		modifier = {
+			weight = 9000
+			gai_build_district = yes
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = energy
+						value < 200
+					}
+				}
+				num_free_districts = { type = district_mining_uncapped value = 0 } #ring worlds
+			}
+		}
+		modifier = {
+			factor = 0
 			owner = {
 				has_monthly_income = {
 					resource = energy
-					value < 8
-				}
-			}
-		}
-
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-
-		modifier = {
-			factor = 3
-			any_owned_pop = {
-				OR = {
-					is_unemployed = yes
-					has_job = servant
-				}
-			}
-		}
-
-		# No one to work it anyway
-		modifier = {
-			factor = 0
-			free_housing > 0
-			NOT = {
-				any_owned_pop = {
-					OR = {
-						is_unemployed = yes
-						has_job = servant
-					}
+					value > 150
 				}
 			}
 		}
@@ -850,46 +964,28 @@ district_mining_uncapped = {
 	}
 
 	ai_weight = {
-		weight = 1
-		modifier =
-		{
-			factor = 3
+		weight = 0
+		modifier = {
+			weight = 8900
+			gai_build_district = yes
 			owner = {
 				has_monthly_income = {
-					resource = minerals
-					value < 0
+					resource = food
+					value > 10
+				}
+				has_monthly_income = {
+					resource = energy
+					value > 200
 				}
 			}
 		}
-
 		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-
-		modifier = {
-			factor = 3
+			weight = 8500
 			any_owned_pop = {
-				OR = {
-					is_unemployed = yes
-					has_job = servant
-				}
+				is_unemployed = yes
+				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
 			}
-		}
-
-		# No one to work it anyway
-		modifier = {
-			factor = 0
-			free_housing > 0
-			NOT = {
-				any_owned_pop = {
-					OR = {
-						is_unemployed = yes
-						has_job = servant
-					}
-				}
-			}
-		}
+		}#Drones
 	}
 
 	ai_resource_production = {
@@ -1036,43 +1132,36 @@ district_farming_uncapped = {
 	}
 
 	ai_weight = {
-		weight = 1
-		modifier =
-		{
-			factor = 3
+		weight = 0
+		modifier = {
+			weight = 9500
+			gai_build_district = yes
 			owner = {
 				has_monthly_income = {
 					resource = food
-					value < 5
+					value < 15
 				}
 			}
 		}
-
 		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-
-		modifier = {
-			factor = 3
+			weight = 9500
 			any_owned_pop = {
-				OR = {
-					is_unemployed = yes
-					has_job = servant
+				is_unemployed = yes
+				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+			}
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 50
 				}
 			}
-		}
-
-		# No one to work it anyway
+		}#Drones
 		modifier = {
 			factor = 0
-			free_housing > 0
-			NOT = {
-				any_owned_pop = {
-					OR = {
-						is_unemployed = yes
-						has_job = servant
-					}
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value > 80
 				}
 			}
 		}

@@ -20,6 +20,10 @@ district_ringworld_rural = {
 		}
 	}
 
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -177,14 +181,18 @@ district_ringworld_industrial = {
 		}
 	}
 
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_artisan_add = 3
-			job_foundry_add = 1
+			job_artisan_add = 2
+			job_foundry_add = 2
 		}
 	}
     triggered_desc = {
@@ -201,8 +209,8 @@ district_ringworld_industrial = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_artisan_drone_add = 3
-			job_alloy_drone_add = 1
+			job_artisan_drone_add = 2
+			job_alloy_drone_add = 2
 		}
 	}
     triggered_desc = {
@@ -245,8 +253,8 @@ district_ringworld_industrial = {
             }
 		}
 		modifier = {
-			job_artisan_drone_add = 3
-			job_fabricator_add = 1
+			job_artisan_drone_add = 2
+			job_fabricator_add = 2
 		}
 	}
     triggered_desc = {
@@ -285,6 +293,10 @@ district_ringworld_commercial = {
 		upkeep = {
 			energy = 6
 		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
 	}
 
 	triggered_planet_modifier = {

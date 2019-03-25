@@ -46,10 +46,37 @@ district_hab_housing = {
 	}
 
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 12
-			free_housing < 0
+			weight = 90000
+			planet = {
+				owner = { is_regular_empire = no }
+				num_districts = { type = district_hab_housing value < 2 }
+			}
+		}
+		modifier = {
+			weight = 90000
+			planet = {
+				owner = { is_regular_empire = yes }
+				num_districts = { type = district_hab_housing value < 2 }
+			}
+		}
+		modifier = {
+			weight = 90000
+			planet = {
+				owner = {
+					is_regular_empire = yes
+					has_ascension_perk = ap_master_builders
+				}
+				num_districts = { type = district_hab_housing value < 3 }
+			}
+		}
+		modifier = {
+			factor = 0
+			planet = {
+				owner = { is_regular_empire = yes }
+				not = { has_district = district_hab_cultural }
+			}
 		}
 	}
 }
@@ -103,45 +130,19 @@ district_hab_energy = {
 	}
 
 	ai_weight = {
-		weight = 1
-		modifier =
-		{
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 8
-				}
-			}
-		}
-
+		weight = 0
 		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-
-		modifier = {
-			factor = 3
-			any_owned_pop = {
-				OR = {
-					is_unemployed = yes
-					has_job = servant
-				}
-			}
-		}
-
-		# No one to work it anyway
-		modifier = {
-			factor = 0
-			free_housing > 0
-			NOT = {
-				any_owned_pop = {
-					OR = {
-						is_unemployed = yes
-						has_job = servant
+			weight = 20000
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = energy
+						value < 200
 					}
 				}
+				planet = { has_district = district_hab_energy }
 			}
+			NOT = { planet = { has_district = district_hab_science } }
 		}
 	}
 
@@ -192,12 +193,12 @@ district_hab_cultural = {
 	}
 
 	ai_weight = {
-		weight = 1
-
-		modifier =
-		{
-			factor = 3
-			free_amenities < 2
+		weight = 0
+		modifier = {
+			weight = 80000
+			planet = {
+				NOT = { has_district = district_hab_cultural }
+			}
 		}
 	}
 
@@ -290,15 +291,31 @@ district_hab_science = {
 	}
 
 	ai_weight = {
-		weight = 2
+		weight = 0
+		modifier = {
+			weight = 9000
+			planet = {
+				NOT = { has_district = district_hab_energy }
+				NOT = { has_district = district_hab_cultural }
+			}
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value > 80
+				}
+			}
+		}
+		modifier = {
+			weight = 9000
+			has_district = district_hab_cultural
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 6
+				}
+			}
+		}
 	}
-
-	#ai_resource_production = {
-	#	science? = 1
-	#	trigger = {
-	#		always = yes
-	#	}
-	#}
 }
 
 district_hab_commercial = {
@@ -335,19 +352,18 @@ district_hab_commercial = {
 	}
 
 	ai_weight = {
-		weight = 1
-
-		modifier =
-		{
-			factor = 5
-			free_amenities < 2
-		}
-	}
-
-	ai_resource_production = {
-		consumer_goods = 1
-		trigger = {
-			always = yes
+		weight = 0
+		modifier = {
+			weight = 9000
+			OR = {
+				has_district = district_hab_commercial
+				owner = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 6
+					}
+				}
+			}
 		}
 	}
 }

@@ -5,6 +5,6 @@ tags={
 	"Balance"
 	"Overhaul"
 }
-picture="thumb.jpg"
+picture="thumb-iz.jpg"
 remote_file_id="1649743281"
 supported_version="2.2.*"

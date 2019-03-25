@@ -4,6 +4,6 @@ tags={
 	"PJs"
 	"Galaxy Generation"
 }
-picture="thumb.jpg"
+picture="thumb-s.jpg"
 remote_file_id="1265397942"
 supported_version="2.2.*"

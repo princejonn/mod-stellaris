@@ -1,0 +1,168 @@
+building_hydroponics_farm = {
+
+	base_buildtime = 480
+
+	category = resource
+
+	potential = {
+		exists = owner
+		planet = {
+			or = {
+				AND = {
+					free_building_slots > 0
+					owner = {
+						gai_uses_food = yes
+					}
+				}
+				owner = { is_ai = no }
+			}
+		}
+		NOT = { is_planet_class = pc_machine }
+		NOT = { has_modifier = resort_colony }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			AND = {
+				gai_destroy_building = yes
+				NOT = { is_planet_class = pc_habitat }
+				free_building_slots = 0
+			}
+			planet = {
+				NOT = { is_planet_class = pc_habitat }
+				free_building_slots = 0
+				owner = {
+					is_ai = yes
+					has_monthly_income = {
+						resource = food
+						value > 100
+					}
+				}
+			}
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_farmer_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_agri_drone_add = 3
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 360
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_agri_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_farmer_effect_desc
+	}
+
+	prerequisites = {
+		"tech_hydroponics"
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 500
+			NOT = { is_planet_class = pc_habitat }
+			OR = {
+				free_jobs < 3
+				gai_unemployed = yes
+			}
+			OR = {
+				num_free_districts = { type = district_farming value = 0 }
+				free_district_slots = 0
+			}#Don't build when you can still get farming districts
+			owner = {
+				OR = {
+					is_mechanical_empire = no
+					AND = {
+						is_mechanical_empire = yes
+						OR = {
+							has_civic = civic_machine_servitor
+							has_civic = civic_machine_assimilator
+						}
+					}
+				}
+				has_monthly_income = {
+					resource = food
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			weight = 1000
+			OR = {
+				free_housing > 3
+				owner = { is_gestalt = no }
+			}
+			OR = {
+				free_jobs < 3
+				gai_unemployed = yes
+			}
+			is_planet_class = pc_habitat
+			OR = {
+				owner = {
+					OR = {
+						is_mechanical_empire = no
+						AND = {
+							is_mechanical_empire = yes
+							OR = {
+								has_civic = civic_machine_servitor
+								has_civic = civic_machine_assimilator
+							}
+						}
+					}
+					has_monthly_income = {
+						resource = food
+						value < 125
+					}
+				}
+				has_building = building_hydroponics_farm
+			}
+		}
+		modifier = {
+			factor = 0
+			gai_focus_world = yes
+		}
+	}
+
+	ai_resource_production = {
+		food = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
