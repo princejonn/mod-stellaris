@@ -1,34 +1,37 @@
 ﻿l_english:
 
   trait_pjs_eldar:0 "Eldar"
-  trait_pjs_eldar_desc:0 "Eldar (singular Elda) was the name given to the Elves by the Vala Oromë when he first found them wandering in the starlight of Cuiviénen. At first, the name was applied to all Elves, but after the summons of the Valar, it came to be used only for the West-elves who followed the summons and began the Great Journey."
+  trait_pjs_eldar_desc:0 "§LEldar (singular Elda) was the name given to the Elves by the Vala Oromë when he first found them wandering in the starlight of Cuiviénen. At first, the name was applied to all Elves, but after the summons of the Valar, it came to be used only for the West-elves who followed the summons and began the Great Journey."
 
   trait_pjs_asari:0 "Asari"
-  trait_pjs_asari_desc:0 "Asari have long lives and are naturally predisposed to interact with other intelligent species. On the other hand, their peculiar way of reproducing tends to make their communities plural and highly divergent in attitude and ideologies."
+  trait_pjs_asari_desc:0 "§LAsari have long lives and are naturally predisposed to interact with other intelligent species. On the other hand, their peculiar way of reproducing tends to make their communities plural and highly divergent in attitude and ideologies.§!"
 
   trait_pjs_quarian:0 "Quarian"
-  trait_pjs_quarian_desc:0 "The quarians are a nomadic species of humanoid aliens known for their skills with technology and synthetic intelligence. Since their homeworld Rannoch was conquered, the quarians live aboard the Migrant Fleet, a huge collection of starships that travel as a single fleet."
+  trait_pjs_quarian_desc:0 "§LThe quarians are a nomadic species of humanoid aliens known for their skills with technology and synthetic intelligence. Since their homeworld Rannoch was conquered, the quarians live aboard the Migrant Fleet, a huge collection of starships that travel as a single fleet.§!"
 
   trait_pjs_partial_photosynthetic:0 "Partially Photosynthetic"
   trait_pjs_partial_photosynthetic_desc:0 "$trait_pjs_photosynthetic_desc$"
 
   trait_pjs_photosynthetic:0 "Photosynthetic"
-  trait_pjs_photosynthetic_desc:0 "This species has by evolution, or technology, been able to physiologically photosynthesize, thus saving a lot on food costs."
+  trait_pjs_photosynthetic_desc:0 "§LThis species has by evolution, or technology, been able to physiologically photosynthesize, thus saving a lot on food costs.§!"
 
-  trait_pjs_psionic:0 "Psionic Heritage"
-  trait_pjs_psionic_desc:0 "All members of this species possess powerful psionic abilities. They start with §YPsionic Theory§!."
+  trait_pjs_psionic:0 "Advent Psions"
+  trait_pjs_psionic_desc:0 "§LAll members of this species possess powerful psionic abilities. They start with §YPsionic Theory§!"
 
   trait_pjs_spartans:0 "Spartans"
-  trait_pjs_spartans_desc:0 "This species need little in the way of entertainment. Survival is all that matters and all of society is focused on this common goal. They waste very little, and have no issues living simply on bare necessities if it helps their community."
+  trait_pjs_spartans_desc:0 "§LThis species need little in the way of entertainment. Survival is all that matters and all of society is focused on this common goal. They waste very little, and have no issues living simply on bare necessities if it helps their community.§!"
 
   trait_pjs_vaulters:0 "Vaulters"
-  trait_pjs_vaulters_desc:0 "This species, whily not noramlly an underground species, has adapted to it by choice. They have no fear of tight spaces, and built most of their civilization under the crust of their worlds. This gives them good protection from surface elements, and access to better materials from the deep realms."
+  trait_pjs_vaulters_desc:0 "§LThis species, whily not noramlly an underground species, has adapted to it by choice. They have no fear of tight spaces, and built most of their civilization under the crust of their worlds. This gives them good protection from surface elements, and access to better materials from the deep realms.§!"
 s
   trait_pjs_artisans:0 "Artisans"
-  trait_pjs_artisans_desc:0 "This species excels at crafting. They are quite renowned for their art, and the durability of their wares."
+  trait_pjs_artisans_desc:0 "§LThis species excels at crafting. They are quite renowned for their art, and the durability of their wares.§!"
 
   trait_pjs_militarists:0 "Militarists"
-  trait_pjs_militarists_desc:0 "This species has been in endless wars, and battles. They constantly yearn for conflict and the entire society is built upon this common need. Wars are not necessarily out of hatred, but their need to compete. Maybe they get enjoyment from it as well?"
+  trait_pjs_militarists_desc:0 "§LThis species has been in endless wars, and battles. They constantly yearn for conflict and the entire society is built upon this common need. Wars are not necessarily out of hatred, but their need to compete. Maybe they get enjoyment from it as well?§!"
+
+  trait_pjs_krogan:0 "Krogan"
+  trait_pjs_krogan_desc:0 "§LThe krogan are a species of large reptilian bipeds raised on a world known for its harsh environments, scarce resources, and overabundance of vicious predators. The krogan managed to not only survive on their unforgiving homeworld, but actually thrived in the extreme conditions.§!"
 
   trait_pjs_severed_nerves:0 "Severed Nerves"
   trait_pjs_severed_nerves_desc:0 "§LInessential neural pathways relating to self-preservation and free will are severed, creating a docile and obedient client species.§!"
@@ -36,6 +39,6 @@ s
   ## Technology
 
   tech_pjs_severed_nerve:0 "Severed Nerves"
-  tech_pjs_severed_nerve_desc:0 "§LInessential neural pathways relating to self-preservation and free will are severed, creating a docile and obedient client species.§!"
+  tech_pjs_severed_nerve_desc:0 "Inessential neural pathways relating to self-preservation and free will are severed, creating a docile and obedient client species."
 
   TRAIT_SEVERED_NERVE_EFFECT:0 "$mod_planet_jobs_produces_mult$: §R-5%§!\nPop Political Power £political_power£: §R-100%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"
