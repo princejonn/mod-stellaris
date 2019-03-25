@@ -55,10 +55,11 @@ misc_pjs_delta_pavonis = {
     planet = {
         name = "Caladan"
         class = "pc_ocean"
-        size = 25
+        size = 22
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
         modifiers = none
+        has_ring = no
 
         deposit_blockers = none
 

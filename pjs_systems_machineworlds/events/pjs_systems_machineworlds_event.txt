@@ -1,13 +1,13 @@
 namespace = pjs_systems_machineworlds_event
 
-event = {
+planet_event = {
 	id = pjs_systems_machineworlds_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
-        every_planet = {
+        if = {
             limit = { has_planet_flag = machine_world_start }
 
             change_pc = "pc_machine"
@@ -44,7 +44,7 @@ event = {
                 create_pop = { species = owner_main_species }
             }
 
-            set_graphical_culture = root.from
+            set_graphical_culture = root
         }
 	}
 }

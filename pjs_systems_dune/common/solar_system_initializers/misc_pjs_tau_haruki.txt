@@ -88,7 +88,7 @@ misc_pjs_tau_haruki = {
             name = "Vutier II"
             class = "pc_barren"
             size = 5
-            orbit_distance = 6
+            orbit_distance = 2
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
@@ -97,7 +97,7 @@ misc_pjs_tau_haruki = {
             name = "Elrood IX"
             class = "pc_barren_cold"
             size = 6
-            orbit_distance = 2
+            orbit_distance = 3
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }

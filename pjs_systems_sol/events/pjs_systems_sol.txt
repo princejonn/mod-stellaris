@@ -2,6 +2,7 @@ namespace = pjs_systems_sol_event
 
 planet_event = {
 	id = pjs_systems_sol_event.1
+
 	hide_window = yes
 	is_triggered_only = yes
 

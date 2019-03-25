@@ -2,6 +2,7 @@ namespace = pjs_systems_gaia_event
 
 planet_event = {
 	id = pjs_systems_gaia_event.1
+
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -9,7 +10,7 @@ planet_event = {
 		if = {
 			limit = { has_planet_flag = planet_cradle }
 
-			change_pc = pc_gaia
+			change_pc = "pc_gaia"
 
 			## gases
 			add_deposit = d_bubbling_swamp

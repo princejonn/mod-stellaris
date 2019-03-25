@@ -1,7 +1,7 @@
-namespace = pjs_systems_dune
+namespace = pjs_systems_dune_event
 
 event = {
-	id = pjs_systems_dune.1
+	id = pjs_systems_dune_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
@@ -19,5 +19,28 @@ event = {
 			limit = { NOT = { any_system = { has_star_flag = dune_tau_haruki } } }
 			random_system = { spawn_system = { initializer = misc_pjs_tau_haruki } }
 		}
+	}
+}
+
+planet_event = {
+	id = pjs_systems_dune_event.2
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    if = {
+            limit = { has_planet_flag = dune_kaitain_start }
+
+            change_pc = "pc_gaia"
+
+            add_deposit = d_kaitain_hassik_iii_center_deposit
+            add_deposit = d_kaitain_imperial_necropolis_deposit
+            add_deposit = d_kaitain_imperial_observatory_deposit
+            add_deposit = d_kaitain_imperial_palace_deposit
+            add_deposit = d_kaitain_imperial_prison_deposit
+            add_deposit = d_kaitain_ishaq_hall_deposit
+            add_deposit = d_kaitain_landsraad_hall_deposit
+	    }
 	}
 }

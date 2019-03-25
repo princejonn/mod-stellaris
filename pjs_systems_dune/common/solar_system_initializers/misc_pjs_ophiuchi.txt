@@ -78,7 +78,7 @@ misc_pjs_ophiuchi = {
     planet = {
         name = "Giedi Prime"
         class = "pc_nuked"
-        size = 16
+        size = 20
         orbit_distance = 10
         orbit_angle = { min = 20 max = 220 }
         modifiers = none

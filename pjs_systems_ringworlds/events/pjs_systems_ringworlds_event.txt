@@ -1,13 +1,13 @@
 namespace = pjs_systems_ringworlds_event
 
-event = {
+planet_event = {
 	id = pjs_systems_ringworlds_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
-        every_planet = {
+        if = {
             limit = { has_planet_flag = ring_world_start }
 
             change_pc = "pc_ringworld_habitable"
