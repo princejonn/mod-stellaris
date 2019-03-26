@@ -1,9 +1,10 @@
 custom_pjs_ophiuchi = {
     name = "Ophiuchi"
     class = "sc_k"
+
 	usage = custom_empire
-	flags = { empire_home_system dune_ophiuchi }
 	usage_odds = { base = 0 }
+	flags = { empire_home_system dune_ophiuchi }
 
 	init_effect = {
 		every_neighbor_system = {

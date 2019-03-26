@@ -8,6 +8,10 @@ event = {
 
 	immediate = {
 		if = {
+			limit = { NOT = { any_system = { has_star_flag = dune_alpha_carinae } } }
+			random_system = { spawn_system = { initializer = misc_pjs_alpha_carinae } }
+		}
+		if = {
 			limit = { NOT = { any_system = { has_star_flag = dune_delta_pavonis } } }
 			random_system = { spawn_system = { initializer = misc_pjs_delta_pavonis } }
 		}
@@ -41,6 +45,34 @@ planet_event = {
             add_deposit = d_kaitain_imperial_prison_deposit
             add_deposit = d_kaitain_ishaq_hall_deposit
             add_deposit = d_kaitain_landsraad_hall_deposit
+	    }
+	}
+}
+
+planet_event = {
+	id = pjs_systems_dune_event.3
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    if = {
+            limit = { has_planet_flag = dune_arrakis_start }
+
+            change_pc = "pc_desert"
+
+            add_deposit = d_arrakis_deposit
+            add_deposit = d_arrakis_deposit
+            add_deposit = d_arrakis_deposit
+            add_deposit = d_arrakis_deposit
+
+            generate_energy_deposits = yes
+            generate_mineral_deposits = yes
+            generate_betharian_deposit = yes
+            generate_betharian_deposit = yes
+            generate_crystals_deposit = yes
+            generate_motes_deposit = yes
+            generate_gases_deposit = yes
 	    }
 	}
 }

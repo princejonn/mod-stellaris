@@ -1,11 +1,19 @@
-misc_pjs_alpha_carinae = {
+custom_pjs_alpha_carinae = {
     name = "Alpha Carinae"
     class = "sc_f"
 
-    usage = misc_system_init
-	usage_odds = { base = 100 }
-	max_instances = 1
-	spawn_chance = 100
+	usage = custom_empire
+	usage_odds = { base = 0 }
+	flags = { empire_home_system dune_alpha_carinae }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
 
     planet = {
         class = "pc_f_star"
@@ -61,22 +69,12 @@ misc_pjs_alpha_carinae = {
         orbit_angle = { min = 30 max = 60 }
         modifiers = none
         deposit_blockers = none
+        flags = { dune_arrakis_start }
+
+        starting_planet = yes
 
         init_effect = {
             prevent_anomaly = yes
-
-            add_deposit = d_arrakis_deposit
-            add_deposit = d_arrakis_deposit
-            add_deposit = d_arrakis_deposit
-            add_deposit = d_arrakis_deposit
-
-            generate_energy_deposits = yes
-            generate_mineral_deposits = yes
-            generate_betharian_deposit = yes
-            generate_betharian_deposit = yes
-            generate_crystals_deposit = yes
-            generate_motes_deposit = yes
-            generate_gases_deposit = yes
         }
 
 		change_orbit = @base_moon_distance

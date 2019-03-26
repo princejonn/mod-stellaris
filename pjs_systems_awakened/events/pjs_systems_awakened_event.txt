@@ -29,11 +29,8 @@ planet_event = {
 
                 change_pc = "pc_city"
 
-                while = { count = 8
+                while = { count = 9
                     add_district = district_arcology_housing
-                }
-                while = { count = 1
-                    add_district = district_arcology_arms_industry
                 }
                 while = { count = 1
                     add_district = district_arcology_civilian_industry

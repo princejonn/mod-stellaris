@@ -3,9 +3,8 @@ misc_pjs_tau_haruki = {
 	class = "sc_b"
 
     usage = misc_system_init
-	usage_odds = { base = 100 }
-	max_instances = 1
-	spawn_chance = 0
+	usage_odds = { base = 0 }
+    flags = { dune_tau_haruki }
 
     planet = {
         class = "pc_b_star"
@@ -56,7 +55,6 @@ misc_pjs_tau_haruki = {
         orbit_angle = { min = 20 max = 220 }
         modifiers = none
         has_ring = yes
-
         deposit_blockers = none
 
         init_effect = {

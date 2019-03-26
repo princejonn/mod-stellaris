@@ -7,5 +7,6 @@ on_game_start = {
 empire_init_capital_planet = {
 	events = {
 		pjs_systems_dune_event.2
+		pjs_systems_dune_event.3
 	}
 }

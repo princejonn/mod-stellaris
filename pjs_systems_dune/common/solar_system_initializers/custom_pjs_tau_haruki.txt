@@ -1,9 +1,10 @@
 custom_pjs_tau_haruki = {
     name = "Tau Haruki"
 	class = "sc_b"
+
 	usage = custom_empire
-	flags = { empire_home_system dune_tau_haruki }
 	usage_odds = { base = 0 }
+	flags = { empire_home_system dune_tau_haruki }
 
 	init_effect = {
 		every_neighbor_system = {

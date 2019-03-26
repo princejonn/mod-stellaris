@@ -1,9 +1,10 @@
 custom_pjs_delta_pavonis = {
     name = "Delta Pavonis"
     class = "sc_g"
+
 	usage = custom_empire
-	flags = { empire_home_system dune_delta_pavonis }
 	usage_odds = { base = 0 }
+	flags = { empire_home_system dune_delta_pavonis }
 
 	init_effect = {
 		every_neighbor_system = {

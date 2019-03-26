@@ -1,10 +1,10 @@
 misc_pjs_ophiuchi = {
     name = "Ophiuchi"
     class = "sc_k"
-    flags = { pjs_dune_ophiuchi }
 
     usage = misc_system_init
 	usage_odds = { base = 0 }
+    flags = { dune_ophiuchi }
 
     asteroid_belt = {
         type = rocky_asteroid_belt
