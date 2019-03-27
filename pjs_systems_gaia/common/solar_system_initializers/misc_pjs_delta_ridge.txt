@@ -28,9 +28,17 @@ misc_pjs_delta_ridge = {
     change_orbit = 45
 
     planet = {
-        class = ideal_planet_class
-        size = 20
-        orbit_distance = 25
+        class = "pc_barren"
+        size = 16
+        orbit_distance = 20
+        orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+    }
+
+    planet = {
+        class = "pc_gaia"
+        size = 24
+        orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
@@ -57,21 +65,7 @@ misc_pjs_delta_ridge = {
         }
     }
 
-    planet = {
-        class = ideal_planet_class
-        size = 20
-        orbit_distance = 40
-        orbit_angle = { min = 20 max = 220 }
-		has_ring = no
-        modifiers = none
-		deposit_blockers = none
-
-		init_effect = {
-			generate_mineral_deposits = yes
-		}
-    }
-
-    change_orbit = 30
+    change_orbit = 45
 
 	planet = {
 		name = "DR-02"
@@ -115,7 +109,7 @@ misc_pjs_delta_ridge = {
 		}
 	}
 
-    change_orbit = 30
+    change_orbit = 45
 
     planet = {
         class = "pc_shattered"
@@ -154,7 +148,7 @@ misc_pjs_delta_ridge = {
 		change_orbit = @base_moon_distance
 
         moon = {
-            class = "pc_frozen"
+            class = "pc_barren_cold"
             size = 5
             orbit_distance = 2
             orbit_angle = { min = 20 max = 220 }
