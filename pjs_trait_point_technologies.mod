@@ -5,6 +5,6 @@ tags={
 	"Species"
 	"Technologies"
 }
-picture="thumb-tp.jpg"
+picture="thumb.jpg"
 remote_file_id="1317108035"
 supported_version="2.2.*"

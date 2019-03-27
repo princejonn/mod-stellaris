@@ -4,6 +4,6 @@ tags={
 	"PJs"
 	"Graphics"
 }
-picture="thumb-fb.jpg"
+picture="thumb.jpg"
 remote_file_id="1560256860"
 supported_version="2.2.*"

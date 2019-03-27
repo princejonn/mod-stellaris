@@ -6,6 +6,6 @@ tags={
 	"Economy"
 	"Overhaul"
 }
-picture="thumb-mm.jpg"
+picture="thumb.jpg"
 remote_file_id="1278999629"
 supported_version="2.2.*"

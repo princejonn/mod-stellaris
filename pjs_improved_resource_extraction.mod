@@ -6,6 +6,6 @@ tags={
 	"Buildings"
 	"Economy"
 }
-picture="thumb-ie.jpg"
+picture="thumb.jpg"
 remote_file_id="1693633176"
 supported_version="2.2.*"

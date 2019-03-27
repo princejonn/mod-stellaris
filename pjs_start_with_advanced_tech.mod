@@ -5,6 +5,6 @@ tags={
 	"Gameplay"
 	"Technologies"
 }
-picture="thumb-st.jpg"
+picture="thumb.jpg"
 remote_file_id="1264677063"
 supported_version="2.2.*"

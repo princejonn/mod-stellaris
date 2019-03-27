@@ -4,6 +4,6 @@ tags={
 	"PJs"
 	"Economy"
 }
-picture="thumb-ir.jpg"
+picture="thumb.jpg"
 remote_file_id="1586440788"
 supported_version="2.2.*"

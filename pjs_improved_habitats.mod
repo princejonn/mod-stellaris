@@ -5,6 +5,6 @@ tags={
 	"Balance"
 	"Technologies"
 }
-picture="thumb-h.jpg"
+picture="thumb.jpg"
 remote_file_id="1683714995"
 supported_version="2.2.*"
