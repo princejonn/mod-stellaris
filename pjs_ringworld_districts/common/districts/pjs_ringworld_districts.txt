@@ -21,7 +21,7 @@ district_ringworld_rural = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 2
+		planet_housing_add = 4
 	}
 
 	triggered_planet_modifier = {
@@ -160,7 +160,7 @@ district_ringworld_rural = {
 }
 
 district_ringworld_industrial = {
-	base_buildtime = 600
+	base_buildtime = 480
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -174,15 +174,15 @@ district_ringworld_industrial = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 600
+			minerals = 480
 		}
 		upkeep = {
-			energy = 6
+			energy = 4
 		}
 	}
 
 	planet_modifier = {
-		planet_housing_add = 2
+		planet_housing_add = 4
 	}
 
 	triggered_planet_modifier = {
@@ -274,7 +274,7 @@ district_ringworld_industrial = {
 }
 
 district_ringworld_commercial = {
-	base_buildtime = 600
+	base_buildtime = 480
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -288,15 +288,15 @@ district_ringworld_commercial = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 600
+			minerals = 480
 		}
 		upkeep = {
-			energy = 6
+			energy = 4
 		}
 	}
 
 	planet_modifier = {
-		planet_housing_add = 2
+		planet_housing_add = 4
 	}
 
 	triggered_planet_modifier = {
@@ -305,8 +305,7 @@ district_ringworld_commercial = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-		    job_researcher_add = 1
-            job_culture_worker_add = 1
+            job_culture_worker_add = 2
             job_entertainer_add = 2
 		}
 	}
@@ -324,8 +323,7 @@ district_ringworld_commercial = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-		    job_brain_drone_add = 1
-			job_maintenance_drone_add = 3
+			job_maintenance_drone_add = 4
 		}
 	}
     triggered_desc = {
@@ -342,8 +340,7 @@ district_ringworld_commercial = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-		    job_calculator_add = 1
-			job_maintenance_drone_add = 3
+			job_maintenance_drone_add = 4
 		}
 	}
     triggered_desc = {
@@ -353,6 +350,17 @@ district_ringworld_commercial = {
         }
         text = job_district_ringworld_commercial_machine_desc
     }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_warrior_culture }
+		}
+		modifier = {
+			job_duelist_add = 2
+			job_entertainer_add = -2
+		}
+	}
 
 	ai_weight = {
 		weight = 2

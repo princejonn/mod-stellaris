@@ -184,6 +184,19 @@ district_hab_cultural = {
 		job_culture_worker_add = 2
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_warrior_culture
+			}
+		}
+		modifier = {
+			job_duelist_add = 3
+			job_entertainer_add = -3
+		}
+	}
+
 	triggered_desc = {
 		text = job_entertainer_effect_desc
 	}

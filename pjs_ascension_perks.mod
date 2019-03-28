@@ -1,5 +1,5 @@
-name="PJs :: Extra Ascension Perks"
-path="mod/pjs_extra_ascension_perks"
+name="PJs :: Ascension Perks"
+path="mod/pjs_ascension_perks"
 tags={
 	"PJs"
 	"Balance"

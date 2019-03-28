@@ -65,10 +65,9 @@ misc_pjs_alpha_carinae = {
         init_effect = {
             prevent_anomaly = yes
 
-            add_deposit = d_arrakis_deposit
-            add_deposit = d_arrakis_deposit
-            add_deposit = d_arrakis_deposit
-            add_deposit = d_arrakis_deposit
+            while = { count = 5
+                add_deposit = d_arrakis_deposit
+            }
 
             generate_energy_deposits = yes
             generate_mineral_deposits = yes

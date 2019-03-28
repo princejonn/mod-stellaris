@@ -23,15 +23,9 @@
   job_district_ringworld_industrial_machine_desc:0 "$job_fabricator_effect_desc$"
   job_district_ringworld_industrial_servitor_desc:0 "$job_artisan_drone_effect_desc$\n$job_fabricator_effect_desc$"
 
-  job_district_ringworld_commercial_regular_desc:0 "$job_researcher_effect_desc$\n$job_entertainer_effect_desc$\n$job_culture_worker_effect_desc$"
-  job_district_ringworld_commercial_hive_desc:0 "$job_brain_drone_effect_desc$\n$job_maintenance_drone_effect_desc$"
-  job_district_ringworld_commercial_machine_desc:0 "$job_calculator_effect_desc$\n$job_maintenance_drone_effect_desc$"
-
-  col_commercial_ringworld:0 "Commercial Ringworld"
-  col_commercial_ringworld_desc:0 "This world is a seat of scientific research, culture, entertainment, and technological advancement."
-
-  col_commercial_ringworld_gestalt:0 "Commercial Ringworld"
-  col_commercial_ringworld_gestalt_desc:0 "This world is a seat of scientific research, culture, entertainment, and technological advancement."
+  job_district_ringworld_commercial_regular_desc:0 "$job_entertainer_effect_desc$\n$job_culture_worker_effect_desc$"
+  job_district_ringworld_commercial_hive_desc:0 "$job_maintenance_drone_effect_desc$"
+  job_district_ringworld_commercial_machine_desc:0 "$job_maintenance_drone_effect_desc$"
 
   col_industrial_ringworld:0 "Industrial Ringworld"
   col_industrial_ringworld_desc:0 "This ringworld specializes in manufactories, workshops, and civilian industries."
