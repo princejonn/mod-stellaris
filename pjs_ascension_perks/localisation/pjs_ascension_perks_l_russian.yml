@@ -1,0 +1,33 @@
+﻿l_russian:
+
+  pjs_extra_ascension_perks_1:0 "Откровение Возвышения"
+  pjs_extra_ascension_perks_1_desc:0 "$tech_ascension_theory_desc$"
+
+  pjs_extra_ascension_perks_2:0 "Философия Возвышения"
+  pjs_extra_ascension_perks_2_desc:0 "$tech_ascension_theory_desc$"
+
+  pjs_extra_ascension_perks_3:0 "Доктрина Возвышения"
+  pjs_extra_ascension_perks_3_desc:0 "$tech_ascension_theory_desc$"
+
+  pjs_extra_ascension_perks_4:0 "Понимание Возвышения"
+  pjs_extra_ascension_perks_4_desc:0 "$tech_ascension_theory_desc$"
+
+  pjs_extra_ascension_perks_5:0 "Advanced Ascension Revelations"
+  pjs_extra_ascension_perks_5_desc:0 "$tech_ascension_theory_desc$"
+
+  pjs_extra_ascension_perks_6:0 "Deep Ascension Philosophies"
+  pjs_extra_ascension_perks_6_desc:0 "$tech_ascension_theory_desc$"
+
+  pjs_extra_ascension_perks_7:0 "Rigorous Ascension Doctrines"
+  pjs_extra_ascension_perks_7_desc:0 "$tech_ascension_theory_desc$"
+
+  pjs_extra_ascension_perks_8:0 "Profound Ascension Understandings"
+  pjs_extra_ascension_perks_8_desc:0 "$tech_ascension_theory_desc$"
+
+  ap_rescue_operations:0 "Rescue Operations"
+  ap_rescue_operations_desc:0 "It is our moral and holistic imperative to rescue all who can be rescued from the oppressive regimes in this galaxy."
+
+  allow_rescue_operations:0 "Unlocks the §Y$bombardment_rescue_operations$§! bombardment stance, which in turn allows us to rescue pops from besieged planets and resettle them to our own worlds."
+
+  bombardment_rescue_operations:0 "$ap_rescue_operations$"
+  bombardment_rescue_operations_desc:0 "$ap_rescue_operations_desc$"
