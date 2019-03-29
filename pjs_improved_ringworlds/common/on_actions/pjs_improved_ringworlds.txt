@@ -1,5 +1,5 @@
 on_press_begin = {
 	events = {
-		pjs_ringworld_districts_event.1
+		pjs_improved_ringworlds.1
 	}
 }

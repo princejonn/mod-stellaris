@@ -11,8 +11,8 @@ ring_world_1 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
-			influence = 300
+			alloys = 4000
+			influence = 200
 		}
 
 		upkeep = {
@@ -133,11 +133,11 @@ ring_world_2_intermediate = {
 		ring_world_1
 	}
 
-	build_time = 4800
+	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
+			alloys = 8000
 		}
 	}
 
@@ -221,7 +221,7 @@ ring_world_3_intermediate = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
+			alloys = 8000
 		}
 	}
 
@@ -350,7 +350,7 @@ ring_world_restored = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
+			alloys = 8000
 		}
 	}
 

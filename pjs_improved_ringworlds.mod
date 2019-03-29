@@ -1,5 +1,5 @@
-name="PJs :: Ringworld Districts"
-path="mod/pjs_ringworld_districts"
+name="PJs :: Improved Ringworlds"
+path="mod/pjs_improved_ringworlds"
 tags={
 	"PJs"
 	"Balance"

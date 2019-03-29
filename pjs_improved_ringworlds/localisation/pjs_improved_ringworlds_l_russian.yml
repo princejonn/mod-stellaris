@@ -1,0 +1,40 @@
+﻿l_russian:
+
+  district_ringworld_rural:0 "Rural District"
+  district_ringworld_rural_plural:0 "Rural Districts"
+  district_ringworld_rural_desc:0 "Specialized Ringworld district custom built to suit our base economic needs."
+
+  district_ringworld_industrial:0 "Industrial District"
+  district_ringworld_industrial_plural:0 "Industrial Districts"
+  district_ringworld_industrial_desc:0 "Specialized Ringworld district custom built to suit our advanced economic needs."
+
+  district_ringworld_commercial:0 "Commercial District"
+  district_ringworld_commercial_plural:0 "Commercial Districts"
+  district_ringworld_commercial_desc:0 "Specialized Ringworld district custom built to suit our advanced social and commercial needs."
+
+  job_district_ringworld_rural_regular_desc:0 "$job_technician_effect_desc$\n$job_farmer_effect_desc$"
+  job_district_ringworld_rural_hive_desc:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
+  job_district_ringworld_rural_machine_desc:0 "$job_technician_drone_effect_desc$"
+  job_district_ringworld_rural_servitor_desc:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
+  job_district_ringworld_rural_fe_spiritualist_desc:0 "$job_fe_acolyte_generator_effect_desc$\n$job_fe_acolyte_farm_effect_desc$"
+
+  job_district_ringworld_industrial_regular_desc:0 "$job_foundry_effect_desc$\n$job_artisan_effect_desc$"
+  job_district_ringworld_industrial_hive_desc:0 "$job_alloy_drone_effect_desc$\n$job_artisan_drone_effect_desc$"
+  job_district_ringworld_industrial_machine_desc:0 "$job_fabricator_effect_desc$"
+  job_district_ringworld_industrial_servitor_desc:0 "$job_artisan_drone_effect_desc$\n$job_fabricator_effect_desc$"
+
+  job_district_ringworld_commercial_regular_desc:0 "$job_entertainer_effect_desc$\n$job_culture_worker_effect_desc$"
+  job_district_ringworld_commercial_hive_desc:0 "$job_maintenance_drone_effect_desc$"
+  job_district_ringworld_commercial_machine_desc:0 "$job_maintenance_drone_effect_desc$"
+
+  col_industrial_ringworld:0 "Industrial Ringworld"
+  col_industrial_ringworld_desc:0 "This ringworld specializes in manufactories, workshops, and civilian industries."
+
+  col_industrial_ringworld_gestalt:0 "Industrial Ringworld"
+  col_industrial_ringworld_gestalt_desc:0 "This ringworld specializes in manufactories, workshops, and civilian industries."
+
+  col_rural_ringworld:0 "Rural Ringworld"
+  col_rural_ringworld_desc:0 "Picturesque pastoral landscapes featuring generator towers, and flourishing crops are effaced only minutely by the ever-present scent of fertilizer."
+
+  col_rural_ringworld_gestalt:0 "Rural Ringworld"
+  col_rural_ringworld_gestalt_desc:0 "Picturesque pastoral landscapes featuring generator towers, and flourishing crops are effaced only minutely by the ever-present scent of fertilizer."

@@ -1,7 +1,7 @@
-namespace = pjs_ringworld_districts_event
+namespace = pjs_improved_ringworlds
 
 event = {
-	id = pjs_ringworld_districts_event.1
+	id = pjs_improved_ringworlds.1
 
 	hide_window = yes
 	is_triggered_only = yes
