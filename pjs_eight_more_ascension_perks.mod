@@ -1,8 +1,9 @@
-name="PJs :: Ascension Perks"
-path="mod/pjs_ascension_perks"
+name="PJs :: Eight more Ascension Perks (8)"
+path="mod/pjs_eight_more_ascension_perks"
 tags={
 	"PJs"
 	"Balance"
+	"Overhaul"
 	"Technologies"
 }
 picture="thumb.jpg"

@@ -1,6 +1,9 @@
 rescue_operations = {
 	trigger = {
-		owner = { has_ascension_perk = ap_rescue_operations }
+        OR = {
+            owner = { has_ascension_perk = ap_rescue_operations }
+            owner = { has_valid_civic = civic_rescue_operations }
+        }
 	}
 
 	icon_frame = 4
