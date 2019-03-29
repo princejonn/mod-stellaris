@@ -2,7 +2,7 @@ pjs_extra_ascension_perks_1 = {
     area = society
     cost = 80000
     tier = 5
-    weight = 1
+    weight = 0.5
     category = { statecraft }
     is_rare = yes
 
@@ -22,11 +22,11 @@ pjs_extra_ascension_perks_1 = {
 		}
         modifier = {
             factor = 0
-            mid_game_years_passed < 10
+            mid_game_years_passed < 25
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 3
+            num_ascension_perks < 6
         }
 	}
 
@@ -39,7 +39,7 @@ pjs_extra_ascension_perks_2 = {
     area = society
     cost = 100000
     tier = 5
-    weight = 1
+    weight = 0.5
     category = { statecraft }
     is_rare = yes
 
@@ -47,40 +47,6 @@ pjs_extra_ascension_perks_2 = {
 
     prerequisites = {
         pjs_extra_ascension_perks_1
-    }
-
-	modifier = {
-		ascension_perks_add = 1
-	}
-
-	weight_modifier = {
-        modifier = {
-            factor = 0
-            mid_game_years_passed < 30
-        }
-        modifier = {
-            factor = 0
-            num_ascension_perks < 5
-        }
-	}
-
-	ai_weight = {
-	    factor = 1000
-    }
-}
-
-pjs_extra_ascension_perks_3 = {
-    area = society
-    cost = 120000
-    tier = 5
-    weight = 1
-    category = { statecraft }
-    is_rare = yes
-
-    icon = "tech_ascension_theory"
-
-    prerequisites = {
-        pjs_extra_ascension_perks_2
     }
 
 	modifier = {
@@ -103,11 +69,45 @@ pjs_extra_ascension_perks_3 = {
     }
 }
 
+pjs_extra_ascension_perks_3 = {
+    area = society
+    cost = 120000
+    tier = 5
+    weight = 0.5
+    category = { statecraft }
+    is_rare = yes
+
+    icon = "tech_ascension_theory"
+
+    prerequisites = {
+        pjs_extra_ascension_perks_2
+    }
+
+	modifier = {
+		ascension_perks_add = 1
+	}
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            mid_game_years_passed < 75
+        }
+        modifier = {
+            factor = 0
+            num_ascension_perks < 8
+        }
+	}
+
+	ai_weight = {
+	    factor = 1000
+    }
+}
+
 pjs_extra_ascension_perks_4 = {
     area = society
     cost = 140000
     tier = 5
-    weight = 1
+    weight = 0.5
     category = { statecraft }
     is_rare = yes
 
@@ -124,7 +124,7 @@ pjs_extra_ascension_perks_4 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 70
+            mid_game_years_passed < 100
         }
         modifier = {
             factor = 0
@@ -141,7 +141,7 @@ pjs_extra_ascension_perks_5 = {
     area = society
     cost = 200000
     tier = 5
-    weight = 1
+    weight = 0.5
     category = { statecraft }
     is_rare = yes
 
@@ -158,7 +158,7 @@ pjs_extra_ascension_perks_5 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 90
+            mid_game_years_passed < 125
         }
         modifier = {
             factor = 0
@@ -175,7 +175,7 @@ pjs_extra_ascension_perks_6 = {
     area = society
     cost = 250000
     tier = 5
-    weight = 1
+    weight = 0.5
     category = { statecraft }
     is_rare = yes
 
@@ -192,7 +192,7 @@ pjs_extra_ascension_perks_6 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 110
+            mid_game_years_passed < 150
         }
         modifier = {
             factor = 0
@@ -209,7 +209,7 @@ pjs_extra_ascension_perks_7 = {
     area = society
     cost = 300000
     tier = 5
-    weight = 1
+    weight = 0.5
     category = { statecraft }
     is_rare = yes
 
@@ -226,7 +226,7 @@ pjs_extra_ascension_perks_7 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 130
+            mid_game_years_passed < 175
         }
         modifier = {
             factor = 0
@@ -243,7 +243,7 @@ pjs_extra_ascension_perks_8 = {
     area = society
     cost = 400000
     tier = 5
-    weight = 1
+    weight = 0.5
     category = { statecraft }
     is_rare = yes
 
@@ -260,7 +260,7 @@ pjs_extra_ascension_perks_8 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 150
+            mid_game_years_passed < 200
         }
         modifier = {
             factor = 0
