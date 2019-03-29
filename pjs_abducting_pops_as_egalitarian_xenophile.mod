@@ -7,5 +7,5 @@ tags={
 	"Military"
 }
 picture="thumb.jpg"
-remote_file_id=""
+remote_file_id="1697279349"
 supported_version="2.2.*"
