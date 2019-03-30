@@ -275,7 +275,7 @@ strategic_coordination_center_improvised = {
 	}
 
 	possible = {
-		from = { has_technology = tech_starbase_5 }
+		from = { has_technology = tech_starbase_4 }
 	}
 
 	on_build_start = {
