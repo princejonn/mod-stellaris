@@ -18,6 +18,12 @@
   tech_repeatable_planet_immigration_pull_mult:0 "Immigration Laws"
   tech_repeatable_planet_immigration_pull_mult_desc:0 "Increasing the immigration pull of our empire."
 
+  tech_repeatable_planet_jobs_complex_drone_produces_mult:0 "Efficient Complex Drones"
+  tech_repeatable_planet_jobs_complex_drone_produces_mult_desc:0 "Increasing the production output of our complex drones."
+
+  tech_repeatable_planet_jobs_simple_drone_produces_mult:0 "Improved Simple Drones"
+  tech_repeatable_planet_jobs_simple_drone_produces_mult_desc:0 "Increasing the production output of our simple drones."
+
   tech_repeatable_planet_jobs_specialist_produces_mult:0 "Educated Specialists"
   tech_repeatable_planet_jobs_specialist_produces_mult_desc:0 "Increasing the production output of our specialists."
 

@@ -1,16 +1,16 @@
-tech_repeatable_pop_growth_speed = {
-    area = society
+tech_repeatable_planet_jobs_simple_drone_produces_mult = {
+    area = engineering
 	cost = 90000
 	cost_per_level = 12000
 	tier = 5
 	weight = 0.2
-	category = { biology }
+	category = { industry }
 	is_rare = yes
 	levels = 4
-	icon = "tech_cloning"
+	icon = "tech_galactic_ambitions"
 
 	potential = {
-		is_machine_empire = no
+		is_gestalt = yes
 	}
 
 	weight_modifier = {
@@ -41,6 +41,6 @@ tech_repeatable_pop_growth_speed = {
 	}
 
     modifier = {
-		pop_growth_speed = 0.05
+		planet_jobs_simple_drone_produces_mult = 0.05
     }
 }

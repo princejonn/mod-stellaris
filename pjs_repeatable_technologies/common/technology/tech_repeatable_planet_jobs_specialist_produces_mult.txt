@@ -9,6 +9,10 @@ tech_repeatable_planet_jobs_specialist_produces_mult = {
 	levels = 4
 	icon = "tech_galactic_ambitions"
 
+	potential = {
+		is_gestalt = no
+	}
+
 	weight_modifier = {
         modifier = {
             factor = 0

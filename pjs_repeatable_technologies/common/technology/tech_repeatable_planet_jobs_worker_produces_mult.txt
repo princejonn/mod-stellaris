@@ -9,6 +9,10 @@ tech_repeatable_planet_jobs_worker_produces_mult = {
 	levels = 4
 	icon = "tech_mountain_range"
 
+	potential = {
+		is_gestalt = no
+	}
+
 	weight_modifier = {
         modifier = {
             factor = 0

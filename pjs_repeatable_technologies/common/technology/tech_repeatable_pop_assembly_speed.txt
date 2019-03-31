@@ -9,6 +9,10 @@ tech_repeatable_pop_assembly_speed = {
 	levels = 4
 	icon = "tech_robotic_workers"
 
+	potential = {
+		is_gestalt = no
+	}
+
 	weight_modifier = {
         modifier = {
             factor = 0
@@ -34,6 +38,7 @@ tech_repeatable_pop_assembly_speed = {
 	    "tech_gateway_construction"
 	    "tech_jump_drive_1"
 	    "tech_ascension_theory"
+	    "tech_droid_workers"
 	}
 
     modifier = {
