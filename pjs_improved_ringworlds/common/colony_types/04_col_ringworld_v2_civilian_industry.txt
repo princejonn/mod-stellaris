@@ -1,0 +1,118 @@
+col_ringworld_v2_civilian_industry = {
+	icon = 6
+
+	potential = {
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_artisans_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 0.5
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 0 }
+		}
+		modifier = {
+			add = 0.5
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 1 }
+		}
+		modifier = {
+			add = 0.5
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 2 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 3 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 4 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 5 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 6 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 7 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 8 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 9 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 10 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 11 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 12 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 13 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 14 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 15 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 16 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 17 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 18 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 19 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 20 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 21 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 22 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 23 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 24 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_civilian_industry value > 25 }
+		}
+	}
+}

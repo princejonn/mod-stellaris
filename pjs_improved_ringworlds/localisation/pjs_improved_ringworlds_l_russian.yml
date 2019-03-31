@@ -1,5 +1,64 @@
 ﻿l_russian:
 
+  ## v2 districts
+
+  district_ringworld_v2_generator:0 "Generator District"
+  district_ringworld_v2_generator_plural:0 "Generator Districts"
+  district_ringworld_v2_generator_desc:0 "Rows of massive power plants that generate large amounts of energy which can then be used or converted into energy credits."
+
+  district_ringworld_v2_rural:0 "Rural District"
+  district_ringworld_v2_rural_plural:0 "Rural Districts"
+  district_ringworld_v2_rural_desc:0 "A picturesque district dotted with farms and solar power plants."
+
+  district_ringworld_v2_civilian_industry:0 "Industrial District"
+  district_ringworld_v2_civilian_industry_plural:0 "Industrial Districts"
+  district_ringworld_v2_civilian_industry_desc:0 "Workshops filled with artisans and civilian industries line the stacked streets of this district."
+
+  district_ringworld_v2_maintenance:0 "Maintenance District"
+  district_ringworld_v2_maintenance_plural:0 "Maintenance Districts"
+  district_ringworld_v2_maintenance_desc:0 "Workshops and maintenance halls repairing and keeping the ringworld operations running smoothly."
+
+  district_ringworld_v2_arms_industry:0 "Foundry District"
+  district_ringworld_v2_arms_industry_plural:0 "Foundry Districts"
+  district_ringworld_v2_arms_industry_desc:0 "Geared towards military industries, this ringworld district is filled with the roar of smelters and the clang of metallurgies."
+
+  ## v2 jobs
+
+  job_desc_district_ringworld_v2_generator:0 "$job_technician_drone_effect_desc$"
+
+  job_desc_district_ringworld_v2_rural:0 "job_technician_effect_desc$\n$job_farmer_effect_desc$"
+  job_desc_district_ringworld_v2_rural_fe_spiritualist:0 "$job_fe_acolyte_generator_effect_desc$\n$job_fe_acolyte_farm_effect_desc$"
+  job_desc_district_ringworld_v2_rural_hive:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
+  job_desc_district_ringworld_v2_rural_machine:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
+
+  job_desc_district_ringworld_v2_civilian_industry:0 "$job_artisan_effect_desc$"
+
+  job_desc_district_ringworld_v2_maintenance:0 "$job_maintenance_drone_effect_desc$"
+
+  job_desc_district_ringworld_v2_arms_industry_regular:0 "$job_foundry_effect_desc$"
+  job_desc_district_ringworld_v2_arms_industry_hive:0 "$job_alloy_drone_effect_desc$"
+  job_desc_district_ringworld_v2_arms_industry_machine:0 "$job_fabricator_effect_desc$"
+
+  ## v2 colony types
+
+  col_ringworld_v2_generator:0 "Generator World"
+  col_ringworld_v2_generator_desc:0 "Nigh-endless complexes of generator plants hum and glow on this planet."
+
+  col_ringworld_v2_rural:0 "Rural World"
+  col_ringworld_v2_rural_desc:0 "The nature of this planet's production dispenses with the need for major urban centers."
+  col_ringworld_v2_rural_hive:0 "Rural World"
+  col_ringworld_v2_rural_hive_desc:0 "The nature of this planet's production dispenses with the need for major urban centers."
+
+  col_ringworld_v2_civilian_industry:0 "Industrial World"
+  col_ringworld_v2_civilian_industry_desc:0 "This planet specializes in manufactories, workshops, and civilian industries."
+
+  col_ringworld_v2_arms_industry:0 "Forge World"
+  col_ringworld_v2_arms_industry_desc:0 "The heat of alloy foundries can be felt almost everywhere on this planet."
+  col_ringworld_v2_arms_industry_gestalt:0 "Forge World"
+  col_ringworld_v2_arms_industry_gestalt_desc:0 "The heat of alloy foundries can be felt almost everywhere on this planet."
+
+  ## v1
+
   district_ringworld_rural:0 "Rural District"
   district_ringworld_rural_plural:0 "Rural Districts"
   district_ringworld_rural_desc:0 "Specialized Ringworld district custom built to suit our base economic needs."

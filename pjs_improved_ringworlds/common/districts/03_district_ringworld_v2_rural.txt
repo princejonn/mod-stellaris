@@ -1,29 +1,49 @@
-district_ringworld_rural = {
-	base_buildtime = 480
+district_ringworld_v2_rural = {
+	base_buildtime = 360
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
-		NOT = { has_global_flag = ringworld_districts_v2 }
+		has_global_flag = ringworld_districts_v2
 		is_planet_class = pc_ringworld_habitable
+		from = {
+		    OR = {
+		        is_regular_empire = yes
+		        is_hive_empire = yes
+                has_valid_civic = civic_machine_assimilator
+                has_valid_civic = civic_machine_servitor
+		    }
+        }
 	}
 
 	potential = {
-		NOT = { has_global_flag = ringworld_districts_v2 }
+		has_global_flag = ringworld_districts_v2
 		is_planet_class = pc_ringworld_habitable
+		owner = {
+		    OR = {
+		        is_regular_empire = yes
+		        is_hive_empire = yes
+                has_valid_civic = civic_machine_assimilator
+                has_valid_civic = civic_machine_servitor
+		    }
+        }
+	}
+
+	convert_to = {
+	    district_ringworld_generator
 	}
 
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 480
+		    minerals = 360
 		}
 		upkeep = {
-			energy = 1
+		    energy = 2
 		}
 	}
 
 	planet_modifier = {
-		planet_housing_add = 4
+		planet_housing_add = 5
 	}
 
 	triggered_planet_modifier = {
@@ -58,8 +78,8 @@ district_ringworld_rural = {
 			}
 		}
 		modifier = {
+			job_technician_add = 3
 			job_farmer_add = 2
-			job_technician_add = 2
 		}
 	}
     triggered_desc = {
@@ -70,72 +90,7 @@ district_ringworld_rural = {
 				is_fallen_empire_spiritualist = no
 			}
         }
-        text = job_district_ringworld_rural_regular_desc
-    }
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		modifier = {
-			job_agri_drone_add = 2
-			job_technician_drone_add = 2
-		}
-	}
-    triggered_desc = {
-        trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-        }
-        text = job_district_ringworld_rural_hive_desc
-    }
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-			    is_machine_empire = yes
-                NOT = { has_valid_civic = civic_machine_servitor }
-            }
-		}
-		modifier = {
-			job_technician_drone_add = 4
-		}
-	}
-    triggered_desc = {
-        trigger = {
-			exists = owner
-			owner = {
-			    is_machine_empire = yes
-                NOT = { has_valid_civic = civic_machine_servitor }
-            }
-        }
-        text = job_district_ringworld_rural_machine_desc
-    }
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-			    is_machine_empire = yes
-                has_valid_civic = civic_machine_servitor
-            }
-		}
-		modifier = {
-			job_agri_drone_add = 2
-			job_technician_drone_add = 2
-		}
-	}
-    triggered_desc = {
-        trigger = {
-			exists = owner
-			owner = {
-			    is_machine_empire = yes
-                has_valid_civic = civic_machine_servitor
-            }
-        }
-        text = job_district_ringworld_rural_servitor_desc
+        text = job_desc_district_ringworld_v2_rural
     }
 
 	triggered_planet_modifier = {
@@ -144,8 +99,8 @@ district_ringworld_rural = {
 			owner = { is_fallen_empire_spiritualist = yes }
 		}
 		modifier = {
+			job_fe_acolyte_generator_add = 3
 			job_fe_acolyte_farm_add = 2
-			job_fe_acolyte_generator_add = 2
 		}
 	}
     triggered_desc = {
@@ -153,7 +108,43 @@ district_ringworld_rural = {
 			exists = owner
 			owner = { is_fallen_empire_spiritualist = yes }
         }
-        text = job_district_ringworld_rural_fe_spiritualist_desc
+        text = job_desc_district_ringworld_v2_rural_fe_spiritualist
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 3
+			job_agri_drone_add = 2
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+        }
+        text = job_desc_district_ringworld_v2_rural_hive
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+            job_technician_drone_add = 4
+			job_agri_drone_add = 1
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+        }
+        text = job_desc_district_ringworld_v2_rural_machine
     }
 
 	ai_weight = {

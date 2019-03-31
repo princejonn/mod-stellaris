@@ -27,9 +27,37 @@ event = {
                 remove_district = district_farming_uncapped
             }
 
-            while = {
-                count = 6
-                add_district = district_ringworld_rural
+            if = {
+                limit = {
+                    owner = {
+                        is_machine_empire = yes
+                        NOT = { has_valid_civic = civic_machine_assimilator }
+                        NOT = { has_valid_civic = civic_machine_servitor }
+                    }
+                }
+
+                while = {
+                    count = 9
+                    add_district = district_ringworld_v2_generator
+                }
+            }
+
+            if = {
+                limit = {
+                    owner = {
+                        OR = {
+                            is_regular_empire = yes
+                            is_hive_empire = yes
+                            has_valid_civic = civic_machine_assimilator
+                            has_valid_civic = civic_machine_servitor
+                        }
+                    }
+                }
+
+                while = {
+                    count = 9
+                    add_district = district_ringworld_v2_rural
+                }
             }
 
             while = {
@@ -37,5 +65,16 @@ event = {
                 create_pop = { species = owner_main_species }
             }
         }
+	}
+}
+
+event = {
+	id = pjs_improved_ringworlds.2
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ringworld_districts_v2
 	}
 }

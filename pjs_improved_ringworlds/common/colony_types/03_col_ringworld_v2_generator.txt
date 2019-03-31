@@ -1,0 +1,118 @@
+col_ringworld_v2_generator = {
+	icon = 4
+
+	potential = {
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_jobs_simple_drone_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 0.5
+			num_districts = { type = district_ringworld_v2_generator value > 0 }
+		}
+		modifier = {
+			add = 0.5
+			num_districts = { type = district_ringworld_v2_generator value > 1 }
+		}
+		modifier = {
+			add = 0.5
+			num_districts = { type = district_ringworld_v2_generator value > 2 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 3 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 4 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 5 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 6 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 7 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 8 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 9 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 10 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 11 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 12 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 13 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 14 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 15 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 16 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 17 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 18 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 19 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 20 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 21 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 22 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 23 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 24 }
+		}
+		modifier = {
+			add = 1
+			num_districts = { type = district_ringworld_v2_generator value > 25 }
+		}
+	}
+}

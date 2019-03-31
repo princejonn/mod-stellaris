@@ -3,10 +3,12 @@ district_ringworld_industrial = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+		NOT = { has_global_flag = ringworld_districts_v2 }
 		is_planet_class = pc_ringworld_habitable
 	}
 
 	potential = {
+		NOT = { has_global_flag = ringworld_districts_v2 }
 		is_planet_class = pc_ringworld_habitable
 	}
 

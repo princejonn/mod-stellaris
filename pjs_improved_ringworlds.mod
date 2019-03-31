@@ -1,4 +1,4 @@
-name="PJs :: Improved Ringworlds"
+name="PJs :: Improved Ring Worlds"
 path="mod/pjs_improved_ringworlds"
 tags={
 	"PJs"
