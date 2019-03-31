@@ -12,7 +12,7 @@ tech_repeatable_ships_upkeep_mult = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 25
+            years_passed < 150
         }
 	}
 

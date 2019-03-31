@@ -16,7 +16,7 @@ tech_repeatable_pop_assembly_speed = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 25
+            years_passed < 150
         }
 	}
 
