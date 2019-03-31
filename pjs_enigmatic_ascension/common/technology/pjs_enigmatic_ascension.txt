@@ -41,7 +41,7 @@ tech_pjs_enigmatic_ascension_engineering = {
         }
         modifier = {
             factor = 0
-            mid_game_years_passed < 140
+            end_game_years_passed < 15
         }
 	}
 
@@ -95,7 +95,7 @@ tech_pjs_enigmatic_ascension_physics = {
         }
         modifier = {
             factor = 0
-            mid_game_years_passed < 140
+            end_game_years_passed < 15
         }
 	}
 
@@ -145,7 +145,7 @@ tech_pjs_enigmatic_ascension_society = {
 		}
         modifier = {
             factor = 0
-            mid_game_years_passed < 140
+            end_game_years_passed < 15
         }
 	}
 
