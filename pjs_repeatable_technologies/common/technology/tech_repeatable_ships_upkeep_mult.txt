@@ -5,7 +5,7 @@ tech_repeatable_ships_upkeep_mult = {
 	tier = 5
 	weight = 0.2
 	category = { voidcraft }
-	is_rare = yes
+	is_rare = no
 	levels = 4
 	icon = "tech_auxiliary_fire_control"
 

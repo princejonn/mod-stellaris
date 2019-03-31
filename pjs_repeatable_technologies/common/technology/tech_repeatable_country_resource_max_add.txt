@@ -5,7 +5,7 @@ tech_repeatable_country_resource_max_add = {
 	tier = 5
 	weight = 0.2
 	category = { materials }
-	is_rare = yes
+	is_rare = no
 	levels = 4
 	icon = "tech_micro_replicators"
 

@@ -5,7 +5,7 @@ tech_repeatable_starbase_shipyard_build_cost_mult = {
 	tier = 5
 	weight = 0.2
 	category = { voidcraft }
-	is_rare = yes
+	is_rare = no
 	levels = 4
 	icon = "tech_artificial_moral_codes"
 

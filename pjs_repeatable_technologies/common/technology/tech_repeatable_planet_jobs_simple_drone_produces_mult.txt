@@ -5,7 +5,7 @@ tech_repeatable_planet_jobs_simple_drone_produces_mult = {
 	tier = 5
 	weight = 0.2
 	category = { industry }
-	is_rare = yes
+	is_rare = no
 	levels = 4
 	icon = "tech_galactic_ambitions"
 
