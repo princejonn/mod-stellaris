@@ -26,7 +26,7 @@
 
   job_desc_district_ringworld_v2_generator:0 "$job_technician_drone_effect_desc$"
 
-  job_desc_district_ringworld_v2_rural:0 "job_technician_effect_desc$\n$job_farmer_effect_desc$"
+  job_desc_district_ringworld_v2_rural:0 "$job_technician_effect_desc$\n$job_farmer_effect_desc$"
   job_desc_district_ringworld_v2_rural_fe_spiritualist:0 "$job_fe_acolyte_generator_effect_desc$\n$job_fe_acolyte_farm_effect_desc$"
   job_desc_district_ringworld_v2_rural_hive:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
   job_desc_district_ringworld_v2_rural_machine:0 "$job_technician_drone_effect_desc$\n$job_agri_drone_effect_desc$"
