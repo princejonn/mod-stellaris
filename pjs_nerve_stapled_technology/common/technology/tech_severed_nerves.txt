@@ -1,4 +1,4 @@
-tech_pjs_severed_nerve = {
+tech_severed_nerves = {
 	cost = 22000
 	area = society
 	tier = 4

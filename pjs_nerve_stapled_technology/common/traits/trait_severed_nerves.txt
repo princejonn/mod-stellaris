@@ -1,0 +1,27 @@
+trait_severed_nerves = {
+	cost = 2
+
+    species_potential_add = {
+        from = {
+            has_technology = "tech_severed_nerves"
+        }
+    }
+
+	potential_crossbreeding_chance = 0.1
+	opposites = { }
+	initial = no
+	randomized = no
+	advanced_trait = no
+	forced_happiness = yes
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+	    army_morale = 0.25
+		army_disengage_chance_mult = -0.75
+		leader_skill_levels = -4
+		pop_political_power = -1
+	}
+	custom_tooltip = TRAIT_SEVERED_NERVE_EFFECT
+	slave_cost = {
+		energy = 200
+	}
+}

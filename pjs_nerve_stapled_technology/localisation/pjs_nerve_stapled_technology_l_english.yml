@@ -1,0 +1,9 @@
+﻿l_english:
+
+  trait_severed_nerves:0 "Severed Nerves"
+  trait_severed_nerves_desc:0 "§LInessential neural pathways relating to self-preservation and free will are severed, creating a docile and obedient client species.§!"
+
+  tech_severed_nerves:0 "Severed Nerves"
+  tech_severed_nerves_desc:0 "Inessential neural pathways relating to self-preservation and free will are severed, creating a docile and obedient client species."
+
+  TRAIT_SEVERED_NERVE_EFFECT:0 "Army Morale: §G+25%§!\nArmy Disengage Chance: §R-75%§!\nPop Political Power £political_power£: §R-100%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"
