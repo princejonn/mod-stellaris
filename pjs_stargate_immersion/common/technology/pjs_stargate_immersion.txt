@@ -1,0 +1,3 @@
+tech_star_gates = {
+
+}

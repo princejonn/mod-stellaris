@@ -1,0 +1,79 @@
+star_gate_defender = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_stronghold
+	clothes_texture_index = 4
+	icon = soldier
+
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_soldiers
+		upkeep = {
+			consumer_goods = 3
+		}
+		produces = {
+			unity = 4
+		}
+	}
+
+	weight = {
+		weight = @soldier_job_weight
+	}
+}
+
+star_gate_researcher = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_research_lab_1
+	clothes_texture_index = 3
+	icon = researcher
+
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_researchers
+		upkeep = {
+			consumer_goods = 3
+		}
+		produces = {
+			physics_research = 8
+			engineering_research = 8
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+star_gate_explorer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_research_lab_1
+	clothes_texture_index = 3
+	icon = researcher
+
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_soldiers
+		upkeep = {
+			consumer_goods = 3
+		}
+		produces = {
+			society_research = 8
+			unity = 4
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
