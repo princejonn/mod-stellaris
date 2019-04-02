@@ -1,7 +1,7 @@
-namespace = pjs_systems_dune_event
+namespace = pjs_dune_immersion_event
 
 event = {
-	id = pjs_systems_dune_event.1
+	id = pjs_dune_immersion_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
@@ -27,7 +27,7 @@ event = {
 }
 
 planet_event = {
-	id = pjs_systems_dune_event.2
+	id = pjs_dune_immersion_event.2
 
 	hide_window = yes
 	is_triggered_only = yes
@@ -50,7 +50,7 @@ planet_event = {
 }
 
 planet_event = {
-	id = pjs_systems_dune_event.3
+	id = pjs_dune_immersion_event.3
 
 	hide_window = yes
 	is_triggered_only = yes

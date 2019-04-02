@@ -1,0 +1,12 @@
+on_game_start = {
+	events = {
+		pjs_dune_immersion_event.1
+	}
+}
+
+empire_init_capital_planet = {
+	events = {
+		pjs_dune_immersion_event.2
+		pjs_dune_immersion_event.3
+	}
+}

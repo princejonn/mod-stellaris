@@ -1,5 +1,5 @@
-name="PJs :: Systems :: Dune"
-path="mod/pjs_systems_dune"
+name="PJs :: Dune Immersion"
+path="mod/pjs_dune_immersion"
 tags={
 	"PJs"
 	"Galaxy Generation"
