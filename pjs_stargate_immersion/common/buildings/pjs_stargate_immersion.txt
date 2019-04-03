@@ -1,5 +1,5 @@
 building_stargate = {
-	base_buildtime = 720
+	base_buildtime = 500
 
     can_build = yes
     can_demolish = no
@@ -33,9 +33,9 @@ building_stargate = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			energy = 240
-			alloys = 240
-			rare_crystals = 240
+			energy = 500
+			alloys = 500
+			rare_crystals = 250
 		}
 		upkeep = {
 			energy = 5
