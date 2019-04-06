@@ -1,0 +1,9 @@
+HLFRXT = {
+	holofrixit = {
+		name = Holofrixit
+		plural = Holofrixits
+		home_planet = Mytrima
+		home_system = Xitiodrak
+		name_list = "ART1"
+	}
+}

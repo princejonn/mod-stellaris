@@ -1,0 +1,119 @@
+elder_01 = {
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.4 0.0 0.0 }
+		cam_light_2_dir = { -0.5 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 0.0 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 700
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		ambient_near = 0.1
+		ambient_far = 50.0
+	}
+}
+
+millennium_01 = {
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.4 0.0 0.0 }
+		cam_light_2_dir = { -0.5 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 0.0 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 700
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		ambient_near = 0.1
+		ambient_far = 50.0
+	}
+}
+
+pristine_01 = {
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.4 0.0 0.0 }
+		cam_light_2_dir = { -0.5 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 0.0 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 700
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		ambient_near = 0.1
+		ambient_far = 50.0
+	}
+}
+
+progenitor_01 = {
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.4 0.0 0.0 }
+		cam_light_2_dir = { -0.5 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 0.0 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 700
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		ambient_near = 0.1
+		ambient_far = 50.0
+	}
+}
+
+slate_01 = {
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.4 0.0 0.0 }
+		cam_light_2_dir = { -0.5 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 0.0 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 700
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		ambient_near = 0.1
+		ambient_far = 50.0
+	}
+}
+
+stellar_01 = {
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.4 0.0 0.0 }
+		cam_light_2_dir = { -0.5 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 0.0 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 700
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		ambient_near = 0.1
+		ambient_far = 50.0
+	}
+}

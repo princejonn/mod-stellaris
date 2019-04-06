@@ -9,6 +9,12 @@
   trait_pjs_quarian:0 "Quarian"
   trait_pjs_quarian_desc:0 "§LThe quarians are a nomadic species of humanoid aliens known for their skills with technology and synthetic intelligence. Since their homeworld Rannoch was conquered, the quarians live aboard the Migrant Fleet, a huge collection of starships that travel as a single fleet.§!"
 
+  trait_pjs_krogan:0 "Krogan"
+  trait_pjs_krogan_desc:0 "§LThe krogan are a species of large reptilian bipeds raised on a world known for its harsh environments, scarce resources, and overabundance of vicious predators. The krogan managed to not only survive on their unforgiving homeworld, but actually thrived in the extreme conditions.§!"
+
+  trait_pjs_horror:0 "Astral Horror"
+  trait_pjs_horror_desc:0 "A swarm of collective, space-faring devourers coming from an hellish dimension."
+
   trait_pjs_partial_photosynthetic:0 "Partially Photosynthetic"
   trait_pjs_partial_photosynthetic_desc:0 "$trait_pjs_photosynthetic_desc$"
 
@@ -29,6 +35,3 @@ s
 
   trait_pjs_militarists:0 "Militarists"
   trait_pjs_militarists_desc:0 "§LThis species has been in endless wars, and battles. They constantly yearn for conflict and the entire society is built upon this common need. Wars are not necessarily out of hatred, but their need to compete. Maybe they get enjoyment from it as well?§!"
-
-  trait_pjs_krogan:0 "Krogan"
-  trait_pjs_krogan_desc:0 "§LThe krogan are a species of large reptilian bipeds raised on a world known for its harsh environments, scarce resources, and overabundance of vicious predators. The krogan managed to not only survive on their unforgiving homeworld, but actually thrived in the extreme conditions.§!"

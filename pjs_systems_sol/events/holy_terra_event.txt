@@ -1,0 +1,177 @@
+namespace = holy_terra_event
+
+country_event = {
+	id = holy_terra_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = holy_terra_earth }
+
+                    set_name = "Holy Terra"
+
+                    remove_all_districts = yes
+
+                    change_pc = "pc_city"
+
+                    while = { count = 5
+                        add_district = district_arcology_housing
+                    }
+                    while = { count = 0
+                        add_district = district_arcology_arms_industry
+                    }
+                    while = { count = 1
+                        add_district = district_arcology_civilian_industry
+                    }
+                    while = { count = 1
+                        add_district = district_arcology_leisure
+                    }
+
+                    add_building = building_research_lab_1
+
+                    while = {
+                        count = 28
+                        create_pop = { species = owner_main_species }
+                    }
+
+                    set_graphical_culture = root
+
+                    owner = {
+                        give_technology = { tech = "tech_physics_1" message = no }
+                        give_technology = { tech = "tech_physics_2" message = no }
+                        give_technology = { tech = "tech_society_1" message = no }
+                        give_technology = { tech = "tech_society_2" message = no }
+                        give_technology = { tech = "tech_engineering_1" message = no }
+                        give_technology = { tech = "tech_engineering_2" message = no }
+                        give_technology = { tech = "tech_automated_exploration" message = no }
+
+                        add_resource = { energy = 500 }
+                        add_resource = { minerals = 500 }
+                        if = {
+                            limit = { is_machine_empire = no }
+                            add_resource = { food = 500 }
+                        }
+                        add_resource = { alloys = 500 }
+
+                        if = {
+                            limit = { is_gestalt = no }
+                            add_resource = { consumer_goods = 200 }
+                        }
+                        add_resource = { influence = 200 }
+                        add_resource = { unity = 200 }
+                    }
+                }
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = holy_terra_event.2
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = holy_terra_mars }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    planet_event = { id = game_start.21 }
+                    planet_event = { id = game_start.22 }
+                    planet_event = { id = game_start.23 }
+
+                    set_name = "Mars"
+
+                    remove_all_districts = yes
+
+                    while = { count = 3
+                        add_district = district_city
+                    }
+                    while = { count = 0
+                        add_district = district_generator
+                    }
+                    while = { count = 8
+                        add_district = district_mining
+                    }
+                    while = { count = 7
+                        add_district = district_farming
+                    }
+
+                    add_building = building_holo_theatres
+                    add_building = building_holo_theatres
+
+                    while = { count = 26
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = holy_terra_event.3
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = holy_terra_venus }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    planet_event = { id = game_start.21 }
+                    planet_event = { id = game_start.22 }
+                    planet_event = { id = game_start.23 }
+
+                    set_name = "Venus"
+
+                    remove_all_districts = yes
+
+                    while = { count = 3
+                        add_district = district_city
+                    }
+                    while = { count = 9
+                        add_district = district_generator
+                    }
+                    while = { count = 0
+                        add_district = district_mining
+                    }
+                    while = { count = 6
+                        add_district = district_farming
+                    }
+
+                    add_building = building_holo_theatres
+                    add_building = building_holo_theatres
+
+                    while = { count = 26
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}

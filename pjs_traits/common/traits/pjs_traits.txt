@@ -1,6 +1,7 @@
 trait_pjs_asari = {
 	cost = 4
 	randomized = no
+	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0.1
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_rapid_breeders" "trait_slow_breeders" }
@@ -20,6 +21,7 @@ trait_pjs_asari = {
 trait_pjs_eldar = {
 	cost = 4
 	randomized = no
+	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0.1
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" }
@@ -39,6 +41,7 @@ trait_pjs_eldar = {
 trait_pjs_quarian = {
 	cost = 2
 	randomized = no
+	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0.1
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { }
@@ -53,6 +56,51 @@ trait_pjs_quarian = {
         pop_environment_tolerance = -0.25
     }
     ai_weight = { weight = 0 }
+}
+
+trait_pjs_krogan = {
+	cost = 2
+	randomized = no
+	must_match_primary_species = yes
+	potential_crossbreeding_chance = 0.5
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_extremely_adaptive" "trait_adaptive" "trait_nonadaptive" "trait_very_strong" "trait_strong" "trait_weak" "trait_rapid_breeders" "trait_slow_breeders" }
+	modifier = {
+		pop_environment_tolerance = 0.20
+		army_health = 2.0
+		army_attack_damage_mult = 0.5
+	    armies_upkeep_mult = -0.25
+		army_disengage_chance_mult = -0.5
+		pop_growth_speed = -0.25
+	}
+	ai_weight = {
+		weight = 0
+	}
+    ai_weight = { weight = 0 }
+}
+
+trait_pjs_horror = {
+	cost = 4
+	randomized = no
+	modification = no
+	affected_by_radiation = no
+	must_match_primary_species = yes
+	forced_happiness = yes
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		pop_environment_tolerance = 0.9
+		pop_other_species_happiness = -0.75
+		army_attack_damage_mult = 0.05
+		army_defense_damage_mult = 0.05
+		army_defense_morale_mult = 0.05
+		army_health = 0.05
+		army_morale = 0.05
+		army_upkeep_mult = 0.15
+		tile_resource_minerals_mult = 0.01
+		pop_food_mult = -1
+		pop_growth_speed = 0.40
+	}
 }
 
 trait_pjs_photosynthetic = {
@@ -151,25 +199,6 @@ trait_pjs_militarists = {
 	    planet_army_build_speed_mult  = 0.1
 	    armies_upkeep_mult = -0.1
 		army_disengage_chance_mult = -0.25
-	}
-	ai_weight = {
-		weight = 0
-	}
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_krogan = {
-	cost = 2
-	potential_crossbreeding_chance = 0.5
-	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_extremely_adaptive" "trait_adaptive" "trait_nonadaptive" "trait_very_strong" "trait_strong" "trait_weak" "trait_rapid_breeders" "trait_slow_breeders" }
-	modifier = {
-		pop_environment_tolerance = 0.20
-		army_health = 2.0
-		army_attack_damage_mult = 0.5
-	    armies_upkeep_mult = -0.25
-		army_disengage_chance_mult = -0.5
-		pop_growth_speed = -0.25
 	}
 	ai_weight = {
 		weight = 0

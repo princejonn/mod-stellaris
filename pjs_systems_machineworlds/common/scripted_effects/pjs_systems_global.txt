@@ -70,3 +70,18 @@ generate_gases_deposit = {
         40 = { add_deposit = d_fuming_bog }
     }
 }
+
+remove_all_districts = {
+    while = { count = 10
+        remove_district = district_city
+        remove_district = district_arcology_housing
+        remove_district = district_hive
+        remove_district = district_nexus
+        remove_district = district_generator
+        remove_district = district_generator_uncapped
+        remove_district = district_mining
+        remove_district = district_mining_uncapped
+        remove_district = district_farming
+        remove_district = district_farming_uncapped
+    }
+}

@@ -3,3 +3,11 @@ empire_init_capital_planet = {
 		pjs_systems_sol_event.1
 	}
 }
+
+empire_init_create_ships = {
+	events = {
+		holy_terra_event.1
+		holy_terra_event.2
+		holy_terra_event.3
+	}
+}
