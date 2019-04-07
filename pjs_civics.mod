@@ -2,7 +2,9 @@ name="PJs :: Civics"
 path="mod/pjs_civics"
 tags={
 	"PJs"
-	"Species"
+	"Balance"
+	"Gameplay"
+	"Leaders"
 }
 picture="thumb.jpg"
 remote_file_id="1705843712"
