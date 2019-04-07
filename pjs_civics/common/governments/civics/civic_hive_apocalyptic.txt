@@ -1,0 +1,16 @@
+civic_hive_apocalyptic = {
+	potential = { authority = { value = auth_hive_mind } }
+	starting_colony = pc_nuked
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Apocalypse" }
+		}
+	}
+	description = civic_hive_apocalypse_effects
+	traits = {
+		trait = trait_hive_survivor
+	}
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+
+  civic_hive_apocalyptic:0 "Apocalyptic Hive"
+  civic_hive_apocalyptic_desc:0 "Baptized by fire, this society has faced total annihilation - and survived. Devastated yet unbroken, they have rebuilt civilization from the ashes of the old world."
+
+  trait_hive_survivor:0 "The Hive Survives"
+  trait_hive_survivor_desc:0 "§LThis species has survived the horrors of a natural apocalypse. Their capacity for thriving in the most inhospitable of circumstances should not be underestimated.§!"
+
+  civic_hive_apocalypse_effects:0 "Capital starts as a §YTomb World§!\nGain the §Y$trait_hive_survivor$§! trait, granting:\n  Tomb World Habitability: §G+90%§!\n  Army Health: §G+10§!\n  Army Morale: §G+10§!\n  Army Upkeep: §G-25§!\n  Pop Food Upkeep: §G-25§!"
