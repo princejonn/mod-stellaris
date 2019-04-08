@@ -14,3 +14,29 @@ civic_hive_apocalyptic = {
 		trait = trait_hive_survivor
 	}
 }
+
+civic_hive_assimilator = {
+	potential = { authority = { value = auth_hive_mind } }
+	possible = {
+		civics = {
+			NOT = { value = civic_hive_devouring_swarm }
+		}
+	}
+	modification = no
+	modifier = {
+		pop_growth_speed = -0.4
+	}
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Utopia" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = civic_hive_assimilator_effects
+}
