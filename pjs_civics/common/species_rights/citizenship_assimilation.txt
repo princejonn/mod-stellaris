@@ -24,6 +24,7 @@ citizenship_assimilation = {
 				from = {
 					has_authority = auth_hive_mind
 					NOT = { has_civic = civic_hive_devouring_swarm }
+					NOT = { has_civic = civic_hive_assimilator }
 				}
 				is_robotic_species = no
 			}
@@ -57,7 +58,10 @@ citizenship_assimilation = {
 				AND = {
 					is_lonely_hive_mind_pop = yes
 					from = {
-						has_ascension_perk = ap_evolutionary_mastery
+					    OR = {
+						    has_ascension_perk = ap_evolutionary_mastery
+					        has_civic = civic_hive_assimilator
+					    }
 					}
 				}
 			}
@@ -90,7 +94,10 @@ citizenship_assimilation = {
 				AND = {
 					from = {
 						has_authority = auth_hive_mind
-						has_ascension_perk = ap_evolutionary_mastery
+					    OR = {
+						    has_ascension_perk = ap_evolutionary_mastery
+					        has_civic = civic_hive_assimilator
+					    }
 						NOT = { has_civic = civic_hive_devouring_swarm }
 					}
 					NOR = {
@@ -149,7 +156,10 @@ citizenship_assimilation = {
 				AND = {
 					has_trait = trait_hive_mind
 					from = {
-						has_ascension_perk = ap_evolutionary_mastery
+					    OR = {
+						    has_ascension_perk = ap_evolutionary_mastery
+					        has_civic = civic_hive_assimilator
+					    }
 						NOR = {
 							has_ethic = ethic_gestalt_consciousness
 							has_country_flag = flesh_weakened

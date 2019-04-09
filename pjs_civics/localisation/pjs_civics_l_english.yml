@@ -1,9 +1,18 @@
 ﻿l_english:
 
+  ## civics
+
   civic_hive_apocalyptic:0 "Apocalyptic Hive"
   civic_hive_apocalyptic_desc:0 "Baptized by fire, this society has faced total annihilation - and survived. Devastated yet unbroken, they have rebuilt civilization from the ashes of the old world."
 
+  civic_hive_apocalypse_effects:0 "Capital starts as a §YTomb World§!\nGain the §Y$trait_hive_survivor$§! trait, granting:\n  Tomb World Habitability: §G+90%§!\n  Army Health: §G+10§!\n  Army Morale: §G+10§!\n  Army Upkeep: §G-25§!\n  Pop Food Upkeep: §G-25§!"
+
+  civic_hive_assimilator:0 "Parasitic Origins"
+  civic_hive_assimilator_desc:0 "The hive evolved from small parasites. Once they had learned to take over their hosts, the world was theirs. They start with a natural ability to assimilate other species into their hive. They are obsessed with survival through diversification, and seek to include all life into the hive."
+
+  civic_hive_assimilator_effects:0 "Has the ability to assimilate new species into the hive mind at the start of the game."
+
+  ## traits
+
   trait_hive_survivor:0 "The Hive Survives"
   trait_hive_survivor_desc:0 "§LThis species has survived the horrors of a natural apocalypse. Their capacity for thriving in the most inhospitable of circumstances should not be underestimated.§!"
-
-  civic_hive_apocalypse_effects:0 "Capital starts as a §YTomb World§!\nGain the §Y$trait_hive_survivor$§! trait, granting:\n  Tomb World Habitability: §G+90%§!\n  Army Health: §G+10§!\n  Army Morale: §G+10§!\n  Army Upkeep: §G-25§!\n  Pop Food Upkeep: §G-25§!"
