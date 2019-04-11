@@ -1,0 +1,42 @@
+tech_repeatable_ship_hull_mult = {
+    area = physics
+	cost = 90000
+	cost_per_level = 12000
+	tier = 5
+	weight = 0.2
+	category = { voidcraft }
+	is_rare = no
+	levels = 5
+	icon = "tech_repeatable_improved_ship_health"
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            years_passed < 150
+        }
+	}
+
+	ai_weight = {
+		factor = 1.0
+	}
+
+	weight_groups = {
+        repeatable
+    }
+
+    mod_weight_if_group_picked = {
+        repeatable = 0.01
+    }
+
+	prerequisites = {
+	    "tech_titans"
+	    "tech_mega_engineering"
+	    "tech_gateway_construction"
+	    "tech_jump_drive_1"
+	    "tech_ascension_theory"
+	}
+
+    modifier = {
+		ship_hull_mult = 0.05
+    }
+}
