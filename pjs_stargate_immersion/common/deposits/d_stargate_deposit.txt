@@ -1,0 +1,38 @@
+d_stargate_deposit = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+            job_stargate_defender_add = 1
+            job_stargate_researcher_add = 1
+            job_stargate_explorer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
