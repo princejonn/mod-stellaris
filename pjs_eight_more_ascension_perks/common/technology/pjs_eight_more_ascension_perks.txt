@@ -26,7 +26,7 @@ pjs_extra_ascension_perks_1 = {
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 7
+            num_ascension_perks < 6
         }
 	}
 
@@ -60,7 +60,7 @@ pjs_extra_ascension_perks_2 = {
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 7
+            num_ascension_perks < 6
         }
 	}
 
@@ -94,7 +94,7 @@ pjs_extra_ascension_perks_3 = {
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 7
+            num_ascension_perks < 6
         }
 	}
 
@@ -128,7 +128,7 @@ pjs_extra_ascension_perks_4 = {
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 7
+            num_ascension_perks < 6
         }
 	}
 
@@ -162,7 +162,7 @@ pjs_extra_ascension_perks_5 = {
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 10
+            num_ascension_perks < 8
         }
 	}
 
@@ -196,7 +196,7 @@ pjs_extra_ascension_perks_6 = {
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 10
+            num_ascension_perks < 8
         }
 	}
 
@@ -230,7 +230,7 @@ pjs_extra_ascension_perks_7 = {
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 10
+            num_ascension_perks < 8
         }
 	}
 
@@ -260,11 +260,11 @@ pjs_extra_ascension_perks_8 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-			years_passed > 300
+			years_passed > 275
         }
         modifier = {
             factor = 0
-            num_ascension_perks < 10
+            num_ascension_perks < 8
         }
 	}
 
