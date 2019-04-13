@@ -942,37 +942,37 @@ ap_shared_destiny = {
 # UTOPIA ASCENSION PERKS
 #################
 
-ap_voidborn = {
-	potential = {
-		host_has_dlc = "Utopia"
-		NOT = {
-			has_ascension_perk = ap_voidborn
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_technology_starbase_4"
-			has_technology = tech_starbase_4
-		}
-	}
-
-	on_enabled = {
-		custom_tooltip = "allow_habitats"
-	}
-
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 2
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 3
-			has_ethic = ethic_fanatic_pacifist
-		}
-	}
-}
+##  ap_voidborn = {
+##  	potential = {
+##  		host_has_dlc = "Utopia"
+##  		NOT = {
+##  			has_ascension_perk = ap_voidborn
+##  		}
+##  	}
+##
+##  	possible = {
+##  		custom_tooltip = {
+##  			fail_text = "requires_technology_starbase_4"
+##  			has_technology = tech_starbase_4
+##  		}
+##  	}
+##
+##  	on_enabled = {
+##  		custom_tooltip = "allow_habitats"
+##  	}
+##
+##  	ai_weight = {
+##  		factor = 10
+##  		modifier = {
+##  			factor = 2
+##  			has_ethic = ethic_pacifist
+##  		}
+##  		modifier = {
+##  			factor = 3
+##  			has_ethic = ethic_fanatic_pacifist
+##  		}
+##  	}
+##  }
 
 ap_master_builders = {
 	possible = {
@@ -980,13 +980,13 @@ ap_master_builders = {
 			fail_text = "requires_ascension_perks_2"
 			num_ascension_perks > 1
 		}
-		custom_tooltip = {
-			fail_text = "requires_ap_voidborn_OR_ap_galactic_wonders"
-			OR = {
-				has_ascension_perk = ap_voidborn
-				has_galactic_wonders = yes
-			}
-		}
+        custom_tooltip = {
+        	fail_text = "requires_tech_habitats_construction_OR_ap_galactic_wonders"
+        	OR = {
+        		has_technology = "tech_habitats_construction"
+        		has_galactic_wonders = yes
+        	}
+        }
 		custom_tooltip = {
 			fail_text = "requires_technology_zero_point_power"
 			has_technology = tech_zero_point_power
@@ -1040,10 +1040,7 @@ ap_master_builders = {
 
 ap_galactic_wonders_utopia = {
 	on_enabled = {
-		custom_tooltip = "allow_spy_orb"
-		custom_tooltip = "allow_think_tank"
-		custom_tooltip = "allow_dyson_sphere"
-		custom_tooltip = "allow_ring_world"
+	    custom_tooltip = "allow_tech_ap_galactic_wonders_utopia"
 	}
 
 	possible = {
@@ -1080,10 +1077,7 @@ ap_galactic_wonders_utopia = {
 
 ap_galactic_wonders_megacorp = {
 	on_enabled = {
-		custom_tooltip = "allow_matter_decompressor"
-		custom_tooltip = "allow_strategic_coordination_center"
-		custom_tooltip = "allow_mega_art_installation"
-		custom_tooltip = "allow_interstellar_assembly"
+	    custom_tooltip = "allow_tech_ap_galactic_wonders_megacorp"
 	}
 
 	possible = {
@@ -1120,14 +1114,7 @@ ap_galactic_wonders_megacorp = {
 
 ap_galactic_wonders_utopia_and_megacorp = {
 	on_enabled = {
-		custom_tooltip = "allow_spy_orb"
-		custom_tooltip = "allow_think_tank"
-		custom_tooltip = "allow_dyson_sphere"
-		custom_tooltip = "allow_ring_world"
-		custom_tooltip = "allow_matter_decompressor"
-		custom_tooltip = "allow_strategic_coordination_center"
-		custom_tooltip = "allow_mega_art_installation"
-		custom_tooltip = "allow_interstellar_assembly"
+	    custom_tooltip = "allow_tech_ap_galactic_wonders_utopia_and_megacorp"
 	}
 
 	possible = {

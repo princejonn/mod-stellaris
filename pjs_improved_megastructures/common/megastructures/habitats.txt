@@ -32,6 +32,17 @@ habitat_0 = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
 		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
 	}
 
 	placement_rules = {
@@ -68,8 +79,6 @@ habitat_0 = {
 				fail_text = "requires_no_orbital_station"
 				has_orbital_station = no
 			}
-
- 			# balance for habitats
 			custom_tooltip = {
 				fail_text = "requires_not_minor_planetary_body"
 				NOR = {
@@ -81,7 +90,7 @@ habitat_0 = {
 				fail_text = "requires_not_star"
 				is_star = no
 			}
-		} # use these for all non-star megastructures
+		}
 	}
 
 	# root = system

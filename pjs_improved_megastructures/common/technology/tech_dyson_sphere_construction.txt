@@ -9,8 +9,11 @@ tech_dyson_sphere_construction = {
 	is_rare = yes
 	icon = tech_mega_engineering
 
-	feature_flags = {
-		megaengineering
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DYSON_SPHERE_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_DYSON_SPHERE_CONSTRUCTION_DESC"
+		}
 	}
 
 	potential = {

@@ -9,8 +9,11 @@ tech_spy_orb_construction = {
 	is_rare = yes
 	icon = tech_mega_engineering
 
-	feature_flags = {
-		megaengineering
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SPY_ORB_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_SPY_ORB_CONSTRUCTION_DESC"
+		}
 	}
 
 	weight_modifier = {

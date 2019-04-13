@@ -2,19 +2,83 @@
 
   ## Ascension Perks
 
-  requires_tech_habitats_construction_OR_ap_galactic_wonders
+  requires_tech_habitats_construction_OR_ap_galactic_wonders:0 "$TRIGGER_FAIL$Requires the §Y$tech_habitats_construction$§! Technology OR the §Y$ap_galactic_wonders$§! Ascension Perk."
 
-  dyson_sphere_improvised:0 "Improvised Dyson Sphere"
-  dyson_sphere_improvised_DESC:0 "A ruined Dyson Sphere. Despite its age, the megastructure's basic frame is largely intact. With some improvisation it is now working at §G10%§! efficiency."
+  allow_tech_ap_galactic_wonders_utopia:0 "Research options gained:\n£engineering£ §Y$tech_ring_world_construction$§!\n£physics£ §Y$tech_dyson_sphere_construction$§!\nThe $tech_ring_world_construction$, and $tech_dyson_sphere_construction$ are incredibly powerful Megastructures."
+  allow_tech_ap_galactic_wonders_megacorp:0 "Research options gained:\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_matter_decompressor_construction$ is an incredibly powerful Megastructures."
+  allow_tech_ap_galactic_wonders_utopia_and_megacorp:0 "Research options gained:\n£engineering£ §Y$tech_ring_world_construction$§!\n£physics£ §Y$tech_dyson_sphere_construction$§!\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_ring_world_construction$, $tech_matter_decompressor_construction$, and $tech_dyson_sphere_construction$ are incredibly powerful Megastructures."
 
-  spy_orb_improvised:0 "Improvised Sentry Array"
+  ## Megastructures
+
+  dyson_sphere_improvised:0 "Improvised $dyson_sphere_5$"
+  dyson_sphere_improvised_DESC:0 "A ruined $dyson_sphere_5$. Despite its age, the megastructure's basic frame is largely intact. With some improvisation it is now working at §G10%§! efficiency."
+
+  spy_orb_improvised:0 "Improvised $spy_orb_4$"
   spy_orb_improvised_DESC:0 "The shattered remnants of what was once an extremely powerful Sentry Array. Despite its age, the megastructure's antennas are, for the most part, structurally intact. With some improvisation it is now working at §G10%§! efficiency."
 
-  think_tank_improvised:0 "Improvised Science Nexus"
+  think_tank_improvised:0 "Improvised $think_tank_3$"
   think_tank_improvised_DESC:0 "A ruined Science Nexus. Although its insides were stripped clean by looters eons ago, the megastructure's main hull is still mostly intact. With some improvisation it is now working at §G10%§! efficiency."
 
-  matter_decompressor_improvised:0 "Improvised Matter Decompressor"
+  matter_decompressor_improvised:0 "Improvised $matter_decompressor_4$"
   matter_decompressor_improvised_DESC:0 "An orbital station in sever disrepair, this $matter_decompressor_4$ once skirted natural law by reclaiming matter from the black hole in this system. With some improvisation it is now working at §G10%§! efficiency."
 
-  strategic_coordination_center_improvised:0 "Improvised Strategic Coordination Center"
+  strategic_coordination_center_improvised:0 "Improvised $strategic_coordination_center_3$"
   strategic_coordination_center_improvised_DESC:0 "The remains of an ancient military comms station. With some improvisation it is now working at §G10%§! efficiency."
+
+  ## Technology
+
+  tech_dyson_sphere_construction:0 "$dyson_sphere_5$"
+  tech_dyson_sphere_construction_desc:0 "Unlocks construction of the Megastructure §Y$dyson_sphere_5$§!"
+
+  tech_habitats_construction:0 "$habitat_0$"
+  tech_habitats_construction_desc:0 "Unlocks construction of the Megastructure §Y$habitat_0$§!"
+
+  tech_interstellar_assembly_construction:0 "$interstellar_assembly_4$"
+  tech_interstellar_assembly_construction_desc:0 "Unlocks construction of the Megastructure §Y$interstellar_assembly_4$§!"
+
+  tech_matter_decompressor_construction:0 "$matter_decompressor_4$"
+  tech_matter_decompressor_construction_desc:0 "Unlocks construction of the Megastructure §Y$matter_decompressor_4$§!"
+
+  tech_mega_art_installation_construction:0 "$mega_art_installation_3$"
+  tech_mega_art_installation_construction_desc:0 "Unlocks construction of the Megastructure §Y$mega_art_installation_3$§!"
+
+  tech_ring_world_construction:0 "Ring World"
+  tech_ring_world_construction_desc:0 "Unlocks construction of the Megastructure §YRing World§!"
+
+  tech_spy_orb_construction:0 "$spy_orb_4$"
+  tech_spy_orb_construction_desc:0 "Unlocks construction of the Megastructure §Y$spy_orb_4$§!"
+
+  tech_strategic_coordination_center_construction:0 "$strategic_coordination_center_3$"
+  tech_strategic_coordination_center_construction_desc:0 "Unlocks construction of the Megastructure §Y$strategic_coordination_center_3$§!"
+
+  tech_think_tank_construction:0 "$think_tank_3$"
+  tech_think_tank_construction_desc:0 "Unlocks construction of the Megastructure §Y$think_tank_3$§!"
+
+  ## Features
+
+  TECH_UNLOCK_DYSON_SPHERE_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Dyson Sphere Construction"
+  TECH_UNLOCK_DYSON_SPHERE_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $dyson_sphere_5$s."
+
+  TECH_UNLOCK_HABITATS_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Habitat Construction"
+  TECH_UNLOCK_HABITATS_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $habitat_0$s."
+
+  TECH_UNLOCK_INTERSTELLAR_ASSEMBLY_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Interstellar Assembly Construction"
+  TECH_UNLOCK_INTERSTELLAR_ASSEMBLY_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $interstellar_assembly_4$s."
+
+  TECH_UNLOCK_MATTER_DECOMPRESSOR_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Matter Decompressor Construction"
+  TECH_UNLOCK_MATTER_DECOMPRESSOR_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $matter_decompressor_4$s."
+
+  TECH_UNLOCK_MEGA_ART_INSTALLATION_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Mega Art Installation Construction"
+  TECH_UNLOCK_MEGA_ART_INSTALLATION_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $mega_art_installation_3$s."
+
+  TECH_UNLOCK_RING_WORLD_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Ring World Construction"
+  TECH_UNLOCK_RING_WORLD_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new Ring Worlds."
+
+  TECH_UNLOCK_SPY_ORB_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Sentry Array Construction"
+  TECH_UNLOCK_SPY_ORB_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $spy_orb_4$s."
+
+  TECH_UNLOCK_STRATEGIC_COORDINATION_CENTER_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Strategic Coordination Center Construction"
+  TECH_UNLOCK_STRATEGIC_COORDINATION_CENTER_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $strategic_coordination_center_3$s."
+
+  TECH_UNLOCK_THINK_TANK_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Science Nexus Construction"
+  TECH_UNLOCK_THINK_TANK_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $think_tank_3$s."

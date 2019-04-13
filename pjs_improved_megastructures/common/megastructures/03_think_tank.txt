@@ -38,30 +38,35 @@ think_tank_0 = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
 		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_think_tank"
+            from = { NOT = { has_country_flag = built_think_tank } }
+		}
 	}
 
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
-				#has_any_megastructure = no
-				has_no_non_gate_megastructure = yes
 				NOR = {
 					has_planet_flag = megastructure
 					has_planet_flag = has_megastructure
-					#solar_system = {
-						#has_any_megastructure = yes
-						#has_no_non_gate_megastructure = no
-					#}
 				}
 			}
 			custom_tooltip = {
-				fail_text = "requires_no_existing_think_tank"
-				from = { NOT = { has_country_flag = built_think_tank } }
-			}
-			custom_tooltip = {
 				fail_text = "requires_survey_not_habitable"
-				is_surveyed = {			# prevent leaking habitability information
+				is_surveyed = {
 					who = prev.from
 					status = yes
 				}
@@ -71,8 +76,10 @@ think_tank_0 = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-
- 			# balance for think tanks
+			custom_tooltip = {
+				fail_text = "requires_no_orbital_station"
+				has_orbital_station = no
+			}
 			custom_tooltip = {
 				fail_text = "requires_not_minor_planetary_body"
 				NOR = {
@@ -81,14 +88,10 @@ think_tank_0 = {
 				}
 			}
 			custom_tooltip = {
-				fail_text = "requires_not_star"
-				is_star = no
-			}
-			custom_tooltip = {
 				fail_text = "requires_not_ring_world"
 				is_ringworld = no
 			}
-		} # use these for all non-star megastructures
+		}
 	}
 
 	# root = system

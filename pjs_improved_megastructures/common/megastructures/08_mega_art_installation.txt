@@ -41,34 +41,27 @@ mega_art_installation_0 = {
 			}
 		}
 		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			#will be changed to type-specific string with next translation pass
-			#fail_text = "requires_no_existing_mega_art_installation"
-			from = {
-				NOT = {
-					any_owned_megastructure = {
-						OR = {
-							is_megastructure_type = mega_art_installation_0
-							is_megastructure_type = mega_art_installation_1
-							is_megastructure_type = mega_art_installation_2
-							is_megastructure_type = mega_art_installation_3
-							#is_megastructure_type = mega_art_installation_restored
-						}
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
+			fail_text = "requires_no_existing_mega_art_installation"
+            from = { NOT = { has_country_flag = built_mega_art_installation } }
 		}
 	}
 
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
-				fail_text = "must_build_around_star"
-				is_star = yes
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {
+					who = prev.from
+					status = yes
+				}
+				colonizeable_planet = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
@@ -77,6 +70,17 @@ mega_art_installation_0 = {
 			custom_tooltip = {
 				fail_text = "requires_no_orbital_station"
 				has_orbital_station = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
 			}
 		}
 	}
@@ -105,7 +109,7 @@ mega_art_installation_0 = {
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		from = { set_country_flag = built_mega_art_installation_site }
+		from = { set_country_flag = built_mega_art_installation }
 	}
 }
 

@@ -72,10 +72,8 @@ ring_world_1 = {
 				is_star_class = sc_trinary_4
 			}
 		}
-
 		custom_tooltip = {
 			fail_text = "requires_no_existing_megastructure"
-			#NOT = { has_any_megastructure = yes }
 			has_no_non_gate_megastructure = yes
 		}
 	}
@@ -118,9 +116,7 @@ ring_world_1 = {
 
 	on_build_start = {}
 	on_build_cancel = {}
-	on_build_complete = {
-		set_star_flag = ring_world_built
-	}
+	on_build_complete = { set_star_flag = ring_world_built }
 }
 
 # Temporarily used for creating specific habitable or structural sections.

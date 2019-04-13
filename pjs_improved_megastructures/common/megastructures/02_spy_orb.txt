@@ -53,8 +53,15 @@ spy_orb_0 = {
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+				}
+			}
+			custom_tooltip = {
 				fail_text = "requires_survey_not_habitable"
-				is_surveyed = {			# prevent leaking habitability information
+				is_surveyed = {
 					who = prev.from
 					status = yes
 				}
@@ -64,40 +71,22 @@ spy_orb_0 = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-
-			#custom_tooltip = { # balance for think tanks
-			#	fail_text = "requires_major_planetary_body"
-			#	NOR = {
-			#		is_asteroid = yes
-			#		is_moon = yes
-			#		is_star = yes
-			#	}
-			#}
 			custom_tooltip = {
-				fail_text = "must_build_around_star"
-				is_star = yes
+				fail_text = "requires_no_orbital_station"
+				has_orbital_station = no
 			}
-
 			custom_tooltip = {
-				fail_text = "requires_no_existing_megastructure"
-				solar_system = {
-					has_no_non_gate_megastructure = yes
-					NOR = {
-						#has_any_megastructure = yes
-						any_system_planet = {
-							OR = {
-								is_planet_class = pc_ringworld_habitable
-								is_planet_class = pc_ringworld_habitable_damaged
-								is_planet_class = pc_ringworld_tech
-								is_planet_class = pc_ringworld_tech_damaged
-								is_planet_class = pc_ringworld_seam
-								is_planet_class = pc_ringworld_seam_damaged
-							}
-						}
-					}
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
 				}
 			}
-		} # use these for all non-star megastructures
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
 	}
 
 	# root = system
