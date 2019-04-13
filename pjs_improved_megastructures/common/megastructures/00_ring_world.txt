@@ -21,7 +21,7 @@ ring_world_1 = {
 	}
 
 	potential = {
-		has_gw_ring_world = yes
+		has_technology = "tech_ring_world_construction"
 	}
 
 	possible = {

@@ -1,0 +1,20 @@
+﻿l_english:
+
+  ## Ascension Perks
+
+  requires_tech_habitats_construction_OR_ap_galactic_wonders
+
+  dyson_sphere_improvised:0 "Improvised Dyson Sphere"
+  dyson_sphere_improvised_DESC:0 "A ruined Dyson Sphere. Despite its age, the megastructure's basic frame is largely intact. With some improvisation it is now working at §G10%§! efficiency."
+
+  spy_orb_improvised:0 "Improvised Sentry Array"
+  spy_orb_improvised_DESC:0 "The shattered remnants of what was once an extremely powerful Sentry Array. Despite its age, the megastructure's antennas are, for the most part, structurally intact. With some improvisation it is now working at §G10%§! efficiency."
+
+  think_tank_improvised:0 "Improvised Science Nexus"
+  think_tank_improvised_DESC:0 "A ruined Science Nexus. Although its insides were stripped clean by looters eons ago, the megastructure's main hull is still mostly intact. With some improvisation it is now working at §G10%§! efficiency."
+
+  matter_decompressor_improvised:0 "Improvised Matter Decompressor"
+  matter_decompressor_improvised_DESC:0 "An orbital station in sever disrepair, this $matter_decompressor_4$ once skirted natural law by reclaiming matter from the black hole in this system. With some improvisation it is now working at §G10%§! efficiency."
+
+  strategic_coordination_center_improvised:0 "Improvised Strategic Coordination Center"
+  strategic_coordination_center_improvised_DESC:0 "The remains of an ancient military comms station. With some improvisation it is now working at §G10%§! efficiency."

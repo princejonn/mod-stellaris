@@ -1,0 +1,51 @@
+tech_interstellar_assembly_construction = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	category = { statecraft }
+	ai_update_type = all
+	prerequisites = { "tech_galactic_markets" "tech_mega_engineering" }
+	weight = @tier5weight3
+	is_rare = yes
+	icon = tech_mega_engineering
+
+	feature_flags = {
+		megaengineering
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 0.5
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			has_any_megastructure_in_empire = yes
+		}
+	}
+
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
