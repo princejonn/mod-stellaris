@@ -35,14 +35,10 @@ tech_mega_engineering = {
 				}
 			}
 		}
-##      modifier = {
-##      	factor = 2
-##      	has_ascension_perk = ap_voidborn
-##      }
-##      modifier = {
-##      	factor = 2
-##      	has_ascension_perk = ap_master_builders
-##      }
+        modifier = {
+        	factor = 2
+        	has_ascension_perk = ap_master_builders
+        }
 		modifier = {
 			factor = 2
 			has_technology = tech_habitats

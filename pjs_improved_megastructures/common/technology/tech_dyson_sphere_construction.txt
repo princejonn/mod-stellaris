@@ -7,7 +7,6 @@ tech_dyson_sphere_construction = {
 	prerequisites = { "tech_power_plant_4" "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
-	icon = tech_mega_engineering
 
 	prereqfor_desc = {
 		custom = {

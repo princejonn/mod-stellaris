@@ -7,12 +7,18 @@ tech_strategic_coordination_center_construction = {
 	prerequisites = { "tech_doctrine_navy_size_4" "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
-	icon = tech_mega_engineering
 
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STRATEGIC_COORDINATION_CENTER_CONSTRUCTION_TITLE"
 			desc = "TECH_UNLOCK_STRATEGIC_COORDINATION_CENTER_CONSTRUCTION_DESC"
+		}
+	}
+
+	potential = {
+		OR = {
+		    host_has_dlc = "Utopia"
+            host_has_dlc = "Megacorp"
 		}
 	}
 

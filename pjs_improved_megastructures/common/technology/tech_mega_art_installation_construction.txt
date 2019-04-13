@@ -7,12 +7,18 @@ tech_mega_art_installation_construction = {
 	prerequisites = { "tech_galactic_administration" "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
-	icon = tech_mega_engineering
 
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_MEGA_ART_INSTALLATION_CONSTRUCTION_TITLE"
 			desc = "TECH_UNLOCK_MEGA_ART_INSTALLATION_CONSTRUCTION_DESC"
+		}
+	}
+
+	potential = {
+		OR = {
+		    host_has_dlc = "Utopia"
+            host_has_dlc = "Megacorp"
 		}
 	}
 

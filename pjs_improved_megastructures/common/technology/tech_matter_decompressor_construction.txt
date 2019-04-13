@@ -7,7 +7,6 @@ tech_matter_decompressor_construction = {
 	prerequisites = { "tech_mining_3" "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
-	icon = tech_mega_engineering
 
 	prereqfor_desc = {
 		custom = {

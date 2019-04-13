@@ -7,12 +7,18 @@ tech_think_tank_construction = {
 	prerequisites = { "tech_basic_science_lab_3" "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
-	icon = tech_mega_engineering
 
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_THINK_TANK_CONSTRUCTION_TITLE"
 			desc = "TECH_UNLOCK_THINK_TANK_CONSTRUCTION_DESC"
+		}
+	}
+
+	potential = {
+		OR = {
+		    host_has_dlc = "Utopia"
+            host_has_dlc = "Megacorp"
 		}
 	}
 
