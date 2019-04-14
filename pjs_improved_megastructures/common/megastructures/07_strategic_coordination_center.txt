@@ -145,7 +145,7 @@ strategic_coordination_center_1 = {
 	}
 
 	possible = {
-		from = { has_gw_strategic_coordination_center = yes }
+		has_technology = "tech_strategic_coordination_center_construction"
 	}
 
 	on_build_complete = {
@@ -186,7 +186,7 @@ strategic_coordination_center_2 = {
 	}
 
 	possible = {
-		from = { has_gw_strategic_coordination_center = yes }
+		has_technology = "tech_strategic_coordination_center_construction"
 	}
 
 	on_build_complete = {
@@ -227,7 +227,7 @@ strategic_coordination_center_3 = {
 	}
 
 	possible = {
-		from = { has_gw_strategic_coordination_center = yes }
+		has_technology = "tech_strategic_coordination_center_construction"
 	}
 
 	on_build_complete = {

@@ -146,7 +146,7 @@ interstellar_assembly_1 = {
 	}
 
 	possible = {
-		from = { has_gw_interstellar_assembly = yes }
+		has_technology = "tech_interstellar_assembly_construction"
 	}
 
 	on_build_complete = {
@@ -187,7 +187,7 @@ interstellar_assembly_2 = {
 	}
 
 	possible = {
-		from = { has_gw_interstellar_assembly = yes }
+		has_technology = "tech_interstellar_assembly_construction"
 	}
 
 	on_build_complete = {
@@ -228,7 +228,7 @@ interstellar_assembly_3 = {
 	}
 
 	possible = {
-		from = { has_gw_interstellar_assembly = yes }
+		has_technology = "tech_interstellar_assembly_construction"
 	}
 
 	on_build_complete = {
@@ -269,7 +269,7 @@ interstellar_assembly_4 = {
 	}
 
 	possible = {
-		from = { has_gw_interstellar_assembly = yes }
+		has_technology = "tech_interstellar_assembly_construction"
 	}
 
 	on_build_complete = {

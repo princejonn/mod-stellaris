@@ -171,7 +171,7 @@ think_tank_1 = {
 	}
 
 	possible = {
-		from = { has_gw_think_tank = yes }
+		has_technology = "tech_think_tank_construction"
 	}
 }
 
@@ -211,7 +211,7 @@ think_tank_2 = {
 	}
 
 	possible = {
-		from = { has_gw_think_tank = yes }
+		has_technology = "tech_think_tank_construction"
 	}
 }
 
@@ -251,7 +251,7 @@ think_tank_3 = {
 	}
 
 	possible = {
-		from = { has_gw_think_tank = yes }
+		has_technology = "tech_think_tank_construction"
 	}
 }
 

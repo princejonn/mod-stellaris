@@ -146,7 +146,7 @@ mega_art_installation_1 = {
 	}
 
 	possible = {
-		from = { has_gw_mega_art_installation = yes }
+		has_technology = "tech_mega_art_installation_construction"
 	}
 
 	on_build_complete = {
@@ -187,7 +187,7 @@ mega_art_installation_2 = {
 	}
 
 	possible = {
-		from = { has_gw_mega_art_installation = yes }
+		has_technology = "tech_mega_art_installation_construction"
 	}
 
 	on_build_complete = {
@@ -228,7 +228,7 @@ mega_art_installation_3 = {
 	}
 
 	possible = {
-		from = { has_gw_mega_art_installation = yes }
+		has_technology = "tech_mega_art_installation_construction"
 	}
 
 	on_build_complete = {

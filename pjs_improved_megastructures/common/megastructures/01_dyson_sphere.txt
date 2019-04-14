@@ -144,7 +144,7 @@ dyson_sphere_1 = {
 	}
 
 	possible = {
-		from = { has_gw_dyson_sphere = yes }
+		has_technology = "tech_dyson_sphere_construction"
 	}
 }
 
@@ -170,7 +170,7 @@ dyson_sphere_2 = {
 	}
 
 	possible = {
-		from = { has_gw_dyson_sphere = yes }
+		has_technology = "tech_dyson_sphere_construction"
 	}
 }
 
@@ -196,7 +196,7 @@ dyson_sphere_3 = {
 	}
 
 	possible = {
-		from = { has_gw_dyson_sphere = yes }
+		has_technology = "tech_dyson_sphere_construction"
 	}
 }
 
@@ -222,7 +222,7 @@ dyson_sphere_4 = {
 	}
 
 	possible = {
-		from = { has_gw_dyson_sphere = yes }
+		has_technology = "tech_dyson_sphere_construction"
 	}
 }
 
@@ -248,7 +248,7 @@ dyson_sphere_5 = {
 	}
 
 	possible = {
-		from = { has_gw_dyson_sphere = yes }
+		has_technology = "tech_dyson_sphere_construction"
 	}
 
 	on_build_complete = {

@@ -149,7 +149,7 @@ spy_orb_1 = {
 	}
 
 	possible = {
-		from = { has_gw_spy_orb = yes }
+		has_technology = "tech_spy_orb_construction"
 	}
 
 	sensor_range = 20
@@ -179,7 +179,7 @@ spy_orb_2 = {
 	}
 
 	possible = {
-		from = { has_gw_spy_orb = yes }
+		has_technology = "tech_spy_orb_construction"
 	}
 	sensor_range = 40
 	hyperlane_range = 60
@@ -209,7 +209,7 @@ spy_orb_3 = {
 	}
 
 	possible = {
-		from = { has_gw_spy_orb = yes }
+		has_technology = "tech_spy_orb_construction"
 	}
 	sensor_range = 60
 	hyperlane_range = 90
@@ -238,7 +238,7 @@ spy_orb_4 = {
 	}
 
 	possible = {
-		from = { has_gw_spy_orb = yes }
+		has_technology = "tech_spy_orb_construction"
 	}
 
 	# effect implementation in game_rules (has_full_sensor_range)

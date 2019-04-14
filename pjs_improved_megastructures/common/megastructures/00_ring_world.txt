@@ -138,7 +138,7 @@ ring_world_2_intermediate = {
 	}
 
 	possible = {
-		from = { has_gw_ring_world = yes }
+		has_technology = "tech_ring_world_construction"
 	}
 
 	on_build_start = {}
@@ -222,7 +222,7 @@ ring_world_3_intermediate = {
 	}
 
 	possible = {
-		from = { has_gw_ring_world = yes }
+		has_technology = "tech_ring_world_construction"
 	}
 
 	on_build_complete = {

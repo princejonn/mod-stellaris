@@ -128,7 +128,7 @@ matter_decompressor_1 = {
 	}
 
 	possible = {
-		from = { has_gw_matter_decompressor = yes }
+		has_technology = "tech_matter_decompressor_construction"
 	}
 
 	on_build_complete = {
@@ -168,7 +168,7 @@ matter_decompressor_2 = {
 	}
 
 	possible = {
-		from = { has_gw_matter_decompressor = yes }
+		has_technology = "tech_matter_decompressor_construction"
 	}
 
 	on_build_complete = {
@@ -208,7 +208,7 @@ matter_decompressor_3 = {
 	}
 
 	possible = {
-		from = { has_gw_matter_decompressor = yes }
+		has_technology = "tech_matter_decompressor_construction"
 	}
 
 	on_build_complete = {
@@ -248,7 +248,7 @@ matter_decompressor_4 = {
 	}
 
 	possible = {
-		from = { has_gw_matter_decompressor = yes }
+		has_technology = "tech_matter_decompressor_construction"
 	}
 
 	on_build_complete = {
