@@ -1,6 +1,0 @@
-empire_init_capital_planet = {
-	events = {
-		pjs_systems_awakened_event.1
-		pjs_systems_awakened_event.2
-	}
-}
