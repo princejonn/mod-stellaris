@@ -1,0 +1,179 @@
+@campaignCost = 1000
+@campaignDuration = 3600
+
+planet_food_boost_campaign = {
+	length = @campaignDuration
+
+	resources = {
+		category = campaigns
+		cost = {
+			trigger = {
+                num_pops < 100
+			}
+			food = 1000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 100
+                num_pops < 200
+			}
+			food = 2000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 200
+                num_pops < 300
+			}
+			food = 3000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 300
+                num_pops < 400
+			}
+			food = 4000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 400
+                num_pops < 500
+			}
+			food = 5000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 500
+                num_pops < 600
+			}
+			food = 6000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 600
+                num_pops < 700
+			}
+			food = 7000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 700
+                num_pops < 800
+			}
+			food = 8000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 800
+                num_pops < 900
+			}
+			food = 9000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 900
+			}
+			food = 10000
+		}
+	}
+
+	potential = {
+		owner = { is_regular_empire = yes }
+	}
+
+	modifier = {
+		pop_growth_speed = 0.25
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+planet_luxuries_boost_campaign = {
+	length = @campaignDuration
+
+	resources = {
+		category = campaigns
+		cost = {
+			trigger = {
+                num_pops < 100
+			}
+			consumer_goods = 100
+		}
+		cost = {
+			trigger = {
+                num_pops >= 100
+                num_pops < 200
+			}
+			consumer_goods = 200
+		}
+		cost = {
+			trigger = {
+                num_pops >= 200
+                num_pops < 300
+			}
+			consumer_goods = 300
+		}
+		cost = {
+			trigger = {
+                num_pops >= 300
+                num_pops < 400
+			}
+			consumer_goods = 400
+		}
+		cost = {
+			trigger = {
+                num_pops >= 400
+                num_pops < 500
+			}
+			consumer_goods = 500
+		}
+		cost = {
+			trigger = {
+                num_pops >= 500
+                num_pops < 600
+			}
+			consumer_goods = 600
+		}
+		cost = {
+			trigger = {
+                num_pops >= 600
+                num_pops < 700
+			}
+			consumer_goods = 700
+		}
+		cost = {
+			trigger = {
+                num_pops >= 700
+                num_pops < 800
+			}
+			consumer_goods = 800
+		}
+		cost = {
+			trigger = {
+                num_pops >= 800
+                num_pops < 900
+			}
+			consumer_goods = 900
+		}
+		cost = {
+			trigger = {
+                num_pops >= 900
+			}
+			consumer_goods = 1000
+		}
+	}
+
+	potential = {
+		owner = { is_regular_empire = yes }
+	}
+
+	modifier = {
+		planet_amenities_mult = 0.25
+	    planet_immigration_pull_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
