@@ -98,69 +98,69 @@ planet_luxuries_boost_campaign = {
 			trigger = {
                 num_pops < 100
 			}
-			consumer_goods = 100
+			consumer_goods = 1000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 100
                 num_pops < 200
 			}
-			consumer_goods = 200
+			consumer_goods = 2000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 200
                 num_pops < 300
 			}
-			consumer_goods = 300
+			consumer_goods = 3000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 300
                 num_pops < 400
 			}
-			consumer_goods = 400
+			consumer_goods = 4000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 400
                 num_pops < 500
 			}
-			consumer_goods = 500
+			consumer_goods = 5000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 500
                 num_pops < 600
 			}
-			consumer_goods = 600
+			consumer_goods = 6000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 600
                 num_pops < 700
 			}
-			consumer_goods = 700
+			consumer_goods = 7000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 700
                 num_pops < 800
 			}
-			consumer_goods = 800
+			consumer_goods = 8000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 800
                 num_pops < 900
 			}
-			consumer_goods = 900
+			consumer_goods = 9000
 		}
 		cost = {
 			trigger = {
                 num_pops >= 900
 			}
-			consumer_goods = 1000
+			consumer_goods = 10000
 		}
 	}
 
