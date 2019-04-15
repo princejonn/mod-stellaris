@@ -8,7 +8,7 @@
   allow_tech_ap_galactic_wonders_megacorp:0 "Research options gained:\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_matter_decompressor_construction$ is an incredibly powerful Megastructures."
   allow_tech_ap_galactic_wonders_utopia_and_megacorp:0 "Research options gained:\n£engineering£ §Y$tech_ring_world_construction$§!\n£physics£ §Y$tech_dyson_sphere_construction$§!\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_ring_world_construction$, $tech_matter_decompressor_construction$, and $tech_dyson_sphere_construction$ are incredibly powerful Megastructures."
 
-  ## Megastructures
+  ## Improvised Megastructures
 
   dyson_sphere_improvised:0 "Improvised $dyson_sphere_5$"
   dyson_sphere_improvised_DESC:0 "A ruined $dyson_sphere_5$. Despite its age, the megastructure's basic frame is largely intact. With some improvisation it is now working at §G10%§! efficiency."
@@ -24,6 +24,24 @@
 
   strategic_coordination_center_improvised:0 "Improvised $strategic_coordination_center_3$"
   strategic_coordination_center_improvised_DESC:0 "The remains of an ancient military comms station. With some improvisation it is now working at §G10%§! efficiency."
+
+  ## Additional Megastructures
+
+  think_tank_hub_0_MEGASTRUCTURE_DETAILS:1 "The research labs and databanks of a §Y$think_tank_hub_1$§! generate an immense flow of raw, undiluted science."
+  think_tank_hub_0:0 "Science Hub Site"
+  think_tank_hub_0_DESC:0 "This initial site will serve as the base for the future construction of a Science Hub."
+  think_tank_hub_1:0 "Science Hub"
+  think_tank_hub_1_DESC:0 "A hub to the Science Nexus; assisting in the research endeavours from an off site."
+
+  requires_existing_think_tank:0 "$TRIGGER_FAIL$Can only build the Science Hub once the Science Nexus has been built."
+
+  strategic_coordination_hub_0_MEGASTRUCTURE_DETAILS:0 "A facility synchronizing the national Starbase network, augmenting defensive and offensive capabilities."
+  strategic_coordination_hub_0:0 "Strategic Coordination Hub Site"
+  strategic_coordination_hub_0_DESC:0 "The construction site station serves as the base for the future construction of a Strategic Coordination Hub."
+  strategic_coordination_hub_1:0 "Strategic Coordination Hub"
+  strategic_coordination_hub_1_DESC:0 "A hub to the Strategic Coordination, helping synchronize the national Starbase network, augmenting defensive and offensive capabilities."
+
+  requires_existing_strategic_coordination_center:0 "$TRIGGER_FAIL$Can only build the Strategic Coordination Hub once the Strategic Coordination Center has been built."
 
   ## Technology
 

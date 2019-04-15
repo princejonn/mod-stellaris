@@ -1,14 +1,18 @@
-# see README.txt for example
-
+#Gateway
 gateway_0 = {
 	construction_blocks_others = no
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
-	build_outside_gravity_well = yes 						# indicates this will use "free" placement between the system's inner and outer ring
-															# if this option is active, the placement_rules will be completely ignored
+	build_outside_gravity_well = yes
 	show_galactic_map_icon = no
+
+	# indicates this will use "free" placement between the system's inner and outer ring
+	# if this option is active, the placement_rules will be completely ignored
+	# placement rules would be ignored since the gateway is being "free-placed" between the inner and outer radius of the system
+
 	build_time = 1080
 	resources = {
 		category = megastructures
@@ -50,23 +54,18 @@ gateway_0 = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_technology_gateway_construction"
-			from = { has_technology = tech_gateway_construction }
+			from = { has_technology = "tech_gateway_construction" }
 		}
-	}
-
-	placement_rules = {			# those would be ignored since the gateway is being "free-placed" between the inner and outer radius of the system
 	}
 
 	# root = system
 	# from = country
 	ai_weight = {
 		factor = 5
-
 		modifier = {
 			factor = 0
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
 		}
-
 		modifier = {
 			factor = 0
 			any_neighbor_system = {
@@ -83,7 +82,9 @@ gateway_0 = {
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		from = { country_event = { id = apoc.14 } }
+		from = {
+		    country_event = { id = apoc.14 }
+        }
 	}
 }
 
@@ -92,22 +93,17 @@ gateway_final = {
 	entity = "gateway_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
-	# build_outside_gravity_well = yes 						# indicates this will use "free" placement between the system's inner and outer ring
-															# if this option is active, the placement_rules will be completely ignored
+	build_outside_gravity_well = yes
 	show_galactic_map_icon = no
-	potential = {
-		has_technology = tech_gateway_activation
-	}
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_technology_gateway_construction"
-			from = { has_technology = tech_gateway_construction }
-		}
-	}
+	# indicates this will use "free" placement between the system's inner and outer ring
+	# if this option is active, the placement_rules will be completely ignored
+
 	upgrade_from = {
 		gateway_0
 	}
+
 	build_time = 1800
 	resources = {
 		category = megastructures
@@ -116,7 +112,20 @@ gateway_final = {
 			energy = 6000
 		}
 	}
+
+	potential = {
+		has_technology = "tech_gateway_activation"
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_gateway_construction"
+			from = { has_technology = "tech_gateway_construction" }
+		}
+	}
+
 	bypass_type = gateway
+
 	on_build_complete = {
 		activate_gateway = fromfrom
 		if = {
@@ -138,6 +147,7 @@ gateway_final = {
 gateway_ruined = {
 	entity = "deactivated_gateway_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	bypass_type = gateway
@@ -154,23 +164,15 @@ gateway_restored = {
 	entity = "reactivated_gateway_entity"
 	construction_entity = "gateway_portal_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
 	# build_outside_gravity_well = yes
 	show_galactic_map_icon = no
 
-	potential = {
-		has_technology = tech_gateway_activation
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_technology_gateway_activation"
-			from = { has_technology = tech_gateway_activation }
-		}
-	}
 	upgrade_from = {
 		gateway_ruined
 	}
+
 	build_time = 720
 	resources = {
 		category = megastructures
@@ -179,7 +181,20 @@ gateway_restored = {
 			energy = 6000
 		}
 	}
+
+	potential = {
+		has_technology = "tech_gateway_activation"
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_gateway_activation"
+			from = { has_technology = tech_gateway_activation }
+		}
+	}
+
 	bypass_type = gateway
+
 	on_build_complete = {
 		activate_gateway = fromfrom
 		if = {

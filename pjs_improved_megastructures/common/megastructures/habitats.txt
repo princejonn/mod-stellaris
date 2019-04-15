@@ -1,5 +1,4 @@
-# see README.txt for example
-
+#Habitat
 habitat_0 = {
 	construction_blocks_others = no
 	entity = ""
@@ -96,12 +95,10 @@ habitat_0 = {
 	# from = country
 	ai_weight = {
 		factor = 10
-
 		modifier = {
 			factor = 0
 			starbase = { NOT = { has_starbase_size >= starbase_starport } }
 		}
-
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
@@ -154,6 +151,8 @@ habitat_0 = {
 			set_planet_flag = has_megastructure
 		}
 		remove_megastructure = fromfrom
-		from = { country_event =  { id = utopia.61 } }
+		from = {
+		    country_event =  { id = utopia.61 }
+        }
 	}
 }

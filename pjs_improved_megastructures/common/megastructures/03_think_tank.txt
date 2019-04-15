@@ -2,18 +2,16 @@
 @stage_2_research_bonus	= 200
 @stage_3_research_bonus	= 300
 @stage_4_research_bonus	= 350
-@entity_x				= 0
-@entity_y 				= -20
 
-
+#Science Nexus
 think_tank_0 = {
 	construction_blocks_others = no
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
-	place_entity_on_planet_plane = no
 
-	entity_offset = { x = @entity_x y = @entity_y }
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
 
 	build_time = 1800
 	resources = {
@@ -22,7 +20,6 @@ think_tank_0 = {
 			alloys = 5000
 			influence = 300
 		}
-
 		upkeep = {
 			energy = 5
 		}
@@ -102,7 +99,6 @@ think_tank_0 = {
 			factor = 0.1
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
 		}
-
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
@@ -112,7 +108,6 @@ think_tank_0 = {
 				}
 			}
 		}
-
 		modifier = {
 			factor = 2.0
 			from = {
@@ -127,11 +122,9 @@ think_tank_0 = {
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		set_star_flag = think_tank_built
-		fromfrom.planet = {
-			set_planet_flag = has_megastructure
-		}
 		from = { set_country_flag = built_think_tank }
+		set_star_flag = think_tank_built
+		fromfrom.planet = { set_planet_flag = has_megastructure }
 	}
 }
 
@@ -142,7 +135,7 @@ think_tank_1 = {
 	portrait = "GFX_megastructure_construction_background"
 
 	place_entity_on_planet_plane = no
-	entity_offset = { x = @entity_x y = @entity_y }
+	entity_offset = { x = 0 y = -20 }
 
 	upgrade_from = {
 		think_tank_0
@@ -158,11 +151,9 @@ think_tank_1 = {
 		cost = {
 			alloys = 15000
 		}
-
 		upkeep = {
 			energy = 25
 		}
-
 		produces = {
 			society_research = @stage_1_research_bonus
 			engineering_research = @stage_1_research_bonus
@@ -171,7 +162,7 @@ think_tank_1 = {
 	}
 
 	possible = {
-		has_technology = "tech_think_tank_construction"
+		from = { has_technology = "tech_think_tank_construction" }
 	}
 }
 
@@ -182,7 +173,7 @@ think_tank_2 = {
 	portrait = "GFX_megastructure_construction_background"
 
 	place_entity_on_planet_plane = no
-	entity_offset = { x = @entity_x y = @entity_y }
+	entity_offset = { x = 0 y = -20 }
 
 	upgrade_from = {
 		think_tank_1
@@ -198,11 +189,9 @@ think_tank_2 = {
 		cost = {
 			alloys = 15000
 		}
-
 		upkeep = {
 			energy = 50
 		}
-
 		produces = {
 			society_research = @stage_2_research_bonus
 			engineering_research = @stage_2_research_bonus
@@ -211,7 +200,7 @@ think_tank_2 = {
 	}
 
 	possible = {
-		has_technology = "tech_think_tank_construction"
+		from = { has_technology = "tech_think_tank_construction" }
 	}
 }
 
@@ -222,7 +211,7 @@ think_tank_3 = {
 	portrait = "GFX_megastructure_think_tank_background"
 
 	place_entity_on_planet_plane = no
-	entity_offset = { x = @entity_x y = @entity_y }
+	entity_offset = { x = 0 y = -20 }
 
 	upgrade_from = {
 		think_tank_2
@@ -238,11 +227,9 @@ think_tank_3 = {
 		cost = {
 			alloys = 15000
 		}
-
 		upkeep = {
 			energy = 75
 		}
-
 		produces = {
 			society_research = @stage_3_research_bonus
 			engineering_research = @stage_3_research_bonus
@@ -251,7 +238,11 @@ think_tank_3 = {
 	}
 
 	possible = {
-		has_technology = "tech_think_tank_construction"
+		from = { has_technology = "tech_think_tank_construction" }
+	}
+
+	on_build_complete = {
+		from = { set_country_flag = built_think_tank }
 	}
 }
 
@@ -263,11 +254,12 @@ think_tank_4 = {
 	portrait = "GFX_megastructure_think_tank_background"
 
 	place_entity_on_planet_plane = no
-	entity_offset = { x = @entity_x y = @entity_y }
+	entity_offset = { x = 0 y = -20 }
 
-	# used from script only
 	upgrade_desc = hide
-	potential = { always = no }
+	potential = {
+	    always = no
+	}
 
 	upgrade_from = {
 		think_tank_3
@@ -283,7 +275,6 @@ think_tank_4 = {
 		upkeep = {
 			energy = 100
 		}
-
 		produces = {
 			society_research = @stage_4_research_bonus
 			engineering_research = @stage_4_research_bonus
@@ -298,7 +289,7 @@ think_tank_ruined = {
 	portrait = "GFX_megastructure_construction_background"
 
 	place_entity_on_planet_plane = no
-	entity_offset = { x = @entity_x y = @entity_y }
+	entity_offset = { x = 0 y = -20 }
 
 	potential = {
 		always = no
@@ -313,7 +304,7 @@ think_tank_improvised = {
 	portrait = "GFX_megastructure_think_tank_background"
 
 	place_entity_on_planet_plane = no
-	entity_offset = { x = @entity_x y = @entity_y }
+	entity_offset = { x = 0 y = -20 }
 
 	upgrade_from = {
 		think_tank_ruined
@@ -327,13 +318,11 @@ think_tank_improvised = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 1500
+			alloys = 3000
 		}
-
 		upkeep = {
 			energy = 15
 		}
-
 		produces = {
 			society_research = 50
 			engineering_research = 50
@@ -346,9 +335,7 @@ think_tank_improvised = {
 	}
 
 	on_build_start = {
-		fromfrom = {
-			set_graphical_culture = root.from
-		}
+		fromfrom = { set_graphical_culture = root.from }
 	}
 }
 
@@ -360,7 +347,7 @@ think_tank_restored = {
 	portrait = "GFX_megastructure_think_tank_background"
 
 	place_entity_on_planet_plane = no
-	entity_offset = { x = @entity_x y = @entity_y }
+	entity_offset = { x = 0 y = -20 }
 
 	upgrade_from = {
 		think_tank_improvised
@@ -374,13 +361,11 @@ think_tank_restored = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 1350
+			alloys = 15000
 		}
-
 		upkeep = {
 			energy = 75
 		}
-
 		produces = {
 			society_research = @stage_3_research_bonus
 			engineering_research = @stage_3_research_bonus
@@ -393,12 +378,11 @@ think_tank_restored = {
 	}
 
 	on_build_start = {
-		fromfrom = {
-			set_graphical_culture = root.from
-		}
+		fromfrom = { set_graphical_culture = root.from }
 	}
 
 	on_build_complete = {
+		from = { set_country_flag = built_think_tank }
 		every_system_ambient_object = { destroy_ambient_object = this }
 		from = {
 			country_event = { id = utopia.2013 }

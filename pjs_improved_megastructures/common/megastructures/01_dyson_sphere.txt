@@ -1,12 +1,14 @@
-#Dyson Sphere Site
+#Dyson Sphere
 dyson_sphere_0 = {
 	construction_blocks_others = no
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
+
 	entity_offset = { x = -7 y = -7 }
 	build_time = 1800
+
 	resources = {
 		category = megastructures
 		cost = {
@@ -104,12 +106,10 @@ dyson_sphere_0 = {
 	# from = country
 	ai_weight = {
 		factor = 15
-
 		modifier = {
 			factor = 0.1
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
 		}
-
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
@@ -132,9 +132,11 @@ dyson_sphere_1 = {
 	entity = "dyson_sphere_phase_01_entity"
 	construction_entity = "dyson_sphere_frame_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	upgrade_from = {
 		dyson_sphere_0
 	}
+
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -144,7 +146,7 @@ dyson_sphere_1 = {
 	}
 
 	possible = {
-		has_technology = "tech_dyson_sphere_construction"
+		from = { has_technology = "tech_dyson_sphere_construction" }
 	}
 }
 
@@ -154,23 +156,24 @@ dyson_sphere_2 = {
 	entity = "dyson_sphere_phase_02_entity"
 	construction_entity = "dyson_sphere_part_1_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	upgrade_from = {
 		dyson_sphere_1
 	}
+
 	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		produces = {
 			energy = 250
 		}
 	}
 
 	possible = {
-		has_technology = "tech_dyson_sphere_construction"
+		from = { has_technology = "tech_dyson_sphere_construction" }
 	}
 }
 
@@ -180,23 +183,24 @@ dyson_sphere_3 = {
 	entity = "dyson_sphere_phase_03_entity"
 	construction_entity = "dyson_sphere_part_2_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	upgrade_from = {
 		dyson_sphere_2
 	}
+
 	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		produces = {
 			energy = 500
 		}
 	}
 
 	possible = {
-		has_technology = "tech_dyson_sphere_construction"
+		from = { has_technology = "tech_dyson_sphere_construction" }
 	}
 }
 
@@ -206,23 +210,24 @@ dyson_sphere_4 = {
 	entity = "dyson_sphere_phase_04_entity"
 	construction_entity = "dyson_sphere_part_3_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	upgrade_from = {
 		dyson_sphere_3
 	}
+
 	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		produces = {
 			energy = 750
 		}
 	}
 
 	possible = {
-		has_technology = "tech_dyson_sphere_construction"
+		from = { has_technology = "tech_dyson_sphere_construction" }
 	}
 }
 
@@ -232,23 +237,24 @@ dyson_sphere_5 = {
 	entity = "dyson_sphere_phase_05_entity"
 	construction_entity = "dyson_sphere_part_4_entity"
 	portrait = "GFX_megastructure_dyson_sphere_background"
+
 	upgrade_from = {
 		dyson_sphere_4
 	}
+
 	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		produces = {
 			energy = 1000
 		}
 	}
 
 	possible = {
-		has_technology = "tech_dyson_sphere_construction"
+		from = { has_technology = "tech_dyson_sphere_construction" }
 	}
 
 	on_build_complete = {
@@ -286,16 +292,17 @@ dyson_sphere_improvised = {
 	entity = "dyson_sphere_destroyed_entity"
 	construction_entity = "dyson_sphere_destroyed_entity"
 	portrait = "GFX_megastructure_dyson_sphere_background"
+
 	upgrade_from = {
 		dyson_sphere_ruined
 	}
+
 	build_time = 1200
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2000
+			alloys = 3000
 		}
-
 		produces = {
 			energy = 100
 		}
@@ -306,9 +313,7 @@ dyson_sphere_improvised = {
 	}
 
 	on_build_start = {
-		fromfrom = {
-			set_graphical_culture = root.from
-		}
+		fromfrom = { set_graphical_culture = root.from }
 	}
 }
 
@@ -318,16 +323,17 @@ dyson_sphere_restored = {
 	entity = "dyson_sphere_phase_05_entity"
 	construction_entity = "dyson_sphere_part_4_entity"
 	portrait = "GFX_megastructure_dyson_sphere_background"
+
 	upgrade_from = {
 		dyson_sphere_improvised
 	}
+
 	build_time = 6000
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 18000
+			alloys = 20000
 		}
-
 		produces = {
 			energy = 1000
 		}
@@ -338,9 +344,7 @@ dyson_sphere_restored = {
 	}
 
 	on_build_start = {
-		fromfrom = {
-			set_graphical_culture = root.from
-		}
+		fromfrom = { set_graphical_culture = root.from }
 	}
 
 	on_build_complete = {

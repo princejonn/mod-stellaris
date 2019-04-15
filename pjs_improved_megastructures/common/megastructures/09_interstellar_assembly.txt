@@ -1,11 +1,13 @@
-# Interstellar Assembly
+#Interstellar Assembly
 interstellar_assembly_0 = {
 	construction_blocks_others = no
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
+
 	build_time = 1800
 	resources = {
 		category = megastructures
@@ -13,7 +15,6 @@ interstellar_assembly_0 = {
 			alloys = 5000
 			influence = 300
 		}
-
 		upkeep = {
 			energy = 5
 		}
@@ -89,12 +90,10 @@ interstellar_assembly_0 = {
 	# from = country	
 	ai_weight = {
 		factor = 15
-		
 		modifier = {
 			factor = 0.1
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
-		}	
-		
+		}
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
@@ -118,9 +117,11 @@ interstellar_assembly_1 = {
 	construction_blocks_others = no
 	entity = "interstellar_assembly_stage_1_entity"
 	construction_entity = "interstellar_assembly_stage_1_entity"
-	portrait = GFX_megastructure_construction_background
+	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
+
 	upgrade_from = {
 		interstellar_assembly_0
 	}
@@ -131,10 +132,6 @@ interstellar_assembly_1 = {
 		cost = {
 			alloys = 10000
 		}
-		
-		produces = {
-		}
-
 		upkeep = {
 			consumer_goods = 10
 		}
@@ -146,11 +143,13 @@ interstellar_assembly_1 = {
 	}
 
 	possible = {
-		has_technology = "tech_interstellar_assembly_construction"
+		from = { has_technology = "tech_interstellar_assembly_construction" }
 	}
 
 	on_build_complete = {
-		from = { country_event = { id = mega.9006 } }
+		from = {
+		    country_event = { id = mega.9006 }
+        }
 	}
 }
 
@@ -159,9 +158,11 @@ interstellar_assembly_2 = {
 	construction_blocks_others = no
 	entity = "interstellar_assembly_stage_2_entity"
 	construction_entity = "interstellar_assembly_stage_2_entity"
-	portrait = GFX_megastructure_construction_background
+	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
+
 	upgrade_from = {
 		interstellar_assembly_1
 	}
@@ -172,10 +173,6 @@ interstellar_assembly_2 = {
 		cost = {
 			alloys = 10000
 		}
-		
-		produces = {
-		}
-
 		upkeep = {
 			consumer_goods = 20
 		}
@@ -187,11 +184,13 @@ interstellar_assembly_2 = {
 	}
 
 	possible = {
-		has_technology = "tech_interstellar_assembly_construction"
+		from = { has_technology = "tech_interstellar_assembly_construction" }
 	}
 
 	on_build_complete = {
-		from = { country_event = { id = mega.9007 } }
+		from = {
+		    country_event = { id = mega.9007 }
+        }
 	}
 }
 
@@ -200,9 +199,11 @@ interstellar_assembly_3 = {
 	construction_blocks_others = no
 	entity = "interstellar_assembly_stage_3_entity"
 	construction_entity = "interstellar_assembly_stage_3_entity"
-	portrait = GFX_megastructure_construction_background
+	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
+
 	upgrade_from = {
 		interstellar_assembly_2
 	}
@@ -213,10 +214,6 @@ interstellar_assembly_3 = {
 		cost = {
 			alloys = 10000
 		}
-
-		produces = {
-		}
-
 		upkeep = {
 			consumer_goods = 30
 		}
@@ -228,11 +225,13 @@ interstellar_assembly_3 = {
 	}
 
 	possible = {
-		has_technology = "tech_interstellar_assembly_construction"
+		from = { has_technology = "tech_interstellar_assembly_construction" }
 	}
 
 	on_build_complete = {
-		from = { country_event = { id = mega.9008 } }
+		from = {
+		    country_event = { id = mega.9008 }
+        }
 	}
 }
 
@@ -242,8 +241,10 @@ interstellar_assembly_4 = {
 	entity = "interstellar_assembly_stage_4_entity"
 	construction_entity = "interstellar_assembly_stage_4_entity"
 	portrait = "GFX_megastructure_interstellar_assembly_background"
+
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
+
 	upgrade_from = {
 		interstellar_assembly_3
 	}
@@ -254,10 +255,6 @@ interstellar_assembly_4 = {
 		cost = {
 			alloys = 10000
 		}
-		
-		produces = {
-		}
-
 		upkeep = {
 			consumer_goods = 30
 		}
@@ -269,12 +266,14 @@ interstellar_assembly_4 = {
 	}
 
 	possible = {
-		has_technology = "tech_interstellar_assembly_construction"
+		from = { has_technology = "tech_interstellar_assembly_construction" }
 	}
 
 	on_build_complete = {
 		set_star_flag = interstellar_assembly_built
-		from = { country_event = { id = mega.9009 } }
+		from = {
+		    country_event = { id = mega.9009 }
+        }
 	}
 }
 
@@ -283,10 +282,9 @@ interstellar_assembly_ruined = {
 	entity = "interstellar_assembly_01_destroyed_entity"
 	construction_entity = "interstellar_assembly_01_destroyed_entity"
 	portrait = "GFX_megastructure_construction_background"
+
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-	}
 
 	potential = {
 		always = no
@@ -299,8 +297,10 @@ interstellar_assembly_restored = {
 	entity = "interstellar_assembly_stage_4_entity"
 	construction_entity = "interstellar_assembly_stage_4_entity"
 	portrait = "GFX_megastructure_interstellar_assembly_background"
+
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
+
 	upgrade_from = {
 		interstellar_assembly_ruined
 	}
@@ -311,10 +311,6 @@ interstellar_assembly_restored = {
 		cost = {
 			alloys = 20000
 		}
-		
-		produces = {
-		}
-
 		upkeep = {
 			consumer_goods = 30
 		}
@@ -330,14 +326,15 @@ interstellar_assembly_restored = {
 	}
 
 	on_build_start = {
-		fromfrom = {
-			set_graphical_culture = root.from
-		}
+		fromfrom = { set_graphical_culture = root.from }
 	}
 
 	on_build_complete = {
+		from = { set_country_flag = built_interstellar_assembly }
 		set_star_flag = interstellar_assembly_built
 		every_system_ambient_object = { destroy_ambient_object = this }
-		from = { country_event = { id = mega.9131 } }
+		from = {
+		    country_event = { id = mega.9131 }
+        }
 	}
 }
