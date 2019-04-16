@@ -15,7 +15,7 @@ building_refinery = {
 
 	destroy_trigger = {
 		OR = {
-			gai_destroy_building = yes
+			##gai_destroy_building = yes
 			AND = {
 				planet = {
 					free_building_slots = 0

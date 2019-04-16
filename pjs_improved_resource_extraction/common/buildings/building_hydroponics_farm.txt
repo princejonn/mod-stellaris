@@ -25,7 +25,7 @@ building_hydroponics_farm = {
 		exists = owner
 		OR = {
 			AND = {
-				gai_destroy_building = yes
+				##gai_destroy_building = yes
 				NOT = { is_planet_class = pc_habitat }
 				free_building_slots = 0
 			}

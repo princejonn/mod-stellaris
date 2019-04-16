@@ -176,6 +176,9 @@
   HLFRXT_organ:0 "frame"
   HLFRXT_mouth:0 "synthesizer"
 
+  SA:0 "Systems Alliance"
+  SA_desc:1 "The ships and stations of the human Systems Alliance."
+
   ELDER_CITY:0 "Elder"
   MILENNIUM_CITY:0 "Milennium"
   PRISTINE_CITY:0 "Pristine"
