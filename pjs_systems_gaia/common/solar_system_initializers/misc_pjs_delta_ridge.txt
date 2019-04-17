@@ -36,7 +36,7 @@ misc_pjs_delta_ridge = {
     }
 
     planet = {
-        class = "pc_gaia"
+        class = rl_habitable_normal
         size = 24
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }

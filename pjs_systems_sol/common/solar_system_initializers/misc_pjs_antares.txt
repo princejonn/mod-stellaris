@@ -32,7 +32,7 @@ misc_pjs_antares = {
 
     planet = {
         name = "Minerva"
-        class = ideal_planet_class
+        class = rl_habitable_normal
         size = 20
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
@@ -47,7 +47,7 @@ misc_pjs_antares = {
 
     planet = {
         name = "Diana"
-        class = ideal_planet_class
+        class = rl_habitable_normal
         size = 20
         orbit_distance = 24
         orbit_angle = { min = 20 max = 220 }

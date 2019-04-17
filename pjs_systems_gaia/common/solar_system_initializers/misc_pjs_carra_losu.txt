@@ -31,7 +31,7 @@ misc_pjs_carra_losu = {
     }
 
     planet = {
-        class = "pc_gaia"
+        class = rl_habitable_normal
         size = 22
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }

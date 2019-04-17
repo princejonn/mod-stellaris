@@ -39,7 +39,7 @@ misc_pjs_achird_omega = {
         }
 
         planet = {
-            class = ideal_planet_class
+            class = rl_habitable_normal
             size = 20
             orbit_distance = 25
             has_ring = no

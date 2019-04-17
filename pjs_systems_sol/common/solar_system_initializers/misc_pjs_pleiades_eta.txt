@@ -29,37 +29,31 @@ misc_pjs_pleiades_eta = {
     }
 
     planet = {
-        name = "Atlantis"
-        class = "pc_gaia"
-        size = 30
-        orbit_distance = 43
+        class = ideal_planet_class
+        size = 20
+        orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
 
         init_effect = {
-            add_modifier = { modifier = "food_rich_planet" days = -1 }
-            generate_food_deposits = yes
-            generate_pets_deposit = yes
+			generate_mineral_deposits = yes
+			generate_gases_deposit = yes
         }
 
-        moon = {
-            name = "Timaeus"
-            class = "pc_frozen"
-            size = 7
-            orbit_distance = 13
-            orbit_angle = { min = 20 max = 220 }
-            has_ring = no
-        }
+		change_orbit = @base_moon_distance
 
         moon = {
-            name = "Critias"
-            class = "pc_frozen"
+            class = "pc_barren"
             size = 6
-            orbit_distance = 7
+            orbit_distance = 0
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
+
+            init_effect = {
+                set_deposit = d_trade_value_2
+            }
         }
     }
 

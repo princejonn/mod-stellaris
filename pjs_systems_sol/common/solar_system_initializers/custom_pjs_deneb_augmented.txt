@@ -198,15 +198,6 @@ custom_pjs_deneb_augmented = {
 	}
 
 	neighbor_system = {
-		distance = { min = 10 max = 50 }
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = 50 }
-		initializer = "neighbor_t1_first_colony"
-	}
-
-	neighbor_system = {
 		distance = { min = 20 max = 60 }
 		initializer = "misc_pjs_antares"
 	}
@@ -219,5 +210,14 @@ custom_pjs_deneb_augmented = {
 	neighbor_system = {
 		distance = { min = 20 max = 60 }
 		initializer = "misc_pjs_remada_reticuli"
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 50 }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = 50 }
+		initializer = "neighbor_t1_first_colony"
 	}
 }

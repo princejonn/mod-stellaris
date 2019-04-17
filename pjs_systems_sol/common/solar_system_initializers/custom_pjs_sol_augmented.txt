@@ -647,11 +647,6 @@ custom_pjs_sol_augmented = {
 
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
-		initializer = "misc_pjs_gibsons_star"
-	}
-
-	neighbor_system = {
-		distance = { min = 10 max = 60 }
 		initializer = "misc_pjs_pleiades_eta"
 	}
 

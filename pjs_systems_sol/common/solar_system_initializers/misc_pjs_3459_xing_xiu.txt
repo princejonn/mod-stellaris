@@ -49,7 +49,7 @@ misc_pjs_3459_xing_xiu = {
 
         init_effect = {
             prevent_anomaly = yes
-            save_event_target_as = habitat_planet_1
+            save_event_target_as = habitat_planet
         }
     }
 
@@ -120,7 +120,6 @@ misc_pjs_3459_xing_xiu = {
 
         init_effect = {
             prevent_anomaly = yes
-            save_event_target_as = habitat_planet_2
         }
 
         change_orbit = @base_moon_distance
@@ -152,34 +151,15 @@ misc_pjs_3459_xing_xiu = {
 	init_effect = {
         spawn_planet = {
             class = "pc_habitat"
-            location = event_target:habitat_planet_1
+            location = event_target:habitat_planet
             orbit_location = yes
             orbit_angle_offset = 45
             orbit_distance_offset = 9
-            size = 9
+            size = 8
             has_ring = no
 
             init_effect = {
-                set_name = "Abandoned Habitat I"
-                set_planet_entity = {
-                    entity = "orbital_habitat_entity"
-                    graphical_culture = fallen_empire_01
-                }
-                set_planet_flag = megastructure
-                set_planet_flag = habitat
-            }
-        }
-        spawn_planet = {
-            class = "pc_habitat"
-            location = event_target:habitat_planet_2
-            orbit_location = yes
-            orbit_angle_offset = 45
-            orbit_distance_offset = 9
-            size = 9
-            has_ring = no
-
-            init_effect = {
-                set_name = "Abandoned Habitat II"
+                set_name = "Abandoned Habitat"
                 set_planet_entity = {
                     entity = "orbital_habitat_entity"
                     graphical_culture = fallen_empire_01

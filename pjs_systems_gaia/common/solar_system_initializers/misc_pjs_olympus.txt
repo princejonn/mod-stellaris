@@ -102,7 +102,7 @@ misc_pjs_olympus = {
 
     planet = {
         name = "Diana"
-        class = "pc_gaia"
+        class = rl_habitable_normal
         size = 22
         orbit_distance = 25
         orbit_angle = { min = 20 max = 220 }

@@ -19,20 +19,38 @@ misc_pjs_forgotten_void = {
 		}
 	}
 
-	planet = {
-		name = "Hidden Solace"
+    planet = {
+        name = "Atlantis"
         class = "pc_gaia"
-        size = 25
-        orbit_distance = 100
+        size = 30
+        orbit_distance = 43
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
 
         init_effect = {
-            prevent_anomaly = yes
-            add_modifier = { modifier = food_rich_planet days = -1 }
+            add_modifier = { modifier = "food_rich_planet" days = -1 }
             generate_food_deposits = yes
+            generate_pets_deposit = yes
         }
-	}
+
+        moon = {
+            name = "Timaeus"
+            class = "pc_frozen"
+            size = 7
+            orbit_distance = 13
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+
+        moon = {
+            name = "Critias"
+            class = "pc_frozen"
+            size = 6
+            orbit_distance = 7
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+    }
 }
