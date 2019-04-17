@@ -21,28 +21,6 @@ building_hydroponics_farm = {
 		NOT = { has_modifier = resort_colony }
 	}
 
-	destroy_trigger = {
-		exists = owner
-		OR = {
-			AND = {
-				##gai_destroy_building = yes
-				NOT = { is_planet_class = pc_habitat }
-				free_building_slots = 0
-			}
-			planet = {
-				NOT = { is_planet_class = pc_habitat }
-				free_building_slots = 0
-				owner = {
-					is_ai = yes
-					has_monthly_income = {
-						resource = food
-						value > 100
-					}
-				}
-			}
-		}
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner

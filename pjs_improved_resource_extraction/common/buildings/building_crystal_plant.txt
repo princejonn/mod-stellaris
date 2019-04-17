@@ -12,25 +12,6 @@ building_crystal_plant = {
 		has_upgraded_capital = yes
 	}
 
-	destroy_trigger = {
-		OR = {
-			##gai_destroy_building = yes
-			AND = {
-				planet = {
-					free_building_slots = 0
-					exists = owner
-					owner = {
-						is_ai = yes
-						has_monthly_income = {
-							resource = rare_crystals
-							value > 9
-						}
-					}
-				}
-			}
-		}
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
