@@ -2,7 +2,7 @@ trait_pjs_asari = {
 	cost = 4
 	randomized = no
 	must_match_primary_species = yes
-	potential_crossbreeding_chance = 0.1
+	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_rapid_breeders" "trait_slow_breeders" }
     modifier = {
@@ -22,7 +22,7 @@ trait_pjs_eldar = {
 	cost = 4
 	randomized = no
 	must_match_primary_species = yes
-	potential_crossbreeding_chance = 0.1
+	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" }
     modifier = {
@@ -42,7 +42,7 @@ trait_pjs_quarian = {
 	cost = 2
 	randomized = no
 	must_match_primary_species = yes
-	potential_crossbreeding_chance = 0.1
+	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { }
     modifier = {
@@ -62,7 +62,7 @@ trait_pjs_krogan = {
 	cost = 2
 	randomized = no
 	must_match_primary_species = yes
-	potential_crossbreeding_chance = 0.5
+	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_extremely_adaptive" "trait_adaptive" "trait_nonadaptive" "trait_very_strong" "trait_strong" "trait_weak" "trait_rapid_breeders" "trait_slow_breeders" }
 	modifier = {
@@ -72,9 +72,6 @@ trait_pjs_krogan = {
 	    armies_upkeep_mult = -0.25
 		army_disengage_chance_mult = -0.5
 		pop_growth_speed = -0.25
-	}
-	ai_weight = {
-		weight = 0
 	}
     ai_weight = { weight = 0 }
 }
@@ -88,7 +85,6 @@ trait_pjs_horror = {
 	forced_happiness = yes
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_extremely_adaptive" "trait_adaptive" "trait_nonadaptive" "trait_very_strong" "trait_strong" "trait_weak" }
-
 	modifier = {
 		pop_environment_tolerance = 0.25
 		pop_other_species_happiness = -0.75
@@ -102,11 +98,14 @@ trait_pjs_horror = {
 		pop_food_mult = -0.25
 		pop_growth_speed = 0.25
 	}
+	ai_weight = { weight = 0 }
 }
 
 trait_pjs_photosynthetic = {
 	cost = 4
-	potential_crossbreeding_chance = 0.1
+	randomized = no
+	must_match_primary_species = yes
+	potential_crossbreeding_chance = 0.25
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_pjs_partial_photosynthetic" }
 	modifier = {
@@ -117,6 +116,8 @@ trait_pjs_photosynthetic = {
 
 trait_pjs_partial_photosynthetic = {
 	cost = 2
+	randomized = no
+	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL }
 	opposites = { "trait_pjs_photosynthetic" }
@@ -136,9 +137,6 @@ trait_pjs_psionic = {
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.1
 	}
-	ai_weight = {
-		weight = 0
-	}
     ai_weight = { weight = 0 }
 }
 
@@ -155,9 +153,6 @@ trait_pjs_spartans = {
 		planet_pops_consumer_goods_upkeep_mult = -0.2
         planet_pops_organics_food_upkeep_mult = -0.2
 	}
-	ai_weight = {
-		weight = 0
-	}
     ai_weight = { weight = 0 }
 }
 
@@ -173,9 +168,6 @@ trait_pjs_vaulters = {
 		planet_jobs_minerals_produces_mult = 0.1
 		pop_environment_tolerance = 0.1
 	}
-	ai_weight = {
-		weight = 0
-	}
     ai_weight = { weight = 0 }
 }
 
@@ -190,10 +182,7 @@ trait_pjs_artisans = {
 		planet_metallurgists_produces_mult = 0.05
 		planet_artisans_produces_mult = 0.05
 	}
-	ai_weight = {
-		weight = 0
-	}
-    ai_weight = { weight = 0 }
+	ai_weight = { weight = 0 }
 }
 
 trait_pjs_militarists = {
@@ -209,10 +198,39 @@ trait_pjs_militarists = {
 	    army_morale = 0.1
 	    planet_army_build_speed_mult  = 0.1
 	    armies_upkeep_mult = -0.1
-		army_disengage_chance_mult = -0.25
+		army_disengage_chance_mult = -0.33
 	}
-	ai_weight = {
-		weight = 0
+    ai_weight = { weight = 0 }
+}
+
+trait_housing_hive = {
+	cost = 2
+	randomized = no
+	must_match_primary_species = yes
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { }
+	modifier = {
+	    pop_housing_usage_mult = -0.5
 	}
+    species_potential_add = {
+        from = { has_authority = "auth_hive_mind" }
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_housing_machine = {
+	cost = 2
+	randomized = no
+	must_match_primary_species = yes
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { MACHINE }
+	opposites = { }
+	modifier = {
+	    pop_housing_usage_mult = -0.5
+	}
+    species_potential_add = {
+        from = { has_authority = "auth_machine_intelligence" }
+    }
     ai_weight = { weight = 0 }
 }
