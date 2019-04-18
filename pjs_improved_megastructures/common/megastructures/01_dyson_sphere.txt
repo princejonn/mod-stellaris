@@ -1,3 +1,8 @@
+@stage_1_energy_bonus = 500
+@stage_2_energy_bonus = 1000
+@stage_3_energy_bonus = 1500
+@stage_4_energy_bonus = 2000
+
 #Dyson Sphere
 dyson_sphere_0 = {
 	construction_blocks_others = no
@@ -168,7 +173,7 @@ dyson_sphere_2 = {
 			alloys = 10000
 		}
 		produces = {
-			energy = 250
+			energy = @stage_1_energy_bonus
 		}
 	}
 
@@ -195,7 +200,7 @@ dyson_sphere_3 = {
 			alloys = 10000
 		}
 		produces = {
-			energy = 500
+			energy = @stage_2_energy_bonus
 		}
 	}
 
@@ -222,7 +227,7 @@ dyson_sphere_4 = {
 			alloys = 10000
 		}
 		produces = {
-			energy = 750
+			energy = @stage_3_energy_bonus
 		}
 	}
 
@@ -249,7 +254,7 @@ dyson_sphere_5 = {
 			alloys = 10000
 		}
 		produces = {
-			energy = 1000
+			energy = @stage_4_energy_bonus
 		}
 	}
 
@@ -304,7 +309,7 @@ dyson_sphere_improvised = {
 			alloys = 3000
 		}
 		produces = {
-			energy = 100
+			energy = 200
 		}
 	}
 
@@ -335,7 +340,7 @@ dyson_sphere_restored = {
 			alloys = 20000
 		}
 		produces = {
-			energy = 1000
+			energy = @stage_4_energy_bonus
 		}
 	}
 

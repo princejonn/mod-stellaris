@@ -1,0 +1,414 @@
+@hab_buildtime = 300
+@hab_cost = 500
+@hab_maintenance = 3
+
+district_hab_housing = {
+	base_buildtime = @hab_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_habitat
+	}
+
+	potential = {
+		is_planet_class = pc_habitat
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {
+			energy = @hab_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 90000
+			planet = {
+				owner = { is_regular_empire = no }
+				num_districts = { type = district_hab_housing value < 2 }
+			}
+		}
+		modifier = {
+			weight = 90000
+			planet = {
+				owner = { is_regular_empire = yes }
+				num_districts = { type = district_hab_housing value < 2 }
+			}
+		}
+		modifier = {
+			weight = 90000
+			planet = {
+				owner = {
+					is_regular_empire = yes
+					has_ascension_perk = ap_master_builders
+				}
+				num_districts = { type = district_hab_housing value < 3 }
+			}
+		}
+		modifier = {
+			factor = 0
+			planet = {
+				owner = { is_regular_empire = yes }
+				not = { has_district = district_hab_cultural }
+			}
+		}
+	}
+}
+
+district_hab_energy = {
+	base_buildtime = @hab_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_habitat
+		from = { is_gestalt = yes }
+	}
+
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { is_gestalt = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {
+			energy = @hab_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = no }
+		}
+		job_technician_drone_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		job_technician_drone_add = 5
+	}
+
+	triggered_desc = {
+		text = job_technician_drone_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 20000
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = energy
+						value < 200
+					}
+				}
+				planet = { has_district = district_hab_energy }
+			}
+			NOT = { planet = { has_district = district_hab_science } }
+		}
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+district_hab_cultural = {
+	base_buildtime = @hab_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_habitat
+		from = { is_gestalt = no }
+	}
+
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { is_gestalt = no }
+	}
+
+	convert_to = {
+		district_hab_energy
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {
+			energy = @hab_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+		job_entertainer_add = 3
+		job_culture_worker_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_warrior_culture
+			}
+		}
+		modifier = {
+			job_duelist_add = 3
+			job_entertainer_add = -3
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { has_valid_civic = civic_warrior_culture }
+		}
+		text = job_duelist_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { NOT = { has_valid_civic = civic_warrior_culture } }
+		}
+		text = job_entertainer_effect_desc
+	}
+
+	triggered_desc = {
+		text = job_culture_worker_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 80000
+			planet = {
+				NOT = { has_district = district_hab_cultural }
+			}
+		}
+	}
+
+	ai_resource_production = {
+		unity = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+district_hab_science = {
+	base_buildtime = @hab_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_habitat
+	}
+
+	potential = {
+		is_planet_class = pc_habitat
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {
+			energy = @hab_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_researcher_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_calculator_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_brain_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_calculator_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 9000
+			planet = {
+				NOT = { has_district = district_hab_energy }
+				NOT = { has_district = district_hab_cultural }
+			}
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value > 80
+				}
+			}
+		}
+		modifier = {
+			weight = 9000
+			has_district = district_hab_cultural
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 6
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			has_district = district_hab_commercial
+		}
+	}
+}
+
+district_hab_commercial = {
+	base_buildtime = @hab_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_habitat
+		from = { is_gestalt = no }
+	}
+
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { is_gestalt = no }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {
+			energy = @hab_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+		job_clerk_add = 10
+	}
+
+	triggered_desc = {
+		text = job_clerk_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 25000
+			OR = {
+				has_district = district_hab_commercial
+				owner = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 6
+					}
+				}
+				owner = {
+					has_monthly_income = {
+						resource = minerals
+						value < 50
+					}
+				}
+				owner = {
+					has_monthly_income = {
+						resource = energy
+						value < 50
+					}
+				}
+			}
+		}
+	}
+}

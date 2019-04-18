@@ -1,3 +1,7 @@
+@stage_1_unity_bonus = 100
+@stage_2_unity_bonus = 200
+@stage_3_unity_bonus = 300
+
 #Mega Art Installation
 mega_art_installation_0 = {
 	construction_blocks_others = no
@@ -133,7 +137,7 @@ mega_art_installation_1 = {
 			alloys = 15000
 		}
 		produces = {
-			unity = 100
+			unity = @stage_1_unity_bonus
 		}
 		upkeep = {
 			energy = 10
@@ -176,7 +180,7 @@ mega_art_installation_2 = {
 			alloys = 15000
 		}
 		produces = {
-			unity = 200
+			unity = @stage_2_unity_bonus
 		}
 		upkeep = {
 			energy = 20
@@ -219,7 +223,7 @@ mega_art_installation_3 = {
 			alloys = 15000
 		}
 		produces = {
-			unity = 300
+			unity = @stage_3_unity_bonus
 		}
 		upkeep = {
 			energy = 30
@@ -278,7 +282,7 @@ mega_art_installation_restored = {
 		}
 
 		produces = {
-			unity = 300
+			unity = @stage_3_unity_bonus
 		}
 		upkeep = {
 			energy = 30

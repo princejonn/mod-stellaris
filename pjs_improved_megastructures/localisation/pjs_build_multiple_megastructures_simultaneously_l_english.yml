@@ -8,6 +8,34 @@
   allow_tech_ap_galactic_wonders_megacorp:0 "Research options gained:\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_matter_decompressor_construction$ is an incredibly powerful Megastructures."
   allow_tech_ap_galactic_wonders_utopia_and_megacorp:0 "Research options gained:\n£engineering£ §Y$tech_ring_world_construction$§!\n£physics£ §Y$tech_dyson_sphere_construction$§!\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_ring_world_construction$, $tech_matter_decompressor_construction$, and $tech_dyson_sphere_construction$ are incredibly powerful Megastructures."
 
+  ap_master_builders_world_size:0 "§HHabitats§! and §HRingworlds§! owned by our Empire have space for an additional §Y2§! districts."
+
+  master_builders_ringworlds:0 "$ap_master_builders$: Expansion"
+  master_builders_ringworlds_desc:0 "This $pc_ringworld_habitable$ has been expanded by an additional §Y2§! $MOD_PLANET_MAX_DISTRICTS_ADD$."
+
+  ## Districts
+
+  district_ringworld_city:0 "City District"
+  district_ringworld_city_plural:0 "City Districts"
+  district_ringworld_city_desc:0 "These dense urban centers provide large amounts of housing and office space for clerical workers."
+
+  district_ringworld_industry:0 "Industrial District"
+  district_ringworld_industry_plural:0 "Industrial Districts"
+  district_ringworld_industry_desc:0 "Rows of massive power plants that generate large amounts of energy which can then be used or converted into usable wares and credits."
+
+  district_ringworld_farming:0 "Agriculture District"
+  district_ringworld_farming_plural:0 "Agriculture Districts"
+  district_ringworld_farming_desc:0 "Land set aside for cultivation, either through the growing of crops or animal husbandry."
+
+  district_ringworld_science:0 "Research District"
+  district_ringworld_science_plural:0 "Research Districts"
+  district_ringworld_science_desc:0 "Centers of scientific discovery, these districts employ researchers from myriad fields of study."
+
+  ## Districts Jobs
+
+  job_technician_artisan_effect_desc:0 "$job_technician_effect_desc$\n$job_artisan_effect_desc$"
+  job_technician_artisan_drone_effect_desc:0 "$job_technician_drone_effect_desc$\n$job_artisan_drone_effect_desc$"
+
   ## Improvised Megastructures
 
   dyson_sphere_improvised:0 "Improvised $dyson_sphere_5$"

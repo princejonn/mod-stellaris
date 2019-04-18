@@ -997,7 +997,7 @@ ap_master_builders = {
 	}
 
 	on_enabled = {
-		custom_tooltip = "ap_master_builders_habitat_size"
+		custom_tooltip = "ap_master_builders_world_size"
 		hidden_effect = {
 			every_planet_within_border = {
 				limit = {
@@ -1006,6 +1006,18 @@ ap_master_builders = {
 				}
 				add_modifier = {
 					modifier = master_builders_habitats
+					days = -1
+				}
+			}
+		}
+		hidden_effect = {
+			every_planet_within_border = {
+				limit = {
+					is_planet_class = pc_ringworld_habitable
+					NOT = { has_modifier = master_builders_ringworlds }
+				}
+				add_modifier = {
+					modifier = master_builders_ringworlds
 					days = -1
 				}
 			}

@@ -1,6 +1,0 @@
-on_press_begin = {
-	events = {
-		pjs_improved_ringworlds.1
-		pjs_improved_ringworlds.2
-	}
-}

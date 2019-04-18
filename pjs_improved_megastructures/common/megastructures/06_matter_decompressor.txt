@@ -1,3 +1,8 @@
+@stage_1_mineral_bonus = 500
+@stage_2_mineral_bonus = 1000
+@stage_3_mineral_bonus = 1500
+@stage_4_mineral_bonus = 2000
+
 #Matter Decompressor
 matter_decompressor_0 = {
 	construction_blocks_others = no
@@ -118,7 +123,7 @@ matter_decompressor_1 = {
 			alloys = 12500
 		}
 		produces = {
-			minerals = 250
+			minerals = @stage_1_mineral_bonus
 		}
 		upkeep = {
 			energy = 25
@@ -159,7 +164,7 @@ matter_decompressor_2 = {
 			alloys = 12500
 		}
 		produces = {
-			minerals = 500
+			minerals = @stage_2_mineral_bonus
 		}
 		upkeep = {
 			energy = 50
@@ -200,7 +205,7 @@ matter_decompressor_3 = {
 			alloys = 12500
 		}
 		produces = {
-			minerals = 750
+			minerals = @stage_3_mineral_bonus
 		}
 		upkeep = {
 			energy = 75
@@ -241,7 +246,7 @@ matter_decompressor_4 = {
 			alloys = 12500
 		}
 		produces = {
-			minerals = 1000
+			minerals = @stage_4_mineral_bonus
 		}
 		upkeep = {
 			energy = 100
@@ -300,7 +305,7 @@ matter_decompressor_improvised = {
 			alloys = 3000
 		}
 		produces = {
-			minerals = 100
+			minerals = 200
 		}
 		upkeep = {
 			energy = 10
@@ -340,7 +345,7 @@ matter_decompressor_restored = {
 			alloys = 20000
 		}
 		produces = {
-			minerals = 1000
+			minerals = @stage_4_mineral_bonus
 		}
 		upkeep = {
 			energy = 100

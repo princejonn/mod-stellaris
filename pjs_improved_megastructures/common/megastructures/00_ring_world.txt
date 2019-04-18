@@ -276,6 +276,16 @@ ring_world_3_intermediate = {
 				}
 				set_all_comms_surveyed = yes
 				clear_blockers = yes
+				if = {
+					limit = {
+						from = { has_ascension_perk = ap_master_builders }
+						NOT = { has_modifier = master_builders_ringworlds }
+					}
+					add_modifier = {
+						modifier = master_builders_ringworlds
+						days = -1
+					}
+				}
 				save_event_target_as = ring_section
 				trigger_megastructure_icon = yes
 				set_planet_flag = megastructure
@@ -431,6 +441,16 @@ ring_world_restored = {
 				}
 				set_all_comms_surveyed = yes
 				clear_blockers = yes
+				if = {
+					limit = {
+						from = { has_ascension_perk = ap_master_builders }
+						NOT = { has_modifier = master_builders_ringworlds }
+					}
+					add_modifier = {
+						modifier = master_builders_ringworlds
+						days = -1
+					}
+				}
 				save_event_target_as = ring_section
 				trigger_megastructure_icon = yes
 				set_planet_flag = megastructure
