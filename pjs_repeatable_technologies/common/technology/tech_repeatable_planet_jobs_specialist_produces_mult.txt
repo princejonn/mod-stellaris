@@ -16,7 +16,7 @@ tech_repeatable_planet_jobs_specialist_produces_mult = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            years_passed < 150
+            years_passed < 100
         }
 	}
 

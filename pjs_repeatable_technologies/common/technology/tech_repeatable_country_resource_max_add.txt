@@ -6,13 +6,13 @@ tech_repeatable_country_resource_max_add = {
 	weight = 0.2
 	category = { materials }
 	is_rare = no
-	levels = 4
+	levels = 5
 	icon = "tech_micro_replicators"
 
 	weight_modifier = {
         modifier = {
             factor = 0
-            years_passed < 150
+            years_passed < 125
         }
 	}
 

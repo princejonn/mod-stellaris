@@ -16,7 +16,7 @@ tech_repeatable_pop_growth_speed = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            years_passed < 150
+            years_passed < 175
         }
 	}
 

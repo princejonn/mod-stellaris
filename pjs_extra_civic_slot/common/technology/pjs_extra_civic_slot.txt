@@ -22,20 +22,9 @@ tech_pjs_extra_civic_slot = {
 				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
-        modifier = {
-            factor = 0
-            mid_game_years_passed < 25
-        }
 	}
 
 	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
+		weight = 40
 	}
 }
