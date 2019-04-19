@@ -104,7 +104,7 @@ misc_pjs_achird_omega = {
 
     planet = {
         orbit_distance = 25
-        class = ideal_planet_class
+        class = rl_habitable_normal
         orbit_angle = { min = 90 max = 270 }
         size = 20
 

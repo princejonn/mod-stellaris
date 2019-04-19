@@ -14,8 +14,29 @@ misc_pjs_7248_arietis = {
 		orbit_angle = 1
 
 		init_effect = {
-            prevent_anomaly = yes
+            clear_deposits = yes
+        }
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = "pc_frozen"
+		size = 14
+		orbit_distance = 30
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = no
+
+		init_effect = {
 		    set_deposit = d_zro_deposit_2
 		}
+	}
+
+	planet = {
+		class = "pc_frozen"
+		size = 10
+		orbit_distance = 30
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = no
 	}
 }

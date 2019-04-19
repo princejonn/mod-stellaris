@@ -13,10 +13,9 @@ country_event = {
                     limit = { has_planet_flag = holy_terra_earth }
 
                     set_name = "Holy Terra"
+                    change_pc = "pc_city"
 
                     remove_all_districts = yes
-
-                    change_pc = "pc_city"
 
                     while = { count = 5
                         add_district = district_arcology_housing
@@ -27,14 +26,20 @@ country_event = {
                     while = { count = 1
                         add_district = district_arcology_civilian_industry
                     }
-                    while = { count = 1
+                    while = { count = 0
                         add_district = district_arcology_leisure
                     }
 
+                    remove_building = building_research_lab_1
+                    remove_building = building_factory_1
+                    add_building = building_precinct_house
                     add_building = building_research_lab_1
+                    add_building = building_research_lab_1
+                    add_building = building_commercial_zone
+                    add_building = building_holo_theatres
 
                     while = {
-                        count = 28
+                        count = 27
                         create_pop = { species = owner_main_species }
                     }
 
@@ -88,13 +93,33 @@ country_event = {
                         ethos = owner
                     }
 
-                    planet_event = { id = game_start.21 }
-                    planet_event = { id = game_start.22 }
-                    planet_event = { id = game_start.23 }
-
                     set_name = "Mars"
+                    change_pc = "pc_continental"
 
+			        clear_blockers = yes
+			        clear_deposits = yes
                     remove_all_districts = yes
+
+                    # 6 energy
+                    add_deposit = d_arid_highlands
+                    add_deposit = d_searing_desert
+                    add_deposit = d_tempestous_mountain
+
+                    # 12 minerals
+                    add_deposit = d_veiny_cliffs
+                    add_deposit = d_mineral_fields
+                    add_deposit = d_prosperous_mesa
+                    add_deposit = d_ore_rich_caverns
+                    add_deposit = d_rich_mountain
+                    add_deposit = d_submerged_ore_veins
+
+                    # 9 food
+                    add_deposit = d_bountiful_plains
+                    add_deposit = d_rugged_woods
+                    add_deposit = d_forgiving_tundra
+                    add_deposit = d_fungal_caves
+                    add_deposit = d_fertile_lands
+                    add_deposit = d_great_river
 
                     while = { count = 3
                         add_district = district_city
@@ -102,17 +127,22 @@ country_event = {
                     while = { count = 0
                         add_district = district_generator
                     }
-                    while = { count = 8
+                    while = { count = 4
                         add_district = district_mining
                     }
-                    while = { count = 7
+                    while = { count = 6
                         add_district = district_farming
                     }
 
+                    remove_building = building_colony_shelter
+                    add_building = building_capital
+                    add_building = building_precinct_house
                     add_building = building_holo_theatres
                     add_building = building_holo_theatres
+                    add_building = building_commercial_zone
+                    add_building = building_resource_silo
 
-                    while = { count = 26
+                    while = { count = 35
                         create_pop = {
                             species = owner
                         }
@@ -141,31 +171,61 @@ country_event = {
                         ethos = owner
                     }
 
-                    planet_event = { id = game_start.21 }
-                    planet_event = { id = game_start.22 }
-                    planet_event = { id = game_start.23 }
-
                     set_name = "Venus"
+                    change_pc = "pc_continental"
 
+			        clear_blockers = yes
+			        clear_deposits = yes
                     remove_all_districts = yes
+
+                    # 12 energy
+                    add_deposit = d_arid_highlands
+                    add_deposit = d_arid_highlands
+                    add_deposit = d_searing_desert
+                    add_deposit = d_frozen_gas_lake
+                    add_deposit = d_geothermal_vent
+                    add_deposit = d_tempestous_mountain
+
+                    # 6 minerals
+                    add_deposit = d_veiny_cliffs
+                    add_deposit = d_mineral_fields
+                    add_deposit = d_ore_rich_caverns
+                    add_deposit = d_prosperous_mesa
+
+                    # 8 food
+                    add_deposit = d_lichen_fields
+                    add_deposit = d_forgiving_tundra
+                    add_deposit = d_boggy_fens
+                    add_deposit = d_nutritious_mudland
+                    add_deposit = d_fungal_caves
+                    add_deposit = d_great_river
+
+                    # 1 betharian
+                    add_deposit = d_betharian_deposit
 
                     while = { count = 3
                         add_district = district_city
                     }
-                    while = { count = 9
+                    while = { count = 3
                         add_district = district_generator
                     }
                     while = { count = 0
                         add_district = district_mining
                     }
-                    while = { count = 6
+                    while = { count = 5
                         add_district = district_farming
                     }
 
+                    remove_building = building_colony_shelter
+                    add_building = building_capital
+                    add_building = building_precinct_house
                     add_building = building_holo_theatres
                     add_building = building_holo_theatres
+                    add_building = building_betharian_power_plant
+                    add_building = building_commercial_zone
+                    add_building = building_resource_silo
 
-                    while = { count = 26
+                    while = { count = 35
                         create_pop = {
                             species = owner
                         }

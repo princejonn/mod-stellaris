@@ -148,7 +148,7 @@ custom_pjs_holy_terra = {
             flags = { starting_mining_target }
 
             init_effect = {
-                set_deposit = d_alloys_2
+                clear_deposits = yes
             }
 		}
 	}
@@ -655,8 +655,8 @@ custom_pjs_holy_terra = {
 	}
 
 	neighbor_system = {
-		distance = { min = 10 max = 60 }
-		initializer = "misc_pjs_3459_xing_xiu"
+		distance = { min = 20 max = 60 }
+		initializer = "misc_pjs_forgotten_void"
 	}
 
 	neighbor_system = {
@@ -665,8 +665,8 @@ custom_pjs_holy_terra = {
 	}
 
 	neighbor_system = {
-		distance = { min = 20 max = 60 }
-		initializer = "misc_pjs_forgotten_void"
+		distance = { min = 10 max = 60 }
+		initializer = "misc_pjs_3459_xing_xiu"
 	}
 
 	neighbor_system = {

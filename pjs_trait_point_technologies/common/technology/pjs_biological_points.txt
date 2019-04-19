@@ -6,8 +6,6 @@ tech_pjs_biological_points_1 = {
 	weight = 15
 	is_rare = yes
 
-    icon = "tech_gene_expressions"
-
 	prerequisites = { "tech_gene_expressions" }
 
 	potential = { NOT = { has_authority = auth_machine_intelligence } }
@@ -21,11 +19,11 @@ tech_pjs_biological_points_1 = {
     weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 100
+            mid_game_years_passed < 33
         }
     }
 
-	ai_weight = { factor = 3 }
+	ai_weight = { weight = 20 }
 }
 
 tech_pjs_biological_points_2 = {
@@ -35,8 +33,6 @@ tech_pjs_biological_points_2 = {
 	tier = 4
 	weight = 10
 	is_rare = yes
-
-    icon = "tech_gene_expressions"
 
 	prerequisites = { "tech_pjs_biological_points_1" }
 
@@ -51,11 +47,11 @@ tech_pjs_biological_points_2 = {
     weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 150
+            mid_game_years_passed < 66
         }
     }
 
-	ai_weight = { factor = 3 }
+	ai_weight = { weight = 20 }
 }
 
 tech_pjs_biological_points_3 = {
@@ -65,8 +61,6 @@ tech_pjs_biological_points_3 = {
 	tier = 4
 	weight = 10
 	is_rare = yes
-
-    icon = "tech_gene_expressions"
 
 	prerequisites = { "tech_pjs_biological_points_2" }
 
@@ -81,9 +75,9 @@ tech_pjs_biological_points_3 = {
     weight_modifier = {
         modifier = {
             factor = 0
-            mid_game_years_passed < 200
+            mid_game_years_passed < 99
         }
     }
 
-	ai_weight = { factor = 3 }
+	ai_weight = { weight = 20 }
 }
