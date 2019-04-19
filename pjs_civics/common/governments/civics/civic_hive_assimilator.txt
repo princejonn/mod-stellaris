@@ -6,9 +6,6 @@ civic_hive_assimilator = {
 		}
 	}
 	modification = no
-	modifier = {
-		pop_growth_speed = -0.4
-	}
 	random_weight = {
 		base = 5
 		modifier = {
