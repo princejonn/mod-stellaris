@@ -20,6 +20,7 @@ custom_pjs_three_sisters = {
 		orbit_angle = 90
 		size = 45
 		has_ring = no
+		flags = { starting_mining_target }
 
 		init_effect = {
 		    set_deposit = d_energy_5
@@ -32,6 +33,7 @@ custom_pjs_three_sisters = {
 		orbit_angle = 120
 		size = 30
 		has_ring = no
+		flags = { starting_mining_target }
 
 		init_effect = {
 		    set_deposit = d_energy_3
@@ -44,6 +46,7 @@ custom_pjs_three_sisters = {
 		orbit_angle = 90
 		size = 20
 		has_ring = no
+		flags = { starting_mining_target }
 
 		init_effect = {
 		    set_deposit = d_energy_2
@@ -89,14 +92,16 @@ custom_pjs_three_sisters = {
         has_ring = no
         modifiers = none
         deposit_blockers = none
+		flags = { starting_mining_target }
 
         init_effect = {
             prevent_anomaly = yes
+            set_deposit = d_minerals_8
         }
 	}
 
 	planet = {
-        class = "pc_gaia"
+        class = rl_habitable_normal
         size = 20
         orbit_distance = 20
         orbit_angle = { min = 40 max = 80 }

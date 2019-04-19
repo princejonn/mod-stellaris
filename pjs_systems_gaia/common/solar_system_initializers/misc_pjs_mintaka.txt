@@ -116,6 +116,10 @@ misc_pjs_mintaka = {
         size = 20
 		orbit_distance = 25
 		orbit_angle = { min = 20 max = 70 }
+
+		init_effect = {
+		    set_deposit = d_minerals_6
+		}
 	}
 
 	planet = {
