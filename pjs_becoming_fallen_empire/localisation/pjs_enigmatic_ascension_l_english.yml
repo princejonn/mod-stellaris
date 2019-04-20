@@ -114,14 +114,23 @@
   # Technology
   ##
 
-  tech_pjs_enigmatic_ascension_engineering:0 "Enigmatic Leaps"
-  tech_pjs_enigmatic_ascension_engineering_desc:0 "This technologies will lead us into truly advanced technologies."
+  tech_affluence_center:0 "$building_affluence_center$"
+  tech_affluence_center_desc:0 "$building_affluence_center_desc$"
 
-  tech_pjs_enigmatic_ascension_physics:0 "Enigmatic Breakthroughs"
-  tech_pjs_enigmatic_ascension_physics_desc:0 "This technologies will lead us into truly advanced technologies."
+  tech_nourishment_center:0 "$building_nourishment_center$"
+  tech_nourishment_center_desc:0 "$building_nourishment_center_desc$"
 
-  tech_pjs_enigmatic_ascension_society:0 "Enigmatic Culture"
-  tech_pjs_enigmatic_ascension_society_desc:0 "This technologies will lead us into truly advanced technologies."
+  tech_dimensional_fabricator:0 "$building_dimensional_fabricator$"
+  tech_dimensional_fabricator_desc:0 "$building_dimensional_fabricator_desc$"
+
+  tech_class_4_singularity:0 "$building_class_4_singularity$"
+  tech_class_4_singularity_desc:0 "$building_class_4_singularity_desc$"
+
+  tech_nano_forge:0 "$building_nano_forge$"
+  tech_nano_forge_desc:0 "$building_nano_forge_desc$"
+
+  tech_master_archive:0 "$building_master_archive$"
+  tech_master_archive_desc:0 "$building_master_archive_desc$"
 
   tech_pjs_escort:0 "Escorts"
   tech_pjs_escort_desc:0 "Modeled after the agile ships looming in the core systems of Stagnant Ascendancies, the Escort class is a great improvement on the Corvette and Destroyer classes, and can be fitted with a decent amount of weapons."
@@ -135,18 +144,27 @@
   tech_pjs_goliath:0 "Goliaths"
   tech_pjs_goliath_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Goliath class is a fearsome ship to meet in a battle."
 
-  tech_pjs_warmind:0 "Warminds"
-  tech_pjs_warmind_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Warmind class is a fearsome ship to meet in a battle."
+  TECH_UNLOCK_ESCORT_TITLE:0 "§HUnlocks Ship Type:§! $pjs_escort$"
+  TECH_UNLOCK_ESCORT_DESC:0 "Unlocks a new ship type for us to build."
+
+  TECH_UNLOCK_BATTLECRUISER_TITLE:0 "§HUnlocks Ship Type:§! $pjs_battlecruiser$"
+  TECH_UNLOCK_BATTLECRUISER_DESC:0 "Unlocks a new ship type for us to build."
+
+  TECH_UNLOCK_MOTHERSHIP_TITLE:0 "§HUnlocks Ship Type:§! $pjs_mothership$"
+  TECH_UNLOCK_MOTHERSHIP_DESC:0 "Unlocks a new ship type for us to build."
+
+  TECH_UNLOCK_GOLIATH_TITLE:0 "§HUnlocks Ship Type:§! $pjs_goliath$"
+  TECH_UNLOCK_GOLIATH_DESC:0 "Unlocks a new ship type for us to build."
 
   ##
   # Events
   ##
 
-  pjs_enigmatic_ascension_event.200.name:0 "Fallen Empire Ships"
-  pjs_enigmatic_ascension_event.200.desc:0 "Do you want to change your graphical culture of your empire? This will (sadly) not affect your currently built ships or stations, but all new constructions will have the style you pick.\n\n(I have reported this as a bug. If you want to change all styles you can do so with the console command \"gfxculture fallen_empire_01\"."
-  pjs_enigmatic_ascension_event.200.a:0 "§EFallen Spiritualist Empire§!"
-  pjs_enigmatic_ascension_event.200.b:0 "§GFallen Materialist Empire§!"
-  pjs_enigmatic_ascension_event.200.c:0 "§BFallen Xenophile Empire§!"
-  pjs_enigmatic_ascension_event.200.d:0 "§RFallen Xenophobe Empire§!"
-  pjs_enigmatic_ascension_event.200.e:0 "§YFallen Machine Empire§!"
-  pjs_enigmatic_ascension_event.200.f:0 "No - Keep my current style"
+  pjs_enigmatic_ascension_event.2.name:0 "Fallen Empire Ships"
+  pjs_enigmatic_ascension_event.2.desc:0 "Do you want to change your graphical culture of your empire? This will (sadly) not affect your currently built ships or stations, but all new constructions will have the style you pick.\n\n(I have reported this as a bug. If you want to change all styles you can do so with the console command \"gfxculture fallen_empire_01\"."
+  pjs_enigmatic_ascension_event.2.a:0 "§EFallen Spiritualist Empire§!"
+  pjs_enigmatic_ascension_event.2.b:0 "§GFallen Materialist Empire§!"
+  pjs_enigmatic_ascension_event.2.c:0 "§BFallen Xenophile Empire§!"
+  pjs_enigmatic_ascension_event.2.d:0 "§RFallen Xenophobe Empire§!"
+  pjs_enigmatic_ascension_event.2.e:0 "§YFallen Machine Empire§!"
+  pjs_enigmatic_ascension_event.2.f:0 "No - Keep my current style"

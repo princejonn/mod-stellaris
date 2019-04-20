@@ -1,4 +1,4 @@
-decision_uncover_stargate = {
+decision_build_stargate = {
 	owned_planets_only = yes
 
 	prerequisites = {

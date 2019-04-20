@@ -1,5 +1,5 @@
-name="PJs :: Enigmatic Ascension"
-path="mod/pjs_enigmatic_ascension"
+name="PJs :: Becoming a Fallen Empire"
+path="mod/pjs_becoming_fallen_empire"
 tags={
 	"PJs"
 	"Balance"

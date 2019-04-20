@@ -11,7 +11,7 @@
   ap_master_builders_world_size:0 "§HHabitats§! and §HRingworlds§! owned by our Empire have space for an additional §Y2§! districts."
 
   master_builders_ringworlds:0 "$ap_master_builders$: Expansion"
-  master_builders_ringworlds_desc:0 "This $pc_ringworld_habitable$ has been expanded by an additional §Y2§! $MOD_PLANET_MAX_DISTRICTS_ADD$."
+  master_builders_ringworlds_desc:0 "This $pc_ringworld_habitable$ has been expanded by an additional §Y1§! $MOD_PLANET_MAX_DISTRICTS_ADD$."
 
   ## Districts
 

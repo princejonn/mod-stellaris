@@ -1,0 +1,131 @@
+tech_affluence_center = {
+    area = engineering
+    cost = 90000
+    tier = 5
+    weight = 1
+    category = { industry }
+    is_rare = yes
+
+    prerequisites = {
+
+    }
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 33
+        }
+	}
+
+	ai_weight = { weight = 1 }
+}
+
+tech_nourishment_center = {
+    area = society
+    cost = 90000
+    tier = 5
+    weight = 1
+    category = { biology }
+    is_rare = yes
+
+    prerequisites = {
+
+    }
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 33
+        }
+	}
+
+	ai_weight = { weight = 1 }
+}
+
+tech_dimensional_fabricator = {
+    area = physics
+    cost = 90000
+    tier = 5
+    weight = 1
+    category = { materials }
+    is_rare = yes
+
+    prerequisites = {
+
+    }
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 33
+        }
+	}
+
+	ai_weight = { weight = 1 }
+}
+
+tech_class_4_singularity = {
+    area = physics
+    cost = 90000
+    tier = 5
+    weight = 1
+    category = { field_manipulation }
+    is_rare = yes
+
+    prerequisites = {
+
+    }
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 33
+        }
+	}
+
+	ai_weight = { weight = 1 }
+}
+
+tech_nano_forge = {
+    area = engineering
+    cost = 90000
+    tier = 5
+    weight = 1
+    category = { materials }
+    is_rare = yes
+
+    prerequisites = {
+
+    }
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 33
+        }
+	}
+
+	ai_weight = { weight = 1 }
+}
+
+tech_master_archive = {
+    area = physics
+    cost = 90000
+    tier = 5
+    weight = 1
+    category = { computing }
+    is_rare = yes
+
+    prerequisites = {
+
+    }
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 33
+        }
+	}
+
+	ai_weight = { weight = 1 }
+}
