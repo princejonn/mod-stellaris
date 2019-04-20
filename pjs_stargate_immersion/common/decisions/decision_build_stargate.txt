@@ -5,13 +5,13 @@ decision_build_stargate = {
 		"tech_stargates_breakthrough"
 	}
 
-	enactment_time = 900
+	enactment_time = 3600
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
-			alloys = 500
-			rare_crystals = 500
+			influence = 120
+			alloys = 1200
+			rare_crystals = 1200
 		}
 	}
 

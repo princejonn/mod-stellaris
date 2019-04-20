@@ -42,7 +42,7 @@ strategic_coordination_hub_0 = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_existing_strategic_coordination_center"
-            from = { has_country_flag = built_strategic_coordination_center }
+            from = { NOT = { has_country_flag = built_strategic_coordination_center } }
 		}
 	}
 

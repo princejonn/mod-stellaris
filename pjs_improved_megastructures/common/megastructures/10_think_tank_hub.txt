@@ -42,7 +42,7 @@ think_tank_hub_0 = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_existing_think_tank"
-            from = { has_country_flag = built_think_tank }
+            from = { NOT = { has_country_flag = built_think_tank } }
 		}
 	}
 
