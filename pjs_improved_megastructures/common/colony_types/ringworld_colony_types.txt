@@ -1,0 +1,11 @@
+col_ringworld = {
+	icon = 12
+
+	potential = {
+		is_planet_class = pc_ringworld_habitable
+	}
+
+	weight_modifier = {
+		base = 500
+	}
+}

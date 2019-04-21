@@ -13,6 +13,8 @@ district_generator = {
 		NOT = { is_planet_class = pc_hive }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	potential = {
@@ -21,6 +23,8 @@ district_generator = {
 		NOT = { is_planet_class = pc_hive }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	allow = {
@@ -221,6 +225,8 @@ district_mining = {
 		NOT = { is_planet_class = pc_hive }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	potential = {
@@ -229,6 +235,8 @@ district_mining = {
 		NOT = { is_planet_class = pc_hive }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	allow = {
@@ -410,6 +418,8 @@ district_farming = {
 		NOT = { is_planet_class = pc_hive }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	potential = {
@@ -418,6 +428,8 @@ district_farming = {
 		NOT = { is_planet_class = pc_hive }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	allow = {

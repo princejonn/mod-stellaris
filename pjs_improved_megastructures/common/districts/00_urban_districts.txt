@@ -11,6 +11,8 @@ district_city = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	potential = {
@@ -19,6 +21,8 @@ district_city = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	allow = {
@@ -244,6 +248,8 @@ district_hive = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	potential = {
@@ -252,6 +258,8 @@ district_hive = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	allow = {
@@ -440,6 +448,8 @@ district_nexus = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	potential = {
@@ -448,6 +458,8 @@ district_nexus = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
 		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { has_modifier = asteroid_base }
+		NOT = { has_modifier = moon_base }
 	}
 
 	allow = {

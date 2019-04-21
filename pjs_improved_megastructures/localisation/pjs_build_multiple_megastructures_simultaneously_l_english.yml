@@ -8,10 +8,25 @@
   allow_tech_ap_galactic_wonders_megacorp:0 "Research options gained:\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_matter_decompressor_construction$ is an incredibly powerful Megastructures."
   allow_tech_ap_galactic_wonders_utopia_and_megacorp:0 "Research options gained:\n£engineering£ §Y$tech_ring_world_construction$§!\n£physics£ §Y$tech_dyson_sphere_construction$§!\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_ring_world_construction$, $tech_matter_decompressor_construction$, and $tech_dyson_sphere_construction$ are incredibly powerful Megastructures."
 
-  ap_master_builders_world_size:0 "§HHabitats§! and §HRingworlds§! owned by our Empire have space for an additional §Y2§! districts."
+  ap_master_builders_world_size:0 "§HHabitats§! owned by our Empire have space for an additional §Y2§! districts. §HRingworlds§!, §HAsteroid Bases§! owned by our Empire have space for an additional §Y1§! district."
 
-  master_builders_ringworlds:0 "$ap_master_builders$: Expansion"
-  master_builders_ringworlds_desc:0 "This $pc_ringworld_habitable$ has been expanded by an additional §Y1§! $MOD_PLANET_MAX_DISTRICTS_ADD$."
+  ## Colony Types
+
+  col_asteroid_base:0 "Asteroid Base"
+  col_asteroid_base_desc:0 "No specializations available for this planet class."
+
+  col_moon_base:0 "Moon Base"
+  col_moon_base_desc:0 "No specializations available for this planet class."
+
+  col_ringworld:0 "Ringworld"
+  col_ringworld_desc:0 "No specializations available for this planet class."
+
+  ## Decisions
+
+  decision_build_base:0 "Construct Base Framework"
+  decision_build_base_effects_short:0 "Create the frameworks needed to inhabit this planetoid."
+  decision_build_base_effects_short:0 "This decision will lay the groundwork for a set of hostile-environment modules to be constructed here."
+  decision_build_base_desc:0 "Makes the planet habitable, and enables us to build a few special uncapped districts.\n§G100%§! Habitability."
 
   ## Districts
 
@@ -21,7 +36,7 @@
 
   district_ringworld_industry:0 "Industrial District"
   district_ringworld_industry_plural:0 "Industrial Districts"
-  district_ringworld_industry_desc:0 "Rows of massive power plants that generate large amounts of energy which can then be used or converted into usable wares and credits."
+  district_ringworld_industry_desc:0 "Rows of massive power plants and industries that generate large amounts of energy and goods which can then be used or converted into usable wares and credits."
 
   district_ringworld_farming:0 "Agriculture District"
   district_ringworld_farming_plural:0 "Agriculture Districts"
@@ -31,12 +46,50 @@
   district_ringworld_science_plural:0 "Research Districts"
   district_ringworld_science_desc:0 "Centers of scientific discovery, these districts employ researchers from myriad fields of study."
 
+  district_base_city:0 "Habitation District"
+  district_base_city_plural:0 "Habitation Districts"
+  district_base_city_desc:0 "A habitat housing district provides compact residences for its population."
+
+  district_base_generator:0 "Generator District"
+  district_base_generator_plural:0 "Generator Districts"
+  district_base_generator_desc:0 "Massive compact power plants that generate large amounts of energy which can then be used or converted into credits."
+
+  district_asteroid_base_mining:0 "Astro-Mining District"
+  district_asteroid_base_mining_plural:0 "Astro-Mining Districts"
+  district_asteroid_base_mining_desc:0 "Asteroid Bases depend on these facilities to mine and process minerals from nearby asteroids."
+
+  district_asteroid_base_refinery:0 "Refinery District"
+  district_asteroid_base_refinery_plural:0 "Refinery Districts"
+  district_asteroid_base_refinery_desc:0 "With the possible influx of minerals, the Refinery Districts ensure we can utilize every rare resource we find."
+
+  district_moon_base_mining:0 "Mining District"
+  district_moon_base_mining_plural:0 "Mining Districts"
+  district_moon_base_mining_desc:0 "These mining district and resource extraction centers drill deep into the mantle to access mineral deposits."
+
+  district_moon_base_farming:0 "Hydroponics District"
+  district_moon_base_farming_plural:0 "Hydroponics Districts"
+  district_moon_base_farming_desc:0 "Hydroponics Farms produce nutrient-rich vegetable matter tailored for consumption by local Pops."
+
   ## Districts Jobs
 
   job_technician_artisan_effect_desc:0 "$job_technician_effect_desc$\n$job_artisan_effect_desc$"
   job_technician_artisan_drone_effect_desc:0 "$job_technician_drone_effect_desc$\n$job_artisan_drone_effect_desc$"
 
-  ## Improvised Megastructures
+  job_crystal_gases_motes_effect_desc:0 "$job_translucer_effect_desc$\n$job_gas_refiner_effect_desc$\n$job_chemist_effect_desc$"
+  job_crystal_gases_motes_drone_effect_desc:0 "$job_translucer_drone_effect_desc$\n$job_gas_refiner_drone_effect_desc$\n$job_chemist_drone_effect_desc$"
+
+  ## Static Modifiers
+
+  master_builders_ringworlds:0 "$ap_master_builders$: Expansion"
+  master_builders_ringworlds_desc:0 "This $pc_ringworld_habitable$ has been expanded by an additional §Y1§! $MOD_PLANET_MAX_DISTRICTS_ADD$."
+
+  asteroid_base:0 "Asteroid Base"
+  asteroid_base_desc:0 "This planet has been deemed suitable for a asteroid base."
+
+  moon_base:0 "Moon Base"
+  moon_base_desc:0 "This planet has been deemed suitable for a moon base."
+
+  ## Megastructures
 
   dyson_sphere_improvised:0 "Improvised $dyson_sphere_5$"
   dyson_sphere_improvised_DESC:0 "A ruined $dyson_sphere_5$. Despite its age, the megastructure's basic frame is largely intact. With some improvisation it is now working at §G10%§! efficiency."
@@ -52,8 +105,6 @@
 
   strategic_coordination_center_improvised:0 "Improvised $strategic_coordination_center_3$"
   strategic_coordination_center_improvised_DESC:0 "The remains of an ancient military comms station. With some improvisation it is now working at §G10%§! efficiency."
-
-  ## Additional Megastructures
 
   think_tank_hub_0_MEGASTRUCTURE_DETAILS:1 "The research labs and databanks of a §Y$think_tank_hub_1$§! generate an immense flow of raw, undiluted science."
   think_tank_hub_0:0 "Science Hub Site"
@@ -71,7 +122,33 @@
 
   requires_existing_strategic_coordination_center:0 "$TRIGGER_FAIL$Can only build the Strategic Coordination Hub once the Strategic Coordination Center has been built."
 
+  ## Planet Classes
+
+  pc_asteroid_base:0 "$pc_asteroid$"
+  pc_asteroid_base_desc:0 "$pc_asteroid_desc$"
+
+  pc_ice_asteroid_base:0 "$pc_ice_asteroid$"
+  pc_ice_asteroid_base_desc:0 "$pc_ice_asteroid_desc$"
+
+  pc_molten_base:0 "$pc_molten$"
+  pc_molten_base_desc:0 "$pc_molten_desc$"
+
+  pc_barren_base:0 "$pc_barren$"
+  pc_barren_base_desc:0 "$pc_barren_desc$"
+
+  pc_barren_cold_base:0 "$pc_barren_cold$"
+  pc_barren_cold_base_desc:0 "$pc_barren_cold_desc$"
+
+  pc_toxic_base:0 "$pc_toxic$"
+  pc_toxic_base_desc:0 "$pc_toxic_desc$"
+
+  pc_frozen_base:0 "$pc_frozen$"
+  pc_frozen_base_desc:0 "$pc_frozen_desc$"
+
   ## Technology
+
+  tech_asteroid_moon_bases:0 "Hostile Environment Bases"
+  tech_asteroid_moon_bases_desc:0 "Unlocks planetary decision on asteroids and moons to build habitable bases."
 
   tech_dyson_sphere_construction:0 "$dyson_sphere_5$"
   tech_dyson_sphere_construction_desc:0 "Unlocks construction of the Megastructure §Y$dyson_sphere_5$§!"
@@ -101,6 +178,9 @@
   tech_think_tank_construction_desc:0 "Unlocks construction of the Megastructure §Y$think_tank_3$§!"
 
   ## Features
+
+  TECH_UNLOCK_ASTEROID_MOON_BASES_TITLE:0 "§HUnlocks Features:§! Asteroid Base\n§HUnlocks Features:§! Moon Base"
+  TECH_UNLOCK_ASTEROID_MOON_BASES_DESC:0 "Allows us to build habitable bases on asteroids and moons."
 
   TECH_UNLOCK_DYSON_SPHERE_CONSTRUCTION_TITLE:0 "§HUnlocks Feature:§! Dyson Sphere Construction"
   TECH_UNLOCK_DYSON_SPHERE_CONSTRUCTION_DESC:0 "Allows us to rebuild and construct new $dyson_sphere_5$s."

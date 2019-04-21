@@ -36,12 +36,12 @@ tech_mega_engineering = {
 			}
 		}
         modifier = {
-        	factor = 2
+        	factor = 5
         	has_ascension_perk = ap_master_builders
         }
 		modifier = {
-			factor = 2
-			has_technology = tech_habitats
+			factor = 5
+			has_technology = "tech_habitats_construction"
 		}
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech

@@ -1,0 +1,11 @@
+col_moon_base = {
+	icon = 12
+
+	potential = {
+		has_modifier = moon_base
+	}
+
+	weight_modifier = {
+		base = 500
+	}
+}

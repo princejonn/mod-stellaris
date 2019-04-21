@@ -1,0 +1,11 @@
+col_asteroid_base = {
+	icon = 12
+
+	potential = {
+		has_modifier = asteroid_base
+	}
+
+	weight_modifier = {
+		base = 500
+	}
+}

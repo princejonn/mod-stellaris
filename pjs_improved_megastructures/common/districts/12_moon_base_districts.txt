@@ -1,0 +1,268 @@
+district_moon_base_mining = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    has_modifier = moon_base
+	}
+
+	potential = {
+	    exists = owner
+	    has_modifier = moon_base
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		OR = {
+			free_jobs < 2
+			controller = { is_ai = no }
+			owner = { is_ai = no }
+			gai_good_minerals = yes
+			free_district_slots = 0
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 360
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_miner_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_miner_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_mining_drone_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_mining_drone_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		text = job_fe_acolyte_mine_effect_desc
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			weight = 200000
+			NOT = { has_planet_flag = gai_arc }
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				gai_work_minerals = yes
+				gai_work_minerals_goods = yes
+			}
+		}
+	}
+
+	ai_resource_production = {
+		minerals = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+district_moon_base_farming = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    has_modifier = moon_base
+	}
+
+	potential = {
+	    exists = owner
+	    has_modifier = moon_base
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		OR = {
+			free_jobs < 2
+			controller = { is_ai = no }
+			owner = { is_ai = no }
+			gai_good_food = yes
+			free_district_slots = 0
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 360
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_agri_drone_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_agri_drone_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_agri_drone_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_agri_drone_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_farmer_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_farmer_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = 4
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		text = job_fe_acolyte_farm_effect_desc
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			weight = 500
+			NOT = { has_planet_flag = gai_arc }
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 150
+				}
+			}
+		}
+	}
+
+	ai_resource_production = {
+		food = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

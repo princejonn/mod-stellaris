@@ -5,7 +5,7 @@ decision_build_stargate = {
 		"tech_stargates_breakthrough"
 	}
 
-	enactment_time = 3600
+	enactment_time = 1200
 	resources = {
 		category = decisions
 		cost = {

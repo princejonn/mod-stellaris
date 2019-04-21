@@ -11,6 +11,7 @@ district_hab_housing = {
 	}
 
 	potential = {
+		exists = owner
 		is_planet_class = pc_habitat
 	}
 
@@ -92,8 +93,9 @@ district_hab_energy = {
 	}
 
 	potential = {
-		is_planet_class = pc_habitat
+		exists = owner
 		owner = { is_gestalt = yes }
+		is_planet_class = pc_habitat
 	}
 
 	resources = {
@@ -150,8 +152,9 @@ district_hab_cultural = {
 	}
 
 	potential = {
-		is_planet_class = pc_habitat
+		exists = owner
 		owner = { is_gestalt = no }
+		is_planet_class = pc_habitat
 	}
 
 	convert_to = {
@@ -233,6 +236,7 @@ district_hab_science = {
 	}
 
 	potential = {
+		exists = owner
 		is_planet_class = pc_habitat
 	}
 
@@ -346,8 +350,9 @@ district_hab_commercial = {
 	}
 
 	potential = {
-		is_planet_class = pc_habitat
+		exists = owner
 		owner = { is_gestalt = no }
+		is_planet_class = pc_habitat
 	}
 
 	resources = {
