@@ -1,6 +1,10 @@
 decision_ringworld_specialization_arms_industry = {
 	owned_planets_only = yes
 
+	prerequisites = {
+		"tech_ring_world_construction"
+	}
+
 	enactment_time = 0
 	resources = {
 		category = decisions
@@ -31,6 +35,10 @@ decision_ringworld_specialization_arms_industry = {
 
 decision_ringworld_specialization_civilian_industry = {
 	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_ring_world_construction"
+	}
 
 	enactment_time = 0
 	resources = {
@@ -63,6 +71,10 @@ decision_ringworld_specialization_civilian_industry = {
 decision_ringworld_specialization_leisure = {
 	owned_planets_only = yes
 
+	prerequisites = {
+		"tech_ring_world_construction"
+	}
+
 	enactment_time = 0
 	resources = {
 		category = decisions
@@ -93,6 +105,10 @@ decision_ringworld_specialization_leisure = {
 
 decision_ringworld_specialization_science = {
 	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_ring_world_construction"
+	}
 
 	enactment_time = 0
 	resources = {
