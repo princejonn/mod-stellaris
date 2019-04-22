@@ -1,6 +1,8 @@
 trait_pjs_asari = {
 	cost = 4
+	initial = no
 	randomized = no
+	modification = no
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
@@ -20,7 +22,9 @@ trait_pjs_asari = {
 
 trait_pjs_eldar = {
 	cost = 4
+	initial = no
 	randomized = no
+	modification = no
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
@@ -40,7 +44,9 @@ trait_pjs_eldar = {
 
 trait_pjs_quarian = {
 	cost = 2
+	initial = no
 	randomized = no
+	modification = no
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
@@ -60,7 +66,9 @@ trait_pjs_quarian = {
 
 trait_pjs_krogan = {
 	cost = 2
+	initial = no
 	randomized = no
+	modification = no
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
@@ -78,7 +86,9 @@ trait_pjs_krogan = {
 
 trait_pjs_horror = {
 	cost = 4
+	initial = no
 	randomized = no
+	modification = no
 	must_match_primary_species = yes
 	modification = no
 	affected_by_radiation = no
@@ -103,7 +113,9 @@ trait_pjs_horror = {
 
 trait_pjs_photosynthetic = {
 	cost = 4
+	initial = no
 	randomized = no
+	modification = no
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0.25
 	allowed_archetypes = { BIOLOGICAL }
@@ -129,7 +141,9 @@ trait_pjs_partial_photosynthetic = {
 
 trait_pjs_psionic = {
 	cost = 2
+	initial = no
 	randomized = no
+	modification = no
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }

@@ -24,27 +24,58 @@
   ## Decisions
 
   decision_build_base:0 "Construct Base Framework"
-  decision_build_base_effects_short:0 "Create the frameworks needed to inhabit this planetoid."
-  decision_build_base_effects_short:0 "This decision will lay the groundwork for a set of hostile-environment modules to be constructed here."
+  decision_build_base_effects_short:0 "Create the frameworks needed to inhabit this planetoid with habitable modules."
   decision_build_base_desc:0 "Makes the planet habitable, and enables us to build a few special uncapped districts.\n§G100%§! Habitability."
 
-  ## Districts
+  decision_ringworld_specialization_arms_industry:0 "! Ringworld Specialization: Forge Districts"
+  decision_ringworld_specialization_arms_industry_effects_short:0 "Add the required frameworks for the ringworld to build §YForge Districts§!."
+  decision_ringworld_specialization_arms_industry_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §YForge Districts§!."
 
-  district_ringworld_city:0 "City District"
-  district_ringworld_city_plural:0 "City Districts"
-  district_ringworld_city_desc:0 "These dense urban centers provide large amounts of housing and office space for clerical workers."
+  decision_ringworld_specialization_civilian_industry:0 "! Ringworld Specialization: Industry Districts"
+  decision_ringworld_specialization_civilian_industry_effects_short:0 "Add the required frameworks for the ringworld to build §YIndustry Districts§!."
+  decision_ringworld_specialization_civilian_industry_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §YIndustry Districts§!."
 
-  district_ringworld_industry:0 "Industrial District"
-  district_ringworld_industry_plural:0 "Industrial Districts"
-  district_ringworld_industry_desc:0 "Rows of massive power plants and industries that generate large amounts of energy and goods which can then be used or converted into usable wares and credits."
+  decision_ringworld_specialization_leisure:0 "! Ringworld Specialization: Leisure Districts"
+  decision_ringworld_specialization_leisure_effects_short:0 "Add the required frameworks for the ringworld to build §YLeisure Districts§!."
+  decision_ringworld_specialization_leisure_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §YLeisure Districts§!."
 
-  district_ringworld_farming:0 "Agriculture District"
-  district_ringworld_farming_plural:0 "Agriculture Districts"
-  district_ringworld_farming_desc:0 "Land set aside for cultivation, either through the growing of crops or animal husbandry."
+  decision_ringworld_specialization_science:0 "! Ringworld Specialization: Research Districts"
+  decision_ringworld_specialization_science_effects_short:0 "Add the required frameworks for the ringworld to build §YResearch Districts§!."
+  decision_ringworld_specialization_science_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §YResearch Districts§!."
+
+  ## Districts : Ringworld
+
+  district_ringworld_city:0 "$district_city$"
+  district_ringworld_city_plural:0 "$district_city_plural$"
+  district_ringworld_city_desc:0 "$district_city_desc$"
+
+  district_ringworld_generator:0 "$district_generator$"
+  district_ringworld_generator_plural:0 "$district_generator_plural$"
+  district_ringworld_generator_desc:0 "$district_generator_desc$"
+
+  district_ringworld_farming:0 "$district_farming$"
+  district_ringworld_farming_plural:0 "$district_farming_plural$"
+  district_ringworld_farming_desc:0 "$district_farming_desc$"
+
+  ## Districts : Ringworld Specializations
+
+  district_ringworld_arms_industry:0 "Foundry District"
+  district_ringworld_arms_industry_plural:0 "Foundry Districts"
+  district_ringworld_arms_industry_desc:0 "Geared towards military industries, this ringworld district is filled with the roar of smelters and the clang of metallurgies."
+
+  district_ringworld_civilian_industry:0 "Industrial District"
+  district_ringworld_civilian_industry_plural:0 "Industrial Districts"
+  district_ringworld_civilian_industry_desc:0 "Workshops filled with artisans and civilian industries line the stacked streets of this district."
+
+  district_ringworld_leisure:0 "Leisure District"
+  district_ringworld_leisure_plural:0 "Leisure Districts"
+  district_ringworld_leisure_desc:0 "Where denizens of the ringworld unwind in their leisure hours."
 
   district_ringworld_science:0 "Research District"
   district_ringworld_science_plural:0 "Research Districts"
   district_ringworld_science_desc:0 "Centers of scientific discovery, these districts employ researchers from myriad fields of study."
+
+  ## Districts : Bases
 
   district_base_city:0 "Habitation District"
   district_base_city_plural:0 "Habitation Districts"
@@ -54,6 +85,8 @@
   district_base_generator_plural:0 "Generator Districts"
   district_base_generator_desc:0 "Massive compact power plants that generate large amounts of energy which can then be used or converted into credits."
 
+  ## Districts : Asteroid Bases
+
   district_asteroid_base_mining:0 "Astro-Mining District"
   district_asteroid_base_mining_plural:0 "Astro-Mining Districts"
   district_asteroid_base_mining_desc:0 "Asteroid Bases depend on these facilities to mine and process minerals from nearby asteroids."
@@ -61,6 +94,8 @@
   district_asteroid_base_refinery:0 "Refinery District"
   district_asteroid_base_refinery_plural:0 "Refinery Districts"
   district_asteroid_base_refinery_desc:0 "With the possible influx of minerals, the Refinery Districts ensure we can utilize every rare resource we find."
+
+  ## Districts : Moon Bases
 
   district_moon_base_mining:0 "Mining District"
   district_moon_base_mining_plural:0 "Mining Districts"
@@ -70,10 +105,7 @@
   district_moon_base_farming_plural:0 "Hydroponics Districts"
   district_moon_base_farming_desc:0 "Hydroponics Farms produce nutrient-rich vegetable matter tailored for consumption by local Pops."
 
-  ## Districts Jobs
-
-  job_technician_artisan_effect_desc:0 "$job_technician_effect_desc$\n$job_artisan_effect_desc$"
-  job_technician_artisan_drone_effect_desc:0 "$job_technician_drone_effect_desc$\n$job_artisan_drone_effect_desc$"
+  ## Districts : Job Descriptions
 
   job_crystal_gases_motes_effect_desc:0 "$job_translucer_effect_desc$\n$job_gas_refiner_effect_desc$\n$job_chemist_effect_desc$"
   job_crystal_gases_motes_drone_effect_desc:0 "$job_translucer_drone_effect_desc$\n$job_gas_refiner_drone_effect_desc$\n$job_chemist_drone_effect_desc$"
@@ -89,7 +121,24 @@
   moon_base:0 "Moon Base"
   moon_base_desc:0 "This planet has been deemed suitable for a moon base."
 
-  ## Megastructures
+  ## Static Modifiers : Ringworld Specializations
+
+  ringworld_specialization_none:0 "§RNo Specialization§!"
+  ringworld_specialization_none_desc:0 "§RYou need to pick a Ringworld specialization by enacting the specialization decision of your choice."
+
+  ringworld_specialization_arms_industry:0 "Forge World"
+  ringworld_specialization_arms_industry_desc:0 "The heat of alloy foundries can be felt almost everywhere on this planet."
+
+  ringworld_specialization_civilian_industry:0 "Industrial World"
+  ringworld_specialization_civilian_industry_desc:0 "This planet specializes in manufactories, workshops, and civilian industries."
+
+  ringworld_specialization_leisure:0 "Leisure World"
+  ringworld_specialization_leisure_desc:0 "This world is dedicated to culture and leisure."
+
+  ringworld_specialization_science:0 "Tech-World"
+  ringworld_specialization_science_desc:0 "This world is a seat of scientific research and technological advancement."
+
+  ## Megastructures : Improvised
 
   dyson_sphere_improvised:0 "Improvised $dyson_sphere_5$"
   dyson_sphere_improvised_DESC:0 "A ruined $dyson_sphere_5$. Despite its age, the megastructure's basic frame is largely intact. With some improvisation it is now working at §G10%§! efficiency."
@@ -105,6 +154,8 @@
 
   strategic_coordination_center_improvised:0 "Improvised $strategic_coordination_center_3$"
   strategic_coordination_center_improvised_DESC:0 "The remains of an ancient military comms station. With some improvisation it is now working at §G10%§! efficiency."
+
+  ## Megastructures : Hubs
 
   think_tank_hub_0_MEGASTRUCTURE_DETAILS:1 "The research labs and databanks of a §Y$think_tank_hub_1$§! generate an immense flow of raw, undiluted science."
   think_tank_hub_0:0 "Science Hub Site"

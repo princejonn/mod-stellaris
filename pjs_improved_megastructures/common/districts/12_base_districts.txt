@@ -31,6 +31,7 @@ district_base_city = {
 		planet_housing_add = 12
 	}
 
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -48,6 +49,7 @@ district_base_city = {
 		text = job_clerk_effect_desc
 	}
 
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -64,6 +66,7 @@ district_base_city = {
 		}
 		text = job_maintenance_drone_effect_desc
 	}
+
 
 	ai_weight = {
 		weight = 10
@@ -140,6 +143,7 @@ district_base_generator = {
 		planet_housing_add = 4
 	}
 
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -160,6 +164,7 @@ district_base_generator = {
 		text = job_fe_acolyte_generator_effect_desc
 	}
 
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -177,6 +182,7 @@ district_base_generator = {
 		text = job_technician_drone_effect_desc
 	}
 
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -193,6 +199,7 @@ district_base_generator = {
 		}
 		text = job_technician_drone_effect_desc
 	}
+
 
 	triggered_planet_modifier = {
 		potential = {
@@ -213,6 +220,7 @@ district_base_generator = {
 		}
 		text = job_technician_effect_desc
 	}
+
 
 	ai_weight = {
 		weight = 1

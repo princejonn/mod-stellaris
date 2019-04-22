@@ -6,7 +6,7 @@ master_builders_ringworlds = {
 
 asteroid_base = {
 	icon = "gfx/interface/icons/planet_modifiers/asteroid_base.dds"
-	icon_frame = 3
+	icon_frame = 1
 	pop_amenities_usage_mult = 0.25
 	pop_growth_speed = -0.25
 	planet_pop_assembly_mult = -0.25
@@ -14,8 +14,33 @@ asteroid_base = {
 
 moon_base = {
 	icon = "gfx/interface/icons/planet_modifiers/moon_base.dds"
-	icon_frame = 3
+	icon_frame = 1
 	pop_amenities_usage_mult = 0.25
 	pop_growth_speed = -0.25
 	planet_pop_assembly_mult = -0.25
+}
+
+ringworld_specialization_none = {
+	icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_none.dds"
+    icon_frame = 3
+}
+
+ringworld_specialization_arms_industry = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_arms_industry.dds"
+    icon_frame = 1
+}
+
+ringworld_specialization_civilian_industry = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_civilian_industry.dds"
+    icon_frame = 1
+}
+
+ringworld_specialization_leisure = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_leisure.dds"
+    icon_frame = 1
+}
+
+ringworld_specialization_science = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_science.dds"
+    icon_frame = 1
 }

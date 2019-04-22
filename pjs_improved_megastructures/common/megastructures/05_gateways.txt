@@ -17,8 +17,8 @@ gateway_0 = {
 	resources = {
 		category = megastructures
 		cost = {
+			influence = 50
 			alloys = 2500
-			influence = 100
 		}
 	}
 

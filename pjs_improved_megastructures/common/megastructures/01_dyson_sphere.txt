@@ -17,8 +17,8 @@ dyson_sphere_0 = {
 	resources = {
 		category = megastructures
 		cost = {
+			influence = 200
 			alloys = 5000
-			influence = 300
 		}
 
 		upkeep = {

@@ -1,0 +1,108 @@
+decision_ringworld_specialization_arms_industry = {
+	owned_planets_only = yes
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+		has_modifier = ringworld_specialization_none
+	}
+
+    effect = {
+	    remove_modifier = ringworld_specialization_none
+        add_modifier = { modifier = ringworld_specialization_arms_industry days = -1 }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_ringworld_specialization_civilian_industry = {
+	owned_planets_only = yes
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+		has_modifier = ringworld_specialization_none
+		OR = {
+		    owner = { is_regular_empire = yes }
+		    owner = { has_valid_civic = civic_machine_servitor }
+		}
+	}
+
+    effect = {
+	    remove_modifier = ringworld_specialization_none
+        add_modifier = { modifier = ringworld_specialization_civilian_industry days = -1 }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_ringworld_specialization_leisure = {
+	owned_planets_only = yes
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+		has_modifier = ringworld_specialization_none
+		owner = { is_regular_empire = yes }
+	}
+
+    effect = {
+	    remove_modifier = ringworld_specialization_none
+        add_modifier = { modifier = ringworld_specialization_leisure days = -1 }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_ringworld_specialization_science = {
+	owned_planets_only = yes
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+		has_modifier = ringworld_specialization_none
+	}
+
+    effect = {
+	    remove_modifier = ringworld_specialization_none
+        add_modifier = { modifier = ringworld_specialization_science days = -1 }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

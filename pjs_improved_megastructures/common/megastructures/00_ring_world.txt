@@ -12,8 +12,8 @@ ring_world_1 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 4000
 			influence = 200
+			alloys = 4000
 		}
 		upkeep = {
 			energy = 5
@@ -289,6 +289,7 @@ ring_world_3_intermediate = {
 				save_event_target_as = ring_section
 				trigger_megastructure_icon = yes
 				set_planet_flag = megastructure
+				add_modifier = { modifier = ringworld_specialization_none days = -1 }
 			}
 		}
 		fromfrom.planet = {
@@ -454,6 +455,7 @@ ring_world_restored = {
 				save_event_target_as = ring_section
 				trigger_megastructure_icon = yes
 				set_planet_flag = megastructure
+		        add_modifier = { modifier = ringworld_specialization_none days = -1 }
 			}
 		}
 		remove_megastructure = fromfrom
