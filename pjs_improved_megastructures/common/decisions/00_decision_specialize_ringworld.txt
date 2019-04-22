@@ -11,7 +11,12 @@ decision_ringworld_specialization_arms_industry = {
 
 	potential = {
         is_planet_class = pc_ringworld_habitable
-		has_modifier = ringworld_specialization_none
+        AND = {
+            NOT = { has_modifier = ringworld_specialization_arms_industry }
+            NOT = { has_modifier = ringworld_specialization_civilian_industry }
+            NOT = { has_modifier = ringworld_specialization_leisure }
+            NOT = { has_modifier = ringworld_specialization_science }
+        }
 	}
 
     effect = {
@@ -37,11 +42,12 @@ decision_ringworld_specialization_civilian_industry = {
 
 	potential = {
         is_planet_class = pc_ringworld_habitable
-		has_modifier = ringworld_specialization_none
-		OR = {
-		    owner = { is_regular_empire = yes }
-		    owner = { has_valid_civic = civic_machine_servitor }
-		}
+        AND = {
+            NOT = { has_modifier = ringworld_specialization_arms_industry }
+            NOT = { has_modifier = ringworld_specialization_civilian_industry }
+            NOT = { has_modifier = ringworld_specialization_leisure }
+            NOT = { has_modifier = ringworld_specialization_science }
+        }
 	}
 
     effect = {
@@ -67,8 +73,12 @@ decision_ringworld_specialization_leisure = {
 
 	potential = {
         is_planet_class = pc_ringworld_habitable
-		has_modifier = ringworld_specialization_none
-		owner = { is_regular_empire = yes }
+        AND = {
+            NOT = { has_modifier = ringworld_specialization_arms_industry }
+            NOT = { has_modifier = ringworld_specialization_civilian_industry }
+            NOT = { has_modifier = ringworld_specialization_leisure }
+            NOT = { has_modifier = ringworld_specialization_science }
+        }
 	}
 
     effect = {
@@ -94,7 +104,12 @@ decision_ringworld_specialization_science = {
 
 	potential = {
         is_planet_class = pc_ringworld_habitable
-		has_modifier = ringworld_specialization_none
+        AND = {
+            NOT = { has_modifier = ringworld_specialization_arms_industry }
+            NOT = { has_modifier = ringworld_specialization_civilian_industry }
+            NOT = { has_modifier = ringworld_specialization_leisure }
+            NOT = { has_modifier = ringworld_specialization_science }
+        }
 	}
 
     effect = {
