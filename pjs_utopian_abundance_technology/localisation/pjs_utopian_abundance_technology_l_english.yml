@@ -1,0 +1,9 @@
+﻿l_english:
+
+  tech_utopian_abundance:0 "Utopian Abundance"
+  tech_utopian_abundance_desc:0 "$living_standard_utopian$ ensures that every member of this species has access to nearly any type of luxury conceivable.\n\n$UTOPIAN_ABUNDANCE_POP_EFFECTS$\n\n$UNEMPLOYED_PRODUCE_UNITY_RESEARCH$"
+
+  empire_not_tech_utopian_abundance:0 "$TRIGGER_FAIL$Our empire does not have the necessary technology: §Y$tech_utopian_abundance$§!"
+
+  feature_utopian_abundance:0 "$tech_utopian_abundance$"
+  feature_utopian_abundance_desc:0 "$tech_utopian_abundance_desc$"
