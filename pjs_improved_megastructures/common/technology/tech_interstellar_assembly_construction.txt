@@ -16,10 +16,7 @@ tech_interstellar_assembly_construction = {
 	}
 
 	potential = {
-		OR = {
-		    host_has_dlc = "Utopia"
-            host_has_dlc = "Megacorp"
-		}
+		host_has_dlc = "Megacorp"
 	}
 
 	weight_modifier = {

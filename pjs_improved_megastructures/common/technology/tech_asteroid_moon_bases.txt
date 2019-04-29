@@ -4,7 +4,7 @@ tech_asteroid_moon_bases = {
 	tier = 3
 	category = { new_worlds }
 	ai_update_type = all
-	prerequisites = { "tech_starbase_2" "tech_destroyers" "tech_antimatter_power" }
+	prerequisites = { "tech_starbase_2" }
 	weight = @tier3weight2
 	is_rare = yes
 
