@@ -45,10 +45,6 @@ mega_art_installation_0 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_mega_art_installation"
-            from = { NOT = { has_country_flag = built_mega_art_installation } }
-		}
 	}
 
 	placement_rules = {
@@ -87,6 +83,10 @@ mega_art_installation_0 = {
 				fail_text = "requires_not_ring_world"
 				is_ringworld = no
 			}
+            custom_tooltip = {
+                fail_text = "requires_no_existing_mega_art_installation"
+                from = { NOT = { has_country_flag = built_mega_art_installation_site } }
+            }
 		}
 	}
 
@@ -112,7 +112,7 @@ mega_art_installation_0 = {
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		from = { set_country_flag = built_mega_art_installation }
+		from = { set_country_flag = built_mega_art_installation_site }
 	}
 }
 
@@ -302,7 +302,7 @@ mega_art_installation_restored = {
 	}
 
 	on_build_complete = {
-		from = { set_country_flag = built_mega_art_installation }
+		from = { set_country_flag = built_mega_art_installation_site }
 		set_star_flag = mega_art_installation_built
 		every_system_ambient_object = { destroy_ambient_object = this }
 		from = {

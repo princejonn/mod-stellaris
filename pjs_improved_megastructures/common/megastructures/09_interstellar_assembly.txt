@@ -41,10 +41,6 @@ interstellar_assembly_0 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_interstellar_assembly"
-            from = { NOT = { has_country_flag = built_interstellar_assembly } }
-		}
 	}
 
 	placement_rules = {
@@ -83,11 +79,15 @@ interstellar_assembly_0 = {
 				fail_text = "requires_not_ring_world"
 				is_ringworld = no
 			}
+            custom_tooltip = {
+                fail_text = "requires_no_existing_interstellar_assembly"
+                from = { NOT = { has_country_flag = built_interstellar_assembly_site } }
+            }
 		}
 	}
 
 	# root = system
-	# from = country	
+	# from = country
 	ai_weight = {
 		factor = 15
 		modifier = {
@@ -98,17 +98,17 @@ interstellar_assembly_0 = {
 			factor = 0.1
 			any_neighbor_system = {
 				exists = owner
-				NOT = { 
-					owner = { is_same_value = from } 
+				NOT = {
+					owner = { is_same_value = from }
 				}
 			}
 		}
 	}
-	
+
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		from = { set_country_flag = built_interstellar_assembly }
+		from = { set_country_flag = built_interstellar_assembly_site }
 	}
 }
 
@@ -330,7 +330,7 @@ interstellar_assembly_restored = {
 	}
 
 	on_build_complete = {
-		from = { set_country_flag = built_interstellar_assembly }
+		from = { set_country_flag = built_interstellar_assembly_site }
 		set_star_flag = interstellar_assembly_built
 		every_system_ambient_object = { destroy_ambient_object = this }
 		from = {

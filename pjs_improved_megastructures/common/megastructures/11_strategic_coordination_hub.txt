@@ -40,10 +40,6 @@ strategic_coordination_hub_0 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_existing_strategic_coordination_center"
-            from = { NOT = { has_country_flag = built_strategic_coordination_center } }
-		}
 	}
 
 	placement_rules = {
@@ -82,6 +78,10 @@ strategic_coordination_hub_0 = {
 				fail_text = "requires_not_ring_world"
 				is_ringworld = no
 			}
+            custom_tooltip = {
+                fail_text = "requires_existing_strategic_coordination_center"
+                from = { has_country_flag = built_strategic_coordination_center_site }
+            }
 		}
 	}
 

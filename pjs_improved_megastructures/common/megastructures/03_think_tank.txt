@@ -46,10 +46,6 @@ think_tank_0 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_think_tank"
-            from = { NOT = { has_country_flag = built_think_tank } }
-		}
 	}
 
 	placement_rules = {
@@ -88,6 +84,10 @@ think_tank_0 = {
 				fail_text = "requires_not_ring_world"
 				is_ringworld = no
 			}
+            custom_tooltip = {
+                fail_text = "requires_no_existing_think_tank"
+                from = { NOT = { has_country_flag = built_think_tank } }
+            }
 		}
 	}
 
@@ -122,9 +122,11 @@ think_tank_0 = {
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		from = { set_country_flag = built_think_tank }
 		set_star_flag = think_tank_built
-		fromfrom.planet = { set_planet_flag = has_megastructure }
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+		}
+		from = { set_country_flag = built_think_tank }
 	}
 }
 

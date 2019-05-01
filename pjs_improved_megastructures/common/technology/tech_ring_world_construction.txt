@@ -9,6 +9,7 @@ tech_ring_world_construction = {
 	is_rare = yes
 
 	prereqfor_desc = {
+		hide_prereq_for_desc = decision
 		custom = {
 			title = "TECH_UNLOCK_RING_WORLD_CONSTRUCTION_TITLE"
 			desc = "TECH_UNLOCK_RING_WORLD_CONSTRUCTION_DESC"

@@ -41,10 +41,6 @@ spy_orb_0 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_spyorb"
-			from = { NOT = { has_country_flag = built_spyorb } }
-		}
 	}
 
 	placement_rules = {
@@ -83,6 +79,10 @@ spy_orb_0 = {
 				fail_text = "requires_not_ring_world"
 				is_ringworld = no
 			}
+            custom_tooltip = {
+                fail_text = "requires_no_existing_spyorb"
+                from = { NOT = { has_country_flag = built_spyorb } }
+            }
 		}
 	}
 
@@ -116,8 +116,11 @@ spy_orb_0 = {
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		from = { set_country_flag = built_spyorb }
 		set_star_flag = spy_orb_built
+        fromfrom.planet = {
+            set_planet_flag = has_megastructure
+        }
+		from = { set_country_flag = built_spyorb }
 	}
 }
 

@@ -128,7 +128,13 @@ dyson_sphere_0 = {
 
 	on_build_start = {}
 	on_build_cancel = {}
-	on_build_complete = {}
+	on_build_complete = {
+		set_star_flag = dyson_sphere_built
+        fromfrom.planet = {
+            set_planet_flag = has_megastructure
+        }
+		from = { set_country_flag = built_dyson_sphere }
+	}
 }
 
 #Dyson Sphere Frame

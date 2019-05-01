@@ -36,7 +36,7 @@ matter_decompressor_0 = {
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
-		}		
+		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
@@ -77,7 +77,7 @@ matter_decompressor_0 = {
 	}
 
 	# root = system
-	# from = country	
+	# from = country
 	ai_weight = {
 		factor = 15
 		modifier = {
@@ -88,16 +88,18 @@ matter_decompressor_0 = {
 			factor = 0.1
 			any_neighbor_system = {
 				exists = owner
-				NOT = { 
-					owner = { is_same_value = from } 
+				NOT = {
+					owner = { is_same_value = from }
 				}
 			}
 		}
 	}
-	
+
 	on_build_start = {}
 	on_build_cancel = {}
-	on_build_complete = {}
+	on_build_complete = {
+		from = { set_country_flag = built_matter_decompressor_site }
+	}
 }
 
 # Matter Decompressor

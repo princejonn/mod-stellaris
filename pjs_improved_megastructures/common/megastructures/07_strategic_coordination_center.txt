@@ -41,10 +41,6 @@ strategic_coordination_center_0 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_strategic_coordination_center"
-            from = { NOT = { has_country_flag = built_strategic_coordination_center } }
-		}
 	}
 
 	placement_rules = {
@@ -83,6 +79,10 @@ strategic_coordination_center_0 = {
 				fail_text = "requires_not_ring_world"
 				is_ringworld = no
 			}
+            custom_tooltip = {
+                fail_text = "requires_no_existing_strategic_coordination_center"
+                from = { NOT = { has_country_flag = built_strategic_coordination_center_site } }
+            }
 		}
 	}
 
@@ -108,7 +108,7 @@ strategic_coordination_center_0 = {
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		from = { set_country_flag = built_strategic_coordination_center }
+		from = { set_country_flag = built_strategic_coordination_center_site }
 	}
 }
 
@@ -340,7 +340,7 @@ strategic_coordination_center_restored = {
 	}
 
 	on_build_complete = {
-		from = { set_country_flag = built_strategic_coordination_center }
+		from = { set_country_flag = built_strategic_coordination_center_site }
 		set_star_flag = strategic_coordination_center_built
 		every_system_ambient_object = { destroy_ambient_object = this }
 		from = {

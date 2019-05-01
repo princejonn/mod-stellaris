@@ -5,11 +5,13 @@
 building_affluence_center = {
 	base_buildtime = 900
 
+	category = resource
+
 	potential = {
         exists = owner
 	    OR = {
             owner = { is_fallen_machine_empire = yes }
-	        has_technology = "tech_affluence_center"
+	        owner = { has_technology = "tech_affluence_center" }
 	    }
 	}
 
@@ -32,11 +34,13 @@ building_affluence_center = {
 building_nourishment_center = {
 	base_buildtime = 900
 
+	category = resource
+
 	potential = {
         exists = owner
 	    OR = {
             owner = { is_fallen_machine_empire = yes }
-	        has_technology = "tech_nourishment_center"
+	        owner = { has_technology = "tech_nourishment_center" }
 	    }
 	}
 
@@ -58,11 +62,13 @@ building_nourishment_center = {
 building_dimensional_fabricator = {
 	base_buildtime = 900
 
+	category = resource
+
 	potential = {
         exists = owner
 	    OR = {
             owner = { is_fallen_machine_empire = yes }
-	        has_technology = "tech_dimensional_fabricator"
+	        owner = { has_technology = "tech_dimensional_fabricator" }
 	    }
 	}
 
@@ -87,11 +93,13 @@ building_dimensional_fabricator = {
 building_class_4_singularity = {
 	base_buildtime = 900
 
+	category = resource
+
 	potential = {
         exists = owner
 	    OR = {
             owner = { is_fallen_machine_empire = yes }
-	        has_technology = "tech_class_4_singularity"
+	        owner = { has_technology = "tech_class_4_singularity" }
 	    }
 	}
 
@@ -110,11 +118,13 @@ building_class_4_singularity = {
 building_nano_forge = {
 	base_buildtime = 900
 
+	category = resource
+
 	potential = {
         exists = owner
 	    OR = {
             owner = { is_fallen_machine_empire = yes }
-	        has_technology = "tech_nano_forge"
+	        owner = { has_technology = "tech_nano_forge" }
 	    }
 	}
 
@@ -137,11 +147,13 @@ building_nano_forge = {
 building_master_archive = {
 	base_buildtime = 900
 
+	category = research
+
 	potential = {
         exists = owner
 	    OR = {
             owner = { is_fallen_machine_empire = yes }
-	        has_technology = "tech_master_archive"
+	        owner = { has_technology = "tech_master_archive" }
 	    }
 	}
 
