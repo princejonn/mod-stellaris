@@ -18,10 +18,6 @@ tech_pjs_escort = {
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
-		custom = {
-			title = "TECH_UNLOCK_ESCORT_TITLE"
-			desc = "TECH_UNLOCK_ESCORT_DESC"
-		}
 	}
 
 	weight_modifier = {
@@ -50,10 +46,6 @@ tech_pjs_battlecruiser = {
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
-		custom = {
-			title = "TECH_UNLOCK_BATTLECRUISER_TITLE"
-			desc = "TECH_UNLOCK_BATTLECRUISER_DESC"
-		}
 	}
 
 	weight_modifier = {
@@ -82,10 +74,6 @@ tech_pjs_mothership = {
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
-		custom = {
-			title = "TECH_UNLOCK_MOTHERSHIP_TITLE"
-			desc = "TECH_UNLOCK_MOTHERSHIP_DESC"
-		}
 	}
 
 	weight_modifier = {
@@ -114,10 +102,6 @@ tech_pjs_goliath = {
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
-		custom = {
-			title = "TECH_UNLOCK_GOLIATH_TITLE"
-			desc = "TECH_UNLOCK_GOLIATH_DESC"
-		}
 	}
 
 	weight_modifier = {

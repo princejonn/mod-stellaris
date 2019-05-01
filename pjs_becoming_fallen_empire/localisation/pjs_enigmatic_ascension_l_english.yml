@@ -144,17 +144,23 @@
   tech_pjs_goliath:0 "Goliaths"
   tech_pjs_goliath_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Goliath class is a fearsome ship to meet in a battle."
 
-  TECH_UNLOCK_ESCORT_TITLE:0 "§HUnlocks Ship Type:§! $pjs_escort$"
-  TECH_UNLOCK_ESCORT_DESC:0 "Unlocks a new ship type for us to build."
+  TECH_UNLOCK_AFFLUENCE_CENTER_TITLE:0 "§HUnlocks Building:§! $building_affluence_center$"
+  TECH_UNLOCK_AFFLUENCE_CENTER_DESC:0 "$building_affluence_center_desc$"
 
-  TECH_UNLOCK_BATTLECRUISER_TITLE:0 "§HUnlocks Ship Type:§! $pjs_battlecruiser$"
-  TECH_UNLOCK_BATTLECRUISER_DESC:0 "Unlocks a new ship type for us to build."
+  TECH_UNLOCK_NOURISHMENT_CENTER_TITLE:0 "§HUnlocks Building:§! $building_nourishment_center$"
+  TECH_UNLOCK_NOURISHMENT_CENTER_DESC:0 "$building_nourishment_center_desc$"
 
-  TECH_UNLOCK_MOTHERSHIP_TITLE:0 "§HUnlocks Ship Type:§! $pjs_mothership$"
-  TECH_UNLOCK_MOTHERSHIP_DESC:0 "Unlocks a new ship type for us to build."
+  TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE:0 "§HUnlocks Building:§! $building_dimensional_fabricator$"
+  TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC:0 "$building_dimensional_fabricator_desc$"
 
-  TECH_UNLOCK_GOLIATH_TITLE:0 "§HUnlocks Ship Type:§! $pjs_goliath$"
-  TECH_UNLOCK_GOLIATH_DESC:0 "Unlocks a new ship type for us to build."
+  TECH_UNLOCK_CLASS_4_SINGULARITY_TITLE:0 "§HUnlocks Building:§! $building_class_4_singularity$"
+  TECH_UNLOCK_CLASS_4_SINGULARITY_DESC:0 "$building_class_4_singularity_desc$"
+
+  TECH_UNLOCK_NANO_FORGE_TITLE:0 "§HUnlocks Building:§! $building_nano_forge$"
+  TECH_UNLOCK_NANO_FORGE_DESC:0 "$building_nano_forge_desc$"
+
+  TECH_UNLOCK_MASTER_ARCHIVE_TITLE:0 "§HUnlocks Building:§! $building_master_archive$"
+  TECH_UNLOCK_MASTER_ARCHIVE_DESC:0 "$building_master_archive_desc$"
 
   ##
   # Events

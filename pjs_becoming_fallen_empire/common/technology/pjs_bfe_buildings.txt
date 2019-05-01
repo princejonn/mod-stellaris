@@ -6,9 +6,12 @@ tech_affluence_center = {
     category = { industry }
     is_rare = yes
 
-    prerequisites = {
-
-    }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_AFFLUENCE_CENTER_TITLE"
+			desc = "TECH_UNLOCK_AFFLUENCE_CENTER_DESC"
+		}
+	}
 
 	weight_modifier = {
         modifier = {
@@ -28,9 +31,12 @@ tech_nourishment_center = {
     category = { biology }
     is_rare = yes
 
-    prerequisites = {
-
-    }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_NOURISHMENT_CENTER_TITLE"
+			desc = "TECH_UNLOCK_NOURISHMENT_CENTER_DESC"
+		}
+	}
 
 	weight_modifier = {
         modifier = {
@@ -50,9 +56,12 @@ tech_dimensional_fabricator = {
     category = { materials }
     is_rare = yes
 
-    prerequisites = {
-
-    }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE"
+			desc = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_DESC"
+		}
+	}
 
 	weight_modifier = {
         modifier = {
@@ -72,9 +81,12 @@ tech_class_4_singularity = {
     category = { field_manipulation }
     is_rare = yes
 
-    prerequisites = {
-
-    }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_CLASS_4_SINGULARITY_TITLE"
+			desc = "TECH_UNLOCK_CLASS_4_SINGULARITY_DESC"
+		}
+	}
 
 	weight_modifier = {
         modifier = {
@@ -94,9 +106,12 @@ tech_nano_forge = {
     category = { materials }
     is_rare = yes
 
-    prerequisites = {
-
-    }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_NANO_FORGE_TITLE"
+			desc = "TECH_UNLOCK_NANO_FORGE_DESC"
+		}
+	}
 
 	weight_modifier = {
         modifier = {
@@ -116,9 +131,12 @@ tech_master_archive = {
     category = { computing }
     is_rare = yes
 
-    prerequisites = {
-
-    }
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_MASTER_ARCHIVE_TITLE"
+			desc = "TECH_UNLOCK_MASTER_ARCHIVE_DESC"
+		}
+	}
 
 	weight_modifier = {
         modifier = {
