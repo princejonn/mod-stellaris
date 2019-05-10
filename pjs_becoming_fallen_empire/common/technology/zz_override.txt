@@ -192,6 +192,13 @@ tech_enigmatic_encoder = {
 	ai_update_type = all
 	is_rare = yes
 
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
+
 	weight_modifier = {
         modifier = {
             factor = 0
@@ -210,6 +217,13 @@ tech_enigmatic_decoder = {
 	category = { computing }
 	ai_update_type = all
 	is_rare = yes
+
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
 
 	weight_modifier = {
         modifier = {
@@ -232,7 +246,13 @@ tech_dark_matter_deflector = {
 	ai_update_type = all
 	is_rare = yes
 
-	prerequisites = { "tech_shields_5" }
+	prerequisites = {
+        "tech_shields_5"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
 
 	weight_modifier = {
         modifier = {
@@ -253,7 +273,13 @@ tech_dark_matter_power_core = {
 	ai_update_type = all
 	is_rare = yes
 
-	prerequisites = { "tech_zero_point_power" }
+	prerequisites = {
+        "tech_zero_point_power"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
@@ -282,7 +308,13 @@ tech_dark_matter_propulsion = {
 	ai_update_type = all
 	is_rare = yes
 
-	prerequisites = { "tech_thrusters_4" }
+	prerequisites = {
+        "tech_thrusters_4"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component

@@ -6,6 +6,13 @@ tech_affluence_center = {
     category = { industry }
     is_rare = yes
 
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
+
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_AFFLUENCE_CENTER_TITLE"
@@ -16,7 +23,7 @@ tech_affluence_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 33
+            end_game_years_passed < 11
         }
 	}
 
@@ -31,6 +38,13 @@ tech_nourishment_center = {
     category = { biology }
     is_rare = yes
 
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
+
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NOURISHMENT_CENTER_TITLE"
@@ -41,7 +55,7 @@ tech_nourishment_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 33
+            end_game_years_passed < 11
         }
 	}
 
@@ -56,6 +70,13 @@ tech_dimensional_fabricator = {
     category = { materials }
     is_rare = yes
 
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
+
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_DIMENSIONAL_FABRICATOR_TITLE"
@@ -66,7 +87,7 @@ tech_dimensional_fabricator = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 33
+            end_game_years_passed < 11
         }
 	}
 
@@ -81,6 +102,13 @@ tech_class_4_singularity = {
     category = { field_manipulation }
     is_rare = yes
 
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
+
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CLASS_4_SINGULARITY_TITLE"
@@ -91,7 +119,7 @@ tech_class_4_singularity = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 33
+            end_game_years_passed < 11
         }
 	}
 
@@ -106,6 +134,13 @@ tech_nano_forge = {
     category = { materials }
     is_rare = yes
 
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
+
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NANO_FORGE_TITLE"
@@ -116,7 +151,7 @@ tech_nano_forge = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 33
+            end_game_years_passed < 11
         }
 	}
 
@@ -131,6 +166,13 @@ tech_master_archive = {
     category = { computing }
     is_rare = yes
 
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
+
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_MASTER_ARCHIVE_TITLE"
@@ -141,7 +183,7 @@ tech_master_archive = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 33
+            end_game_years_passed < 11
         }
 	}
 
@@ -168,7 +210,7 @@ tech_utopian_paradise_dome = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 33
+            end_game_years_passed < 11
         }
 	}
 
