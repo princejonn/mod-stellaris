@@ -147,3 +147,30 @@ tech_master_archive = {
 
 	ai_weight = { weight = 1 }
 }
+
+tech_utopian_paradise_dome = {
+    area = society
+    cost = 90000
+    tier = 5
+    weight = 1
+    category = { statecraft }
+    is_rare = yes
+
+	prerequisites = {
+        "tech_affluence_center"
+        "tech_nourishment_center"
+        "tech_dimensional_fabricator"
+        "tech_class_4_singularity"
+        "tech_nano_forge"
+        "tech_master_archive"
+	}
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 33
+        }
+	}
+
+	ai_weight = { weight = 1 }
+}

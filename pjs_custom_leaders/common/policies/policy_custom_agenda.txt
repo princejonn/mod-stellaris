@@ -1,0 +1,121 @@
+policy_custom_agenda = {
+	potential = {
+		OR = {
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+		}
+	}
+
+	option = {
+	    name = "policy_agenda_null"
+		valid = { always = yes }
+	    AI_weight = { factor = 999 }
+	}
+
+	option = {
+	    name = "policy_agenda_defensive_focus_option"
+		valid = { always = yes }
+	    policy_flags = { policy_flag_agenda_defensive_focus }
+	    AI_weight = { factor = 0 }
+	}
+
+    option = {
+        name = "policy_agenda_naval_focus_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_naval_focus }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_industrial_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_industrial }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_science_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_science }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_finanical_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_finanical }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_welfare_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_welfare }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_expansionist_overtures_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_expansionist_overtures }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_national_purity_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_national_purity }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_public_debates_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_public_debates }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_import_export_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_import_export }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_native_privilege_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_native_privilege }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_skill_development_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_skill_development }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_slave_optimization_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_slave_optimization }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_selective_nostalgia_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_selective_nostalgia }
+        AI_weight = { factor = 0 }
+    }
+
+    option = {
+        name = "policy_agenda_xeno_outreach_option"
+		valid = { always = yes }
+        policy_flags = { policy_flag_agenda_xeno_outreach }
+        AI_weight = { factor = 0 }
+    }
+}

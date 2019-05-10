@@ -43,6 +43,10 @@
   decision_ringworld_specialization_science_effects_short:0 "Add the required frameworks for the ringworld to build §YResearch Districts§!."
   decision_ringworld_specialization_science_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §YResearch Districts§!."
 
+  decision_ringworld_specialization_refinery:0 "! Ringworld Specialization: Refinery Districts"
+  decision_ringworld_specialization_refinery_effects_short:0 "Add the required frameworks for the ringworld to build §YRefinery Districts§!."
+  decision_ringworld_specialization_refinery_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §YRefinery Districts§!."
+
   ## Districts : Ringworld
 
   district_ringworld_city:0 "$district_city$"
@@ -75,6 +79,10 @@
   district_ringworld_science_plural:0 "Research Districts"
   district_ringworld_science_desc:0 "Centers of scientific discovery, these districts employ researchers from myriad fields of study."
 
+  district_ringworld_refinery:0 "Refinery District"
+  district_ringworld_refinery_plural:0 "Refinery Districts"
+  district_ringworld_refinery_desc:0 "Geared towards refinery, gas, and translucing industries, this ringworld district is filled with the roar and smell of the different industries."
+
   ## Districts : Bases
 
   district_base_city:0 "Habitation District"
@@ -93,7 +101,7 @@
 
   district_asteroid_base_refinery:0 "Refinery District"
   district_asteroid_base_refinery_plural:0 "Refinery Districts"
-  district_asteroid_base_refinery_desc:0 "With the possible influx of minerals, the Refinery Districts ensure we can utilize every rare resource we find."
+  district_asteroid_base_refinery_desc:0 "With the possible influx of minerals, the §YRefinery Districts§! ensure we can utilize every rare resource we find."
 
   ## Districts : Moon Bases
 
@@ -137,6 +145,9 @@
 
   ringworld_specialization_science:0 "Tech-World"
   ringworld_specialization_science_desc:0 "This world is a seat of scientific research and technological advancement."
+
+  ringworld_specialization_refinery:0 "Refinery World"
+  ringworld_specialization_refinery_desc:0 "Much of the planetary surface is covered in a vast network of pipes, refineries, and distilleries. Try not to inhale too deeply."
 
   ## Megastructures : Improvised
 

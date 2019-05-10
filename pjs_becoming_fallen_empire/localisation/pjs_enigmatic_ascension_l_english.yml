@@ -1,8 +1,11 @@
 ﻿l_english:
 
-  ##
-  # Component Templates
-  ##
+  ## Buildings
+
+  building_utopian_paradise_dome:0 "Utopian Paradise Dome"
+  building_utopian_paradise_dome_desc:0 "Utopian Paradise Dome"
+
+  ## Component Templates
 
   PJS_GOLIATH_SHIP_AURA_SHIELD_DAMPENER:0 "Shield Dampener"
   PJS_GOLIATH_SHIP_AURA_QUANTUM_DESTABILIZER:0 "Quantum Destabilizer"
@@ -47,9 +50,22 @@
   PJS_PERDITION_BEAM_GOLIATH:0 "$PERDITION_BEAM$"
   PJS_PERDITION_BEAM_GOLIATH_DESC:0 "$PERDITION_BEAM_DESC$"
 
-  ##
-  # Section Templates
-  ##
+  ## Pop Categories
+
+  pop_cat_utopian_hedonist:0 "Hedonist"
+  pop_cat_utopian_hedonist_plural:0 "Hedonists"
+  mod_pop_utopian_hedonist_political_power:0 "$pop_cat_utopian_hedonist$ Political Power"
+  mod_pop_utopian_hedonist_happiness:0 "$pop_cat_utopian_hedonist$ Happiness"
+  pop_cat_utopian_hedonist_desc:0 "The dominant species in the empire, these hedonists live among technological marvels that the other races can only dream of."
+
+  ## Pop Jobs
+
+  job_utopian_hedonist:0 "$job_fe_hedonist$"
+  job_utopian_hedonist_plural:0 "$job_fe_hedonist_plural$"
+  job_utopian_hedonist_desc:0 "$job_fe_hedonist_desc$"
+  mod_job_utopian_hedonist_add:0 "$mod_job_fe_hedonist_add$"
+
+  ## Section Templates
 
   PJS_BATTLECRUISER_BOW_XL:0 "Edict Bow"
   PJS_BATTLECRUISER_APEX_L3:0 "Judgment Apex"
@@ -81,9 +97,7 @@
   PJS_WARMIND_MEDIUM:0 "Medium"
   PJS_WARMIND_HANGAR:0 "Hangar"
 
-  ##
-  # Ship Sizes
-  ##
+  ## Ship Sizes
 
   pjs_escort:0 "Escort"
   pjs_escort_plural:0 "Escorts"
@@ -100,9 +114,7 @@
   pjs_warmind:0 "Warmind"
   pjs_warmind_plural:0 "Warminds"
 
-  ##
-  # Species Classes
-  ##
+  ## Species Classes
 
   PJS_ENIGMATIC_SPIRITUALIST:0 "Enigmatic Spiritualist"
   PJS_ENIGMATIC_MATERIALIST:0 "Enigmatic Materialist"
@@ -110,9 +122,7 @@
   PJS_ENIGMATIC_XENOPHOBE:0 "Enigmatic Xenophobe"
   PJS_ENIGMATIC_MACHINE:0 "Enigmatic Machine"
 
-  ##
-  # Technology
-  ##
+  ## Technology
 
   tech_affluence_center:0 "$building_affluence_center$"
   tech_affluence_center_desc:0 "$building_affluence_center_desc$"
@@ -132,6 +142,9 @@
   tech_master_archive:0 "$building_master_archive$"
   tech_master_archive_desc:0 "$building_master_archive_desc$"
 
+  tech_utopian_paradise_dome "Utopian Architecture"
+  tech_utopian_paradise_dome_desc "With the latest advances in architecture, landscaping and holographic technology, we shall build the homes of the future."
+
   tech_pjs_escort:0 "Escorts"
   tech_pjs_escort_desc:0 "Modeled after the agile ships looming in the core systems of Stagnant Ascendancies, the Escort class is a great improvement on the Corvette and Destroyer classes, and can be fitted with a decent amount of weapons."
 
@@ -143,6 +156,8 @@
 
   tech_pjs_goliath:0 "Goliaths"
   tech_pjs_goliath_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Goliath class is a fearsome ship to meet in a battle."
+
+  ## Technology Unlock Description
 
   TECH_UNLOCK_AFFLUENCE_CENTER_TITLE:0 "§HUnlocks Building:§! $building_affluence_center$"
   TECH_UNLOCK_AFFLUENCE_CENTER_DESC:0 "$building_affluence_center_desc$"
@@ -162,9 +177,7 @@
   TECH_UNLOCK_MASTER_ARCHIVE_TITLE:0 "§HUnlocks Building:§! $building_master_archive$"
   TECH_UNLOCK_MASTER_ARCHIVE_DESC:0 "$building_master_archive_desc$"
 
-  ##
-  # Events
-  ##
+  ## Events
 
   pjs_enigmatic_ascension_event.2.name:0 "Fallen Empire Ships"
   pjs_enigmatic_ascension_event.2.desc:0 "Do you want to change your graphical culture of your empire? This will (sadly) not affect your currently built ships or stations, but all new constructions will have the style you pick.\n\n(I have reported this as a bug. If you want to change all styles you can do so with the console command \"gfxculture fallen_empire_01\"."

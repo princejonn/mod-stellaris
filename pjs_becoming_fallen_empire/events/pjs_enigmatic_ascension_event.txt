@@ -21,6 +21,7 @@ country_event = {
             has_technology = tech_class_4_singularity
             has_technology = tech_nano_forge
             has_technology = tech_master_archive
+            has_technology = tech_utopian_paradise_dome
         }
 
         NOT = { has_country_flag = player_pjs_enigmatic_ascension }

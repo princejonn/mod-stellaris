@@ -335,3 +335,102 @@ district_ringworld_science = {
 		}
 	}
 }
+
+district_ringworld_refinery = {
+	base_buildtime = 800
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    has_modifier = ringworld_specialization_refinery
+	}
+
+	potential = {
+	    exists = owner
+	    has_modifier = ringworld_specialization_refinery
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+		    minerals = 1600
+		}
+		upkeep = {
+		    energy = 30
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 15
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_gas_refiner_add = 5
+			job_chemist_add = 5
+			job_translucer_add = 5
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_crystal_gases_motes_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_gas_refiner_drone_add = 5
+			job_chemist_drone_add = 5
+			job_translucer_drone_add = 5
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+        }
+        text = job_crystal_gases_motes_drone_effect_desc
+    }
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_gas_refiner_drone_add = 5
+			job_chemist_drone_add = 5
+			job_translucer_drone_add = 5
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+        }
+        text = job_crystal_gases_motes_drone_effect_desc
+    }
+
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			weight = 90000
+			planet = {
+				num_districts = { type = district_ringworld_refinery value < 1 }
+			}
+		}
+	}
+}

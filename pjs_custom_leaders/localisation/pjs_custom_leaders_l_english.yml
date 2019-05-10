@@ -44,3 +44,72 @@
 
   PJS_CUSTOM_LEADERS_PROJECT:0 "Customize Leaders"
   PJS_CUSTOM_LEADERS_PROJECT_DESC:0 "By researching this, you will be able to customize your leaders!"
+
+  ## Policy
+
+  policy_policy_custom_agenda:0 "Custom Agenda"
+  policy_policy_custom_agenda_desc:0 "Selecting one of these will ensure your empire leaders will have this agenda in the future."
+
+  policy_agenda_null:0 "None"
+  policy_agenda_null_name:0 "None"
+  policy_agenda_null_desc:0 "None"
+
+  policy_agenda_defensive_focus_option:0 "$agenda_defensive_focus$"
+  policy_agenda_defensive_focus_option_name:0 "$agenda_defensive_focus$"
+  policy_agenda_defensive_focus_option_desc:0 "$agenda_defensive_focus$"
+
+  policy_agenda_naval_focus_option:0 "$agenda_naval_focus$"
+  policy_agenda_naval_focus_option_name:0 "$agenda_naval_focus$"
+  policy_agenda_naval_focus_option_desc:0 "$agenda_naval_focus$"
+
+  policy_agenda_industrial_option:0 "$agenda_industrial$"
+  policy_agenda_industrial_option_name:0 "$agenda_industrial$"
+  policy_agenda_industrial_option_desc:0 "$agenda_industrial$"
+
+  policy_agenda_science_option:0 "$agenda_science$"
+  policy_agenda_science_option_name:0 "$agenda_science$"
+  policy_agenda_science_option_desc:0 "$agenda_science$"
+
+  policy_agenda_finanical_option:0 "$agenda_finanical$"
+  policy_agenda_finanical_option_name:0 "$agenda_finanical$"
+  policy_agenda_finanical_option_desc:0 "$agenda_finanical$"
+
+  policy_agenda_welfare_option:0 "$agenda_welfare$"
+  policy_agenda_welfare_option_name:0 "$agenda_welfare$"
+  policy_agenda_welfare_option_desc:0 "$agenda_welfare$"
+
+  policy_agenda_expansionist_overtures_option:0 "$agenda_expansionist_overtures$"
+  policy_agenda_expansionist_overtures_option_name:0 "$agenda_expansionist_overtures$"
+  policy_agenda_expansionist_overtures_option_desc:0 "$agenda_expansionist_overtures$"
+
+  policy_agenda_national_purity_option:0 "$agenda_national_purity$"
+  policy_agenda_national_purity_option_name:0 "$agenda_national_purity$"
+  policy_agenda_national_purity_option_desc:0 "$agenda_national_purity$"
+
+  policy_agenda_public_debates_option:0 "$agenda_public_debates$"
+  policy_agenda_public_debates_option_name:0 "$agenda_public_debates$"
+  policy_agenda_public_debates_option_desc:0 "$agenda_public_debates$"
+
+  policy_agenda_import_export_option:0 "$agenda_import_export$"
+  policy_agenda_import_export_option_name:0 "$agenda_import_export$"
+  policy_agenda_import_export_option_desc:0 "$agenda_import_export$"
+
+  policy_agenda_native_privilege_option:0 "$agenda_native_privilege$"
+  policy_agenda_native_privilege_option_name:0 "$agenda_native_privilege$"
+  policy_agenda_native_privilege_option_desc:0 "$agenda_native_privilege$"
+
+  policy_agenda_skill_development_option:0 "$agenda_skill_development$"
+  policy_agenda_skill_development_option_name:0 "$agenda_skill_development$"
+  policy_agenda_skill_development_option_desc:0 "$agenda_skill_development$"
+
+  policy_agenda_slave_optimization_option:0 "$agenda_slave_optimization$"
+  policy_agenda_slave_optimization_option_name:0 "$agenda_slave_optimization$"
+  policy_agenda_slave_optimization_option_desc:0 "$agenda_slave_optimization$"
+
+  policy_agenda_selective_nostalgia_option:0 "$agenda_selective_nostalgia$"
+  policy_agenda_selective_nostalgia_option_name:0 "$agenda_selective_nostalgia$"
+  policy_agenda_selective_nostalgia_option_desc:0 "$agenda_selective_nostalgia$"
+
+  policy_agenda_xeno_outreach_option:0 "$agenda_xeno_outreach$"
+  policy_agenda_xeno_outreach_option_name:0 "$agenda_xeno_outreach$"
+  policy_agenda_xeno_outreach_option_desc:0 "$agenda_xeno_outreach$"
