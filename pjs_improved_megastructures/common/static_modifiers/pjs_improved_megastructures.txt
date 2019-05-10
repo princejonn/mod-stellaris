@@ -44,3 +44,8 @@ ringworld_specialization_science = {
     icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_science.dds"
     icon_frame = 1
 }
+
+ringworld_specialization_refinery = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_refinery.dds"
+    icon_frame = 1
+}
