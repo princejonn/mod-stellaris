@@ -10,6 +10,10 @@ district_city = {
 		from = { is_regular_empire = yes }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
+		NOT = { is_planet_class = pc_ecocity }
+		NOT = { is_planet_class = pc_archive }
+		NOT = { is_planet_class = pc_machine_factory }
+		NOT = { is_planet_class = pc_bioforge }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = asteroid_base }
 		NOT = { has_modifier = moon_base }
@@ -20,6 +24,10 @@ district_city = {
 		owner = { is_regular_empire = yes }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
+		NOT = { is_planet_class = pc_ecocity }
+		NOT = { is_planet_class = pc_archive }
+		NOT = { is_planet_class = pc_machine_factory }
+		NOT = { is_planet_class = pc_bioforge }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = asteroid_base }
 		NOT = { has_modifier = moon_base }
@@ -247,6 +255,9 @@ district_hive = {
 		from = { is_hive_empire = yes }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
+		NOT = { is_planet_class = pc_ecocity }
+		NOT = { is_planet_class = pc_archive }
+		NOT = { is_planet_class = pc_machine_factory }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = asteroid_base }
 		NOT = { has_modifier = moon_base }
@@ -257,6 +268,9 @@ district_hive = {
 		owner = { is_hive_empire = yes }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
+		NOT = { is_planet_class = pc_ecocity }
+		NOT = { is_planet_class = pc_archive }
+		NOT = { is_planet_class = pc_machine_factory }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = asteroid_base }
 		NOT = { has_modifier = moon_base }
@@ -447,6 +461,8 @@ district_nexus = {
 		from = { is_machine_empire = yes }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
+		NOT = { is_planet_class = pc_ecocity }
+		NOT = { is_planet_class = pc_archive }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = asteroid_base }
 		NOT = { has_modifier = moon_base }
@@ -457,6 +473,8 @@ district_nexus = {
 		owner = { is_machine_empire = yes }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_city }
+		NOT = { is_planet_class = pc_ecocity }
+		NOT = { is_planet_class = pc_archive }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = asteroid_base }
 		NOT = { has_modifier = moon_base }
