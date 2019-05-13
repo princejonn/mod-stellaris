@@ -9,23 +9,16 @@ decision_build_base = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 100
-			alloys = 250
-			minerals = 1000
+			influence = 150
+			alloys = 1500
 		}
 	}
 
 	potential = {
 		NOT = { has_modifier = terraforming_candidate }
-		planet_size < 9
-		OR = {
-            is_planet_class = pc_asteroid
-            is_planet_class = pc_ice_asteroid
-            is_planet_class = pc_barren
-            is_planet_class = pc_barren_cold
-            is_planet_class = pc_frozen
-            is_planet_class = pc_molten
-            is_planet_class = pc_toxic
+        OR = {
+            is_asteroid = yes
+            is_moon = yes
         }
 	}
 
