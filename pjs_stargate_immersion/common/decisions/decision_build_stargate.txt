@@ -9,9 +9,12 @@ decision_build_stargate = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 120
-			alloys = 1200
-			rare_crystals = 1200
+			influence = 100
+			alloys = 800
+			rare_crystals = 300
+			exotic_gases = 300
+			volatile_motes = 300
+			sr_living_metal = 10
 		}
 	}
 
