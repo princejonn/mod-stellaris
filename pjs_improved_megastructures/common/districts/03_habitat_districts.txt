@@ -170,8 +170,8 @@ district_hab_commercial = {
 
 	planet_modifier = {
 		planet_housing_add = 8
-		job_merchant_add = 2
-		job_clerk_add = 6
+		job_merchant_add = 1
+		job_clerk_add = 7
 	}
 
 	triggered_desc = {
