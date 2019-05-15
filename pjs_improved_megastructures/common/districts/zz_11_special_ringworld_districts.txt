@@ -3,11 +3,13 @@ district_ringworld_arms_industry = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+	    is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_arms_industry
 	}
 
 	potential = {
 	    exists = owner
+	    is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_arms_industry
 	}
 
@@ -96,11 +98,13 @@ district_ringworld_civilian_industry = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+        is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_civilian_industry
 	}
 
 	potential = {
 	    exists = owner
+	    is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_civilian_industry
 	}
 
@@ -171,11 +175,13 @@ district_ringworld_leisure = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+        is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_leisure
 	}
 
 	potential = {
 	    exists = owner
+	    is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_leisure
 	}
 
@@ -248,11 +254,13 @@ district_ringworld_science = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+        is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_science
 	}
 
 	potential = {
 	    exists = owner
+	    is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_science
 	}
 
@@ -341,11 +349,13 @@ district_ringworld_refinery = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+        is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_refinery
 	}
 
 	potential = {
 	    exists = owner
+	    is_planet_class = pc_ringworld_habitable
 	    has_modifier = ringworld_specialization_refinery
 	}
 
