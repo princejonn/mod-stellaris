@@ -65,42 +65,42 @@
 
   ## Districts : Ringworld
 
-  district_ringworld_city:0 "$district_city$"
-  district_ringworld_city_plural:0 "$district_city_plural$"
+  district_ringworld_city:0 "City Segment"
+  district_ringworld_city_plural:0 "City Segments"
   district_ringworld_city_desc:0 "$district_city_desc$"
 
-  district_ringworld_generator:0 "$district_generator$"
-  district_ringworld_generator_plural:0 "$district_generator_plural$"
+  district_ringworld_generator:0 "Generator Segment"
+  district_ringworld_generator_plural:0 "Generator Segments"
   district_ringworld_generator_desc:0 "$district_generator_desc$"
 
-  district_ringworld_commercial:0 "Trading District"
-  district_ringworld_commercial_plural:0 "Trading Districts"
+  district_ringworld_commercial:0 "Trading Segment"
+  district_ringworld_commercial_plural:0 "Trading Segments"
   district_ringworld_commercial_desc:0 "A sprawling ringworld trading district where merchants and clerks conduct business, and artisans make exquisite trade goods."
 
-  district_ringworld_farming:0 "$district_farming$"
-  district_ringworld_farming_plural:0 "$district_farming_plural$"
+  district_ringworld_farming:0 "Agricultural Segment"
+  district_ringworld_farming_plural:0 "Agricultural Segments"
   district_ringworld_farming_desc:0 "$district_farming_desc$"
 
   ## Districts : Ringworld Specializations
 
-  district_ringworld_arms_industry:0 "Foundry District"
-  district_ringworld_arms_industry_plural:0 "Foundry Districts"
+  district_ringworld_arms_industry:0 "Foundry Segment"
+  district_ringworld_arms_industry_plural:0 "Foundry Segments"
   district_ringworld_arms_industry_desc:0 "Geared towards military industries, this ringworld district is filled with the roar of smelters and the clang of metallurgies."
 
-  district_ringworld_civilian_industry:0 "Industrial District"
-  district_ringworld_civilian_industry_plural:0 "Industrial Districts"
+  district_ringworld_civilian_industry:0 "Industrial Segment"
+  district_ringworld_civilian_industry_plural:0 "Industrial Segments"
   district_ringworld_civilian_industry_desc:0 "Workshops filled with artisans and civilian industries line the stacked streets of this district."
 
-  district_ringworld_leisure:0 "Leisure District"
-  district_ringworld_leisure_plural:0 "Leisure Districts"
+  district_ringworld_leisure:0 "Leisure Segment"
+  district_ringworld_leisure_plural:0 "Leisure Segments"
   district_ringworld_leisure_desc:0 "Where denizens of the ringworld unwind in their leisure hours."
 
-  district_ringworld_science:0 "Research District"
-  district_ringworld_science_plural:0 "Research Districts"
+  district_ringworld_science:0 "Research Segment"
+  district_ringworld_science_plural:0 "Research Segments"
   district_ringworld_science_desc:0 "Centers of scientific discovery, these districts employ researchers from myriad fields of study."
 
-  district_ringworld_refinery:0 "Refinery District"
-  district_ringworld_refinery_plural:0 "Refinery Districts"
+  district_ringworld_refinery:0 "Refinery Segment"
+  district_ringworld_refinery_plural:0 "Refinery Segments"
   district_ringworld_refinery_desc:0 "Geared towards refinery, gas, and translucing industries, this ringworld district is filled with the roar and smell of the different industries."
 
   ## Districts : Bases
