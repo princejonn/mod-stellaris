@@ -1,5 +1,5 @@
 district_ringworld_city = {
-	base_buildtime = 500
+	base_buildtime = 600
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -14,15 +14,15 @@ district_ringworld_city = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 1000
+			minerals = 1800
 		}
 		upkeep = {
-			energy = 5
+			energy = 10
 		}
 	}
 
 	planet_modifier = {
-		planet_housing_add = 40
+		planet_housing_add = 70
 	}
 
 
@@ -33,6 +33,7 @@ district_ringworld_city = {
 		}
 		modifier = {
 			job_clerk_add = 10
+		    job_enforcer_add = 1
 		}
 	}
 	triggered_desc = {
@@ -40,7 +41,7 @@ district_ringworld_city = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
-		text = job_clerk_effect_desc
+		text = job_clerk_enforcer_effect_desc
 	}
 
 
@@ -51,6 +52,7 @@ district_ringworld_city = {
 		}
 		modifier = {
 			job_maintenance_drone_add = 10
+		    job_patrol_drone_add = 1
 		}
 	}
 	triggered_desc = {
@@ -58,7 +60,7 @@ district_ringworld_city = {
 			exists = owner
 			owner = { is_gestalt = yes }
 		}
-		text = job_maintenance_drone_effect_desc
+		text = job_maintenance_drone_patrol_drone_effect_desc
 	}
 
 
@@ -94,92 +96,38 @@ district_ringworld_city = {
 }
 
 district_ringworld_generator = {
-	base_buildtime = 500
+	base_buildtime = 600
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+		from = { is_gestalt = yes }
 		is_planet_class = pc_ringworld_habitable
 	}
 
 	potential = {
 		exists = owner
+        owner = { is_gestalt = yes }
 		is_planet_class = pc_ringworld_habitable
 	}
 
 	resources = {
 		category = planet_districts
 		cost = {
-		    minerals = 1000
+		    minerals = 1800
 		}
 		upkeep = {
-		    energy = 5
+		    energy = 10
 		}
 	}
 
 	planet_modifier = {
 		planet_housing_add = 20
+        job_technician_drone_add = 20
 	}
 
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				is_fallen_empire_spiritualist = no
-			}
-		}
-		modifier = {
-			job_technician_add = 20
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				is_fallen_empire_spiritualist = no
-			}
-		}
-		text = job_technician_effect_desc
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-            job_technician_drone_add = 20
-		}
-	}
     triggered_desc = {
-        trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-        }
         text = job_technician_drone_effect_desc
     }
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_fallen_empire_spiritualist = yes }
-		}
-		modifier = {
-			job_fe_acolyte_generator_add = 20
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_fallen_empire_spiritualist = yes }
-		}
-		text = job_fe_acolyte_generator_effect_desc
-	}
-
 
 	ai_weight = {
 		weight = 10
@@ -208,8 +156,71 @@ district_ringworld_generator = {
 	}
 }
 
+district_ringworld_commercial = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+        from = { is_gestalt = no }
+		is_planet_class = pc_ringworld_habitable
+	}
+
+	potential = {
+		exists = owner
+        owner = { is_gestalt = no }
+		is_planet_class = pc_ringworld_habitable
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+		    minerals = 1800
+		}
+		upkeep = {
+		    energy = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+        job_merchant_add = 5
+        job_artisan_add = 5
+        job_clerk_add = 10
+	}
+
+	triggered_desc = {
+		text = job_merchant_artisan_clerk_effect_desc
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			weight = 90000
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 10
+				}
+			}
+		}
+		modifier = {
+			weight = 90000
+			planet = {
+				num_districts = { type = district_ringworld_commercial value < 1 }
+			}
+		}
+		modifier = {
+			weight = 90000
+			planet = {
+				owner = { has_ascension_perk = ap_master_builders }
+				num_districts = { type = district_ringworld_commercial value < 2 }
+			}
+		}
+	}
+}
+
 district_ringworld_farming = {
-	base_buildtime = 500
+	base_buildtime = 600
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -224,10 +235,10 @@ district_ringworld_farming = {
 	resources = {
 		category = planet_districts
 		cost = {
-		    minerals = 1000
+		    minerals = 1800
 		}
 		upkeep = {
-		    energy = 5
+		    energy = 10
 		}
 	}
 

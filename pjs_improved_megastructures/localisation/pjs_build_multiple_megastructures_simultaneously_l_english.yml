@@ -21,6 +21,22 @@
   col_ringworld:0 "Ringworld"
   col_ringworld_desc:0 "No specializations available for this planet class."
 
+  col_ringworld_specialization_arms_industry:0 "$col_foundry$"
+  col_ringworld_specialization_arms_industry_desc:0 "$col_foundry_desc$"
+
+  col_ringworld_specialization_civilian_industry:0 "$col_factory$"
+  col_ringworld_specialization_civilian_industry_desc:0 "$col_factory_desc$"
+
+  col_ringworld_specialization_leisure:0 "Leisure World"
+  col_ringworld_specialization_leisure_desc:0 "Where denizens of the empire unwind in their leisure hours."
+
+  col_ringworld_specialization_science:0 "$col_research$"
+  col_ringworld_specialization_science_desc:0 "$col_research_desc$"
+
+  col_ringworld_specialization_refinery:0 "$col_refinery$"
+  col_ringworld_specialization_refinery_desc:0 "$col_refinery_desc$"
+
+
   ## Decisions
 
   decision_build_base:0 "Construct Base Framework"
@@ -56,6 +72,10 @@
   district_ringworld_generator:0 "$district_generator$"
   district_ringworld_generator_plural:0 "$district_generator_plural$"
   district_ringworld_generator_desc:0 "$district_generator_desc$"
+
+  district_ringworld_commercial:0 "Trading District"
+  district_ringworld_commercial_plural:0 "Trading Districts"
+  district_ringworld_commercial_desc:0 "A sprawling ringworld trading district where merchants and clerks conduct business, and artisans make exquisite trade goods."
 
   district_ringworld_farming:0 "$district_farming$"
   district_ringworld_farming_plural:0 "$district_farming_plural$"
@@ -117,6 +137,10 @@
 
   job_crystal_gases_motes_effect_desc:0 "$job_translucer_effect_desc$\n$job_gas_refiner_effect_desc$\n$job_chemist_effect_desc$"
   job_crystal_gases_motes_drone_effect_desc:0 "$job_translucer_drone_effect_desc$\n$job_gas_refiner_drone_effect_desc$\n$job_chemist_drone_effect_desc$"
+
+  job_clerk_enforcer_effect_desc:0 "$job_clerk_effect_desc$\n$job_enforcer_effect_desc$"
+  job_maintenance_drone_patrol_drone_effect_desc:0 "$job_maintenance_drone_effect_desc$\n$job_patrol_drone_effect_desc$"
+  job_merchant_artisan_clerk_effect_desc:0 "$job_merchant_effect_desc$\n$job_artisan_effect_desc$\n$job_clerk_effect_desc$"
 
   ## Static Modifiers
 

@@ -1,5 +1,5 @@
 district_ringworld_arms_industry = {
-	base_buildtime = 800
+	base_buildtime = 900
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -14,7 +14,7 @@ district_ringworld_arms_industry = {
 	resources = {
 		category = planet_districts
 		cost = {
-		    minerals = 1600
+		    minerals = 2400
 		}
 		upkeep = {
 		    energy = 10
@@ -92,7 +92,7 @@ district_ringworld_arms_industry = {
 }
 
 district_ringworld_civilian_industry = {
-	base_buildtime = 800
+	base_buildtime = 900
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -107,7 +107,7 @@ district_ringworld_civilian_industry = {
 	resources = {
 		category = planet_districts
 		cost = {
-		    minerals = 1600
+		    minerals = 2400
 		}
 		upkeep = {
 		    energy = 10
@@ -167,7 +167,7 @@ district_ringworld_civilian_industry = {
 }
 
 district_ringworld_leisure = {
-	base_buildtime = 800
+	base_buildtime = 900
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -182,7 +182,7 @@ district_ringworld_leisure = {
 	resources = {
 		category = planet_districts
 		cost = {
-		    minerals = 1600
+		    minerals = 2400
 		}
 		upkeep = {
 		    energy = 10
@@ -244,7 +244,7 @@ district_ringworld_leisure = {
 }
 
 district_ringworld_science = {
-	base_buildtime = 800
+	base_buildtime = 900
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -259,7 +259,7 @@ district_ringworld_science = {
 	resources = {
 		category = planet_districts
 		cost = {
-		    minerals = 1600
+		    minerals = 2400
 		}
 		upkeep = {
 		    energy = 10
@@ -337,7 +337,7 @@ district_ringworld_science = {
 }
 
 district_ringworld_refinery = {
-	base_buildtime = 800
+	base_buildtime = 900
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
@@ -352,7 +352,7 @@ district_ringworld_refinery = {
 	resources = {
 		category = planet_districts
 		cost = {
-		    minerals = 1600
+		    minerals = 2400
 		}
 		upkeep = {
 		    energy = 30
