@@ -4,13 +4,21 @@ district_hab_science = {
 
 	show_on_uncolonized = {
 		is_planet_class = pc_habitat
-	    has_modifier = habitat_specialization_science
+	    NOT = { has_modifier = habitat_specialization_astro_mining }
+	    NOT = { has_modifier = habitat_specialization_hydroponics }
+	    NOT = { has_modifier = habitat_specialization_exotic_gases }
+	    NOT = { has_modifier = habitat_specialization_rare_crystals }
+	    NOT = { has_modifier = habitat_specialization_volatile_motes }
 	}
 
 	potential = {
 		exists = owner
 		is_planet_class = pc_habitat
-	    has_modifier = habitat_specialization_science
+	    NOT = { has_modifier = habitat_specialization_astro_mining }
+	    NOT = { has_modifier = habitat_specialization_hydroponics }
+	    NOT = { has_modifier = habitat_specialization_exotic_gases }
+	    NOT = { has_modifier = habitat_specialization_rare_crystals }
+	    NOT = { has_modifier = habitat_specialization_volatile_motes }
 	}
 
 	resources = {
@@ -123,7 +131,7 @@ district_hab_astro_mining = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 8
+		planet_housing_add = 5
 	}
 
 
@@ -133,7 +141,7 @@ district_hab_astro_mining = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_miner_add = 8
+			job_miner_add = 5
 		}
 	}
 	triggered_desc = {
@@ -150,7 +158,7 @@ district_hab_astro_mining = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 8
+			job_mining_drone_add = 5
 		}
 	}
 	triggered_desc = {
@@ -199,7 +207,7 @@ district_hab_hydroponics = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 8
+		planet_housing_add = 5
 	}
 
 
@@ -209,7 +217,7 @@ district_hab_hydroponics = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_farmer_add = 8
+			job_farmer_add = 5
 		}
 	}
 	triggered_desc = {
@@ -226,7 +234,7 @@ district_hab_hydroponics = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_agri_drone_add = 8
+			job_agri_drone_add = 5
 		}
 	}
 	triggered_desc = {
@@ -275,7 +283,7 @@ district_hab_exotic_gases = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 4
+		planet_housing_add = 2
 	}
 
 
@@ -285,7 +293,7 @@ district_hab_exotic_gases = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_gas_extractor_add = 4
+			job_gas_extractor_add = 2
 		}
 	}
 	triggered_desc = {
@@ -302,7 +310,7 @@ district_hab_exotic_gases = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_gas_extraction_drone_add = 4
+			job_gas_extraction_drone_add = 2
 		}
 	}
 	triggered_desc = {
@@ -351,7 +359,7 @@ district_hab_rare_crystals = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 4
+		planet_housing_add = 2
 	}
 
 
@@ -361,7 +369,7 @@ district_hab_rare_crystals = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_crystal_miner_add = 4
+			job_crystal_miner_add = 2
 		}
 	}
 	triggered_desc = {
@@ -378,7 +386,7 @@ district_hab_rare_crystals = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_crystal_mining_drone_add = 4
+			job_crystal_mining_drone_add = 2
 		}
 	}
 	triggered_desc = {
@@ -427,7 +435,7 @@ district_hab_volatile_motes = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 4
+		planet_housing_add = 2
 	}
 
 
@@ -437,7 +445,7 @@ district_hab_volatile_motes = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_mote_harvester_add = 4
+			job_mote_harvester_add = 2
 		}
 	}
 	triggered_desc = {
@@ -454,7 +462,7 @@ district_hab_volatile_motes = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_mote_harvesting_drone_add = 4
+			job_mote_harvesting_drone_add = 2
 		}
 	}
 	triggered_desc = {
