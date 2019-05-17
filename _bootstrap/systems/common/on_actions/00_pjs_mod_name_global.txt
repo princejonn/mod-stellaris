@@ -1,0 +1,3 @@
+on_game_start = {
+	events = { pjs_mod_name_global.1 }
+}

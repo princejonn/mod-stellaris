@@ -1,0 +1,168 @@
+custom_pjs_machineworld_trinary = {
+	name = "Rho Majoris Carina"
+	class = "sc_trinary_2"
+	usage = custom_empire
+	flags = { empire_home_system }
+	usage_odds = { base = 0 }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+        name = "Rho Majoris Carina A"
+		class = "pc_b_star"
+		size = 32
+		orbit_distance = 0
+		orbit_angle = 1
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_physics_10
+		}
+	}
+
+    planet = {
+        name = "Rho Majoris Carina B"
+        class = "pc_a_star"
+        size = 28
+        orbit_distance = 350
+        orbit_angle = 40
+        has_ring = no
+
+        planet = {
+            name = "Rho Majoris Carina B I"
+            class = "pc_molten"
+            size = 18
+            orbit_distance = 65
+            orbit_angle = { min = 30 max = 270 }
+        }
+
+        planet = {
+            name = "Rho Majoris Carina B II"
+            class = "pc_barren"
+            size = 25
+            orbit_distance = 20
+            orbit_angle = { min = 30 max = 270 }
+        }
+
+        planet = {
+            name = "Rho Majoris Carina B III"
+            class = "pc_gaia"
+            size = 20
+            orbit_distance = 20
+            orbit_angle = { min = 30 max = 270 }
+        }
+
+        planet = {
+            name = "Rho Majoris Carina B IV"
+            class = "pc_gas_giant"
+            size = 25
+            orbit_distance = 30
+            orbit_angle = { min = 30 max = 270 }
+        }
+    }
+
+    planet = {
+        name = "Rho Majoris Carina C"
+        class = "pc_f_star"
+        size = 18
+        orbit_distance = 35
+        orbit_angle = 130
+        has_ring = no
+
+        planet = {
+            name = "Rho Majoris Carina C I"
+            class = "pc_molten"
+            size = 20
+            orbit_distance = 40
+            orbit_angle = { min = 30 max = 270 }
+        }
+
+        planet = {
+            name = "Rho Majoris Carina B II"
+            class = "pc_gaia"
+            size = 20
+            orbit_distance = 20
+            orbit_angle = { min = 30 max = 270 }
+        }
+
+        planet = {
+            name = "Rho Majoris Carina C III"
+            class = "pc_gas_giant"
+            size = 29
+            orbit_distance = 30
+            orbit_angle = { min = 30 max = 270 }
+        }
+    }
+
+    change_orbit = -350
+
+    planet = {
+		name = "Rho Majoris Carina A I"
+        class = "pc_molten"
+        size = 20
+        orbit_distance = 50
+        orbit_angle = { min = 30 max = 270 }
+    }
+
+    planet = {
+		name = "Rho Majoris Carina A II"
+        class = "pc_barren"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = { min = 30 max = 270 }
+    }
+
+    planet = {
+		name = "Rho Majoris Carina A III"
+        class = "pc_toxic"
+        size = 22
+        orbit_distance = 20
+        orbit_angle = { min = 30 max = 270 }
+    }
+
+	planet = {
+		name = "Rho Majoris Carina A IV"
+        class = "pc_machine"
+        size = 25
+        orbit_distance = 25
+        orbit_angle = { min = 20 max = 220 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+		flags = { machine_world_start }
+
+        starting_planet = yes
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
+
+	planet = {
+		name = "Rho Majoris Carina A V"
+        class = "pc_machine"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = { min = 20 max = 220 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+	}
+
+    neighbor_system = {
+        distance = { min = 0 max = 50 }
+        initializer = "neighbor_t1_first_colony"
+    }
+
+    neighbor_system = {
+        distance = { min = 0 max = 50 }
+        initializer = "neighbor_t1"
+    }
+}

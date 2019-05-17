@@ -1,0 +1,55 @@
+misc_pjs_watchtower = {
+	name = "Watchtower"
+    class = "sc_k"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+    planet = {
+        class = "pc_k_star"
+        size = 24
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+        has_ring = no
+
+        init_effect = {
+            save_event_target_as = spy_orb_target
+        }
+    }
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+            location = planet
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+            location = planet
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+            location = planet
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+            location = planet
+        }
+
+        spawn_megastructure = {
+            type = "spy_orb_ruined"
+            location = event_target:spy_orb_target
+        }
+    }
+}

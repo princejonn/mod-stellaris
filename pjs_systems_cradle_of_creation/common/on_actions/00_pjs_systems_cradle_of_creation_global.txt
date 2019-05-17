@@ -1,0 +1,3 @@
+on_game_start = {
+	events = { pjs_systems_cradle_of_creation_global.1 }
+}

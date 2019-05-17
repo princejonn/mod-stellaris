@@ -1,0 +1,122 @@
+misc_pjs_turrim_crepusculum = {
+	name = "Turrim Crepusculum"
+	class = "sc_m"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+	planet = {
+		class = "pc_m_star"
+		size = 22
+		orbit_distance = 0
+		orbit_angle = 1
+
+		init_effect = {
+            save_event_target_as = dyson_sphere_target
+        }
+	}
+
+	change_orbit = 45
+
+	planet = {
+        name = "Regio Senatores"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+    }
+	planet = {
+        name = "Ring Section I"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section II"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Regio Civium"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+    }
+    planet = {
+        name = "Ring Section III"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_physics_8
+		}
+    }
+    planet = {
+        name = "Ring Section IV"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Regio Populus"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+    }
+    planet = {
+        name = "Ring Section V"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section VI"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_engineering_8
+		}
+    }
+    planet = {
+        name = "Regio Servorum"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+    }
+    planet = {
+        name = "Ring Section VII"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Ring Section VIII"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_living_metal_deposit
+		}
+    }
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "dyson_sphere_ruined"
+            location = event_target:dyson_sphere_target
+        }
+    }
+}

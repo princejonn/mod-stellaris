@@ -1,0 +1,7 @@
+﻿l_english:
+
+  custom_pjs_machineworld_adrift_NAME:0 "§SMachineworld Adrift"
+  custom_pjs_machineworld_adrift_DESC:0 "§RWARNING - Not suitable for organic species!§!\n\nMachineworld staring planet orbiting a large black hole.\n\n$system_initializer_DESC$"
+
+  custom_pjs_machineworld_trinary_NAME:0 "§SMachineworld Trinary"
+  custom_pjs_machineworld_trinary_DESC:0 "§RWARNING - Not suitable for organic species!§!\n\nMachineworld staring planet orbiting a star in a trinary system, with two extra gaia worlds suitable for the pampered pops..\n\n$system_initializer_DESC$"

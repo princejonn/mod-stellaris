@@ -1,0 +1,216 @@
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_desert"
+
+	energy = 5000
+	duration = 3600
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_arid"
+
+	energy = 5000
+	duration = 3600
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_savannah"
+
+	energy = 5000
+	duration = 3600
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_continental"
+
+	energy = 10000
+	duration = 5400
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_tropical"
+
+	energy = 10000
+	duration = 5400
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_ocean"
+
+	energy = 10000
+	duration = 5400
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_arctic"
+
+	energy = 15000
+	duration = 7200
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_tundra"
+
+	energy = 15000
+	duration = 7200
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_alpine"
+
+	energy = 15000
+	duration = 7200
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

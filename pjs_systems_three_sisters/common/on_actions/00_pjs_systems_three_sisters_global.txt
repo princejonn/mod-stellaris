@@ -1,0 +1,3 @@
+on_game_start = {
+	events = { pjs_systems_three_sisters_global.1 }
+}

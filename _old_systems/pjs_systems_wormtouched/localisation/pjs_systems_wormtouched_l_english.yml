@@ -1,0 +1,6 @@
+﻿l_english:
+
+  sc_pjs_trinary_galileo:0 "Trinary Stars"
+
+  custom_pjs_wormtouched_NAME:0 "§SWormtouched"
+  custom_pjs_wormtouched_DESC:0 "§RWARNING - Unfair Advantage!§!\n\nSystem with a size 25 gaia starting world and multiple other habitable planets.\n\n$system_initializer_DESC$"

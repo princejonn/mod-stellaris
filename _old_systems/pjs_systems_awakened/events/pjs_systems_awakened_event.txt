@@ -1,0 +1,253 @@
+namespace = pjs_systems_awakened_event
+
+planet_event = {
+	id = pjs_systems_awakened_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    if = {
+            limit = { has_planet_flag = awakened_empire_start }
+
+            clear_deposits = yes
+
+            while = { count = 10
+                remove_district = district_city
+                remove_district = district_arcology_housing
+                remove_district = district_hive
+                remove_district = district_nexus
+                remove_district = district_generator
+                remove_district = district_generator_uncapped
+                remove_district = district_mining
+                remove_district = district_farming
+                remove_district = district_farming_uncapped
+            }
+
+            if = {
+                limit = { owner = { is_regular_empire = yes } }
+
+                change_pc = "pc_city"
+
+                while = { count = 9
+                    add_district = district_arcology_housing
+                }
+                while = { count = 1
+                    add_district = district_arcology_civilian_industry
+                }
+                while = { count = 2
+                    add_district = district_arcology_leisure
+                }
+
+                add_building = building_affluence_center
+                add_building = building_nourishment_center
+            }
+
+            if = {
+                limit = { owner = { is_hive_empire = yes } }
+
+                change_pc = "pc_hive"
+
+                while = { count = 3
+                    add_district = district_hive
+                }
+                while = { count = 3
+                    add_district = district_generator_uncapped
+                }
+                while = { count = 3
+                    add_district = district_mining_uncapped
+                }
+                while = { count = 3
+                    add_district = district_farming_uncapped
+                }
+
+                add_building = building_nourishment_center
+            }
+
+            if = {
+                limit = { owner = { is_machine_empire = yes } }
+
+                change_pc = "pc_machine"
+
+                while = { count = 6
+                    add_district = district_nexus
+                }
+                while = { count = 3
+                    add_district = district_generator_uncapped
+                }
+                while = { count = 3
+                    add_district = district_mining_uncapped
+                }
+            }
+
+            add_building = building_dimensional_fabricator
+            add_building = building_class_4_singularity
+
+            while = { count = 25
+                create_pop = { species = owner_main_species }
+            }
+
+            while = { count = 5
+                add_deposit = d_stasis_chambers
+            }
+
+            set_graphical_culture = root
+
+            owner = {
+                give_technology = { tech = "tech_physics_1" message = no }
+                give_technology = { tech = "tech_society_1" message = no }
+                give_technology = { tech = "tech_engineering_1" message = no }
+                give_technology = { tech = "tech_planetary_unification" message = no }
+
+                give_technology = { tech = "tech_wormhole_stabilization" message = no }
+                give_technology = { tech = "tech_experimental_subspace_navigation" message = no }
+                give_technology = { tech = "tech_automated_exploration" message = no }
+
+                if = {
+                    limit = {
+                        OR = {
+                            has_ethic = "ethic_spiritualist"
+                            has_ethic = "ethic_fanatic_spiritualist"
+                        }
+                    }
+
+                    give_technology = { tech = "tech_psionic_theory" message = no }
+                    give_technology = { tech = "null_void_beam" message = no }
+                }
+
+                if = {
+                    limit = {
+                        OR = {
+                            has_ethic = "ethic_materialist"
+                            has_ethic = "ethic_fanatic_materialist"
+                        }
+                    }
+
+                    give_technology = { tech = "tech_gene_tailoring" message = no }
+                }
+
+                add_resource = { energy = 2400 }
+                add_resource = { minerals = 2400 }
+                if = {
+                    limit = { is_machine_empire = no }
+                    add_resource = { food = 600 }
+                }
+                add_resource = { alloys = 600 }
+                if = {
+                    limit = { is_gestalt = no }
+                    add_resource = { consumer_goods = 600 }
+                }
+                add_resource = { influence = 600 }
+                add_resource = { unity = 600 }
+            }
+        }
+    }
+}
+
+planet_event = {
+	id = pjs_systems_awakened_event.2
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = { has_planet_flag = awakened_scientists_start }
+
+            change_pc = "pc_ringworld_habitable"
+
+            clear_deposits = yes
+
+            while = { count = 10
+                remove_district = district_city
+                remove_district = district_arcology_housing
+                remove_district = district_hive
+                remove_district = district_nexus
+                remove_district = district_generator
+                remove_district = district_generator_uncapped
+                remove_district = district_mining
+                remove_district = district_mining_uncapped
+                remove_district = district_farming
+                remove_district = district_farming_uncapped
+            }
+
+            while = { count = 9
+                add_district = district_city
+            }
+
+            while = { count = 3
+                add_district = district_generator_uncapped
+            }
+
+            while = { count = 3
+                add_district = district_farming_uncapped
+            }
+
+			add_building = building_dimensional_fabricator
+            add_building = building_class_4_singularity
+
+            while = { count = 8
+                create_pop = { species = owner_main_species }
+            }
+
+            while = { count = 15
+                add_deposit = d_stasis_chambers
+            }
+
+            set_graphical_culture = root.from
+
+            owner = {
+                give_technology = { tech = "tech_physics_1" message = no }
+                give_technology = { tech = "tech_physics_2" message = no }
+                give_technology = { tech = "tech_physics_3" message = no }
+                give_technology = { tech = "tech_society_1" message = no }
+                give_technology = { tech = "tech_society_2" message = no }
+                give_technology = { tech = "tech_society_3" message = no }
+                give_technology = { tech = "tech_engineering_1" message = no }
+                give_technology = { tech = "tech_engineering_2" message = no }
+                give_technology = { tech = "tech_engineering_3" message = no }
+
+                give_technology = { tech = "tech_wormhole_stabilization" message = no }
+                give_technology = { tech = "tech_experimental_subspace_navigation" message = no }
+                give_technology = { tech = "tech_automated_exploration" message = no }
+
+                if = {
+                    limit = {
+                        OR = {
+                            has_ethic = "ethic_spiritualist"
+                            has_ethic = "ethic_fanatic_spiritualist"
+                        }
+                    }
+
+                    give_technology = { tech = "tech_psionic_theory" message = no }
+                    give_technology = { tech = "null_void_beam" message = no }
+                }
+
+                if = {
+                    limit = {
+                        OR = {
+                            has_ethic = "ethic_materialist"
+                            has_ethic = "ethic_fanatic_materialist"
+                        }
+                    }
+
+                    give_technology = { tech = "tech_gene_tailoring" message = no }
+                }
+
+                add_resource = { energy = 600 }
+                add_resource = { minerals = 600 }
+                if = {
+                    limit = { is_machine_empire = no }
+                    add_resource = { food = 600 }
+                }
+                add_resource = { alloys = 600 }
+                if = {
+                    limit = { is_gestalt = no }
+                    add_resource = { consumer_goods = 600 }
+                }
+                add_resource = { influence = 600 }
+                add_resource = { unity = 600 }
+            }
+        }
+	}
+}

@@ -1,0 +1,50 @@
+namespace = pjs_systems_machineworlds_event
+
+planet_event = {
+	id = pjs_systems_machineworlds_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = { has_planet_flag = machine_world_start }
+
+            change_pc = "pc_machine"
+
+            clear_deposits = yes
+
+            while = {
+                count = 10
+                remove_district = district_city
+                remove_district = district_generator
+                remove_district = district_generator_uncapped
+                remove_district = district_mining
+                remove_district = district_farming
+                remove_district = district_farming_uncapped
+            }
+
+            while = {
+                count = 10
+                add_district = district_nexus
+            }
+
+            while = {
+                count = 4
+                add_district = district_generator_uncapped
+            }
+
+            while = {
+                count = 4
+                add_district = district_mining_uncapped
+            }
+
+            while = {
+                count = 10
+                create_pop = { species = owner_main_species }
+            }
+
+            set_graphical_culture = root
+        }
+	}
+}

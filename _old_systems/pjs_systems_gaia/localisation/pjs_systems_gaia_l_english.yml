@@ -1,0 +1,14 @@
+﻿l_english:
+
+  ## Star Classes
+
+  ## Systems
+
+  custom_pjs_cradle_of_creation_NAME:0 "§SCradle of Creation"
+  custom_pjs_cradle_of_creation_DESC:0 "§R-UNFAIR ADVANTAGE-§!\n\nSystem with four gaia worlds. Multiple gaia neighbours nearby.n\n$system_initializer_DESC$"
+
+  custom_pjs_provenance_NAME:0 "§SProvenance"
+  custom_pjs_provenance_DESC:0  "System with one gaia world. Cradle of Creation but without the unfair advantages.n\n$system_initializer_DESC$"
+
+  custom_pjs_three_sisters_NAME:0 "§SThree Sisters"
+  custom_pjs_three_sisters_DESC:0 "§R-UNFAIR ADVANTAGE-§!\n\nSystem with access to two gaia worlds. Two more gaia neighbours nearby.\n\n$system_initializer_DESC$"

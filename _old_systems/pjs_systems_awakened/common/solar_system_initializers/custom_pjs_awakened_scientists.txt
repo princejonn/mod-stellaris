@@ -1,0 +1,364 @@
+custom_pjs_awakened_scientists = {
+	name = "Thessaloniki"
+	class = "sc_k"
+	usage = custom_empire
+	flags = { empire_home_system }
+	usage_odds = { base = 0 }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 140
+	}
+
+	planet = {
+		class = "pc_b_star"
+		size = 20
+        orbit_distance = 0
+		orbit_angle = 1
+
+		init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = dyson_sphere_target
+		}
+	}
+
+	change_orbit = 45
+
+	planet = {
+        name = "Argos"
+		class = "pc_ringworld_habitable"
+		size = 50
+		orbit_angle = 30
+		orbit_distance = 0
+		modifiers = none
+        deposit_blockers = none
+        flags = { awakened_scientists_start }
+
+        starting_planet = yes
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+
+        init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = habitat_target_1
+        }
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Patras"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            while = { count = 10
+                add_deposit = d_stasis_chambers
+            }
+
+			add_building = building_dimensional_fabricator
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+
+		init_effect = {
+			prevent_anomaly = yes
+            save_event_target_as = think_tank_target
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Pefki"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            while = { count = 10
+                add_deposit = d_stasis_chambers
+            }
+
+			add_building = building_dimensional_fabricator
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+
+        init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = habitat_target_2
+        }
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+    planet = {
+        name = "Tripoli"
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            while = { count = 10
+                add_deposit = d_stasis_chambers
+            }
+
+			add_building = building_dimensional_fabricator
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_tech"
+        orbit_angle = 30
+        orbit_distance = 0
+
+		init_effect = {
+			prevent_anomaly = yes
+            save_event_target_as = mega_art_target
+		}
+    }
+    planet = {
+        name = "Ring Section"
+        class = "pc_ringworld_seam"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+	change_orbit = 95
+
+	planet = {
+		class = "pc_ice_asteroid"
+		size = 5
+		orbit_distance = 0
+		orbit_angle = 10
+		has_ring = no
+        flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_minerals_4
+        }
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		size = 4
+		orbit_distance = 0
+		orbit_angle = 60
+		has_ring = no
+        flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_minerals_3
+        }
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		size = 3
+		orbit_distance = 0
+		orbit_angle = 50
+		has_ring = no
+
+        init_effect = {
+            clear_deposits = yes
+        }
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		size = 4
+		orbit_distance = 0
+		orbit_angle = 70
+		has_ring = no
+        flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_minerals_3
+        }
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		size = 4
+		orbit_distance = 0
+		orbit_angle = 60
+		has_ring = no
+        flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_minerals_2
+        }
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		size = 3
+		orbit_distance = 0
+		orbit_angle = 70
+		has_ring = no
+
+        init_effect = {
+            clear_deposits = yes
+        }
+	}
+
+	change_orbit = 20
+
+    planet = {
+        class = "pc_frozen"
+        size = 16
+        orbit_distance = 10
+        orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+
+		init_effect = {
+			prevent_anomaly = yes
+		    set_deposit = d_living_metal_deposit
+		    add_deposit = d_living_metal_deposit
+        }
+    }
+
+    planet = {
+        class = "pc_frozen"
+        size = 12
+        orbit_distance = 20
+        orbit_angle = { min = 20 max = 220 }
+		has_ring = no
+
+        init_effect = {
+            clear_deposits = yes
+        }
+    }
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "dyson_sphere_ruined"
+            location = event_target:dyson_sphere_target
+        }
+        spawn_megastructure = {
+            type = "think_tank_ruined"
+            location = event_target:think_tank_target
+        }
+        spawn_megastructure = {
+            type = "mega_art_installation_ruined"
+            location = event_target:mega_art_target
+        }
+        spawn_planet = {
+            class = pc_habitat
+            location = event_target:habitat_target_1
+            orbit_location = yes
+            orbit_angle_offset = 45
+            orbit_distance_offset = 9
+            size = 9
+            has_ring = no
+
+            init_effect = {
+                set_name = "Abandoned Habitat"
+                set_planet_entity = {
+                    entity = "orbital_habitat_entity"
+                    graphical_culture = "humanoid_01"
+                }
+                set_planet_flag = "megastructure"
+                set_planet_flag = "habitat"
+
+                while = { count = 4
+                    add_deposit = d_stasis_chambers
+                }
+            }
+        }
+        spawn_planet = {
+            class = pc_habitat
+            location = event_target:habitat_target_2
+            orbit_location = yes
+            orbit_angle_offset = 45
+            orbit_distance_offset = 9
+            size = 9
+            has_ring = no
+
+            init_effect = {
+                set_name = "Abandoned Habitat"
+                set_planet_entity = {
+                    entity = "orbital_habitat_entity"
+                    graphical_culture = "humanoid_01"
+                }
+                set_planet_flag = "megastructure"
+                set_planet_flag = "habitat"
+
+                while = { count = 4
+                    add_deposit = d_stasis_chambers
+                }
+            }
+        }
+    }
+
+    neighbor_system = {
+        distance = { min = 10 max = 60 }
+        initializer = "misc_pjs_macedonia"
+    }
+
+    neighbor_system = {
+        distance = { min = 10 max = 60 }
+        initializer = "misc_pjs_chania"
+    }
+
+    neighbor_system = {
+        distance = { min = 10 max = 60 }
+        initializer = "neighbor_t1_first_colony"
+    }
+
+    neighbor_system = {
+        distance = { min = 10 max = 60 }
+        initializer = "neighbor_t1"
+    }
+}

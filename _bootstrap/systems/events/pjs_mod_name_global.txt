@@ -1,0 +1,8 @@
+namespace = pjs_mod_name_global
+event = {
+    id = pjs_mod_name_global.1
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = { NOT = { has_global_flag = pjs_mod_name_global } }
+    immediate = { set_global_flag = pjs_mod_name_global }
+}

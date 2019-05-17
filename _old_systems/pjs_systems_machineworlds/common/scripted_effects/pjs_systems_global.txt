@@ -1,0 +1,87 @@
+generate_energy_deposits = {
+    while = { count = 4
+        random_list = {
+            40 = { add_deposit = d_geothermal_vent }
+            40 = { add_deposit = d_underwater_vent }
+            40 = { add_deposit = d_tempestous_mountain }
+
+            20 = { add_deposit = d_rushing_waterfalls }
+            20 = { add_deposit = d_searing_desert }
+            20 = { add_deposit = d_frozen_gas_lake }
+        }
+    }
+}
+
+generate_food_deposits = {
+    while = { count = 4
+        random_list = {
+            40 = { add_deposit = d_black_soil }
+            40 = { add_deposit = d_teeming_reef }
+            40 = { add_deposit = d_marvelous_oasis }
+            40 = { add_deposit = d_tropical_island }
+            40 = { add_deposit = d_fungal_forest }
+
+            20 = { add_deposit = d_fungal_caves }
+            20 = { add_deposit = d_lush_jungle }
+            20 = { add_deposit = d_fertile_lands }
+            20 = { add_deposit = d_great_river }
+        }
+    }
+}
+
+generate_mineral_deposits = {
+    while = { count = 4
+        random_list = {
+            40 = { add_deposit = d_rich_mountain }
+            40 = { add_deposit = d_submerged_ore_veins }
+
+            20 = { add_deposit = d_prosperous_mesa }
+            20 = { add_deposit = d_ore_rich_caverns }
+        }
+    }
+}
+
+generate_betharian_deposit = {
+    add_deposit = d_betharian_deposit
+}
+
+generate_pets_deposit = {
+    add_deposit = d_alien_pets_deposit
+}
+
+generate_crystals_deposit = {
+    random_list = {
+        40 = { add_deposit = d_crystalline_caverns }
+        40 = { add_deposit = d_crystal_forest }
+        40 = { add_deposit = d_crystal_reef }
+    }
+}
+
+generate_motes_deposit = {
+    random_list = {
+        40 = { add_deposit = d_dust_caverns }
+        40 = { add_deposit = d_dust_desert }
+    }
+}
+
+generate_gases_deposit = {
+    random_list = {
+        40 = { add_deposit = d_bubbling_swamp }
+        40 = { add_deposit = d_fuming_bog }
+    }
+}
+
+remove_all_districts = {
+    while = { count = 10
+        remove_district = district_city
+        remove_district = district_arcology_housing
+        remove_district = district_hive
+        remove_district = district_nexus
+        remove_district = district_generator
+        remove_district = district_generator_uncapped
+        remove_district = district_mining
+        remove_district = district_mining_uncapped
+        remove_district = district_farming
+        remove_district = district_farming_uncapped
+    }
+}

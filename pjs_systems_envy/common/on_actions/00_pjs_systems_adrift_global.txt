@@ -1,0 +1,3 @@
+on_game_start = {
+	events = { pjs_systems_adrift_global.1 }
+}

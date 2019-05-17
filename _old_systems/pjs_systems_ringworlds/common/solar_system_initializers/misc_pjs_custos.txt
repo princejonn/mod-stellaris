@@ -1,0 +1,97 @@
+misc_pjs_custos = {
+	name = "Custos"
+    class = "sc_f"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+    planet = {
+        class = "pc_f_star"
+        size = 35
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+    }
+
+    planet = {
+        class = "pc_molten"
+        size = 16
+        orbit_distance = 60
+        orbit_angle = { min = 20 max = 220 }
+    }
+
+    planet = {
+        class = ideal_planet_class
+        size = 26
+        orbit_distance = 35
+        orbit_angle = { min = 20 max = 220 }
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+			generate_mineral_deposits = yes
+			generate_crystals_deposit = yes
+            generate_motes_deposit = yes
+            generate_gases_deposit = yes
+		}
+
+        change_orbit = @base_moon_distance
+
+        moon = {
+            class = random_non_colonizable
+            size = 6
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
+        }
+    }
+
+    planet = {
+        class = "pc_gas_giant"
+        size = 32
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+
+        init_effect = {
+            save_event_target_as = spy_orb_target
+        }
+
+        change_orbit = @base_moon_distance
+
+        moon = {
+            class = "pc_barren_cold"
+            size = 5
+            orbit_distance = 4
+            orbit_angle = { min = 20 max = 220 }
+        }
+
+        moon = {
+            class = "pc_barren_cold"
+            size = 6
+            orbit_distance = 5
+            orbit_angle = { min = 20 max = 220 }
+        }
+    }
+
+    planet = {
+        class = "pc_barren"
+        size = 16
+        orbit_distance = 20
+        orbit_angle = { min = 20 max = 220 }
+    }
+
+    planet = {
+        class = "pc_toxic"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = { min = 20 max = 220 }
+    }
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "spy_orb_ruined"
+            location = event_target:spy_orb_target
+        }
+    }
+}

@@ -1,0 +1,5 @@
+empire_init_capital_planet = {
+	events = {
+		pjs_systems_ringworlds_event.1
+	}
+}
