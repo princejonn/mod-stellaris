@@ -45,7 +45,7 @@ custom_pjs_alpha_carinae = {
         orbit_angle = { min = 30 max = 60 }
         has_ring = no
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
 		moon = {
 			class = "pc_barren"
@@ -77,7 +77,7 @@ custom_pjs_alpha_carinae = {
             prevent_anomaly = yes
         }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
 		moon = {
 			name = "Fist"

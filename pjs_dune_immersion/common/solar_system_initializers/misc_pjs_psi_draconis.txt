@@ -32,7 +32,7 @@ misc_pjs_psi_draconis = {
         orbit_distance = 25
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Eustathius"
@@ -51,7 +51,7 @@ misc_pjs_psi_draconis = {
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Nike"

@@ -136,39 +136,10 @@
   district_base_city_plural:0 "Habitation Districts"
   district_base_city_desc:0 "A habitat housing district provides compact residences for its population."
 
-  district_base_generator:0 "Generator District"
-  district_base_generator_plural:0 "Generator Districts"
-  district_base_generator_desc:0 "Massive compact power plants that generate large amounts of energy which can then be used or converted into credits."
-
-
-  ## Districts : Asteroid Bases
-
-  district_asteroid_base_mining:0 "Astro-Mining District"
-  district_asteroid_base_mining_plural:0 "Astro-Mining Districts"
-  district_asteroid_base_mining_desc:0 "Asteroid Bases depend on these facilities to mine and process minerals from nearby asteroids."
-
-  district_asteroid_base_refinery:0 "Refinery District"
-  district_asteroid_base_refinery_plural:0 "Refinery Districts"
-  district_asteroid_base_refinery_desc:0 "With the possible influx of minerals, the §YRefinery Districts§! ensure we can utilize every rare resource we find."
-
-
-  ## Districts : Moon Bases
-
-  district_moon_base_mining:0 "Mining District"
-  district_moon_base_mining_plural:0 "Mining Districts"
-  district_moon_base_mining_desc:0 "These mining district and resource extraction centers drill deep into the mantle to access mineral deposits."
-
-  district_moon_base_farming:0 "Hydroponics District"
-  district_moon_base_farming_plural:0 "Hydroponics Districts"
-  district_moon_base_farming_desc:0 "Hydroponics Farms produce nutrient-rich vegetable matter tailored for consumption by local Pops."
-
 
   ## Districts : Job Descriptions
 
   job_merchant_clerk_effect_desc:0 "$job_merchant_effect_desc$\n$job_clerk_effect_desc$"
-
-  job_crystal_gases_motes_effect_desc:0 "$job_translucer_effect_desc$\n$job_gas_refiner_effect_desc$\n$job_chemist_effect_desc$"
-  job_crystal_gases_motes_drone_effect_desc:0 "$job_translucer_drone_effect_desc$\n$job_gas_refiner_drone_effect_desc$\n$job_chemist_drone_effect_desc$"
 
   job_clerk_enforcer_effect_desc:0 "$job_clerk_effect_desc$\n$job_enforcer_effect_desc$"
   job_maintenance_drone_patrol_drone_effect_desc:0 "$job_maintenance_drone_effect_desc$\n$job_patrol_drone_effect_desc$"
@@ -179,6 +150,9 @@
 
   master_builders_ringworlds:0 "$ap_master_builders$: Expansion"
   master_builders_ringworlds_desc:0 "This $pc_ringworld_habitable$ has been expanded by an additional §Y1§! $MOD_PLANET_MAX_DISTRICTS_ADD$."
+
+
+  ## Static Modifiers : Asteroid & Moon Bases
 
   asteroid_base:0 "Asteroid Base"
   asteroid_base_desc:0 "This planet has been deemed suitable for a asteroid base."

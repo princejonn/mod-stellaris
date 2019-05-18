@@ -1,0 +1,111 @@
+namespace = pjs_common_files_event
+
+event = {
+	id = pjs_common_files_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    every_planet = {
+            if = {
+                limit = { has_planet_flag = start_machine }
+                change_pc = "pc_machine"
+                remove_all_districts = yes
+                while = { count = 10
+                    add_district = district_nexus
+                }
+                while = { count = 4
+                    add_district = district_generator_uncapped
+                }
+                while = { count = 4
+                    add_district = district_mining_uncapped
+                }
+                set_graphical_culture = root
+            }
+            if = {
+                limit = { has_planet_flag = start_gaia }
+                change_pc = "pc_gaia"
+                add_modifier = { modifier = gaia_world days = -1 }
+                generate_betharian_deposit = yes
+                generate_pets_deposit = yes
+                set_graphical_culture = root
+            }
+            if = {
+                limit = { has_planet_flag = start_city }
+                change_pc = "pc_city"
+                set_graphical_culture = root
+            }
+            if = {
+                limit = { has_planet_flag = start_ringworld_habitable }
+                change_pc = "pc_ringworld_habitable"
+                clear_deposits = yes
+                add_deposit = d_stasis_chambers
+                add_deposit = d_ruined_arcology
+                set_graphical_culture = root
+            }
+
+            if = {
+                limit = { has_planet_flag = start_terraforming_candidate }
+                add_modifier = { modifier = "terraforming_candidate" days = -1 }
+            }
+
+            if = {
+                limit = { has_planet_flag = start_food_rich_planet }
+                add_modifier = { modifier = food_rich_planet days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_gas_rich_planet }
+                add_modifier = { modifier = gas_rich_planet_fo_realz days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_society_animal_life }
+                add_modifier = { modifier = society_animal_life days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_strong_magnetic_field }
+                add_modifier = { modifier = strong_magnetic_field days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_extensive_moon_system }
+                add_modifier = { modifier = extensive_moon_system days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_mineral_rich }
+                add_modifier = { modifier = mineral_rich days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_ultra_rich }
+                add_modifier = { modifier = ultra_rich days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_titanic_life }
+                add_modifier = { modifier = titanic_life days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_asteroid_belt }
+                add_modifier = { modifier = asteroid_belt days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_natural_beauty }
+                add_modifier = { modifier = natural_beauty days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_atmospheric_hallucinogen }
+                add_modifier = { modifier = atmospheric_hallucinogen_good days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_lush_planet }
+                add_modifier = { modifier = lush_planet days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_friendly_trees }
+                add_modifier = { modifier = friendly_trees days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_subterranean_expansion }
+                add_modifier = { modifier = subterranean_expansion days = -1 }
+            }
+	    }
+	}
+}

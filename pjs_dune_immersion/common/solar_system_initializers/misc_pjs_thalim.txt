@@ -23,7 +23,7 @@ misc_pjs_thalim = {
         orbit_distance = 50
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Alexander"

@@ -20,47 +20,118 @@ decision_build_base = {
             is_asteroid = yes
             is_moon = yes
         }
+        OR = {
+            is_planet_class = "pc_asteroid"
+            is_planet_class = "pc_ice_asteroid"
+            is_planet_class = "pc_barren"
+            is_planet_class = "pc_barren_cold"
+            is_planet_class = "pc_frozen"
+            is_planet_class = "pc_molten"
+            is_planet_class = "pc_toxic"
+        }
 	}
 
     effect = {
+	    ## base specialization
+
+	    if = {
+	        limit = {
+                OR = {
+                    has_deposit = d_minerals_1
+                    has_deposit = d_minerals_2
+                    has_deposit = d_minerals_3
+                    has_deposit = d_minerals_4
+                    has_deposit = d_minerals_5
+                    has_deposit = d_minerals_6
+                    has_deposit = d_minerals_7
+                    has_deposit = d_minerals_8
+                    has_deposit = d_minerals_9
+                    has_deposit = d_minerals_10
+                }
+            }
+            add_modifier = { modifier = "habitat_specialization_astro_mining" days = -1 }
+	    }
+	    if = {
+	        limit = {
+                OR = {
+                    has_deposit = d_exotic_gases_1
+                    has_deposit = d_exotic_gases_2
+                    has_deposit = d_exotic_gases_3
+                    has_deposit = d_exotic_gases_4
+                    has_deposit = d_exotic_gases_5
+                }
+            }
+            add_modifier = { modifier = "habitat_specialization_exotic_gases" days = -1 }
+	    }
+	    if = {
+	        limit = {
+                OR = {
+                    has_deposit = d_rare_crystals_1
+                    has_deposit = d_rare_crystals_2
+                    has_deposit = d_rare_crystals_3
+                    has_deposit = d_rare_crystals_4
+                    has_deposit = d_rare_crystals_5
+                }
+            }
+            add_modifier = { modifier = "habitat_specialization_rare_crystals" days = -1 }
+	    }
+	    if = {
+	        limit = {
+                OR = {
+                    has_deposit = d_volatile_motes_1
+                    has_deposit = d_volatile_motes_2
+                    has_deposit = d_volatile_motes_3
+                    has_deposit = d_volatile_motes_4
+                    has_deposit = d_volatile_motes_5
+                }
+            }
+            add_modifier = { modifier = "habitat_specialization_volatile_motes" days = -1 }
+	    }
+
         clear_deposits = yes
-        set_planet_size = 5
+
+        ## base modifier
 
 	    if = {
 	        limit = { is_planet_class = "pc_asteroid" }
 	        change_pc = "pc_asteroid_base"
-		    add_modifier = { modifier = asteroid_base days = -1 }
+		    add_modifier = { modifier = "asteroid_base" days = -1 }
 	    }
 	    if = {
 	        limit = { is_planet_class = "pc_ice_asteroid" }
 	        change_pc = "pc_ice_asteroid_base"
-		    add_modifier = { modifier = asteroid_base days = -1 }
+		    add_modifier = { modifier = "asteroid_base" days = -1 }
 	    }
 	    if = {
 	        limit = { is_planet_class = "pc_barren" }
 	        change_pc = "pc_barren_base"
-		    add_modifier = { modifier = moon_base days = -1 }
+		    add_modifier = { modifier = "moon_base" days = -1 }
+            add_modifier = { modifier = "habitat_specialization_hydroponics" days = -1 }
 	    }
 	    if = {
 	        limit = { is_planet_class = "pc_barren_cold" }
 	        change_pc = "pc_barren_cold_base"
-		    add_modifier = { modifier = moon_base days = -1 }
+		    add_modifier = { modifier = "moon_base" days = -1 }
+            add_modifier = { modifier = "habitat_specialization_hydroponics" days = -1 }
 	    }
 	    if = {
 	        limit = { is_planet_class = "pc_frozen" }
 	        change_pc = "pc_frozen_base"
-		    add_modifier = { modifier = moon_base days = -1 }
+		    add_modifier = { modifier = "moon_base" days = -1 }
+            add_modifier = { modifier = "habitat_specialization_hydroponics" days = -1 }
 	    }
 	    if = {
 	        limit = { is_planet_class = "pc_molten" }
 	        change_pc = "pc_molten_base"
-		    add_modifier = { modifier = moon_base days = -1 }
+		    add_modifier = { modifier = "moon_base" days = -1 }
 	    }
 	    if = {
 	        limit = { is_planet_class = "pc_toxic" }
 	        change_pc = "pc_toxic_base"
-		    add_modifier = { modifier = moon_base days = -1 }
+		    add_modifier = { modifier = "moon_base" days = -1 }
 	    }
+
+        set_planet_size = 5
 	}
 
 	ai_weight = {

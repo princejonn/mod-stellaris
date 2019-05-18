@@ -44,16 +44,17 @@ custom_pjs_provenance = {
 		moon = {
 			name = "Father"
 			class = rl_habitable_normal
-			size = 22
-			orbit_distance = 25
+			size = 24
+			orbit_distance = 28
 			orbit_angle = 30
+			flags = { start_gas_rich_planet }
 		}
 
 		moon = {
 			name = "Cradle"
 			class = ideal_planet_class
-			size = 20
-			orbit_distance = 6
+			size = 22
+			orbit_distance = 7
 			orbit_angle = 45
 			deposit_blockers = none
 
@@ -70,10 +71,7 @@ custom_pjs_provenance = {
 			size = 20
 			orbit_distance = 6
 			orbit_angle = 50
-
-            init_effect = {
-                add_modifier = { modifier = "terraforming_candidate" days = -1 }
-            }
+			flags = { start_terraforming_candidate }
 		}
 
 		moon = {
@@ -82,6 +80,7 @@ custom_pjs_provenance = {
 			size = 20
 			orbit_distance = 6
 			orbit_angle = 40
+			flags = { start_terraforming_candidate }
 		}
 	}
 
@@ -102,7 +101,7 @@ custom_pjs_provenance = {
             add_deposit = d_society_2
         }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Student"

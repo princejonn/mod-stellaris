@@ -1,0 +1,149 @@
+## ENERGY
+
+generate_energy_1_deposit = {
+    random_list = {
+        1 = { add_deposit = d_arid_highlands }
+        5 = { add_deposit = d_hot_springs }
+    }
+}
+generate_energy_2_deposit = {
+    random_list = {
+        5 = { add_deposit = d_rushing_waterfalls }
+        5 = { add_deposit = d_searing_desert }
+        1 = { add_deposit = d_frozen_gas_lake }
+    }
+}
+generate_energy_3_deposit = {
+    random_list = {
+        5 = { add_deposit = d_geothermal_vent }
+        1 = { add_deposit = d_underwater_vent }
+        5 = { add_deposit = d_tempestous_mountain }
+    }
+}
+
+generate_energy_deposits = {
+    generate_energy_1_deposit = yes
+    generate_energy_2_deposit = yes
+    generate_energy_3_deposit = yes
+}
+
+## MINERALS
+
+generate_mineral_1_deposit = {
+    random_list = {
+        5 = { add_deposit = d_veiny_cliffs }
+        5 = { add_deposit = d_mineral_fields }
+    }
+}
+generate_mineral_2_deposit = {
+    random_list = {
+        5 = { add_deposit = d_prosperous_mesa }
+        5 = { add_deposit = d_ore_rich_caverns }
+    }
+}
+generate_mineral_3_deposit = {
+    random_list = {
+        5 = { add_deposit = d_rich_mountain }
+        5 = { add_deposit = d_submerged_ore_veins }
+    }
+}
+
+generate_mineral_deposits = {
+    generate_mineral_1_deposit = yes
+    generate_mineral_2_deposit = yes
+    generate_mineral_3_deposit = yes
+}
+
+## FOOD
+
+generate_food_1_deposit = {
+    random_list = {
+        1 = { add_deposit = d_lichen_fields }
+        5 = { add_deposit = d_bountiful_plains }
+        5 = { add_deposit = d_rugged_woods }
+        5 = { add_deposit = d_green_hills }
+        1 = { add_deposit = d_forgiving_tundra }
+        1 = { add_deposit = d_boggy_fens }
+        5 = { add_deposit = d_nutritious_mudland }
+    }
+}
+generate_food_2_deposit = {
+    random_list = {
+        1 = { add_deposit = d_fungal_caves }
+        5 = { add_deposit = d_lush_jungle }
+        5 = { add_deposit = d_fertile_lands }
+        5 = { add_deposit = d_great_river }
+    }
+}
+generate_food_3_deposit = {
+    random_list = {
+        5 = { add_deposit = d_black_soil }
+        5 = { add_deposit = d_teeming_reef }
+        5 = { add_deposit = d_marvelous_oasis }
+        5 = { add_deposit = d_tropical_island }
+        1 = { add_deposit = d_fungal_forest }
+    }
+}
+
+generate_food_deposits = {
+    generate_food_1_deposit = yes
+    generate_food_2_deposit = yes
+    generate_food_3_deposit = yes
+}
+
+## BETHARIAN
+
+generate_betharian_deposit = {
+    add_deposit = d_betharian_deposit
+}
+
+## PETS
+
+generate_pets_deposit = {
+    add_deposit = d_alien_pets_deposit
+}
+
+## CRYSTALS
+
+generate_crystals_deposit = {
+    random_list = {
+        40 = { add_deposit = d_crystalline_caverns }
+        40 = { add_deposit = d_crystal_forest }
+        40 = { add_deposit = d_crystal_reef }
+    }
+}
+
+## MOTES
+
+generate_motes_deposit = {
+    random_list = {
+        40 = { add_deposit = d_dust_caverns }
+        40 = { add_deposit = d_dust_desert }
+    }
+}
+
+## GASES
+
+generate_gases_deposit = {
+    random_list = {
+        40 = { add_deposit = d_bubbling_swamp }
+        40 = { add_deposit = d_fuming_bog }
+    }
+}
+
+## DISTRICTS
+
+remove_all_districts = {
+    while = { count = 10
+        remove_district = district_city
+        remove_district = district_arcology_housing
+        remove_district = district_hive
+        remove_district = district_nexus
+        remove_district = district_generator
+        remove_district = district_generator_uncapped
+        remove_district = district_mining
+        remove_district = district_mining_uncapped
+        remove_district = district_farming
+        remove_district = district_farming_uncapped
+    }
+}

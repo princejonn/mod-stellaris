@@ -24,7 +24,7 @@ pc_molten_base = {
 	spawn_odds = 0
 	planet_size = 5
 
-	modifier = { planet_colony_development_speed_mult = 2 }
+	modifier = { planet_colony_development_speed_mult = 3 }
 }
 
 pc_barren_base = {
@@ -53,7 +53,7 @@ pc_barren_base = {
 	spawn_odds = 0
 	planet_size = 5
 
-	modifier = { planet_colony_development_speed_mult = 2 }
+	modifier = { planet_colony_development_speed_mult = 3 }
 }
 
 pc_barren_cold_base = {
@@ -82,7 +82,7 @@ pc_barren_cold_base = {
 	spawn_odds = 0
 	planet_size = 5
 
-	modifier = { planet_colony_development_speed_mult = 2 }
+	modifier = { planet_colony_development_speed_mult = 3 }
 }
 
 pc_toxic_base = {
@@ -111,7 +111,7 @@ pc_toxic_base = {
 	spawn_odds = 0
 	planet_size = 5
 
-	modifier = { planet_colony_development_speed_mult = 2 }
+	modifier = { planet_colony_development_speed_mult = 3 }
 }
 
 pc_frozen_base = {
@@ -140,5 +140,5 @@ pc_frozen_base = {
 	spawn_odds = 0
 	planet_size = 5
 
-	modifier = { planet_colony_development_speed_mult = 2 }
+	modifier = { planet_colony_development_speed_mult = 3 }
 }

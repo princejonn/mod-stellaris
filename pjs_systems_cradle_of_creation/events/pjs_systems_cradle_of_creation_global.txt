@@ -1,8 +1,0 @@
-namespace = pjs_systems_cradle_of_creation_global
-event = {
-    id = pjs_systems_cradle_of_creation_global.1
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = { NOT = { has_global_flag = pjs_systems_cradle_of_creation_global } }
-    immediate = { set_global_flag = pjs_systems_cradle_of_creation_global }
-}

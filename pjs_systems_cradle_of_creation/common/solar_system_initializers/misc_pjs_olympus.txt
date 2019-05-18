@@ -37,7 +37,7 @@ misc_pjs_olympus = {
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Iris"
@@ -69,7 +69,7 @@ misc_pjs_olympus = {
 			generate_gases_deposit = yes
 		}
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Artemis"
@@ -124,7 +124,7 @@ misc_pjs_olympus = {
         orbit_angle = { min = 20 max = 220 }
         has_ring = yes
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Nike"

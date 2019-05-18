@@ -30,15 +30,7 @@ custom_pjs_envy = {
 		orbit_distance = 0
 		modifiers = none
 		deposit_blockers = none
-
-		init_effect = {
-			prevent_anomaly = yes
-            clear_deposits = yes
-
-            add_deposit = d_stasis_chambers
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-		}
+		flags = { start_ringworld_habitable }
 	}
 	planet = {
 		name = "Ring Section I"
@@ -59,15 +51,7 @@ custom_pjs_envy = {
 		orbit_distance = 0
 		modifiers = none
 		deposit_blockers = none
-
-		init_effect = {
-			prevent_anomaly = yes
-            clear_deposits = yes
-
-            add_deposit = d_stasis_chambers
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-		}
+		flags = { start_ringworld_habitable }
 	}
 	planet = {
 		name = "Ring Section III"
@@ -88,15 +72,7 @@ custom_pjs_envy = {
 		orbit_distance = 0
 		modifiers = none
 		deposit_blockers = none
-
-		init_effect = {
-			prevent_anomaly = yes
-            clear_deposits = yes
-
-            add_deposit = d_stasis_chambers
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-		}
+		flags = { start_ringworld_habitable }
 	}
 	planet = {
 		name = "Ring Section V"
@@ -117,15 +93,7 @@ custom_pjs_envy = {
 		orbit_distance = 0
 		modifiers = none
 		deposit_blockers = none
-
-		init_effect = {
-			prevent_anomaly = yes
-            clear_deposits = yes
-
-            add_deposit = d_stasis_chambers
-            add_deposit = d_ruined_arcology
-            add_deposit = d_ruined_arcology
-		}
+		flags = { start_ringworld_habitable }
 	}
 	planet = {
 		name = "Ring Section VII"
@@ -145,7 +113,7 @@ custom_pjs_envy = {
     planet = {
         name = "Envy"
         class = ideal_planet_class
-        size = 20
+        size = 18
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
         modifiers = none
@@ -154,11 +122,9 @@ custom_pjs_envy = {
 
         init_effect = {
 			prevent_anomaly = yes
-
-            add_deposit = d_stasis_chambers
         }
 
-        change_orbit = @base_moon_distance
+        change_orbit = 10
 
         moon = {
             name = "Distance"
@@ -178,12 +144,12 @@ custom_pjs_envy = {
 	    has_ring = no
 
 	    init_effect = {
-            set_deposit = d_engineering_2
-            add_deposit = d_physics_2
-            add_deposit = d_society_2
+            set_deposit = d_engineering_3
+            add_deposit = d_physics_3
+            add_deposit = d_society_3
         }
 
-        change_orbit = @base_moon_distance
+        change_orbit = 10
 
         moon = {
             name = "Muted"

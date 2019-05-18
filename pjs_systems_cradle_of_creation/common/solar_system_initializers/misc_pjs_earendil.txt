@@ -44,7 +44,7 @@ misc_pjs_earendil = {
             add_deposit = d_society_2
 		}
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Silmaril"

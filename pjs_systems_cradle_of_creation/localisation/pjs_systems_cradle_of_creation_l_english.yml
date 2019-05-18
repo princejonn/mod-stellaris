@@ -1,7 +1,7 @@
 ﻿l_english:
 
-  custom_pjs_cradle_of_creation:0 "§SCradle of Creation§!"
-  custom_pjs_cradle_of_creation_desc:0 ""
+  custom_pjs_cradle_of_creation_NAME:0 "§SCradle of Creation§!"
+  custom_pjs_cradle_of_creation_DESC:0 "§YGaia World Start§!\n\n$system_initializer_DESC$"
 
-  custom_pjs_provenance:0 "§SProvenance§!"
-  custom_pjs_provenance_desc:0 ""
+  custom_pjs_provenance_NAME:0 "§SProvenance§!"
+  custom_pjs_provenance_DESC:0 "$system_initializer_DESC$"

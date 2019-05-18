@@ -1,8 +1,0 @@
-empire_init_create_ships = {
-	events = {
-		cradle_of_creation_event.1
-		cradle_of_creation_event.2
-		cradle_of_creation_event.3
-		cradle_of_creation_event.4
-	}
-}

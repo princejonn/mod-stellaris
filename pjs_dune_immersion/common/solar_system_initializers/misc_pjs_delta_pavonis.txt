@@ -22,7 +22,7 @@ misc_pjs_delta_pavonis = {
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             class = "pc_barren"
@@ -40,7 +40,7 @@ misc_pjs_delta_pavonis = {
         orbit_distance = 25
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Doris"
@@ -67,7 +67,7 @@ misc_pjs_delta_pavonis = {
             prevent_anomaly = yes
         }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Artemis"

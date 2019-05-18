@@ -30,7 +30,7 @@ misc_pjs_epsilon_lyrae = {
         orbit_distance = 15
         orbit_angle = { min = 10 max = 350 }
 
-        change_orbit = @base_moon_distance
+        change_orbit = 10
 
         moon = {
             class = random_non_colonizable
@@ -47,7 +47,7 @@ misc_pjs_epsilon_lyrae = {
         orbit_distance = 35
         orbit_angle = { min = 10 max = 350 }
 
-        change_orbit = @base_moon_distance
+        change_orbit = 10
 
         moon = {
             count = 2
@@ -82,7 +82,7 @@ misc_pjs_epsilon_lyrae = {
 		    add_deposit = d_society_2
         }
 
-        change_orbit = @base_moon_distance
+        change_orbit = 10
 
         moon = {
             count = 2

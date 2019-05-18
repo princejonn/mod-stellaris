@@ -1,0 +1,34 @@
+misc_pjs_gui_xiu = {
+    name = "9319 Gui Xiu"
+	class = "sc_black_hole"
+
+    usage = misc_system_init
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 100
+
+	planet = {
+		class = "pc_black_hole"
+		size = 35
+        orbit_distance = 0
+		orbit_angle = 1
+
+		init_effect = {
+            clear_deposits = yes
+        }
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = "pc_frozen"
+		size = 11
+		orbit_distance = 30
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_zro_deposit_1
+		}
+	}
+}

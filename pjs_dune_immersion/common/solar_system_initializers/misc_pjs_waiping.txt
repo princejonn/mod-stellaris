@@ -52,7 +52,7 @@ misc_pjs_waiping = {
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             class = "pc_barren_cold"
@@ -69,7 +69,7 @@ misc_pjs_waiping = {
         orbit_distance = 25
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             class = "pc_barren_cold"
@@ -94,7 +94,7 @@ misc_pjs_waiping = {
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             class = "pc_frozen"

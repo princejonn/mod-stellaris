@@ -1,0 +1,37 @@
+d_stasis_chambers = {
+	time = 720
+	icon = d_bunker_door
+
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	on_cleared = {
+	    create_pop = { species = owner }
+	    create_pop = { species = owner }
+	    create_pop = { species = owner }
+	    create_pop = { species = owner }
+	    create_pop = { species = owner }
+
+        owner = {
+            add_resource = {
+                physics = 1000
+                society = 1000
+                engineering = 1000
+            }
+        }
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1600
+			minerals = 1600
+		}
+	}
+}

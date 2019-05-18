@@ -1,0 +1,36 @@
+ringworld_specialization_none = {
+	icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_none.dds"
+    icon_frame = 3
+}
+
+ringworld_specialization_arms_industry = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_arms_industry.dds"
+    icon_frame = 1
+    planet_metallurgists_produces_mult = 0.05
+}
+
+ringworld_specialization_civilian_industry = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_civilian_industry.dds"
+    icon_frame = 1
+    planet_artisans_produces_mult = 0.05
+}
+
+ringworld_specialization_leisure = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_leisure.dds"
+    icon_frame = 1
+    planet_jobs_unity_produces_mult = 0.05
+}
+
+ringworld_specialization_science = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_science.dds"
+    icon_frame = 1
+    planet_researchers_produces_mult = 0.05
+}
+
+ringworld_specialization_refinery = {
+    icon = "gfx/interface/icons/planet_modifiers/ringworld_specialization_refinery.dds"
+    icon_frame = 1
+    planet_refiners_produces_mult = 0.05
+    planet_translucers_produces_mult = 0.05
+    planet_chemists_produces_mult = 0.05
+}

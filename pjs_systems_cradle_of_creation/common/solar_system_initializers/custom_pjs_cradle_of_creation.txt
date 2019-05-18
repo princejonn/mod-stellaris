@@ -45,17 +45,16 @@ custom_pjs_cradle_of_creation = {
 		moon = {
 			name = "Father"
 			class = "pc_gaia"
-			size = 22
-			orbit_distance = 25
+			size = 24
+			orbit_distance = 28
 			orbit_angle = 30
 			deposit_blockers = none
-			flags = { cradle_of_creation_father }
+			flags = { start_gaia start_gas_rich_planet }
 
 			init_effect = {
 				prevent_anomaly = yes
-			    add_modifier = { modifier = food_rich_planet days = -1 }
                 generate_energy_deposits = yes
-                generate_betharian_deposit = yes
+                generate_motes_deposit = yes
 			}
 		}
 
@@ -63,35 +62,35 @@ custom_pjs_cradle_of_creation = {
 			name = "Cradle"
 			class = "pc_gaia"
 			size = 22
-			orbit_distance = 6
+			orbit_distance = 7
 			orbit_angle = 45
 			deposit_blockers = none
-			flags = { cradle_of_creation_cradle }
+			flags = { start_gaia start_food_rich_planet start_natural_beauty }
 
 			starting_planet = yes
 
 			init_effect = {
                 prevent_anomaly = yes
-			    add_modifier = { modifier = food_rich_planet days = -1 }
-                generate_pets_deposit = yes
+                generate_energy_deposits = yes
+                generate_food_deposits = yes
+                generate_mineral_deposits = yes
+                generate_gases_deposit = yes
             }
 		}
 
 		moon = {
 			name = "Brother"
 			class = "pc_gaia"
-			size = 22
+			size = 20
 			orbit_distance = 6
 			orbit_angle = 50
 			deposit_blockers = none
-			flags = { cradle_of_creation_brother }
+			flags = { start_gaia start_ultra_rich }
 
 			init_effect = {
 				prevent_anomaly = yes
-			    add_modifier = { modifier = food_rich_planet days = -1 }
                 generate_mineral_deposits = yes
                 generate_crystals_deposit = yes
-                generate_motes_deposit = yes
 			    generate_gases_deposit = yes
 			}
 		}
@@ -99,17 +98,16 @@ custom_pjs_cradle_of_creation = {
 		moon = {
 			name = "Sister"
 			class = "pc_gaia"
-			size = 22
+			size = 20
 			orbit_distance = 6
 			orbit_angle = 40
 			deposit_blockers = none
-			flags = { cradle_of_creation_sister }
+			flags = { start_gaia start_food_rich_planet start_friendly_trees }
 
 			init_effect = {
 				prevent_anomaly = yes
-			    add_modifier = { modifier = food_rich_planet days = -1 }
                 generate_food_deposits = yes
-                generate_pets_deposit = yes
+                generate_crystals_deposit = yes
 			}
 		}
 	}
@@ -131,7 +129,7 @@ custom_pjs_cradle_of_creation = {
             add_deposit = d_society_8
         }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             name = "Student"
@@ -189,18 +187,21 @@ custom_pjs_cradle_of_creation = {
     }
     neighbor_system = {
         distance = { min = 10 max = 60 }
-        initializer = "misc_pjs_stephen_hawkings_void"
-    }
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
         initializer = "misc_pjs_earendil"
-    }
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "misc_pjs_gui_xiu"
     }
     neighbor_system = {
         distance = { min = 10 max = 60 }
         initializer = "misc_pjs_olympus"
     }
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		distance = { min = 10 max = @distance }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		distance = { min = 10 max = @distance }
+		initializer = "neighbor_t1_first_colony"
+	}
 }

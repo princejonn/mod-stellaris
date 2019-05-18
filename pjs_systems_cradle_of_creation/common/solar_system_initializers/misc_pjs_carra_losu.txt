@@ -44,7 +44,7 @@ misc_pjs_carra_losu = {
 			generate_gases_deposit = yes
 		}
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             class = "pc_barren"
@@ -69,7 +69,7 @@ misc_pjs_carra_losu = {
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             class = "pc_barren_cold"

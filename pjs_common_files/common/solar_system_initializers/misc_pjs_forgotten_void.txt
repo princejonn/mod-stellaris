@@ -1,0 +1,71 @@
+misc_pjs_forgotten_void = {
+	name = "Forgotten Void"
+	class = "sc_black_hole"
+
+    usage = misc_system_init
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 100
+
+	planet = {
+	    name = "Forgotten Void"
+		class = "pc_black_hole"
+		size = 28
+        orbit_distance = 0
+		orbit_angle = 1
+
+		init_effect = {
+            clear_deposits = yes
+        }
+	}
+
+	change_orbit = 45
+
+	planet = {
+	    name = "Kida"
+		class = "pc_shattered"
+		size = 12
+		orbit_distance = 25
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_dark_matter_deposit_1
+		}
+	}
+
+    planet = {
+        name = "Atlantis"
+        class = "pc_gaia"
+        size = 30
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+		has_ring = no
+        modifiers = none
+		deposit_blockers = none
+
+        init_effect = {
+            add_modifier = { modifier = "food_rich_planet" days = -1 }
+            generate_food_deposits = yes
+            generate_pets_deposit = yes
+        }
+
+        moon = {
+            name = "Timaeus"
+            class = "pc_frozen"
+            size = 7
+            orbit_distance = 13
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+
+        moon = {
+            name = "Critias"
+            class = "pc_frozen"
+            size = 6
+            orbit_distance = 7
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+    }
+}

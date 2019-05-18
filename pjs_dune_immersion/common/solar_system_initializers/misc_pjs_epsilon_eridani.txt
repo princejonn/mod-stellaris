@@ -30,7 +30,7 @@ misc_pjs_epsilon_eridani = {
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             class = "pc_barren"
@@ -66,7 +66,7 @@ misc_pjs_epsilon_eridani = {
         modifiers = none
         deposit_blockers = none
 
-		change_orbit = @base_moon_distance
+		change_orbit = 10
 
         moon = {
             class = "pc_shattered"
