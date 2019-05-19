@@ -1,0 +1,6 @@
+empire_init_create_ships = {
+	events = {
+		pjs_systems_precursor_event.1
+		pjs_systems_precursor_event.2
+	}
+}
