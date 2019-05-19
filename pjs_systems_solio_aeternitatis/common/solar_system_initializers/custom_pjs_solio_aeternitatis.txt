@@ -270,14 +270,6 @@ custom_pjs_solio_aeternitatis = {
 
     neighbor_system = {
         distance = { min = 10 max = 50 }
-        initializer = "misc_pjs_stella_infinitum"
-    }
-    neighbor_system = {
-        distance = { min = 10 max = 50 }
-        initializer = "misc_pjs_custos"
-    }
-    neighbor_system = {
-        distance = { min = 10 max = 50 }
         initializer = "misc_pjs_fodina_primus"
     }
     neighbor_system = {
@@ -286,11 +278,19 @@ custom_pjs_solio_aeternitatis = {
     }
     neighbor_system = {
         distance = { min = 10 max = 50 }
+        initializer = "misc_pjs_turrim_crepusculum"
+    }
+    neighbor_system = {
+        distance = { min = 10 max = 50 }
+        initializer = "misc_pjs_stella_infinitum"
+    }
+    neighbor_system = {
+        distance = { min = 10 max = 50 }
         initializer = "misc_pjs_fodina_secundus"
     }
     neighbor_system = {
         distance = { min = 10 max = 50 }
-        initializer = "misc_pjs_turrim_crepusculum"
+        initializer = "misc_pjs_custos"
     }
 
 	neighbor_system = {

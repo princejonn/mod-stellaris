@@ -1,6 +1,6 @@
 misc_pjs_turrim_crepusculum = {
 	name = "Turrim Crepusculum"
-	class = "sc_m"
+	class = "sc_black_hole"
 
     usage = misc_system_init
 	usage_odds = { base = 0 }
@@ -8,14 +8,10 @@ misc_pjs_turrim_crepusculum = {
 	spawn_chance = 0
 
 	planet = {
-		class = "pc_m_star"
-		size = 22
-		orbit_distance = 0
-		orbit_angle = 1
-
-		init_effect = {
-            save_event_target_as = dyson_sphere_target
-        }
+		class = "pc_black_hole"
+		size = 20
+        orbit_distance = 0
+		orbit_angle = { min = 20 max = 220 }
 	}
 
 	change_orbit = 45
@@ -107,12 +103,5 @@ misc_pjs_turrim_crepusculum = {
         class = "pc_ringworld_seam"
         orbit_angle = 30
         orbit_distance = 0
-    }
-
-    init_effect = {
-        spawn_megastructure = {
-            type = "dyson_sphere_ruined"
-            location = event_target:dyson_sphere_target
-        }
     }
 }
