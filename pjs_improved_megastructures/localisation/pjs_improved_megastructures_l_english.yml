@@ -8,7 +8,7 @@
   allow_tech_ap_galactic_wonders_megacorp:0 "Research options gained:\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_matter_decompressor_construction$ is an incredibly powerful Megastructures."
   allow_tech_ap_galactic_wonders_utopia_and_megacorp:0 "Research options gained:\n£engineering£ §Y$tech_ring_world_construction$§!\n£physics£ §Y$tech_dyson_sphere_construction$§!\n£physics£ §Y$tech_matter_decompressor_construction$§!\nThe $tech_ring_world_construction$, $tech_matter_decompressor_construction$, and $tech_dyson_sphere_construction$ are incredibly powerful Megastructures."
 
-  ap_master_builders_world_size:0 "§HHabitats§! owned by our Empire have space for an additional §Y2§! districts. §HRingworlds§!, §HAsteroid Bases§! owned by our Empire have space for an additional §Y1§! district."
+  ap_master_builders_world_size:0 "§HHabitats§! owned by our Empire have space for an additional §Y2§! districts. §HRingworlds§! owned by our Empire have space for an additional §Y1§! district."
 
 
   ## Colony Types
