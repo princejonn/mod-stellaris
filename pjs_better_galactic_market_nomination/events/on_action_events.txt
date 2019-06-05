@@ -7159,15 +7159,18 @@ country_event = {
 	}
 }
 
-# Planet is turned into tomb world by Armageddon bombing stance
+# Planet is turned into tomb world by special bombing stance
 planet_event = {
 	id = action.81
 	hide_window = yes
 
 	is_triggered_only = yes
-	
+
 	trigger = {
-		has_orbital_bombardment_stance = armageddon
+		OR = {
+			has_orbital_bombardment_stance = armageddon
+			has_orbital_bombardment_stance = pox
+		}
 		from = {
 			OR = {
 				is_country_type = default
@@ -7177,15 +7180,15 @@ planet_event = {
 		}
 		habitable_planet = yes
 	}
-	
+
 	immediate = {
-		owner = { 
+		owner = {
 			add_static_war_exhaustion = {
 				attacker = from
 				location = root
 				value_for_planet_destruction = 0.5
 			}
-			country_event = { id = action.82 } 
+			country_event = { id = action.82 }
 		}
 		from = { country_event = { id = action.83 } }
 		change_pc = pc_nuked
@@ -7194,7 +7197,7 @@ planet_event = {
 		remove_modifier = "natural_beauty"
 		remove_modifier = "atmospheric_aphrodisiac"
 		remove_modifier = "atmospheric_hallucinogen"
-		remove_modifier = "lush_planet"		
+		remove_modifier = "lush_planet"
 		remove_modifier = "dangerous_wildlife"
 		set_planet_flag = armageddon_nuked
 	}
@@ -7208,9 +7211,9 @@ country_event = {
 	desc = action.82.desc
 	show_sound = event_super_explosion
 	location = from
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = action.82.a
 		custom_tooltip = bombed_to_tomb_world
@@ -7225,9 +7228,9 @@ country_event = {
 	desc = action.83.desc
 	show_sound = event_super_explosion
 	location = from
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = EXCELLENT
 		custom_tooltip = bombed_to_tomb_world
@@ -7289,7 +7292,7 @@ event = {
 							is_country_type = default
 							is_country_type = fallen_empire
 							is_country_type = awakened_fallen_empire
-						}					
+						}
 						NOR = {
 							is_same_value = prevprev.owner
 							is_at_war_with = prevprev.owner
@@ -7384,7 +7387,7 @@ planet_event = {
 		remove_modifier = planet_growth_discouraged
 		remove_modifier = hunter_killer_drones
 		remove_modifier = compliance_protocols
-		remove_modifier = martial_law		
+		remove_modifier = martial_law
 		remove_modifier = crime_lord_deal
 		remove_modifier = crime_lord_deal_broken
 		remove_modifier = anticrime_campaign
@@ -7560,12 +7563,12 @@ event = {
 		every_planet = {
 			limit = {
 				exists = owner
-				owner = { 
+				owner = {
 					OR = {
 						is_country_type = extradimensional
 						is_country_type = extradimensional_2
 						is_country_type = extradimensional_3
-					} 
+					}
 				}
 			}
 			if = {

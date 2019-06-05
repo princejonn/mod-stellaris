@@ -5,5 +5,5 @@ tags={
 	"Galaxy Generation"
 }
 picture="thumb.jpg"
-remote_file_id=""
-supported_version="2.2.*"
+remote_file_id="1761678694"
+supported_version="2.3.*"

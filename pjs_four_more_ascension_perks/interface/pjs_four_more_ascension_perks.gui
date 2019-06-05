@@ -1,0 +1,6 @@
+guiTypes = {
+	positionType = { name = "ap_8"	position = { x = 15 y = 148 } }
+	positionType = { name = "ap_9"	position = { x = 73 y = 148 } }
+	positionType = { name = "ap_10"	position = { x = 131 y = 148 } }
+	positionType = { name = "ap_11"	position = { x = 189 y = 148 } }
+}

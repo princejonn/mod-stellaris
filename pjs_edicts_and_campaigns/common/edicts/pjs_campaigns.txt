@@ -8,71 +8,141 @@ planet_food_boost_campaign = {
 		category = campaigns
 		cost = {
 			trigger = {
-                num_pops < 100
+                num_pops < 50
 			}
 			food = 1000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 100
-                num_pops < 200
+                num_pops >= 50
+                num_pops < 100
 			}
 			food = 2000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 200
-                num_pops < 300
+                num_pops >= 100
+                num_pops < 150
 			}
 			food = 3000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 300
-                num_pops < 400
+                num_pops >= 150
+                num_pops < 200
 			}
 			food = 4000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 400
-                num_pops < 500
+                num_pops >= 200
+                num_pops < 250
 			}
 			food = 5000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 500
-                num_pops < 600
+                num_pops >= 250
+                num_pops < 300
 			}
 			food = 6000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 600
-                num_pops < 700
+                num_pops >= 300
+                num_pops < 350
 			}
 			food = 7000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 700
-                num_pops < 800
+                num_pops >= 350
+                num_pops < 400
 			}
 			food = 8000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 800
-                num_pops < 900
+                num_pops >= 400
+                num_pops < 450
 			}
 			food = 9000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 900
+                num_pops >= 450
+                num_pops < 500
 			}
 			food = 10000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 500
+                num_pops < 550
+			}
+			food = 11000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 550
+                num_pops < 600
+			}
+			food = 12000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 600
+                num_pops < 650
+			}
+			food = 13000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 650
+                num_pops < 700
+			}
+			food = 14000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 700
+                num_pops < 750
+			}
+			food = 15000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 750
+                num_pops < 800
+			}
+			food = 16000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 800
+                num_pops < 850
+			}
+			food = 17000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 850
+                num_pops < 900
+			}
+			food = 18000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 900
+                num_pops < 950
+			}
+			food = 19000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 950
+			}
+			food = 20000
 		}
 	}
 
@@ -96,71 +166,141 @@ planet_luxuries_boost_campaign = {
 		category = campaigns
 		cost = {
 			trigger = {
-                num_pops < 100
+                num_pops < 50
 			}
 			consumer_goods = 1000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 100
-                num_pops < 200
+                num_pops >= 50
+                num_pops < 100
 			}
 			consumer_goods = 2000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 200
-                num_pops < 300
+                num_pops >= 100
+                num_pops < 150
 			}
 			consumer_goods = 3000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 300
-                num_pops < 400
+                num_pops >= 150
+                num_pops < 200
 			}
 			consumer_goods = 4000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 400
-                num_pops < 500
+                num_pops >= 200
+                num_pops < 250
 			}
 			consumer_goods = 5000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 500
-                num_pops < 600
+                num_pops >= 250
+                num_pops < 300
 			}
 			consumer_goods = 6000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 600
-                num_pops < 700
+                num_pops >= 300
+                num_pops < 350
 			}
 			consumer_goods = 7000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 700
-                num_pops < 800
+                num_pops >= 350
+                num_pops < 400
 			}
 			consumer_goods = 8000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 800
-                num_pops < 900
+                num_pops >= 400
+                num_pops < 450
 			}
 			consumer_goods = 9000
 		}
 		cost = {
 			trigger = {
-                num_pops >= 900
+                num_pops >= 450
+                num_pops < 500
 			}
 			consumer_goods = 10000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 500
+                num_pops < 550
+			}
+			consumer_goods = 11000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 550
+                num_pops < 600
+			}
+			consumer_goods = 12000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 600
+                num_pops < 650
+			}
+			consumer_goods = 13000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 650
+                num_pops < 700
+			}
+			consumer_goods = 14000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 700
+                num_pops < 750
+			}
+			consumer_goods = 15000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 750
+                num_pops < 800
+			}
+			consumer_goods = 16000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 800
+                num_pops < 850
+			}
+			consumer_goods = 17000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 850
+                num_pops < 900
+			}
+			consumer_goods = 18000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 900
+                num_pops < 950
+			}
+			consumer_goods = 19000
+		}
+		cost = {
+			trigger = {
+                num_pops >= 950
+			}
+			consumer_goods = 20000
 		}
 	}
 
