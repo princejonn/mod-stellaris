@@ -142,8 +142,8 @@
   tech_master_archive:0 "$building_master_archive$"
   tech_master_archive_desc:0 "$building_master_archive_desc$"
 
-  tech_utopian_paradise_dome "Utopian Architecture"
-  tech_utopian_paradise_dome_desc "With the latest advances in architecture, landscaping and holographic technology, we shall build the homes of the future."
+  tech_utopian_paradise_dome:0 "Utopian Architecture"
+  tech_utopian_paradise_dome_desc:0 "With the latest advances in architecture, landscaping and holographic technology, we shall build the homes of the future."
 
   tech_pjs_escort:0 "Escorts"
   tech_pjs_escort_desc:0 "Modeled after the agile ships looming in the core systems of Stagnant Ascendancies, the Escort class is a great improvement on the Corvette and Destroyer classes, and can be fitted with a decent amount of weapons."

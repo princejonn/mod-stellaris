@@ -1,0 +1,143 @@
+decision_rw_spec_arms_industry = {
+	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_ring_world"
+	}
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			alloys = 1000
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+        AND = {
+            NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_leisure }
+            NOT = { has_planet_flag = rw_spec_science }
+        }
+	}
+
+    effect = {
+	    remove_modifier = rw_spec_none
+        set_planet_flag = rw_spec_arms_industry
+	}
+
+	ai_weight = {
+		weight = 25
+	}
+}
+
+decision_rw_spec_civilian_industry = {
+	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_ring_world"
+	}
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			alloys = 1000
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+        AND = {
+            NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_leisure }
+            NOT = { has_planet_flag = rw_spec_science }
+        }
+	}
+
+    effect = {
+	    remove_modifier = rw_spec_none
+        set_planet_flag = rw_spec_civilian_industry
+	}
+
+	ai_weight = {
+		weight = 25
+	}
+}
+
+decision_rw_spec_leisure = {
+	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_ring_world"
+	}
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			alloys = 1000
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+        AND = {
+            NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_leisure }
+            NOT = { has_planet_flag = rw_spec_science }
+        }
+	}
+
+    effect = {
+	    remove_modifier = rw_spec_none
+        set_planet_flag = rw_spec_leisure
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+decision_rw_spec_science = {
+	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_ring_world"
+	}
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			alloys = 1000
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+        AND = {
+            NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_leisure }
+            NOT = { has_planet_flag = rw_spec_science }
+        }
+	}
+
+    effect = {
+	    remove_modifier = rw_spec_none
+        set_planet_flag = rw_spec_science
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}

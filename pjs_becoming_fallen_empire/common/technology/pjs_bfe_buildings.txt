@@ -1,6 +1,6 @@
 tech_affluence_center = {
     area = engineering
-    cost = 90000
+    cost = 99000
     tier = 5
     weight = 1
     category = { industry }
@@ -32,7 +32,7 @@ tech_affluence_center = {
 
 tech_nourishment_center = {
     area = society
-    cost = 90000
+    cost = 99000
     tier = 5
     weight = 1
     category = { biology }
@@ -64,7 +64,7 @@ tech_nourishment_center = {
 
 tech_dimensional_fabricator = {
     area = physics
-    cost = 90000
+    cost = 99000
     tier = 5
     weight = 1
     category = { materials }
@@ -96,7 +96,7 @@ tech_dimensional_fabricator = {
 
 tech_class_4_singularity = {
     area = physics
-    cost = 90000
+    cost = 99000
     tier = 5
     weight = 1
     category = { field_manipulation }
@@ -128,7 +128,7 @@ tech_class_4_singularity = {
 
 tech_nano_forge = {
     area = engineering
-    cost = 90000
+    cost = 99000
     tier = 5
     weight = 1
     category = { materials }
@@ -160,7 +160,7 @@ tech_nano_forge = {
 
 tech_master_archive = {
     area = physics
-    cost = 90000
+    cost = 99000
     tier = 5
     weight = 1
     category = { computing }
@@ -192,7 +192,7 @@ tech_master_archive = {
 
 tech_utopian_paradise_dome = {
     area = society
-    cost = 90000
+    cost = 33000
     tier = 5
     weight = 1
     category = { statecraft }
