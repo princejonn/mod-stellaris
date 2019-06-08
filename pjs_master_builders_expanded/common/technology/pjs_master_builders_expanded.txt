@@ -1,0 +1,86 @@
+tech_master_builders_expanded_physics = {
+	cost = 25000
+	area = physics
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_mega_engineering" }
+	weight = 5
+	is_rare = yes
+
+	potential = {
+		has_ascension_perk = ap_master_builders
+	}
+
+	modifier = {
+		country_megastructure_build_cap_add = 2
+	}
+
+	ai_weight = {
+		factor = 25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_master_builders_expanded_society = {
+	cost = 25000
+	area = society
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_mega_engineering" }
+	weight = 5
+	is_rare = yes
+
+	potential = {
+		has_ascension_perk = ap_master_builders
+	}
+
+	modifier = {
+		country_megastructure_build_cap_add = 2
+	}
+
+	ai_weight = {
+		factor = 25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_master_builders_expanded_engineering = {
+	cost = 25000
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_mega_engineering" }
+	weight = 5
+	is_rare = yes
+
+	potential = {
+		has_ascension_perk = ap_master_builders
+	}
+
+	modifier = {
+		country_megastructure_build_cap_add = 2
+	}
+
+	ai_weight = {
+		factor = 25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}

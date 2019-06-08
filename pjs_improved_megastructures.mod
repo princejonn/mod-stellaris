@@ -1,10 +1,7 @@
-name="PJs :: Improved Megastructures"
+name="!! Split into multiple parts - check workshop page"
 path="mod/pjs_improved_megastructures"
 tags={
 	"PJs"
-	"Balance"
-	"Economy"
-	"Overhaul"
 }
 picture="thumb.jpg"
 remote_file_id="1711098117"

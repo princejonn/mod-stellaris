@@ -1,0 +1,91 @@
+﻿l_english:
+
+  ## Decisions
+
+  decision_asteroid_habitat:0 "Construct Asteroid Habitat"
+  decision_asteroid_habitat_effects_short:0 "Create the frameworks needed to inhabit this asteroid with habitable modules."
+  decision_asteroid_habitat_desc:0 "Makes the planet habitable, and enables us to build a few special uncapped districts.\n§G100%§! Habitability."
+
+  decision_moon_habitat:0 "Construct Moon Habitat"
+  decision_moon_habitat_effects_short:0 "Create the frameworks needed to inhabit this moon with habitable modules."
+  decision_moon_habitat_desc:0 "Makes the planet habitable, and enables us to build a few special uncapped districts.\n§G100%§! Habitability."
+
+  ## Districts
+
+  district_asteroid_hab_housing:0 "$district_hab_housing$"
+  district_asteroid_hab_housing_plural:0 "$district_hab_housing_plural$"
+  district_asteroid_hab_housing_desc:0 "$district_hab_housing_desc$"
+
+  district_asteroid_hab_energy:0 "$district_hab_energy$"
+  district_asteroid_hab_energy_plural:0 "$district_hab_energy_plural$"
+  district_asteroid_hab_energy_desc:0 "$district_hab_energy_desc$"
+
+  district_asteroid_hab_commercial:0 "$district_hab_commercial$"
+  district_asteroid_hab_commercial_plural:0 "$district_hab_commercial_plural$"
+  district_asteroid_hab_commercial_desc:0 "$district_hab_commercial_desc$"
+
+  district_asteroid_hab_mining:0 "$district_hab_mining$"
+  district_asteroid_hab_mining_plural:0 "$district_hab_mining_plural$"
+  district_asteroid_hab_mining_desc:0 "$district_hab_mining_desc$"
+
+  district_moon_hab_housing:0 "$district_hab_housing$"
+  district_moon_hab_housing_plural:0 "$district_hab_housing_plural$"
+  district_moon_hab_housing_desc:0 "$district_hab_housing_desc$"
+
+  district_moon_hab_energy:0 "$district_hab_energy$"
+  district_moon_hab_energy_plural:0 "$district_hab_energy_plural$"
+  district_moon_hab_energy_desc:0 "$district_hab_energy_desc$"
+
+  district_moon_hab_commercial:0 "$district_hab_commercial$"
+  district_moon_hab_commercial_plural:0 "$district_hab_commercial_plural$"
+  district_moon_hab_commercial_desc:0 "$district_hab_commercial_desc$"
+
+  district_moon_hab_hydroponics:0 "Hydroponics District"
+  district_moon_hab_hydroponics_plural:0 "Hydroponics Districts"
+  district_moon_hab_hydroponics_desc:0 "$building_hydroponics_farm_desc$"
+
+  district_moon_hab_mining:0 "$district_hab_mining$"
+  district_moon_hab_mining_plural:0 "$district_hab_mining_plural$"
+  district_moon_hab_mining_desc:0 "$district_hab_mining_desc$"
+
+  ## Static Modifiers
+
+  asteroid_habitat:0 "Asteroid Habitat"
+  asteroid_habitat_desc:0 "This planet has been deemed suitable for an asteroid habitat."
+
+  moon_habitat:0 "Moon Habitat"
+  moon_habitat_desc:0 "This planet has been deemed suitable for a moon habitat."
+
+  ## Planet Classes
+
+  pc_asteroid_habitat:0 "$pc_asteroid$"
+  pc_asteroid_habitat_desc:0 "$pc_asteroid_desc$"
+
+  pc_ice_asteroid_habitat:0 "$pc_ice_asteroid$"
+  pc_ice_asteroid_habitat_desc:0 "$pc_ice_asteroid_desc$"
+
+  pc_rare_crystal_asteroid_habitat:0 "$pc_rare_crystal_asteroid$"
+  pc_rare_crystal_asteroid_habitat_desc:0 "$pc_rare_crystal_asteroid_desc$"
+
+  pc_molten_habitat:0 "$pc_molten$"
+  pc_molten_habitat_desc:0 "$pc_molten_desc$"
+
+  pc_barren_habitat:0 "$pc_barren$"
+  pc_barren_habitat_desc:0 "$pc_barren_desc$"
+
+  pc_barren_cold_habitat:0 "$pc_barren_cold$"
+  pc_barren_cold_habitat_desc:0 "$pc_barren_cold_desc$"
+
+  pc_toxic_habitat:0 "$pc_toxic$"
+  pc_toxic_habitat_desc:0 "$pc_toxic_desc$"
+
+  pc_frozen_habitat:0 "$pc_frozen$"
+  pc_frozen_habitat_desc:0 "$pc_frozen_desc$"
+
+  ## Technology
+
+  tech_asteroid_habitat:0 "Asteroid Habitats"
+  tech_asteroid_habitat_desc:0 "Unlocks planetary decision on asteroids to build habitats."
+
+  tech_moon_habitat:0 "Moon Habitats"
+  tech_moon_habitat_desc:0 "Unlocks planetary decision on moons to build habitats."

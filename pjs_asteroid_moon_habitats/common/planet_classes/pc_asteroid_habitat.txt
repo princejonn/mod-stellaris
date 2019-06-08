@@ -1,0 +1,95 @@
+pc_asteroid_habitat = {
+	entity = "asteroid"
+	entity_scale = 0.95
+	icon_frame = 18
+
+	asteroid = yes
+
+	atmosphere_color 		= hsv { 0.0 0.0 1.0 }
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	habitat = yes
+	colonizable = yes
+	ideal = yes
+	fixed_entity_scale = yes
+
+	show_city = no
+	starting_planet = no
+	orbit_lines = no
+	has_colonization_influence_cost = no
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0
+	spawn_odds = 0
+	planet_size = 5
+
+	modifier = { planet_colony_development_speed_mult = 3 }
+}
+
+pc_ice_asteroid_habitat = {
+	entity = "asteroid_ice_large"
+	entity_scale = 0.95
+	icon_frame = 18
+
+	asteroid = yes
+
+	atmosphere_color 		= hsv { 0.0 0.0 1.0 }
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	habitat = yes
+	colonizable = yes
+	ideal = yes
+	fixed_entity_scale = yes
+
+	show_city = no
+	starting_planet = no
+	orbit_lines = no
+	has_colonization_influence_cost = no
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0
+	spawn_odds = 0
+	planet_size = 5
+
+	modifier = { planet_colony_development_speed_mult = 3 }
+}
+
+pc_rare_crystal_asteroid_habitat = {
+	entity = "asteroid_crystal_large"
+	entity_scale = 0.95
+	icon_frame = 18
+
+	asteroid = yes
+
+	atmosphere_color 		= hsv { 0.0 0.0 1.0 }
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	habitat = yes
+	colonizable = yes
+	ideal = yes
+	fixed_entity_scale = yes
+
+	show_city = no
+	starting_planet = no
+	orbit_lines = no
+	has_colonization_influence_cost = no
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0
+	spawn_odds = 0
+	planet_size = 5
+
+	modifier = { planet_colony_development_speed_mult = 3 }
+}
