@@ -1,0 +1,45 @@
+building_augural_manufactory = {
+	base_buildtime = 900
+	can_build = yes
+	can_demolish = yes
+
+	category = resource
+
+	potential = {
+        exists = owner
+	    OR = {
+            owner = { is_fallen_empire = yes }
+	        owner = { has_technology = "tech_augural_manufactory" }
+	    }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			sr_zro = 2
+			sr_dark_matter = 2
+			sr_living_metal = 2
+		}
+		cost = {
+			minerals = 1200
+			sr_zro = 100
+			sr_dark_matter = 100
+			sr_living_metal = 100
+		}
+		upkeep = {
+			energy = 75
+		}
+	}
+
+	on_queued = {
+		owner = {
+			subtract_variable = { which = dimensional_fabricator_build_count value = 1 }
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = { which = dimensional_fabricator_build_count value = 1 }
+		}
+	}
+}
