@@ -1,8 +1,8 @@
-@makeshift_energy_bonus     = 100
-@stage_2_energy_bonus       = 1000
-@stage_3_energy_bonus       = 2000
-@stage_4_energy_bonus       = 3000
-@stage_5_energy_bonus       = 4000
+@makeshift_energy_bonus         = 100
+@stage_2_energy_bonus           = 1000
+@stage_3_energy_bonus           = 2000
+@stage_4_energy_bonus           = 3000
+@stage_5_energy_bonus           = 4000
 
 
 # Dyson Sphere Site
@@ -32,10 +32,6 @@ dyson_sphere_0 = {
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_dyson_sphere"
-			from = { NOT = { has_country_flag = built_dyson_sphere } }
 		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"

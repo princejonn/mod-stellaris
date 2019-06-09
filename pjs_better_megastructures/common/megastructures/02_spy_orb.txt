@@ -1,11 +1,11 @@
-@makeshift_sensor_range     = 10
-@makeshift_hyperlane_range  = 15
-@stage_1_sensor_range       = 20
-@stage_1_hyperlane_range    = 30
-@stage_2_sensor_range       = 40
-@stage_2_hyperlane_range    = 60
-@stage_3_sensor_range       = 60
-@stage_3_hyperlane_range    = 90
+@makeshift_sensor_range         = 10
+@makeshift_hyperlane_range      = 15
+@stage_1_sensor_range           = 20
+@stage_1_hyperlane_range        = 30
+@stage_2_sensor_range           = 40
+@stage_2_hyperlane_range        = 60
+@stage_3_sensor_range           = 60
+@stage_3_hyperlane_range        = 90
 
 
 spy_orb_0 = {
@@ -34,10 +34,6 @@ spy_orb_0 = {
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
 		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"

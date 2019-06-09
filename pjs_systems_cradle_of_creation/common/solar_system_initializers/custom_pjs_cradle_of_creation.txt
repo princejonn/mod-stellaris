@@ -193,6 +193,10 @@ custom_pjs_cradle_of_creation = {
         distance = { min = 10 max = 60 }
         initializer = "misc_pjs_olympus"
     }
+    neighbor_system = {
+        distance = { min = 10 max = 60 }
+        initializer = "misc_pjs_thuringwethil"
+    }
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }

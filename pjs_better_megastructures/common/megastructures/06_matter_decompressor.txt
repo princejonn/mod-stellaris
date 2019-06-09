@@ -1,8 +1,8 @@
-@makeshift_mineral_bonus     = 100
-@stage_1_mineral_bonus       = 500
-@stage_2_mineral_bonus       = 1000
-@stage_3_mineral_bonus       = 1500
-@stage_4_mineral_bonus       = 2000
+@makeshift_mineral_bonus        = 100
+@stage_1_mineral_bonus          = 500
+@stage_2_mineral_bonus          = 1000
+@stage_3_mineral_bonus          = 1500
+@stage_4_mineral_bonus          = 2000
 
 
 # Matter Decompressor Site
@@ -61,25 +61,6 @@ matter_decompressor_0 = {
 		custom_tooltip = {
 			fail_text = "requires_black_hole"
 			is_star_class = sc_black_hole
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			#will be changed to type-specific string with next translation pass
-			#fail_text = "requires_no_existing_matter_decompressor"
-			from = {
-				NOT = {
-					any_owned_megastructure = {
-						OR = {
-							is_megastructure_type = matter_decompressor_0
-							is_megastructure_type = matter_decompressor_1
-							is_megastructure_type = matter_decompressor_2
-							is_megastructure_type = matter_decompressor_3
-							is_megastructure_type = matter_decompressor_4
-							#is_megastructure_type = matter_decompressor_restored
-						}
-					}
-				}
-			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_no_existing_megastructure"

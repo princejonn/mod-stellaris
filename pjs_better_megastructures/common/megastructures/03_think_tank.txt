@@ -1,8 +1,12 @@
-@makeshift_research_bonus	= 50
-@stage_1_research_bonus     = 100
-@stage_2_research_bonus	    = 200
-@stage_3_research_bonus 	= 300
-@stage_4_research_bonus	    = 400
+@makeshift_research_bonus	    = 50
+@stage_1_research_bonus         = 100
+@stage_1_research_mult          = 0.05
+@stage_2_research_bonus	        = 200
+@stage_2_research_mult          = 0.05
+@stage_3_research_bonus 	    = 300
+@stage_3_research_mult          = 0.05
+@stage_4_research_bonus	        = 400
+@stage_4_research_mult          = 0.20
 
 
 # Think Tank Site
@@ -34,10 +38,6 @@ think_tank_0 = {
 			is_inside_border = from
 		}
 		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
-		}
-		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
 				any_system_planet = {
@@ -47,10 +47,6 @@ think_tank_0 = {
 					}
 				}
 			}
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_think_tank"
-			from = { NOT = { has_country_flag = built_think_tank } }
 		}
 	}
 	
@@ -158,7 +154,7 @@ think_tank_1 = {
 	prerequisites = { "tech_science_nexus" }
 	
 	country_modifier = {
-		all_technology_research_speed = 0.05
+		all_technology_research_speed = @stage_1_research_mult
 	}
 }
 
@@ -193,7 +189,7 @@ think_tank_2 = {
 	prerequisites = { "tech_science_nexus" }
 	
 	country_modifier = {
-		all_technology_research_speed = 0.10
+		all_technology_research_speed = @stage_2_research_mult
 	}
 }
 
@@ -235,7 +231,7 @@ think_tank_3 = {
 	show_prereqs = yes
 	
 	country_modifier = {
-		all_technology_research_speed = 0.15
+		all_technology_research_speed = @stage_3_research_mult
 	}
 }
 
@@ -270,7 +266,7 @@ think_tank_4 = {
 	potential = { always = no }
 
 	country_modifier = {
-		all_technology_research_speed = 0.15
+		all_technology_research_speed = @stage_4_research_mult
 	}
 }
 
@@ -361,7 +357,7 @@ think_tank_restored = {
 	}
 
 	country_modifier = {
-		all_technology_research_speed = 0.15
+		all_technology_research_speed = @stage_4_research_mult
 	}
 
 	on_build_start = {

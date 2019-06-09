@@ -80,25 +80,19 @@ country_event = {
                     remove_all_districts = yes
 
                     # 6 energy
-                    add_deposit = d_arid_highlands
-                    add_deposit = d_searing_desert
-                    add_deposit = d_tempestous_mountain
+                    generate_energy_deposits = yes
 
                     # 12 minerals
-                    add_deposit = d_veiny_cliffs
-                    add_deposit = d_mineral_fields
-                    add_deposit = d_prosperous_mesa
-                    add_deposit = d_ore_rich_caverns
-                    add_deposit = d_rich_mountain
-                    add_deposit = d_submerged_ore_veins
+                    generate_mineral_deposits = yes
+                    generate_mineral_deposits = yes
 
                     # 9 food
-                    add_deposit = d_bountiful_plains
-                    add_deposit = d_rugged_woods
-                    add_deposit = d_forgiving_tundra
-                    add_deposit = d_fungal_caves
-                    add_deposit = d_fertile_lands
-                    add_deposit = d_great_river
+                    generate_food_deposits = yes
+                    generate_food_1_deposit = yes
+                    generate_food_2_deposit = yes
+
+                    # 1 rare crystals
+                    generate_crystals_deposit = yes
 
                     while = { count = 3
                         add_district = district_city
@@ -106,7 +100,7 @@ country_event = {
                     while = { count = 0
                         add_district = district_generator
                     }
-                    while = { count = 4
+                    while = { count = 7
                         add_district = district_mining
                     }
                     while = { count = 6
@@ -120,8 +114,9 @@ country_event = {
                     add_building = building_holo_theatres
                     add_building = building_commercial_zone
                     add_building = building_resource_silo
+                    add_building = building_crystal_mines
 
-                    while = { count = 35
+                    while = { count = 46
                         create_pop = {
                             species = owner
                         }
@@ -158,26 +153,17 @@ country_event = {
                     remove_all_districts = yes
 
                     # 12 energy
-                    add_deposit = d_arid_highlands
-                    add_deposit = d_arid_highlands
-                    add_deposit = d_searing_desert
-                    add_deposit = d_frozen_gas_lake
-                    add_deposit = d_geothermal_vent
-                    add_deposit = d_tempestous_mountain
+                    generate_energy_deposits = yes
+                    generate_energy_deposits = yes
 
                     # 6 minerals
-                    add_deposit = d_veiny_cliffs
-                    add_deposit = d_mineral_fields
-                    add_deposit = d_ore_rich_caverns
-                    add_deposit = d_prosperous_mesa
+                    generate_mineral_deposits = yes
 
                     # 8 food
-                    add_deposit = d_lichen_fields
-                    add_deposit = d_forgiving_tundra
-                    add_deposit = d_boggy_fens
-                    add_deposit = d_nutritious_mudland
-                    add_deposit = d_fungal_caves
-                    add_deposit = d_great_river
+                    generate_food_1_deposit = yes
+                    generate_food_2_deposit = yes
+                    generate_food_2_deposit = yes
+                    generate_food_3_deposit = yes
 
                     # 1 betharian
                     add_deposit = d_betharian_deposit
@@ -191,7 +177,7 @@ country_event = {
                     while = { count = 0
                         add_district = district_mining
                     }
-                    while = { count = 5
+                    while = { count = 7
                         add_district = district_farming
                     }
 
@@ -204,7 +190,7 @@ country_event = {
                     add_building = building_commercial_zone
                     add_building = building_resource_silo
 
-                    while = { count = 35
+                    while = { count = 44
                         create_pop = {
                             species = owner
                         }
