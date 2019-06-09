@@ -6,4 +6,4 @@ tags={
 }
 picture="thumb.jpg"
 remote_file_id="1398424794"
-supported_version="2.2.*"
+supported_version="2.3.*"
