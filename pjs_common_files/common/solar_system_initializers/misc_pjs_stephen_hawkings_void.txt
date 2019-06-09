@@ -32,6 +32,7 @@ misc_pjs_stephen_hawkings_void = {
 		change_orbit = 10
 
         moon = {
+            name = "Wilde A"
             class = "pc_barren_cold"
             size = 8
             orbit_distance = 4
@@ -45,6 +46,7 @@ misc_pjs_stephen_hawkings_void = {
         }
 
         moon = {
+            name = "Wilde B"
             class = "pc_frozen"
             size = 6
             orbit_distance = 3

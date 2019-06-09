@@ -1,19 +1,16 @@
-@makeshift_sensor_range         = 10
-@makeshift_hyperlane_range      = 15
-@stage_1_sensor_range           = 20
-@stage_1_hyperlane_range        = 30
-@stage_2_sensor_range           = 40
-@stage_2_hyperlane_range        = 60
-@stage_3_sensor_range           = 60
-@stage_3_hyperlane_range        = 90
+@stage_1_immigration            = 0.15
+@stage_2_immigration            = 0.25
+@stage_3_immigration            = 0.5
+@stage_4_immigration            = 1
 
 
-spy_orb_0 = {
+# Interstellar Assembly
+interstellar_assembly_0 = {
     entity = "construction_platform_entity"
     construction_entity = "construction_platform_entity"
     portrait = "GFX_megastructure_construction_background"
     place_entity_on_planet_plane = no
-    entity_offset = { x = -15 y = -5 }
+    entity_offset = { x = -27 y = -27 }
     build_time = 1800
     resources = {
         category = megastructures
@@ -23,11 +20,11 @@ spy_orb_0 = {
         }
 
         upkeep = {
-            energy = 20
+            energy = 5
         }
     }
 
-    prerequisites = { "tech_sentry_array" }
+    prerequisites = { "tech_interstellar_assembly" }
 
     possible = {
         exists = starbase
@@ -47,9 +44,13 @@ spy_orb_0 = {
             }
         }
         custom_tooltip = {
-            fail_text = "requires_no_existing_spyorb"
-            from = { NOT = { has_country_flag = built_spyorb } }
+            fail_text = "requires_no_existing_interstellar_assembly"
+            from = { NOT = { has_country_flag = built_interstellar_assembly_site } }
         }
+        #custom_tooltip = {
+        #	fail_text = "requires_capital_system"
+        #	from.capital_scope.solar_system = { is_same_value = root }
+        #}
     }
 
     placement_rules = {
@@ -94,7 +95,8 @@ spy_orb_0 = {
     # root = system
     # from = country
     ai_weight = {
-        factor = 10
+        factor = 15
+
         modifier = {
             factor = 0.1
             starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
@@ -103,18 +105,9 @@ spy_orb_0 = {
         modifier = {
             factor = 0.1
             any_neighbor_system = {
+                exists = owner
                 NOT = {
                     owner = { is_same_value = from }
-                }
-            }
-        }
-
-        modifier = {
-            factor = 2.0
-            from = {
-                OR = {
-                    has_ethic = ethic_militarist
-                    has_ethic = ethic_fanatic_militarist
                 }
             }
         }
@@ -128,17 +121,122 @@ spy_orb_0 = {
     }
     on_build_complete = {
         fromfrom.planet = { set_planet_flag = has_megastructure }
-        set_star_flag = spy_orb_built
-        from = { set_country_flag = built_spyorb }
+        from = { set_country_flag = built_interstellar_assembly_site }
     }
 }
 
-spy_orb_1 = {
-    entity = "spyorb_phase_01_entity"
-    construction_entity = "spyorb_phase_01_construction_entity"
-    portrait = "GFX_megastructure_construction_background"
+# Interstellar Assembly 1
+interstellar_assembly_1 = {
+    entity = "interstellar_assembly_stage_1_entity"
+    construction_entity = "interstellar_assembly_stage_1_entity"
+    portrait = GFX_megastructure_construction_background
     place_entity_on_planet_plane = no
-    entity_offset = { x = -15 y = -15 }
+    entity_offset = { x = -27 y = -27 }
+    build_time = 1800
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 10000
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    upgrade_from = {
+        interstellar_assembly_0
+    }
+
+    prerequisites = { "tech_interstellar_assembly" }
+
+    country_modifier = {
+        planet_immigration_pull_mult = @stage_1_immigration
+        # enables triggered_opinion_of_interstellar_assembly_1
+    }
+
+    on_build_complete = {
+        from = { country_event = { id = mega.9006 } }
+    }
+}
+
+# Interstellar Assembly 2
+interstellar_assembly_2 = {
+    entity = "interstellar_assembly_stage_2_entity"
+    construction_entity = "interstellar_assembly_stage_2_entity"
+    portrait = GFX_megastructure_construction_background
+    place_entity_on_planet_plane = no
+    entity_offset = { x = -27 y = -27 }
+    build_time = 1800
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 10000
+        }
+
+        upkeep = {
+            energy = 20
+        }
+    }
+
+    upgrade_from = {
+        interstellar_assembly_1
+    }
+
+    prerequisites = { "tech_interstellar_assembly" }
+
+    country_modifier = {
+        planet_immigration_pull_mult = @stage_2_immigration
+        # enables triggered_opinion_of_interstellar_assembly_2
+    }
+
+    on_build_complete = {
+        from = { country_event = { id = mega.9007 } }
+    }
+}
+
+# Interstellar Assembly 3
+interstellar_assembly_3 = {
+    entity = "interstellar_assembly_stage_3_entity"
+    construction_entity = "interstellar_assembly_stage_3_entity"
+    portrait = GFX_megastructure_construction_background
+    place_entity_on_planet_plane = no
+    entity_offset = { x = -27 y = -27 }
+    build_time = 1800
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 10000
+        }
+
+        upkeep = {
+            energy = 30
+        }
+    }
+
+    upgrade_from = {
+        interstellar_assembly_2
+    }
+
+    prerequisites = { "tech_interstellar_assembly" }
+
+    country_modifier = {
+        planet_immigration_pull_mult = @stage_3_immigration
+        # enables triggered_opinion_of_interstellar_assembly_3
+    }
+
+    on_build_complete = {
+        from = { country_event = { id = mega.9008 } }
+    }
+}
+
+# Interstellar Assembly 4
+interstellar_assembly_4 = {
+    entity = "interstellar_assembly_stage_4_entity"
+    construction_entity = "interstellar_assembly_stage_4_entity"
+    portrait = "GFX_megastructure_interstellar_assembly_background"
+    place_entity_on_planet_plane = no
+    entity_offset = { x = -27 y = -27 }
     build_time = 1800
     resources = {
         category = megastructures
@@ -152,181 +250,71 @@ spy_orb_1 = {
     }
 
     upgrade_from = {
-        spy_orb_0
+        interstellar_assembly_3
     }
 
-    prerequisites = { "tech_sentry_array" }
+    prerequisites = { "tech_interstellar_assembly" }
+    show_prereqs = yes
 
-    sensor_range = @stage_1_sensor_range
-    hyperlane_range = @stage_1_hyperlane_range
-}
-
-spy_orb_2 = {
-    entity = "spyorb_phase_02_entity"
-    construction_entity = "spyorb_phase_02_construction_entity"
-    portrait = "GFX_megastructure_construction_background"
-    place_entity_on_planet_plane = no
-    entity_offset = { x = -15 y = -15 }
-    build_time = 1800
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 10000
-        }
-
-        upkeep = {
-            energy = 60
-        }
-    }
-
-    upgrade_from = {
-        spy_orb_1
-    }
-
-    prerequisites = { "tech_sentry_array" }
-
-    sensor_range = @stage_2_sensor_range
-    hyperlane_range = @stage_2_hyperlane_range
-}
-
-
-spy_orb_3 = {
-    entity = "spyorb_phase_03_entity"
-    construction_entity = "spyorb_phase_03_construction_entity"
-    portrait = "GFX_megastructure_construction_background"
-    place_entity_on_planet_plane = no
-    entity_offset = { x = -15 y = -15 }
-    build_time = 1800
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 10000
-        }
-
-        upkeep = {
-            energy = 80
-        }
-    }
-    upgrade_from = {
-        spy_orb_2
-    }
-
-    prerequisites = { "tech_sentry_array" }
-
-    sensor_range = @stage_3_sensor_range
-    hyperlane_range = @stage_3_hyperlane_range
-}
-
-spy_orb_4 = {
-    entity = "spyorb_phase_04_entity"
-    construction_entity = "spyorb_phase_04_construction_entity"
-    portrait = "GFX_megastructure_spy_orb_background"
-    place_entity_on_planet_plane = no
-    entity_offset = { x = -15 y = -15 }
-    build_time = 1800
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 10000
-        }
-
-        upkeep = {
-            energy = 100
-        }
-    }
-    upgrade_from = {
-        spy_orb_3
+    country_modifier = {
+        planet_immigration_pull_mult = @stage_4_immigration
+        # enables triggered_opinion_of_interstellar_assembly_4
     }
 
     on_build_complete = {
+        set_star_flag = interstellar_assembly_built
         from = {
             set_country_flag = has_built_or_repaired_megastructure
+            country_event = { id = mega.9009 }
         }
     }
-
-    prerequisites = { "tech_sentry_array" }
-    show_prereqs = yes
-
-    # effect implementation in game_rules (has_full_sensor_range)
 }
 
-# Ruined Sentry Array
-spy_orb_ruined = {
-    entity = "spy_orb_destroyed_entity"
+# Ruined Interstellar Assembly
+interstellar_assembly_ruined = {
+    entity = "interstellar_assembly_01_destroyed_entity"
+    construction_entity = "interstellar_assembly_01_destroyed_entity"
     portrait = "GFX_megastructure_construction_background"
-
     place_entity_on_planet_plane = no
-    entity_offset = { x = -15 y = -15 }
+    entity_offset = { x = -27 y = -27 }
+    upgrade_from = {
+    }
 
     potential = {
         always = no
     }
 }
 
-# Makeshift Sentry Array
-spy_orb_makeshift = {
-    entity = "spy_orb_destroyed_entity"
-    construction_entity = "spy_orb_destroyed_entity"
-    portrait = "GFX_megastructure_construction_background"
+# Restored Interstellar Assembly
+interstellar_assembly_restored = {
+    entity = "interstellar_assembly_stage_4_entity"
+    construction_entity = "interstellar_assembly_stage_4_entity"
+    portrait = "GFX_megastructure_interstellar_assembly_background"
     place_entity_on_planet_plane = no
-    entity_offset = { x = -15 y = -15 }
-    build_time = 1800
+    entity_offset = { x = -27 y = -27 }
+    build_time = 3600
     resources = {
         category = megastructures
         cost = {
-            alloys = 5000
+            alloys = 10000
         }
 
         upkeep = {
-            energy = 100
+            energy = 40
         }
     }
 
     upgrade_from = {
-        spy_orb_ruined
+        interstellar_assembly_ruined
     }
 
     possible = {
-        from = {  has_technology = tech_starbase_4 }
+        from = { has_technology = tech_mega_engineering }
     }
 
-    on_build_start = {
-        fromfrom = {
-            set_graphical_culture = root.from
-        }
-    }
-
-    sensor_range = @makeshift_sensor_range
-    hyperlane_range = @makeshift_hyperlane_range
-}
-
-# Restored Sentry Array
-spy_orb_restored = {
-    entity = "spyorb_phase_04_entity"
-    construction_entity = "spyorb_phase_04_construction_entity"
-    portrait = "GFX_megastructure_spy_orb_background"
-    place_entity_on_planet_plane = no
-    entity_offset = { x = -15 y = -15 }
-    build_time = 3800
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 15000
-        }
-
-        upkeep = {
-            energy = 100
-        }
-    }
-
-    upgrade_from = {
-        spy_orb_makeshift
-    }
-
-    possible = {
-        from = {
-            has_technology = tech_mega_engineering
-        }
+    country_modifier = {
+        planet_immigration_pull_mult = @stage_4_immigration
+        # enables triggered_opinion_of_interstellar_assembly_4
     }
 
     on_build_start = {
@@ -337,10 +325,11 @@ spy_orb_restored = {
 
     on_build_complete = {
         fromfrom.planet = { set_planet_flag = has_megastructure }
+        set_star_flag = interstellar_assembly_built
         every_system_ambient_object = { destroy_ambient_object = this }
         from = {
             set_country_flag = has_built_or_repaired_megastructure
-            country_event = { id = utopia.2015 }
+            country_event = { id = mega.9131 }
         }
     }
 }
