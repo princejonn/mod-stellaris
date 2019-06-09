@@ -45,7 +45,7 @@ pjs_goliath = {
 
 	possible_starbase = {
 		has_starbase_size >= starbase_citadel
-		has_starbase_building = titan_yards
+		has_starbase_building = enigmatic_yards
 	}
 
 	empire_limit = {

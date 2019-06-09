@@ -7,7 +7,7 @@
 
 entity = {
 	name = "horrorworm_01_pjs_escort_entity"
-	pdxmesh = "horrorworm_01_warship_small_mesh"
+	pdxmesh = "fallen_empire_01_warship_small_mesh"
 	scale = 0.9
 
 	locator = { name = "part1" 	position = { 0 0 0 } }
@@ -71,7 +71,7 @@ entity = {
 
 entity = {
 	name = "horrorworm_01_pjs_battlecruiser_entity"
-	pdxmesh = "horrorworm_01_warship_large_mesh"
+	pdxmesh = "fallen_empire_01_warship_large_mesh"
 	scale = 1.0
 
 	locator = { name = "part1" 	position = { 0 0 0 } }
@@ -148,7 +148,7 @@ entity = {
 
 entity = {
 	name = "horrorworm_01_pjs_goliath_entity"
-	pdxmesh = "horrorworm_01_titan_mesh"
+	pdxmesh = "fallen_empire_01_titan_mesh"
 	scale = 1.4
 
 	locator = { name = "part1" 	position = { 0 0 0 } }

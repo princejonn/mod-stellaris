@@ -7,5 +7,5 @@ tags={
 	"Economy"
 }
 picture="thumb.jpg"
-remote_file_id=""
+remote_file_id="1765443462"
 supported_version="2.3.*"
