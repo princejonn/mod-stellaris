@@ -27,10 +27,13 @@ country_event = {
                         while = { count = 10
                             add_district = district_arcology_housing
                         }
+                        while = { count = 1
+                            add_district = district_arcology_arms_industry
+                        }
                         while = { count = 3
                             add_district = district_arcology_civilian_industry
                         }
-                        while = { count = 2
+                        while = { count = 1
                             add_district = district_arcology_leisure
                         }
 
@@ -85,6 +88,7 @@ country_event = {
 
                     add_deposit = d_stasis_chambers
                     add_deposit = d_stasis_chambers
+                    add_deposit = d_stasis_chambers
 
                     set_graphical_culture = root
 
@@ -126,6 +130,10 @@ country_event = {
                         give_technology = { tech = "tech_space_mining_4" message = no }
                         give_technology = { tech = "tech_space_mining_5" message = no }
 
+                        give_technology = { tech = "tech_mine_volatile_motes" message = no }
+                        give_technology = { tech = "tech_mine_exotic_gases" message = no }
+                        give_technology = { tech = "tech_mine_rare_crystals" message = no }
+
                         if = {
                             limit = { is_machine_empire = no }
                             give_technology = { tech = "tech_eco_simulation" message = no }
@@ -148,6 +156,7 @@ country_event = {
                             limit = { is_gestalt = no }
                             add_resource = { consumer_goods = 10000 }
                         }
+                        add_resource = { influence = 800 }
                         add_resource = { unity = 10000 }
                     }
                 }
@@ -193,7 +202,10 @@ country_event = {
                     generate_food_deposits = yes
                     generate_food_deposits = yes
 
+                    generate_crystals_deposit = yes
+                    generate_motes_deposit = yes
                     generate_gases_deposit = yes
+
                     generate_betharian_deposit = yes
                     generate_pets_deposit = yes
 
@@ -226,7 +238,11 @@ country_event = {
                     add_building = building_commercial_zone
                     add_building = building_resource_silo
 
-                    while = { count = 50
+                    add_building = building_mote_harvesters
+                    add_building = building_gas_extractors
+                    add_building = building_crystal_mines
+
+                    while = { count = 55
                         create_pop = {
                             species = owner
                         }

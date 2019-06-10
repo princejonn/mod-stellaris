@@ -47,6 +47,10 @@ country_event = {
                             limit = { is_gestalt = no }
                             add_resource = { consumer_goods = 500 }
                         }
+
+                        give_technology = { tech = "tech_mine_volatile_motes" message = no }
+                        give_technology = { tech = "tech_mine_exotic_gases" message = no }
+                        give_technology = { tech = "tech_mine_rare_crystals" message = no }
                     }
                 }
             }
@@ -114,6 +118,7 @@ country_event = {
                     add_building = building_holo_theatres
                     add_building = building_commercial_zone
                     add_building = building_resource_silo
+
                     add_building = building_crystal_mines
 
                     while = { count = 46
