@@ -51,6 +51,7 @@ decision_rw_spec_civilian_industry = {
 	}
 
 	potential = {
+		from = { is_regular_empire = yes }
         is_planet_class = pc_ringworld_habitable
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
@@ -87,6 +88,7 @@ decision_rw_spec_leisure = {
 	}
 
 	potential = {
+		from = { is_regular_empire = yes }
         is_planet_class = pc_ringworld_habitable
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }

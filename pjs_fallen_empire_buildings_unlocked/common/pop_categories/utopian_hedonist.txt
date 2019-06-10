@@ -1,5 +1,5 @@
 utopian_hedonist = {
-    rank = 4
+    rank = 2
     clothes_texture_index = 1
 
     change_job_threshold = 1.0
@@ -53,7 +53,7 @@ utopian_hedonist = {
         }
     }
 
-    weight = { weight = 9999 }
+    weight = { weight = 2 }
 
     pop_modifier = {
         pop_political_power = 8
