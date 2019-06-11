@@ -12,6 +12,10 @@ tech_repeatable_trade_value_mult = {
 	weight_modifier = {
         modifier = {
             factor = 0
+            is_gestalt = yes
+        }
+        modifier = {
+            factor = 0
             years_passed < 100
         }
 	}

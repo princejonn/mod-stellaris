@@ -247,11 +247,6 @@ country_event = {
 
         ## Mods
 
-        give_technology = { tech = "tech_asteroid_habitat" message = no }
-        give_technology = { tech = "tech_moon_habitat" message = no }
-
-        give_technology = { tech = "tech_pjs_extra_civic_slot" message = no }
-
         give_technology = { tech = "tech_dimensional_fabricator" message = no }
         give_technology = { tech = "tech_class_4_singularity" message = no }
         give_technology = { tech = "tech_nourishment_center" message = no }
@@ -261,9 +256,6 @@ country_event = {
         give_technology = { tech = "tech_augural_manufactory" message = no }
         give_technology = { tech = "tech_utopian_paradise_dome" message = no }
 
-        give_technology = { tech = "tech_precognition_interface" message = no }
-        give_technology = { tech = "tech_psi_jump_drive_1" message = no }
-        give_technology = { tech = "tech_psionic_shield" message = no }
         give_technology = { tech = "tech_enigmatic_encoder" message = no }
         give_technology = { tech = "tech_enigmatic_decoder" message = no }
         give_technology = { tech = "tech_dark_matter_deflector" message = no }
@@ -277,25 +269,5 @@ country_event = {
         give_technology = { tech = "tech_master_builders_expanded_physics" message = no }
         give_technology = { tech = "tech_master_builders_expanded_society" message = no }
         give_technology = { tech = "tech_master_builders_expanded_engineering" message = no }
-
-        give_technology = { tech = "tech_severed_nerves" message = no }
-
-        give_technology = { tech = "tech_stargates_archaeology" message = no }
-        give_technology = { tech = "tech_stargates_experimentation" message = no }
-        give_technology = { tech = "tech_stargates_breakthrough" message = no }
-
-        give_technology = { tech = "tech_pjs_biological_points_1" message = no }
-        give_technology = { tech = "tech_pjs_biological_points_2" message = no }
-        give_technology = { tech = "tech_pjs_biological_points_3" message = no }
-
-        give_technology = { tech = "tech_pjs_machine_points_1" message = no }
-        give_technology = { tech = "tech_pjs_machine_points_2" message = no }
-        give_technology = { tech = "tech_pjs_machine_points_3" message = no }
-
-        give_technology = { tech = "tech_pjs_robot_points_1" message = no }
-        give_technology = { tech = "tech_pjs_robot_points_2" message = no }
-        give_technology = { tech = "tech_pjs_robot_points_3" message = no }
-
-        give_technology = { tech = "tech_utopian_abundance" message = no }
 	}
 }
