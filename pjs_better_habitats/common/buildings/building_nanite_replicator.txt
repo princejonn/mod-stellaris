@@ -1,0 +1,61 @@
+building_nanite_replicator = {
+	base_buildtime = 360
+
+	is_capped_by_modifier = yes
+
+	category = resource
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_nanite_replicator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_nanite_replicator_drone_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 360
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	prerequisites = {
+		"tech_mine_exotic_gases"
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			count_owned_pops = {
+				limit = {
+					OR = {
+						is_unemployed = yes
+						has_job = servant
+					}
+				}
+				count < 1
+			}
+		}
+	}
+}
