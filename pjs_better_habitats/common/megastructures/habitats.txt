@@ -86,10 +86,10 @@ habitat_0 = {
 	}
 
 	# root = system
-	# from = country	
+	# from = country
 	ai_weight = {
 		factor = 10
-	
+
 		modifier = {
 			factor = 0
 			starbase = { NOT = { has_starbase_size >= starbase_starport } }
@@ -103,10 +103,10 @@ habitat_0 = {
 			}
 		}
 	}
-	
+
 	on_build_start = {}
 	on_build_cancel = {}
-	
+
 	on_build_complete = {
 		spawn_planet = {
 			class = "pc_habitat"
@@ -116,8 +116,8 @@ habitat_0 = {
 			orbit_distance_offset = 9.899
 			size = 6
 			has_ring = no
-			
-			init_effect = {				
+
+			init_effect = {
 				set_name = "HABITAT_PLANET_NAME"
 				set_planet_entity = {
 					entity = "orbital_habitat_entity"
@@ -203,13 +203,6 @@ habitat_0 = {
 
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_nanites_deposit }
-					}
-					add_deposit = d_hab_nanites_1
-					set_planet_flag = research_habitat
-				}
-				if = {
-					limit = {
 						fromfrom.planet = { has_deposit = d_exotic_gases_1 }
 					}
 					add_deposit = d_hab_gas_1
@@ -269,7 +262,7 @@ habitat_0 = {
 					}
 					add_deposit = d_hab_crystal_5
 				}
-				
+
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_volatile_motes_1 }
@@ -301,85 +294,91 @@ habitat_0 = {
 					add_deposit = d_hab_mote_5
 				}
 
+				#
+			    # Special Mining Deposits
+			    #
+
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_zro_deposit_1 }
+						fromfrom.planet = { has_deposit = d_alloys_1 }
 					}
-					add_deposit = d_hab_zro_1
+					add_deposit = d_alloy_mine_1
 				}
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_zro_deposit_2 }
+						fromfrom.planet = { has_deposit = d_alloys_2 }
 					}
-					add_deposit = d_hab_zro_2
+					add_deposit = d_alloy_mine_2
 				}
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_zro_deposit_3 }
+						fromfrom.planet = { has_deposit = d_alloys_3 }
 					}
-					add_deposit = d_hab_zro_3
+					add_deposit = d_alloy_mine_3
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_4 }
+					}
+					add_deposit = d_alloy_mine_4
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_5 }
+					}
+					add_deposit = d_alloy_mine_5
 				}
 
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_1 }
 					}
-					add_deposit = d_hab_dark_matter_1
+					add_deposit = d_dark_matter_mine_1
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_2 }
 					}
-					add_deposit = d_hab_dark_matter_2
+					add_deposit = d_dark_matter_mine_2
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_3 }
 					}
-					add_deposit = d_hab_dark_matter_3
+					add_deposit = d_dark_matter_mine_3
 				}
 
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_living_metal_deposit }
 					}
-					add_deposit = d_hab_living_metal_1
+					add_deposit = d_living_metal_mine_1
 				}
-				
+
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_1 }
+						fromfrom.planet = { has_deposit = d_nanites_deposit }
 					}
-					add_deposit = d_hab_alloy_1
-					set_planet_flag = mining_habitat
+					add_deposit = d_hab_nanites_mine_1
 				}
+
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_2 }
+						fromfrom.planet = { has_deposit = d_zro_deposit_1 }
 					}
-					add_deposit = d_hab_alloy_2
-					set_planet_flag = mining_habitat
-				}
-				if = {
-					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_3 }
-					}
-					add_deposit = d_hab_alloy_3
-					set_planet_flag = mining_habitat
+					add_deposit = d_zro_mine_1
 				}
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_4 }
+						fromfrom.planet = { has_deposit = d_zro_deposit_2 }
 					}
-					add_deposit = d_hab_alloy_4
-					set_planet_flag = mining_habitat
+					add_deposit = d_zro_mine_2
 				}
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_5 }
+						fromfrom.planet = { has_deposit = d_zro_deposit_3 }
 					}
-					add_deposit = d_hab_alloy_5
-					set_planet_flag = mining_habitat
+					add_deposit = d_zro_mine_3
 				}
 			}
 		}

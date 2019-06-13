@@ -1,7 +1,7 @@
-nanite_replicator = {
+zro_harvester = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_nanite_replicator
+	building_icon = building_zro_harvesters
 	clothes_texture_index = 2
 
 	possible = {
@@ -11,7 +11,7 @@ nanite_replicator = {
 	resources = {
 		category = planet_miners
 		produces = {
-			nanites = 2
+			sr_zro = 2
 		}
 	}
 
@@ -69,10 +69,10 @@ nanite_replicator = {
 	}
 }
 
-nanite_replicator_drone = {
+zro_harvester_drone = {
 	category = simple_drone
 	condition_string = DRONE_JOB_TRIGGER
-	building_icon = building_nanite_replicator
+	building_icon = building_zro_harvesters
 
 	possible = {
 		drone_job_check_trigger = yes
@@ -81,10 +81,10 @@ nanite_replicator_drone = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			nanites = 2
+			sr_zro = 2
 		}
 		upkeep = {
-			energy = 1
+			energy = 2
 		}
 	}
 
