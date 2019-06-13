@@ -1,0 +1,24 @@
+d_hab_nanites_1 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+    resources = {
+		category = planet_deposits
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_nanite_transmutation }
+			}
+		    nanites = 1
+		}
+	}
+}
