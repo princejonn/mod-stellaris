@@ -5,12 +5,8 @@ building_augural_manufactory = {
 
 	category = resource
 
-	potential = {
-        exists = owner
-	    OR = {
-            owner = { is_fallen_empire = yes }
-	        owner = { has_technology = "tech_augural_manufactory" }
-	    }
+	allow = {
+		has_upgraded_capital = yes
 	}
 
 	resources = {
@@ -31,15 +27,7 @@ building_augural_manufactory = {
 		}
 	}
 
-	on_queued = {
-		owner = {
-			subtract_variable = { which = dimensional_fabricator_build_count value = 1 }
-		}
-	}
-
-	on_unqueued = {
-		owner = {
-			change_variable = { which = dimensional_fabricator_build_count value = 1 }
-		}
+	prerequisites = {
+		"tech_augural_manufactory"
 	}
 }
