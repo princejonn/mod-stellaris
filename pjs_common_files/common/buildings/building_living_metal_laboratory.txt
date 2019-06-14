@@ -72,7 +72,7 @@ building_living_metal_laboratory = {
 	}
 
 	prerequisites = {
-		"tech_mine_dark_matter"
+		"tech_mine_living_metal"
 	}
 
 	ai_weight = {
