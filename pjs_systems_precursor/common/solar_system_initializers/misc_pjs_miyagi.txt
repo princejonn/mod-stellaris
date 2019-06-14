@@ -175,7 +175,7 @@ misc_pjs_miyagi = {
                 }
                 set_planet_flag = megastructure
                 set_planet_flag = habitat
-                add_deposit = d_hab_zro_3
+                set_planet_flag = research_habitat
             }
         }
     }

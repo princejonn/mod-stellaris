@@ -4,14 +4,23 @@
 
   building_alloy_recycling:0 "Alloy Recycling Yard"
   building_alloy_recycling_desc:0 "Exploiting a nearby §Y$d_alloy_mine_1$§! deposit."
+  mod_building_alloy_recycling_max:0 "Max $building_alloy_recycling$"
+
   building_dark_matter_laboratory:0 "Dark Matter Laboratory"
   building_dark_matter_laboratory_desc:0 "Exploiting a nearby §Y$d_dark_matter_mine_1$§! deposit."
+  mod_building_dark_matter_laboratory_max:0 "Max $building_dark_matter_laboratory$"
+
   building_living_metal_laboratory:0 "Living Metal Laboratory"
   building_living_metal_laboratory_desc:0 "Exploiting a nearby §Y$d_living_metal_mine_1$§! deposit."
+  mod_building_living_metal_laboratory_max:0 "Max $building_living_metal_laboratory$"
+
   building_nanite_replicator:0 "Nanite Replicator"
   building_nanite_replicator_desc:0 "Exploiting a nearby §Y$d_nanites_mine_1$§! deposit."
+  mod_building_nanite_replicator_max:0 "Max $building_nanite_replicator$"
+
   building_zro_harvesters:0 "Zro Harvesters"
   building_zro_harvesters_desc:0 "Exploiting a nearby §Y$d_zro_mine_1$§! deposit."
+  mod_building_zro_harvesters_max:0 "Max $building_zro_harvesters$"
 
   ## Deposits
 

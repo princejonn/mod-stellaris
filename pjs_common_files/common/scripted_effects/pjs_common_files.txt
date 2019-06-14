@@ -24,9 +24,9 @@ generate_energy_3_deposit = {
 generate_energy_deposits = {
     while = { count = 6
         random_list = {
-            4 = generate_energy_1_deposit = yes
-            4 = generate_energy_2_deposit = yes
-            1 = generate_energy_3_deposit = yes
+            4 = { generate_energy_1_deposit = yes }
+            4 = { generate_energy_2_deposit = yes }
+            1 = { generate_energy_3_deposit = yes }
         }
     }
 }
@@ -55,9 +55,9 @@ generate_mineral_3_deposit = {
 generate_mineral_deposits = {
     while = { count = 6
         random_list = {
-            4 = generate_mineral_1_deposit = yes
-            4 = generate_mineral_2_deposit = yes
-            1 = generate_mineral_3_deposit = yes
+            4 = { generate_mineral_1_deposit = yes }
+            4 = { generate_mineral_2_deposit = yes }
+            1 = { generate_mineral_3_deposit = yes }
         }
     }
 }
@@ -96,9 +96,9 @@ generate_food_3_deposit = {
 generate_food_deposits = {
     while = { count = 6
         random_list = {
-            4 = generate_food_1_deposit = yes
-            4 = generate_food_2_deposit = yes
-            1 = generate_food_3_deposit = yes
+            4 = { generate_food_1_deposit = yes }
+            4 = { generate_food_2_deposit = yes }
+            1 = { generate_food_3_deposit = yes }
         }
     }
 }

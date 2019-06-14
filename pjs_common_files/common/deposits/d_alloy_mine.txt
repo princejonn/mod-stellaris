@@ -1,5 +1,4 @@
 d_alloy_mine_1 = {
-	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -8,7 +7,7 @@ d_alloy_mine_1 = {
 	}
 
 	planet_modifier = {
-		building_alloy_recycling = 1
+		building_alloy_recycling_max = 1
 	}
 
 	drop_weight = {
@@ -18,7 +17,6 @@ d_alloy_mine_1 = {
 }
 
 d_alloy_mine_2 = {
-	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -27,7 +25,7 @@ d_alloy_mine_2 = {
 	}
 
 	planet_modifier = {
-		building_alloy_recycling = 2
+		building_alloy_recycling_max = 2
 	}
 
 	drop_weight = {
@@ -37,7 +35,6 @@ d_alloy_mine_2 = {
 }
 
 d_alloy_mine_3 = {
-	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -46,7 +43,7 @@ d_alloy_mine_3 = {
 	}
 
 	planet_modifier = {
-		building_alloy_recycling = 3
+		building_alloy_recycling_max = 3
 	}
 
 	drop_weight = {
@@ -56,7 +53,6 @@ d_alloy_mine_3 = {
 }
 
 d_alloy_mine_4 = {
-	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -65,7 +61,7 @@ d_alloy_mine_4 = {
 	}
 
 	planet_modifier = {
-		building_alloy_recycling = 4
+		building_alloy_recycling_max = 4
 	}
 
 	drop_weight = {
@@ -75,7 +71,6 @@ d_alloy_mine_4 = {
 }
 
 d_alloy_mine_5 = {
-	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -84,7 +79,7 @@ d_alloy_mine_5 = {
 	}
 
 	planet_modifier = {
-		building_alloy_recycling = 5
+		building_alloy_recycling_max = 5
 	}
 
 	drop_weight = {

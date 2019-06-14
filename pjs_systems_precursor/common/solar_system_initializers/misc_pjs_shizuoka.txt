@@ -85,7 +85,7 @@ misc_pjs_shizuoka = {
                 }
                 set_planet_flag = megastructure
                 set_planet_flag = habitat
-                add_deposit = d_hab_living_metal_1
+                set_planet_flag = research_habitat
             }
         }
     }

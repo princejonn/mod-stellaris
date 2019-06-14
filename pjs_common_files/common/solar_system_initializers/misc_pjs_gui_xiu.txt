@@ -1,5 +1,5 @@
 misc_pjs_gui_xiu = {
-    name = "9319 Gui Xiu"
+    name = "Gui Xiu"
 	class = "sc_black_hole"
 
     usage = misc_system_init

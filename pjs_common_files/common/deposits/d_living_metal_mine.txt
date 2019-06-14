@@ -1,5 +1,4 @@
 d_living_metal_mine_1 = {
-	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -8,7 +7,7 @@ d_living_metal_mine_1 = {
 	}
 
 	planet_modifier = {
-		building_living_metal_laboratory = 1
+		building_living_metal_laboratory_max = 1
 	}
 
 	drop_weight = {
@@ -18,7 +17,6 @@ d_living_metal_mine_1 = {
 }
 
 d_living_metal_mine_2 = {
-	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -27,7 +25,7 @@ d_living_metal_mine_2 = {
 	}
 
 	planet_modifier = {
-		building_living_metal_laboratory = 2
+		building_living_metal_laboratory_max = 2
 	}
 
 	drop_weight = {
@@ -37,7 +35,6 @@ d_living_metal_mine_2 = {
 }
 
 d_living_metal_mine_3 = {
-	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -46,7 +43,7 @@ d_living_metal_mine_3 = {
 	}
 
 	planet_modifier = {
-		building_living_metal_laboratory = 3
+		building_living_metal_laboratory_max = 3
 	}
 
 	drop_weight = {
