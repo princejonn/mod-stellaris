@@ -359,7 +359,7 @@ habitat_0 = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_nanites_deposit }
 					}
-					add_deposit = d_hab_nanites_mine_1
+					add_deposit = d_nanites_mine_1
 				}
 
 				if = {
