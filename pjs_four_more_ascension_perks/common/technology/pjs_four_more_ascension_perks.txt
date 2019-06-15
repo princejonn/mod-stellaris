@@ -22,7 +22,7 @@ pjs_extra_ascension_perks_1 = {
 		}
         modifier = {
             factor = 0
-			years_passed < 133
+			years_passed < 100
         }
         modifier = {
             factor = 0
@@ -56,7 +56,7 @@ pjs_extra_ascension_perks_2 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-			years_passed < 166
+			years_passed < 120
         }
         modifier = {
             factor = 0
@@ -90,7 +90,7 @@ pjs_extra_ascension_perks_3 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-			years_passed < 199
+			years_passed < 140
         }
         modifier = {
             factor = 0
@@ -124,7 +124,7 @@ pjs_extra_ascension_perks_4 = {
 	weight_modifier = {
         modifier = {
             factor = 0
-			years_passed < 233
+			years_passed < 160
         }
         modifier = {
             factor = 0

@@ -19,7 +19,7 @@ nanite_replicator = {
 		category = planet_researchers
 		produces = {
 			nanites = 2
-			engineering_research = 4
+			engineering_research = 10
 		}
 		upkeep = {
 			consumer_goods = 3
@@ -129,7 +129,7 @@ nanite_replicator_drone = {
 		category = planet_researchers
 		produces = {
 			nanites = 2
-			engineering_research = 4
+			engineering_research = 10
 		}
 		upkeep = {
 			minerals = 9
@@ -200,7 +200,7 @@ nanite_replicator_droid = {
 		category = planet_researchers
 		produces = {
 			nanites = 2
-			engineering_research = 4
+			engineering_research = 10
 		}
 		upkeep = {
 			minerals = 9

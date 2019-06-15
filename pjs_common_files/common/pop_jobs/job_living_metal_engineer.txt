@@ -19,7 +19,7 @@ living_metal_engineer = {
 		category = planet_researchers
 		produces = {
 			sr_living_metal = 2
-			engineering_research = 4
+			engineering_research = 10
 		}
 		upkeep = {
 			consumer_goods = 3
@@ -129,7 +129,7 @@ living_metal_engineer_drone = {
 		category = planet_researchers
 		produces = {
 			sr_living_metal = 2
-			engineering_research = 4
+			engineering_research = 10
 		}
 		upkeep = {
 			minerals = 9
@@ -200,7 +200,7 @@ living_metal_engineer_droid = {
 		category = planet_researchers
 		produces = {
 			sr_living_metal = 2
-			engineering_research = 4
+			engineering_research = 10
 		}
 		upkeep = {
 			minerals = 9

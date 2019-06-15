@@ -19,7 +19,7 @@ dark_matter_researcher = {
 		category = planet_researchers
 		produces = {
 			sr_dark_matter = 2
-			physics_research = 4
+			physics_research = 10
 		}
 		upkeep = {
 			consumer_goods = 3
@@ -129,7 +129,7 @@ dark_matter_researcher_drone = {
 		category = planet_researchers
 		produces = {
 			sr_dark_matter = 2
-			physics_research = 4
+			physics_research = 10
 		}
 		upkeep = {
 			minerals = 9
@@ -200,7 +200,7 @@ dark_matter_researcher_droid = {
 		category = planet_researchers
 		produces = {
 			sr_dark_matter = 2
-			physics_research = 4
+			physics_research = 10
 		}
 		upkeep = {
 			minerals = 9
