@@ -125,13 +125,6 @@ country_event = {
         give_technology = { tech = "tech_torpedoes_2" message = no }
         give_technology = { tech = "tech_torpedoes_3" message = no }
 
-        give_technology = { tech = "tech_dark_matter_deflector" message = no }
-        give_technology = { tech = "tech_dark_matter_power_core" message = no }
-        give_technology = { tech = "tech_dark_matter_propulsion" message = no }
-
-        give_technology = { tech = "tech_enigmatic_encoder" message = no }
-        give_technology = { tech = "tech_enigmatic_decoder" message = no }
-
         give_technology = { tech = "tech_basic_science_lab_1" message = no }
         give_technology = { tech = "tech_basic_science_lab_2" message = no }
         give_technology = { tech = "tech_basic_science_lab_3" message = no }
@@ -247,6 +240,13 @@ country_event = {
 
         ## Mods
 
+        give_technology = { tech = "tech_dark_matter_deflector" message = no }
+        give_technology = { tech = "tech_dark_matter_power_core" message = no }
+        give_technology = { tech = "tech_dark_matter_propulsion" message = no }
+
+        give_technology = { tech = "tech_enigmatic_encoder" message = no }
+        give_technology = { tech = "tech_enigmatic_decoder" message = no }
+
         give_technology = { tech = "tech_dimensional_fabricator" message = no }
         give_technology = { tech = "tech_class_4_singularity" message = no }
         give_technology = { tech = "tech_nourishment_center" message = no }
@@ -254,13 +254,6 @@ country_event = {
         give_technology = { tech = "tech_nano_forge" message = no }
         give_technology = { tech = "tech_master_archive" message = no }
         give_technology = { tech = "tech_augural_manufactory" message = no }
-        give_technology = { tech = "tech_utopian_paradise_dome" message = no }
-
-        give_technology = { tech = "tech_enigmatic_encoder" message = no }
-        give_technology = { tech = "tech_enigmatic_decoder" message = no }
-        give_technology = { tech = "tech_dark_matter_deflector" message = no }
-        give_technology = { tech = "tech_dark_matter_power_core" message = no }
-        give_technology = { tech = "tech_dark_matter_propulsion" message = no }
 
         give_technology = { tech = "tech_pjs_escort" message = no }
         give_technology = { tech = "tech_pjs_battlecruiser" message = no }
@@ -269,5 +262,15 @@ country_event = {
         give_technology = { tech = "tech_master_builders_expanded_physics" message = no }
         give_technology = { tech = "tech_master_builders_expanded_society" message = no }
         give_technology = { tech = "tech_master_builders_expanded_engineering" message = no }
+
+        if = {
+            limit = { is_regular_empire = yes }
+
+            give_technology = { tech = "tech_precognition_interface" message = no }
+            give_technology = { tech = "tech_psi_jump_drive_1" message = no }
+            give_technology = { tech = "tech_psionic_shield" message = no }
+
+            give_technology = { tech = "tech_utopian_paradise_dome" message = no }
+        }
 	}
 }
