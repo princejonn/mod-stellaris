@@ -173,8 +173,6 @@ country_event = {
         give_technology = { tech = "tech_hyper_drive_2" message = no }
         give_technology = { tech = "tech_hyper_drive_3" message = no }
         give_technology = { tech = "tech_wormhole_stabilization" message = no }
-        give_technology = { tech = "tech_gateway_activation" message = no }
-        give_technology = { tech = "tech_gateway_construction" message = no }
 
         give_technology = { tech = "tech_lasers_1" message = no }
         give_technology = { tech = "tech_lasers_2" message = no }
@@ -237,6 +235,15 @@ country_event = {
         give_technology = { tech = "tech_rare_crystals" message = no }
         give_technology = { tech = "tech_mine_zro" message = no }
         give_technology = { tech = "tech_mine_dark_matter" message = no }
+
+        give_technology = { tech = "tech_habitat_1" message = no }
+        give_technology = { tech = "tech_science_nexus" message = no }
+        give_technology = { tech = "tech_sentry_array" message = no }
+        give_technology = { tech = "tech_strategic_coordination" message = no }
+        give_technology = { tech = "tech_interstellar_assembly" message = no }
+        give_technology = { tech = "tech_mega_art" message = no }
+        give_technology = { tech = "tech_gateway_activation" message = no }
+        give_technology = { tech = "tech_gateway_construction" message = no }
 
         ## Mods
 

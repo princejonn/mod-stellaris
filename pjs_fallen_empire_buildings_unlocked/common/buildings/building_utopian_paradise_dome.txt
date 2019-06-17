@@ -14,7 +14,7 @@ building_utopian_paradise_dome = {
 
 	planet_modifier = {
 		planet_housing_add = 10
-		planet_amenities_add = 20
+		planet_amenities_add = 100
         job_utopian_hedonist_add = 40
 	}
 
