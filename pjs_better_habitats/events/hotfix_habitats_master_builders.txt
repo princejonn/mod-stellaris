@@ -1,0 +1,53 @@
+namespace = utopia
+planet_event = {
+	id = utopia.2657
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_habitat
+		owner = { has_ascension_perk = ap_voidborn }
+		NOT = { has_modifier = master_builders_habitats }
+	}
+
+	immediate = {
+		add_modifier = {
+			modifier = master_builders_habitats
+			days = -1
+		}
+	}
+}
+
+# Master Builders - Habitats
+event = {
+	id = utopia.2660
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_playable_country = { has_ascension_perk = ap_voidborn }
+	}
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				has_ascension_perk = ap_voidborn
+				any_owned_planet = {
+					is_planet_class = pc_habitat
+					NOT = { has_modifier = master_builders_habitats }
+				}
+			}
+			every_owned_planet = {
+				limit = {
+					is_planet_class = pc_habitat
+					NOT = { has_modifier = master_builders_habitats }
+				}
+				add_modifier = {
+					modifier = master_builders_habitats
+					days = -1
+				}
+			}
+		}
+	}
+}
