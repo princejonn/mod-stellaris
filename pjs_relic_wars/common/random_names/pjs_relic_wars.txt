@@ -28,9 +28,9 @@ war_name_parts_list = {
 }
 
 war_name_parts_list = {
-	key galaxyron_war_names"
+	key galaxy_war_names"
 	parts = {
-		"War_for_the_Galaxyron" = 1
+		"War_for_the_Galaxy" = 1
 	}
 }
 
@@ -42,9 +42,9 @@ war_name_parts_list = {
 }
 
 war_name_parts_list = {
-	key = surveyorn_war_names"
+	key = surveyor_war_names"
 	parts = {
-		"War_for_the_Surveyorn" = 1
+		"War_for_the_Surveyor" = 1
 	}
 }
 
@@ -196,12 +196,12 @@ war_name_format = {
 		modifier = {
 			add = 999
 			using_war_goal = {
-                type = wg_galaxyron
+                type = wg_galaxy
                 owner = attacker
             }
 		}
 	}
-	format = "<galaxyron_war_names>"
+	format = "<galaxy_war_names>"
 }
 
 war_name_format = {
@@ -224,12 +224,12 @@ war_name_format = {
 		modifier = {
 			add = 999
 			using_war_goal = {
-                type = wg_surveyorn
+                type = wg_surveyor
                 owner = attacker
             }
 		}
 	}
-	format = "<surveyorn_war_names>"
+	format = "<surveyor_war_names>"
 }
 
 war_name_format = {

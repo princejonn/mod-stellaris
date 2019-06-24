@@ -23,10 +23,10 @@ wg_dragon_trophy = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.10 } }
+            hidden_effect = { country_event = { id = relic_wars.11 } }
             hidden_effect = { remove_relic = r_dragon_trophy }
         }
-        hidden_effect = { country_event = { id = relic_wars.11 } }
+        hidden_effect = { country_event = { id = relic_wars.10 } }
         add_relic = r_dragon_trophy
     }
 
@@ -72,10 +72,10 @@ wg_khans_throne = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.20 } }
+            hidden_effect = { country_event = { id = relic_wars.21 } }
             hidden_effect = { remove_relic = r_khans_throne }
         }
-        hidden_effect = { country_event = { id = relic_wars.21 } }
+        hidden_effect = { country_event = { id = relic_wars.20 } }
         add_relic = r_khans_throne
     }
 
@@ -121,10 +121,10 @@ wg_worm_scales = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.30 } }
+            hidden_effect = { country_event = { id = relic_wars.31 } }
             hidden_effect = { remove_relic = r_worm_scales }
         }
-        hidden_effect = { country_event = { id = relic_wars.31 } }
+        hidden_effect = { country_event = { id = relic_wars.30 } }
         add_relic = r_worm_scales
     }
 
@@ -170,10 +170,10 @@ wg_rubricator = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.40 } }
+            hidden_effect = { country_event = { id = relic_wars.41 } }
             hidden_effect = { remove_relic = r_rubricator }
         }
-        hidden_effect = { country_event = { id = relic_wars.41 } }
+        hidden_effect = { country_event = { id = relic_wars.40 } }
         add_relic = r_rubricator
     }
 
@@ -219,10 +219,10 @@ wg_galaxy = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.50 } }
+            hidden_effect = { country_event = { id = relic_wars.51 } }
             hidden_effect = { remove_relic = r_galaxy }
         }
-        hidden_effect = { country_event = { id = relic_wars.51 } }
+        hidden_effect = { country_event = { id = relic_wars.50 } }
         add_relic = r_galaxy
     }
 
@@ -268,10 +268,10 @@ wg_omnicodex = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.60 } }
+            hidden_effect = { country_event = { id = relic_wars.61 } }
             hidden_effect = { remove_relic = r_omnicodex }
         }
-        hidden_effect = { country_event = { id = relic_wars.61 } }
+        hidden_effect = { country_event = { id = relic_wars.60 } }
         add_relic = r_omnicodex
     }
 
@@ -317,10 +317,10 @@ wg_surveyor = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.70 } }
+            hidden_effect = { country_event = { id = relic_wars.71 } }
             hidden_effect = { remove_relic = r_surveyor }
         }
-        hidden_effect = { country_event = { id = relic_wars.71 } }
+        hidden_effect = { country_event = { id = relic_wars.70 } }
         add_relic = r_surveyor
     }
 
@@ -366,10 +366,10 @@ wg_ancient_sword = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.90 } }
+            hidden_effect = { country_event = { id = relic_wars.91 } }
             hidden_effect = { remove_relic = r_ancient_sword }
         }
-        hidden_effect = { country_event = { id = relic_wars.91 } }
+        hidden_effect = { country_event = { id = relic_wars.90 } }
         add_relic = r_ancient_sword
     }
 
@@ -415,10 +415,10 @@ wg_severed_head = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.100 } }
+            hidden_effect = { country_event = { id = relic_wars.101 } }
             hidden_effect = { remove_relic = r_severed_head }
         }
-        hidden_effect = { country_event = { id = relic_wars.101 } }
+        hidden_effect = { country_event = { id = relic_wars.100 } }
         add_relic = r_severed_head
     }
 
@@ -464,10 +464,10 @@ wg_prethoryn_queen = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.110 } }
+            hidden_effect = { country_event = { id = relic_wars.111 } }
             hidden_effect = { remove_relic = r_prethoryn_queen }
         }
-        hidden_effect = { country_event = { id = relic_wars.111 } }
+        hidden_effect = { country_event = { id = relic_wars.110 } }
         add_relic = r_prethoryn_queen
     }
 
@@ -513,10 +513,10 @@ wg_unbidden_warlock = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.120 } }
+            hidden_effect = { country_event = { id = relic_wars.121 } }
             hidden_effect = { remove_relic = r_unbidden_warlock }
         }
-        hidden_effect = { country_event = { id = relic_wars.121 } }
+        hidden_effect = { country_event = { id = relic_wars.120 } }
         add_relic = r_unbidden_warlock
     }
 
@@ -562,10 +562,10 @@ wg_contingency_core = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.130 } }
+            hidden_effect = { country_event = { id = relic_wars.131 } }
             hidden_effect = { remove_relic = r_contingency_core }
         }
-        hidden_effect = { country_event = { id = relic_wars.131 } }
+        hidden_effect = { country_event = { id = relic_wars.130 } }
         add_relic = r_contingency_core
     }
 
@@ -611,10 +611,10 @@ wg_zro_crystal = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.140 } }
+            hidden_effect = { country_event = { id = relic_wars.141 } }
             hidden_effect = { remove_relic = r_zro_crystal }
         }
-        hidden_effect = { country_event = { id = relic_wars.141 } }
+        hidden_effect = { country_event = { id = relic_wars.140 } }
         add_relic = r_zro_crystal
     }
 
@@ -660,10 +660,10 @@ wg_the_last_baol = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.150 } }
+            hidden_effect = { country_event = { id = relic_wars.151 } }
             hidden_effect = { remove_relic = r_the_last_baol }
         }
-        hidden_effect = { country_event = { id = relic_wars.151 } }
+        hidden_effect = { country_event = { id = relic_wars.150 } }
         add_relic = r_the_last_baol
     }
 
@@ -709,10 +709,10 @@ wg_the_defragmentor = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.160 } }
+            hidden_effect = { country_event = { id = relic_wars.161 } }
             hidden_effect = { remove_relic = r_the_defragmentor }
         }
-        hidden_effect = { country_event = { id = relic_wars.161 } }
+        hidden_effect = { country_event = { id = relic_wars.160 } }
         add_relic = r_the_defragmentor
     }
 
@@ -758,10 +758,10 @@ wg_reality_perforator = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.170 } }
+            hidden_effect = { country_event = { id = relic_wars.171 } }
             hidden_effect = { remove_relic = r_reality_perforator }
         }
-        hidden_effect = { country_event = { id = relic_wars.171 } }
+        hidden_effect = { country_event = { id = relic_wars.170 } }
         add_relic = r_reality_perforator
     }
 
@@ -807,10 +807,10 @@ wg_pox_sample = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.180 } }
+            hidden_effect = { country_event = { id = relic_wars.181 } }
             hidden_effect = { remove_relic = r_pox_sample }
         }
-        hidden_effect = { country_event = { id = relic_wars.181 } }
+        hidden_effect = { country_event = { id = relic_wars.180 } }
         add_relic = r_pox_sample
     }
 
@@ -856,10 +856,10 @@ wg_cryo_core = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.190 } }
+            hidden_effect = { country_event = { id = relic_wars.191 } }
             hidden_effect = { remove_relic = r_cryo_core }
         }
-        hidden_effect = { country_event = { id = relic_wars.191 } }
+        hidden_effect = { country_event = { id = relic_wars.190 } }
         add_relic = r_cryo_core
     }
 
@@ -905,10 +905,10 @@ wg_war_forge = {
         }
         from = {
             add_modifier = { modifier = humiliated days = 3600 }
-            hidden_effect = { country_event = { id = relic_wars.200 } }
+            hidden_effect = { country_event = { id = relic_wars.201 } }
             hidden_effect = { remove_relic = r_war_forge }
         }
-        hidden_effect = { country_event = { id = relic_wars.201 } }
+        hidden_effect = { country_event = { id = relic_wars.200 } }
         add_relic = r_war_forge
     }
 
