@@ -12,8 +12,6 @@ tech_pjs_escort = {
         "tech_dark_matter_deflector"
         "tech_dark_matter_power_core"
         "tech_dark_matter_propulsion"
-        "tech_enigmatic_encoder"
-        "tech_enigmatic_decoder"
     }
 
 	prereqfor_desc = {
