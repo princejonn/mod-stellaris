@@ -59,7 +59,7 @@ misc_pjs_miyagi = {
 		moon = {
             name = "Setana"
 			class = "pc_city"
-			size = 25
+			size = { min = 16 max = 22 }
 			orbit_distance = 10
 			orbit_angle = { min = 20 max = 220 }
 			has_ring = no
@@ -72,6 +72,14 @@ misc_pjs_miyagi = {
 
                 add_deposit = d_stasis_chambers
                 add_deposit = d_stasis_chambers
+
+                add_deposit = d_ruined_precursor_city
+                add_deposit = d_ruined_precursor_city
+                add_deposit = d_ruined_precursor_city
+                add_deposit = d_ruined_precursor_city
+
+                add_deposit = d_former_precursor_battlefield
+                add_deposit = d_former_precursor_battlefield
 
                 add_building = building_nourishment_center
             }
@@ -80,7 +88,7 @@ misc_pjs_miyagi = {
 		moon = {
             name = "Kuromatsunai"
 			class = "pc_city"
-			size = 25
+			size = { min = 16 max = 22 }
 			orbit_distance = 10
 			orbit_angle = { min = 20 max = 220 }
 			has_ring = no
@@ -93,6 +101,14 @@ misc_pjs_miyagi = {
 
                 add_deposit = d_stasis_chambers
                 add_deposit = d_stasis_chambers
+
+                add_deposit = d_ruined_precursor_city
+                add_deposit = d_ruined_precursor_city
+                add_deposit = d_ruined_precursor_city
+                add_deposit = d_ruined_precursor_city
+
+                add_deposit = d_former_precursor_battlefield
+                add_deposit = d_former_precursor_battlefield
 
                 add_building = building_nourishment_center
             }

@@ -53,7 +53,7 @@ misc_pjs_kochi = {
 	planet = {
 	    name = "Anan"
         class = "pc_gaia"
-        size = 25
+        size = { min = 16 max = 28 }
         orbit_distance = 20
         orbit_angle = { min = 20 max = 70 }
 		has_ring = no
@@ -66,6 +66,12 @@ misc_pjs_kochi = {
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
+
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+
+            add_deposit = d_former_precursor_battlefield
+            add_deposit = d_former_precursor_battlefield
 
             generate_energy_deposits = yes
             generate_food_deposits = yes

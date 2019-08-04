@@ -56,6 +56,12 @@
   d_nanites_mine_3:0 "$d_nanites_mine_1$"
   d_nanites_mine_3_desc:0 "$d_nanites_mine_1_desc$"
 
+  d_former_precursor_battlefield:0 "Former Precursor Battlefield"
+  d_former_precursor_battlefield_desc:0 "Tens of thousands of burnt warmachines and the twisted skeletal remains of organic soldiers litter the ground at this former battlefield. Residual pockets of radiation interferes with most electronics."
+
+  d_ruined_precursor_city:0 "Ruined Precursor City"
+  d_ruined_precursor_city_desc:0 "Once a great city, now just a metal boneyard stretching as far as the eye can see."
+
   d_stasis_chambers:0 "Stasis Chamber"
   d_stasis_chambers_desc:0 "There still seem to be conclusive life signs coming from this massive stasis chamber complex. We can probably activate them again, and hopefully find a great amount of citizens in here."
 

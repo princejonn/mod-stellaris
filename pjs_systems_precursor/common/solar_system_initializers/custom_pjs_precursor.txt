@@ -38,7 +38,7 @@ custom_pjs_precursor = {
     planet = {
         name = "Kyoto"
         class = "pc_city"
-        size = 25
+        size = { min = 16 max = 22 }
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
         has_ring = no
@@ -71,7 +71,7 @@ custom_pjs_precursor = {
     planet = {
         name = "Osaka"
         class = "pc_gaia"
-        size = 25
+        size = { min = 16 max = 28 }
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
@@ -81,6 +81,15 @@ custom_pjs_precursor = {
 
 		init_effect = {
 			prevent_anomaly = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+
+            add_deposit = d_former_precursor_battlefield
+            add_deposit = d_former_precursor_battlefield
 		}
     }
 

@@ -56,7 +56,7 @@ misc_pjs_kanagawa = {
     planet = {
         name = "Sasayama"
         class = "pc_gaia"
-        size = 25
+        size = { min = 16 max = 28 }
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
@@ -69,6 +69,12 @@ misc_pjs_kanagawa = {
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
+
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+
+            add_deposit = d_former_precursor_battlefield
+            add_deposit = d_former_precursor_battlefield
 
             generate_energy_deposits = yes
             generate_food_deposits = yes
@@ -83,13 +89,12 @@ misc_pjs_kanagawa = {
     planet = {
         name = "Marugame"
         class = "pc_gaia"
-        size = 25
+        size = { min = 16 max = 28 }
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
-
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -97,6 +102,12 @@ misc_pjs_kanagawa = {
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
+
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+
+            add_deposit = d_former_precursor_battlefield
+            add_deposit = d_former_precursor_battlefield
 
             generate_energy_deposits = yes
             generate_food_deposits = yes
