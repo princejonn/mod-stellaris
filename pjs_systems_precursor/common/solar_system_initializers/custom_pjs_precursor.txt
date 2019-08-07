@@ -38,7 +38,7 @@ custom_pjs_precursor = {
     planet = {
         name = "Kyoto"
         class = "pc_city"
-        size = { min = 16 max = 22 }
+        size = 22
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
         has_ring = no
@@ -71,7 +71,7 @@ custom_pjs_precursor = {
     planet = {
         name = "Osaka"
         class = "pc_gaia"
-        size = { min = 16 max = 28 }
+        size = 26
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
