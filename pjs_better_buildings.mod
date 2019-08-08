@@ -1,5 +1,5 @@
-name="PJs :: Better Hive Buildings"
-path="mod/pjs_better_hive_buildings"
+name="PJs :: Better Buildings"
+path="mod/pjs_better_buildings"
 tags={
 	"PJs"
 	"Balance"
