@@ -324,6 +324,7 @@ misc_pjs_stella_infinitum = {
 
 		init_effect = {
 		    set_deposit = d_living_metal_deposit
+		    add_deposit = d_living_metal_deposit
 		}
     }
 	planet = {
@@ -345,7 +346,9 @@ misc_pjs_stella_infinitum = {
 		orbit_distance = 0
 
 		init_effect = {
-		    set_deposit = d_alloys_4
+		    set_deposit = d_rare_crystals_4
+		    add_deposit = d_exotic_gases_4
+		    add_deposit = d_volatile_motes_4
 		}
 	}
 	planet = {
@@ -355,7 +358,7 @@ misc_pjs_stella_infinitum = {
 		orbit_distance = 0
 
 		init_effect = {
-		    set_deposit = d_living_metal_deposit
+		    set_deposit = d_alloys_4
 		}
 	}
 	planet = {
@@ -371,7 +374,8 @@ misc_pjs_stella_infinitum = {
 		orbit_distance = 0
 
 		init_effect = {
-		    set_deposit = d_alloys_3
+		    set_deposit = d_trade_value_10
+		    add_deposit = d_trade_value_10
 		}
 	}
 	planet = {
@@ -379,6 +383,10 @@ misc_pjs_stella_infinitum = {
 		class = "pc_ringworld_tech_damaged"
 		orbit_angle = 30
 		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_alloys_4
+		}
 	}
 	planet = {
 		name = "Ring Section VI"
@@ -393,7 +401,9 @@ misc_pjs_stella_infinitum = {
 		orbit_distance = 0
 
 		init_effect = {
-		    set_deposit = d_engineering_8
+		    set_deposit = d_engineering_9
+		    add_deposit = d_physics_9
+		    add_deposit = d_society_9
 		}
 	}
 	planet = {
@@ -403,7 +413,7 @@ misc_pjs_stella_infinitum = {
 		orbit_distance = 0
 
 		init_effect = {
-		    set_deposit = d_physics_8
+		    set_deposit = d_alloys_4
 		}
 	}
 	planet = {

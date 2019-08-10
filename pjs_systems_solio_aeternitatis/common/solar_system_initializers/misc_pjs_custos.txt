@@ -12,6 +12,10 @@ misc_pjs_custos = {
         size = 35
         orbit_distance = 0
         orbit_angle = { min = 0 max = 350 }
+
+		init_effect = {
+		    set_deposit = d_energy_8
+		}
     }
 
     planet = {

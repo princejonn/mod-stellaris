@@ -17,6 +17,10 @@ misc_pjs_fodina_secundus = {
 		size = 24
         orbit_distance = 0
 		orbit_angle = 1
+
+		init_effect = {
+		    set_deposit = d_energy_8
+		}
 	}
 
 	change_orbit = 30
