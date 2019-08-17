@@ -27,6 +27,7 @@ misc_pjs_turrim_crepusculum = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
+        flags = { rw_spec_arms_industry }
     }
 	planet = {
         name = "Ring Section I"
@@ -47,6 +48,7 @@ misc_pjs_turrim_crepusculum = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
+        flags = { rw_spec_leisure }
     }
     planet = {
         name = "Ring Section III"
@@ -71,6 +73,7 @@ misc_pjs_turrim_crepusculum = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
+        flags = { rw_spec_civilian_industry }
     }
     planet = {
         name = "Ring Section V"
@@ -95,6 +98,7 @@ misc_pjs_turrim_crepusculum = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
+        flags = { rw_spec_civilian_industry }
     }
     planet = {
         name = "Ring Section VII"

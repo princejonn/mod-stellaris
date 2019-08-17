@@ -27,6 +27,7 @@ misc_pjs_sedes_scientiae = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
+        flags = { rw_spec_science }
 	}
 	planet = {
 		name = "Ring Section I"
@@ -51,6 +52,7 @@ misc_pjs_sedes_scientiae = {
 		orbit_distance = 0
 		deposit_blockers = none
 		modifiers = none
+        flags = { rw_spec_science }
 	}
 	planet = {
 		name = "Ring Section III"
@@ -75,6 +77,7 @@ misc_pjs_sedes_scientiae = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
+        flags = { rw_spec_science }
 	}
 	planet = {
 		name = "Ring Section V"
@@ -99,6 +102,7 @@ misc_pjs_sedes_scientiae = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
+        flags = { rw_spec_science }
 	}
 	planet = {
 		name = "Ring Section VII"

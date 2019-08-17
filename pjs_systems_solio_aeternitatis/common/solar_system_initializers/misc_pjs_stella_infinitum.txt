@@ -324,7 +324,6 @@ misc_pjs_stella_infinitum = {
 
 		init_effect = {
 		    set_deposit = d_living_metal_deposit
-		    add_deposit = d_living_metal_deposit
 		}
     }
 	planet = {
@@ -346,9 +345,9 @@ misc_pjs_stella_infinitum = {
 		orbit_distance = 0
 
 		init_effect = {
-		    set_deposit = d_rare_crystals_4
-		    add_deposit = d_exotic_gases_4
-		    add_deposit = d_volatile_motes_4
+		    set_deposit = d_rare_crystals_2
+		    add_deposit = d_exotic_gases_2
+		    add_deposit = d_volatile_motes_2
 		}
 	}
 	planet = {
@@ -401,9 +400,9 @@ misc_pjs_stella_infinitum = {
 		orbit_distance = 0
 
 		init_effect = {
-		    set_deposit = d_engineering_9
-		    add_deposit = d_physics_9
-		    add_deposit = d_society_9
+		    set_deposit = d_engineering_6
+		    add_deposit = d_physics_6
+		    add_deposit = d_society_6
 		}
 	}
 	planet = {
