@@ -37,17 +37,14 @@ custom_pjs_solio_aeternitatis = {
 
     planet = {
         name = "Urbes Aeternum"
-        class = ideal_planet_class
+        class = "pc_gaia"
         size = 18
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
-        has_ring = no
-        modifiers = none
-        deposit_blockers = none
+        flags = { start_food_rich_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
-            clear_deposits = yes
 
             generate_energy_deposits = yes
             generate_food_deposits = yes
@@ -73,13 +70,14 @@ custom_pjs_solio_aeternitatis = {
 
     planet = {
         name = "Orbis Aeternum"
-        class = ideal_planet_class
+        class = "pc_gaia"
         size = 25
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
+        flags = { start_gaia start_natural_beauty }
 
         starting_planet = yes
 

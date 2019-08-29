@@ -30,6 +30,15 @@ misc_pjs_custos = {
         size = 20
         orbit_distance = 35
         orbit_angle = { min = 20 max = 220 }
+        flags = { start_lush_planet }
+
+		init_effect = {
+			prevent_anomaly = yes
+
+            generate_energy_deposits = yes
+            generate_food_deposits = yes
+            generate_mineral_deposits = yes
+		}
 
         change_orbit = 10
 
