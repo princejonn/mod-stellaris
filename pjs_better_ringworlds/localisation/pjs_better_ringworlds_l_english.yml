@@ -1,5 +1,16 @@
 ﻿l_english:
 
+  ## Colony Types
+
+  col_ring_arms_industry:0 "Foundry Ring World"
+  col_ring_arms_industry_desc:0 "A ring world that specializes in the ceaseless production of alloys"
+
+  col_ring_civilian_industry:0 "Industrial Ring World"
+  col_ring_civilian_industry_desc:0 "A ring world that specializes in the ceaseless production of consumer goods"
+
+  col_ring_leisure:0 "Leisure Ring World"
+  col_ring_leisure_desc:0 "An artificial deep-space ring world dedicated to the pursuit of leisure and culture"
+
   ## Decisions
 
   decision_rw_spec_arms_industry:0 "! Ringworld Specialization: Forge Segments"

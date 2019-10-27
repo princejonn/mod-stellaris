@@ -1,0 +1,93 @@
+col_ring_arms_industry = {
+	icon = 5
+
+	potential = {
+		OR = {
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_cybrex
+		}
+	}
+
+	planet_modifier = {
+        planet_district_rw_arms_industry_build_speed_mult = 0.25
+		planet_building_foundry_1_build_speed_mult = 0.25
+        planet_metallurgists_upkeep_mult = -0.2
+	}
+
+	weight_modifier = {
+		base = 10
+		modifier = {
+			add = 5
+			owner = { has_monthly_income = { resource = alloys value < 100 } }
+		}
+		modifier = {
+			add = 2
+			has_designation = col_ring_arms_industry
+		}
+		modifier = {
+			add = 6
+			num_districts = { type = district_rw_arms_industry value >= 2 }
+		}
+	}
+}
+
+col_ring_civilian_industry = {
+	icon = 6
+
+	potential = {
+		OR = {
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_cybrex
+		}
+	}
+
+	planet_modifier = {
+		planet_district_rw_civilian_industry_build_speed_mult = 0.25
+		planet_building_factory_1_build_speed_mult = 0.25
+		planet_artisans_upkeep_mult = -0.2
+	}
+
+	weight_modifier = {
+		base = 10
+		modifier = {
+			add = 5
+			owner = { has_monthly_income = { resource = consumer_goods value < 100 } }
+		}
+		modifier = {
+			add = 2
+			has_designation = col_ring_civilian_industry
+		}
+		modifier = {
+			add = 6
+			num_districts = { type = district_rw_civilian_industry value >= 2 }
+		}
+	}
+}
+
+col_ring_leisure = {
+	icon = 20
+
+	potential = {
+		OR = {
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_cybrex
+		}
+	}
+
+	planet_modifier = {
+	    planet_district_rw_leisure_cost_mult = -0.1
+		pop_happiness = 0.10
+	}
+
+	weight_modifier = {
+		base = 10
+		modifier = {
+			add = 2
+			has_designation = col_ring_leisure
+		}
+		modifier = {
+			add = 6
+			num_districts = { type = district_rw_leisure value >= 2 }
+		}
+	}
+}
