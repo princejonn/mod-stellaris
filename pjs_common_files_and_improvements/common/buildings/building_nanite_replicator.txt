@@ -16,7 +16,7 @@ building_nanite_replicator = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_nanite_replicator_add = 1
+			job_nanite_replicator_add = 2
 		}
 	}
 	triggered_desc = {
@@ -33,7 +33,7 @@ building_nanite_replicator = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_nanite_replicator_drone_add = 1
+			job_nanite_replicator_drone_add = 2
 		}
 	}
 	triggered_desc = {
@@ -50,7 +50,7 @@ building_nanite_replicator = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_nanite_replicator_droid_add = 1
+			job_nanite_replicator_droid_add = 2
 		}
 	}
 	triggered_desc = {
@@ -64,10 +64,10 @@ building_nanite_replicator = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 480
+			minerals = 600
 		}
 		upkeep = {
-			energy = 2
+			energy = 5
 		}
 	}
 

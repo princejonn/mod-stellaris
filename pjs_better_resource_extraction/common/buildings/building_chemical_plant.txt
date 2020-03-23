@@ -1,11 +1,13 @@
+
 building_chemical_plant = {
-	base_buildtime = 720
+	base_buildtime = @b2_time
 
 	category = manufacturing
 
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
 	}
 
 	allow = {
@@ -89,7 +91,7 @@ building_chemical_plant = {
 			buildings_build_building = yes
 		}
 		modifier = {
-			weight = 600
+			weight = 200
 			owner = {
 				has_monthly_income = {
 					resource = volatile_motes
@@ -109,7 +111,24 @@ building_chemical_plant = {
 			always = yes
 		}
 	}
-	on_built = {
-		owner = { set_timed_country_flag = { flag = buildings_new_mote_plant days = 480 } }
+
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_mote_plant days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_mote_plant days = 390 } }
+		}
+		ELSE = {
+			planet = {
+				owner = { set_timed_country_flag = { flag = buildings_new_mote_plant days = 510 } }
+			}
+		}
 	}
 }

@@ -121,16 +121,11 @@ strategic_coordination_center_0 = {
         }
     }
 
-    on_build_start = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
-    }
-    on_build_cancel = {
-        fromfrom.planet = { remove_planet_flag = has_megastructure }
-    }
-    on_build_complete = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
-        from = { set_country_flag = built_strategic_coordination_center_site }
-    }
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = { set_country_flag = built_strategic_coordination_center_site }
+	}
 }
 
 # Strategic Coordination Center 1
@@ -343,13 +338,12 @@ strategic_coordination_center_restored = {
         }
     }
 
-    on_build_complete = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
-        set_star_flag = strategic_coordination_center_built
-        every_system_ambient_object = { destroy_ambient_object = this }
-        from = {
-            set_country_flag = has_built_or_repaired_megastructure
-            country_event = { id = mega.9111 }
-        }
-    }
+	on_build_complete = {
+		set_star_flag = strategic_coordination_center_built
+		every_system_ambient_object = { destroy_ambient_object = this }
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9111 }
+		}
+	}
 }

@@ -1,11 +1,13 @@
+
 building_crystal_plant = {
-	base_buildtime = 720
+	base_buildtime = @b2_time
 
 	category = manufacturing
 
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
 	}
 
 	allow = {
@@ -94,7 +96,7 @@ building_crystal_plant = {
 			buildings_build_building = yes
 		}
 		modifier = {
-			weight = 600
+			weight = 200
 			owner = {
 				has_monthly_income = {
 					resource = rare_crystals
@@ -114,107 +116,24 @@ building_crystal_plant = {
 			always = yes
 		}
 	}
-	on_built = {
-		owner = { set_timed_country_flag = { flag = buildings_new_crystal_plant days = 480 } }
-	}
-}
 
-building_crystal_plant_2 = {
-	base_buildtime = 1080
-	can_build = no
-
-	category = manufacturing
-
-	potential = {
-		owner = { has_country_flag = lithoid_crystal_plant }
-		NOR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
-		}
-	}
-
-	allow = {
-		has_upgraded_capital = yes
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_translucer_add = 4
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_translucer_drone_add = 4
-		}
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 1400
-		}
-		upkeep = {
-			energy = 5
-		}
-	}
-
-	prerequisites = {
-		"tech_rare_crystals"
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_translucer_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_translucer_drone_effect_desc
-	}
-
-	ai_weight = {
-		weight = 2
-		modifier = {
-			factor = 5
-			owner = {
-				has_monthly_income = {
-					resource = rare_crystals
-					value < 8
-				}
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
 			}
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_plant days = 270 } }
 		}
-		modifier = {
-			factor = 0
-			num_buildings = { type = building_crystal_plant_2 value >= 2 }
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_plant days = 390 } }
 		}
-		# There are already unworked jobs
-		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
-		# Will be improved... at some point
-		modifier = {
-			factor = 0
-			free_jobs > 0
-		}
-	}
-
-	ai_resource_production = {
-		rare_crystals = 2
-		trigger = {
-			always = yes
+		ELSE = {
+			planet = {
+				owner = { set_timed_country_flag = { flag = buildings_new_crystal_plant days = 510 } }
+			}
 		}
 	}
 }

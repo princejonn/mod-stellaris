@@ -1,5 +1,6 @@
+
 building_hydroponics_farm = {
-	base_buildtime = 480
+	base_buildtime = @b1_time
 
 	category = resource
 
@@ -23,16 +24,14 @@ building_hydroponics_farm = {
 
 	destroy_trigger = {
 		exists = owner
-		OR = {
-			planet = {
-				NOT = { is_planet_class = pc_habitat }
-				free_building_slots = 0
-				owner = {
-					is_ai = yes
-					has_monthly_income = {
-						resource = food
-						value > 100
-					}
+		planet = {
+			NOT = { is_planet_class = pc_habitat }
+			free_building_slots = 0
+			owner = {
+				is_ai = yes
+				has_monthly_income = {
+					resource = food
+					value > 100
 				}
 			}
 		}
@@ -42,6 +41,15 @@ building_hydroponics_farm = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_farmer_add = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_origin = origin_void_dwellers }
 		}
 		modifier = {
 			job_farmer_add = 3
@@ -90,8 +98,12 @@ building_hydroponics_farm = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 500
-			NOT = { is_planet_class = pc_habitat }
+			weight = 10
+			NOR = {
+				is_planet_class = pc_habitat
+				is_planet_class = pc_city
+				is_planet_class = pc_relic
+			}
 			OR = {
 				free_jobs < 3
 				buildings_unemployed = yes
@@ -99,7 +111,7 @@ building_hydroponics_farm = {
 			OR = {
 				num_free_districts = { type = district_farming value = 0 }
 				free_district_slots = 0
-			}#Don't build when you can still get farming districts
+			}
 			owner = {
 				OR = {
 					is_mechanical_empire = no
@@ -118,7 +130,7 @@ building_hydroponics_farm = {
 			}
 		}
 		modifier = {
-			weight = 1000
+			weight = 20
 			OR = {
 				free_housing > 3
 				owner = { is_gestalt = no }
@@ -127,11 +139,7 @@ building_hydroponics_farm = {
 				free_jobs < 3
 				buildings_unemployed = yes
 			}
-			OR = {
-				is_planet_class = pc_habitat
-				is_planet_class = pc_city
-				is_planet_class = pc_relic
-			}
+			is_planet_class = pc_habitat
 			OR = {
 				owner = {
 					OR = {
@@ -146,23 +154,10 @@ building_hydroponics_farm = {
 					}
 					has_monthly_income = {
 						resource = food
-						value < 125
+						value < 50
 					}
 				}
 				has_building = building_hydroponics_farm
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value > 1
-				}
-			}
-			OR = {
-				is_planet_class = pc_city
-				is_planet_class = pc_relic
 			}
 		}
 	}

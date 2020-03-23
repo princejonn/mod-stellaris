@@ -128,16 +128,17 @@ dyson_sphere_0 = {
         }
     }
 
-    on_build_start = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
-    }
-    on_build_cancel = {
-        fromfrom.planet = { remove_planet_flag = has_megastructure }
-    }
+    on_build_start = {}
+    on_build_cancel = {}
     on_build_complete = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
         set_star_flag = dyson_sphere_built
         from = { set_country_flag = built_dyson_sphere }
+		every_system_planet = {
+			limit = {
+				has_modifier = terraforming_candidate
+			}
+			remove_modifier = terraforming_candidate
+		}
     }
 }
 
@@ -159,6 +160,15 @@ dyson_sphere_1 = {
     }
 
     prerequisites = { "tech_dyson_sphere" }
+
+	on_build_complete = {
+		every_system_planet = {
+			limit = {
+				has_modifier = terraforming_candidate
+			}
+			remove_modifier = terraforming_candidate
+		}
+	}
 }
 
 # Partial Dyson Sphere
@@ -183,6 +193,15 @@ dyson_sphere_2 = {
     }
 
     prerequisites = { "tech_dyson_sphere" }
+
+	on_build_complete = {
+		every_system_planet = {
+			limit = {
+				has_modifier = terraforming_candidate
+			}
+			remove_modifier = terraforming_candidate
+		}
+	}
 }
 
 # Partial Dyson Sphere
@@ -207,6 +226,15 @@ dyson_sphere_3 = {
     }
 
     prerequisites = { "tech_dyson_sphere" }
+
+	on_build_complete = {
+		every_system_planet = {
+			limit = {
+				has_modifier = terraforming_candidate
+			}
+			remove_modifier = terraforming_candidate
+		}
+	}
 }
 
 # Partial Dyson Sphere
@@ -231,6 +259,15 @@ dyson_sphere_4 = {
     }
 
     prerequisites = { "tech_dyson_sphere" }
+
+    on_build_complete = {
+        every_system_planet = {
+            limit = {
+                has_modifier = terraforming_candidate
+            }
+            remove_modifier = terraforming_candidate
+        }
+    }
 }
 
 # Dyson Sphere
@@ -277,6 +314,12 @@ dyson_sphere_5 = {
             }
             change_pc = pc_barren_cold
         }
+		every_system_planet = {
+			limit = {
+				has_modifier = terraforming_candidate
+			}
+			remove_modifier = terraforming_candidate
+		}
     }
 }
 
@@ -352,7 +395,6 @@ dyson_sphere_restored = {
     }
 
     on_build_complete = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
         every_system_planet = {
             limit = {
                 OR = {
@@ -368,6 +410,12 @@ dyson_sphere_restored = {
             }
             change_pc = pc_barren_cold
         }
+		every_system_planet = {
+			limit = {
+				has_modifier = terraforming_candidate
+			}
+			remove_modifier = terraforming_candidate
+		}
         every_system_ambient_object = { destroy_ambient_object = this }
         from = {
             set_country_flag = has_built_or_repaired_megastructure

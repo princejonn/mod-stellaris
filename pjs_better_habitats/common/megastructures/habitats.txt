@@ -16,6 +16,7 @@ habitat_0 = {
 		}
 	}
 	construction_blocks_others = no
+	construction_blocked_by_others = no
 
 	potential = {
 		OR = {
@@ -88,11 +89,34 @@ habitat_0 = {
 	# root = system
 	# from = country
 	ai_weight = {
-		factor = 10
+		factor = 5
 
 		modifier = {
 			factor = 0
 			starbase = { NOT = { has_starbase_size >= starbase_starport } }
+		}
+
+		modifier = {
+			factor = 0
+			any_system_planet = {
+				is_planet_class = pc_habitat
+				is_colony = no
+			}
+		}
+
+		modifier = {
+			factor = 3
+			solar_system = {
+				exists = owner
+				is_same_value = owner.capital_scope.solar_system
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_system = {
+				exists = owner
+				is_same_value = owner.capital_scope.solar_system
+			}
 		}
 
 		modifier = {
@@ -303,30 +327,35 @@ habitat_0 = {
 						fromfrom.planet = { has_deposit = d_alloys_1 }
 					}
 					add_deposit = d_alloy_mine_1
+					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_2 }
 					}
 					add_deposit = d_alloy_mine_2
+					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_3 }
 					}
 					add_deposit = d_alloy_mine_3
+					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_4 }
 					}
 					add_deposit = d_alloy_mine_4
+					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_5 }
 					}
 					add_deposit = d_alloy_mine_5
+					set_planet_flag = mining_habitat
 				}
 
 				if = {
@@ -379,6 +408,13 @@ habitat_0 = {
 						fromfrom.planet = { has_deposit = d_zro_deposit_3 }
 					}
 					add_deposit = d_zro_mine_3
+				}
+
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_nanites_deposit }
+					}
+					add_deposit = d_nanites_mine
 				}
 			}
 		}

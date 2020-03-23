@@ -1,11 +1,13 @@
+
 building_refinery = {
-	base_buildtime = 720
+	base_buildtime = @b2_time
 
 	category = manufacturing
 
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
 	}
 
 	allow = {
@@ -79,6 +81,7 @@ building_refinery = {
 		modifier = {
 			weight = 50
 			owner = {
+				NOT = { has_country_flag = buildings_new_exotic_gases_plant }
 				has_monthly_income = {
 					resource = exotic_gases
 					value < 5
@@ -87,12 +90,13 @@ building_refinery = {
 			buildings_build_building = yes
 		}
 		modifier = {
-			weight = 600
+			weight = 200
 			owner = {
+				NOT = { has_country_flag = buildings_new_exotic_gases_plant }
 				has_monthly_income = {
 					resource = exotic_gases
-					value < 2
-				}#5 is too high since that means 2 extra buildings. Better to just go with 1 extra building
+					value < 1
+				}
 			}
 		}
 	}
@@ -101,6 +105,26 @@ building_refinery = {
 		exotic_gases = 1
 		trigger = {
 			always = yes
+		}
+	}
+
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_exotic_gases_plant days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_exotic_gases_plant days = 390 } }
+		}
+		ELSE = {
+			planet = {
+				owner = { set_timed_country_flag = { flag = buildings_new_exotic_gases_plant days = 510 } }
+			}
 		}
 	}
 }

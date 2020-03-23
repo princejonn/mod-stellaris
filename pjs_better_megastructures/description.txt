@@ -20,6 +20,7 @@ Doesn't really make sense that you cannot build some structures around stars, an
     [*] Science Nexus
     [*] Sentry Array
     [*] Strategic Coordination Center
+    [*] Mega Shipyard
 [/list]
 
 [h1]Incremental bonuses[/h1]

@@ -8,9 +8,6 @@
   col_ring_civilian_industry:0 "Industrial Ring World"
   col_ring_civilian_industry_desc:0 "A ring world that specializes in the ceaseless production of consumer goods"
 
-  col_ring_leisure:0 "Leisure Ring World"
-  col_ring_leisure_desc:0 "An artificial deep-space ring world dedicated to the pursuit of leisure and culture"
-
   ## Decisions
 
   decision_rw_spec_arms_industry:0 "! Ringworld Specialization: Forge Segments"
@@ -20,10 +17,6 @@
   decision_rw_spec_civilian_industry:0 "! Ringworld Specialization: Industry Segments"
   decision_rw_spec_civilian_industry_effects_short:0 "Add the required frameworks for the ringworld to build §YIndustry Districts§!."
   decision_rw_spec_civilian_industry_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §YIndustry Districts§!."
-
-  decision_rw_spec_leisure:0 "! Ringworld Specialization: Leisure Segments"
-  decision_rw_spec_leisure_effects_short:0 "Add the required frameworks for the ringworld to build §YLeisure Districts§!."
-  decision_rw_spec_leisure_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §YLeisure Districts§!."
 
   decision_rw_spec_science:0 "! Ringworld Specialization: Research Segments"
   decision_rw_spec_science_effects_short:0 "Add the required frameworks for the ringworld to build §YResearch Districts§!."
@@ -38,10 +31,6 @@
   district_rw_civilian_industry:0 "Industrial Segment"
   district_rw_civilian_industry_plural:0 "Industrial Segments"
   district_rw_civilian_industry_desc:0 "Workshops filled with artisans and civilian industries line the stacked streets of this district."
-
-  district_rw_leisure:0 "Leisure Segment"
-  district_rw_leisure_plural:0 "Leisure Segments"
-  district_rw_leisure_desc:0 "Where denizens of the ringworld unwind in their leisure hours."
 
   district_rw_science:0 "Research Segment"
   district_rw_science_plural:0 "Research Segments"

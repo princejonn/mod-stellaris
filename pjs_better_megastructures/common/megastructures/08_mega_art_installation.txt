@@ -109,16 +109,11 @@ mega_art_installation_0 = {
         }
     }
 
-    on_build_start = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
-    }
-    on_build_cancel = {
-        fromfrom.planet = { remove_planet_flag = has_megastructure }
-    }
-    on_build_complete = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
-        from = { set_country_flag = built_mega_art_installation_site }
-    }
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = { set_country_flag = built_mega_art_installation_site }
+	}
 }
 
 # Mega Art Installation 1
@@ -391,12 +386,11 @@ mega_art_installation_restored_2 = {
         from = { has_ancrel = yes }
     }
 
-    on_build_complete = {
-        fromfrom.planet = { set_planet_flag = has_megastructure }
-        set_star_flag = mega_art_installation_built
-        from = {
-            set_country_flag = has_built_or_repaired_megastructure
-            country_event = { id = ancrel.10030 }
-        }
-    }
+	on_build_complete = {
+		set_star_flag = mega_art_installation_built
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = ancrel.10030 }
+		}
+	}
 }

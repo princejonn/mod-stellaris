@@ -1,4 +1,4 @@
-d_nanites_mine_1 = {
+d_nanites_mine = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 
@@ -8,40 +8,6 @@ d_nanites_mine_1 = {
 
 	planet_modifier = {
 		building_nanite_replicator_max = 1
-	}
-
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_nanites_mine_2 = {
-	is_for_colonizeable = yes
-	category = deposit_cat_rare
-
-	potential = {
-		can_have_habitable_deposits = yes
-	}
-
-	planet_modifier = {
-		building_nanite_replicator_max = 2
-	}
-
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_nanites_mine_3 = {
-	is_for_colonizeable = yes
-	category = deposit_cat_rare
-
-	potential = {
-		can_have_habitable_deposits = yes
-	}
-
-	planet_modifier = {
-		building_nanite_replicator_max = 3
 	}
 
 	drop_weight = {

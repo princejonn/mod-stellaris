@@ -1,6 +1,6 @@
 
 building_psi_corps = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 
 	category = government
 
@@ -13,7 +13,7 @@ building_psi_corps = {
 	}
 
 	allow = {
-		has_upgraded_capital = yes
+		has_major_upgraded_capital = yes
 		buildings_simple_allow = yes
 	}
 
@@ -35,7 +35,7 @@ building_psi_corps = {
 			minerals = 500
 		}
 		upkeep = {
-			energy = 5
+			energy = @b2_upkeep
 		}
 	}
 
@@ -53,7 +53,7 @@ building_psi_corps = {
 }
 
 building_ministry_production = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	base_cap_amount = 1
 	icon = building_production_center
 
@@ -65,6 +65,16 @@ building_ministry_production = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			buildings_no_motes = yes
 		}
 	}
 
@@ -81,10 +91,12 @@ building_ministry_production = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
 		}
 		upkeep = {
-			energy = 5
+			energy = @b2_upkeep
+			volatile_motes = @b2_rare_upkeep
 		}
 	}
 
@@ -105,15 +117,24 @@ building_ministry_production = {
 		modifier = {
 			weight = 10
 			OR = {
-				has_building = building_factory_1
 				has_building = building_foundry_1
+				has_building = building_foundry_2
+				has_building = building_foundry_3
+
+				has_building = building_factory_1
+				has_building = building_factory_2
+				has_building = building_factory_3
 			}
 		}#No reason to build before the factory and foundry are built
+		modifier = {
+			weight = 1
+			free_building_slots = 0
+		}#Repairs
 	}
 }
 
 building_institute = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	base_cap_amount = 1
 
 	category = research
@@ -128,20 +149,13 @@ building_institute = {
 	destroy_trigger = {
 		exists = owner
 		OR = {
-			NOR = {
-				NOT = { has_modifier = resort_colony }
-				NOT = { has_modifier = slave_colony }
-				owner = { is_gestalt = yes }
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			owner = {
+				is_gestalt = no
+				is_regular_empire = no
 			}
-			AND = {
-				owner = { is_ai = yes }
-				NOR = {
-					has_building = building_research_lab_1
-					has_building = building_research_lab_2
-					has_building = building_research_lab_3
-					has_district = district_hab_science
-				}
-			}
+			buildings_no_exotic_gases = yes
 		}
 	}
 
@@ -150,16 +164,18 @@ building_institute = {
 	}
 
 	allow = {
-		has_upgraded_capital = yes
+		has_major_upgraded_capital = yes
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
 		}
 		upkeep = {
-			energy = 5
+			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
 		}
 	}
 
@@ -183,13 +199,15 @@ building_institute = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 10000
+			weight = 100
 			OR = {
 				has_building = building_research_lab_1
 				has_building = building_research_lab_2
 				has_building = building_research_lab_3
 				has_district = district_hab_science
+				has_district = district_rw_science
+				jobs_any_research = yes
 			}
-		}#Only build if a research lab is on the planet.
+		}
 	}
 }
