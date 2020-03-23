@@ -1,0 +1,16 @@
+With this mod you will have access to 8 more ascension perks through 8 (very expensive) technologies. I enjoy the limitations of only having a few APs, but I felt like I always picked the same ones over and over again (see screenshot), which didn't really give me the flavour per empire after all. 8 extra should hopefully fix that! You will have to wait a while to get them though (or fiddle with your mid- and endgame sliders ;))
+
+[h1]I want less than eight[/h1]
+[url=https://steamcommunity.com/sharedfiles/itemedittext/?id=1761678159]Subscribe to this instead![/url]
+
+[h1]When will the technologies start to appear?[/h1]
+The first technology will appear about ~100 years into the game when you have 8 or more active ascension perks. You will then see more technologies appear every 25 years.
+
+[h1]Abducting pops as Egalitarian Xenophile[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1697279349]Subscribe here[/url]
+
+[h1]Compability[/h1]
+Is not compatible with my other flavour.
+
+[h1]Recognition[/h1]
+I got the idea from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1342842934]here[/url]. The main difference between ours is that I use 4 unique technologies to give more flavour to the names (I like that, but it's definitely not necessary), and I use the default vanilla icon from base game instead of a unique.

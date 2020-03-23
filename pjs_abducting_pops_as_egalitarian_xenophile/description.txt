@@ -1,0 +1,5 @@
+Ever felt that it's a bit odd that you can only pull pops from worlds when you're abducting them. Maybe they need to be rescued from their horrible oppressors? Introducing: Rescue Operations. The Government Civic and Ascension Perk that will let you "rescue" pops from other worlds and set them free in your utopian empire. You need to be Egalitarian and Xenophile to get access.
+
+                                                                                            It's the same mechanic as barbaric despoilers. I basically copied the raiding stance files and changed names. So you do the same sort of bombardment as before! :)
+
+                                                                                            You also need to have Apocalypse, since Nihilistic Acquisition and Barbaric Despoilers does.

@@ -1,0 +1,4 @@
+This mod is where I will gather my Edicts and Campaigns.
+
+[h1]Encourage Planetary Growth & Distribute Luxury Goods[/h1]
+I really don't like pressing that buttom every few years on my plants, so they have been moved out into two Campaigns instead. The cost increases as your population grows (every 100 pops to >900) which means you will only have to press it every 10-20 years once, which feels better.

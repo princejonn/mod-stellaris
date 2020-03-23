@@ -1,0 +1,35 @@
+With this mod I am adding a big amount of new rare repeatable technologies. All of them (except 1) will cap at 4 right now. Please discuss with me why it should be more or less!
+
+[h1]New Repeatable Technologies[/h1]
+[list]
+    [*] Efficient Storage Patterns (Increasing our empire resource storage capacity)
+    [*] Megastructure Templating (Increasing the build speed of our mega structures)
+    [*] Logic Pattern Analysis (Increasing our available tech alternatives) (this one is capped at 2)
+    [*] Multitude of Luxury Goods (Increasing our amenity generation on our planets)
+    [*] Compact Living (Increasing the amount of housing we can have on our planets)
+    [*] Immigration Laws (Increasing the immigration pull of our empire)
+    [*] Efficient Complex Drones (Increasing the production output of our complex drones)
+    [*] Improved Simple Drones (Increasing the production output of our simple drones)
+    [*] Educated Specialists (Increasing the production output of our specialists)
+    [*] Improved Workforce (Increasing the production output of our workers)
+    [*] Standardized Assembly Patterns (Increasing our pop assembly speed)
+    [*] Generous Parental Leave (Increasing our pop growth speed)
+    [*] Acclaimed Admiralty (Increasing ship fire rate)
+    [*] Dynamic Thrusters (Increasing ship speed)
+    [*] Efficient Combat Computers (Increasing ship weapon range)
+    [*] Standardized Ship Components (Reducing ship upkeep costs)
+    [*] Efficient Shipyards (Reducing ship build costs)
+    [*] Accelerated Shipyards (Increasing ship build speed)
+    [*] Dynamic Shipyards (Reducing ship upgrade costs)
+    [*] Advanced Mineral Probes (Increasing gatherer station production output)
+    [*] Lateral Analysis (Increasing research station production output)
+    [*] Accelerated Terraforming (Increasing terraforming speed)
+    [*] Efficient Terraformers (Reducing terraforming costs)
+    [*] Free Trade (Increasing empire trade value)
+[/list]
+
+[h1]Compability[/h1]
+There should be no compability issues.
+
+[h1]Localisation[/h1]
+Russian: https://steamcommunity.com/sharedfiles/filedetails/?id=1670045745

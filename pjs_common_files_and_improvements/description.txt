@@ -1,0 +1,53 @@
+This mod holds common files so that all my other mods work. It also holds some hotfixes and improvements that I am simply too tired to keep track of in other mods. They are (in my opinion) universally better for the game experience, so I will keep them here to make my life as a modder easier.
+
+[h1]Better Empire Size[/h1]
+Slightly modifying the defines for empire size. I increased the default soft cap from 30 to 40. I decreased the sprawl from 5 to 2 on colonies. This gives you a LITTLE bit more time before your sprawl starts affecting you, as well as saying there's a slightly better bonus to having planets as oppposed to having systems.
+
+[h1]Better Starbase Buildings[/h1]
+Improves some of the starbase buildings by increasing the resources gathered, as well as the energy cost, as some of the bonuses were just too small.
+
+[h2]Changes[/h2]
+[list]
+    [*] Hydroponics Bay - 10 food (from 3)
+    [*] Resource Silo - 4000 storage (from 2000)
+    [*] Nebula Refinery - 10 minerals (from 6)
+    [*] Black Hole Observatory - 25 physics (from 10)
+    [*] Deep Space Black Site - 4 unity (from 1)
+    [*] Curator Think Tank - 25 physics / 25 society / 25 engineering (from 5/5/5)
+    [*] Art College - 25 unity (from 10)
+[/list]
+
+[h1]Increased Maximum Storage[/h1]
+I figured that 15000 is a bit low for a starting storage, especially now that we can only ever increase it with precious building slots. I have added a new starting technology that will increase the number by 10000. I figured that's a bit better at least.
+
+By adding it as a technology, I am trying to be as unobtrusive as possible. I don't have to change any default game files or anything, which means this mod has 100% compability with all other mods.
+
+Since it's a starting tech, it's also automatically added to your empires as a researched tech in your current games! You will not have to research it. It's already there! :)
+
+[h1]Better Galactic Market Nomination[/h1]
+I grew tired of how the Market Nomination works, and how it seems to not at all take the player agency into consideration. I have modified the event file and added some weight behind being a player with a nomination, which will increase the chances of getting the Galactic Market if you are a player, and if you have nominated yourself.
+
+[h2]How it's done[/h2]
+The game does a weighted random luck of the draw. Let's imagine you have a deck of cards and each empire gets one specific number. Your empire has the number 1, and the next AI empire has the number 2. The game then determines how many cards of the numbers that are added to the deck. Before my mod, your empire would get 10 cards for every level of market nomination boost you have. I have changed this so that we differentiate with AI and player.
+
+Now market level goes between 1-5. At the first nomination, a bunch of factors play in. Let's just say that a city world will give you the highest chance of getting a level of 3 from the start. Then every time you boost (you're allowed 2) you increase your market level by +1.
+
+Players will gain this many cards per nomination level:
+[list]
+    [*] 5 => 750
+    [*] 4 => 500
+    [*] 3 => 250
+    [*] 2 => 20
+    [*] 1 => 10
+[/list]
+
+AI will get this many cards per nomination level.
+[list]
+    [*] 5 => 75
+    [*] 4 => 50
+    [*] 3 => 25
+    [*] 2 => 20
+    [*] 1 => 10
+[/list]
+
+The game will then shuffle all cards and draw one, and that one is the winner. Now you have a lot of cards as a player, but then again - there are usually a lot of AI empires as well. I have chosen to model this from my games where I usually play with 10 AI or more. Let's imagine at least half of them will get at least nomination level 1. That's already a 50/50 chance you won't get the nomination if you've only nominated once. A bit low. This is why the player numbers are so high. You are 1, they are many. 5 AI at nomination level 3 = 150. So you still need to boost your nomination to get better chances. Now you may wonder why there's such a dramatic increase at rank 4,5 for the player. My thought here is that you as a player have now probably invested a lot of thought and influence into this nomination, and you are more likely than not going to be fairly pissed that it didn't select you when you've dumped all that influence. That's why the weighting is so much higher at 4 and 5.

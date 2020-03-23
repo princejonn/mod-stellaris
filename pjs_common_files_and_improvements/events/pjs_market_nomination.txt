@@ -1,0 +1,187 @@
+namespace = action
+
+# Market Founder luck-of-the-draw
+country_event = {
+	id = action.98
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = { has_event_chain = market_founding_chain }
+			end_event_chain = market_founding_chain
+		}
+		remove_global_flag = ongoing_market_nomination
+		# nominees start equal, modifiers improve chances
+		random_country = {
+			limit = {
+				is_country_type = default
+				has_country_flag = market_nomination_eligible
+			}
+			weights = {
+				# can use add or mult
+				base = 1
+				modifier = {
+					add = 750
+					is_ai = no
+					check_variable = {
+						which = market_rating
+						value = 5
+					}
+				}
+				modifier = {
+					add = 500
+					is_ai = no
+					check_variable = {
+						which = market_rating
+						value = 4
+					}
+				}
+				modifier = {
+					add = 250
+					is_ai = no
+					check_variable = {
+						which = market_rating
+						value = 3
+					}
+				}
+				modifier = {
+					add = 20
+					is_ai = no
+					check_variable = {
+						which = market_rating
+						value = 2
+					}
+				}
+				modifier = {
+					add = 10
+					is_ai = no
+					check_variable = {
+						which = market_rating
+						value = 1
+					}
+				}
+				modifier = {
+					add = 75
+					is_ai = yes
+					check_variable = {
+						which = market_rating
+						value = 5
+					}
+				}
+				modifier = {
+					add = 50
+					is_ai = yes
+					check_variable = {
+						which = market_rating
+						value = 4
+					}
+				}
+				modifier = {
+					add = 25
+					is_ai = yes
+					check_variable = {
+						which = market_rating
+						value = 3
+					}
+				}
+				modifier = {
+					add = 20
+					is_ai = yes
+					check_variable = {
+						which = market_rating
+						value = 2
+					}
+				}
+				modifier = {
+					add = 10
+					is_ai = yes
+					check_variable = {
+						which = market_rating
+						value = 1
+					}
+				}
+				modifier = {
+					mult = 0.5
+					NOT = {
+						any_owned_planet = {
+							OR = {
+								has_modifier = market_nominee_level_1
+								has_modifier = market_nominee_level_2
+								has_modifier = market_nominee_level_3
+								has_modifier = market_nominee_level_4
+								has_modifier = market_nominee_level_5
+							}
+						}
+					}
+				}
+			}
+			save_global_event_target_as = market_founder
+			random_owned_planet = {
+				weights = {
+					base = 1
+					modifier = {
+						mult = 9999
+						OR = {
+							has_modifier = market_nominee_level_1
+							has_modifier = market_nominee_level_2
+							has_modifier = market_nominee_level_3
+							has_modifier = market_nominee_level_4
+							has_modifier = market_nominee_level_5
+						}
+					}
+				}
+				save_global_event_target_as = market_founder_planet
+			}
+			country_event = { id = action.99 }
+		}
+		every_playable_country = {
+			limit = { has_country_flag = market_nomination_eligible }
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_modifier = market_nominee_level_1
+						has_modifier = market_nominee_level_2
+						has_modifier = market_nominee_level_3
+						has_modifier = market_nominee_level_4
+						has_modifier = market_nominee_level_5
+					}
+				}
+				# remove boosted flags
+				if = {
+					limit = { has_planet_flag = boosted_once }
+					remove_planet_flag = boosted_once
+				}
+				if = {
+					limit = { has_planet_flag = boosted_twice }
+					remove_planet_flag = boosted_twice
+				}
+				# remove modifiers
+				if = {
+					limit = { has_modifier = market_nominee_level_1 }
+					remove_modifier = market_nominee_level_1
+				}
+				else_if = {
+					limit = { has_modifier = market_nominee_level_2 }
+					remove_modifier = market_nominee_level_2
+				}
+				else_if = {
+					limit = { has_modifier = market_nominee_level_3 }
+					remove_modifier = market_nominee_level_3
+				}
+				else_if = {
+					limit = { has_modifier = market_nominee_level_4 }
+					remove_modifier = market_nominee_level_4
+				}
+				else_if = {
+					limit = { has_modifier = market_nominee_level_5 }
+					remove_modifier = market_nominee_level_5
+				}
+			}
+			set_variable = {
+				which = market_rating
+				value = 0
+			}
+		}
+	}
+}

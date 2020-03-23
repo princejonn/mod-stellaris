@@ -1,0 +1,37 @@
+With this mod I am (slowly) adding species traits to the game. Please give me requests if there's something you're missing (and please find a good PNG for it if you can)
+
+[h1]Adding more than 5 traits to your species[/h1]
+You can get more than 5 traits per species from my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1442403409]Increased Maximum Traits[/url] mod.
+
+[h1]Getting more trait points[/h1]
+You can get this from my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1317108035]Trait Point Technologies[/url] mod.
+
+[h1]Severed Nerves[/h1]
+This is a special tech that gives you a trait with the same name. You can find the technology and trait in my  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1636790664]Nerve Stapled Technology[/url] mod.
+
+[h1]New Traits[/h1]
+[list]
+    [*] Asari
+    [*] Eldar
+    [*] Quarian
+    [*] Photosynthetic
+    [*] Partial Photosynthetic
+    [*] Psionic
+    [*] Spartan
+    [*] Vaulter
+    [*] Artisan
+    [*] Militarist
+[/list]
+
+[h1]Upcoming[/h1]
+[list]
+    [*] Geneticist - Uplifting tech from start
+    [*] Gargantuan / Tiny - ???
+    [*] Give me requests!
+[/list]
+
+[h1]Compability[/h1]
+There should be no compability issues with this mod.
+
+[h1]Recognition[/h1]
+The idea for my Psionic trait comes from a previous mod, but I cannot remember which. I think it was a mod adding Asari, but there are quite a few of them now so I have no idea which. Kudos on whoever you are! Trait icons from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=707779361]This[/url], and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=708669421]This[/url] mod.

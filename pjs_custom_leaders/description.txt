@@ -1,0 +1,13 @@
+This mod allows you to customize all of your leaders. You will have a special project in your situation log (which will reappear) where you are able to initiate the change.
+
+[h1]Features[/h1]
+[list]
+   [*] Start with the chosen one ruler from the start and roleplay to your hearts content!
+   [*] Clear up any negative traits that your leaders have somehow decided to pick up.
+   [*] Add new traits to all of your leaders.
+   [*] Add varying amounts of experience points to your leaders.
+   [*] Add and customize as much as you want. Press done when you're done.
+[/list]
+
+[h1]Compability[/h1]
+No issues.

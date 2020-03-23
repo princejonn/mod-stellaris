@@ -1,0 +1,26 @@
+Colonize your asteroids and moons with this mod. When you have researched the technologies, you will be able to enact planetary decisions to build bases on your little planetoids. They can house very small populations, but will give you that flavour, and enable you to roleplay that expanse game a bit better!
+
+The habitats/bases work much like normal habitats. If there are minerals on the planetoid, you will be able to mine it once you settle. If there are crystals, you will be able to build crystal mines, etc.
+
+[h1]Asteroid Districts[/h1]
+[list]
+    [*] Housing
+    [*] Commercial/Energy
+    [*] (Minerals)
+[/list]
+
+[h1]Moon Districts[/h1]
+[list]
+    [*] Housing
+    [*] Commercial/Energy
+    [*] Hydroponics
+    [*] (Minerals)
+[/list]
+
+[h1]Technologies[/h1]
+There are two separate technologies, and they start appearing at Tier 2, so fairly early. Given they aren't insanely good planetoids (not 100% habitability) I feel it's fairly balanced.
+
+[h1]Compability[/h1]
+Compatible with Planetary Diversity!
+
+I have to overwrite the urban/city and the rural district files, so it's currently incompatible with a lot of mods. I will try to make it more compatible as time progress, but it is a fine balance.

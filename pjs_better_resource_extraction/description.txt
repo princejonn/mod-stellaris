@@ -1,0 +1,20 @@
+I've slightly improved some of the resource buildings by adding more job slots to them. I have also increased the initial mineral cost, and the energy upkeep to give it balance.
+
+[h1]Only use this mod for new games if you've been using my advanced resources mod[/h1]
+This is actually the reason this mod is entirely new, and not an update to the previous one. Your old saves with the previous mod will not work well with this new one. I urge you to switch over when you start a new game, because I will keep this one updated for much much longer, but I will keep the deprecated mod until 2.3 so don't worry :)
+
+[h1]Overwritten buildings[/h1]
+[list]
+   [*] Betharian Power Plant (+10 energy +2 jobs)
+   [*] Chemical Planet (+1 job)
+   [*] Crystal Mines (+1 job)
+   [*] Crystal Plant (+1 job)
+   [*] Gas Extractors (+1 job)
+   [*] Hydroponics Farm (+1 job)
+   [*] Mote Harvesters (+1 job)
+   [*] Refinery (+1 job)
+   [*] Xeno Zoo (+1 job)
+[/list]
+
+[h1]Recognition[/h1]
+The original idea came from talking to the creator of this mod: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1586827205]Better Planetary Specializations and Industry[/url]. Good idea, my good sir/madam!

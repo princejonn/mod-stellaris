@@ -1,0 +1,31 @@
+Reaching endgame can become rather dull and boring on the research side. You keep researching those repeatable techs, with no end in sight. I set out to change that. It stands to reason that because the fallen empires exist, they were once young as we were. It also stands to reason they have technologies that we should be able to realize by ourselves.
+
+With this mod you get access to the fallen empire buildings, as well as two new that I have added.
+
+[h1]Technologies[/h1]
+These techs will start appearing after the end game has begun. It took the fallen empires thousands of years to reach their technology level. It's only reasonable it takes you at least a couple of hundred in comparison.
+[list]
+    [*] Affluence Center
+    [*] Nourishment Center
+    [*] Dimensional Fabricator
+    [*] Class 4 Singularity
+    [*] Nano Forge
+    [*] Augural Manufactory (new)
+    [*] Utopian Paradise Dome (new)
+    [*] Master Archive
+[/list]
+
+[h1]Augural Manufactory[/h1]
+Creates Dark Matter, Zro, and Living Metal.
+
+[h1]Utopian Paradise Dome[/h1]
+Adds +10 housing, +100 amenities, and the Hedonist pop job (which is HIGHLY prioritized).
+
+[h1]I want even more mods to become a Fallen Empire![/h1]
+Check out my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1765455383]Collection[/url]
+
+[h1]Limitations[/h1]
+The new Job type, Hedonist, [b]SHOULD[/b] actually add a rather hefty unemployment cooldown, but the bloody thing doesn't work. I have no idea so if you are experienced in pop jobs and unemployment, please comment :)
+
+[h1]Compability[/h1]
+I am overriding quite many fallen empire buildings, which will make the new Ancient Relics fallen empire building thing a bit wonky, but that's the price you pay to get access to all of the buildings in an infinite supply I guess :)

@@ -1,0 +1,8 @@
+This mod adds the ability to uncover Stargates on your worlds. Stargates are powerful planetary gateways that will increase the possibility of pop movement in between your (and other) worlds.
+
+By researching the three technologies you will get access to a planetary decision to uncover your very own stargate. This will add a modifier and a deposit with effects and jobs.
+
+In the future I want to add some random spawning events for your empire if you have a stargate active, but we'll see what I'll have time for.
+
+[h1]Localisation[/h1]
+Russian: https://steamcommunity.com/sharedfiles/filedetails/?id=1670045745

@@ -1,0 +1,23 @@
+This addon to [b]Systems[/b] will add systems from the famous book Dune into your galaxy. You will be able to start in four famous systems.
+
+[h1]New Starting Systems[/h1]
+[list]
+   [*] Delta Pavonis
+   [*] Ophiuchi
+   [*] Tau Haruki
+[/list]
+
+[h1]Arrakis[/h1]
+I am not sure how to handle Arrakis properly in the new patch, so it's just currently a quite nice planet with some guaranteed motes and crystals and whatnot. Please give me your input, thoughts and ideas to this!
+
+[h1]Upcoming[/h1]
+[list]
+    [*] Alkalurops IX should be a starting world for machine empires with unique buildings
+    [*] Add a building to create Sardaukar on Salusa Secundus, and add multiple fortress buildings on Salusa Secundus to have Sardaukar defense armies
+    [*] Add Chapterhouse system
+    [*] Neighbour to Gieidi Prime with Planet Lankiveil (pc_arctic)
+    [*] Arrakis is 3rd planet and has 2 moons.
+[/list]
+
+[h1]Compability[/h1]
+No issues.

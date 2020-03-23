@@ -1,0 +1,5 @@
+You can now start wars over EVERY single relic that exists in the game right now. When an enemy (or you) has a relic, you will get the CB on that enemy, which enables the War Goal for that relic. When the Relic has been taken, you should get the relic into your possession, and the enemy will be Humiliated.
+
+I need your help though. The mod currently has one CB and one War Goal for every relic. This means you have to go to war over one relic at a time. Is that good? Tell me what you think in the comments below.
+
+There may also be bugs out there, and it's very hard to catch them all when there are 20 relics to test, so once again - comment below and I'll try to deal with it :)
