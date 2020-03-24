@@ -12,12 +12,13 @@ d_arrakis_deposit = {
 	}
 
 	planet_modifier = {
-		trade_value_add = 8
+		trade_value_add = 16
 	}
 
     resources = {
 		category = planet_deposits
 		produces = {
+		    energy = 20
 		    exotic_gases = 2
 		    volatile_motes = 2
 		    rare_crystals = 2
@@ -42,7 +43,7 @@ d_kaitain_hassik_iii_center_deposit = {
     resources = {
 		category = planet_deposits
 		produces = {
-            unity = 10
+            unity = 6
 		}
 	}
 
@@ -52,7 +53,7 @@ d_kaitain_hassik_iii_center_deposit = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-            job_entertainer_add = 2
+            job_entertainer_add = 1
 		}
 	}
 
@@ -84,7 +85,7 @@ d_kaitain_imperial_necropolis_deposit = {
 	}
 
 	planet_modifier = {
-        pop_ethic_spiritualist_attraction_mult = 0.1
+        pop_ethic_spiritualist_attraction_mult = 0.05
 	}
 }
 
@@ -104,8 +105,8 @@ d_kaitain_imperial_observatory_deposit = {
     resources = {
 		category = planet_deposits
 		produces = {
-            physics_research = 20
-            engineering_research = 20
+            physics_research = 10
+            engineering_research = 10
 		}
 	}
 
@@ -134,7 +135,7 @@ d_kaitain_imperial_palace_deposit = {
 	}
 
 	planet_modifier = {
-        pop_government_ethic_attraction = 0.5
+        pop_government_ethic_attraction = 0.05
 	}
 
 	triggered_planet_modifier = {
@@ -192,7 +193,7 @@ d_kaitain_ishaq_hall_deposit = {
     resources = {
 		category = planet_deposits
 		produces = {
-            society_research = 20
+            society_research = 10
 		}
 	}
 
@@ -223,7 +224,7 @@ d_kaitain_landsraad_hall_deposit = {
     resources = {
 		category = planet_deposits
 		produces = {
-            unity = 10
+            unity = 5
 		}
 	}
 
