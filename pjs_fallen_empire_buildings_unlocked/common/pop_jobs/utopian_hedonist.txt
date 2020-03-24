@@ -13,7 +13,7 @@ utopian_hedonist = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			unity = 2
+			unity = 1
 		}
 	}
 

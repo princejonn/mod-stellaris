@@ -1,5 +1,5 @@
 building_augural_manufactory = {
-	base_buildtime = 900
+	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
 
@@ -17,7 +17,7 @@ building_augural_manufactory = {
 			sr_living_metal = 2
 		}
 		cost = {
-			minerals = 1200
+			minerals = 900
 			sr_zro = 100
 			sr_dark_matter = 100
 			sr_living_metal = 100

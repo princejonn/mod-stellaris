@@ -1,9 +1,192 @@
-#####################
-# Changed buildings #
-#####################
+###########################
+# Fallen Empire buildings #
+###########################
+
+building_ancient_control_center = {
+	base_buildtime = @b3_time
+	capital = yes
+	can_build = no
+	can_demolish = yes
+	icon = building_maintenance_depot
+	
+	potential = {
+		exists = owner
+		owner = { is_fallen_machine_empire = yes }
+	}	
+	
+	convert_to = {
+		building_hive_major_capital
+		building_machine_major_capital
+		building_major_capital
+		building_ancient_palace
+	}
+
+	planet_modifier = {
+		planet_housing_add = 12
+		planet_amenities_add = 12
+		job_fe_maintenance_bot_add = 4
+		job_fe_guardian_bot_add = 5
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+		
+	upgrades = {
+	}
+	
+	ai_weight = {
+		weight = 100
+	}	
+}
+
+building_ancient_palace = {
+	base_buildtime = @b2_time
+	capital = yes
+	can_build = no
+	can_demolish = yes
+	icon = building_palace
+	
+	potential = {
+		exists = owner
+		owner = { is_fallen_empire = yes }
+	}	
+	
+	convert_to = {
+		building_hive_major_capital
+		building_machine_major_capital
+		building_major_capital
+		building_ancient_control_center
+	}
+
+	planet_modifier = {
+		planet_housing_add = 12
+		planet_amenities_add = 12
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = no }
+		}
+		modifier = {
+			job_fe_overseer_add = 2
+			job_fe_protector_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_sky_cardinal_add = 2
+			job_fe_protector_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+		
+	upgrades = {
+	}
+	
+	ai_weight = {
+		weight = 100
+	}	
+}
+
+
+# Habitat Administration
+building_hab_fe_capital = {
+	base_buildtime = @b2_time
+	capital = yes
+	can_build = no
+	can_demolish = yes
+	icon = building_capital
+
+	potential = {
+		is_planet_class = pc_habitat
+		exists = owner
+		owner = { is_fallen_empire = yes }
+	}
+
+	convert_to = {
+		building_hab_major_capital
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+		planet_amenities_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = no }
+			owner = { is_fallen_machine_empire = no }
+		}
+		modifier = {
+			job_fe_overseer_add = 1
+			job_fe_protector_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_sky_cardinal_add = 1
+			job_fe_protector_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_machine_empire = yes }
+		}
+		job_fe_guardian_bot_add = 2
+		job_fe_maintenance_bot_add = 1
+	}
+
+	upgrades = {
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
 
 building_affluence_center = {
-	base_buildtime = 900
+	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
 
@@ -23,7 +206,7 @@ building_affluence_center = {
 			consumer_goods = 50
 		}
 		cost = {
-			minerals = 1200
+			minerals = 900
 			rare_crystals = 600
 		}
 		upkeep = {
@@ -46,7 +229,7 @@ building_affluence_center = {
 }
 
 building_nourishment_center = {
-	base_buildtime = 900
+	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
 
@@ -66,7 +249,7 @@ building_nourishment_center = {
 			food = 100
 		}
 		cost = {
-			minerals = 1200
+			minerals = 900
 			exotic_gases = 600
 		}
 		upkeep = {
@@ -88,7 +271,7 @@ building_nourishment_center = {
 }
 
 building_dimensional_fabricator = {
-	base_buildtime = 900
+	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
 
@@ -120,7 +303,7 @@ building_dimensional_fabricator = {
 			sr_living_metal = 2
 		}
 		cost = {
-			minerals = 1200
+			minerals = 900
 			sr_dark_matter = 300
 		}
 		upkeep = {
@@ -141,8 +324,9 @@ building_dimensional_fabricator = {
 	}
 }
 
+
 building_class_4_singularity = {
-	base_buildtime = 900
+	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
 
@@ -162,7 +346,7 @@ building_class_4_singularity = {
 			energy = 250
 		}
 		cost = {
-			minerals = 1200
+			minerals = 900
 			sr_dark_matter = 300
 		}
 	}
@@ -181,7 +365,7 @@ building_class_4_singularity = {
 }
 
 building_nano_forge = {
-	base_buildtime = 900
+	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
 
@@ -201,7 +385,7 @@ building_nano_forge = {
 			alloys = 25
 		}
 		cost = {
-			minerals = 1200
+			minerals = 900
 			sr_dark_matter = 300
 		}
 		upkeep = {
@@ -224,7 +408,7 @@ building_nano_forge = {
 }
 
 building_master_archive = {
-	base_buildtime = 900
+	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
 
@@ -249,7 +433,7 @@ building_master_archive = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1200
+			minerals = 900
 			sr_dark_matter = 300
 		}
 		produces = {
@@ -263,175 +447,86 @@ building_master_archive = {
 	}
 }
 
-#####################
-# Primitive buildings
-#####################
-
-building_ancient_control_center = {
-	capital = yes
-	can_build = no
-	can_demolish = yes
-	icon = building_maintenance_depot
-
-	potential = {
-		exists = owner
-		owner = { is_fallen_machine_empire = yes }
-	}
-
-	convert_to = {
-		building_hive_major_capital
-		building_machine_major_capital
-		building_major_capital
-	}
-
-	planet_modifier = {
-		job_fe_guardian_bot_add = 5
-	}
-
-	resources = {
-		category = planet_buildings
-		upkeep = {
-			energy = 10
-		}
-	}
-
-	upgrades = {
-	}
-
-	ai_weight = {
-		weight = 100
-	}
-}
-
-building_ancient_palace = {
-	base_buildtime = 480
-	capital = yes
-	can_build = no
-	can_demolish = yes
-	icon = building_palace
-
-	potential = {
-		exists = owner
-		owner = { is_fallen_empire = yes }
-	}
-
-	convert_to = {
-		building_hive_major_capital
-		building_machine_major_capital
-		building_major_capital
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_fallen_empire_spiritualist = no }
-		}
-		modifier = {
-			job_fe_overseer_add = 2
-			job_fe_protector_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_fallen_empire_spiritualist = yes }
-		}
-		modifier = {
-			job_fe_sky_cardinal_add = 2
-			job_fe_protector_add = 2
-		}
-	}
-
-	resources = {
-		category = planet_buildings
-		upkeep = {
-			energy = 10
-		}
-	}
-
-	upgrades = {
-	}
-
-	ai_weight = {
-		weight = 100
-	}
-}
-
 building_empyrean_shrine = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = no
 	can_demolish = yes
 	icon = building_citadel_of_faith
-
+	
 	potential = {
 		exists = owner
 		owner = { is_fallen_empire = yes }
-	}
-
+	}	
+	
 	convert_to = {
 		building_citadel_of_faith
 	}
-
+	
 	planet_modifier = {
 		job_fe_augur_add = 3
 	}
 
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}	
 		upkeep = {
 			energy = 10
 		}
 	}
-
+		
 	upgrades = {
 	}
 }
 
 building_ancient_cryo_chamber = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = no
 	can_demolish = yes
-
+	
 	potential = {
 		exists = owner
 		owner = { is_fallen_machine_empire = yes }
-	}
-
+	}	
+	
 	planet_modifier = {
 	}
 
 	resources = {
-		category = planet_buildings
+		category = planet_buildings	
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 20
 		}
 	}
-
+		
 	upgrades = {
 	}
 }
 
 building_fe_xeno_zoo = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	capital = yes
 	can_build = no
 	can_demolish = yes
-
+	
 	potential = {
 		exists = owner
-		owner = {
-			is_fallen_empire = yes
+		owner = { 
+			is_fallen_empire = yes 
 			is_xenophile = yes
 		}
-	}
-
+	}	
+	
 	convert_to = {
 		building_hive_capital
 		building_machine_capital
 		building_capital
 	}
-
+	
 	planet_modifier = {
 		planet_amenities_add = 15
 		job_fe_xeno_keeper_add = 2
@@ -440,20 +535,23 @@ building_fe_xeno_zoo = {
 
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
 		upkeep = {
 			energy = 10
 		}
 	}
-
+		
 	upgrades = {
 	}
 }
 
 building_fe_dome = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = yes
 	icon = building_paradise_dome
-
+	
 	potential = {
 		custom_tooltip = {
 			exists = owner
@@ -466,14 +564,17 @@ building_fe_dome = {
 			fail_text = "ancrel.10004.failtext"
 		}
 	}
-
+	
 	planet_modifier = {
 		planet_housing_add = 20
 		planet_amenities_add = 20
 	}
-
+	
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 10
 		}
@@ -493,24 +594,28 @@ building_fe_dome = {
 }
 
 building_fe_stronghold = {
+	base_buildtime = @b2_time
 	can_build = no
 	icon = building_fortress
-
+	
 	potential = {
 		exists = owner
 		owner = { is_fallen_empire = yes }
 	}
-
+	
 	convert_to = {
 		building_fortress
 	}
-
+	
 	planet_modifier = {
 		job_fe_protector_add = 5
 	}
 
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 10
 		}

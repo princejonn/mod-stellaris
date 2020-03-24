@@ -1,5 +1,5 @@
 building_utopian_paradise_dome = {
-	base_buildtime = 720
+	base_buildtime = 600
 
 	category = amenity
 
@@ -21,7 +21,7 @@ building_utopian_paradise_dome = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1200
+			minerals = 900
 			rare_crystals = 300
 		}
 		upkeep = {

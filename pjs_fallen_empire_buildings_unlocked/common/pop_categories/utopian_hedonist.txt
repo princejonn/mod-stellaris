@@ -1,5 +1,5 @@
 utopian_hedonist = {
-    rank = 2
+    rank = 1
     clothes_texture_index = 1
 
     change_job_threshold = 1.0
