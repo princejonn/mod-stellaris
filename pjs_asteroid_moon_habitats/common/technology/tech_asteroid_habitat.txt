@@ -1,7 +1,7 @@
 tech_asteroid_habitat = {
 	area = engineering
 	cost = @tier2cost3
-	tier = 2
+	tier = 1
 	category = { new_worlds }
 	ai_update_type = all
 	prerequisites = { "tech_starbase_2" }
