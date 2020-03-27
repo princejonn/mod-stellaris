@@ -1,7 +1,7 @@
 custom_pjs_holy_terra = {
 	name = "Sol"
 	class = "sc_g"
-	usage = custom_empire
+	usage = origin
 	flags = { empire_home_system sol_system sol }
 
     asteroid_belt = {
@@ -669,12 +669,10 @@ custom_pjs_holy_terra = {
 		initializer = "sol_neighbor_t1"
 	}
 	neighbor_system = {
-		trigger = { num_guaranteed_colonies >= 1 }
 		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t1_first_colony"
 	}
 	neighbor_system = {
-		trigger = { num_guaranteed_colonies = 0 }
 		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t1_no_guaranteed_colony"
 	}

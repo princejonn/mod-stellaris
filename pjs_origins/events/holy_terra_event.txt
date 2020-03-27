@@ -30,7 +30,7 @@ country_event = {
                     add_building = building_holo_theatres
 
                     while = {
-                        count = 25
+                        count = 20
                         create_pop = { species = owner_main_species }
                     }
 
@@ -121,7 +121,7 @@ country_event = {
 
                     add_building = building_crystal_mines
 
-                    while = { count = 46
+                    while = { count = 44
                         create_pop = {
                             species = owner
                         }
@@ -176,13 +176,13 @@ country_event = {
                     while = { count = 3
                         add_district = district_city
                     }
-                    while = { count = 3
+                    while = { count = 2
                         add_district = district_generator
                     }
                     while = { count = 0
                         add_district = district_mining
                     }
-                    while = { count = 7
+                    while = { count = 8
                         add_district = district_farming
                     }
 
@@ -195,7 +195,7 @@ country_event = {
                     add_building = building_commercial_zone
                     add_building = building_resource_silo
 
-                    while = { count = 44
+                    while = { count = 38
                         create_pop = {
                             species = owner
                         }

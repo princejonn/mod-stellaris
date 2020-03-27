@@ -1,0 +1,52 @@
+origin_hive_assimilator = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_hive_assimilator.dds"
+	picture = GFX_origin_hive_assimilator
+
+	max_once_global = yes
+	advanced_start = yes
+
+	playable = {
+		host_has_dlc = "Utopia"
+	}
+
+	possible = {
+		authority = { value = auth_hive_mind }
+		civics = {
+			NOT = { value = civic_hive_devouring_swarm }
+		}
+	}
+
+	description = origin_hive_assimilator_effects
+
+	random_weight = {
+		base = 0
+	}
+}
+
+origin_holy_terra = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_holy_terra.dds"
+	picture = GFX_origin_holy_terra
+
+	max_once_global = yes
+	advanced_start = yes
+
+	starting_colony = pc_city
+	initializer = "custom_pjs_holy_terra"
+	habitability_preference = pc_continental
+
+	possible = {
+		authority = {
+            NOT = { value = auth_hive_mind }
+            NOT = { value = auth_machine_intelligence }
+		}
+		species = { value = BIOLOGICAL }
+	}
+
+	description = origin_holy_terra_effects
+
+	random_weight = {
+		base = 0
+	}
+}

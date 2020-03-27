@@ -4,5 +4,11 @@
 
   origin_hive_assimilator:0 "Parasitic Origins"
   origin_hive_assimilator_desc:0 "The hive evolved from small parasites. Once they had learned to take over their hosts, the world was theirs. They start with a natural ability to assimilate other species into their hive. They are obsessed with survival through diversification, and seek to include all life into the hive."
-
   origin_hive_assimilator_effects:0 "Has the ability to assimilate new species into the hive mind at the start of the game."
+
+  origin_holy_terra:0 "Holy Terra"
+  origin_holy_terra_desc:0 "Mankind has come far in the past years, and is flourishing in the sol system. Terra has been built and overbuilt so much that it is already a city-wide planet. We emerge from strength. We stand poised to venture further. We are ready."
+  origin_holy_terra_effects:0 "Start on the sacred city planet of Holy Terra (Earth). Begin with two extra colonies on Venus and Mars."
+
+  custom_pjs_holy_terra_NAME:0 "Holy Terra"
+  custom_pjs_holy_terra_DESC:0 "System modeled after Earth's solar system, with adjacent stars.\n\n$system_initializer_DESC$"

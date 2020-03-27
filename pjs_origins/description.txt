@@ -2,5 +2,12 @@ Adding new origins to the game.
 
 [h1]New Origins[/h1]
 [list]
-    [*] Parasitic Origins (Assimilation without AP for Hives)
+    [*] Parasitic Origins - You will gain access to assimilating other species right from the start, which makes for a very interesting start.
+    [*] Holy Terra - When you feel the need to purge in the name of the emperor, you need to start from a position of strength. This start will have you on Holy Terra, a city world, with two extra colonies on Mars and Venus. It is definitely easy mode, but when the xeno filth must be destroyed, does it really matter?
 [/list]
+
+[h1]There's more to come[/h1]
+this list will fill, doncha worry ;) I plan to import all my special systems into origins.
+
+[h1]Want to start your leader as the chosen one?[/h1]
+I suggest you also download [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1271263414]Custom Leaders[/url] so that you can set that up. It's how I've played my 40K inspired Imperium of Man games.
