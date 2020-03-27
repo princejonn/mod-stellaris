@@ -55,7 +55,7 @@ building_alloy_recycling = {
 	}
 
 	prerequisites = {
-		"tech_alloys_1"
+		"tech_alloy_recycling"
 	}
 
 	ai_weight = {

@@ -318,62 +318,47 @@ habitat_0 = {
 					add_deposit = d_hab_mote_5
 				}
 
-				#
-			    # Special Mining Deposits
-			    #
-
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_1 }
+						fromfrom.planet = { has_deposit = d_zro_deposit_1 }
 					}
-					add_deposit = d_alloy_mine_1
-					set_planet_flag = mining_habitat
+					add_deposit = d_hab_zro_1
+					add_deposit = d_zro_mine_1
 				}
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_2 }
+						fromfrom.planet = { has_deposit = d_zro_deposit_2 }
 					}
-					add_deposit = d_alloy_mine_2
-					set_planet_flag = mining_habitat
+					add_deposit = d_hab_zro_2
+					add_deposit = d_zro_mine_2
 				}
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_3 }
+						fromfrom.planet = { has_deposit = d_zro_deposit_3 }
 					}
-					add_deposit = d_alloy_mine_3
-					set_planet_flag = mining_habitat
-				}
-				if = {
-					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_4 }
-					}
-					add_deposit = d_alloy_mine_4
-					set_planet_flag = mining_habitat
-				}
-				if = {
-					limit = {
-						fromfrom.planet = { has_deposit = d_alloys_5 }
-					}
-					add_deposit = d_alloy_mine_5
-					set_planet_flag = mining_habitat
+					add_deposit = d_hab_zro_3
+					add_deposit = d_zro_mine_3
 				}
 
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_1 }
 					}
+					add_deposit = d_hab_dark_matter_1
 					add_deposit = d_dark_matter_mine_1
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_2 }
 					}
+					add_deposit = d_hab_dark_matter_1
 					add_deposit = d_dark_matter_mine_2
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_3 }
 					}
+					add_deposit = d_hab_dark_matter_1
 					add_deposit = d_dark_matter_mine_3
 				}
 
@@ -381,33 +366,49 @@ habitat_0 = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_living_metal_deposit }
 					}
+					add_deposit = d_hab_living_metal_1
 					add_deposit = d_living_metal_mine_1
 				}
 
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_nanites_deposit }
+						fromfrom.planet = { has_deposit = d_alloys_1 }
 					}
-					add_deposit = d_nanites_mine_1
-				}
-
-				if = {
-					limit = {
-						fromfrom.planet = { has_deposit = d_zro_deposit_1 }
-					}
-					add_deposit = d_zro_mine_1
+					add_deposit = d_hab_alloy_1
+					add_deposit = d_alloy_mine_1
+					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_zro_deposit_2 }
+						fromfrom.planet = { has_deposit = d_alloys_2 }
 					}
-					add_deposit = d_zro_mine_2
+					add_deposit = d_hab_alloy_2
+					add_deposit = d_alloy_mine_2
+					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
-						fromfrom.planet = { has_deposit = d_zro_deposit_3 }
+						fromfrom.planet = { has_deposit = d_alloys_3 }
 					}
-					add_deposit = d_zro_mine_3
+					add_deposit = d_hab_alloy_3
+					add_deposit = d_alloy_mine_3
+					set_planet_flag = mining_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_4 }
+					}
+					add_deposit = d_hab_alloy_4
+					add_deposit = d_alloy_mine_4
+					set_planet_flag = mining_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_5 }
+					}
+					add_deposit = d_hab_alloy_5
+					add_deposit = d_alloy_mine_5
+					set_planet_flag = mining_habitat
 				}
 
 				if = {

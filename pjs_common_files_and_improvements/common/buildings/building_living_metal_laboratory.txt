@@ -72,7 +72,7 @@ building_living_metal_laboratory = {
 	}
 
 	prerequisites = {
-		"tech_mine_living_metal"
+		"tech_living_metal_laboratory"
 	}
 
 	ai_weight = {

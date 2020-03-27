@@ -1,0 +1,29 @@
+tech_alloy_recycling = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { materials }
+	prerequisites = { "tech_alloys_2" "tech_habitat_1" }
+	weight = @tier4weight1
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

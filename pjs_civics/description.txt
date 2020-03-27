@@ -1,7 +1,0 @@
-Much like my [url=https://steamcommunity.com/sharedfiles/itemedittext/?id=1439177631]Trait[/url] mod, I am (slowly) adding some new civics to the game. Please give me requests if there's something you're missing (and please find a good PNG for it if you can)
-
-[h1]New Civics[/h1]
-[list]
-    [*] Apocalyptic Hive (Tomb World Start for Hives)
-    [*] Parasitic Origins (Assimilation without AP for Hives)
-[/list]

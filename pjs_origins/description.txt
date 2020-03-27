@@ -1,0 +1,6 @@
+Adding new origins to the game.
+
+[h1]New Origins[/h1]
+[list]
+    [*] Parasitic Origins (Assimilation without AP for Hives)
+[/list]

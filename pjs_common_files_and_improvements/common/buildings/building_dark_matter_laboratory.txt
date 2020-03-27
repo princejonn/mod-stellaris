@@ -72,7 +72,7 @@ building_dark_matter_laboratory = {
 	}
 
 	prerequisites = {
-		"tech_mine_dark_matter"
+		"tech_dark_matter_laboratory"
 	}
 
 	ai_weight = {

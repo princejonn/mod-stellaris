@@ -1,0 +1,8 @@
+﻿l_english:
+
+  ## origins
+
+  origin_hive_assimilator:0 "Parasitic Origins"
+  origin_hive_assimilator_desc:0 "The hive evolved from small parasites. Once they had learned to take over their hosts, the world was theirs. They start with a natural ability to assimilate other species into their hive. They are obsessed with survival through diversification, and seek to include all life into the hive."
+
+  origin_hive_assimilator_effects:0 "Has the ability to assimilate new species into the hive mind at the start of the game."

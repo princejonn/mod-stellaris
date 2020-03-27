@@ -16,7 +16,7 @@ citizenship_assimilation = {
 			AND = { # hive assimilator
                 from = {
                     has_authority = auth_hive_mind
-                    has_civic = civic_hive_assimilator
+                    has_origin = origin_hive_assimilator
                 }
 				is_robotic_species = no
 			}
@@ -24,7 +24,7 @@ citizenship_assimilation = {
 				from = {
 					has_authority = auth_hive_mind
 					NOT = { has_civic = civic_hive_devouring_swarm }
-					NOT = { has_civic = civic_hive_assimilator }
+					NOT = { has_origin = origin_hive_assimilator }
 				}
 				is_robotic_species = no
 			}
@@ -60,7 +60,7 @@ citizenship_assimilation = {
 					from = {
 					    OR = {
 						    has_ascension_perk = ap_evolutionary_mastery
-					        has_civic = civic_hive_assimilator
+					        has_origin = origin_hive_assimilator
 					    }
 					}
 				}
@@ -96,7 +96,7 @@ citizenship_assimilation = {
 						has_authority = auth_hive_mind
 					    OR = {
 						    has_ascension_perk = ap_evolutionary_mastery
-					        has_civic = civic_hive_assimilator
+					        has_origin = origin_hive_assimilator
 					    }
 						NOT = { has_civic = civic_hive_devouring_swarm }
 					}
@@ -158,7 +158,7 @@ citizenship_assimilation = {
 					from = {
 					    OR = {
 						    has_ascension_perk = ap_evolutionary_mastery
-					        has_civic = civic_hive_assimilator
+					        has_origin = origin_hive_assimilator
 					    }
 						NOR = {
 							has_ethic = ethic_gestalt_consciousness

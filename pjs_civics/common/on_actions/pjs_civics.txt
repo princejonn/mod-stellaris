@@ -1,5 +1,0 @@
-empire_init_capital_planet = {
-	events = {
-		civic_hive_apocalyptic_event.1
-	}
-}

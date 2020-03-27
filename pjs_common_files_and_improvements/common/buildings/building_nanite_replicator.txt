@@ -72,7 +72,7 @@ building_nanite_replicator = {
 	}
 
 	prerequisites = {
-		"tech_nanite_transmutation"
+		"tech_nanite_replicator"
 	}
 
 	ai_weight = {

@@ -55,7 +55,7 @@ building_zro_harvesters = {
 	}
 
 	prerequisites = {
-		"tech_mine_zro"
+		"tech_zro_harvesters"
 	}
 
 	ai_weight = {

@@ -183,3 +183,20 @@
   sc_pjs_trinary_galileo:0 "Trinary Stars"
   sc_pjs_trinary_alnitak:0 "Trinary Stars"
   sc_pjs_binary_mintaka:0 "Binary Stars"
+
+  ## Technologies
+
+  tech_alloy_recycling:0 "Alloy Recycling Yard"
+  tech_alloy_recycling_desc:0 "Exploiting a nearby §Y$d_alloy_mine_1$§! deposits in your habitats."
+
+  tech_dark_matter_laboratory:0 "Dark Matter Laboratory"
+  tech_dark_matter_laboratory_desc:0 "Exploiting a nearby §Y$d_dark_matter_mine_1$§! deposits in your habitats."
+
+  tech_living_metal_laboratory:0 "Living Metal Laboratory"
+  tech_living_metal_laboratory_desc:0 "Exploiting a nearby §Y$d_living_metal_mine_1$§! deposits in your habitats."
+
+  tech_nanite_replicator:0 "Nanite Replicator"
+  tech_nanite_replicator_desc:0 "Exploiting a nearby §Y$d_nanites_mine_1$§! deposits in your habitats."
+
+  tech_zro_harvesters:0 "Zro Harvesters"
+  tech_zro_harvesters_desc:0 "Exploiting a nearby §Y$d_zro_mine_1$§! deposits in your habitats."

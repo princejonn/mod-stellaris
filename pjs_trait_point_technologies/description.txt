@@ -3,6 +3,9 @@ This mod will give you three new (tier 4) technologies for your biological (and 
 [h1]End-game Technology[/h1]
 This technology tree will appear about ~80 years into mid-game which for most of you will be end-game.
 
+[h1]Increased trait amount[/h1]
+I also increase the amount of traits a species can have, so that the new points actually matter and amount to something.
+
 [h1]Compability[/h1]
 No issues.
 
