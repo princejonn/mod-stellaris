@@ -42,6 +42,9 @@
   d_dark_matter_mine_3:0 "$d_dark_matter_mine_1$"
   d_dark_matter_mine_3_desc:0 "$d_dark_matter_mine_1_desc$"
 
+  d_enigmatic_replicator:0 "Enigmatic Replicator"
+  d_enigmatic_replicator_desc:0 "This ancient machine seems to respond to our needs by producing the resources needed to upkeep some of our segments."
+
   d_living_metal_mine_1:0 "Living Metal Deposit"
   d_living_metal_mine_1_desc:0 "There is an exploitable source of living metal nearby, enabling you to build a special building."
   d_living_metal_mine_2:0 "$d_living_metal_mine_1$"
@@ -200,3 +203,6 @@
 
   tech_zro_harvesters:0 "Zro Harvesters"
   tech_zro_harvesters_desc:0 "Exploiting a nearby §Y$d_zro_mine_1$§! deposits in your habitats."
+
+  tech_increased_resource_storage:0 "Larger Storage"
+  tech_increased_resource_storage_desc:0 "Increases your resources storage by 10000"

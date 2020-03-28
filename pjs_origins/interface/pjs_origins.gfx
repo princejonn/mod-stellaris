@@ -1,6 +1,21 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_origin_adrift"
+		texturefile = "gfx/event_pictures/origins/origin_adrift.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_cradle_of_creation"
+		texturefile = "gfx/event_pictures/origins/origin_cradle_of_creation.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_envy"
+		texturefile = "gfx/event_pictures/origins/origin_envy.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_origin_hive_assimilator"
 		texturefile = "gfx/event_pictures/origins/origin_hive_assimilator.dds"
 		alwaystransparent = yes
@@ -8,6 +23,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_origin_holy_terra"
 		texturefile = "gfx/event_pictures/origins/origin_holy_terra.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_precursor"
+		texturefile = "gfx/event_pictures/origins/origin_precursor.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_solio_aeternitatis"
+		texturefile = "gfx/event_pictures/origins/origin_solio_aeternitatis.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_loved_by_the_void"
+		texturefile = "gfx/event_pictures/origins/origin_loved_by_the_void.dds"
 		alwaystransparent = yes
 	}
 

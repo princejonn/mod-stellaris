@@ -1,0 +1,431 @@
+sci_origin_solio_aeternitatis_stella_infinitum = {
+	name = "Stella Infinitum"
+	class = "sc_a"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+	planet = {
+		class = "pc_a_star"
+		size = 24
+		orbit_distance = 0
+		orbit_angle = 1
+
+		init_effect = {
+            save_event_target_as = dyson_sphere_target
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                entity_offset_height = { min = -0 max = -20 }
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 25
+                    angle = random
+                }
+            }
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                entity_offset_height = { min = -0 max = -20 }
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 22
+                    angle = random
+                }
+            }
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                entity_offset_height = { min = -0 max = -20 }
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 31
+                    angle = random
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_01_object"
+                entity_offset_height = { min = -0 max = -20 }
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 27
+                    angle = random
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_02_object"
+                entity_offset_height = { min = -0 max = -20 }
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 23
+                    angle = random
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_01_object"
+                entity_offset_height = { min = -0 max = -20 }
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 26
+                    angle = random
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_02_object"
+                entity_offset_height = { min = -0 max = -20 }
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 28
+                    angle = random
+                }
+            }
+
+            create_ambient_object = {
+                type = "small_debris_object"
+                entity_offset_height = { min = -0 max = -20 }
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 22
+                    angle = random
+                }
+            }
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 35
+                    angle = 70
+                }
+            }
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 50
+                    angle = 100
+                }
+            }
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 65
+                    angle = 125
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_01_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 47
+                    angle = 100
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_02_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 51
+                    angle = 80
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_01_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 40
+                    angle = 127
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_02_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 55
+                    angle = 76
+                }
+            }
+
+            create_ambient_object = {
+                type = "small_debris_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 50
+                    angle = 120
+                }
+            }
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 35
+                    angle = 270
+                }
+            }
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 50
+                    angle = 300
+                }
+            }
+
+            create_ambient_object = {
+                type = "large_debris_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 65
+                    angle = 325
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_01_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 47
+                    angle = 300
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_02_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 51
+                    angle = 280
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_01_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 40
+                    angle = 327
+                }
+            }
+
+            create_ambient_object = {
+                type = "medium_debris_02_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 55
+                    angle = 276
+                }
+            }
+
+            create_ambient_object = {
+                type = "small_debris_object"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 50
+                    angle = 320
+                }
+            }
+        }
+	}
+
+	change_orbit = 45
+
+    planet = {
+		name = "Stella Infinitum A"
+		class = "pc_ringworld_habitable_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_living_metal_deposit
+		}
+    }
+	planet = {
+		name = "Ring Section I"
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Ring Section II"
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Stella Infinitum B"
+		class = "pc_ringworld_habitable_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_rare_crystals_2
+		    add_deposit = d_exotic_gases_2
+		    add_deposit = d_volatile_motes_2
+		}
+	}
+	planet = {
+		name = "Ring Section III"
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_alloys_4
+		}
+	}
+	planet = {
+		name = "Ring Section IV"
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Stella Infinitum C"
+		class = "pc_ringworld_habitable_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_trade_value_10
+		    add_deposit = d_trade_value_10
+		}
+	}
+	planet = {
+		name = "Ring Section V"
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_alloys_4
+		}
+	}
+	planet = {
+		name = "Ring Section VI"
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Stella Infinitum D"
+		class = "pc_ringworld_habitable_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_engineering_6
+		    add_deposit = d_physics_6
+		    add_deposit = d_society_6
+		}
+	}
+	planet = {
+		name = "Ring Section VII"
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_alloys_4
+		}
+	}
+	planet = {
+		name = "Ring Section VIII"
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "dyson_sphere_ruined"
+            location = event_target:dyson_sphere_target
+        }
+	}
+}

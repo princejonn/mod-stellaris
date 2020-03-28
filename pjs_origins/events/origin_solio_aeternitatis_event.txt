@@ -1,0 +1,187 @@
+namespace = origin_solio_aeternitatis_event
+
+planet_event = {
+	id = origin_solio_aeternitatis_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        if = {
+            limit = { has_planet_flag = start_solio_aeternitatis }
+
+            set_name = "Regio Senatores"
+
+            clear_deposits = yes
+            remove_all_buildings = yes
+            remove_all_districts = yes
+
+            add_district = district_rw_city
+            add_district = district_rw_farming
+
+            add_deposit = d_arcane_generator
+            add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+
+            if = {
+                limit = {
+                    owner = {
+                        is_lithoid_empire = yes
+                        NOT = { has_civic = civic_hive_devouring_swarm }
+                    }
+                }
+                while = {
+                    count = 4
+                    add_deposit = d_hibernating_lithoids
+                }
+            }
+
+            if = {
+                limit = {
+                    owner = {
+                        is_lithoid_empire = yes
+                        has_civic = civic_hive_devouring_swarm
+                    }
+                }
+                while = {
+                    count = 2
+                    add_deposit = d_hibernating_lithoids
+                }
+            }
+
+            if = {
+                limit = {
+                    owner = {
+                        is_lithoid_empire = yes
+                        is_hive_empire = yes
+                    }
+                }
+                remove_district = district_rw_city
+                remove_district = district_rw_farming
+                add_district = district_rw_hive
+                add_district = district_rw_generator
+            }
+
+            if = {
+                limit = { owner = { is_regular_empire = yes } }
+
+                # 3 jobs
+                add_building = building_capital
+
+                # 2 jobs
+                add_building = building_bureaucratic_1
+
+                # 2 jobs
+                add_building = building_research_lab_1
+
+                # 2 jobs
+                add_building = building_foundry_1
+
+                # 2 jobs
+                add_building = building_factory_1
+
+                # 2 jobs
+                add_building = building_precinct_house
+
+                # 5 jobs
+                if = {
+                    limit = { owner = { is_megacorp = yes } }
+                    add_building = building_commercial_zone
+                }
+            }
+
+            if = {
+                limit = { owner = { is_hive_empire = yes } }
+
+                # 5 jobs
+                add_building = building_hive_capital
+
+                # 2 jobs
+                add_building = building_hive_node
+
+                # 2 jobs
+                add_building = building_research_lab_1
+
+                # 2 jobs
+                add_building = building_foundry_1
+
+                # 1 job
+                add_building = building_spawning_pool
+
+                # 1 job
+                add_building = building_hive_warren
+            }
+
+            # Replace capital building for machine empires
+            if = {
+                limit = { owner = { is_machine_empire = yes } }
+                remove_district = district_rw_city
+                remove_district = district_rw_commercial
+                add_district = district_rw_nexus
+                add_district = district_rw_generator
+
+                # 6 jobs
+                add_building = building_machine_capital
+
+                # 1 job
+                add_building = building_machine_assembly_plant
+
+                # 2 job
+                add_building = building_uplink_node
+
+                # 2 jobs
+                add_building = building_research_lab_1
+
+                # 2 jobs
+                add_building = building_foundry_1
+
+                #Assimilators
+                if = {
+                    limit = { owner = { has_civic = civic_machine_assimilator } }
+                    add_district = district_rw_farming
+                    add_deposit = d_segment_rubble_1
+                    add_deposit = d_segment_rubble_1
+                    add_deposit = d_segment_rubble_2
+                    add_deposit = d_segment_rubble_2
+                }
+
+                #Servitors
+                if = {
+                    limit = { owner = { has_civic = civic_machine_servitor } }
+                    add_building = building_organic_sanctuary
+                    add_district = district_rw_farming
+                    add_deposit = d_segment_rubble_1
+                    add_deposit = d_segment_rubble_1
+                    add_deposit = d_segment_rubble_2
+                    add_deposit = d_segment_rubble_2
+                }
+            }
+
+            while = { count = 6
+                create_pop = { species = owner_main_species }
+            }
+
+            owner = {
+                add_resource = { energy = 500 }
+                add_resource = { minerals = 500 }
+                if = {
+                    limit = { is_machine_empire = no }
+                    add_resource = { food = 500 }
+                }
+                if = {
+                    limit = { is_gestalt = no }
+                    add_resource = { consumer_goods = 500 }
+                }
+
+                set_graphical_culture = root
+
+                give_technology = { tech = "tech_mine_volatile_motes" message = no }
+                give_technology = { tech = "tech_mine_exotic_gases" message = no }
+                give_technology = { tech = "tech_mine_rare_crystals" message = no }
+            }
+        }
+	}
+}

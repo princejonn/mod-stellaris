@@ -1,0 +1,10 @@
+Adds new starting systems to choose from:
+
+[list]
+    [*] [b]Deneb Enhanced[/b] - Making the Deneb system a bit more fun to play in.
+    [*] [b]Detailed Sol[/b] - The Sol system in more detail.
+    [*] [b]Provenance[/b] - A simpler version of Cradle of Creation.
+    [*] [b]Three Sisters[/b] - Alnitak, Alnilam, and Mintaka. The Three sisters in the Orion's belt.
+[/list]
+
+If you like more systems with flavour, check out my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1705843712]Origins[/url] mod, where you will find many more flavourful system starts.

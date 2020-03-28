@@ -1,0 +1,13 @@
+﻿l_english:
+
+  sci_deneb_enhanced_NAME:0 "§SDeneb Enhanced§!"
+  sci_deneb_enhanced_DESC:0 "§YGaia World Start§!\n\n$system_initializer_DESC$"
+
+  sci_detailed_sol_NAME:0 "§SDetailed Sol§!"
+  sci_detailed_sol_DESC:0 "$system_initializer_DESC$"
+
+  sci_provenance_NAME:0 "§SProvenance§!"
+  sci_provenance_DESC:0 "$system_initializer_DESC$"
+
+  sci_three_sisters_NAME:0 "§SThree Sisters§!"
+  sci_three_sisters_DESC:0 "§YGaia World Start§!\n\n$system_initializer_DESC$"

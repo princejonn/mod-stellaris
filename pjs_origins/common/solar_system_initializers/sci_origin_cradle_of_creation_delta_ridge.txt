@@ -1,0 +1,181 @@
+sci_origin_cradle_Of_creation_delta_ridge = {
+    name = "Delta Ridge"
+    class = "sc_a"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 140
+    }
+
+    planet = {
+        class = "pc_a_star"
+        size = 30
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+        has_ring = no
+
+		init_effect = {
+            prevent_anomaly = yes
+		    set_deposit = d_energy_6
+		}
+    }
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_barren"
+        size = 16
+        orbit_distance = 20
+        orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+    }
+
+    planet = {
+        class = rl_habitable_normal
+        size = 24
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+		has_ring = no
+        modifiers = none
+		deposit_blockers = none
+
+		init_effect = {
+			generate_energy_deposits = yes
+			generate_betharian_deposit = yes
+		}
+
+		change_orbit = 10
+
+        moon = {
+            class = "pc_molten"
+            size = 7
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                add_deposit = d_trade_value_3
+            }
+        }
+    }
+
+    change_orbit = 45
+
+	planet = {
+		name = "DR-02"
+		class = "pc_asteroid"
+		size = 5
+		orbit_distance = 0
+		orbit_angle = 10
+		has_ring = no
+
+		init_effect = {
+            prevent_anomaly = yes
+		    set_deposit = d_volatile_motes_4
+		}
+	}
+
+	planet = {
+		name = "DR-32"
+		class = "pc_asteroid"
+		size = 8
+		orbit_distance = 0
+		orbit_angle = 100
+		has_ring = no
+
+		init_effect = {
+            prevent_anomaly = yes
+		    set_deposit = d_minerals_6
+		}
+	}
+
+	planet = {
+		name = "DR-84"
+		class = "pc_asteroid"
+		size = 6
+		orbit_distance = 0
+		orbit_angle = 120
+		has_ring = no
+
+		init_effect = {
+            prevent_anomaly = yes
+		    set_deposit = d_minerals_4
+		}
+	}
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_shattered"
+        size = 20
+        orbit_distance = 5
+        orbit_angle = { min = 20 max = 220 }
+
+		init_effect = {
+            prevent_anomaly = yes
+		    set_deposit = d_minerals_10
+            add_deposit = d_minerals_2
+		}
+
+		change_orbit = 10
+
+        moon = {
+            class = "pc_broken"
+            size = 5
+            orbit_distance = 8
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                set_deposit = d_minerals_6
+            }
+        }
+    }
+
+    planet = {
+        class = "pc_gas_giant"
+        size = 28
+        orbit_distance = 25
+        orbit_angle = { min = 20 max = 220 }
+
+		change_orbit = 10
+
+        moon = {
+            class = "pc_barren_cold"
+            size = 5
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+
+        moon = {
+            class = "pc_frozen"
+            size = 4
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+
+        moon = {
+            class = "pc_frozen"
+            size = 4
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+    }
+
+    planet = {
+        class = "pc_barren_cold"
+        size = 18
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+    }
+}

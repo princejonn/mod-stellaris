@@ -1,0 +1,144 @@
+sci_provenance = {
+	name = "Provenance"
+	class = "sc_k"
+	usage = custom_empire
+	flags = { empire_home_system }
+	usage_odds = { base = 0 }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_b_star"
+		size = 40
+		orbit_distance = 0
+		orbit_angle = 1
+		has_ring = no
+		flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_energy_10
+		}
+	}
+
+	planet = {
+		name = "Sky Mother"
+		class = "pc_gas_giant"
+		entity = "gas_giant_02_entity"
+		size = 38
+		orbit_distance = 130
+		orbit_angle = { min = 280 max = 320 }
+		has_ring = no
+
+		init_effect = {
+            prevent_anomaly = yes
+		    set_deposit = d_exotic_gases_2
+		}
+
+		moon = {
+			name = "Father"
+			class = rl_habitable_normal
+			size = 24
+			orbit_distance = 28
+			orbit_angle = 30
+			flags = { start_gas_rich_planet }
+		}
+
+		moon = {
+			name = "Cradle"
+			class = ideal_planet_class
+			size = 22
+			orbit_distance = 7
+			orbit_angle = 45
+			deposit_blockers = none
+
+			starting_planet = yes
+
+			init_effect = {
+                prevent_anomaly = yes
+            }
+		}
+
+		moon = {
+			name = "Brother"
+			class = "pc_barren"
+			size = 20
+			orbit_distance = 6
+			orbit_angle = 50
+			flags = { start_terraforming_candidate }
+		}
+
+		moon = {
+			name = "Sister"
+			class = "pc_molten"
+			size = 20
+			orbit_distance = 6
+			orbit_angle = 40
+			flags = { start_terraforming_candidate }
+		}
+	}
+
+	planet = {
+	    name = "Teacher"
+	    class = "pc_gas_giant"
+	    size = 30
+		entity = "gas_giant_03_entity"
+	    orbit_distance = 30
+	    orbit_angle = 80
+	    has_ring = yes
+	    flags = { starting_research_target }
+
+	    init_effect = {
+            prevent_anomaly = yes
+            set_deposit = d_engineering_2
+            add_deposit = d_physics_2
+            add_deposit = d_society_2
+        }
+
+		change_orbit = 10
+
+        moon = {
+            name = "Student"
+            class = "pc_barren"
+            size = 8
+            orbit_distance = 8
+            orbit_angle = 100
+            has_ring = no
+        }
+
+        moon = {
+            name = "Student"
+            class = "pc_barren"
+            size = 8
+            orbit_distance = 3
+            orbit_angle = 30
+            has_ring = no
+        }
+
+        moon = {
+            name = "Student"
+            class = "pc_molten"
+            size = 8
+            orbit_distance = 3
+            orbit_angle = 40
+            has_ring = no
+        }
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		distance = { min = 10 max = @distance }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		distance = { min = 10 max = @distance }
+		initializer = "neighbor_t1_first_colony"
+	}
+}

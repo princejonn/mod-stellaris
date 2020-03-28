@@ -1,7 +1,16 @@
-empire_init_create_ships = {
+empire_init_capital_planet = {
 	events = {
-		holy_terra_event.1
-		holy_terra_event.2
-		holy_terra_event.3
+		origin_cradle_of_creation_event.1
+		origin_holy_terra_event.1
+		origin_precursor_event.1
+		origin_solio_aeternitatis_event.1
+	}
+}
+
+empire_init_add_technologies = {
+	events = {
+		origin_holy_terra_event.2
+		origin_holy_terra_event.3
+		origin_precursor_event.2
 	}
 }

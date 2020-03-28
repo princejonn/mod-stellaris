@@ -1,3 +1,75 @@
+origin_adrift = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_adrift.dds"
+	picture = GFX_origin_adrift
+
+	max_once_global = yes
+	advanced_start = yes
+
+	starting_colony = pc_nuked
+	initializer = "sci_origin_adrift"
+	preferred_planet_class_neighbor = no
+
+	possible = {
+		authority = { NOT = { value = auth_machine_intelligence } }
+		civics = { NOT = { value = civic_agrarian_idyll } }
+	}
+
+	description = origin_adrift_effects
+
+	traits = {
+		trait = trait_survivor
+	}
+
+	random_weight = {
+		base = 0
+	}
+}
+
+origin_cradle_of_creation = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_cradle_of_creation.dds"
+	picture = GFX_origin_cradle_of_creation
+
+	max_once_global = yes
+	advanced_start = yes
+
+	starting_colony = pc_gaia
+	initializer = "sci_origin_cradle_of_creation"
+	habitability_preference = pc_gaia
+	preferred_planet_class_neighbor = no
+
+	possible = {
+		authority = {
+            NOT = { value = auth_machine_intelligence }
+		}
+	}
+
+	description = origin_cradle_of_creation_effects
+
+	random_weight = {
+		base = 0
+	}
+}
+
+origin_envy = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_envy.dds"
+	picture = GFX_origin_envy
+
+	max_once_global = yes
+	advanced_start = yes
+
+	initializer = "sci_origin_envy"
+	preferred_planet_class_neighbor = no
+
+	description = origin_envy_effects
+
+	random_weight = {
+		base = 0
+	}
+}
+
 origin_hive_assimilator = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_hive_assimilator.dds"
@@ -33,8 +105,9 @@ origin_holy_terra = {
 	advanced_start = yes
 
 	starting_colony = pc_city
-	initializer = "custom_pjs_holy_terra"
+	initializer = "sci_origin_holy_terra"
 	habitability_preference = pc_continental
+	preferred_planet_class_neighbor = no
 
 	possible = {
 		authority = {
@@ -45,6 +118,71 @@ origin_holy_terra = {
 	}
 
 	description = origin_holy_terra_effects
+
+	random_weight = {
+		base = 0
+	}
+}
+
+origin_loved_by_the_void = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_loved_by_the_void.dds"
+	picture = GFX_origin_loved_by_the_void
+
+	max_once_global = yes
+	advanced_start = yes
+
+	initializer = "sci_origin_loved_by_the_void"
+	preferred_planet_class_neighbor = no
+
+	description = origin_loved_by_the_void_effects
+
+	random_weight = {
+		base = 0
+	}
+}
+
+origin_precursor = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_precursor.dds"
+	picture = GFX_origin_precursor
+
+	max_once_global = yes
+	advanced_start = yes
+
+	starting_colony = pc_city
+	initializer = "sci_origin_precursor"
+	habitability_preference = pc_gaia
+	preferred_planet_class_neighbor = no
+
+	possible = {
+		authority = {
+            NOT = { value = auth_hive_mind }
+            NOT = { value = auth_machine_intelligence }
+		}
+		species = { value = BIOLOGICAL }
+	}
+
+	description = origin_precursor_effects
+
+	random_weight = {
+		base = 0
+	}
+}
+
+origin_solio_aeternitatis = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_solio_aeternitatis.dds"
+	picture = GFX_origin_solio_aeternitatis
+
+	max_once_global = yes
+	advanced_start = yes
+
+	starting_colony = pc_ringworld_habitable
+	initializer = "sci_origin_solio_aeternitatis"
+	preferred_planet_class_neighbor = no
+
+	description = origin_solio_aeternitatis_effects
 
 	random_weight = {
 		base = 0

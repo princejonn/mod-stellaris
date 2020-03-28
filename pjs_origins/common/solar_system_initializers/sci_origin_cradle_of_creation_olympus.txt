@@ -1,0 +1,171 @@
+sci_origin_cradle_Of_creation_olympus = {
+    name = "Olympus"
+    class = "sc_f"
+
+    usage = misc_system_init
+	usage_odds = { base = 100 }
+	max_instances = 1
+	spawn_chance = 0
+
+    planet = {
+        class = "pc_f_star"
+        size = 30
+        orbit_distance = 0
+        orbit_angle = { min = 0 max = 350 }
+        has_ring = no
+
+		init_effect = {
+            prevent_anomaly = yes
+		    set_deposit = d_energy_8
+		}
+    }
+
+    change_orbit = 45
+
+    planet = {
+        name = "Ares"
+        class = "pc_molten"
+        size = 16
+        orbit_distance = 15
+        orbit_angle = { min = 20 max = 220 }
+    }
+
+    planet = {
+        name = "Demeter"
+        class = "pc_barren"
+        size = 22
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+
+		change_orbit = 10
+
+        moon = {
+            name = "Iris"
+            class = "pc_barren"
+            size = 7
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                add_deposit = d_trade_value_6
+            }
+        }
+    }
+
+    planet = {
+        name = "Athena"
+        class = "pc_gaia"
+        size = 22
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+		has_ring = no
+        modifiers = none
+		deposit_blockers = none
+
+		init_effect = {
+			generate_food_deposits = yes
+			generate_gases_deposit = yes
+		}
+
+		change_orbit = 10
+
+        moon = {
+            name = "Artemis"
+            class = "pc_barren_cold"
+            size = 5
+            orbit_distance = 1
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                add_deposit = d_trade_value_3
+            }
+        }
+
+        moon = {
+            name = "Hecate"
+            class = "pc_barren_cold"
+            size = 4
+            orbit_distance = 4
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                add_deposit = d_society_4
+            }
+        }
+    }
+
+    planet = {
+        name = "Diana"
+        class = rl_habitable_normal
+        size = 22
+        orbit_distance = 25
+        orbit_angle = { min = 20 max = 220 }
+		has_ring = no
+        modifiers = none
+		deposit_blockers = none
+
+		init_effect = {
+			generate_mineral_deposits = yes
+			generate_crystals_deposit = yes
+		}
+    }
+
+    planet = {
+        name = "Hera"
+        class = "pc_gas_giant"
+        size = 30
+        orbit_distance = 35
+        orbit_angle = { min = 20 max = 220 }
+        has_ring = yes
+
+		change_orbit = 10
+
+        moon = {
+            name = "Nike"
+            class = "pc_barren"
+            size = 5
+            orbit_distance = 4
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                set_deposit = d_rare_crystals_4
+            }
+        }
+
+        moon = {
+            name = "Janus"
+            class = "pc_barren_cold"
+            size = 4
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                add_deposit = d_living_metal_deposit
+            }
+        }
+
+        moon = {
+            name = "Tyche"
+            class = "pc_frozen"
+            size = 6
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+
+            init_effect = {
+				prevent_anomaly = yes
+                add_deposit = d_minerals_4
+            }
+        }
+    }
+}

@@ -2,12 +2,15 @@ Adding new origins to the game.
 
 [h1]New Origins[/h1]
 [list]
-    [*] Parasitic Origins - You will gain access to assimilating other species right from the start, which makes for a very interesting start.
-    [*] Holy Terra - When you feel the need to purge in the name of the emperor, you need to start from a position of strength. This start will have you on Holy Terra, a city world, with two extra colonies on Mars and Venus. It is definitely easy mode, but when the xeno filth must be destroyed, does it really matter?
+    [*] [b]Adrift[/b] - Start on a barren wasteland that has been drifting in space, and is now caught in the grip of a black hole.
+    [*] [b]Cradle of Creation[/b] - Start on a gaia world with access to many more gaia worlds nearby.
+    [*] [b]Envy[/b] - Start on a normal world that's circling a ring world.
+    [*] [b]Parasitic Origins[/b] - Has the ability to assimilate new species into the hive mind at the start of the game.
+    [*] [b]Holy Terra[/b] - Start on the sacred city planet of Holy Terra (Earth). Begin with two extra colonies on Venus and Mars.
+    [*] [b]Loved by the Void[/b] - Start in a trinary star system with a multitude of habitable planets.
+    [*] [b]Precursor[/b] - Start on a city/nexus/hive planet with access to immense resources in the nearby systems. Ruined megastructures are in the vicinity. This will give you a very easy start.
+    [*] [b]Solio Aeternitatis[/b] - Start on a ringworld orbiting a wormhole with other ringworlds and advantageous systems nearby. Ruined megastructures are in the vicinity. This will give you a significant start advantage.
 [/list]
-
-[h1]There's more to come[/h1]
-this list will fill, doncha worry ;) I plan to import all my special systems into origins.
 
 [h1]Want to start your leader as the chosen one?[/h1]
 I suggest you also download [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1271263414]Custom Leaders[/url] so that you can set that up. It's how I've played my 40K inspired Imperium of Man games.

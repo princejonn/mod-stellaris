@@ -1,0 +1,144 @@
+sci_origin_solio_aeternitatis_fodina_secundus = {
+    name = "Fodina Secundus"
+	class = "sc_b"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 150
+    }
+
+	planet = {
+		class = "pc_b_star"
+		size = 24
+        orbit_distance = 0
+		orbit_angle = 1
+
+		init_effect = {
+		    set_deposit = d_energy_8
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		class = "pc_broken"
+		size = 18
+		orbit_distance = 30
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+
+		init_effect = {
+            set_deposit = d_minerals_4
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+		size = 13
+		orbit_distance = 25
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+
+		init_effect = {
+            set_deposit = d_minerals_2
+		}
+	}
+
+	planet = {
+		class = "pc_shattered"
+		size = 24
+		orbit_distance = 25
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+
+		init_effect = {
+            set_deposit = d_minerals_10
+            add_deposit = d_minerals_2
+		}
+	}
+
+	change_orbit = 40
+
+	planet = {
+		class = "pc_asteroid"
+		size = 6
+		orbit_distance = 0
+		orbit_angle = 10
+		has_ring = no
+
+		init_effect = {
+            set_deposit = d_minerals_4
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		size = 4
+		orbit_distance = 0
+		orbit_angle = 60
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		size = 6
+		orbit_distance = 0
+		orbit_angle = 90
+		has_ring = no
+
+		init_effect = {
+            set_deposit = d_minerals_3
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		size = 7
+		orbit_distance = 0
+		orbit_angle = 100
+		has_ring = no
+
+		init_effect = {
+            set_deposit = d_minerals_5
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		size = 6
+		orbit_distance = 0
+		orbit_angle = 40
+		has_ring = no
+
+		init_effect = {
+            set_deposit = d_minerals_4
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		class = "pc_barren"
+		size = 14
+		orbit_distance = 20
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+
+		init_effect = {
+            set_deposit = d_minerals_3
+		}
+	}
+
+	planet = {
+		class = "pc_frozen"
+		size = 16
+		orbit_distance = 20
+		orbit_angle = { min = 20 max = 220 }
+		has_ring = yes
+	}
+}

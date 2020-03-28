@@ -1,0 +1,38 @@
+d_enigmatic_replicator = {
+	is_for_colonizeable = yes
+	icon = "d_station_reactor"
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_amenities_add = 8
+	}
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			trigger = {
+				OR = {
+					planet = { has_district = district_rw_commercial }
+					planet = { has_district = district_rw_generator	}
+				}
+			}
+			alloys = 4
+			consumer_goods = 8
+			minerals = 20
+		}
+		produces = {
+			trigger = {
+				OR = {
+					planet = { has_district = district_rw_city }
+					planet = { has_district = district_rw_hive }
+					planet = { has_district = district_rw_nexus	}
+				}
+			}
+			alloys = 4
+			consumer_goods = 8
+			minerals = 20
+		}
+	}
+}

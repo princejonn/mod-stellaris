@@ -1,0 +1,31 @@
+namespace = origin_cradle_of_creation_event
+
+planet_event = {
+	id = origin_cradle_of_creation_event.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    if = {
+            limit = { has_planet_flag = start_cradle_of_creation }
+
+            set_name = "Cradle"
+
+            generate_energy_deposits = yes
+            generate_food_deposits = yes
+            generate_mineral_deposits = yes
+
+            generate_gases_deposit = yes
+
+            add_district = district_city
+            add_district = district_farming
+            add_district = district_mining
+            add_district = district_generator
+
+            while = { count = 8
+                create_pop = { species = owner_main_species }
+            }
+	    }
+	}
+}

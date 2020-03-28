@@ -1,0 +1,202 @@
+sci_three_sisters = {
+	name = "Alnitak"
+	class = "sc_pjs_trinary_alnitak"
+	usage = custom_empire
+	flags = { empire_home_system }
+	usage_odds = { base = 0 }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_a_star"
+		orbit_distance = 40
+		orbit_angle = 90
+		size = 45
+		has_ring = no
+		flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_energy_5
+		}
+	}
+
+	planet = {
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 30
+		has_ring = no
+		flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_energy_3
+		}
+	}
+
+	planet = {
+		class = "pc_f_star"
+		orbit_distance = -10
+		orbit_angle = 90
+		size = 20
+		has_ring = no
+		flags = { starting_mining_target }
+
+		init_effect = {
+		    set_deposit = d_energy_2
+		}
+	}
+
+	change_orbit = 60
+
+	planet = {
+        class = ideal_planet_class
+        size = 22
+        orbit_distance = 0
+        orbit_angle = { min = 20 max = 40 }
+        has_ring = yes
+        modifiers = none
+        deposit_blockers = none
+        flags = { start_extensive_moon_system }
+
+        starting_planet = yes
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+
+		change_orbit = 10
+
+        moon = {
+            class = "pc_barren"
+            size = 7
+            orbit_distance = 4
+            orbit_angle = { min = 30 max = 250 }
+		    flags = { starting_mining_target }
+
+            init_effect = {
+                set_deposit = d_engineering_5
+            }
+        }
+        moon = {
+            class = "pc_barren"
+            size = 6
+            orbit_distance = 4
+            orbit_angle = { min = 30 max = 80 }
+		    flags = { starting_mining_target }
+
+            init_effect = {
+                set_deposit = d_minerals_5
+            }
+        }
+	}
+
+	planet = {
+        class = "pc_barren"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = { min = 40 max = 80 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+		flags = { starting_mining_target }
+
+        init_effect = {
+            prevent_anomaly = yes
+            set_deposit = d_minerals_8
+        }
+	}
+
+	planet = {
+        class = rl_habitable_normal
+        size = 20
+        orbit_distance = 20
+        orbit_angle = { min = 40 max = 80 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+            generate_food_deposits = yes
+            generate_pets_deposit = yes
+        }
+	}
+
+	planet = {
+        class = "pc_gas_giant"
+        size = 30
+        orbit_distance = 40
+        orbit_angle = { min = 100 max = 200 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+
+	    init_effect = {
+            set_deposit = d_engineering_10
+            add_deposit = d_physics_10
+            add_deposit = d_society_10
+        }
+
+		change_orbit = 10
+
+        moon = {
+            class = "pc_barren_cold"
+            size = 6
+            orbit_distance = 4
+            orbit_angle = { min = 30 max = 250 }
+
+            init_effect = {
+                set_deposit = d_engineering_3
+            }
+        }
+
+        moon = {
+            class = "pc_barren"
+            size = 6
+            orbit_distance = 4
+            orbit_angle = { min = 30 max = 250 }
+
+            init_effect = {
+                set_deposit = d_physics_3
+            }
+        }
+
+        moon = {
+            class = "pc_barren_cold"
+            size = 6
+            orbit_distance = 4
+            orbit_angle = { min = 30 max = 250 }
+
+            init_effect = {
+                set_deposit = d_society_3
+            }
+        }
+	}
+
+    neighbor_system = {
+        distance = { min = 10 max = 50 }
+        initializer = "sci_three_sisters_alnilam"
+    }
+    neighbor_system = {
+        distance = { min = 10 max = 50 }
+        initializer = "sci_three_sisters_mintaka"
+    }
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		distance = { min = 10 max = @distance }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		distance = { min = 10 max = @distance }
+		initializer = "neighbor_t1_first_colony"
+	}
+}

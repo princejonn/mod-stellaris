@@ -1,6 +1,22 @@
 ﻿l_english:
 
-  ## origins
+  origin_adrift:0 "Adrift"
+  origin_adrift_desc:0 "Our beginnings are clouded. We do not know how we came to end up where we are. All we know is that there is only darkness, and the slow steady drift towards the void."
+  origin_adrift_effects:0 "Start on a barren wasteland that has been drifting in space, and is now caught in the grip of a black hole."
+  sci_origin_adrift_NAME:0 "The Void"
+  sci_origin_adrift_DESC:0 "$system_initializer_DESC$"
+
+  origin_cradle_of_creation:0 "Cradle of Creation"
+  origin_cradle_of_creation_desc:0 "We thrive on our paradise world, safe in the cradle of creation - as we have come to call it. The time has come to look forward, though, and gaze upon what else is out there."
+  origin_cradle_of_creation_effects:0 "Start on a gaia world with access to many more gaia worlds nearby."
+  sci_origin_cradle_of_creation_NAME:0 "Cradle of Creation"
+  sci_origin_cradle_of_creation_DESC:0 "$system_initializer_DESC$"
+
+  origin_envy:0 "Envy"
+  origin_envy_desc:0 "Our race has long been the outcast. We have lived on the edge of this system, looking in at the inhabitants of the ring. While we toiled, we saw the ships disembark. There have been no signs for a century. They are all gone. Maybe it's time for us to claim it?"
+  origin_envy_effects:0 "Start on a normal world that's circling a ring world."
+  sci_origin_envy_NAME:0 "Coronae"
+  sci_origin_envy_DESC:0 "$system_initializer_DESC$"
 
   origin_hive_assimilator:0 "Parasitic Origins"
   origin_hive_assimilator_desc:0 "The hive evolved from small parasites. Once they had learned to take over their hosts, the world was theirs. They start with a natural ability to assimilate other species into their hive. They are obsessed with survival through diversification, and seek to include all life into the hive."
@@ -9,6 +25,23 @@
   origin_holy_terra:0 "Holy Terra"
   origin_holy_terra_desc:0 "Mankind has come far in the past years, and is flourishing in the sol system. Terra has been built and overbuilt so much that it is already a city-wide planet. We emerge from strength. We stand poised to venture further. We are ready."
   origin_holy_terra_effects:0 "Start on the sacred city planet of Holy Terra (Earth). Begin with two extra colonies on Venus and Mars."
+  sci_origin_holy_terra_NAME:0 "Holy Terra"
+  sci_origin_holy_terra_DESC:0 "System modeled after Earth's solar system, with adjacent stars.\n\n$system_initializer_DESC$"
 
-  custom_pjs_holy_terra_NAME:0 "Holy Terra"
-  custom_pjs_holy_terra_DESC:0 "System modeled after Earth's solar system, with adjacent stars.\n\n$system_initializer_DESC$"
+  origin_loved_by_the_void:0 "Loved by the Void"
+  origin_loved_by_the_void_desc:0 "You love the void, and the void loves you."
+  origin_loved_by_the_void_effects:0 "Start in a trinary star system with a multitude of habitable planets."
+  sci_origin_loved_by_the_void_NAME:0 "Galileo"
+  sci_origin_loved_by_the_void_DESC:0 "$system_initializer_DESC$"
+
+  origin_precursor:0 "Precursor"
+  origin_precursor_desc:0 "From stasis we awake again. We once counted ourselves as some of the foremost, but we were forced to slumber. Where we once walked as giants, we now gaze upon the galaxy with fresh new eyes. Is everything we had gone, or is this the precursor to our greatest achievement ever?"
+  origin_precursor_effects:0 "Start on a city/nexus/hive planet with access to immense resources in the nearby systems. Ruined megastructures are in the vicinity. This will give you a very easy start."
+  sci_origin_precursor_NAME:0 "Precursor"
+  sci_origin_precursor_DESC:0 "$system_initializer_DESC$"
+
+  origin_solio_aeternitatis:0 "Solio Aeternitatis"
+  origin_solio_aeternitatis_desc:0 "Our proud species awakened on this marvel of technology. We may not know how we ended up here, but we do know that our life of privilege will not stop us from seeking the stars."
+  origin_solio_aeternitatis_effects:0 "Start on a ringworld orbiting a wormhole with other ringworlds and advantageous systems nearby. Ruined megastructures are in the vicinity. This will give you a significant start advantage."
+  sci_origin_solio_aeternitatis_NAME:0 "Solio Aeternitatis"
+  sci_origin_solio_aeternitatis_DESC:0 "$system_initializer_DESC$"

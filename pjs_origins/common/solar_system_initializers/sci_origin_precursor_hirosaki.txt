@@ -1,0 +1,234 @@
+sci_origin_precursor_hirosaki = {
+    name = "Hirosaki"
+    class = "sc_f"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+    planet = {
+        class = "pc_f_star"
+        size = 34
+        orbit_distance = 0
+        orbit_angle = 1
+        has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+		    set_deposit = d_energy_8
+		}
+    }
+
+	change_orbit = 50
+
+    planet = {
+        class = "pc_molten"
+        size = 20
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+
+        init_effect = {
+			prevent_anomaly = yes
+            set_deposit = d_physics_10
+            add_deposit = d_society_10
+            add_deposit = d_engineering_10
+        }
+    }
+
+    planet = {
+        name = "Hidaka"
+        class = "pc_gaia"
+        size = { min = 16 max = 28 }
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+
+            add_deposit = d_former_precursor_battlefield
+            add_deposit = d_former_precursor_battlefield
+
+            generate_energy_deposits = yes
+            generate_food_deposits = yes
+            generate_mineral_deposits = yes
+
+            generate_gases_deposit = yes
+            generate_betharian_deposit = yes
+            generate_pets_deposit = yes
+        }
+
+        change_orbit = 10
+
+        moon = {
+            class = "pc_barren"
+            size = 7
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
+        }
+    }
+
+    planet = {
+        name = "Imakane"
+        class = "pc_city"
+        size = { min = 16 max = 22 }
+        orbit_distance = 20
+        orbit_angle = { min = 20 max = 220 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+            clear_deposits = yes
+
+            graphical_culture = "humanoid_01"
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+
+            add_deposit = d_former_precursor_battlefield
+            add_deposit = d_former_precursor_battlefield
+
+            add_building = building_class_4_singularity
+        }
+
+        change_orbit = 10
+
+        moon = {
+            class = "pc_barren"
+            size = 7
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
+        }
+
+        moon = {
+            class = "pc_barren"
+            size = 7
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 220 }
+        }
+    }
+
+    planet = {
+        name = "Sukumo"
+        class = "pc_gaia"
+        size = { min = 16 max = 28 }
+        orbit_distance = 20
+        orbit_angle = { min = 20 max = 220 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_deposit = d_ruined_precursor_city
+            add_deposit = d_ruined_precursor_city
+
+            add_deposit = d_former_precursor_battlefield
+            add_deposit = d_former_precursor_battlefield
+
+            generate_energy_deposits = yes
+            generate_food_deposits = yes
+            generate_mineral_deposits = yes
+
+            generate_crystals_deposit = yes
+            generate_betharian_deposit = yes
+            generate_pets_deposit = yes
+
+            add_building = building_class_4_singularity
+        }
+    }
+
+    planet = {
+        class = "pc_broken"
+        size = 22
+        orbit_distance = 30
+        orbit_angle = { min = 20 max = 220 }
+
+        init_effect = {
+			prevent_anomaly = yes
+            set_deposit = d_volatile_motes_5
+        }
+    }
+
+    planet = {
+        class = "pc_gas_giant"
+        size = 30
+        orbit_distance = 40
+        orbit_angle = { min = 20 max = 220 }
+        has_ring = yes
+
+        init_effect = {
+			prevent_anomaly = yes
+            set_deposit = d_exotic_gases_3
+        }
+
+        change_orbit = 10
+
+        moon = {
+            class = "pc_barren"
+            size = 7
+            orbit_distance = 4
+            orbit_angle = { min = 20 max = 220 }
+
+            init_effect = {
+			    prevent_anomaly = yes
+                set_deposit = d_minerals_4
+            }
+        }
+
+        moon = {
+            class = "pc_barren_cold"
+            size = 8
+            orbit_distance = 4
+            orbit_angle = { min = 20 max = 220 }
+
+            init_effect = {
+			    prevent_anomaly = yes
+                set_deposit = d_minerals_5
+            }
+        }
+
+        moon = {
+            class = "pc_barren_cold"
+            size = 7
+            orbit_distance = 4
+            orbit_angle = { min = 20 max = 220 }
+        }
+
+        moon = {
+            class = "pc_frozen"
+            size = 7
+            orbit_distance = 4
+            orbit_angle = { min = 20 max = 220 }
+        }
+    }
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "think_tank_ruined"
+            location = event_target:think_tank_target
+        }
+    }
+}
