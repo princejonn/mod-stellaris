@@ -31,7 +31,7 @@ pjs_escort = {
 	default_behavior = swarm
 
 	is_designable = yes
-	enable_default_design = no
+	enable_default_design = yes
 	can_have_federation_design = no
 
 	prerequisites = { "tech_pjs_escort" }

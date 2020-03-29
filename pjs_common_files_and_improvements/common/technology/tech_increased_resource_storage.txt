@@ -4,7 +4,6 @@ tech_increased_resource_storage = {
 	tier = 0
 	category = { materials }
 	start_tech = yes
-	icon = "tech_repeatable_improved_tile_mineral_output"
 
 	modifier = {
 		country_resource_max_add = 10000

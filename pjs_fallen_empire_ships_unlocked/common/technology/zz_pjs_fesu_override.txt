@@ -26,7 +26,7 @@ tech_precognition_interface = {
 	}
 
 	weight_modifier = {
-		factor = 0
+		factor = 0.5
 		modifier = {
 			factor = 0
 			host_has_dlc = "Utopia"
@@ -37,8 +37,43 @@ tech_precognition_interface = {
             mid_game_years_passed < 33
         }
 		modifier = {
-			factor = 4
+			factor = 0.50
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_psionics"
+				}
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_precognition_interface }
+			}
+		}
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_spiritualist"
+		}
+		modifier = {
+			factor = 3
+			has_ethic = "ethic_fanatic_spiritualist"
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 4
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_psionics"
@@ -46,7 +81,20 @@ tech_precognition_interface = {
 		}
 	}
 
-	ai_weight = { weight = 5 }
+	ai_weight = {
+		factor = 5 #very rare tech
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
 }
 
 tech_psi_jump_drive_1 = {
@@ -89,11 +137,36 @@ tech_psi_jump_drive_1 = {
             mid_game_years_passed < 33
         }
 		modifier = {
-			factor = 4
+			factor = 0.1
+			NOR = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_psionics"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_psionics"
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_psi_jump_drive_1 }
 			}
 		}
 	}
@@ -131,6 +204,28 @@ tech_psionic_shield = {
 		modifier = {
 			factor = 4
 			has_ascension_perk = ap_technological_ascendancy
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_spiritualist"
+		}
+		modifier = {
+			factor = 3
+			has_ethic = "ethic_fanatic_spiritualist"
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 4
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_psionics"

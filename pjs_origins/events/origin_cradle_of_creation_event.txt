@@ -2,7 +2,6 @@ namespace = origin_cradle_of_creation_event
 
 planet_event = {
 	id = origin_cradle_of_creation_event.1
-
 	hide_window = yes
 	is_triggered_only = yes
 

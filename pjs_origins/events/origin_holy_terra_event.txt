@@ -2,7 +2,6 @@ namespace = origin_holy_terra_event
 
 planet_event = {
 	id = origin_holy_terra_event.1
-
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -114,6 +113,8 @@ country_event = {
                     add_building = building_holo_theatres
                     add_building = building_commercial_zone
                     add_building = building_resource_silo
+
+                    add_building = building_crystal_mines
 
                     while = { count = 44
                         create_pop = {

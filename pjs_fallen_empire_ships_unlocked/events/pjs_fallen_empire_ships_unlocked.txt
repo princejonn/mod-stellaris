@@ -10,11 +10,6 @@ country_event = {
         is_country_type = default
 
         AND = {
-            has_technology = tech_dark_matter_deflector
-            has_technology = tech_dark_matter_power_core
-            has_technology = tech_dark_matter_propulsion
-            has_technology = tech_enigmatic_encoder
-            has_technology = tech_enigmatic_decoder
             has_technology = tech_pjs_escort
             has_technology = tech_pjs_battlecruiser
         }

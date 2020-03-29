@@ -2,36 +2,20 @@
 
   ## Component Templates
 
-  PJS_GOLIATH_SHIP_AURA_SHIELD_DAMPENER:0 "Shield Dampener"
-  PJS_GOLIATH_SHIP_AURA_QUANTUM_DESTABILIZER:0 "Quantum Destabilizer"
-  PJS_GOLIATH_SHIP_AURA_SUBSPACE_SNARE:0 "Subspace Snare"
-  PJS_GOLIATH_SHIP_AURA_INSPIRING_PRESENCE:0 "Inspiring Presence"
-  PJS_GOLIATH_SHIP_AURA_TARGETING_GRID:0 "Targeting Grid"
-  PJS_GOLIATH_SHIP_AURA_NANOBOT_CLOUD:0 "Nanobot Cloud"
-
   PJS_REACTOR_ESCORT:0 "$DARK_MATTER_REACTOR$"
   PJS_REACTOR_ESCORT_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
   PJS_REACTOR_BATTLECRUISER:0 "$DARK_MATTER_REACTOR$"
   PJS_REACTOR_BATTLECRUISER_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
-  PJS_REACTOR_GOLIATH:0 "$DARK_MATTER_REACTOR$"
-  PJS_REACTOR_GOLIATH_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
 
   PJS_COMBAT_COMPUTER_ESCORT:0 "Escort Combat Computer (Picket)"
   PJS_COMBAT_COMPUTER_ESCORT_PRECOG:0 "Escort Combat Computer (Precognition)"
   PJS_COMBAT_COMPUTER_BATTLECRUISER:0 "Battlecruiser Combat Computer (Line)"
   PJS_COMBAT_COMPUTER_BATTLECRUISER_PRECOG:0 "Battlecruiser Combat Computer (Precognition)"
-  PJS_COMBAT_COMPUTER_GOLIATH:0 "Goliath Combat Computer (Artillery)"
-  PJS_COMBAT_COMPUTER_GOLIATH_PRECOG:0 "Goliath Combat Computer (Precognition)"
 
   PJS_THRUSTER_ESCORT:0 "$SHIP_THRUSTER_5$"
   PJS_THRUSTER_ESCORT_DESC:0 "$SHIP_THRUSTER_5_DESC$"
   PJS_THRUSTER_BATTLECRUISER:0 "$SHIP_THRUSTER_5$"
   PJS_THRUSTER_BATTLECRUISER_DESC:0 "$SHIP_THRUSTER_5_DESC$"
-  PJS_THRUSTER_GOLIATH:0 "$SHIP_THRUSTER_5$"
-  PJS_THRUSTER_GOLIATH_DESC:0 "$SHIP_THRUSTER_5_DESC$"
-
-  PJS_PERDITION_BEAM_GOLIATH:0 "$PERDITION_BEAM$"
-  PJS_PERDITION_BEAM_GOLIATH_DESC:0 "$PERDITION_BEAM_DESC$"
 
   ## Section Templates
 
@@ -46,11 +30,6 @@
   PJS_BATTLECRUISER_APEX_L1T2:0 "Decree Apex"
   PJS_BATTLECRUISER_MID_M4H2:0 "Core"
 
-  PJS_GOLIATH_BOW_T:0 "Bow"
-  PJS_GOLIATH_APEX_L6:0 "Apex"
-  PJS_GOLIATH_MID_L2M4:0 "Core"
-  PJS_GOLIATH_STERN_H4:0 "Stern"
-
   ## Ship Sizes
 
   pjs_escort:0 "Escort"
@@ -58,9 +37,6 @@
 
   pjs_battlecruiser:0 "Battlecruiser"
   pjs_battlecruiser_plural:0 "Battlecruisers"
-
-  pjs_goliath:0 "Goliath"
-  pjs_goliath_plural:0 "Goliaths"
 
   ## Species Classes
 
@@ -83,9 +59,6 @@
 
   tech_pjs_battlecruiser:0 "Battlecruisers"
   tech_pjs_battlecruiser_desc:0 "Modeled after the technological marvels in the core systems of Stagnant Ascendancies, the Battlecruiser class is a mix of both Cruisers and Battleships, and can be fitted with a formidable amount of weapons."
-
-  tech_pjs_goliath:0 "Goliaths"
-  tech_pjs_goliath_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Goliath class is a fearsome ship to meet in a battle."
 
   ## Events
 

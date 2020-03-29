@@ -15,14 +15,12 @@ These techs will start appearing after the end game has begun. It took the falle
     [*] Component: Psionic Shield
     [*] Ship Type: Escort
     [*] Ship Type: Battlecruiser
-    [*] Ship Type: Goliath
 [/list]
 
 [h1]New Ships[/h1]
 [list]
     [*] Escort (Corvette/Destroyer)
     [*] Battlecruiser (Cruiser/Battleship)
-    [*] Goliath (Because the name Titan is already taken...)
 [/list]
 
 [h1]Graphical culture[/h1]
@@ -41,11 +39,3 @@ All future ships should have the new graphical culture, but no ships you have bu
 
 [h1]Compability[/h1]
 I am overriding quite many fallen empire and leviathan technologies. I am also overriding the psionic technologies.
-
-[h1]Upcoming[/h1]
-[list]
-    [*] Dedicating yourself to an ideal - having only 1 fanatical ethos
-    [*] Opinion modifier from other fallen empires (positive, impressed, disgusted, hateful)
-    [*] New vassal interactions
-    [*] Getting a chance to access building technologies if you have the building on one of your planets (through conquest of fallen empires) Maybe a random tick each year, giving you more of a reason to attack them!
-[/list]

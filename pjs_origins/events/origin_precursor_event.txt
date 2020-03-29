@@ -2,7 +2,6 @@ namespace = origin_precursor_event
 
 planet_event = {
 	id = origin_precursor_event.1
-
 	hide_window = yes
 	is_triggered_only = yes
 

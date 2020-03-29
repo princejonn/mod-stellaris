@@ -1,8 +1,12 @@
-This mod adds the ability to uncover Stargates on your worlds. Stargates are powerful planetary gateways that will increase the possibility of pop movement in between your (and other) worlds.
+[h1]Massively overhauled and improved for 2.6[/h1]
 
-By researching the three technologies you will get access to a planetary decision to uncover your very own stargate. This will add a modifier and a deposit with effects and jobs.
+With this mod you will gain access to a decades long story line that will eventually give you access to the famous [b]Stargate[/b]. It will begin with a mysterious circle...
 
-In the future I want to add some random spawning events for your empire if you have a stargate active, but we'll see what I'll have time for.
+[i]Hints: [b]Wormhole[/b] and [b]Living Metal[/b] technologies have become extra interesting.[/i]
 
-[h1]Localisation[/h1]
-Russian: https://steamcommunity.com/sharedfiles/filedetails/?id=1670045745
+This mod will only work for non-gestalt empires right now. I think it fits the story, and I can't really be arsed making a full new storyline for gestalts as well. You will have to make do, and enjoy the mod when you're playing a regular empire.
+
+[h1]Events[/h1]
+With this mod, you will also [i](infrequently)[/i] gain resources from your [i](imaginary?)[/i] stargate teams.
+
+If you have ideas for a story that a team will encounter, you are welcome to suggest it. Right now I will only accept some basic one-off events that give an immediate amount of resources (or none at all, just a cute story maybe?).
