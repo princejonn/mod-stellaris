@@ -1,6 +1,6 @@
 special_project = {
     key = "STARGATE_IMMERSION_ARCHAEOLOGY"
-    cost = 5
+    cost = 500
 	tech_department = society_technology
 	timelimit = -1
 	location = no
@@ -21,7 +21,7 @@ special_project = {
 
 special_project = {
     key = "STARGATE_IMMERSION_EXPERIMENTATION"
-    cost = 5
+    cost = 500
 	tech_department = physics_technology
 	timelimit = -1
 	location = no
@@ -42,7 +42,7 @@ special_project = {
 
 special_project = {
     key = "STARGATE_IMMERSION_BREAKTHROUGH"
-    cost = 5
+    cost = 500
 	tech_department = engineering_technology
 	timelimit = -1
 	location = no

@@ -29,13 +29,11 @@ sci_origin_holy_terra_pleiades_eta = {
     }
 
     planet = {
-        class = ideal_planet_class
+        class = "pc_continental"
         size = 20
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
-        modifiers = none
-		deposit_blockers = none
 
         init_effect = {
 			generate_mineral_deposits = yes

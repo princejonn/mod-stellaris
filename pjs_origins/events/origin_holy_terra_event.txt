@@ -159,11 +159,9 @@ country_event = {
                     # 6 minerals
                     generate_mineral_deposits = yes
 
-                    # 8 food
-                    generate_food_1_deposit = yes
-                    generate_food_2_deposit = yes
-                    generate_food_2_deposit = yes
-                    generate_food_3_deposit = yes
+                    # 12 food
+                    generate_food_deposits = yes
+                    generate_food_deposits = yes
 
                     # 1 betharian
                     add_deposit = d_betharian_deposit

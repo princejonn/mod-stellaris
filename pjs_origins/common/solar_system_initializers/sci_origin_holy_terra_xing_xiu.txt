@@ -159,7 +159,7 @@ sci_origin_holy_terra_xing_xiu = {
             orbit_location = yes
             orbit_angle_offset = 45
             orbit_distance_offset = 9
-            size = 5
+            size = 6
             has_ring = no
 
             init_effect = {

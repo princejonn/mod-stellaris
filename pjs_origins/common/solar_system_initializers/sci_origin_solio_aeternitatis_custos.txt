@@ -26,7 +26,7 @@ sci_origin_solio_aeternitatis_custos = {
     }
 
     planet = {
-        class = ideal_planet_class
+        class = rl_habitable_normal
         size = 20
         orbit_distance = 35
         orbit_angle = { min = 20 max = 220 }

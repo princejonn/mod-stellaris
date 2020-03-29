@@ -112,7 +112,7 @@ sci_origin_envy = {
 
     planet = {
         name = "Envy"
-        class = ideal_planet_class
+        class = rl_habitable_normal
         size = 18
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }

@@ -47,7 +47,7 @@ sci_origin_loved_by_the_void = {
         }
 
         planet = {
-            class = ideal_planet_class
+            class = rl_habitable_normal
             size = 16
             orbit_distance = 20
             orbit_angle = { min = 30 max = 250 }
@@ -143,7 +143,7 @@ sci_origin_loved_by_the_void = {
         }
 
         planet = {
-            class = ideal_planet_class
+            class = rl_habitable_normal
             size = 16
             orbit_distance = 25
             orbit_angle = { min = 30 max = 250 }
@@ -160,7 +160,7 @@ sci_origin_loved_by_the_void = {
     }
 
 	planet = {
-        class = ideal_planet_class
+        class = rl_habitable_normal
         size = 25
         orbit_distance = 25
         orbit_angle = { min = 30 max = 250 }

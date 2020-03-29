@@ -56,7 +56,7 @@ sci_origin_holy_terra = {
 
 	planet = {
 		name = "Venus"
-		class = ideal_planet_class
+		class = "pc_continental"
 		size = 20
 		orbit_distance = 25
 		orbit_angle = 125
@@ -108,7 +108,7 @@ sci_origin_holy_terra = {
 
 	planet = {
 		name = "Mars"
-		class = ideal_planet_class
+		class = "pc_continental"
 		size = 20
 		orbit_distance = 25
 		orbit_angle = 60
