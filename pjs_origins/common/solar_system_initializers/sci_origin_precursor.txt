@@ -71,7 +71,7 @@ sci_origin_precursor = {
     planet = {
         name = "Osaka"
         class = "pc_gaia"
-        size = 26
+        size = 25
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no
@@ -81,15 +81,6 @@ sci_origin_precursor = {
 
 		init_effect = {
 			prevent_anomaly = yes
-
-            add_deposit = d_stasis_chambers
-            add_deposit = d_stasis_chambers
-
-            add_deposit = d_ruined_precursor_city
-            add_deposit = d_ruined_precursor_city
-
-            add_deposit = d_former_precursor_battlefield
-            add_deposit = d_former_precursor_battlefield
 		}
     }
 

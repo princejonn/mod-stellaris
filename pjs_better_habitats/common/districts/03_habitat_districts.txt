@@ -24,7 +24,7 @@ district_hab_housing = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 10
+		planet_housing_add = 20
 	}
 
 	triggered_planet_modifier = {
@@ -148,10 +148,6 @@ district_hab_energy = {
 		district_hab_commercial
 	}
 
-	planet_modifier = {
-		planet_housing_add = 5
-	}
-
 	resources = {
 		category = planet_districts_hab_energy
 		cost = {
@@ -171,7 +167,7 @@ district_hab_energy = {
 			}
 		}
 		modifier = {
-			job_technician_add = 5
+			job_technician_add = 6
 		}
 	}
 
@@ -181,7 +177,7 @@ district_hab_energy = {
 			owner = { is_fallen_empire_spiritualist = yes }
 		}
 		modifier = {
-			job_fe_acolyte_generator_add = 5
+			job_fe_acolyte_generator_add = 6
 		}
 	}
 
@@ -190,7 +186,7 @@ district_hab_energy = {
 			exists = owner
 			owner = { is_machine_empire = yes }
 		}		
-		job_technician_drone_add = 5
+		job_technician_drone_add = 6
 	}
 
 	triggered_planet_modifier = {
@@ -198,7 +194,7 @@ district_hab_energy = {
 			exists = owner
 			owner = { is_hive_empire = yes }
 		}	
-		job_technician_drone_add = 5
+		job_technician_drone_add = 6
 	}
 
 	triggered_desc = {
@@ -276,17 +272,13 @@ district_hab_science = {
 		}
 	}
 
-	planet_modifier = {
-		planet_housing_add = 5
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = 5
+			job_researcher_add = 6
 		}
 	}
 
@@ -296,7 +288,7 @@ district_hab_science = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 5
+			job_brain_drone_add = 6
 		}
 	}
 
@@ -306,7 +298,7 @@ district_hab_science = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {	
-			job_calculator_add = 5
+			job_calculator_add = 6
 		}
 	}
 
@@ -384,17 +376,13 @@ district_hab_commercial = {
 		}
 	}
 
-	planet_modifier = {
-		planet_housing_add = 5
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_fallen_empire_spiritualist = no }
 		}
 		modifier = {
-			job_clerk_add = 8
+			job_clerk_add = 10
 		}
 	}
 
@@ -404,7 +392,7 @@ district_hab_commercial = {
 			owner = { is_fallen_empire_spiritualist = yes }
 		}
 		modifier = {
-			job_manager_add = 5
+			job_manager_add = 4
 		}
 	}
 
@@ -450,10 +438,6 @@ district_hab_mining = {
 		has_planet_flag = mining_habitat
 	}
 
-	planet_modifier = {
-		planet_housing_add = 5
-	}
-
 	resources = {
 		category = planet_districts_hab_mining
 		cost = {
@@ -470,7 +454,7 @@ district_hab_mining = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 5
+			job_mining_drone_add = 6
 		}
 	}
 
@@ -480,7 +464,7 @@ district_hab_mining = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 5
+			job_mining_drone_add = 6
 		}
 	}
 
@@ -493,7 +477,7 @@ district_hab_mining = {
 			}
 		}
 		modifier = {
-			job_miner_add = 5
+			job_miner_add = 6
 		}
 	}
 
@@ -503,7 +487,7 @@ district_hab_mining = {
 			owner = { is_fallen_empire_spiritualist = yes }
 		}
 		modifier = {
-			job_fe_acolyte_mine_add = 5
+			job_fe_acolyte_mine_add = 6
 		}
 	}
 
@@ -602,10 +586,6 @@ district_hab_cultural = {
 		}
 	}
 
-	planet_modifier = {
-		planet_housing_add = 5
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -615,7 +595,7 @@ district_hab_cultural = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 3
+			job_entertainer_add = 4
 			job_culture_worker_add = 2
 		}
 	}
@@ -629,7 +609,7 @@ district_hab_cultural = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 3
+			job_duelist_add = 4
 			job_culture_worker_add = 2
 		}
 	}
@@ -643,7 +623,7 @@ district_hab_cultural = {
 			}
 		}
 		modifier = {
-			job_bio_trophy_add = 5
+			job_bio_trophy_add = 6
 			job_maintenance_drone_add = 2
 		}
 	}

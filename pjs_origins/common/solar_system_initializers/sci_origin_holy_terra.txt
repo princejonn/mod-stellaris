@@ -672,10 +672,6 @@ sci_origin_holy_terra = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
-		initializer = "sol_neighbor_t1_first_colony"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t1_no_guaranteed_colony"
 	}
 }

@@ -53,7 +53,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
     planet = {
         name = "Orbis Aeternum"
         class = "pc_gaia"
-        size = 20
+        size = { min = 16 max = 25 }
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 		has_ring = no

@@ -54,7 +54,7 @@ country_event = {
 
     immediate = {
         set_country_flag = stargate_pulse_archaeology
-        country_event = { id = stargate_immersion_event.200 days = 360 random = 720 }
+        country_event = { id = stargate_immersion_event.200 days = 1800 random = 1800 }
     }
 }
 
@@ -86,7 +86,7 @@ country_event = {
 
     immediate = {
         set_country_flag = stargate_pulse_stargate_active
-        country_event = { id = stargate_immersion_event.8 days = 360 random = 720 }
+        country_event = { id = stargate_immersion_event.8 days = 1800 random = 1800 }
     }
 }
 
@@ -118,7 +118,7 @@ country_event = {
 
     immediate = {
         set_country_flag = stargate_pulse_experimentation
-        country_event = { id = stargate_immersion_event.9 days = 360 random = 720 }
+        country_event = { id = stargate_immersion_event.9 days = 1800 random = 1800 }
     }
 }
 
@@ -149,6 +149,6 @@ country_event = {
 
     immediate = {
         set_country_flag = stargate_pulse_breakthrough
-        country_event = { id = stargate_immersion_event.10 days = 360 random = 720 }
+        country_event = { id = stargate_immersion_event.10 days = 1800 random = 1800 }
     }
 }
