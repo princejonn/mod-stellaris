@@ -272,7 +272,7 @@ strategic_coordination_center_makeshift = {
         }
 
         upkeep = {
-            energy = 75
+            energy = 25
         }
     }
 
@@ -295,6 +295,10 @@ strategic_coordination_center_makeshift = {
         fromfrom = {
             set_graphical_culture = root.from
         }
+    }
+
+    on_build_complete = {
+        from = { country_event = { id = makeshift_construction_event.7 } }
     }
 }
 

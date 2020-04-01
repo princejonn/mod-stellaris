@@ -301,7 +301,7 @@ matter_decompressor_makeshift = {
         }
 
         upkeep = {
-            energy = 100
+            energy = 25
         }
     }
 
@@ -317,6 +317,10 @@ matter_decompressor_makeshift = {
         fromfrom = {
             set_graphical_culture = root.from
         }
+    }
+
+    on_build_complete = {
+        from = { country_event = { id = makeshift_construction_event.6 } }
     }
 }
 

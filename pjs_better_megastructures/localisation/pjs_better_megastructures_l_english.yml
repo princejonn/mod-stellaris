@@ -1,5 +1,7 @@
 ﻿l_english:
 
+  ## Megastructures
+
   dyson_sphere_makeshift:0 "Makeshift $dyson_sphere_5$"
   dyson_sphere_makeshift_DESC:0 "A ruined $dyson_sphere_5$. Despite its age, the megastructure's basic frame is largely intact. With some improvisation it is now working at §G10%§! efficiency."
 
@@ -14,3 +16,20 @@
 
   strategic_coordination_center_makeshift:0 "Makeshift $strategic_coordination_center_3$"
   strategic_coordination_center_makeshift_DESC:0 "The remains of an ancient military comms station. With some improvisation it is now working at §G10%§! efficiency."
+
+  ## Events
+
+  makeshift_construction_event.1.name:0 "$dyson_sphere_5$ Partly Restored"
+  makeshift_construction_event.1.desc:0 "We have successfully repaired parts of the $dyson_sphere_5$ in the [From.GetName] system. It's now working at §G10%§! efficiency."
+
+  makeshift_construction_event.2.name:0 "$spy_orb_4$ Partly Restored"
+  makeshift_construction_event.2.desc:0 "We have successfully repaired parts of the $spy_orb_4$ in the [From.GetName] system. It's now working at §G10%§! efficiency."
+
+  makeshift_construction_event.3.name:0 "$think_tank_3$ Partly Restored"
+  makeshift_construction_event.3.desc:0 "We have successfully repaired parts of the $think_tank_3$ in the [From.GetName] system. It's now working at §G10%§! efficiency."
+
+  makeshift_construction_event.6.name:0 "$matter_decompressor_4$ Partly Restored"
+  makeshift_construction_event.6.desc:0 "We have successfully repaired parts of the $matter_decompressor_4$ in the [From.GetName] system. It's now working at §G10%§! efficiency."
+
+  makeshift_construction_event.7.name:0 "$strategic_coordination_center_3$ Partly Restored"
+  makeshift_construction_event.7.desc:0 "We have successfully repaired parts of the $strategic_coordination_center_3$ in the [From.GetName] system. It's now working at §G10%§! efficiency."

@@ -362,6 +362,10 @@ dyson_sphere_makeshift = {
             set_graphical_culture = root.from
         }
     }
+
+    on_build_complete = {
+        from = { country_event = { id = makeshift_construction_event.1 } }
+    }
 }
 
 # Restored Dyson Sphere

@@ -1,0 +1,76 @@
+namespace = makeshift_construction_event
+
+country_event = {
+	id = makeshift_construction_event.1
+	title = makeshift_construction_event.1.name
+	desc = makeshift_construction_event.1.desc
+	picture = GFX_evt_dyson_sphere
+	show_sound = event_dyson_sphere_build_complete
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = makeshift_construction_event.2
+	title = makeshift_construction_event.2.name
+	desc = makeshift_construction_event.2.desc
+	picture = GFX_evt_dyson_sphere
+	show_sound = event_dyson_sphere_build_complete
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = makeshift_construction_event.3
+	title = makeshift_construction_event.3.name
+	desc = makeshift_construction_event.3.desc
+	picture = GFX_evt_dyson_sphere
+	show_sound = event_dyson_sphere_build_complete
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = makeshift_construction_event.6
+	title = makeshift_construction_event.6.name
+	desc = makeshift_construction_event.6.desc
+	picture = GFX_evt_dyson_sphere
+	show_sound = event_dyson_sphere_build_complete
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = makeshift_construction_event.7
+	title = makeshift_construction_event.7.name
+	desc = makeshift_construction_event.7.desc
+	picture = GFX_evt_dyson_sphere
+	show_sound = event_dyson_sphere_build_complete
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+}
