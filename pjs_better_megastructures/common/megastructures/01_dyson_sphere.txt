@@ -79,6 +79,9 @@ dyson_sphere_0 = {
                 is_star_class = sc_trinary_2
                 is_star_class = sc_trinary_3
                 is_star_class = sc_trinary_4
+				is_star_class = sc_pjs_trinary_galileo
+				is_star_class = sc_pjs_trinary_alnitak
+				is_star_class = sc_pjs_binary_mintaka
             }
         }
     }
