@@ -1,0 +1,11 @@
+Ever feel like the ringworlds are awesome feats of engineering, but that at the same time - you are stuck with the same 4 districts, which make them a bit less awesome? Don't get me wrong - science is nice, but maybe I don't want to dedicate an entire ring to it. With this mod you will be able to specialize your final 4th segment!
+
+With this mod you get access to new planetary specialization decisions available on your ringworlds. The decisions will cost 1000 alloys and 25 influence, but at least you will be able to dedicate a segment (or an entire ring) to something else besides science. The decision is blocked by your ability to build new ring worlds, because it kind of makes sense that if you can build new ringworlds, then you are also able to specialize them.
+
+[list]
+    [*] Ringworld Specialization: Bureaucracy Segments
+    [*] Ringworld Specialization: Cultural Segments / Temple Segments
+    [*] Ringworld Specialization: Forge Segments
+    [*] Ringworld Specialization: Industry Segments
+    [*] Ringworld Specialization: Research Segments
+[/list]

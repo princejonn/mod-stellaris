@@ -1,10 +1,5 @@
 By completing the special project, you will instantly be given a massive amount of technologies for free. This is not balanced. It is a cheat, and you will have an overwhelming advantage against your fellow empires. Sometimes it's fun to indulge, though!
 
-[h1]Future[/h1]
-[list]
-    [*] Convert to civic
-[/list]
-
 [h1]Compability[/h1]
 No issues.
 

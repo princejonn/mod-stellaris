@@ -18,18 +18,56 @@ decision_rw_spec_arms_industry = {
         is_planet_class = pc_ringworld_habitable
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_bureaucracy }
             NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_culture }
             NOT = { has_planet_flag = rw_spec_science }
         }
 	}
 
     effect = {
-	    remove_modifier = rw_spec_none
         set_planet_flag = rw_spec_arms_industry
 	}
 
 	ai_weight = {
 		weight = 25
+	}
+}
+
+decision_rw_spec_bureaucracy = {
+	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_ring_world"
+	}
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			alloys = 1000
+		}
+	}
+
+	potential = {
+		from = { is_regular_empire = yes }
+        is_planet_class = pc_ringworld_habitable
+        AND = {
+            NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_bureaucracy }
+            NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_culture }
+            NOT = { has_planet_flag = rw_spec_science }
+        }
+	}
+
+    effect = {
+        set_planet_flag = rw_spec_bureaucracy
+	}
+
+	ai_weight = {
+		weight = 50
 	}
 }
 
@@ -54,18 +92,56 @@ decision_rw_spec_civilian_industry = {
         is_planet_class = pc_ringworld_habitable
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_bureaucracy }
             NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_culture }
             NOT = { has_planet_flag = rw_spec_science }
         }
 	}
 
     effect = {
-	    remove_modifier = rw_spec_none
         set_planet_flag = rw_spec_civilian_industry
 	}
 
 	ai_weight = {
 		weight = 25
+	}
+}
+
+decision_rw_spec_culture = {
+	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_ring_world"
+	}
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			alloys = 1000
+		}
+	}
+
+	potential = {
+		from = { is_regular_empire = yes }
+        is_planet_class = pc_ringworld_habitable
+        AND = {
+            NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_bureaucracy }
+            NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_culture }
+            NOT = { has_planet_flag = rw_spec_science }
+        }
+	}
+
+    effect = {
+        set_planet_flag = rw_spec_culture
+	}
+
+	ai_weight = {
+		weight = 50
 	}
 }
 
@@ -89,13 +165,14 @@ decision_rw_spec_science = {
         is_planet_class = pc_ringworld_habitable
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
+            NOT = { has_planet_flag = rw_spec_bureaucracy }
             NOT = { has_planet_flag = rw_spec_civilian_industry }
+            NOT = { has_planet_flag = rw_spec_culture }
             NOT = { has_planet_flag = rw_spec_science }
         }
 	}
 
     effect = {
-	    remove_modifier = rw_spec_none
         set_planet_flag = rw_spec_science
 	}
 
