@@ -38,6 +38,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
         change_orbit = 10
 
         moon = {
+            name = "Luna Aeternum"
             class = "pc_frozen"
             size = 7
             orbit_distance = 3

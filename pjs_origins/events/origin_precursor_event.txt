@@ -9,7 +9,7 @@ planet_event = {
 	    if = {
             limit = { has_planet_flag = start_precursor }
 
-            set_name = "Kyoto"
+            ## set_name = "Kyoto"
 
             remove_all_districts = yes
 
@@ -137,7 +137,7 @@ country_event = {
                         ethos = owner
                     }
 
-                    set_name = "Osaka"
+                    ## set_name = "Osaka"
                     change_pc = "pc_gaia"
 
 			        clear_blockers = yes

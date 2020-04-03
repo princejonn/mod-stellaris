@@ -29,6 +29,7 @@ sci_origin_precursor_yamanashi = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
+		flags = { rw_spec_science }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -59,6 +60,7 @@ sci_origin_precursor_yamanashi = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
+		flags = { rw_spec_science }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -94,6 +96,7 @@ sci_origin_precursor_yamanashi = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
+		flags = { rw_spec_science }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -129,6 +132,7 @@ sci_origin_precursor_yamanashi = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
+		flags = { rw_spec_science }
 
 		init_effect = {
 			prevent_anomaly = yes
