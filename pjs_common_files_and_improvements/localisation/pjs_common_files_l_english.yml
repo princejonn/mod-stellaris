@@ -22,6 +22,12 @@
   building_zro_harvesters_desc:0 "Exploiting a nearby §Y$d_zro_mine_1$§! deposit."
   mod_building_zro_harvesters_max:0 "Max $building_zro_harvesters$"
 
+  ## Decisions
+
+  decision_planet_build_speed:0 "Architectural Focus"
+  decision_planet_build_speed_effects_short:0 "Enhances the build speed of buildings and districts on this planet."
+  decision_planet_build_speed_desc:0 "By enacting this decision, all buildings and districts will have a §G+25%§! build speed bonus for §H10§! years."
+
   ## Deposits
 
   d_alloy_mine_1:0 "Alloy Deposit"
@@ -186,6 +192,11 @@
   sc_pjs_trinary_galileo:0 "Trinary Stars"
   sc_pjs_trinary_alnitak:0 "Trinary Stars"
   sc_pjs_binary_mintaka:0 "Binary Stars"
+
+  ## Static Modifiers
+
+  planet_build_speed:0 "Architectural Focus"
+  planet_build_speed_desc:0 "This planet is currently focused on erecting new buildings and districts."
 
   ## Technologies
 

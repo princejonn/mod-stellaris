@@ -1,0 +1,43 @@
+decision_planet_build_speed = {
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 75
+		}
+	}
+
+	potential = {
+	    NOT = { has_planet_flag = planet_build_speed }
+        NOR = {
+            is_planet_class = pc_city
+            is_planet_class = pc_machine
+            is_planet_class = pc_ringworld_habitable
+            is_planet_class = pc_cybrex
+            is_planet_class = pc_habitat
+        }
+	}
+
+	allow = {
+		NOT = { has_modifier = planet_build_speed }
+	}
+
+	effect = {
+		add_modifier = { modifier = "planet_build_speed" days = 3600 }
+	}
+
+	ai_weight = {
+		weight = 25
+
+		modifier = {
+		    factor = 0
+			free_building_slots < 2
+		}
+
+		modifier = {
+		    factor = 0
+            free_district_slots < 2
+		}
+	}
+}
