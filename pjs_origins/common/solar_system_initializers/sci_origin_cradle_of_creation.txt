@@ -176,28 +176,19 @@ sci_origin_cradle_of_creation = {
 	}
 
     neighbor_system = {
-        distance = { min = 10 max = 60 }
+        distance = { min = 10 max = 50 }
         initializer = "sci_origin_cradle_Of_creation_carra_losu"
     }
     neighbor_system = {
-        distance = { min = 10 max = 60 }
+        distance = { min = 10 max = 50 }
         initializer = "sci_origin_cradle_Of_creation_delta_ridge"
     }
     neighbor_system = {
-        distance = { min = 10 max = 60 }
+        distance = { min = 10 max = 50 }
         initializer = "sci_origin_cradle_Of_creation_earendil"
     }
     neighbor_system = {
-        distance = { min = 10 max = 60 }
+        distance = { min = 10 max = 50 }
         initializer = "sci_origin_cradle_Of_creation_olympus"
     }
-
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		initializer = "neighbor_t1_first_colony"
-	}
 }

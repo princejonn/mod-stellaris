@@ -641,37 +641,37 @@ sci_origin_holy_terra = {
 	}
 
 	neighbor_system = {
-		distance = { min = 10 max = 60 }
+		distance = { min = 20 max = 100 }
 		initializer = "sci_origin_holy_terra_pleiades_eta"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = 60 }
+		distance = { min = 20 max = 100 }
 		initializer = "sci_origin_holy_terra_pleiades_gamma"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = 60 }
+		distance = { min = 20 max = 100 }
 		initializer = "sci_origin_holy_terra_delphinus"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = 60 }
+		distance = { min = 20 max = 100 }
 		initializer = "sci_origin_holy_terra_achird_omega"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = 60 }
+		distance = { min = 20 max = 100 }
 		initializer = "sci_origin_holy_terra_xing_xiu"
 	}
 
 	neighbor_system = {
-		distance = { min = 10 max = 60 }
+		distance = { min = 20 max = 100 }
 		initializer = "misc_pjs_stephen_hawkings_void"
 	}
 
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = 50 }
 		initializer = "sol_neighbor_t1"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = 50 }
 		initializer = "sol_neighbor_t1_no_guaranteed_colony"
 	}
 }

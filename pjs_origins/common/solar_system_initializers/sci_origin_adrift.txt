@@ -85,11 +85,11 @@ sci_origin_adrift = {
 	}
 
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 20 max = 100 }
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 20 max = 100 }
 		initializer = "neighbor_t1_first_colony"
 	}
 }

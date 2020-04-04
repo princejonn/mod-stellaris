@@ -171,13 +171,4 @@ sci_origin_solio_aeternitatis = {
         distance = { min = 10 max = 50 }
         initializer = "sci_origin_solio_aeternitatis_custos"
     }
-
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		initializer = "neighbor_t1_first_colony"
-	}
 }
