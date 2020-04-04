@@ -49,6 +49,9 @@
   tech_utopian_paradise_dome:0 "Utopian Architecture"
   tech_utopian_paradise_dome_desc:0 "With the latest advances in architecture, landscaping and holographic technology, we shall build the homes of the future."
 
+  tech_fe_stronghold:0 "$building_fe_stronghold$"
+  tech_fe_stronghold_desc:0 "$building_fe_stronghold_desc$"
+
   ## Technology Unlock Description
 
   TECH_UNLOCK_AFFLUENCE_CENTER_TITLE:0 "§HUnlocks Building:§! $building_affluence_center$"
@@ -74,3 +77,6 @@
 
   TECH_UNLOCK_UTOPIAN_PARADISE_DOME_TITLE:0 "§HUnlocks Building:§! $building_utopian_paradise_dome$"
   TECH_UNLOCK_UTOPIAN_PARADISE_DOME_DESC:0 "$building_utopian_paradise_dome_desc$"
+
+  TECH_UNLOCK_FE_STRONGHOLD_TITLE:0 "§HUnlocks Building:§! $tech_fe_stronghold$"
+  TECH_UNLOCK_FE_STRONGHOLD_DESC:0 "$tech_fe_stronghold_desc$"

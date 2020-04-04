@@ -55,7 +55,7 @@ tech_dimensional_fabricator = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 10
+            end_game_years_passed < 5
         }
 	}
 
@@ -85,7 +85,7 @@ tech_nourishment_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 15
+            end_game_years_passed < 10
         }
 	}
 
@@ -101,7 +101,8 @@ tech_affluence_center = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_nourishment_center"
+        "tech_class_4_singularity"
+        "tech_dimensional_fabricator"
 	}
 
 	prereqfor_desc = {
@@ -114,7 +115,7 @@ tech_affluence_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 20
+            end_game_years_passed < 10
         }
 	}
 
@@ -146,7 +147,7 @@ tech_nano_forge = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 25
+            end_game_years_passed < 20
         }
 	}
 
@@ -179,7 +180,7 @@ tech_augural_manufactory = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 30
+            end_game_years_passed < 20
         }
 	}
 
@@ -212,7 +213,7 @@ tech_master_archive = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 35
+            end_game_years_passed < 20
         }
 	}
 
@@ -242,7 +243,40 @@ tech_utopian_paradise_dome = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 40
+            end_game_years_passed < 20
+        }
+	}
+
+	ai_weight = { weight = 1 }
+}
+
+tech_fe_stronghold = {
+    area = society
+    cost = 33000
+    tier = 5
+    weight = 1
+    category = { military_theory }
+    is_rare = yes
+
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+        "tech_global_defense_grid"
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_FE_STRONGHOLD_TITLE"
+			desc = "TECH_UNLOCK_FE_STRONGHOLD_DESC"
+		}
+	}
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 20
         }
 	}
 
