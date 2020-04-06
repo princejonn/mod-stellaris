@@ -5,7 +5,7 @@ country_event = {
 	title = makeshift_construction_event.1.name
 	desc = makeshift_construction_event.1.desc
 	picture = GFX_evt_dyson_sphere
-	show_sound = event_dyson_sphere_build_complete
+	show_sound = event_dyson_sphere_build_upgrade_panel
 	location = FROM
 
 	is_triggered_only = yes
@@ -19,8 +19,8 @@ country_event = {
 	id = makeshift_construction_event.2
 	title = makeshift_construction_event.2.name
 	desc = makeshift_construction_event.2.desc
-	picture = GFX_evt_dyson_sphere
-	show_sound = event_dyson_sphere_build_complete
+	picture = GFX_evt_spy_orb
+	show_sound = event_spy_orb_build_upgrade
 	location = FROM
 
 	is_triggered_only = yes
@@ -34,8 +34,8 @@ country_event = {
 	id = makeshift_construction_event.3
 	title = makeshift_construction_event.3.name
 	desc = makeshift_construction_event.3.desc
-	picture = GFX_evt_dyson_sphere
-	show_sound = event_dyson_sphere_build_complete
+	picture = GFX_evt_think_tank
+	show_sound = event_think_tank_build_upgrade
 	location = FROM
 
 	is_triggered_only = yes
@@ -49,8 +49,8 @@ country_event = {
 	id = makeshift_construction_event.6
 	title = makeshift_construction_event.6.name
 	desc = makeshift_construction_event.6.desc
-	picture = GFX_evt_dyson_sphere
-	show_sound = event_dyson_sphere_build_complete
+	picture = GFX_evt_matter_decompressor
+	show_sound = event_mystic_reveal
 	location = FROM
 
 	is_triggered_only = yes
@@ -64,8 +64,8 @@ country_event = {
 	id = makeshift_construction_event.7
 	title = makeshift_construction_event.7.name
 	desc = makeshift_construction_event.7.desc
-	picture = GFX_evt_dyson_sphere
-	show_sound = event_dyson_sphere_build_complete
+	picture = GFX_evt_strategic_coordination_center
+	show_sound = event_mystic_reveal
 	location = FROM
 
 	is_triggered_only = yes
