@@ -30,10 +30,29 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
 
     planet = {
         name = "Urbes Aeternum"
-        class = "pc_city"
-        size = 16
+        class = "pc_relic"
+        size = { min = 16 max = 25 }
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
+        modifiers = none
+		deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = no
+
+            add_deposit = d_ruined_arcology
+            add_deposit = d_ruined_arcology
+
+			add_deposit = d_relic_dense_ruins
+			add_deposit = d_massive_crevice
+			add_deposit = d_shattered_solar_array
+			add_deposit = d_relic_metal_boneyard
+
+            generate_mineral_deposits = yes
+
+            generate_crystals_deposit = yes
+            generate_gases_deposit = yes
+        }
 
         change_orbit = 10
 
@@ -53,21 +72,27 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
 
     planet = {
         name = "Orbis Aeternum"
-        class = "pc_gaia"
+        class = "pc_relic"
         size = { min = 16 max = 25 }
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
-		has_ring = no
         modifiers = none
 		deposit_blockers = none
-        flags = { start_natural_beauty }
 
 		init_effect = {
-            generate_energy_deposits = yes
-            generate_food_deposits = yes
-            generate_mineral_deposits = yes
+            prevent_anomaly = no
 
-            generate_gases_deposit = yes
+            add_deposit = d_ruined_arcology
+            add_deposit = d_ruined_arcology
+
+			add_deposit = d_relic_dense_ruins
+			add_deposit = d_massive_crevice
+			add_deposit = d_flooded_reactor_pits
+			add_deposit = d_crumbling_mining_tunnels
+
+            generate_energy_deposits = yes
+
+            generate_betharian_deposit = yes
             generate_betharian_deposit = yes
 		}
     }
