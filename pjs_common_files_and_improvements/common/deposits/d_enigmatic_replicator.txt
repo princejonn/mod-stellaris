@@ -14,25 +14,60 @@ d_enigmatic_replicator = {
 		produces = {
 			trigger = {
 				OR = {
-					planet = { has_district = district_rw_commercial }
-					planet = { has_district = district_rw_generator	}
-				}
-			}
-			alloys = 4
-			consumer_goods = 8
-			minerals = 20
-		}
-		produces = {
-			trigger = {
-				OR = {
 					planet = { has_district = district_rw_city }
 					planet = { has_district = district_rw_hive }
 					planet = { has_district = district_rw_nexus	}
+					planet = { has_district = district_rw_farming	}
+					planet = { has_district = district_rw_commercial	}
+					planet = { has_district = district_rw_generator	}
+					planet = { has_district = district_rw_science	}
 				}
 			}
-			alloys = 4
-			consumer_goods = 8
-			minerals = 20
+			alloys = 10
+			consumer_goods = 20
+			minerals = 40
+		}
+		produces = {
+			trigger = {
+                planet = { has_district = district_rw_arms_industry }
+			}
+			energy = 10
+			volatile_motes = 2
+		}
+		produces = {
+			trigger = {
+                planet = { has_district = district_rw_bureaucracy }
+			}
+			energy = 10
+			rare_crystals = 2
+		}
+		produces = {
+			trigger = {
+                planet = { has_district = district_rw_civilian_industry }
+			}
+			energy = 10
+			rare_crystals = 2
+		}
+		produces = {
+			trigger = {
+                planet = { has_district = district_rw_culture }
+			}
+			energy = 10
+			rare_crystals = 2
+		}
+		produces = {
+			trigger = {
+                planet = { has_district = district_rw_science }
+			}
+			energy = 10
+			exotic_gases = 2
+		}
+		produces = {
+			trigger = {
+                planet = { has_district = district_rw_temple }
+			}
+			energy = 10
+			rare_crystals = 2
 		}
 	}
 }
