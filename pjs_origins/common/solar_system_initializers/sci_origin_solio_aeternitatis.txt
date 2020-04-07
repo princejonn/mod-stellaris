@@ -1,5 +1,5 @@
 sci_origin_solio_aeternitatis = {
-	name = "Turrim Crepusculum"
+	name = "Solio Aeternitatis"
 	class = "sc_black_hole"
 	usage = origin
 	flags = { empire_home_system }
@@ -65,6 +65,8 @@ sci_origin_solio_aeternitatis = {
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2
             add_deposit = d_decrepit_tunnels_3
@@ -97,6 +99,8 @@ sci_origin_solio_aeternitatis = {
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2
             add_deposit = d_decrepit_tunnels_3
@@ -129,6 +133,8 @@ sci_origin_solio_aeternitatis = {
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2
             add_deposit = d_decrepit_tunnels_3

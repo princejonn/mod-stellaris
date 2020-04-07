@@ -70,6 +70,11 @@ sci_origin_precursor_kumamoto = {
 			prevent_anomaly = yes
             set_deposit = d_alloys_5
 		}
+
+		init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = mega_shipyard_target
+		}
 	}
 
 	change_orbit = 50
@@ -187,4 +192,11 @@ sci_origin_precursor_kumamoto = {
             }
 		}
 	}
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "mega_shipyard_ruined"
+            location = event_target:mega_shipyard_target
+        }
+    }
 }

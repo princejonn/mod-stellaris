@@ -65,7 +65,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
 
             init_effect = {
 				prevent_anomaly = yes
-                add_deposit = d_trade_value_8
+                add_deposit = d_trade_value_4
             }
         }
     }
@@ -106,8 +106,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
 
 		init_effect = {
             prevent_anomaly = yes
-            set_deposit = d_society_10
-            add_deposit = d_society_2
+            set_deposit = d_society_8
 		}
     }
 
@@ -122,7 +121,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
         flags = { starting_mining_target }
 
 		init_effect = {
-		    set_deposit = d_minerals_9
+		    set_deposit = d_minerals_5
         }
 	}
 
@@ -147,7 +146,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
         flags = { starting_research_target }
 
 		init_effect = {
-		    set_deposit = d_trade_value_8
+		    set_deposit = d_trade_value_4
         }
 	}
 
@@ -157,10 +156,6 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
 		orbit_distance = 0
 		orbit_angle = 40
 		has_ring = no
-
-		init_effect = {
-		    set_deposit = d_exotic_gases_2
-		}
 	}
 
 	planet = {
@@ -172,7 +167,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
         flags = { starting_mining_target }
 
 		init_effect = {
-		    set_deposit = d_minerals_8
+		    set_deposit = d_minerals_4
         }
 	}
 
@@ -207,7 +202,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
 
         init_effect = {
 			prevent_anomaly = yes
-            set_deposit = d_exotic_gases_4
+            set_deposit = d_exotic_gases_2
         }
 
         change_orbit = 10
@@ -217,11 +212,6 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
             size = 8
             orbit_distance = 5
             orbit_angle = { min = 20 max = 220 }
-
-            init_effect = {
-			    prevent_anomaly = yes
-                set_deposit = d_rare_crystals_4
-            }
         }
 
         moon = {
@@ -275,7 +265,7 @@ sci_origin_solio_aeternitatis_turrim_crepusculum = {
 
 		init_effect = {
             prevent_anomaly = yes
-            set_deposit = d_physics_8
+            set_deposit = d_physics_4
 		}
     }
 

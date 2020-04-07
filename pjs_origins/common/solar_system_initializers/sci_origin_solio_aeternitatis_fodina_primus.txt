@@ -48,7 +48,7 @@ sci_origin_solio_aeternitatis_fodina_primus = {
 		has_ring = no
 
 		init_effect = {
-            set_deposit = d_minerals_5
+            set_deposit = d_minerals_3
 		}
 	}
 
@@ -60,7 +60,7 @@ sci_origin_solio_aeternitatis_fodina_primus = {
 		has_ring = no
 
 		init_effect = {
-            set_deposit = d_volatile_motes_2
+            set_deposit = d_volatile_motes_1
 		}
 	}
 
@@ -72,7 +72,7 @@ sci_origin_solio_aeternitatis_fodina_primus = {
 		has_ring = no
 
 		init_effect = {
-            set_deposit = d_crystals_2
+            set_deposit = d_rare_crystals_2
 		}
 	}
 
@@ -84,7 +84,7 @@ sci_origin_solio_aeternitatis_fodina_primus = {
 		has_ring = no
 
 		init_effect = {
-            set_deposit = d_minerals_4
+            set_deposit = d_minerals_3
 		}
 	}
 
@@ -111,7 +111,7 @@ sci_origin_solio_aeternitatis_fodina_primus = {
 		has_ring = yes
 
 		init_effect = {
-            set_deposit = d_minerals_6
+            set_deposit = d_minerals_3
 		}
 	}
 

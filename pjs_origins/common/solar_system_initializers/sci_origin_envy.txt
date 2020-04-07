@@ -31,6 +31,15 @@ sci_origin_envy = {
 		modifiers = none
 		deposit_blockers = none
 		flags = { rw_spec_science }
+
+		init_effect = {
+		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+		}
 	}
 	planet = {
 		name = "Ring Section I"
@@ -52,6 +61,15 @@ sci_origin_envy = {
 		modifiers = none
 		deposit_blockers = none
 		flags = { rw_spec_arms_industry }
+
+		init_effect = {
+		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+		}
 	}
 	planet = {
 		name = "Ring Section III"
@@ -73,6 +91,15 @@ sci_origin_envy = {
 		modifiers = none
 		deposit_blockers = none
 		flags = { rw_spec_science }
+
+		init_effect = {
+		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+		}
 	}
 	planet = {
 		name = "Ring Section V"
@@ -94,6 +121,15 @@ sci_origin_envy = {
 		modifiers = none
 		deposit_blockers = none
 		flags = { rw_spec_civilian_industry }
+
+		init_effect = {
+		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+		}
 	}
 	planet = {
 		name = "Ring Section VII"
