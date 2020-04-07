@@ -6,7 +6,7 @@ d_enigmatic_replicator = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_amenities_add = 8
+		planet_amenities_add = 10
 	}
 
 	resources = {
@@ -16,11 +16,11 @@ d_enigmatic_replicator = {
 				OR = {
 					planet = { has_district = district_rw_city }
 					planet = { has_district = district_rw_hive }
-					planet = { has_district = district_rw_nexus	}
-					planet = { has_district = district_rw_farming	}
-					planet = { has_district = district_rw_commercial	}
-					planet = { has_district = district_rw_generator	}
-					planet = { has_district = district_rw_science	}
+					planet = { has_district = district_rw_nexus }
+					planet = { has_district = district_rw_farming }
+					planet = { has_district = district_rw_commercial }
+					planet = { has_district = district_rw_generator }
+					planet = { has_district = district_rw_science }
 				}
 			}
 			alloys = 10
