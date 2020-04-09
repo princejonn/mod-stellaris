@@ -29,10 +29,12 @@ MACHINE = {
 	species_max_traits = @machine_max_traits
 }
 PRESAPIENT = {
-	species_trait_points = @species_trait_points
-	species_max_traits = @species_max_traits
+	inherit_trait_points_from = BIOLOGICAL
 }
 LITHOID = {
+	inherit_trait_points_from = BIOLOGICAL
+}
+PLANTOID = {
 	inherit_trait_points_from = BIOLOGICAL
 }
 OTHER = {}
