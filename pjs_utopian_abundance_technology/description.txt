@@ -1,4 +1,4 @@
 With this mod you will be able to research Utopian Abundance so that all of your pops can have wine and bread in your fanatical xenophobe authoritarian empire!
 
-[h1]Compability[/h1]
-I have to overwrite 01_living_standards. Any mod touching the same file is incompatible.
+                                                                                        [h1]Compability[/h1]
+                                                                                        I have to overwrite 01_living_standards. Any mod touching the same file is incompatible.
