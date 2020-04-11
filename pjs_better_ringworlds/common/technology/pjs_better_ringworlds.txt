@@ -1,0 +1,181 @@
+tech_rw_districts = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	weight = @tier5weight3
+	is_rare = yes
+
+	prerequisites = {
+	    "tech_ring_world"
+	}
+
+	potential = {
+		has_ascension_perk = ap_master_builders
+	}
+
+	ai_weight = {
+		factor = 25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_rw_spec_arms_industry = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { voidcraft }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+        "tech_alloys_2"
+    }
+
+    potential = {
+        has_ascension_perk = ap_master_builders
+    }
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_voidcraft"
+            }
+        }
+    }
+}
+
+tech_rw_spec_bureaucracy = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { voidcraft }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+        "tech_galactic_bureaucracy"
+    }
+
+    potential = {
+		is_regular_empire = yes
+        has_ascension_perk = ap_master_builders
+    }
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_voidcraft"
+            }
+        }
+    }
+}
+
+tech_rw_spec_civilian_industry = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { voidcraft }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+        "tech_luxuries_2"
+    }
+
+    potential = {
+        has_ascension_perk = ap_master_builders
+        OR = {
+            is_gestalt = no
+            has_valid_civic = civic_machine_servitor
+        }
+    }
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_voidcraft"
+            }
+        }
+    }
+}
+
+tech_rw_spec_culture = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { voidcraft }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+    }
+
+    potential = {
+		is_regular_empire = yes
+        has_ascension_perk = ap_master_builders
+        OR = {
+            has_technology = tech_transcendent_faith
+            has_technology = tech_autocurating_vault
+        }
+    }
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_voidcraft"
+            }
+        }
+    }
+}
+
+tech_rw_spec_science = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { voidcraft }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+        "tech_basic_science_lab_3"
+    }
+
+    potential = {
+        has_ascension_perk = ap_master_builders
+    }
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_voidcraft"
+            }
+        }
+    }
+}

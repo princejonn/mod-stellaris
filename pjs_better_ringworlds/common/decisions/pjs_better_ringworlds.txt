@@ -1,8 +1,50 @@
+decision_rw_districts = {
+	owned_planets_only = yes
+
+	prerequisites = {
+		"tech_rw_districts"
+	}
+
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			alloys = 2000
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+		owner = {
+            has_ascension_perk = ap_master_builders
+		}
+		NOT = {
+		    has_modifier = rw_districts
+		}
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = rw_districts
+			days = -1
+		}
+	}
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
 decision_rw_spec_arms_industry = {
 	owned_planets_only = yes
 
 	prerequisites = {
-		"tech_ring_world"
+		"tech_rw_spec_arms_industry"
 	}
 
 	enactment_time = 360
@@ -16,6 +58,9 @@ decision_rw_spec_arms_industry = {
 
 	potential = {
         is_planet_class = pc_ringworld_habitable
+		owner = {
+            has_ascension_perk = ap_master_builders
+		}
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
             NOT = { has_planet_flag = rw_spec_bureaucracy }
@@ -38,7 +83,7 @@ decision_rw_spec_bureaucracy = {
 	owned_planets_only = yes
 
 	prerequisites = {
-		"tech_ring_world"
+		"tech_rw_spec_bureaucracy"
 	}
 
 	enactment_time = 360
@@ -51,8 +96,13 @@ decision_rw_spec_bureaucracy = {
 	}
 
 	potential = {
-		from = { is_regular_empire = yes }
         is_planet_class = pc_ringworld_habitable
+		from = {
+		    is_regular_empire = yes
+		}
+		owner = {
+            has_ascension_perk = ap_master_builders
+		}
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
             NOT = { has_planet_flag = rw_spec_bureaucracy }
@@ -75,7 +125,7 @@ decision_rw_spec_civilian_industry = {
 	owned_planets_only = yes
 
 	prerequisites = {
-		"tech_ring_world"
+		"tech_rw_spec_civilian_industry"
 	}
 
 	enactment_time = 360
@@ -88,8 +138,16 @@ decision_rw_spec_civilian_industry = {
 	}
 
 	potential = {
-		from = { is_regular_empire = yes }
         is_planet_class = pc_ringworld_habitable
+		from = {
+            OR = {
+                is_gestalt = no
+                has_valid_civic = civic_machine_servitor
+            }
+		}
+		owner = {
+            has_ascension_perk = ap_master_builders
+		}
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
             NOT = { has_planet_flag = rw_spec_bureaucracy }
@@ -112,7 +170,7 @@ decision_rw_spec_culture = {
 	owned_planets_only = yes
 
 	prerequisites = {
-		"tech_ring_world"
+		"tech_rw_spec_culture"
 	}
 
 	enactment_time = 360
@@ -125,8 +183,13 @@ decision_rw_spec_culture = {
 	}
 
 	potential = {
-		from = { is_regular_empire = yes }
         is_planet_class = pc_ringworld_habitable
+		from = {
+		    is_regular_empire = yes
+		}
+		owner = {
+            has_ascension_perk = ap_master_builders
+		}
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
             NOT = { has_planet_flag = rw_spec_bureaucracy }
@@ -149,7 +212,7 @@ decision_rw_spec_science = {
 	owned_planets_only = yes
 
 	prerequisites = {
-		"tech_ring_world"
+		"tech_rw_spec_science"
 	}
 
 	enactment_time = 360
@@ -163,6 +226,9 @@ decision_rw_spec_science = {
 
 	potential = {
         is_planet_class = pc_ringworld_habitable
+		owner = {
+            has_ascension_perk = ap_master_builders
+		}
         AND = {
             NOT = { has_planet_flag = rw_spec_arms_industry }
             NOT = { has_planet_flag = rw_spec_bureaucracy }
