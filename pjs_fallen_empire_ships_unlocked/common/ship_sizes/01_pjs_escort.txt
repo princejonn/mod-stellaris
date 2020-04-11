@@ -42,9 +42,39 @@ pjs_escort = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 
-	possible_starbase = {
-		has_starbase_size >= starbase_citadel
-		has_starbase_building = enigmatic_yards
+	possible_construction = {
+		custom_tooltip = {
+			fail_text = starbase_citadel_trigger
+			OR = {
+				AND = {
+					is_scope_type = megastructure
+					OR = {
+						is_megastructure_type = mega_shipyard_3
+						is_megastructure_type = mega_shipyard_restored
+					}
+				}
+				AND = {
+					is_scope_type = starbase
+					has_starbase_size >= starbase_citadel
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = starbase_colossal_yards_trigger
+			OR = {
+				AND = {
+					is_scope_type = megastructure
+					OR = {
+						is_megastructure_type = mega_shipyard_3
+						is_megastructure_type = mega_shipyard_restored
+					}
+				}
+				AND = {
+					is_scope_type = starbase
+					has_starbase_building = enigmatic_yards
+				}
+			}
+		}
 	}
 
 	resources = {
