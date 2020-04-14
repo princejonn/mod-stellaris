@@ -1,4 +1,0 @@
-Adds three new technologies which you can research after taking the Master Builders Ascension Perk which will enable you to build up to +6 extra megastructures at the same time (for a total of 8 simultaneous constructions)
-
-[h1]Compability[/h1]
-No issues.
