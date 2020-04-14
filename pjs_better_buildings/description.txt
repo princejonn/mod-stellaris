@@ -1,10 +1,21 @@
-Improving some buildings which I find are a bit too weak, or added at a too late stage:
+Improving some buildings which I find are a bit too weak, or added at a too late stage. I've also slightly improved some of the resource buildings by adding more job slots to them. I have also increased the initial mineral cost, and the energy upkeep to give them a bit of balance.
+
 [list]
-    [*] Psi Corps - [i]access on normal upgraded capital[/i]
-    [*] Ministry of Production - [i]access on normal upgraded capital[/i]
-    [*] Institute - [i]access on normal upgraded capital[/i]
-    [*] Sentinel Posts - [i]+patrol drone[/i]
-    [*] Hive Warren - [i]+housing, +maintenance drone[/i]
+    [*] Chemical Planet (+1 job)
+    [*] Crystal Plant (+1 job)
     [*] Expanded Warren - [i]+housing, +maintenance drone[/i]
+    [*] Hive Warren - [i]+housing, +maintenance drone[/i]
+    [*] Hydroponics Farm (+1 job)
+    [*] Institute - [i]access on normal upgraded capital[/i]
     [*] Maintenance Depot - [i]+maintenance drone[/i]
+    [*] Ministry of Production - [i]access on normal upgraded capital[/i]
+    [*] Psi Corps - [i]access on normal upgraded capital[/i]
+    [*] Refinery (+1 job)
+    [*] Sentinel Posts - [i]+patrol drone[/i]
+
+    [*] Betharian Power Plant (+10 energy +2 jobs)
+    [*] Crystal Mines (+1 job)
+    [*] Gas Extractors (+1 job)
+    [*] Mote Harvesters (+1 job)
+    [*] Xeno Zoo (+1 job)
 [/list]
