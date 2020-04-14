@@ -36,6 +36,9 @@ After you unlock [b]Star Fortress[/b], you will also be able to start your repai
     [*] Strategic Coordination Center
 [/list]
 
+[h1]Master Builders Expanded[/h1]
+Adds three new technologies which you can research after taking the Master Builders Ascension Perk which will enable you to build up to +6 extra megastructures at the same time.
+
 [h1]Asteroid & Moon Habitats[/h1]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1532624807]Subscribe Here[/url]
 

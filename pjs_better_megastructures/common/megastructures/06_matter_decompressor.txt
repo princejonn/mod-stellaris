@@ -1,8 +1,8 @@
-@makeshift_mineral_bonus        = 100
-@stage_1_mineral_bonus          = 500
-@stage_2_mineral_bonus          = 1000
-@stage_3_mineral_bonus          = 1500
-@stage_4_mineral_bonus          = 2000
+@makeshift_mineral_bonus = 100
+@stage_1_mineral_bonus   = 500
+@stage_2_mineral_bonus   = 1000
+@stage_3_mineral_bonus   = 1500
+@stage_4_mineral_bonus   = 2000
 
 
 # Matter Decompressor Site

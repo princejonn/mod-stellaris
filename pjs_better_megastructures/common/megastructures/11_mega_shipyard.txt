@@ -1,3 +1,13 @@
+@stage_1_shipyard_start_exp = 50
+@stage_1_shipyard_capacity = 5
+@stage_1_shipyard_speed_mult = 0.25
+@stage_2_shipyard_start_exp = 100
+@stage_2_shipyard_capacity = 10
+@stage_2_shipyard_speed_mult = 0.50
+@stage_3_shipyard_start_exp = 200
+@stage_3_shipyard_capacity = 20
+@stage_3_shipyard_speed_mult = 1
+
 # Mega Shipyard
 mega_shipyard_0 = {
 	entity = "construction_platform_entity"
@@ -135,15 +145,15 @@ mega_shipyard_1 = {
 	prerequisites = { "tech_mega_shipyard" }
 
 	ship_modifier = {
-		ship_starting_experience_add = 100
+		ship_starting_experience_add = @stage_1_shipyard_start_exp
 	}
 
 	station_modifier = {
-		starbase_shipyard_capacity_add = 5
+		starbase_shipyard_capacity_add = @stage_1_shipyard_capacity
 	}
 
 	country_modifier = {
-		starbase_shipyard_build_speed_mult = 0.33
+		starbase_shipyard_build_speed_mult = @stage_1_shipyard_speed_mult
 	}
 
 	on_build_complete = {
@@ -177,15 +187,15 @@ mega_shipyard_2 = {
 	prerequisites = { "tech_mega_shipyard" }
 
 	ship_modifier = {
-		ship_starting_experience_add = 100
+		ship_starting_experience_add = @stage_2_shipyard_start_exp
 	}
 
 	station_modifier = {
-		starbase_shipyard_capacity_add = 10
+		starbase_shipyard_capacity_add = @stage_2_shipyard_capacity
 	}
 
 	country_modifier = {
-		starbase_shipyard_build_speed_mult = 0.67
+		starbase_shipyard_build_speed_mult = @stage_2_shipyard_speed_mult
 	}
 
 	on_build_complete = {
@@ -220,15 +230,15 @@ mega_shipyard_3 = {
 	show_prereqs = yes
 
 	ship_modifier = {
-		ship_starting_experience_add = 100
+		ship_starting_experience_add = @stage_3_shipyard_start_exp
 	}
 
 	station_modifier = {
-		starbase_shipyard_capacity_add = 20
+		starbase_shipyard_capacity_add = @stage_3_shipyard_capacity
 	}
 
 	country_modifier = {
-		starbase_shipyard_build_speed_mult = 1
+		starbase_shipyard_build_speed_mult = @stage_3_shipyard_speed_mult
 	}
 
 	on_build_complete = {
@@ -283,15 +293,15 @@ mega_shipyard_restored = {
 	}
 
 	ship_modifier = {
-		ship_starting_experience_add = 100
+		ship_starting_experience_add = @stage_3_shipyard_start_exp
 	}
 
 	station_modifier = {
-		starbase_shipyard_capacity_add = 20
+		starbase_shipyard_capacity_add = @stage_3_shipyard_capacity
 	}
 
 	country_modifier = {
-		starbase_shipyard_build_speed_mult = 1
+		starbase_shipyard_build_speed_mult = @stage_3_shipyard_speed_mult
 	}
 
 	on_build_start = {

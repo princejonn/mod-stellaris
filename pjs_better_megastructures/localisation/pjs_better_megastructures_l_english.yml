@@ -33,3 +33,14 @@
 
   makeshift_construction_event.7.name:0 "$strategic_coordination_center_3$ Partly Restored"
   makeshift_construction_event.7.desc:0 "We have successfully repaired parts of the $strategic_coordination_center_3$ in the [From.GetName] system. It's now working at §G10%§! efficiency."
+
+  ## Technologies
+
+  tech_master_builders_expanded_physics:0 "Expansive Blueprint Strategies"
+  tech_master_builders_expanded_physics_desc:0 "Improving our Strategies will make it possible to build more Megastructures at the same time."
+
+  tech_master_builders_expanded_society:0 "Expanding the Workforce"
+  tech_master_builders_expanded_society_desc:0 "Expanding our Workforce designated to Megastructure building will make it possible to build more of them at the same time."
+
+  tech_master_builders_expanded_engineering:0 "Improving the Engineering Corps"
+  tech_master_builders_expanded_engineering_desc:0 "Improving our Engineering Corps will make it possible to build more Megastructures at the same time."

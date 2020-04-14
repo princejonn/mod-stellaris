@@ -1,7 +1,7 @@
-@stage_1_immigration            = 0.15
-@stage_2_immigration            = 0.25
-@stage_3_immigration            = 0.5
-@stage_4_immigration            = 1
+@stage_1_immigration = 0.15
+@stage_2_immigration = 0.25
+@stage_3_immigration = 0.5
+@stage_4_immigration = 1
 
 
 # Interstellar Assembly

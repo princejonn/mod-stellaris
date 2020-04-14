@@ -1,19 +1,19 @@
-@makeshift_naval_cap            = 25
-@makeshift_starbase_capacity    = 1
-@makeshift_defense_platform     = 2
-@makeshift_ship_speed           = 0
-@stage_1_naval_cap              = 50
-@stage_1_starbase_capacity      = 2
-@stage_1_defense_platform       = 4
-@stage_1_ship_speed             = 0.05
-@stage_2_naval_cap              = 100
-@stage_2_starbase_capacity      = 4
-@stage_2_defense_platform       = 8
-@stage_2_ship_speed             = 0.10
-@stage_3_naval_cap              = 150
-@stage_3_starbase_capacity      = 6
-@stage_3_defense_platform       = 12
-@stage_3_ship_speed             = 0.15
+@makeshift_naval_cap         = 25
+@makeshift_starbase_capacity = 1
+@makeshift_defense_platform  = 2
+@makeshift_ship_speed        = 0
+@stage_1_naval_cap           = 50
+@stage_1_starbase_capacity   = 2
+@stage_1_defense_platform    = 4
+@stage_1_ship_speed          = 0.05
+@stage_2_naval_cap           = 100
+@stage_2_starbase_capacity   = 4
+@stage_2_defense_platform    = 8
+@stage_2_ship_speed          = 0.10
+@stage_3_naval_cap           = 150
+@stage_3_starbase_capacity   = 6
+@stage_3_defense_platform    = 12
+@stage_3_ship_speed          = 0.15
 
 
 # Strategic Coordination Center

@@ -1,11 +1,11 @@
-@stage_1_unity_bonus            = 100
-@stage_1_amenities              = 0.05
-@stage_2_unity_bonus            = 200
-@stage_2_amenities              = 0.05
-@stage_3_unity_bonus            = 300
-@stage_3_amenities              = 0.05
-@stage_4_unity_bonus            = 400
-@stage_4_amenities              = 0.1
+@stage_1_unity_bonus = 100
+@stage_1_amenities   = 0.05
+@stage_2_unity_bonus = 150
+@stage_2_amenities   = 0.05
+@stage_3_unity_bonus = 200
+@stage_3_amenities   = 0.05
+@stage_4_unity_bonus = 400
+@stage_4_amenities   = 0.1
 
 
 # Mega Art Installation
