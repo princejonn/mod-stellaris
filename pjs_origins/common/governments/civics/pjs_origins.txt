@@ -7,7 +7,7 @@ origin_adrift = {
 	advanced_start = yes
 
 	starting_colony = pc_nuked
-	initializer = "sci_origin_adrift"
+	initializers = { sci_origin_adrift }
 	preferred_planet_class_neighbor = no
 
 	possible = {
@@ -35,7 +35,7 @@ origin_cradle_of_creation = {
 	advanced_start = yes
 
 	starting_colony = pc_gaia
-	initializer = "sci_origin_cradle_of_creation"
+	initializers = { sci_origin_cradle_of_creation }
 	habitability_preference = pc_gaia
 	preferred_planet_class_neighbor = no
 
@@ -60,7 +60,7 @@ origin_envy = {
 	max_once_global = yes
 	advanced_start = yes
 
-	initializer = "sci_origin_envy"
+	initializers = { sci_origin_envy }
 	preferred_planet_class_neighbor = no
 
 	description = origin_envy_effects
@@ -105,7 +105,7 @@ origin_holy_terra = {
 	advanced_start = yes
 
 	starting_colony = pc_city
-	initializer = "sci_origin_holy_terra"
+	initializers = { sci_origin_holy_terra }
 	habitability_preference = pc_continental
 	preferred_planet_class_neighbor = no
 
@@ -132,7 +132,7 @@ origin_loved_by_the_void = {
 	max_once_global = yes
 	advanced_start = yes
 
-	initializer = "sci_origin_loved_by_the_void"
+	initializers = { sci_origin_loved_by_the_void }
 	preferred_planet_class_neighbor = no
 
 	description = origin_loved_by_the_void_effects
@@ -151,7 +151,7 @@ origin_precursor = {
 	advanced_start = yes
 
 	starting_colony = pc_city
-	initializer = "sci_origin_precursor"
+	initializers = { sci_origin_precursor }
 	habitability_preference = pc_gaia
 	preferred_planet_class_neighbor = no
 
@@ -179,7 +179,7 @@ origin_solio_aeternitatis = {
 	advanced_start = yes
 
 	starting_colony = pc_ringworld_habitable
-	initializer = "sci_origin_solio_aeternitatis"
+	initializers = { sci_origin_solio_aeternitatis }
 	preferred_planet_class_neighbor = no
 
 	description = origin_solio_aeternitatis_effects
