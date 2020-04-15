@@ -3,12 +3,15 @@ tech_nanite_replicator = {
 	area = engineering
 	tier = 5
 	category = { materials }
-	prerequisites = { "tech_nanite_transmutation" "tech_habitat_1" }
+	prerequisites = { "tech_nanite_transmutation" }
 	weight = @tier5weight3
 	is_rare = yes
 
 	potential = {
 		host_has_dlc = "Distant Stars Story Pack"
+        any_owned_planet = {
+            has_deposit = d_nanites_mine
+        }
 	}
 
 	weight_modifier = {

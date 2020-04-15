@@ -3,8 +3,18 @@ tech_dark_matter_laboratory = {
 	area = physics
 	tier = 4
 	category = { field_manipulation }
-	prerequisites = { "tech_mine_dark_matter" "tech_habitat_1" }
+	prerequisites = { "tech_mine_dark_matter" }
 	weight = @tier4weight3
+
+    potential = {
+        any_owned_planet = {
+            OR = {
+				has_deposit = d_dark_matter_mine_1
+				has_deposit = d_dark_matter_mine_2
+				has_deposit = d_dark_matter_mine_3
+            }
+        }
+    }
 
 	weight_modifier = {
 		modifier = {

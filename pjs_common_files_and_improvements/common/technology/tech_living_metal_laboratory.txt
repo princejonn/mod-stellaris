@@ -3,8 +3,18 @@ tech_living_metal_laboratory = {
 	area = engineering
 	tier = 5
 	category = { materials }
-	prerequisites = { "tech_mine_living_metal" "tech_habitat_1" }
+	prerequisites = { "tech_mine_living_metal" }
 	weight = @tier5weight1
+
+    potential = {
+        any_owned_planet = {
+            OR = {
+				has_deposit = d_living_metal_mine_1
+				has_deposit = d_living_metal_mine_2
+				has_deposit = d_living_metal_mine_3
+            }
+        }
+    }
 
 	weight_modifier = {
 		modifier = {

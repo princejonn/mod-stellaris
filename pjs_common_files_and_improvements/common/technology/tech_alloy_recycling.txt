@@ -3,8 +3,20 @@ tech_alloy_recycling = {
 	area = engineering
 	tier = 4
 	category = { materials }
-	prerequisites = { "tech_alloys_2" "tech_habitat_1" }
+	prerequisites = { "tech_alloys_2" }
 	weight = @tier4weight1
+
+    potential = {
+        any_owned_planet = {
+            OR = {
+				has_deposit = d_alloy_mine_1
+				has_deposit = d_alloy_mine_2
+				has_deposit = d_alloy_mine_3
+				has_deposit = d_alloy_mine_4
+				has_deposit = d_alloy_mine_5
+            }
+        }
+    }
 
 	weight_modifier = {
 		factor = 2

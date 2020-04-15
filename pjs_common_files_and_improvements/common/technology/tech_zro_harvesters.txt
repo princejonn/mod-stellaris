@@ -4,9 +4,19 @@ tech_zro_harvesters = {
 	tier = 5
 	category = { psionics }
 	is_rare = yes
-	prerequisites = { "tech_mine_zro" "tech_habitat_1" }
+	prerequisites = { "tech_mine_zro" }
 	is_reverse_engineerable = no
 	weight = @tier5weight3
+
+    potential = {
+        any_owned_planet = {
+            OR = {
+				has_deposit = d_zro_mine_1
+				has_deposit = d_zro_mine_2
+				has_deposit = d_zro_mine_3
+            }
+        }
+    }
 
 	weight_modifier = {
 		modifier = {
