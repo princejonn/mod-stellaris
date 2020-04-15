@@ -36,7 +36,6 @@ sci_origin_adrift = {
         has_ring = no
         modifiers = none
         deposit_blockers = none
-		flags = { start_machine }
 
         starting_planet = yes
 
