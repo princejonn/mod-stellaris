@@ -9,48 +9,6 @@ event = {
 	immediate = {
 	    every_planet = {
             if = {
-                limit = { has_planet_flag = start_machine }
-                change_pc = "pc_machine"
-                remove_all_districts = yes
-                while = { count = 10
-                    add_district = district_nexus
-                }
-                while = { count = 4
-                    add_district = district_generator_uncapped
-                }
-                while = { count = 4
-                    add_district = district_mining_uncapped
-                }
-                set_graphical_culture = root
-            }
-            if = {
-                limit = { has_planet_flag = start_gaia }
-                change_pc = "pc_gaia"
-                add_modifier = { modifier = gaia_world days = -1 }
-                generate_betharian_deposit = yes
-                generate_pets_deposit = yes
-                set_graphical_culture = root
-            }
-            if = {
-                limit = { has_planet_flag = start_city }
-                change_pc = "pc_city"
-                set_graphical_culture = root
-            }
-            if = {
-                limit = { has_planet_flag = start_ringworld_habitable }
-                change_pc = "pc_ringworld_habitable"
-                clear_deposits = yes
-                add_deposit = d_stasis_chambers
-                add_deposit = d_ruined_arcology
-                set_graphical_culture = root
-            }
-
-            if = {
-                limit = { has_planet_flag = start_terraforming_candidate }
-                add_modifier = { modifier = "terraforming_candidate" days = -1 }
-            }
-
-            if = {
                 limit = { has_planet_flag = start_food_rich_planet }
                 add_modifier = { modifier = food_rich_planet days = -1 }
             }
@@ -105,6 +63,10 @@ event = {
             if = {
                 limit = { has_planet_flag = start_subterranean_expansion }
                 add_modifier = { modifier = subterranean_expansion days = -1 }
+            }
+            if = {
+                limit = { has_planet_flag = start_paradise_planet }
+                add_modifier = { modifier = paradise_planet days = -1 }
             }
 	    }
 	}

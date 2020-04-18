@@ -1,4 +1,4 @@
-on_press_begin = {
+on_game_start = {
 	events = {
 		pjs_common_files_event.1
 	}
