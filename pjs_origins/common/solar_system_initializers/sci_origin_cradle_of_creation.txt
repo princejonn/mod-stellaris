@@ -66,7 +66,7 @@ sci_origin_cradle_of_creation = {
 			orbit_distance = 7
 			orbit_angle = 45
 			deposit_blockers = none
-			flags = { start_food_rich_planet start_natural_beauty start_cradle_of_creation }
+			flags = { start_food_rich_planet start_paradise_world start_cradle_of_creation }
 
 			starting_planet = yes
 
