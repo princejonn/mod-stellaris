@@ -63,10 +63,12 @@ sci_origin_cradle_Of_creation_olympus = {
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
+		flags = { start_mineral_rich }
 
 		init_effect = {
-			generate_food_deposits = yes
-			generate_gases_deposit = yes
+            generate_mineral_deposits = yes
+            generate_crystals_deposit = yes
+            generate_gases_deposit = yes
 		}
 
 		change_orbit = 10

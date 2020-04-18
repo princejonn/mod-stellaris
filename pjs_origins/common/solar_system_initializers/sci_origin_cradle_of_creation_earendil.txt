@@ -70,6 +70,7 @@ sci_origin_cradle_Of_creation_earendil = {
 		has_ring = no
         modifiers = none
 		deposit_blockers = none
+		flags = { start_natural_beauty }
 
 		init_effect = {
 			generate_food_deposits = yes

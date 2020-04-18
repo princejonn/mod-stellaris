@@ -17,12 +17,18 @@ planet_event = {
 
             generate_gases_deposit = yes
 
+            add_building = building_holo_theatres
+
+            add_district = district_city
             add_district = district_city
             add_district = district_farming
+            add_district = district_farming
+            add_district = district_mining
             add_district = district_mining
             add_district = district_generator
+            add_district = district_generator
 
-            while = { count = 8
+            while = { count = 14
                 create_pop = { species = owner_main_species }
             }
 	    }
