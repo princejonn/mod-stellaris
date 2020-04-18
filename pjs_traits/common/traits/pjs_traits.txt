@@ -6,7 +6,14 @@ trait_pjs_asari = {
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_rapid_breeders" "trait_slow_breeders" }
+	opposites = {
+	    "trait_venerable"
+	    "trait_enduring"
+	    "trait_fleeting"
+	    "trait_rapid_breeders"
+	    "trait_slow_breeders"
+	    "trait_pjs_psionic"
+    }
     modifier = {
         leader_age = 800
         planet_jobs_physics_research_produces_mult = 0.1
@@ -28,7 +35,12 @@ trait_pjs_eldar = {
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" }
+	opposites = {
+        "trait_venerable"
+        "trait_enduring"
+        "trait_fleeting"
+        "trait_pjs_psionic"
+	}
     modifier = {
         leader_age = 800
 		army_damage_mult = 0.1
@@ -70,7 +82,16 @@ trait_pjs_krogan = {
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_extremely_adaptive" "trait_adaptive" "trait_nonadaptive" "trait_very_strong" "trait_strong" "trait_weak" "trait_rapid_breeders" "trait_slow_breeders" }
+	opposites = {
+        "trait_extremely_adaptive"
+        "trait_adaptive"
+        "trait_nonadaptive"
+        "trait_very_strong"
+        "trait_strong"
+        "trait_weak"
+        "trait_rapid_breeders"
+        "trait_slow_breeders"
+	}
 	modifier = {
 		pop_environment_tolerance = 0.20
 		army_health = 2.0
@@ -92,7 +113,14 @@ trait_pjs_horror = {
 	affected_by_radiation = no
 	forced_happiness = yes
 	allowed_archetypes = { BIOLOGICAL PLANTOID }
-	opposites = { "trait_extremely_adaptive" "trait_adaptive" "trait_nonadaptive" "trait_very_strong" "trait_strong" "trait_weak" }
+	opposites = {
+        "trait_extremely_adaptive"
+        "trait_adaptive"
+        "trait_nonadaptive"
+        "trait_very_strong"
+        "trait_strong"
+        "trait_weak"
+	}
 	modifier = {
 		pop_environment_tolerance = 0.25
 		pop_other_species_happiness = -0.75
@@ -117,7 +145,9 @@ trait_pjs_photosynthetic = {
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0.25
 	allowed_archetypes = { BIOLOGICAL PLANTOID }
-	opposites = { "trait_pjs_partial_photosynthetic" }
+	opposites = {
+	    "trait_pjs_partial_photosynthetic"
+	}
 	modifier = {
 		planet_pops_organics_food_upkeep_mult = -1
 	}
@@ -133,7 +163,9 @@ trait_pjs_partial_photosynthetic = {
 	must_match_primary_species = no
 	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL PLANTOID }
-	opposites = { "trait_pjs_photosynthetic" }
+	opposites = {
+	    "trait_pjs_photosynthetic"
+	}
 	modifier = {
 		planet_pops_organics_food_upkeep_mult = -0.5
 	}
@@ -148,7 +180,10 @@ trait_pjs_psionic = {
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
-	opposites = { }
+	opposites = {
+        "trait_pjs_asari"
+        "trait_pjs_eldar"
+	}
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.1
 	}
@@ -202,7 +237,11 @@ trait_pjs_militarists = {
 	randomized = no
 	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
-	opposites = { "trait_very_strong" "trait_strong" "trait_weak" }
+	opposites = {
+        "trait_very_strong"
+        "trait_strong"
+        "trait_weak"
+	}
 	modifier = {
 		army_attack_damage_mult = 0.1
 		army_health = 0.1
