@@ -198,6 +198,9 @@
   planet_build_speed:0 "Architectural Focus"
   planet_build_speed_desc:0 "This planet is currently focused on erecting new buildings and districts."
 
+  paradise_world:0 "Paradise World"
+  paradise_world_desc:0 "A paradisaical world of unparalleled beauty."
+
   ## Technologies
 
   tech_alloy_recycling:0 "Alloy Recycling Yard"

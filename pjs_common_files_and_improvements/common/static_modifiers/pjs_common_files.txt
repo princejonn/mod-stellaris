@@ -7,3 +7,12 @@ planet_build_speed = {
     planet_district_mining_build_speed_mult = 0.25
     planet_district_farming_build_speed_mult = 0.25
 }
+
+paradise_world = {
+    icon = "gfx/interface/icons/planet_modifiers/pm_lush.dds"
+    icon_frame = 1
+    pop_happiness = 0.20
+    planet_jobs_unity_produces_mult = 0.20
+    planet_jobs_food_produces_mult = 0.20
+    planet_immigration_pull_mult = 0.20
+}

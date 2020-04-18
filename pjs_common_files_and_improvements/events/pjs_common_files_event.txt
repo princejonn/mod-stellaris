@@ -65,8 +65,8 @@ event = {
                 add_modifier = { modifier = subterranean_expansion days = -1 }
             }
             if = {
-                limit = { has_planet_flag = start_paradise_planet }
-                add_modifier = { modifier = paradise_planet days = -1 }
+                limit = { has_planet_flag = start_paradise_world }
+                add_modifier = { modifier = paradise_world days = -1 }
             }
 	    }
 	}
