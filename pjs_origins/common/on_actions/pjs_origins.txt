@@ -1,6 +1,7 @@
 empire_init_capital_planet = {
 	events = {
 		origin_cradle_of_creation_event.1
+		origin_envy_event.1
 		origin_holy_terra_event.1
 		origin_precursor_event.1
 		origin_solio_aeternitatis_event.1

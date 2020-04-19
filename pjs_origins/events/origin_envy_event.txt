@@ -1,0 +1,43 @@
+namespace = origin_envy_event
+
+planet_event = {
+	id = origin_envy_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    if = {
+            limit = { has_planet_flag = start_envy }
+
+            add_district = district_city
+            add_district = district_farming
+            add_district = district_mining
+            add_district = district_generator
+
+            generate_mineral_deposits = yes
+
+            while = {
+                count = 7
+                create_pop = { species = owner_main_species }
+            }
+
+            owner = {
+                add_resource = { energy = 500 }
+                add_resource = { minerals = 500 }
+                add_resource = { alloys = 500 }
+                if = {
+                    limit = { is_machine_empire = no }
+                    add_resource = { food = 500 }
+                }
+                if = {
+                    limit = { is_gestalt = no }
+                    add_resource = { consumer_goods = 500 }
+                }
+
+                give_technology = { tech = "tech_mine_volatile_motes" message = no }
+                give_technology = { tech = "tech_mine_exotic_gases" message = no }
+                give_technology = { tech = "tech_mine_rare_crystals" message = no }
+            }
+	    }
+	}
+}

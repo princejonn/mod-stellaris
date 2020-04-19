@@ -166,6 +166,7 @@ planet_event = {
             owner = {
                 add_resource = { energy = 500 }
                 add_resource = { minerals = 500 }
+                add_resource = { alloys = 500 }
                 if = {
                     limit = { is_machine_empire = no }
                     add_resource = { food = 500 }

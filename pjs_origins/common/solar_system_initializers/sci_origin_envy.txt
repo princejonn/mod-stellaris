@@ -90,7 +90,6 @@ sci_origin_envy = {
 		orbit_distance = 0
 		modifiers = none
 		deposit_blockers = none
-		flags = { rw_spec_science }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
@@ -153,6 +152,7 @@ sci_origin_envy = {
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
         modifiers = none
+        flags = { start_envy }
 
 		starting_planet = yes
 
@@ -212,6 +212,15 @@ sci_origin_envy = {
                 set_deposit = d_minerals_6
             }
         }
+	}
+
+	neighbor_system = {
+		distance = { min = 20 max = 100 }
+		initializer = "misc_pjs_iota_zarriah"
+	}
+	neighbor_system = {
+		distance = { min = 20 max = 100 }
+		initializer = "misc_pjs_epsilon_lyrae"
 	}
 
 	neighbor_system = {
