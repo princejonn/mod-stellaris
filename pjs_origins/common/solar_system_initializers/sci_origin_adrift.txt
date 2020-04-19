@@ -36,6 +36,7 @@ sci_origin_adrift = {
         has_ring = no
         modifiers = none
         deposit_blockers = none
+        flags = { start_adrift }
 
         starting_planet = yes
 
@@ -52,11 +53,11 @@ sci_origin_adrift = {
             orbit_angle = { min = 20 max = 90 }
             has_ring = no
             modifiers = none
+            deposit_blockers = none
+            flags = { start_adrift_2 }
 
 			init_effect = {
-				add_deposit = d_radioactive_wasteland
-				add_deposit = d_radioactive_wasteland
-				add_deposit = d_irradiated_valley
+                prevent_anomaly = yes
 			}
         }
         moon = {

@@ -1,5 +1,6 @@
 empire_init_capital_planet = {
 	events = {
+		origin_adrift_event.1
 		origin_cradle_of_creation_event.1
 		origin_envy_event.1
 		origin_holy_terra_event.1
@@ -10,6 +11,7 @@ empire_init_capital_planet = {
 
 empire_init_add_technologies = {
 	events = {
+		origin_adrift_event.2
 		origin_holy_terra_event.2
 		origin_holy_terra_event.3
 		origin_precursor_event.2

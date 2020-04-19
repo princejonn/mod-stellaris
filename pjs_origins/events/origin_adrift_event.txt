@@ -1,0 +1,60 @@
+namespace = origin_adrift_event
+
+planet_event = {
+	id = origin_adrift_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    if = {
+            limit = { has_planet_flag = start_adrift }
+
+            generate_energy_deposits = yes
+
+            add_deposit = d_fungal_caves
+            add_deposit = d_fungal_caves
+	    }
+	}
+}
+
+country_event = {
+	id = origin_adrift_event.2
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = start_adrift_2 }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    clear_deposits = yes
+
+                    generate_mineral_deposits = yes
+
+                    add_deposit = d_fungal_forest
+
+                    add_district = district_farming
+                    add_district = district_farming
+
+                    add_deposit = d_radioactive_wasteland
+                    add_deposit = d_radioactive_wasteland
+                    add_deposit = d_irradiated_valley
+
+                    while = { count = 3
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}
