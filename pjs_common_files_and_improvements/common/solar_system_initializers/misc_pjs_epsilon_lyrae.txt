@@ -119,7 +119,7 @@ misc_pjs_epsilon_lyrae = {
                 }
                 set_planet_flag = megastructure
                 set_planet_flag = habitat
-                set_planet_flag = research_habitat
+                set_planet_flag = mining_habitat
             }
         }
     }
