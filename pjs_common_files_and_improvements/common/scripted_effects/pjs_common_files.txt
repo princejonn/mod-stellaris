@@ -2,31 +2,31 @@
 
 generate_energy_1_deposit = {
     random_list = {
-        1 = { add_deposit = d_arid_highlands }
-        4 = { add_deposit = d_hot_springs }
+        20 = { add_deposit = d_arid_highlands }
+        80 = { add_deposit = d_hot_springs }
     }
 }
 generate_energy_2_deposit = {
     random_list = {
-        4 = { add_deposit = d_rushing_waterfalls }
-        4 = { add_deposit = d_searing_desert }
-        1 = { add_deposit = d_frozen_gas_lake }
+        40 = { add_deposit = d_rushing_waterfalls }
+        40 = { add_deposit = d_searing_desert }
+        20 = { add_deposit = d_frozen_gas_lake }
     }
 }
 generate_energy_3_deposit = {
     random_list = {
-        4 = { add_deposit = d_geothermal_vent }
-        1 = { add_deposit = d_underwater_vent }
-        4 = { add_deposit = d_tempestous_mountain }
+        40 = { add_deposit = d_geothermal_vent }
+        20 = { add_deposit = d_underwater_vent }
+        40 = { add_deposit = d_tempestous_mountain }
     }
 }
 
 generate_energy_deposits = {
     while = { count = 6
         random_list = {
-            4 = { generate_energy_1_deposit = yes }
-            4 = { generate_energy_2_deposit = yes }
-            1 = { generate_energy_3_deposit = yes }
+            40 = { generate_energy_1_deposit = yes }
+            40 = { generate_energy_2_deposit = yes }
+            20 = { generate_energy_3_deposit = yes }
         }
     }
 }
@@ -35,29 +35,29 @@ generate_energy_deposits = {
 
 generate_mineral_1_deposit = {
     random_list = {
-        4 = { add_deposit = d_veiny_cliffs }
-        4 = { add_deposit = d_mineral_fields }
+        50 = { add_deposit = d_veiny_cliffs }
+        50 = { add_deposit = d_mineral_fields }
     }
 }
 generate_mineral_2_deposit = {
     random_list = {
-        4 = { add_deposit = d_prosperous_mesa }
-        4 = { add_deposit = d_ore_rich_caverns }
+        50 = { add_deposit = d_prosperous_mesa }
+        50 = { add_deposit = d_ore_rich_caverns }
     }
 }
 generate_mineral_3_deposit = {
     random_list = {
-        4 = { add_deposit = d_rich_mountain }
-        4 = { add_deposit = d_submerged_ore_veins }
+        50 = { add_deposit = d_rich_mountain }
+        50 = { add_deposit = d_submerged_ore_veins }
     }
 }
 
 generate_mineral_deposits = {
     while = { count = 6
         random_list = {
-            4 = { generate_mineral_1_deposit = yes }
-            4 = { generate_mineral_2_deposit = yes }
-            1 = { generate_mineral_3_deposit = yes }
+            40 = { generate_mineral_1_deposit = yes }
+            40 = { generate_mineral_2_deposit = yes }
+            20 = { generate_mineral_3_deposit = yes }
         }
     }
 }
@@ -66,39 +66,39 @@ generate_mineral_deposits = {
 
 generate_food_1_deposit = {
     random_list = {
-        1 = { add_deposit = d_lichen_fields }
-        4 = { add_deposit = d_bountiful_plains }
-        4 = { add_deposit = d_rugged_woods }
-        4 = { add_deposit = d_green_hills }
-        1 = { add_deposit = d_forgiving_tundra }
-        1 = { add_deposit = d_boggy_fens }
-        4 = { add_deposit = d_nutritious_mudland }
+        10 = { add_deposit = d_lichen_fields }
+        20 = { add_deposit = d_bountiful_plains }
+        20 = { add_deposit = d_rugged_woods }
+        10 = { add_deposit = d_green_hills }
+        10 = { add_deposit = d_forgiving_tundra }
+        10 = { add_deposit = d_boggy_fens }
+        20 = { add_deposit = d_nutritious_mudland }
     }
 }
 generate_food_2_deposit = {
     random_list = {
-        1 = { add_deposit = d_fungal_caves }
-        4 = { add_deposit = d_lush_jungle }
-        4 = { add_deposit = d_fertile_lands }
-        4 = { add_deposit = d_great_river }
+        10 = { add_deposit = d_fungal_caves }
+        30 = { add_deposit = d_lush_jungle }
+        30 = { add_deposit = d_fertile_lands }
+        30 = { add_deposit = d_great_river }
     }
 }
 generate_food_3_deposit = {
     random_list = {
-        4 = { add_deposit = d_black_soil }
-        4 = { add_deposit = d_teeming_reef }
-        4 = { add_deposit = d_marvelous_oasis }
-        4 = { add_deposit = d_tropical_island }
-        1 = { add_deposit = d_fungal_forest }
+        30 = { add_deposit = d_black_soil }
+        20 = { add_deposit = d_teeming_reef }
+        20 = { add_deposit = d_marvelous_oasis }
+        20 = { add_deposit = d_tropical_island }
+        10 = { add_deposit = d_fungal_forest }
     }
 }
 
 generate_food_deposits = {
     while = { count = 6
         random_list = {
-            4 = { generate_food_1_deposit = yes }
-            4 = { generate_food_2_deposit = yes }
-            1 = { generate_food_3_deposit = yes }
+            40 = { generate_food_1_deposit = yes }
+            40 = { generate_food_2_deposit = yes }
+            20 = { generate_food_3_deposit = yes }
         }
     }
 }
@@ -119,9 +119,9 @@ generate_pets_deposit = {
 
 generate_crystals_deposit = {
     random_list = {
-        1 = { add_deposit = d_crystalline_caverns }
-        1 = { add_deposit = d_crystal_forest }
-        1 = { add_deposit = d_crystal_reef }
+        50 = { add_deposit = d_crystalline_caverns }
+        25 = { add_deposit = d_crystal_forest }
+        25 = { add_deposit = d_crystal_reef }
     }
 }
 
@@ -129,8 +129,8 @@ generate_crystals_deposit = {
 
 generate_motes_deposit = {
     random_list = {
-        1 = { add_deposit = d_dust_caverns }
-        1 = { add_deposit = d_dust_desert }
+        70 = { add_deposit = d_dust_caverns }
+        30 = { add_deposit = d_dust_desert }
     }
 }
 
@@ -138,8 +138,8 @@ generate_motes_deposit = {
 
 generate_gases_deposit = {
     random_list = {
-        1 = { add_deposit = d_bubbling_swamp }
-        1 = { add_deposit = d_fuming_bog }
+        50 = { add_deposit = d_bubbling_swamp }
+        50 = { add_deposit = d_fuming_bog }
     }
 }
 
