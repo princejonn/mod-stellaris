@@ -24,40 +24,7 @@ sci_origin_precursor_kumamoto = {
 		}
 	}
 
-	change_orbit = 50
-
-	planet = {
-	    name = "Moriyama"
-		class = "pc_gaia"
-		size = { min = 16 max = 28 }
-		orbit_distance = 10
-        orbit_angle = { min = 20 max = 220 }
-        has_ring = no
-        modifiers = none
-        deposit_blockers = none
-
-		init_effect = {
-			prevent_anomaly = yes
-            clear_deposits = yes
-
-            add_deposit = d_stasis_chambers
-            add_deposit = d_stasis_chambers
-
-            add_deposit = d_ruined_precursor_city
-            add_deposit = d_ruined_precursor_city
-
-            add_deposit = d_former_precursor_battlefield
-            add_deposit = d_former_precursor_battlefield
-
-            generate_energy_deposits = yes
-            generate_food_deposits = yes
-            generate_mineral_deposits = yes
-
-            generate_crystals_deposit = yes
-            generate_betharian_deposit = yes
-            generate_pets_deposit = yes
-        }
-	}
+	change_orbit = 40
 
 	planet = {
 		class = "pc_broken"
@@ -77,7 +44,7 @@ sci_origin_precursor_kumamoto = {
 		}
 	}
 
-	change_orbit = 50
+	change_orbit = 70
 
 	planet = {
 		class = "pc_asteroid"

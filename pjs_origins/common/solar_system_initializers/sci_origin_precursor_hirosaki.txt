@@ -80,33 +80,18 @@ sci_origin_precursor_hirosaki = {
 
     planet = {
         name = "Imakane"
-        class = "pc_city"
-        size = { min = 16 max = 22 }
+        class = "pc_barren"
+        size = 18
         orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
         has_ring = no
         modifiers = none
         deposit_blockers = none
 
-        init_effect = {
+		init_effect = {
             prevent_anomaly = yes
-            clear_deposits = yes
-
-            graphical_culture = "humanoid_01"
-
-            add_deposit = d_stasis_chambers
-            add_deposit = d_stasis_chambers
-
-            add_deposit = d_ruined_precursor_city
-            add_deposit = d_ruined_precursor_city
-            add_deposit = d_ruined_precursor_city
-            add_deposit = d_ruined_precursor_city
-
-            add_deposit = d_former_precursor_battlefield
-            add_deposit = d_former_precursor_battlefield
-
-            add_building = building_class_4_singularity
-        }
+            save_event_target_as = think_tank_target
+		}
 
         change_orbit = 10
 

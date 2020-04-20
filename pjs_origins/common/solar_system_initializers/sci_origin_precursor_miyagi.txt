@@ -49,7 +49,7 @@ sci_origin_precursor_miyagi = {
 
 	planet = {
 		class = "pc_gas_giant"
-		size = 35
+		size = 40
 		orbit_distance = 40
 		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
@@ -61,7 +61,7 @@ sci_origin_precursor_miyagi = {
 			class = "pc_city"
 			size = { min = 16 max = 22 }
 			orbit_distance = 10
-			orbit_angle = { min = 20 max = 220 }
+			orbit_angle = 20
 			has_ring = no
 
             init_effect = {
@@ -89,8 +89,8 @@ sci_origin_precursor_miyagi = {
             name = "Kuromatsunai"
 			class = "pc_city"
 			size = { min = 16 max = 22 }
-			orbit_distance = 10
-			orbit_angle = { min = 20 max = 220 }
+			orbit_distance = 5
+			orbit_angle = 60
 			has_ring = no
 
             init_effect = {
@@ -136,11 +136,6 @@ sci_origin_precursor_miyagi = {
 		orbit_angle = { min = 20 max = 220 }
 		has_ring = yes
 
-        init_effect = {
-            prevent_anomaly = yes
-            save_event_target_as = habitat_planet
-        }
-
 		change_orbit = 10
 
 		moon = {
@@ -172,27 +167,4 @@ sci_origin_precursor_miyagi = {
 			has_ring = no
 		}
 	}
-
-	init_effect = {
-        spawn_planet = {
-            class = pc_habitat
-            location = event_target:habitat_planet
-            orbit_location = yes
-            orbit_angle_offset = 45
-            orbit_distance_offset = 10
-            size = 6
-            has_ring = no
-
-            init_effect = {
-                set_name = "Abandoned Habitat"
-                set_planet_entity = {
-                    entity = "orbital_habitat_entity"
-                    graphical_culture = fallen_empire_01
-                }
-                set_planet_flag = megastructure
-                set_planet_flag = habitat
-                set_planet_flag = research_habitat
-            }
-        }
-    }
 }
