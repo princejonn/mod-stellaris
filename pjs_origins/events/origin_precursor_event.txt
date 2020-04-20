@@ -9,35 +9,27 @@ planet_event = {
 	    if = {
             limit = { has_planet_flag = start_precursor }
 
-            ## set_name = "Kyoto"
-
             remove_all_districts = yes
 
             remove_building = building_foundry_1
             remove_building = building_factory_1
             remove_building = building_research_lab_1
 
+            add_building = building_precinct_house
+            add_building = building_holo_theatres
+
             add_building = building_class_4_singularity
             add_building = building_dimensional_fabricator
-            add_building = building_dimensional_fabricator
+            add_building = building_affluence_center
             add_building = building_master_archive
 
             while = { count = 8
                 add_district = district_arcology_housing
             }
-            while = { count = 1
-                add_district = district_arcology_arms_industry
-            }
-            while = { count = 2
-                add_district = district_arcology_civilian_industry
-            }
-            while = { count = 2
-                add_district = district_arcology_leisure
-            }
 
-            add_building = building_affluence_center
-            add_building = building_nourishment_center
-            add_building = building_precinct_house
+            add_district = district_arcology_arms_industry
+            add_district = district_arcology_civilian_industry
+            add_district = district_arcology_leisure
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
@@ -45,7 +37,7 @@ planet_event = {
 
             set_graphical_culture = root
 
-            while = { count = 22
+            while = { count = 13
                 create_pop = {
                     species = owner
                 }
@@ -137,7 +129,6 @@ country_event = {
                         ethos = owner
                     }
 
-                    ## set_name = "Osaka"
                     change_pc = "pc_gaia"
 
 			        clear_blockers = yes
@@ -145,40 +136,29 @@ country_event = {
                     remove_all_districts = yes
 
                     generate_energy_deposits = yes
-                    generate_energy_deposits = yes
-
                     generate_mineral_deposits = yes
-                    generate_mineral_deposits = yes
-
                     generate_food_deposits = yes
-                    generate_food_deposits = yes
-
                     generate_crystals_deposit = yes
                     generate_motes_deposit = yes
                     generate_gases_deposit = yes
-
                     generate_betharian_deposit = yes
                     generate_pets_deposit = yes
 
                     add_deposit = d_stasis_chambers
                     add_deposit = d_stasis_chambers
-
                     add_deposit = d_ruined_precursor_city
-                    add_deposit = d_ruined_precursor_city
-
-                    add_deposit = d_former_precursor_battlefield
                     add_deposit = d_former_precursor_battlefield
 
-                    while = { count = 4
+                    while = { count = 9
                         add_district = district_city
                     }
-                    while = { count = 4
+                    while = { count = 3
                         add_district = district_generator
                     }
-                    while = { count = 6
+                    while = { count = 3
                         add_district = district_mining
                     }
-                    while = { count = 4
+                    while = { count = 3
                         add_district = district_farming
                     }
 
@@ -186,15 +166,15 @@ country_event = {
 
                     add_building = building_capital
                     add_building = building_bureaucratic_1
-
-                    add_building = building_class_4_singularity
-                    add_building = building_dimensional_fabricator
-                    add_building = building_nano_forge
-
                     add_building = building_precinct_house
                     add_building = building_holo_theatres
 
-                    while = { count = 19
+                    add_building = building_class_4_singularity
+                    add_building = building_dimensional_fabricator
+                    add_building = building_nourishment_center
+                    add_building = building_nano_forge
+
+                    while = { count = 35
                         create_pop = {
                             species = owner
                         }
