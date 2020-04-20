@@ -1,0 +1,8 @@
+namespace = pjs_fallen_empire_ships_unlocked_global
+event = {
+    id = pjs_fallen_empire_ships_unlocked_global.1
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = { NOT = { has_global_flag = pjs_fallen_empire_ships_unlocked_global } }
+    immediate = { set_global_flag = pjs_fallen_empire_ships_unlocked_global }
+}
