@@ -1,11 +1,12 @@
 planet_build_speed = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_build_speed.dds"
 	icon_frame = 1
-	planet_building_build_speed_mult = 0.25
-    planet_district_city_build_speed_mult = 0.25
-    planet_district_generator_build_speed_mult = 0.25
-    planet_district_mining_build_speed_mult = 0.25
-    planet_district_farming_build_speed_mult = 0.25
+	planet_building_build_speed_mult = 0.33
+    planet_district_city_build_speed_mult = 0.33
+    planet_district_generator_build_speed_mult = 0.33
+    planet_district_mining_build_speed_mult = 0.33
+    planet_district_farming_build_speed_mult = 0.33
+    planet_clear_blocker_time_mult = -0.33
 }
 
 paradise_world = {

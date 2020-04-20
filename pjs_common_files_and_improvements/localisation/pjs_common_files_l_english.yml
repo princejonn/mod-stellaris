@@ -26,7 +26,7 @@
 
   decision_planet_build_speed:0 "Architectural Focus"
   decision_planet_build_speed_effects_short:0 "Enhances the build speed of buildings and districts on this planet."
-  decision_planet_build_speed_desc:0 "By enacting this decision, all buildings and districts will have a §G+25%§! build speed bonus for §H10§! years."
+  decision_planet_build_speed_desc:0 "By enacting this decision, all buildings and districts will have a §G+33%§! build speed bonus for §H10§! years."
 
   ## Deposits
 
