@@ -263,46 +263,67 @@ sci_origin_precursor = {
 		has_ring = no
     }
 
-	neighbor_system = {
-		distance = { min = 10 max = 60 }
-		initializer = "sci_origin_precursor_fukui"
-	}
+    ## matter decompressor
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
 		initializer = "sci_origin_precursor_higashidori"
 	}
-	neighbor_system = {
-		distance = { min = 10 max = 60 }
-		initializer = "sci_origin_precursor_hirosaki"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = 60 }
-		initializer = "sci_origin_precursor_miyagi"
-	}
+
+    ## dyson sphere
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
 		initializer = "sci_origin_precursor_aomori"
 	}
-	neighbor_system = {
-		distance = { min = 10 max = 60 }
-		initializer = "sci_origin_precursor_kanagawa"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = 60 }
-		initializer = "sci_origin_precursor_kochi"
-	}
+
+    ## mega shipyard
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
 		initializer = "sci_origin_precursor_kumamoto"
 	}
+
+    ## city & sentry array
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
-		initializer = "sci_origin_precursor_yamanashi"
+		initializer = "sci_origin_precursor_fukui"
 	}
+
+    ## gaia & interstellar assembly
+	neighbor_system = {
+		distance = { min = 10 max = 60 }
+		initializer = "sci_origin_precursor_kanagawa"
+	}
+
+    ## gaia & mega art installation
+	neighbor_system = {
+		distance = { min = 10 max = 60 }
+		initializer = "sci_origin_precursor_kochi"
+	}
+
+    ## 2x city
+	neighbor_system = {
+		distance = { min = 10 max = 60 }
+		initializer = "sci_origin_precursor_miyagi"
+	}
+
+	## 2x gaia & science nexus
+	neighbor_system = {
+		distance = { min = 10 max = 60 }
+		initializer = "sci_origin_precursor_hirosaki"
+	}
+
+	## ringworld & strategic coordination center
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
 		initializer = "sci_origin_precursor_nagano"
 	}
+
+    ## ringworld
+	neighbor_system = {
+		distance = { min = 10 max = 60 }
+		initializer = "sci_origin_precursor_yamanashi"
+	}
+
+	## habitat
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
 		initializer = "sci_origin_precursor_shizuoka"

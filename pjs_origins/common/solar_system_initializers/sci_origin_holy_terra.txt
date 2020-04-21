@@ -640,30 +640,46 @@ sci_origin_holy_terra = {
         }
 	}
 
-	neighbor_system = {
-		distance = { min = 20 max = 100 }
-		initializer = "sci_origin_holy_terra_pleiades_eta"
-	}
+	## dyson sphere
 	neighbor_system = {
 		distance = { min = 20 max = 100 }
 		initializer = "sci_origin_holy_terra_pleiades_gamma"
 	}
+
+    ## continental && sentry array
+	neighbor_system = {
+		distance = { min = 20 max = 100 }
+		initializer = "sci_origin_holy_terra_pleiades_eta"
+	}
+
+	## continental
 	neighbor_system = {
 		distance = { min = 20 max = 100 }
 		initializer = "sci_origin_holy_terra_delphinus"
 	}
+
+	## continental
 	neighbor_system = {
 		distance = { min = 20 max = 100 }
 		initializer = "sci_origin_holy_terra_achird_omega"
 	}
+
+	## habitat
 	neighbor_system = {
-		distance = { min = 20 max = 100 }
+		distance = { min = 50 max = 100 }
 		initializer = "sci_origin_holy_terra_xing_xiu"
 	}
 
+    ## science nexus
 	neighbor_system = {
-		distance = { min = 20 max = 100 }
-		initializer = "misc_pjs_stephen_hawkings_void"
+		distance = { min = 50 max = 100 }
+		initializer = "sci_misc_stephen_hawkings_void"
+	}
+
+    ## gaia
+	neighbor_system = {
+		distance = { min = 50 max = 100 }
+		initializer = "sci_misc_forgotten_void"
 	}
 
 	neighbor_system = {
