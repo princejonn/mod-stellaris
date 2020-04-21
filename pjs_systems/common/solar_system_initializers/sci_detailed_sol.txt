@@ -634,7 +634,7 @@ sci_detailed_sol = {
 
 	neighbor_system = {
 		distance = { min = 10 max = 60 }
-		initializer = "misc_pjs_stephen_hawkings_void"
+		initializer = "sci_misc_stephen_hawkings_void"
 	}
 
 	neighbor_system = {
