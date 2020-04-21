@@ -1,4 +1,4 @@
-misc_pjs_forgotten_void = {
+sci_misc_forgotten_void = {
 	name = "Forgotten Void"
 	class = "sc_black_hole"
 
@@ -45,7 +45,7 @@ misc_pjs_forgotten_void = {
 		deposit_blockers = none
 
         init_effect = {
-            add_modifier = { modifier = "food_rich_planet" days = -1 }
+            add_modifier = { modifier = "paradise_world" days = -1 }
             generate_food_deposits = yes
             generate_pets_deposit = yes
         }

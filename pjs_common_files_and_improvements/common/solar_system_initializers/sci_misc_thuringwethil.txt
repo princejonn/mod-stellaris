@@ -1,4 +1,4 @@
-misc_pjs_thuringwethil = {
+sci_misc_thuringwethil = {
     name = "Thuringwethil"
 	class = "sc_black_hole"
 

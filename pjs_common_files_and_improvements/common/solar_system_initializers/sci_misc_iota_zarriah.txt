@@ -1,4 +1,4 @@
-misc_pjs_iota_zarriah = {
+sci_misc_iota_zarriah = {
     name = "Iota Zarriah"
     class = rl_standard_stars
 

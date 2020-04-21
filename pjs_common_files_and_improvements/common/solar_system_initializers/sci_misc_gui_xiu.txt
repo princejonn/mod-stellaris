@@ -1,5 +1,5 @@
-misc_pjs_arietis = {
-    name = "Arietis"
+sci_misc_gui_xiu = {
+    name = "Gui Xiu"
 	class = "sc_black_hole"
 
     usage = misc_system_init
@@ -9,7 +9,7 @@ misc_pjs_arietis = {
 
 	planet = {
 		class = "pc_black_hole"
-		size = 25
+		size = 35
         orbit_distance = 0
 		orbit_angle = 1
 
@@ -22,21 +22,13 @@ misc_pjs_arietis = {
 
 	planet = {
 		class = "pc_frozen"
-		size = 14
+		size = 11
 		orbit_distance = 30
 		orbit_angle = { min = 20 max = 220 }
 		has_ring = no
 
 		init_effect = {
-		    set_deposit = d_zro_deposit_2
+		    set_deposit = d_zro_deposit_1
 		}
-	}
-
-	planet = {
-		class = "pc_frozen"
-		size = 10
-		orbit_distance = 30
-		orbit_angle = { min = 20 max = 220 }
-		has_ring = no
 	}
 }

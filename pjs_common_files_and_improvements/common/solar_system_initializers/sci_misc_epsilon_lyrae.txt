@@ -1,4 +1,4 @@
-misc_pjs_epsilon_lyrae = {
+sci_misc_epsilon_lyrae = {
     name = "Epsilon Lyrae"
     class = rl_standard_stars
 

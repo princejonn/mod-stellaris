@@ -1,4 +1,4 @@
-misc_pjs_stephen_hawkings_void = {
+sci_misc_stephen_hawkings_void = {
 	name = "Stephen Hawking's Void"
 	class = "sc_black_hole"
 
