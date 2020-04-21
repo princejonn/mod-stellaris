@@ -1,16 +1,16 @@
 ﻿l_english:
 
-  custom_pjs_alpha_carinae_NAME:0 "§SAlpha Carinae"
-  custom_pjs_alpha_carinae_DESC:0 "Home to the planet Arrakis (Desert), and the Fremen Raiders.\n\nHomeworld Name - Arrakis\nStar Name - Alpha Carinae\n\n$system_initializer_DESC$"
+  sci_custom_alpha_carinae_NAME:0 "§SAlpha Carinae"
+  sci_custom_alpha_carinae_DESC:0 "Home to the planet Arrakis (Desert), and the Fremen Raiders.\n\nHomeworld Name - Arrakis\nStar Name - Alpha Carinae\n\n$system_initializer_DESC$"
 
-  custom_pjs_delta_pavonis_NAME:0 "§SDelta Pavonis"
-  custom_pjs_delta_pavonis_DESC:0 "Home to the planet Caladan (Ocean), and House Atreides.\n\nHomeworld Name - Caladan\nStar Name - Delta Pavonis\n\n$system_initializer_DESC$"
+  sci_custom_delta_pavonis_NAME:0 "§SDelta Pavonis"
+  sci_custom_delta_pavonis_DESC:0 "Home to the planet Caladan (Ocean), and House Atreides.\n\nHomeworld Name - Caladan\nStar Name - Delta Pavonis\n\n$system_initializer_DESC$"
 
-  custom_pjs_ophiuchi_NAME:0 "§SOphiuchi"
-  custom_pjs_ophiuchi_DESC:0 "Home to the planet Giedi Prime (Tomb), and House Harkonnen.\n\nHomeworld Name - Giedi Prime\nStar Name - Ophiuchi\n\n$system_initializer_DESC$"
+  sci_custom_ophiuchi_NAME:0 "§SOphiuchi"
+  sci_custom_ophiuchi_DESC:0 "Home to the planet Giedi Prime (Tomb), and House Harkonnen.\n\nHomeworld Name - Giedi Prime\nStar Name - Ophiuchi\n\n$system_initializer_DESC$"
 
-  custom_pjs_tau_haruki_NAME:0 "§STau Haruki"
-  custom_pjs_tau_haruki_DESC:0 "Home to the imperial capital planet Kaitain (Gaia).\n\nHomeworld Name - Kaitain\nStar Name - Tau Haruki\n\n$system_initializer_DESC$"
+  sci_custom_tau_haruki_NAME:0 "§STau Haruki"
+  sci_custom_tau_haruki_DESC:0 "Home to the imperial capital planet Kaitain (Gaia).\n\nHomeworld Name - Kaitain\nStar Name - Tau Haruki\n\n$system_initializer_DESC$"
 
   d_arrakis_deposit:0 "Deep Desert"
   d_arrakis_deposit_desc:0 "Extremely rare materials and resources hide in the deep deserts of Arrakis. Expedition parties frequently find more precious materials the deeper they go..."

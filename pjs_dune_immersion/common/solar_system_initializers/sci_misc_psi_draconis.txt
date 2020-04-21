@@ -1,4 +1,4 @@
-misc_pjs_psi_draconis = {
+sci_misc_psi_draconis = {
     name = "Psi Draconis"
     class = "sc_f"
 

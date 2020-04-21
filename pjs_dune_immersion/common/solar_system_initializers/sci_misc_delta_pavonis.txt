@@ -1,19 +1,10 @@
-custom_pjs_delta_pavonis = {
+sci_misc_delta_pavonis = {
     name = "Delta Pavonis"
     class = "sc_g"
 
-	usage = custom_empire
+    usage = misc_system_init
 	usage_odds = { base = 0 }
-	flags = { empire_home_system dune_delta_pavonis }
-
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+    flags = { dune_delta_pavonis }
 
     planet = {
         class = "pc_g_star"
@@ -28,7 +19,7 @@ custom_pjs_delta_pavonis = {
     planet = {
         class = "pc_toxic"
         size = 14
-        orbit_distance = 30
+        orbit_distance = 20
         orbit_angle = { min = 20 max = 220 }
 
 		change_orbit = 10
@@ -36,7 +27,7 @@ custom_pjs_delta_pavonis = {
         moon = {
             class = "pc_barren"
             size = 5
-            orbit_distance = 1
+            orbit_distance = 2
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
@@ -46,7 +37,7 @@ custom_pjs_delta_pavonis = {
         name = "Harmonthep"
         class = "pc_ocean"
         size = 20
-        orbit_distance = 30
+        orbit_distance = 25
         orbit_angle = { min = 20 max = 220 }
 
 		change_orbit = 10
@@ -55,7 +46,7 @@ custom_pjs_delta_pavonis = {
             name = "Doris"
             class = random_non_colonizable
             size = 5
-            orbit_distance = 1
+            orbit_distance = 3
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
@@ -63,15 +54,14 @@ custom_pjs_delta_pavonis = {
 
     planet = {
         name = "Caladan"
-        class = ideal_planet_class
+        class = "pc_ocean"
         size = 22
         orbit_distance = 30
         orbit_angle = { min = 20 max = 220 }
-        has_ring = no
         modifiers = none
-        deposit_blockers = none
+        has_ring = no
 
-        starting_planet = yes
+        deposit_blockers = none
 
         init_effect = {
             prevent_anomaly = yes
@@ -83,24 +73,9 @@ custom_pjs_delta_pavonis = {
             name = "Artemis"
             class = "pc_barren_cold"
             size = 4
-            orbit_distance = 1
+            orbit_distance = 2
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1_first_colony"
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1"
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1"
     }
 }

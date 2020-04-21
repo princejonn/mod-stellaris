@@ -1,15 +1,14 @@
-misc_pjs_sigma_draconis = {
-    name = "Sigma Draconis"
-    class = "sc_k"
+sci_misc_thalim = {
+    name = "Thalim"
+    class = "sc_a"
+    flags = { pjs_dune_thalim }
 
     usage = misc_system_init
-	usage_odds = { base = 100 }
-	max_instances = 1
-	spawn_chance = 100
+	usage_odds = { base = 0 }
 
     planet = {
-        class = "pc_k_star"
-        size = 25
+        class = "pc_a_star"
+        size = 36
         orbit_distance = 0
         orbit_angle = 1
         has_ring = no
@@ -18,49 +17,48 @@ misc_pjs_sigma_draconis = {
     change_orbit = 30
 
     planet = {
-        name = "Corrin"
-        class = rl_habitable_normal
-        size = 15
-        orbit_distance = 30
+        name = "Tleilaxa"
+        class = "pc_continental"
+        size = 25
+        orbit_distance = 50
         orbit_angle = { min = 20 max = 220 }
 
 		change_orbit = 10
 
         moon = {
-            name = "Meliton"
+            name = "Alexander"
             class = "pc_barren"
-            size = 4
+            size = 5
             orbit_distance = 2
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
 
         moon = {
-            name = "Pelagia"
+            name = "Zephyros"
             class = "pc_barren_cold"
-            size = 5
+            size = 4
             orbit_distance = 3
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
-    }
-
-    planet = {
-        name = "Ishkal"
-        class = rl_habitable_normal
-        size = 15
-        orbit_distance = 30
-        orbit_angle = { min = 20 max = 220 }
-        has_ring = yes
-
-		change_orbit = 10
 
         moon = {
-            name = "Ampelios"
-            class = random_non_colonizable
+            name = "Corinna"
+            class = "pc_frozen"
             size = 6
             orbit_distance = 2
             orbit_angle = { min = 20 max = 220 }
+            has_ring = no
+        }
+
+        moon = {
+            name = "Euripides"
+            class = "pc_frozen"
+            size = 5
+            orbit_distance = 2
+            orbit_angle = { min = 20 max = 220 }
+            has_ring = no
         }
     }
 }

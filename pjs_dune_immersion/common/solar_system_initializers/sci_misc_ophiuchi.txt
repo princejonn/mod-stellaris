@@ -1,19 +1,10 @@
-custom_pjs_ophiuchi = {
+sci_misc_ophiuchi = {
     name = "Ophiuchi"
     class = "sc_k"
 
-	usage = custom_empire
+    usage = misc_system_init
 	usage_odds = { base = 0 }
-	flags = { empire_home_system dune_ophiuchi }
-
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+    flags = { dune_ophiuchi }
 
     asteroid_belt = {
         type = rocky_asteroid_belt
@@ -86,32 +77,16 @@ custom_pjs_ophiuchi = {
 
     planet = {
         name = "Giedi Prime"
-        class = ideal_planet_class
+        class = "pc_nuked"
         size = 20
         orbit_distance = 10
         orbit_angle = { min = 20 max = 220 }
         modifiers = none
-        deposit_blockers = none
 
-        starting_planet = yes
+        deposit_blockers = none
 
         init_effect = {
             prevent_anomaly = yes
         }
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1_first_colony"
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1"
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1"
     }
 }

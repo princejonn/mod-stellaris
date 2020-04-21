@@ -1,5 +1,5 @@
-misc_pjs_lacertae = {
-    name = "Lacertae"
+sci_misc_kherty = {
+    name = "Kherty"
 	class = "sc_black_hole"
 
     usage = misc_system_init
@@ -8,7 +8,7 @@ misc_pjs_lacertae = {
 	spawn_chance = 100
 
 	planet = {
-	    name = "Lacertae"
+	    name = "Kherty"
 		class = "pc_black_hole"
 		size = 35
         orbit_distance = 0
@@ -16,7 +16,7 @@ misc_pjs_lacertae = {
 
 		init_effect = {
             prevent_anomaly = yes
-		    set_deposit = d_dark_matter_deposit_2
+		    set_deposit = d_zro_deposit_2
 		}
 	}
 }

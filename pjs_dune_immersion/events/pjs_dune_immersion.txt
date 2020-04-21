@@ -9,19 +9,19 @@ event = {
 	immediate = {
 		if = {
 			limit = { NOT = { any_system = { has_star_flag = dune_alpha_carinae } } }
-			random_system = { spawn_system = { initializer = misc_pjs_alpha_carinae } }
+			random_system = { spawn_system = { initializer = sci_misc_alpha_carinae } }
 		}
 		if = {
 			limit = { NOT = { any_system = { has_star_flag = dune_delta_pavonis } } }
-			random_system = { spawn_system = { initializer = misc_pjs_delta_pavonis } }
+			random_system = { spawn_system = { initializer = sci_misc_delta_pavonis } }
 		}
 		if = {
 			limit = { NOT = { any_system = { has_star_flag = dune_ophiuchi } } }
-			random_system = { spawn_system = { initializer = misc_pjs_ophiuchi } }
+			random_system = { spawn_system = { initializer = sci_misc_ophiuchi } }
 		}
 		if = {
 			limit = { NOT = { any_system = { has_star_flag = dune_tau_haruki } } }
-			random_system = { spawn_system = { initializer = misc_pjs_tau_haruki } }
+			random_system = { spawn_system = { initializer = sci_misc_tau_haruki } }
 		}
 	}
 }

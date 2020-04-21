@@ -1,19 +1,10 @@
-custom_pjs_tau_haruki = {
+sci_misc_tau_haruki = {
     name = "Tau Haruki"
 	class = "sc_b"
 
-	usage = custom_empire
+    usage = misc_system_init
 	usage_odds = { base = 0 }
-	flags = { empire_home_system dune_tau_haruki }
-
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+    flags = { dune_tau_haruki }
 
     planet = {
         class = "pc_b_star"
@@ -58,18 +49,35 @@ custom_pjs_tau_haruki = {
 
     planet = {
         name = "Kaitain"
-        class = "pc_gaia"
+        class = "pc_city"
         size = 28
         orbit_distance = 40
         orbit_angle = { min = 20 max = 220 }
         modifiers = none
+        has_ring = yes
         deposit_blockers = none
-        flags = { dune_kaitain_start }
-
-        starting_planet = yes
 
         init_effect = {
             prevent_anomaly = yes
+            clear_deposits = yes
+
+            add_building = building_affluence_center
+            add_building = building_nourishment_center
+			add_building = building_dimensional_fabricator
+            add_building = building_class_4_singularity
+
+            add_deposit = d_kaitain_hassik_iii_center_deposit
+            add_deposit = d_kaitain_imperial_necropolis_deposit
+            add_deposit = d_kaitain_imperial_observatory_deposit
+            add_deposit = d_kaitain_imperial_palace_deposit
+            add_deposit = d_kaitain_imperial_prison_deposit
+            add_deposit = d_kaitain_ishaq_hall_deposit
+            add_deposit = d_kaitain_landsraad_hall_deposit
+
+            while = {
+                count = 8
+			    add_deposit = d_ruined_arcology
+            }
         }
 
 		change_orbit = 10
@@ -142,20 +150,5 @@ custom_pjs_tau_haruki = {
             orbit_angle = { min = 20 max = 220 }
             has_ring = no
         }
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1_first_colony"
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1"
-    }
-
-    neighbor_system = {
-        distance = { min = 10 max = 60 }
-        initializer = "neighbor_t1"
     }
 }
