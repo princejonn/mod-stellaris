@@ -1,6 +1,6 @@
 tech_class_4_singularity = {
     area = physics
-    cost = 99000
+    cost = 300000
     tier = 5
     weight = 1
     category = { field_manipulation }
@@ -24,15 +24,26 @@ tech_class_4_singularity = {
         modifier = {
             factor = 0
             end_game_years_passed < 5
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_class_4_singularity
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_class_4_singularity
+            }
         }
 	}
 
-	ai_weight = { weight = 1 }
+	ai_weight = { weight = 1000 }
 }
 
 tech_dimensional_fabricator = {
     area = physics
-    cost = 99000
+    cost = 300000
     tier = 5
     weight = 1
     category = { materials }
@@ -56,15 +67,26 @@ tech_dimensional_fabricator = {
         modifier = {
             factor = 0
             end_game_years_passed < 5
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_dimensional_fabricator
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_dimensional_fabricator
+            }
         }
 	}
 
-	ai_weight = { weight = 1 }
+	ai_weight = { weight = 1000 }
 }
 
 tech_nourishment_center = {
     area = society
-    cost = 99000
+    cost = 300000
     tier = 5
     weight = 1
     category = { biology }
@@ -86,15 +108,26 @@ tech_nourishment_center = {
         modifier = {
             factor = 0
             end_game_years_passed < 10
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_nourishment_center
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_nourishment_center
+            }
         }
 	}
 
-	ai_weight = { weight = 1 }
+	ai_weight = { weight = 1000 }
 }
 
 tech_affluence_center = {
     area = engineering
-    cost = 99000
+    cost = 300000
     tier = 5
     weight = 1
     category = { industry }
@@ -116,15 +149,26 @@ tech_affluence_center = {
         modifier = {
             factor = 0
             end_game_years_passed < 10
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_affluence_center
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_affluence_center
+            }
         }
 	}
 
-	ai_weight = { weight = 1 }
+	ai_weight = { weight = 1000 }
 }
 
 tech_nano_forge = {
     area = engineering
-    cost = 99000
+    cost = 300000
     tier = 5
     weight = 1
     category = { materials }
@@ -148,48 +192,26 @@ tech_nano_forge = {
         modifier = {
             factor = 0
             end_game_years_passed < 20
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_nano_forge
+                }
+            }
         }
-	}
-
-	ai_weight = { weight = 1 }
-}
-
-tech_augural_manufactory = {
-    area = physics
-    cost = 99000
-    tier = 5
-    weight = 1
-    category = { materials }
-    is_rare = yes
-
-	prerequisites = {
-        "tech_affluence_center"
-        "tech_nourishment_center"
-        "tech_dimensional_fabricator"
-        "tech_class_4_singularity"
-        "tech_nano_forge"
-	}
-
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_AUGURAL_MANUFACTORY_TITLE"
-			desc = "TECH_UNLOCK_AUGURAL_MANUFACTORY_DESC"
-		}
-	}
-
-	weight_modifier = {
         modifier = {
-            factor = 0
-            end_game_years_passed < 20
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_nano_forge
+            }
         }
 	}
 
-	ai_weight = { weight = 1 }
+	ai_weight = { weight = 1000 }
 }
 
 tech_master_archive = {
     area = physics
-    cost = 99000
+    cost = 300000
     tier = 5
     weight = 1
     category = { computing }
@@ -214,45 +236,26 @@ tech_master_archive = {
         modifier = {
             factor = 0
             end_game_years_passed < 20
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_master_archive
+                }
+            }
         }
-	}
-
-	ai_weight = { weight = 1 }
-}
-
-tech_utopian_paradise_dome = {
-    area = society
-    cost = 33000
-    tier = 5
-    weight = 1
-    category = { statecraft }
-    is_rare = yes
-
-	prerequisites = {
-        "tech_augural_manufactory"
-        "tech_master_archive"
-	}
-
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_UTOPIAN_PARADISE_DOME_TITLE"
-			desc = "TECH_UNLOCK_UTOPIAN_PARADISE_DOME_DESC"
-		}
-	}
-
-	weight_modifier = {
         modifier = {
-            factor = 0
-            end_game_years_passed < 20
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_master_archive
+            }
         }
 	}
 
-	ai_weight = { weight = 1 }
+	ai_weight = { weight = 1000 }
 }
 
 tech_fe_stronghold = {
     area = society
-    cost = 33000
+    cost = 300000
     tier = 5
     weight = 1
     category = { military_theory }
@@ -277,8 +280,141 @@ tech_fe_stronghold = {
         modifier = {
             factor = 0
             end_game_years_passed < 20
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_fe_stronghold
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_fe_stronghold
+            }
         }
 	}
 
-	ai_weight = { weight = 1 }
+	ai_weight = { weight = 1000 }
+}
+
+tech_augural_manufactory = {
+    area = physics
+    cost = 300000
+    tier = 5
+    weight = 1
+    category = { materials }
+    is_rare = yes
+
+	prerequisites = {
+        "tech_affluence_center"
+        "tech_nourishment_center"
+        "tech_dimensional_fabricator"
+        "tech_class_4_singularity"
+        "tech_nano_forge"
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_AUGURAL_MANUFACTORY_TITLE"
+			desc = "TECH_UNLOCK_AUGURAL_MANUFACTORY_DESC"
+		}
+	}
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 20
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_augural_manufactory
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_augural_manufactory
+            }
+        }
+	}
+
+	ai_weight = { weight = 1000 }
+}
+
+tech_germination_replicator = {
+    area = physics
+    cost = 300000
+    tier = 5
+    weight = 1
+    category = { materials }
+    is_rare = yes
+
+	prerequisites = {
+        "tech_affluence_center"
+        "tech_nourishment_center"
+        "tech_dimensional_fabricator"
+        "tech_class_4_singularity"
+        "tech_nano_forge"
+	}
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 20
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_germination_replicator
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_germination_replicator
+            }
+        }
+	}
+
+	ai_weight = { weight = 1000 }
+}
+
+tech_utopian_paradise_dome = {
+    area = society
+    cost = 300000
+    tier = 5
+    weight = 1
+    category = { statecraft }
+    is_rare = yes
+
+	prerequisites = {
+        "tech_augural_manufactory"
+        "tech_master_archive"
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_UTOPIAN_PARADISE_DOME_TITLE"
+			desc = "TECH_UNLOCK_UTOPIAN_PARADISE_DOME_DESC"
+		}
+	}
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 20
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_utopian_paradise_dome
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            any_owned_planet = {
+                has_building = building_utopian_paradise_dome
+            }
+        }
+	}
+
+	ai_weight = { weight = 1000 }
 }

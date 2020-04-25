@@ -673,6 +673,7 @@ building_fe_stronghold = {
 	can_demolish = yes
 	planetary_ftl_inhibitor = yes
 	add_to_first_building_slot = yes
+	base_cap_amount = 1
 
 	category = army
 
@@ -685,7 +686,12 @@ building_fe_stronghold = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 5
+		planet_housing_add = 10
+		planet_orbital_bombardment_damage = -0.25
+	}
+
+	army_modifier = {
+		army_starting_experience_add = 150
 	}
 
 
@@ -694,7 +700,7 @@ building_fe_stronghold = {
 			exists = owner
 			owner = { is_fallen_empire = yes }
 		}
-		job_fe_protector_add = 5
+		job_fe_protector_add = 10
 	}
 
 
@@ -707,7 +713,7 @@ building_fe_stronghold = {
             }
 		}
 		modifier = {
-			job_soldier_add = 5
+			job_soldier_add = 10
 		}
 	}
 	triggered_desc = {
@@ -731,7 +737,7 @@ building_fe_stronghold = {
             }
 		}
 		modifier = {
-			job_warrior_drone_add = 5
+			job_warrior_drone_add = 10
 		}
 	}
 	triggered_desc = {

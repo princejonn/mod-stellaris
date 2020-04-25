@@ -1,4 +1,4 @@
-building_augural_manufactory = {
+building_germination_replicator = {
 	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
@@ -13,15 +13,13 @@ building_augural_manufactory = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_zro = 2
-			sr_dark_matter = 2
-			sr_living_metal = 2
+			rare_crystals = 10
+			exotic_gases = 10
+			volatile_motes = 10
 		}
 		cost = {
 			minerals = 900
-			sr_zro = 100
-			sr_dark_matter = 100
-			sr_living_metal = 100
+			sr_dark_matter = 300
 		}
 		upkeep = {
 			energy = 100
@@ -29,6 +27,6 @@ building_augural_manufactory = {
 	}
 
 	prerequisites = {
-		"tech_augural_manufactory"
+		"tech_germination_replicator"
 	}
 }

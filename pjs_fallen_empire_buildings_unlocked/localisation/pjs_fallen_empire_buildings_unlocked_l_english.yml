@@ -5,6 +5,9 @@
   building_augural_manufactory:0 "Augural Manufactory"
   building_augural_manufactory_desc:0 "How this manufactory works is, to the common person, basically magic. None but a select few understand the inner workings of the manufactory."
 
+  building_germination_replicator:0 "Germination Replicator"
+  building_germination_replicator_desc:0 "How this replicator works is, to the common person, basically magic. None but a select few understand the inner workings of the replicator."
+
   building_utopian_paradise_dome:0 "Utopian Paradise Dome"
   building_utopian_paradise_dome_desc:0 "A utopia maintained and supplied with extremely advanced technology. Inhabitants live in utter luxury - to the envy of our entire empire. Luckily, the dome is able to supply amenities for more than its inhabitants."
 
@@ -40,17 +43,20 @@
   tech_nano_forge:0 "$building_nano_forge$"
   tech_nano_forge_desc:0 "$building_nano_forge_desc$"
 
-  tech_augural_manufactory:0 "$building_augural_manufactory$"
-  tech_augural_manufactory_desc:0 "$building_augural_manufactory_desc$"
-
   tech_master_archive:0 "$building_master_archive$"
   tech_master_archive_desc:0 "$building_master_archive_desc$"
 
-  tech_utopian_paradise_dome:0 "Utopian Architecture"
-  tech_utopian_paradise_dome_desc:0 "With the latest advances in architecture, landscaping and holographic technology, we shall build the homes of the future."
-
   tech_fe_stronghold:0 "$building_fe_stronghold$"
   tech_fe_stronghold_desc:0 "$building_fe_stronghold_desc$"
+
+  tech_augural_manufactory:0 "$building_augural_manufactory$"
+  tech_augural_manufactory_desc:0 "$building_augural_manufactory_desc$"
+
+  tech_germination_replicator:0 "$building_germination_replicator$"
+  tech_germination_replicator_desc:0 "$building_germination_replicator_desc$"
+
+  tech_utopian_paradise_dome:0 "Utopian Architecture"
+  tech_utopian_paradise_dome_desc:0 "With the latest advances in architecture, landscaping and holographic technology, we shall build the homes of the future."
 
   ## Technology Unlock Description
 
@@ -69,14 +75,14 @@
   TECH_UNLOCK_NANO_FORGE_TITLE:0 "§HUnlocks Building:§! $building_nano_forge$"
   TECH_UNLOCK_NANO_FORGE_DESC:0 "$building_nano_forge_desc$"
 
-  TECH_UNLOCK_AUGURAL_MANUFACTORY_TITLE:0 "§HUnlocks Building:§! $building_augural_manufactory$"
-  TECH_UNLOCK_AUGURAL_MANUFACTORY_DESC:0 "$building_augural_manufactory_desc$"
-
   TECH_UNLOCK_MASTER_ARCHIVE_TITLE:0 "§HUnlocks Building:§! $building_master_archive$"
   TECH_UNLOCK_MASTER_ARCHIVE_DESC:0 "$building_master_archive_desc$"
 
-  TECH_UNLOCK_UTOPIAN_PARADISE_DOME_TITLE:0 "§HUnlocks Building:§! $building_utopian_paradise_dome$"
-  TECH_UNLOCK_UTOPIAN_PARADISE_DOME_DESC:0 "$building_utopian_paradise_dome_desc$"
-
   TECH_UNLOCK_FE_STRONGHOLD_TITLE:0 "§HUnlocks Building:§! $tech_fe_stronghold$"
   TECH_UNLOCK_FE_STRONGHOLD_DESC:0 "$tech_fe_stronghold_desc$"
+
+  TECH_UNLOCK_AUGURAL_MANUFACTORY_TITLE:0 "§HUnlocks Building:§! $building_augural_manufactory$"
+  TECH_UNLOCK_AUGURAL_MANUFACTORY_DESC:0 "$building_augural_manufactory_desc$"
+
+  TECH_UNLOCK_UTOPIAN_PARADISE_DOME_TITLE:0 "§HUnlocks Building:§! $building_utopian_paradise_dome$"
+  TECH_UNLOCK_UTOPIAN_PARADISE_DOME_DESC:0 "$building_utopian_paradise_dome_desc$"

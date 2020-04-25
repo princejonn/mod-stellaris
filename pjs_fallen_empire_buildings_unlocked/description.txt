@@ -10,17 +10,21 @@ These techs will start appearing after the end game has begun. It took the falle
     [*] Dimensional Fabricator
     [*] Class 4 Singularity
     [*] Nano Forge
-    [*] Augural Manufactory (new)
-    [*] Utopian Paradise Dome (new)
     [*] Master Archive
     [*] Aegis Complex
+    [*] Augural Manufactory (new)
+    [*] Germination Replicator (new)
+    [*] Utopian Paradise Dome (new)
 [/list]
 
 [h1]Augural Manufactory[/h1]
 Creates Dark Matter, Zro, and Living Metal.
 
+[h1]Augural Manufactory[/h1]
+Creates huge amounts of Volatile Motes, Exotic Gas, and Rare Crystals.
+
 [h1]Utopian Paradise Dome[/h1]
-Adds +10 housing, +100 amenities, and the Hedonist pop job.
+Adds housing, amenities, and Hedonist pop jobs.
 
 [h1]I want even more mods to become a Fallen Empire![/h1]
 Check out my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1765455383]Collection[/url]
