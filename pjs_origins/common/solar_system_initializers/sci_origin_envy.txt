@@ -214,24 +214,21 @@ sci_origin_envy = {
         }
 	}
 
-    ## research habitat
+	## mining habitat
 	neighbor_system = {
 		distance = { min = 20 max = 100 }
 		initializer = "sci_misc_iota_zarriah"
 	}
 
-	## mining habitat
+    ## research habitat
 	neighbor_system = {
 		distance = { min = 20 max = 100 }
 		initializer = "sci_misc_epsilon_lyrae"
 	}
 
+    ## energy habitat
 	neighbor_system = {
 		distance = { min = 20 max = 100 }
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 20 max = 100 }
-		initializer = "neighbor_t1_first_colony"
+		initializer = "sci_misc_sith"
 	}
 }
