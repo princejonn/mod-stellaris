@@ -94,6 +94,7 @@ sci_misc_iota_zarriah = {
 
         init_effect = {
             prevent_anomaly = yes
+            clear_deposits = yes
             save_event_target_as = habitat_planet
         }
 
@@ -135,7 +136,7 @@ sci_misc_iota_zarriah = {
                 }
                 set_planet_flag = megastructure
                 set_planet_flag = habitat
-                set_planet_flag = research_habitat
+                set_planet_flag = mining_habitat
             }
         }
     }
