@@ -12,6 +12,7 @@ With this mod I am adding a big amount of new rare repeatable technologies. All 
     [*] Improved Simple Drones (Increasing the production output of our simple drones)
     [*] Educated Specialists (Increasing the production output of our specialists)
     [*] Improved Workforce (Increasing the production output of our workers)
+    [*] Architectural Renaissance (Increasing the amount of building slots your planet starts with)
     [*] Standardized Assembly Patterns (Increasing our pop assembly speed)
     [*] Generous Parental Leave (Increasing our pop growth speed)
     [*] Acclaimed Admiralty (Increasing ship fire rate)

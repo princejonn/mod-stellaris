@@ -30,6 +30,9 @@
   tech_repeatable_planet_jobs_worker_produces_mult:0 "Improved Workforce"
   tech_repeatable_planet_jobs_worker_produces_mult_desc:0 "Increasing the production output of our workers."
 
+  tech_repeatable_planet_max_buildings_add:0 "Architectural Renaissance"
+  tech_repeatable_planet_max_buildings_add_desc:0 "Enabling another building slot without pop restrictions."
+
   tech_repeatable_pop_assembly_speed:0 "Standardized Assembly Patterns"
   tech_repeatable_pop_assembly_speed_desc:0 "Increasing our pop assembly speed."
 
