@@ -1,4 +1,4 @@
-@hab_cost = 500
+@hab_cost = 250
 @hab_maintenance = 3
 
 district_hab_housing = {
@@ -16,7 +16,7 @@ district_hab_housing = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @hab_cost
+			alloys = @hab_cost
 		}
 		upkeep = {
 			energy = @hab_maintenance
@@ -151,7 +151,7 @@ district_hab_energy = {
 	resources = {
 		category = planet_districts_hab_energy
 		cost = {
-			minerals = @hab_cost
+			alloys = @hab_cost
 		}
 		upkeep = {
 			energy = @hab_maintenance
@@ -265,7 +265,7 @@ district_hab_science = {
 	resources = {
 		category = planet_districts_hab_research
 		cost = {
-			minerals = @hab_cost
+			alloys = @hab_cost
 		}
 		upkeep = {
 			energy = @hab_maintenance
@@ -369,7 +369,7 @@ district_hab_commercial = {
 	resources = {
 		category = planet_districts_hab_trade
 		cost = {
-			minerals = @hab_cost
+			alloys = @hab_cost
 		}
 		upkeep = {
 			energy = @hab_maintenance
@@ -441,7 +441,7 @@ district_hab_mining = {
 	resources = {
 		category = planet_districts_hab_mining
 		cost = {
-			minerals = @hab_cost
+			alloys = @hab_cost
 		}
 		upkeep = {
 			energy = @hab_maintenance
@@ -579,7 +579,7 @@ district_hab_cultural = {
 	resources = {
 		category = planet_districts_hab_leisure
 		cost = {
-			minerals = @hab_cost
+			alloys = @hab_cost
 		}
 		upkeep = {
 			energy = @hab_maintenance

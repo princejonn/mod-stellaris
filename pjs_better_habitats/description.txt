@@ -12,6 +12,8 @@ New buildings are:
     [*] Zro Harvesters
 [/list]
 
+The cost for building districts has been modified to use alloys instead of minerals, since it kind of makes more sense.
+
 [h1]Mod order[/h1]
 You will need to load this mod as far down as possible since it changes default files. This means if you have Planetary Diversity (like I do), you will have to load Planetary Diversity [b]ABOVE[/b] this mod.
 
