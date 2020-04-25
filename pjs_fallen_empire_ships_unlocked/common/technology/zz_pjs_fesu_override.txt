@@ -1,7 +1,7 @@
 ## 00_soc_tech
 
 tech_precognition_interface = {
-	cost = @tier5cost3
+	cost = 90000
 	area = society
 	tier = 4
 	weight = @tier5weight3
@@ -98,7 +98,7 @@ tech_precognition_interface = {
 }
 
 tech_psi_jump_drive_1 = {
-	cost = @tier5cost3
+	cost = 90000
 	area = society
 	tier = 5
 	weight = @tier5weight3
@@ -176,7 +176,7 @@ tech_psi_jump_drive_1 = {
 
 tech_psionic_shield = {
 	area = society
-	cost = @tier5cost3
+	cost = 90000
 	tier = 5
 	weight = @tier5weight3
 	category = { psionics }

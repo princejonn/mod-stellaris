@@ -1,6 +1,6 @@
 tech_pjs_escort = {
     area = engineering
-    cost = 60000
+    cost = 300000
     tier = 5
     weight = 1
     category = { voidcraft }
@@ -30,7 +30,7 @@ tech_pjs_escort = {
 
 tech_pjs_battlecruiser = {
     area = engineering
-    cost = 60000
+    cost = 300000
     tier = 5
     weight = 1
     category = { voidcraft }
