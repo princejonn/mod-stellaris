@@ -1,4 +1,4 @@
-@rw_cost = 2000
+@rw_cost = 1000
 @rw_cost_sr = 100
 @rw_maintenance = 10
 @rw_maintenance_sr = 2
@@ -22,7 +22,7 @@ district_rw_arms_industry = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @rw_cost
+			alloys = @rw_cost
 			volatile_motes = @rw_cost_sr
 		}
 		upkeep = {
@@ -134,7 +134,7 @@ district_rw_bureaucracy = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @rw_cost
+			alloys = @rw_cost
 			rare_crystals = @rw_cost_sr
 		}
 		upkeep = {
@@ -210,7 +210,7 @@ district_rw_civilian_industry = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @rw_cost
+			alloys = @rw_cost
 			rare_crystals = @rw_cost_sr
 		}
 		upkeep = {
@@ -309,7 +309,7 @@ district_rw_culture = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @rw_cost
+			alloys = @rw_cost
 			rare_crystals = @rw_cost_sr
 		}
 		upkeep = {
@@ -384,7 +384,7 @@ district_rw_science = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @rw_cost
+			alloys = @rw_cost
 			exotic_gases = @rw_cost_sr
 		}
 		upkeep = {
@@ -507,7 +507,7 @@ district_rw_temple = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @rw_cost
+			alloys = @rw_cost
 			rare_crystals = @rw_cost_sr
 		}
 		upkeep = {

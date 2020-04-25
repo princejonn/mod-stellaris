@@ -23,6 +23,10 @@
   decision_rw_districts_effects_short:0 "§EThis is a Decision that permanently increases the maximum number of districts a Ring World can support by §Y1§!. It can only be performed once on each ring world.§!"
   decision_rw_districts_desc:0 "Our population requires room to grow and work, and so we shall expand our §YRing World§!."
 
+  decision_rw_buildings:0 "Ring World Templates"
+  decision_rw_buildings_effects_short:0 "§EThis is a Decision that permanently increases the maximum number of buildings a Ring World can support by §Y2§!. It can only be performed once on each ring world.§!"
+  decision_rw_buildings_desc:0 "Our population requires room to grow and work, and so we shall expand the amount of buildings we can build on our §YRing World§!."
+
   decision_rw_spec_arms_industry:0 "§HSpecialize Ring World§! $district_rw_arms_industry_plural$"
   decision_rw_spec_arms_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_arms_industry_plural$§!."
   decision_rw_spec_arms_industry_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §Y$district_rw_arms_industry_plural$§!."
@@ -74,10 +78,16 @@
   rw_districts:0 "$decision_rw_districts$"
   rw_districts_desc:0 "$decision_rw_districts_desc$"
 
+  rw_buildings:0 "$decision_rw_buildings$"
+  rw_buildings_desc:0 "$decision_rw_buildings_desc$"
+
   ## Technology
 
   tech_rw_districts:0 "$decision_rw_districts$"
   tech_rw_districts_desc:0 "$decision_rw_districts_desc$"
+
+  tech_rw_buildings:0 "$decision_rw_buildings$"
+  tech_rw_buildings_desc:0 "$decision_rw_buildings_desc$"
 
   tech_rw_spec_arms_industry:0 "$decision_rw_spec_arms_industry$"
   tech_rw_spec_arms_industry_desc:0 "$decision_rw_spec_arms_industry_desc$"

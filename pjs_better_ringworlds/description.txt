@@ -9,3 +9,5 @@ With this mod you get access to new planetary specialization decisions available
     [*] Ringworld Specialization: Industry Segments
     [*] Ringworld Specialization: Research Segments
 [/list]
+
+The cost for building districts has been modified to use alloys instead of minerals, since it kind of makes more sense.
