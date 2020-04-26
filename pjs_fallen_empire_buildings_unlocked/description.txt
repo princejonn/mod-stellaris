@@ -1,6 +1,10 @@
 Reaching endgame can become rather dull and boring on the research side. You keep researching those repeatable techs, with no end in sight. I set out to change that. It stands to reason that because the fallen empires exist, they were once young as we were. It also stands to reason they have technologies that we should be able to realize by ourselves.
 
-With this mod you get access to the fallen empire buildings, as well as two new that I have added.
+If you manager to conquer a world that already have these buildings, you will be able to research them a bit sooner.
+
+Only the most [b]Genius[/b] scientists will be able to unlock the secrets of these buildings...
+
+With this mod you get access to the fallen empire buildings, as well as some new that I have added.
 
 [h1]Technologies[/h1]
 These techs will start appearing after the end game has begun. It took the fallen empires thousands of years to reach their technology level. It's only reasonable it takes you at least a couple of hundred in comparison.

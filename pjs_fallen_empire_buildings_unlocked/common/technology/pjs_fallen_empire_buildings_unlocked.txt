@@ -30,8 +30,17 @@ tech_class_4_singularity = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = physics
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_class_4_singularity
             }
@@ -73,8 +82,17 @@ tech_dimensional_fabricator = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = physics
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_dimensional_fabricator
             }
@@ -114,8 +132,17 @@ tech_nourishment_center = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = society
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_nourishment_center
             }
@@ -155,8 +182,17 @@ tech_affluence_center = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = engineering
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_affluence_center
             }
@@ -198,8 +234,17 @@ tech_nano_forge = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = engineering
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_nano_forge
             }
@@ -242,8 +287,17 @@ tech_master_archive = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = physics
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_master_archive
             }
@@ -286,8 +340,17 @@ tech_fe_stronghold = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = society
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_fe_stronghold
             }
@@ -330,8 +393,17 @@ tech_augural_manufactory = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = physics
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_augural_manufactory
             }
@@ -367,8 +439,17 @@ tech_germination_replicator = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = physics
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_germination_replicator
             }
@@ -387,8 +468,11 @@ tech_utopian_paradise_dome = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_augural_manufactory"
-        "tech_master_archive"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+        "tech_paradise_dome"
 	}
 
     potential = {
@@ -412,8 +496,17 @@ tech_utopian_paradise_dome = {
                 }
             }
         }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = society
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
         modifier = {
-            factor = 0.75
+            factor = 1
             any_owned_planet = {
                 has_building = building_utopian_paradise_dome
             }
