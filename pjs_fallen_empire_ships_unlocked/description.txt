@@ -2,6 +2,8 @@ Reaching endgame can become rather dull and boring on the research side. You kee
 
 With this mod you get access to the fallen empire ships (or at least my versions of them, keeping them separate so as to not overwrite too many things - staying compatible). You will also have access to the fallen empire ship components. If you have Transendence you will also see some very interesting technologies appear as well.
 
+Only the most [b]Genius[/b] scientists will be able to unlock the secrets of these ships...
+
 [h1]Technologies[/h1]
 These techs will start appearing after the end game has begun. It took the fallen empires thousands of years to reach their technology level. It's only reasonable it takes you at least a couple of hundred in comparison.
 [list]
