@@ -391,6 +391,10 @@ tech_utopian_paradise_dome = {
         "tech_master_archive"
 	}
 
+    potential = {
+		is_regular_empire = yes
+    }
+
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_UTOPIAN_PARADISE_DOME_TITLE"
