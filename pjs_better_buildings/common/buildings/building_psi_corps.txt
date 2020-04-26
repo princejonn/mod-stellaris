@@ -12,7 +12,7 @@ building_psi_corps = {
 	}
 
 	allow = {
-		has_major_upgraded_capital = yes
+		has_upgraded_capital = yes
 		buildings_simple_allow = yes
 	}
 

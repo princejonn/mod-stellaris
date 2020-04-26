@@ -29,7 +29,7 @@ building_institute = {
 	}
 
 	allow = {
-		has_major_upgraded_capital = yes
+		has_upgraded_capital = yes
 	}
 
 	resources = {
