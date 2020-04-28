@@ -74,6 +74,8 @@ country_event = {
             remove_trait = leader_trait_nervous
             remove_trait = leader_trait_lethargic
             remove_trait = leader_trait_armchair_commander
+            remove_trait = leader_trait_traumatized
+            remove_trait = leader_trait_maimed
 
             remove_trait = leader_trait_meticulous
             remove_trait = leader_trait_spark_of_genius
@@ -133,7 +135,8 @@ country_event = {
             remove_trait = leader_trait_nervous
             remove_trait = leader_trait_lethargic
             remove_trait = leader_trait_armchair_commander
-
+            remove_trait = leader_trait_traumatized
+            remove_trait = leader_trait_maimed
         }
 
         country_event = { id = pjs_custom_scientists_event.1 }
