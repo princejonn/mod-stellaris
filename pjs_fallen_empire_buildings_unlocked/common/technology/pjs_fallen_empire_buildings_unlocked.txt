@@ -40,7 +40,8 @@ tech_class_4_singularity = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_class_4_singularity
             }
@@ -92,7 +93,8 @@ tech_dimensional_fabricator = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_dimensional_fabricator
             }
@@ -142,7 +144,8 @@ tech_nourishment_center = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_nourishment_center
             }
@@ -192,7 +195,8 @@ tech_affluence_center = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_affluence_center
             }
@@ -244,7 +248,8 @@ tech_nano_forge = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_nano_forge
             }
@@ -297,7 +302,8 @@ tech_master_archive = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_master_archive
             }
@@ -350,7 +356,8 @@ tech_fe_stronghold = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_fe_stronghold
             }
@@ -403,7 +410,8 @@ tech_augural_manufactory = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_augural_manufactory
             }
@@ -449,7 +457,8 @@ tech_germination_replicator = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_germination_replicator
             }
@@ -506,7 +515,8 @@ tech_utopian_paradise_dome = {
 			}
 		}
         modifier = {
-            factor = 1
+            factor = 0.1
+            mid_game_years_passed > 0
             any_owned_planet = {
                 has_building = building_utopian_paradise_dome
             }
