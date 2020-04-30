@@ -1,0 +1,56 @@
+decision_rw_remove_spec = {
+	owned_planets_only = yes
+
+	enactment_time = 240
+	resources = {
+		category = decisions
+		cost = {
+		    influence = 50
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_ringworld_habitable
+        OR = {
+            has_planet_flag = rw_spec_arms_industry
+            has_planet_flag = rw_spec_bureaucracy
+            has_planet_flag = rw_spec_civilian_industry
+            has_planet_flag = rw_spec_culture
+            has_planet_flag = rw_spec_science
+        }
+	}
+
+    effect = {
+        remove_planet_flag = rw_spec_arms_industry
+        while = { count = 6
+            remove_district = district_rw_arms_industry
+        }
+
+        remove_planet_flag = rw_spec_bureaucracy
+        while = { count = 6
+            remove_district = district_rw_bureaucracy
+        }
+
+        remove_planet_flag = rw_spec_civilian_industry
+        while = { count = 6
+            remove_district = district_rw_civilian_industry
+        }
+
+        remove_planet_flag = rw_spec_culture
+        while = { count = 6
+            remove_district = district_rw_culture
+        }
+        while = { count = 6
+            remove_district = district_rw_temple
+        }
+
+        remove_planet_flag = rw_spec_science
+        while = { count = 6
+            remove_district = district_rw_science
+        }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

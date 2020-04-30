@@ -27,25 +27,29 @@
   decision_rw_buildings_effects_short:0 "§EThis is a Decision that permanently increases the maximum number of buildings a Ring World can support by §Y2§!. It can only be performed once on each ring world.§!"
   decision_rw_buildings_desc:0 "Our population requires room to grow and work, and so we shall expand the amount of buildings we can build on our §YRing World§!."
 
+  decision_rw_remove_spec:0 "§HDismantle Ring World Specialization§!"
+  decision_rw_remove_spec_effects_short:0 "Remove the current specialization frameworks"
+  decision_rw_remove_spec_desc:0 "It is time for a fresh start."
+
   decision_rw_spec_arms_industry:0 "§HSpecialize Ring World§! $district_rw_arms_industry_plural$"
   decision_rw_spec_arms_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_arms_industry_plural$§!."
-  decision_rw_spec_arms_industry_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §Y$district_rw_arms_industry_plural$§!."
+  decision_rw_spec_arms_industry_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_arms_industry_plural$§!."
 
   decision_rw_spec_bureaucracy:0 "§HSpecialize Ring World§! $district_rw_bureaucracy_plural$"
   decision_rw_spec_bureaucracy_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_bureaucracy_plural$§!."
-  decision_rw_spec_bureaucracy_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §Y$district_rw_bureaucracy_plural$§!."
+  decision_rw_spec_bureaucracy_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_bureaucracy_plural$§!."
 
   decision_rw_spec_civilian_industry:0 "§HSpecialize Ring World§! $district_rw_civilian_industry_plural$"
   decision_rw_spec_civilian_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_civilian_industry_plural$§!."
-  decision_rw_spec_civilian_industry_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §Y$district_rw_civilian_industry_plural$§!."
+  decision_rw_spec_civilian_industry_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_civilian_industry_plural$§!."
 
   decision_rw_spec_culture:0 "§HSpecialize Ring World§! Cultural/Temple Segments"
   decision_rw_spec_culture_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_culture_plural$§! / §Y$district_rw_temple_plural$§!."
-  decision_rw_spec_culture_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §Y$district_rw_culture_plural$§! / §Y$district_rw_temple_plural$§!."
+  decision_rw_spec_culture_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_culture_plural$§! / §Y$district_rw_temple_plural$§!."
 
   decision_rw_spec_science:0 "§HSpecialize Ring World§! $district_rw_science_plural$"
   decision_rw_spec_science_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_science_plural$§!."
-  decision_rw_spec_science_desc:0 "Finalizes the Ringworld construction and adds the required framework modules to build specialized §Y$district_rw_science_plural$§!."
+  decision_rw_spec_science_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_science_plural$§!."
 
   ## Districts
 
