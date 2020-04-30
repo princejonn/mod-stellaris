@@ -9,14 +9,13 @@ planet_event = {
         if = {
             limit = { has_planet_flag = start_solio_aeternitatis }
 
+            set_planet_size = 5
+
             set_name = "Regio Senatores"
 
             clear_deposits = yes
             remove_all_buildings = yes
             remove_all_districts = yes
-
-            add_district = district_rw_city
-            add_district = district_rw_farming
 
             add_deposit = d_arcane_generator
             add_deposit = d_enigmatic_replicator
@@ -67,6 +66,9 @@ planet_event = {
             if = {
                 limit = { owner = { is_regular_empire = yes } }
 
+                add_district = district_rw_city
+                add_district = district_rw_farming
+
                 # 3 jobs
                 add_building = building_capital
 
@@ -95,6 +97,9 @@ planet_event = {
             if = {
                 limit = { owner = { is_hive_empire = yes } }
 
+                add_district = district_rw_city
+                add_district = district_rw_farming
+
                 # 5 jobs
                 add_building = building_hive_capital
 
@@ -117,8 +122,7 @@ planet_event = {
             # Replace capital building for machine empires
             if = {
                 limit = { owner = { is_machine_empire = yes } }
-                remove_district = district_rw_city
-                remove_district = district_rw_commercial
+
                 add_district = district_rw_nexus
                 add_district = district_rw_generator
 
@@ -140,7 +144,9 @@ planet_event = {
                 #Assimilators
                 if = {
                     limit = { owner = { has_civic = civic_machine_assimilator } }
+
                     add_district = district_rw_farming
+
                     add_deposit = d_segment_rubble_1
                     add_deposit = d_segment_rubble_1
                     add_deposit = d_segment_rubble_2
@@ -150,8 +156,10 @@ planet_event = {
                 #Servitors
                 if = {
                     limit = { owner = { has_civic = civic_machine_servitor } }
+
                     add_building = building_organic_sanctuary
                     add_district = district_rw_farming
+
                     add_deposit = d_segment_rubble_1
                     add_deposit = d_segment_rubble_1
                     add_deposit = d_segment_rubble_2

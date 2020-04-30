@@ -30,6 +30,7 @@ sci_origin_solio_aeternitatis = {
 	planet = {
         name = "Regio Senatores"
         class = "pc_ringworld_habitable"
+        size = 5
         orbit_angle = 30
         orbit_distance = 0
         modifiers = none
