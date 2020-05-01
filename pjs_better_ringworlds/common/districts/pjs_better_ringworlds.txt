@@ -121,14 +121,20 @@ district_rw_bureaucracy = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+        from = { is_regular_empire = yes }
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_bureaucracy
 	}
 
 	potential = {
 	    exists = owner
+        owner = { is_regular_empire = yes }
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_bureaucracy
+	}
+
+	convert_to = {
+		district_rw_network
 	}
 
 	resources = {
@@ -197,14 +203,20 @@ district_rw_civilian_industry = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+        from = { is_regular_empire = yes }
         is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_civilian_industry
 	}
 
 	potential = {
 	    exists = owner
+        owner = { is_regular_empire = yes }
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_civilian_industry
+	}
+
+	convert_to = {
+		district_rw_generator
 	}
 
 	resources = {
@@ -291,13 +303,20 @@ district_rw_culture = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+		from = {
+		    is_regular_empire = yes
+		    is_spiritualist = no
+		}
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_culture
 	}
 
 	potential = {
 	    exists = owner
-		owner = { is_spiritualist = no }
+		owner = {
+		    is_regular_empire = yes
+		    is_spiritualist = no
+		}
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_culture
 	}
@@ -365,6 +384,200 @@ district_rw_culture = {
 			}
 		}
 	}
+}
+
+district_rw_network = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+        from = { is_machine_empire = yes }
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_bureaucracy
+	}
+
+	potential = {
+	    exists = owner
+        owner = { is_machine_empire = yes }
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_bureaucracy
+	}
+
+	convert_to = {
+		district_rw_bureaucracy
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = @rw_cost
+			rare_crystals = @rw_cost_sr
+		}
+		upkeep = {
+			energy = @rw_maintenance
+			rare_crystals = @rw_maintenance_sr
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		    owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_coordinator_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		    owner = { is_machine_empire = yes }
+		}
+		text = job_coordinator_effect_desc
+	}
+
+
+	ai_weight = {
+		weight = 0
+
+		modifier = {
+			weight = 250
+			planet = {
+				num_districts = { type = district_rw_network value < 1 }
+			}
+		}
+		modifier = {
+			weight = 250
+
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+	}
+}
+
+district_rw_refinery = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_refinery
+	}
+
+	potential = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_refinery
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = @rw_cost
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+			minerals = @rw_maintenance
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_housing_add = 20
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_gas_refiner_add = 6
+			job_chemist_add = 6
+			job_translucer_add = 6
+			job_technician_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_gas_refiner_effect_desc
+		text = job_chemist_effect_desc
+		text = job_translucer_effect_desc
+		text = job_technician_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_gas_refiner_drone_add = 6
+			job_chemist_drone_add = 6
+			job_translucer_drone_add = 6
+			job_technician_drone_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_gas_refiner_drone_effect_desc
+		text = job_chemist_drone_effect_desc
+		text = job_translucer_drone_effect_desc
+		text = job_technician_drone_effect_desc
+	}
+
+
+    ai_weight = {
+        weight = 0
+
+        modifier = {
+            weight = 20000
+            owner = {
+                has_monthly_income = {
+                    resource = consumer_goods
+                    value > 50
+                }
+            }
+        }
+		modifier = {
+			weight = 250
+
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 50
+				}
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+    }
 }
 
 district_rw_science = {
@@ -489,13 +702,20 @@ district_rw_temple = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
+		from = {
+		    is_regular_empire = yes
+		    is_spiritualist = yes
+		}
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_culture
 	}
 
 	potential = {
 	    exists = owner
-		owner = { is_spiritualist = yes }
+		owner = {
+		    is_regular_empire = yes
+		    is_spiritualist = yes
+		}
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_culture
 	}

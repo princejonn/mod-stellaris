@@ -1,7 +1,10 @@
 col_ring_arms_industry = {
 	icon = 5
 
-	potential = { is_planet_class = pc_ringworld_habitable }
+	potential = {
+        exists = owner
+	    is_planet_class = pc_ringworld_habitable
+	}
 
 	planet_modifier = {
         planet_district_rw_arms_industry_build_speed_mult = 0.25
@@ -29,7 +32,11 @@ col_ring_arms_industry = {
 col_ring_bureaucracy = {
 	icon = 5
 
-	potential = { is_planet_class = pc_ringworld_habitable }
+	potential = {
+        exists = owner
+        owner = { is_regular_empire = yes }
+	    is_planet_class = pc_ringworld_habitable
+	}
 
 	planet_modifier = {
 		custom_tooltip = col_bureaucracy_custom
@@ -57,7 +64,11 @@ col_ring_bureaucracy = {
 col_ring_civilian_industry = {
 	icon = 6
 
-	potential = { is_planet_class = pc_ringworld_habitable }
+	potential = {
+        exists = owner
+        owner = { is_gestalt = no }
+	    is_planet_class = pc_ringworld_habitable
+	}
 
 	planet_modifier = {
 		planet_district_rw_civilian_industry_build_speed_mult = 0.25
@@ -85,7 +96,14 @@ col_ring_civilian_industry = {
 col_ring_culture = {
 	icon = 5
 
-	potential = { is_planet_class = pc_ringworld_habitable }
+	potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_spiritualist = no
+        }
+	    is_planet_class = pc_ringworld_habitable
+	}
 
 	planet_modifier = {
 		custom_tooltip = col_culture_custom
@@ -113,11 +131,18 @@ col_ring_culture = {
 col_ring_temple = {
 	icon = 5
 
-	potential = { is_planet_class = pc_ringworld_habitable }
+	potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+            is_spiritualist = yes
+        }
+	    is_planet_class = pc_ringworld_habitable
+	}
 
 	planet_modifier = {
 		custom_tooltip = col_temple_custom
-		planet_priests_upkeep_mult = -0.10
+		planet_priest_upkeep_mult = -0.10
 		planet_jobs_unity_produces_mult = 0.10
 	}
 

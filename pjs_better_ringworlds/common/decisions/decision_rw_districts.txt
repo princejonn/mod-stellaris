@@ -16,12 +16,8 @@ decision_rw_districts = {
 
 	potential = {
         is_planet_class = pc_ringworld_habitable
-		owner = {
-            has_ascension_perk = ap_master_builders
-		}
-		NOT = {
-		    has_modifier = rw_districts
-		}
+		owner = { has_ascension_perk = ap_master_builders }
+		NOT = { has_modifier = rw_districts }
 	}
 
 	effect = {

@@ -183,6 +183,38 @@ tech_rw_spec_culture = {
     }
 }
 
+tech_rw_spec_refinery = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { materials }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+        "tech_rw_buildings"
+        "tech_exotic_gases"
+        "tech_volatile_motes"
+        "tech_rare_crystals"
+    }
+
+    potential = {
+        has_ascension_perk = ap_master_builders
+    }
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_materials"
+            }
+        }
+    }
+}
+
 tech_rw_spec_science = {
     cost = @tier5cost3
     area = engineering

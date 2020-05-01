@@ -16,6 +16,7 @@ decision_rw_remove_spec = {
             has_planet_flag = rw_spec_bureaucracy
             has_planet_flag = rw_spec_civilian_industry
             has_planet_flag = rw_spec_culture
+            has_planet_flag = rw_spec_refinery
             has_planet_flag = rw_spec_science
         }
 	}
@@ -30,6 +31,9 @@ decision_rw_remove_spec = {
         while = { count = 6
             remove_district = district_rw_bureaucracy
         }
+        while = { count = 6
+            remove_district = district_rw_network
+        }
 
         remove_planet_flag = rw_spec_civilian_industry
         while = { count = 6
@@ -42,6 +46,11 @@ decision_rw_remove_spec = {
         }
         while = { count = 6
             remove_district = district_rw_temple
+        }
+
+        remove_planet_flag = rw_spec_refinery
+        while = { count = 6
+            remove_district = district_rw_refinery
         }
 
         remove_planet_flag = rw_spec_science

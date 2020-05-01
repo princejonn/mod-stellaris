@@ -14,6 +14,12 @@
   col_ring_culture:0 "Cultural Ring World"
   col_ring_culture_desc:0 "A ring world that specializes in culture"
 
+  col_ring_network:0 "Netwrok Ring World"
+  col_ring_network_desc:0 "A ring world that specializes in coordination"
+
+  col_ring_refinery:0 "Refinery Ring World"
+  col_ring_refinery_desc:0 "A ring world that specializes in refineries"
+
   col_ring_temple:0 "Temple Ring World"
   col_ring_temple_desc:0 "A ring world that specializes in temples"
 
@@ -35,9 +41,9 @@
   decision_rw_spec_arms_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_arms_industry_plural$§!."
   decision_rw_spec_arms_industry_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_arms_industry_plural$§!."
 
-  decision_rw_spec_bureaucracy:0 "§HSpecialize Ring World§! $district_rw_bureaucracy_plural$"
-  decision_rw_spec_bureaucracy_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_bureaucracy_plural$§!."
-  decision_rw_spec_bureaucracy_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_bureaucracy_plural$§!."
+  decision_rw_spec_bureaucracy:0 "§HSpecialize Ring World§! Bureaucracy/Network Segments"
+  decision_rw_spec_bureaucracy_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_bureaucracy_plural$§! / §Y$district_rw_network_plural$§!."
+  decision_rw_spec_bureaucracy_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_bureaucracy_plural$§! / §Y$district_rw_network_plural$§!."
 
   decision_rw_spec_civilian_industry:0 "§HSpecialize Ring World§! $district_rw_civilian_industry_plural$"
   decision_rw_spec_civilian_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_civilian_industry_plural$§!."
@@ -46,6 +52,10 @@
   decision_rw_spec_culture:0 "§HSpecialize Ring World§! Cultural/Temple Segments"
   decision_rw_spec_culture_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_culture_plural$§! / §Y$district_rw_temple_plural$§!."
   decision_rw_spec_culture_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_culture_plural$§! / §Y$district_rw_temple_plural$§!."
+
+  decision_rw_spec_refinery:0 "§HSpecialize Ring World§! $district_rw_refinery_plural$"
+  decision_rw_spec_refinery_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_refinery_plural$§!."
+  decision_rw_spec_refinery_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_refinery_plural$§!."
 
   decision_rw_spec_science:0 "§HSpecialize Ring World§! $district_rw_science_plural$"
   decision_rw_spec_science_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_science_plural$§!."
@@ -69,9 +79,17 @@
   district_rw_culture_plural:0 "Cultural Segments"
   district_rw_culture_desc:0 "A highly-specialized segment where $job_culture_worker_plural$ constantly acquires, analyzes, evaluates and puts on display everyday artifacts they deems of impending historical import, creating a full segment of museums of the present and a window into the zeitgeist."
 
+  district_rw_network:0 "Network Segment"
+  district_rw_network_plural:0 "Network Segments"
+  district_rw_network_desc:0 "A highly-specialized segment where $job_coordinator_plural$ constantly analyzes, evaluates and coordinates the running of the empire."
+
   district_rw_science:0 "Research Segment"
   district_rw_science_plural:0 "Research Segments"
   district_rw_science_desc:0 "Research facilities of all kinds fill this Ring World segment."
+
+  district_rw_refinery:0 "Refinery Segment"
+  district_rw_refinery_plural:0 "Refinery Segments"
+  district_rw_refinery_desc:0 "Refineries and Synthetic Plants of all kinds fill this Ring World segment."
 
   district_rw_temple:0 "Temple Segment"
   district_rw_temple_plural:0 "Temple Segments"
