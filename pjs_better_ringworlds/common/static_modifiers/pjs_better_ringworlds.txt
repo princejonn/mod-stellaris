@@ -7,5 +7,5 @@ rw_districts = {
 rw_buildings = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = 1
-	planet_max_buildings_add = 2
+	planet_max_buildings_add = 4
 }

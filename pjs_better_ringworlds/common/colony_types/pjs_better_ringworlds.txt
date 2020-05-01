@@ -1,5 +1,5 @@
 col_ring_arms_industry = {
-	icon = 5
+	icon = 25
 
 	potential = {
         exists = owner
@@ -8,16 +8,10 @@ col_ring_arms_industry = {
 
 	planet_modifier = {
         planet_district_rw_arms_industry_build_speed_mult = 0.25
-		planet_building_foundry_1_build_speed_mult = 0.25
-        planet_metallurgists_upkeep_mult = -0.2
 	}
 
 	weight_modifier = {
 		base = 10
-		modifier = {
-			add = 5
-			owner = { has_monthly_income = { resource = alloys value < 100 } }
-		}
 		modifier = {
 			add = 5
 			has_designation = col_ring_arms_industry
@@ -30,26 +24,19 @@ col_ring_arms_industry = {
 }
 
 col_ring_bureaucracy = {
-	icon = 5
+	icon = 28
 
 	potential = {
         exists = owner
-        owner = { is_regular_empire = yes }
 	    is_planet_class = pc_ringworld_habitable
 	}
 
 	planet_modifier = {
-		custom_tooltip = col_bureaucracy_custom
-		planet_bureaucrats_upkeep_mult = -0.10
-		pop_ethics_shift_speed_mult = -0.20
+		planet_district_rw_bureaucracy_build_speed_mult = 0.25
 	}
 
 	weight_modifier = {
 		base = 10
-		modifier = {
-			add = 5
-			owner = { empire_sprawl_over_cap > 20 }
-		}
 		modifier = {
 			add = 5
 			has_designation = col_ring_bureaucracy
@@ -62,26 +49,20 @@ col_ring_bureaucracy = {
 }
 
 col_ring_civilian_industry = {
-	icon = 6
+	icon = 26
 
 	potential = {
         exists = owner
-        owner = { is_gestalt = no }
+        owner = { country_uses_consumer_goods = yes }
 	    is_planet_class = pc_ringworld_habitable
 	}
 
 	planet_modifier = {
 		planet_district_rw_civilian_industry_build_speed_mult = 0.25
-		planet_building_factory_1_build_speed_mult = 0.25
-		planet_artisans_upkeep_mult = -0.2
 	}
 
 	weight_modifier = {
 		base = 10
-		modifier = {
-			add = 5
-			owner = { has_monthly_income = { resource = consumer_goods value < 100 } }
-		}
 		modifier = {
 			add = 5
 			has_designation = col_ring_civilian_industry
@@ -94,71 +75,55 @@ col_ring_civilian_industry = {
 }
 
 col_ring_culture = {
-	icon = 5
+	icon = 20
 
 	potential = {
         exists = owner
-        owner = {
-            is_regular_empire = yes
-            is_spiritualist = no
+        OR = {
+		    from = { is_regular_empire = yes }
+		    from = { is_machine_empire = yes }
         }
 	    is_planet_class = pc_ringworld_habitable
 	}
 
 	planet_modifier = {
-		custom_tooltip = col_culture_custom
-		planet_culture_workers_upkeep_mult = -0.10
-		planet_jobs_unity_produces_mult = 0.10
+		planet_district_rw_culture_build_speed_mult = 0.25
 	}
 
 	weight_modifier = {
 		base = 10
-		modifier = {
-			add = 5
-			owner = { empire_sprawl_over_cap > 20 }
-		}
 		modifier = {
 			add = 5
 			has_designation = col_ring_culture
 		}
 		modifier = {
 			add = 6
-			num_districts = { type = district_rw_temple value >= 2 }
+			num_districts = { type = district_rw_culture value >= 2 }
 		}
 	}
 }
 
-col_ring_temple = {
-	icon = 5
+col_ring_refinery = {
+	icon = 27
 
 	potential = {
         exists = owner
-        owner = {
-            is_regular_empire = yes
-            is_spiritualist = yes
-        }
 	    is_planet_class = pc_ringworld_habitable
 	}
 
 	planet_modifier = {
-		custom_tooltip = col_temple_custom
-		planet_priest_upkeep_mult = -0.10
-		planet_jobs_unity_produces_mult = 0.10
+		planet_district_rw_refinery_build_speed_mult = 0.25
 	}
 
 	weight_modifier = {
 		base = 10
 		modifier = {
 			add = 5
-			owner = { empire_sprawl_over_cap > 20 }
-		}
-		modifier = {
-			add = 5
-			has_designation = col_ring_temple
+			has_designation = col_ring_refinery
 		}
 		modifier = {
 			add = 6
-			num_districts = { type = district_rw_temple value >= 2 }
+			num_districts = { type = district_rw_refinery value >= 2 }
 		}
 	}
 }

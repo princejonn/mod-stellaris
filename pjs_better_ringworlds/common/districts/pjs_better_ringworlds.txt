@@ -57,24 +57,6 @@ district_rw_arms_industry = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		modifier = {
-			job_alloy_drone_add = 20
-		}
-	}
-    triggered_desc = {
-        trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-        }
-        text = job_alloy_drone_effect_desc
-    }
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
@@ -87,6 +69,24 @@ district_rw_arms_industry = {
 			owner = { is_machine_empire = yes }
         }
         text = job_fabricator_effect_desc
+    }
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_alloy_drone_add = 20
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+        }
+        text = job_alloy_drone_effect_desc
     }
 
 
@@ -116,25 +116,20 @@ district_rw_arms_industry = {
 	}
 }
 
+## TODO: Rename to district_rw_empire at 2.7
 district_rw_bureaucracy = {
 	base_buildtime = @rw_district_buildtime
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
-        from = { is_regular_empire = yes }
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_bureaucracy
 	}
 
 	potential = {
 	    exists = owner
-        owner = { is_regular_empire = yes }
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_bureaucracy
-	}
-
-	convert_to = {
-		district_rw_network
 	}
 
 	resources = {
@@ -172,6 +167,42 @@ district_rw_bureaucracy = {
 	}
 
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		    owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_coordinator_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		    owner = { is_machine_empire = yes }
+		}
+		text = job_coordinator_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		    owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		    owner = { is_hive_empire = yes }
+		}
+		text = job_synapse_drone_effect_desc
+	}
+
+
 	ai_weight = {
 		weight = 0
 
@@ -203,14 +234,14 @@ district_rw_civilian_industry = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
-        from = { is_regular_empire = yes }
+		from = { country_uses_consumer_goods = yes }
         is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_civilian_industry
 	}
 
 	potential = {
 	    exists = owner
-        owner = { is_regular_empire = yes }
+		owner = { country_uses_consumer_goods = yes }
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_civilian_industry
 	}
@@ -298,31 +329,20 @@ district_rw_civilian_industry = {
 	}
 }
 
+## TODO: Rename to district_rw_unity at 2.7
 district_rw_culture = {
 	base_buildtime = @rw_district_buildtime
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
-		from = {
-		    is_regular_empire = yes
-		    is_spiritualist = no
-		}
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_culture
 	}
 
 	potential = {
 	    exists = owner
-		owner = {
-		    is_regular_empire = yes
-		    is_spiritualist = no
-		}
 	    is_planet_class = pc_ringworld_habitable
 	    has_planet_flag = rw_spec_culture
-	}
-
-	convert_to = {
-		district_rw_temple
 	}
 
 	resources = {
@@ -345,7 +365,10 @@ district_rw_culture = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = {
+    			is_regular_empire = yes
+			    is_spiritualist = no
+		    }
 		}
 		modifier = {
 			job_culture_worker_add = 20
@@ -354,9 +377,72 @@ district_rw_culture = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = {
+    			is_regular_empire = yes
+			    is_spiritualist = no
+		    }
 		}
 		text = job_culture_worker_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+    			is_regular_empire = yes
+			    is_spiritualist = yes
+		    }
+		}
+		modifier = {
+			job_priest_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+    			is_regular_empire = yes
+			    is_spiritualist = yes
+		    }
+		}
+		text = job_priest_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_evaluator_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_evaluator_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		    owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		    owner = { is_hive_empire = yes }
+		}
+		text = job_synapse_drone_effect_desc
 	}
 
 
@@ -367,88 +453,6 @@ district_rw_culture = {
 			weight = 250
 			planet = {
 				num_districts = { type = district_rw_culture value < 1 }
-			}
-		}
-		modifier = {
-			weight = 250
-
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value > 50
-				}
-				has_monthly_income = {
-					resource = minerals
-					value > 50
-				}
-			}
-		}
-	}
-}
-
-district_rw_network = {
-	base_buildtime = @rw_district_buildtime
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-        from = { is_machine_empire = yes }
-	    is_planet_class = pc_ringworld_habitable
-	    has_planet_flag = rw_spec_bureaucracy
-	}
-
-	potential = {
-	    exists = owner
-        owner = { is_machine_empire = yes }
-	    is_planet_class = pc_ringworld_habitable
-	    has_planet_flag = rw_spec_bureaucracy
-	}
-
-	convert_to = {
-		district_rw_bureaucracy
-	}
-
-	resources = {
-		category = planet_districts
-		cost = {
-			alloys = @rw_cost
-			rare_crystals = @rw_cost_sr
-		}
-		upkeep = {
-			energy = @rw_maintenance
-			rare_crystals = @rw_maintenance_sr
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 20
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		    owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			job_coordinator_add = 20
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-		    owner = { is_machine_empire = yes }
-		}
-		text = job_coordinator_effect_desc
-	}
-
-
-	ai_weight = {
-		weight = 0
-
-		modifier = {
-			weight = 250
-			planet = {
-				num_districts = { type = district_rw_network value < 1 }
 			}
 		}
 		modifier = {
@@ -489,12 +493,11 @@ district_rw_refinery = {
 			minerals = @rw_cost
 		}
 		upkeep = {
-			energy = @rw_maintenance
-			minerals = @rw_maintenance
+			energy = 25
 		}
 	}
 
-	triggered_planet_modifier = {
+	planet_modifier = {
 		planet_housing_add = 20
 	}
 
@@ -606,7 +609,7 @@ district_rw_science = {
 		}
 	}
 
-	triggered_planet_modifier = {
+	planet_modifier = {
 		planet_housing_add = 20
 	}
 
@@ -695,92 +698,4 @@ district_rw_science = {
 			}
 		}
     }
-}
-
-district_rw_temple = {
-	base_buildtime = @rw_district_buildtime
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-		from = {
-		    is_regular_empire = yes
-		    is_spiritualist = yes
-		}
-	    is_planet_class = pc_ringworld_habitable
-	    has_planet_flag = rw_spec_culture
-	}
-
-	potential = {
-	    exists = owner
-		owner = {
-		    is_regular_empire = yes
-		    is_spiritualist = yes
-		}
-	    is_planet_class = pc_ringworld_habitable
-	    has_planet_flag = rw_spec_culture
-	}
-
-	convert_to = {
-		district_rw_culture
-	}
-
-	resources = {
-		category = planet_districts
-		cost = {
-			alloys = @rw_cost
-			rare_crystals = @rw_cost_sr
-		}
-		upkeep = {
-			energy = @rw_maintenance
-			rare_crystals = @rw_maintenance_sr
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 20
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_priest_add = 20
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = job_priest_effect_desc
-	}
-
-
-	ai_weight = {
-		weight = 0
-
-		modifier = {
-			weight = 250
-			planet = {
-				num_districts = { type = district_rw_temple value < 1 }
-			}
-		}
-		modifier = {
-			weight = 250
-
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value > 50
-				}
-				has_monthly_income = {
-					resource = minerals
-					value > 50
-				}
-			}
-		}
-	}
 }

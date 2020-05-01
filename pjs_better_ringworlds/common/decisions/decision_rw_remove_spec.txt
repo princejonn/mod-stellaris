@@ -5,7 +5,7 @@ decision_rw_remove_spec = {
 	resources = {
 		category = decisions
 		cost = {
-		    influence = 50
+		    influence = 100
 		}
 	}
 
@@ -23,38 +23,28 @@ decision_rw_remove_spec = {
 
     effect = {
         remove_planet_flag = rw_spec_arms_industry
-        while = { count = 6
+        remove_planet_flag = rw_spec_bureaucracy
+        remove_planet_flag = rw_spec_civilian_industry
+        remove_planet_flag = rw_spec_culture
+        remove_planet_flag = rw_spec_refinery
+        remove_planet_flag = rw_spec_science
+
+        while = { count = 10
             remove_district = district_rw_arms_industry
         }
-
-        remove_planet_flag = rw_spec_bureaucracy
-        while = { count = 6
+        while = { count = 10
             remove_district = district_rw_bureaucracy
         }
-        while = { count = 6
-            remove_district = district_rw_network
-        }
-
-        remove_planet_flag = rw_spec_civilian_industry
-        while = { count = 6
+        while = { count = 10
             remove_district = district_rw_civilian_industry
         }
-
-        remove_planet_flag = rw_spec_culture
-        while = { count = 6
+        while = { count = 10
             remove_district = district_rw_culture
         }
-        while = { count = 6
-            remove_district = district_rw_temple
-        }
-
-        remove_planet_flag = rw_spec_refinery
-        while = { count = 6
+        while = { count = 10
             remove_district = district_rw_refinery
         }
-
-        remove_planet_flag = rw_spec_science
-        while = { count = 6
+        while = { count = 10
             remove_district = district_rw_science
         }
 	}

@@ -84,6 +84,7 @@ tech_rw_spec_arms_industry = {
     }
 }
 
+## TODO: Rename to tech_rw_spec_empire at 2.7
 tech_rw_spec_bureaucracy = {
     cost = @tier5cost3
     area = engineering
@@ -99,7 +100,6 @@ tech_rw_spec_bureaucracy = {
     }
 
     potential = {
-		is_regular_empire = yes
         has_ascension_perk = ap_master_builders
     }
 
@@ -131,10 +131,7 @@ tech_rw_spec_civilian_industry = {
 
     potential = {
         has_ascension_perk = ap_master_builders
-        OR = {
-            is_gestalt = no
-            has_valid_civic = civic_machine_servitor
-        }
+		country_uses_consumer_goods = yes
     }
 
     ai_weight = {
@@ -149,6 +146,7 @@ tech_rw_spec_civilian_industry = {
     }
 }
 
+## TODO: Rename to tech_rw_spec_unity at 2.7
 tech_rw_spec_culture = {
     cost = @tier5cost3
     area = engineering
@@ -163,11 +161,12 @@ tech_rw_spec_culture = {
     }
 
     potential = {
-		is_regular_empire = yes
         has_ascension_perk = ap_master_builders
         OR = {
             has_technology = tech_transcendent_faith
             has_technology = tech_autocurating_vault
+            has_technology = tech_hypercomms_forum
+            has_technology = tech_hive_confluence
         }
     }
 

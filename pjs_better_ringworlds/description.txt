@@ -4,11 +4,11 @@ With this mod you get access to new planetary specialization decisions available
 
 [list]
     [*] Ringworld Specialization: Arms Industry Segments
-    [*] Ringworld Specialization: Bureaucracy Segments / Network Segments
-    [*] Ringworld Specialization: Cultural Segments / Temple Segments
     [*] Ringworld Specialization: Civilian Industry Segments
+    [*] Ringworld Specialization: Empire Segments
     [*] Ringworld Specialization: Refinery Segments
     [*] Ringworld Specialization: Science Segments
+    [*] Ringworld Specialization: Unity
 [/list]
 
 The cost for building districts has been modified to use alloys instead of minerals, since it kind of makes more sense.

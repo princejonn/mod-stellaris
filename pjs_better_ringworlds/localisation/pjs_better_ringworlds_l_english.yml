@@ -14,14 +14,8 @@
   col_ring_culture:0 "Cultural Ring World"
   col_ring_culture_desc:0 "A ring world that specializes in culture"
 
-  col_ring_network:0 "Netwrok Ring World"
-  col_ring_network_desc:0 "A ring world that specializes in coordination"
-
   col_ring_refinery:0 "Refinery Ring World"
   col_ring_refinery_desc:0 "A ring world that specializes in refineries"
-
-  col_ring_temple:0 "Temple Ring World"
-  col_ring_temple_desc:0 "A ring world that specializes in temples"
 
   ## Decisions
 
@@ -30,7 +24,7 @@
   decision_rw_districts_desc:0 "Our population requires room to grow and work, and so we shall expand our §YRing World§!."
 
   decision_rw_buildings:0 "Ring World Templates"
-  decision_rw_buildings_effects_short:0 "§EThis is a Decision that permanently increases the maximum number of buildings a Ring World can support by §Y2§!. It can only be performed once on each ring world.§!"
+  decision_rw_buildings_effects_short:0 "§EThis is a Decision that permanently increases the maximum number of buildings a Ring World can support by §Y4§!. It can only be performed once on each ring world.§!"
   decision_rw_buildings_desc:0 "Our population requires room to grow and work, and so we shall expand the amount of buildings we can build on our §YRing World§!."
 
   decision_rw_remove_spec:0 "§HDismantle Ring World Specialization§!"
@@ -41,17 +35,19 @@
   decision_rw_spec_arms_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_arms_industry_plural$§!."
   decision_rw_spec_arms_industry_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_arms_industry_plural$§!."
 
-  decision_rw_spec_bureaucracy:0 "§HSpecialize Ring World§! Bureaucracy/Network Segments"
-  decision_rw_spec_bureaucracy_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_bureaucracy_plural$§! / §Y$district_rw_network_plural$§!."
-  decision_rw_spec_bureaucracy_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_bureaucracy_plural$§! / §Y$district_rw_network_plural$§!."
+  ## TODO: Rename to decision_rw_spec_empire at 2.7
+  decision_rw_spec_bureaucracy:0 "§HSpecialize Ring World§! $district_rw_bureaucracy_plural$"
+  decision_rw_spec_bureaucracy_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_bureaucracy_plural$§!."
+  decision_rw_spec_bureaucracy_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_bureaucracy_plural$§!."
 
   decision_rw_spec_civilian_industry:0 "§HSpecialize Ring World§! $district_rw_civilian_industry_plural$"
   decision_rw_spec_civilian_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_civilian_industry_plural$§!."
   decision_rw_spec_civilian_industry_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_civilian_industry_plural$§!."
 
-  decision_rw_spec_culture:0 "§HSpecialize Ring World§! Cultural/Temple Segments"
-  decision_rw_spec_culture_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_culture_plural$§! / §Y$district_rw_temple_plural$§!."
-  decision_rw_spec_culture_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_culture_plural$§! / §Y$district_rw_temple_plural$§!."
+  ## TODO: Rename to decision_rw_spec_unity at 2.7
+  decision_rw_spec_culture:0 "§HSpecialize Ring World§! $district_rw_culture$"
+  decision_rw_spec_culture_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_culture_plural$§!."
+  decision_rw_spec_culture_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_culture_plural$§!."
 
   decision_rw_spec_refinery:0 "§HSpecialize Ring World§! $district_rw_refinery_plural$"
   decision_rw_spec_refinery_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_refinery_plural$§!."
@@ -67,21 +63,19 @@
   district_rw_arms_industry_plural:0 "Foundry Segments"
   district_rw_arms_industry_desc:0 "Geared towards military industries, this ringworld district is filled with the roar of smelters and the clang of metallurgies."
 
-  district_rw_bureaucracy:0 "Bureaucratic Segment"
-  district_rw_bureaucracy_plural:0 "Bureaucratic Segments"
-  district_rw_bureaucracy_desc:0 "Geared towards bureaucracy, this ringworld district is filled with offices, red tape, and audit trails."
+  ## TODO: Rename to district_rw_empire at 2.7
+  district_rw_bureaucracy:0 "Empire Segment"
+  district_rw_bureaucracy_plural:0 "Empire Segments"
+  district_rw_bureaucracy_desc:0 "This segment is geared towards the running of the empire."
 
   district_rw_civilian_industry:0 "Industrial Segment"
   district_rw_civilian_industry_plural:0 "Industrial Segments"
   district_rw_civilian_industry_desc:0 "Workshops filled with artisans and civilian industries line the stacked streets of this district."
 
-  district_rw_culture:0 "Cultural Segment"
-  district_rw_culture_plural:0 "Cultural Segments"
-  district_rw_culture_desc:0 "A highly-specialized segment where $job_culture_worker_plural$ constantly acquires, analyzes, evaluates and puts on display everyday artifacts they deems of impending historical import, creating a full segment of museums of the present and a window into the zeitgeist."
-
-  district_rw_network:0 "Network Segment"
-  district_rw_network_plural:0 "Network Segments"
-  district_rw_network_desc:0 "A highly-specialized segment where $job_coordinator_plural$ constantly analyzes, evaluates and coordinates the running of the empire."
+  ## TODO: Rename to district_rw_unity at 2.7
+  district_rw_culture:0 "Unity Segment"
+  district_rw_culture_plural:0 "Unity Segments"
+  district_rw_culture_desc:0 "This segment is geared towards making the empire unified."
 
   district_rw_science:0 "Research Segment"
   district_rw_science_plural:0 "Research Segments"
@@ -90,10 +84,6 @@
   district_rw_refinery:0 "Refinery Segment"
   district_rw_refinery_plural:0 "Refinery Segments"
   district_rw_refinery_desc:0 "Refineries and Synthetic Plants of all kinds fill this Ring World segment."
-
-  district_rw_temple:0 "Temple Segment"
-  district_rw_temple_plural:0 "Temple Segments"
-  district_rw_temple_desc:0 "A massive temple segment offering refuge and seclusion from the material world, for all comers."
 
   ## Static Modifiers
 
@@ -111,17 +101,19 @@
   tech_rw_buildings:0 "$decision_rw_buildings$"
   tech_rw_buildings_desc:0 "$decision_rw_buildings_desc$"
 
-  tech_rw_spec_arms_industry:0 "$decision_rw_spec_arms_industry$"
+  tech_rw_spec_arms_industry:0 "Foundry Segments"
   tech_rw_spec_arms_industry_desc:0 "$decision_rw_spec_arms_industry_desc$"
 
-  tech_rw_spec_bureaucracy:0 "$decision_rw_spec_bureaucracy$"
+  ## TODO: Rename to tech_rw_spec_empire at 2.7
+  tech_rw_spec_bureaucracy:0 "Empire Segments"
   tech_rw_spec_bureaucracy_desc:0 "$decision_rw_spec_bureaucracy_desc$"
 
-  tech_rw_spec_civilian_industry:0 "$decision_rw_spec_civilian_industry$"
+  tech_rw_spec_civilian_industry:0 "Industry Segments"
   tech_rw_spec_civilian_industry_desc:0 "$decision_rw_spec_civilian_industry_desc$"
 
-  tech_rw_spec_culture:0 "$decision_rw_spec_culture$"
+  ## TODO: Rename to tech_rw_spec_unity at 2.7
+  tech_rw_spec_culture:0 "Unity Segments"
   tech_rw_spec_culture_desc:0 "$decision_rw_spec_culture_desc$"
 
-  tech_rw_spec_science:0 "$decision_rw_spec_science$"
+  tech_rw_spec_science:0 "Science Segments"
   tech_rw_spec_science_desc:0 "$decision_rw_spec_science_desc$"

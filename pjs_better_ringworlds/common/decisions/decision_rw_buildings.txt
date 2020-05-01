@@ -9,7 +9,7 @@ decision_rw_buildings = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 75
+			influence = 100
 			alloys = 1000
 		}
 	}
