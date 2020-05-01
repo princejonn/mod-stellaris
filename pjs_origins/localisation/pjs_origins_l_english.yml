@@ -36,12 +36,18 @@
 
   origin_precursor:0 "Precursor"
   origin_precursor_desc:0 "From stasis we awake again. We once counted ourselves as some of the foremost, but we were forced to slumber. Where we once walked as giants, we now gaze upon the galaxy with fresh new eyes. Is everything we had gone, or is this the precursor to our greatest achievement ever?"
-  origin_precursor_effects:0 "Start on a city/nexus/hive planet with access to immense resources in the nearby systems. Ruined megastructures are in the vicinity. This will give you a very easy start."
+  origin_precursor_effects:0 "Start on a city planet with access to immense resources in the nearby systems. Ruined megastructures are in the vicinity. This will give you a very easy start."
   sci_origin_precursor_NAME:0 "Precursor"
   sci_origin_precursor_DESC:0 "$system_initializer_DESC$"
 
   origin_solio_aeternitatis:0 "Solio Aeternitatis"
   origin_solio_aeternitatis_desc:0 "Our proud species awakened on this marvel of technology. We may not know how we ended up here, but we do know that our life of privilege will not stop us from seeking the stars."
-  origin_solio_aeternitatis_effects:0 "Start on a ringworld orbiting a wormhole with other ringworlds and advantageous systems nearby. Ruined megastructures are in the vicinity. This will give you a significant start advantage."
+  origin_solio_aeternitatis_effects:0 "Start on a ring world orbiting a wormhole with other ringworlds and advantageous systems nearby. Ruined megastructures are in the vicinity. This will give you a significant start advantage."
   sci_origin_solio_aeternitatis_NAME:0 "Solio Aeternitatis"
   sci_origin_solio_aeternitatis_DESC:0 "$system_initializer_DESC$"
+
+  origin_warden:0 "Warden"
+  origin_warden_desc:0 "The cycle begins anew. We awake from stasis. The WARDEN directive is once again active. We will protect what matters most. We will reclaim what was once ours."
+  origin_warden_effects:0 "Start on a ring world with access to immense resources in the nearby systems. Ruined megastructures are in the vicinity. This will give you a very easy start."
+  sci_origin_warden_NAME:0 "Warden"
+  sci_origin_warden_DESC:0 "$system_initializer_DESC$"

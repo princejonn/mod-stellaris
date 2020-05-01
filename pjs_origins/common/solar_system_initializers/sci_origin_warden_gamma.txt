@@ -1,0 +1,183 @@
+sci_origin_warden_gamma = {
+	name = "Warden Gamma"
+	class = "sc_a"
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+	planet = {
+		class = "pc_a_star"
+		size = 22
+		orbit_distance = 0
+		orbit_angle = 90
+
+		init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = dyson_sphere_target
+		}
+	}
+
+	change_orbit = 45
+
+	planet = {
+		name = "Beta B-00"
+		class = "pc_ringworld_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		modifiers = none
+        deposit_blockers = none
+        flags = { rw_spec_arms_industry }
+
+		init_effect = {
+		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_dimensional_fabricator
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+		}
+	}
+	planet = {
+		name = "Ring Section I"
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+            save_event_target_as = think_tank_target
+		}
+	}
+	planet = {
+		name = "Ring Section II"
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Beta B-01"
+		class = "pc_ringworld_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+        flags = { rw_spec_arms_industry }
+
+		init_effect = {
+		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_class_4_singularity
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+		}
+	}
+	planet = {
+		name = "Ring Section III"
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Ring Section IV"
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_engineering_10
+		}
+	}
+	planet = {
+		name = "Beta B-02"
+		class = "pc_ringworld_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		modifiers = none
+        deposit_blockers = none
+        flags = { rw_spec_arms_industry }
+
+		init_effect = {
+		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_dimensional_fabricator
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+		}
+	}
+	planet = {
+		name = "Ring Section V"
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Ring Section VI"
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Beta B-03"
+		class = "pc_ringworld_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		modifiers = none
+        deposit_blockers = none
+        flags = { rw_spec_arms_industry }
+
+		init_effect = {
+		    add_deposit = d_arcane_generator
+		    add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_building = building_class_4_singularity
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+		}
+	}
+	planet = {
+		name = "Ring Section VII"
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		name = "Ring Section VIII"
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+
+		init_effect = {
+		    set_deposit = d_physics_10
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "dyson_sphere_ruined"
+            location = event_target:dyson_sphere_target
+        }
+	}
+}

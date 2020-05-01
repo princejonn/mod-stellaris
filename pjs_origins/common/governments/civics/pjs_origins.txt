@@ -188,3 +188,26 @@ origin_solio_aeternitatis = {
 		base = 0
 	}
 }
+
+origin_warden = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_warden.dds"
+	picture = GFX_origin_warden
+
+	max_once_global = yes
+	advanced_start = yes
+
+	starting_colony = pc_ringworld_habitable
+	initializers = { sci_origin_warden }
+	preferred_planet_class_neighbor = no
+
+	possible = {
+		authority = { value = auth_machine_intelligence }
+	}
+
+	description = origin_warden_effects
+
+	random_weight = {
+		base = 0
+	}
+}

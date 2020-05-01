@@ -61,3 +61,26 @@ sc_pjs_binary_mintaka = {
     spawn_odds = 0
     num_planets = { min = 4 max = 10 }
 }
+
+sc_pjs_trinary_warden = {
+    class = b_star
+    icon = a_binary_star
+
+    planet = {
+        key = pc_b_star
+        class = b_star
+    }
+
+    planet = {
+        key = pc_black_hole
+        class = black_hole
+    }
+
+    planet = {
+        key = pc_black_hole
+        class = black_hole
+    }
+
+    spawn_odds = 0
+    num_planets = { min = 4 max = 10 }
+}

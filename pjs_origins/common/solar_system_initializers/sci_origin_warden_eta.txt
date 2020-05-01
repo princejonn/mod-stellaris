@@ -1,0 +1,206 @@
+sci_origin_warden_eta = {
+    name = "Warden Eta"
+    class = sc_m
+
+    usage = misc_system_init
+	usage_odds = { base = 0 }
+	max_instances = 1
+	spawn_chance = 0
+
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 110
+    }
+
+    planet = {
+        class = pc_m_star
+        size = 25
+        orbit_distance = 0
+        orbit_angle = 1
+        has_ring = no
+
+		init_effect = {
+            clear_deposits = yes
+        }
+    }
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_shattered"
+        size = 25
+        orbit_distance = 15
+        orbit_angle = { min = 10 max = 350 }
+
+		init_effect = {
+            set_deposit = d_minerals_10
+            add_deposit = d_minerals_2
+        }
+    }
+
+    planet = {
+        class = "pc_shielded"
+        size = 20
+        orbit_distance = 25
+        orbit_angle = { min = 10 max = 350 }
+
+		init_effect = {
+		    set_deposit = d_society_10
+        }
+    }
+
+    change_orbit = 30
+
+	planet = {
+		class = "pc_asteroid"
+		size = 3
+		orbit_distance = 0
+		orbit_angle = 50
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_engineering_3
+        }
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		size = 4
+		orbit_distance = 0
+		orbit_angle = 60
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_minerals_5
+        }
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		size = 4
+		orbit_distance = 0
+		orbit_angle = 90
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_minerals_3
+        }
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		size = 4
+		orbit_distance = 0
+		orbit_angle = 70
+		has_ring = no
+
+		init_effect = {
+		    set_deposit = d_minerals_5
+        }
+	}
+
+    change_orbit = 20
+
+    planet = {
+        class = "pc_gas_giant"
+        size = 28
+        orbit_distance = 30
+        orbit_angle = { min = 10 max = 350 }
+
+        init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = habitat_planet_1
+        }
+
+        change_orbit = 10
+
+        moon = {
+            class = "pc_frozen"
+            size = 5
+            orbit_distance = 5
+            orbit_angle = { min = 20 max = 100 }
+            has_ring = no
+        }
+        moon = {
+            class = "pc_frozen"
+            size = 6
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 100 }
+            has_ring = no
+        }
+        moon = {
+            class = "pc_frozen"
+            size = 6
+            orbit_distance = 3
+            orbit_angle = { min = 20 max = 100 }
+            has_ring = no
+        }
+    }
+
+    planet = {
+        class = "pc_gas_giant"
+        size = 30
+        orbit_distance = 40
+        orbit_angle = { min = 10 max = 350 }
+		has_ring = yes
+
+        init_effect = {
+            prevent_anomaly = yes
+            save_event_target_as = habitat_planet_2
+        }
+
+        change_orbit = 10
+
+        moon = {
+            class = "pc_barren"
+            size = 8
+            orbit_distance = 4
+            orbit_angle = { min = 20 max = 100 }
+            has_ring = no
+        }
+    }
+
+	init_effect = {
+        spawn_planet = {
+            class = "pc_habitat"
+            location = event_target:habitat_planet_1
+            orbit_location = yes
+            orbit_angle_offset = 45
+            orbit_distance_offset = 9
+            size = 6
+            has_ring = no
+
+            init_effect = {
+                set_name = "Research Habitat R-21"
+                set_planet_entity = {
+                    entity = "orbital_habitat_entity"
+                    graphical_culture = fallen_empire_01
+                }
+                set_planet_flag = megastructure
+                set_planet_flag = habitat
+                set_planet_flag = research_habitat
+            }
+        }
+
+        spawn_planet = {
+            class = "pc_habitat"
+            location = event_target:habitat_planet_2
+            orbit_location = yes
+            orbit_angle_offset = 45
+            orbit_distance_offset = 9
+            size = 6
+            has_ring = no
+
+            init_effect = {
+                set_name = "Research Habitat R-22"
+                set_planet_entity = {
+                    entity = "orbital_habitat_entity"
+                    graphical_culture = fallen_empire_01
+                }
+                set_planet_flag = megastructure
+                set_planet_flag = habitat
+                set_planet_flag = research_habitat
+            }
+        }
+    }
+}

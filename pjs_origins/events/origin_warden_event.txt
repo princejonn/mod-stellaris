@@ -1,0 +1,340 @@
+namespace = origin_warden_event
+
+planet_event = {
+	id = origin_warden_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    if = {
+            limit = { has_planet_flag = start_warden_zero }
+
+            set_planet_size = 5
+
+            set_name = "Alpha A-00"
+
+            clear_deposits = yes
+            remove_all_buildings = yes
+            remove_all_districts = yes
+
+            add_deposit = d_arcane_generator
+            add_deposit = d_enigmatic_replicator
+
+            add_deposit = d_stasis_chambers
+            add_deposit = d_stasis_chambers
+
+            add_deposit = d_decrepit_tunnels_1
+            add_deposit = d_decrepit_tunnels_2
+            add_deposit = d_decrepit_tunnels_3
+
+            add_district = district_rw_nexus
+            add_district = district_rw_generator
+
+            add_building = building_machine_capital
+            add_building = building_machine_assembly_plant
+            add_building = building_uplink_node
+            add_building = building_sentinel_posts
+            add_building = building_simulation_1
+
+            #Assimilators
+            if = {
+                limit = { owner = { has_civic = civic_machine_assimilator } }
+
+                add_district = district_rw_farming
+            }
+
+            #Servitors
+            if = {
+                limit = { owner = { has_civic = civic_machine_servitor } }
+
+                add_district = district_rw_farming
+
+                add_building = building_organic_sanctuary
+            }
+
+            add_building = building_class_4_singularity
+            add_building = building_dimensional_fabricator
+            add_building = building_nano_forge
+            add_building = building_master_archive
+
+            set_graphical_culture = root
+
+            while = { count = 20
+                create_pop = {
+                    species = owner
+                }
+            }
+
+            owner = {
+                give_technology = { tech = "tech_wormhole_stabilization" message = no }
+                give_technology = { tech = "tech_experimental_subspace_navigation" message = no }
+                give_technology = { tech = "tech_automated_exploration" message = no }
+
+                give_technology = { tech = "tech_physics_1" message = no }
+                give_technology = { tech = "tech_physics_2" message = no }
+                give_technology = { tech = "tech_physics_3" message = no }
+
+                give_technology = { tech = "tech_society_1" message = no }
+                give_technology = { tech = "tech_society_2" message = no }
+                give_technology = { tech = "tech_society_3" message = no }
+
+                give_technology = { tech = "tech_engineering_1" message = no }
+                give_technology = { tech = "tech_engineering_2" message = no }
+                give_technology = { tech = "tech_engineering_3" message = no }
+
+                give_technology = { tech = "tech_mining_1" message = no }
+                give_technology = { tech = "tech_mining_2" message = no }
+                give_technology = { tech = "tech_mining_3" message = no }
+
+                give_technology = { tech = "tech_power_plant_2" message = no }
+                give_technology = { tech = "tech_power_plant_3" message = no }
+                give_technology = { tech = "tech_power_plant_4" message = no }
+
+                give_technology = { tech = "tech_space_science_1" message = no }
+                give_technology = { tech = "tech_space_science_2" message = no }
+                give_technology = { tech = "tech_space_science_3" message = no }
+                give_technology = { tech = "tech_space_science_4" message = no }
+                give_technology = { tech = "tech_space_science_5" message = no }
+
+                give_technology = { tech = "tech_space_mining_1" message = no }
+                give_technology = { tech = "tech_space_mining_2" message = no }
+                give_technology = { tech = "tech_space_mining_3" message = no }
+                give_technology = { tech = "tech_space_mining_4" message = no }
+                give_technology = { tech = "tech_space_mining_5" message = no }
+
+                give_technology = { tech = "tech_mine_volatile_motes" message = no }
+                give_technology = { tech = "tech_mine_exotic_gases" message = no }
+                give_technology = { tech = "tech_mine_rare_crystals" message = no }
+
+                add_resource = { energy = 10000 }
+                add_resource = { minerals = 10000 }
+                if = {
+                    limit = { owner = { has_civic = civic_machine_servitor } }
+                    add_resource = { food = 10000 }
+                }
+                add_resource = { alloys = 10000 }
+                add_resource = { influence = 1000 }
+                add_resource = { unity = 10000 }
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = origin_warden_event.2
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = start_warden_one }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    set_name = "Alpha A-01"
+                    change_pc = "pc_ringworld_habitable"
+
+                    clear_deposits = yes
+                    remove_all_buildings = yes
+                    remove_all_districts = yes
+
+                    add_deposit = d_arcane_generator
+                    add_deposit = d_enigmatic_replicator
+
+                    add_deposit = d_stasis_chambers
+                    add_deposit = d_stasis_chambers
+
+                    add_deposit = d_decrepit_tunnels_1
+                    add_deposit = d_decrepit_tunnels_2
+                    add_deposit = d_decrepit_tunnels_3
+
+                    add_district = district_rw_nexus
+                    add_district = district_rw_generator
+
+                    add_building = building_machine_capital
+                    add_building = building_machine_assembly_plant
+                    add_building = building_uplink_node
+                    add_building = building_sentinel_posts
+                    add_building = building_simulation_1
+
+                    #Assimilators
+                    if = {
+                        limit = { owner = { has_civic = civic_machine_assimilator } }
+
+                        add_district = district_rw_farming
+                    }
+
+                    #Servitors
+                    if = {
+                        limit = { owner = { has_civic = civic_machine_servitor } }
+
+                        add_district = district_rw_farming
+
+                        add_building = building_organic_sanctuary
+                    }
+
+                    add_building = building_class_4_singularity
+
+                    while = { count = 10
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = origin_warden_event.3
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = start_warden_two }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    set_name = "Alpha A-02"
+                    change_pc = "pc_ringworld_habitable"
+
+                    clear_deposits = yes
+                    remove_all_buildings = yes
+                    remove_all_districts = yes
+
+                    add_deposit = d_arcane_generator
+                    add_deposit = d_enigmatic_replicator
+
+                    add_deposit = d_stasis_chambers
+                    add_deposit = d_stasis_chambers
+
+                    add_deposit = d_decrepit_tunnels_1
+                    add_deposit = d_decrepit_tunnels_2
+                    add_deposit = d_decrepit_tunnels_3
+
+                    add_district = district_rw_nexus
+                    add_district = district_rw_generator
+
+                    add_building = building_machine_capital
+                    add_building = building_machine_assembly_plant
+                    add_building = building_uplink_node
+                    add_building = building_sentinel_posts
+                    add_building = building_simulation_1
+
+                    #Assimilators
+                    if = {
+                        limit = { owner = { has_civic = civic_machine_assimilator } }
+
+                        add_district = district_rw_farming
+                    }
+
+                    #Servitors
+                    if = {
+                        limit = { owner = { has_civic = civic_machine_servitor } }
+
+                        add_district = district_rw_farming
+
+                        add_building = building_organic_sanctuary
+                    }
+
+                    add_building = building_nano_forge
+
+                    while = { count = 10
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = origin_warden_event.4
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = start_warden_three }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    set_name = "Alpha A-03"
+                    change_pc = "pc_ringworld_habitable"
+
+                    clear_deposits = yes
+                    remove_all_buildings = yes
+                    remove_all_districts = yes
+
+                    add_deposit = d_arcane_generator
+                    add_deposit = d_enigmatic_replicator
+
+                    add_deposit = d_stasis_chambers
+                    add_deposit = d_stasis_chambers
+
+                    add_deposit = d_decrepit_tunnels_1
+                    add_deposit = d_decrepit_tunnels_2
+                    add_deposit = d_decrepit_tunnels_3
+
+                    add_district = district_rw_nexus
+                    add_district = district_rw_generator
+
+                    add_building = building_machine_capital
+                    add_building = building_machine_assembly_plant
+                    add_building = building_uplink_node
+                    add_building = building_sentinel_posts
+                    add_building = building_simulation_1
+
+                    #Assimilators
+                    if = {
+                        limit = { owner = { has_civic = civic_machine_assimilator } }
+
+                        add_district = district_rw_farming
+                    }
+
+                    #Servitors
+                    if = {
+                        limit = { owner = { has_civic = civic_machine_servitor } }
+
+                        add_district = district_rw_farming
+
+                        add_building = building_organic_sanctuary
+                    }
+
+                    add_building = building_dimensional_fabricator
+
+                    while = { count = 10
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}

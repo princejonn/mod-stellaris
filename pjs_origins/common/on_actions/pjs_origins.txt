@@ -6,6 +6,7 @@ empire_init_capital_planet = {
 		origin_holy_terra_event.1
 		origin_precursor_event.1
 		origin_solio_aeternitatis_event.1
+		origin_warden_event.1
 	}
 }
 
@@ -15,5 +16,8 @@ empire_init_add_technologies = {
 		origin_holy_terra_event.2
 		origin_holy_terra_event.3
 		origin_precursor_event.2
+		origin_warden_event.2
+		origin_warden_event.3
+		origin_warden_event.4
 	}
 }

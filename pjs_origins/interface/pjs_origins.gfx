@@ -26,6 +26,11 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_origin_loved_by_the_void"
+		texturefile = "gfx/event_pictures/origins/origin_loved_by_the_void.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_origin_precursor"
 		texturefile = "gfx/event_pictures/origins/origin_precursor.dds"
 		alwaystransparent = yes
@@ -36,8 +41,8 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_origin_loved_by_the_void"
-		texturefile = "gfx/event_pictures/origins/origin_loved_by_the_void.dds"
+		name = "GFX_origin_warden"
+		texturefile = "gfx/event_pictures/origins/origin_warden.dds"
 		alwaystransparent = yes
 	}
 
