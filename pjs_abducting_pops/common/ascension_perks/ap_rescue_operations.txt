@@ -14,6 +14,7 @@ ap_rescue_operations = {
 		OR = {
 			is_egalitarian = yes
 			is_xenophile = yes
+			has_valid_civic = civic_machine_servitor
 		}
 	}
 

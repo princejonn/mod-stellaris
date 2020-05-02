@@ -1,4 +1,4 @@
-name="PJs :: Abducting pops as Egalitarian Xenophile"
+name="PJs :: Abducting pops"
 tags={
 	"PJs"
 	"Economy"

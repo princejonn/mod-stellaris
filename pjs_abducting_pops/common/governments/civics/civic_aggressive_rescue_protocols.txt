@@ -1,0 +1,23 @@
+civic_aggressive_rescue_protocols = {
+	playable = { host_has_dlc = "Apocalypse" }
+	potential = {
+	    authority = { value = auth_machine_intelligence }
+	}
+	possible = {
+		civics = { value = civic_machine_servitor }
+	}
+	modification = no
+	random_weight = {
+		base = 2
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Apocalypse" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = "civic_tooltip_aggressive_rescue_protocols_effects"
+}
