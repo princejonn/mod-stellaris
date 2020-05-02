@@ -13,6 +13,12 @@ d_enigmatic_replicator = {
 		category = planet_deposits
 		produces = {
 			trigger = {
+			    owner = { country_uses_consumer_goods = yes }
+			}
+			consumer_goods = 10
+		}
+		produces = {
+			trigger = {
 				OR = {
 					planet = { has_district = district_rw_city }
 					planet = { has_district = district_rw_hive }
@@ -20,12 +26,6 @@ d_enigmatic_replicator = {
 				}
 			}
 			alloys = 10
-		}
-		produces = {
-			trigger = {
-			    owner = { is_regular_empire = yes }
-			}
-			consumer_goods = 10
 		}
 		produces = {
 			trigger = {
@@ -74,10 +74,10 @@ d_enigmatic_replicator = {
 		}
 		produces = {
 			trigger = {
-                planet = { has_district = district_rw_network }
+                planet = { has_district = district_rw_refinery }
 			}
 			energy = 10
-			rare_crystals = 2
+			minerals = 10
 		}
 		produces = {
 			trigger = {
@@ -85,13 +85,6 @@ d_enigmatic_replicator = {
 			}
 			energy = 10
 			exotic_gases = 2
-		}
-		produces = {
-			trigger = {
-                planet = { has_district = district_rw_temple }
-			}
-			energy = 10
-			rare_crystals = 2
 		}
 	}
 }

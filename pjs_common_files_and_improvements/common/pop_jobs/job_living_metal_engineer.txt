@@ -102,10 +102,6 @@ living_metal_engineer = {
 				has_trait = trait_robot_efficient_processors
 			}
 		}
-		modifier = {
-			factor = 0
-			jobs_save_goods = yes
-		}
 	}
 }
 
