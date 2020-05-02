@@ -31,7 +31,7 @@ sci_origin_loved_by_the_void = {
         name = "Galileo B"
         class = "pc_black_hole"
         size = 26
-        orbit_distance = 340
+        orbit_distance = 290
         orbit_angle = 35
         has_ring = no
 
@@ -47,7 +47,7 @@ sci_origin_loved_by_the_void = {
         }
 
         planet = {
-            class = rl_habitable_normal
+            class = pc_nuked
             size = 16
             orbit_distance = 20
             orbit_angle = { min = 30 max = 250 }
@@ -61,7 +61,7 @@ sci_origin_loved_by_the_void = {
         }
 
         planet = {
-            class = rl_habitable_normal
+            class = pc_nuked
             size = 18
             orbit_distance = 20
             orbit_angle = { min = 30 max = 250 }
@@ -72,7 +72,7 @@ sci_origin_loved_by_the_void = {
         name = "Galileo C"
         class = "pc_m_giant_star"
         size = 34
-        orbit_distance = 60
+        orbit_distance = 10
         orbit_angle = 140
         has_ring = no
 
@@ -81,23 +81,16 @@ sci_origin_loved_by_the_void = {
 		}
 
         planet = {
-            class = rl_habitable_normal
+            class = pc_nuked
             size = 18
             orbit_distance = 60
             orbit_angle = { min = 30 max = 250 }
         }
 
         planet = {
-            class = rl_habitable_normal
+            class = pc_nuked
             size = 24
             orbit_distance = 20
-            orbit_angle = { min = 30 max = 250 }
-        }
-
-        planet = {
-            class = rl_habitable_normal
-            size = 20
-            orbit_distance = 25
             orbit_angle = { min = 30 max = 250 }
         }
 
@@ -150,7 +143,7 @@ sci_origin_loved_by_the_void = {
         }
     }
 
-    change_orbit = -400
+    change_orbit = -300
 
     planet = {
         class = rl_habitable_normal
@@ -160,7 +153,7 @@ sci_origin_loved_by_the_void = {
     }
 
 	planet = {
-        class = rl_habitable_normal
+        class = pc_nuked
         size = 25
         orbit_distance = 25
         orbit_angle = { min = 30 max = 250 }
@@ -191,7 +184,7 @@ sci_origin_loved_by_the_void = {
 	}
 
     planet = {
-        class = rl_habitable_normal
+        class = pc_nuked
         size = 20
         orbit_distance = 20
         orbit_angle = { min = 30 max = 250 }
@@ -207,13 +200,6 @@ sci_origin_loved_by_the_void = {
                 set_deposit = d_physics_3
             }
         }
-    }
-
-    planet = {
-        class = "pc_gaia"
-        size = 18
-        orbit_distance = 20
-        orbit_angle = { min = 30 max = 250 }
     }
 
     planet = {

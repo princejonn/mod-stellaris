@@ -57,8 +57,6 @@ planet_event = {
             add_building = building_nano_forge
             add_building = building_master_archive
 
-            set_graphical_culture = root
-
             while = { count = 20
                 create_pop = {
                     species = owner

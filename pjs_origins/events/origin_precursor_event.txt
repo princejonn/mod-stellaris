@@ -35,8 +35,6 @@ planet_event = {
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 
-            set_graphical_culture = root
-
             while = { count = 13
                 create_pop = {
                     species = owner

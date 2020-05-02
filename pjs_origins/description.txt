@@ -7,7 +7,7 @@ Adding new origins to the game.
     [*] [b]Envy[/b] - Start on a normal world that's circling a ring world.
     [*] [b]Parasitic Origins[/b] - Has the ability to assimilate new species into the hive mind at the start of the game.
     [*] [b]Holy Terra[/b] - Start on the sacred city planet of Holy Terra (Earth). Begin with two extra colonies on Venus and Mars.
-    [*] [b]Loved by the Void[/b] - Start in a trinary star system with a multitude of habitable planets.
+    [*] [b]Loved by the Void[/b] - Start in a trinary star system with a multitude of (eventually) habitable planets.
     [*] [b]Precursor[/b] - Start on a city planet with access to immense resources in the nearby systems. Ruined megastructures are in the vicinity. This will give you a very easy start.
     [*] [b]Solio Aeternitatis[/b] - Start on a ringworld orbiting a wormhole with other ringworlds and advantageous systems nearby. Ruined megastructures are in the vicinity. This will give you a significant start advantage.
     [*] [b]Warden[/b] - Start on a ring world with access to immense resources in the nearby systems. Ruined megastructures are in the vicinity. This will give you a very easy start.

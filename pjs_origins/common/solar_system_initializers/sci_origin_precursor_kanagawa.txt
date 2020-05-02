@@ -112,7 +112,6 @@ sci_origin_precursor_kanagawa = {
         spawn_megastructure = {
             type = "interstellar_assembly_ruined"
             location = event_target:interstellar_assembly_target
-            graphical_culture = "humanoid_01"
         }
     }
 }

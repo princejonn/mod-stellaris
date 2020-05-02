@@ -81,7 +81,7 @@ sci_origin_precursor_shizuoka = {
                 set_name = "Abandoned Habitat"
                 set_planet_entity = {
                     entity = "orbital_habitat_entity"
-                    graphical_culture = fallen_empire_01
+					graphical_culture = fallen_empire_01
                 }
                 set_planet_flag = megastructure
                 set_planet_flag = habitat

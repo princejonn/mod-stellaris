@@ -185,8 +185,6 @@ planet_event = {
                     add_resource = { consumer_goods = 500 }
                 }
 
-                set_graphical_culture = root
-
                 give_technology = { tech = "tech_mine_volatile_motes" message = no }
                 give_technology = { tech = "tech_mine_exotic_gases" message = no }
                 give_technology = { tech = "tech_mine_rare_crystals" message = no }

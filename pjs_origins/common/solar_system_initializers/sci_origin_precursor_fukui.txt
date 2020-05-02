@@ -48,7 +48,7 @@ sci_origin_precursor_fukui = {
 			prevent_anomaly = yes
             clear_deposits = yes
 
-            graphical_culture = "humanoid_01"
+            set_graphical_culture = fallen_empire_01
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers

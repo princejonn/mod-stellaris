@@ -30,8 +30,6 @@ planet_event = {
                 create_pop = { species = owner_main_species }
             }
 
-            set_graphical_culture = root
-
             owner = {
                 add_resource = { energy = 500 }
                 add_resource = { minerals = 500 }

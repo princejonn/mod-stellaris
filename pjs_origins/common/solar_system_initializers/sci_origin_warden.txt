@@ -31,7 +31,7 @@ sci_origin_warden = {
         name = "Experimentation X-00"
         class = "pc_black_hole"
         size = 25
-        orbit_distance = 300
+        orbit_distance = 290
         orbit_angle = 40
         has_ring = no
 
@@ -114,7 +114,7 @@ sci_origin_warden = {
         name = "Experimentation X-01"
         class = "pc_black_hole"
         size = 20
-        orbit_distance = 45
+        orbit_distance = 10
         orbit_angle = 120
         has_ring = no
 
@@ -187,7 +187,7 @@ sci_origin_warden = {
         }
     }
 
-	change_orbit = -300
+	change_orbit = -255
 
 	planet = {
         name = "Alpha A-00"
@@ -315,7 +315,7 @@ sci_origin_warden = {
                 set_name = "Mining Habitat M-00"
                 set_planet_entity = {
                     entity = "orbital_habitat_entity"
-                    graphical_culture = fallen_empire_01
+					graphical_culture = fallen_empire_01
                 }
                 set_planet_flag = megastructure
                 set_planet_flag = habitat
@@ -336,7 +336,7 @@ sci_origin_warden = {
                 set_name = "Mining Habitat M-01"
                 set_planet_entity = {
                     entity = "orbital_habitat_entity"
-                    graphical_culture = fallen_empire_01
+					graphical_culture = fallen_empire_01
                 }
                 set_planet_flag = megastructure
                 set_planet_flag = habitat
