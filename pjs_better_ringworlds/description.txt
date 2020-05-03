@@ -11,4 +11,8 @@ With this mod you get access to new planetary specialization decisions available
     [*] Ringworld Specialization: Unity
 [/list]
 
-The cost for building districts has been modified to use alloys instead of minerals, since it kind of makes more sense.
+You will also get access to two new technologies: [b]Ring World Mastery[/b] and [b]Ring World Templates[/b]. Mastery will give you a decision to increase the available districts by +1. Templates will increase available buildings lots, so that you can jump start your ring world a bit faster.
+
+[b]Master Builders[/b] is a prerequisite for the technologies to start appearing.
+
+The cost for building districts has been modified to use alloys instead of minerals.
