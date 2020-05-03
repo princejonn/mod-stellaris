@@ -66,7 +66,6 @@ sci_origin_solio_aeternitatis = {
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
 
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2
@@ -134,7 +133,6 @@ sci_origin_solio_aeternitatis = {
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
 
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2

@@ -18,7 +18,6 @@ planet_event = {
             remove_all_districts = yes
 
             add_deposit = d_arcane_generator
-            add_deposit = d_enigmatic_replicator
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
@@ -217,7 +216,6 @@ country_event = {
                     remove_all_districts = yes
 
                     add_deposit = d_arcane_generator
-                    add_deposit = d_enigmatic_replicator
 
                     add_deposit = d_stasis_chambers
                     add_deposit = d_stasis_chambers

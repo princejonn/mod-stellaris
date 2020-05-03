@@ -36,7 +36,6 @@ sci_origin_precursor_yamanashi = {
             clear_deposits = yes
 
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
@@ -109,7 +108,6 @@ sci_origin_precursor_yamanashi = {
             clear_deposits = yes
 
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
