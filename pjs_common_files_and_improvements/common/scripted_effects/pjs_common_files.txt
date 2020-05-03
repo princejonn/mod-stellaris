@@ -24,9 +24,9 @@ generate_energy_3_deposit = {
 generate_energy_deposits = {
     while = { count = 6
         random_list = {
-            40 = { generate_energy_1_deposit = yes }
+            50 = { generate_energy_1_deposit = yes }
             40 = { generate_energy_2_deposit = yes }
-            20 = { generate_energy_3_deposit = yes }
+            10 = { generate_energy_3_deposit = yes }
         }
     }
 }
@@ -55,9 +55,9 @@ generate_mineral_3_deposit = {
 generate_mineral_deposits = {
     while = { count = 6
         random_list = {
-            40 = { generate_mineral_1_deposit = yes }
+            50 = { generate_mineral_1_deposit = yes }
             40 = { generate_mineral_2_deposit = yes }
-            20 = { generate_mineral_3_deposit = yes }
+            10 = { generate_mineral_3_deposit = yes }
         }
     }
 }
@@ -96,9 +96,9 @@ generate_food_3_deposit = {
 generate_food_deposits = {
     while = { count = 6
         random_list = {
-            40 = { generate_food_1_deposit = yes }
+            50 = { generate_food_1_deposit = yes }
             40 = { generate_food_2_deposit = yes }
-            20 = { generate_food_3_deposit = yes }
+            10 = { generate_food_3_deposit = yes }
         }
     }
 }
@@ -120,8 +120,8 @@ generate_pets_deposit = {
 generate_crystals_deposit = {
     random_list = {
         50 = { add_deposit = d_crystalline_caverns }
-        25 = { add_deposit = d_crystal_forest }
-        25 = { add_deposit = d_crystal_reef }
+        40 = { add_deposit = d_crystal_forest }
+        10 = { add_deposit = d_crystal_reef }
     }
 }
 
