@@ -221,6 +221,12 @@
   tech_dark_matter_laboratory:0 "Dark Matter Laboratory"
   tech_dark_matter_laboratory_desc:0 "Exploiting a nearby §Y$d_dark_matter_mine_1$§! deposits in your habitats."
 
+  tech_influence_machine_1:0 "Incorporated Dynamism"
+  tech_influence_machine_1_desc:0 "Initiative and some measure of ambition must be promoted in our autonomous leader units, while still making certain that they do not stray too far from the directives of the core intelligence."
+
+  tech_influence_machine_2:0 "Manifested Dynamism"
+  tech_influence_machine_2_desc:0 "Initiative and some measure of ambition must be promoted in our autonomous leader units, while still making certain that they do not stray too far from the directives of the core intelligence."
+
   tech_living_metal_laboratory:0 "Living Metal Laboratory"
   tech_living_metal_laboratory_desc:0 "Exploiting a nearby §Y$d_living_metal_mine_1$§! deposits in your habitats."
 

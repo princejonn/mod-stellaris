@@ -29,6 +29,7 @@ tech_amenities_mult_2 = {
 	area = society
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_amenities_mult_1" }
 	weight = @tier2weight3
 
 	modifier = {
@@ -55,6 +56,7 @@ tech_amenities_mult_3 = {
 	area = society
 	tier = 3
 	category = { statecraft }
+	prerequisites = { "tech_amenities_mult_2" }
 	weight = @tier3weight3
 
 	modifier = {
@@ -81,6 +83,7 @@ tech_amenities_mult_4 = {
 	area = society
 	tier = 4
 	category = { statecraft }
+	prerequisites = { "tech_amenities_mult_3" }
 	weight = @tier4weight3
 
 	modifier = {
