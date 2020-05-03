@@ -1,11 +1,11 @@
 tech_repeatable_pop_assembly_speed = {
     area = engineering
-	cost = 90000
-	cost_per_level = 12000
+	cost = 100000
+	cost_per_level = 25000
 	tier = 5
-	weight = 0.2
+	weight = 0.1
 	category = { industry }
-	is_rare = no
+	is_rare = yes
 	levels = 4
 	icon = "tech_robotic_workers"
 
@@ -21,7 +21,7 @@ tech_repeatable_pop_assembly_speed = {
 	}
 
 	ai_weight = {
-		factor = 1.0
+		factor = 2
 	}
 
 	weight_groups = {

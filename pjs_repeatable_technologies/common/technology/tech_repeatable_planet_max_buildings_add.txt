@@ -1,11 +1,11 @@
 tech_repeatable_planet_max_buildings_add = {
     area = engineering
-	cost = 100000
+	cost = 200000
 	cost_per_level = 100000
 	tier = 5
-	weight = 0.2
+	weight = 0.1
 	category = { materials }
-	is_rare = no
+	is_rare = yes
 	levels = 3
 	icon = "tech_micro_replicators"
 
@@ -17,7 +17,7 @@ tech_repeatable_planet_max_buildings_add = {
 	}
 
 	ai_weight = {
-		factor = 1.0
+		factor = 10
 	}
 
 	weight_groups = {
