@@ -43,6 +43,7 @@ building_hydroponics_farm = {
 		}
 		modifier = {
 			job_farmer_add = 3
+		}
 	}
 
 	triggered_planet_modifier = {
