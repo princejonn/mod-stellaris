@@ -206,6 +206,18 @@
   tech_alloy_recycling:0 "Alloy Recycling Yard"
   tech_alloy_recycling_desc:0 "Exploiting a nearby §Y$d_alloy_mine_1$§! deposits in your habitats."
 
+  tech_amenities_mult_1:0 "Capable Management"
+  tech_amenities_mult_1_desc:0 "Increasing our ability to maintain and manage our planetary amenity needs."
+
+  tech_amenities_mult_2:0 "Competent Management"
+  tech_amenities_mult_2_desc:0 "Increasing our ability to maintain and manage our planetary amenity needs."
+
+  tech_amenities_mult_3:0 "Efficient Management"
+  tech_amenities_mult_3_desc:0 "Increasing our ability to maintain and manage our planetary amenity needs."
+
+  tech_amenities_mult_4:0 "Potent Management"
+  tech_amenities_mult_4_desc:0 "Increasing our ability to maintain and manage our planetary amenity needs."
+
   tech_dark_matter_laboratory:0 "Dark Matter Laboratory"
   tech_dark_matter_laboratory_desc:0 "Exploiting a nearby §Y$d_dark_matter_mine_1$§! deposits in your habitats."
 
