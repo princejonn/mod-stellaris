@@ -7,15 +7,15 @@ d_ruined_precursor_city = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_max_districts_add = -2
+		planet_max_districts_add = -1
 	}
 
 	on_cleared = {
         owner = {
             add_resource = {
-                physics = 500
-                society = 500
-                engineering = 500
+                physics = 2500
+                society = 2500
+                engineering = 2500
             }
         }
 	}
@@ -23,8 +23,7 @@ d_ruined_precursor_city = {
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 1200
-			minerals = 300
+			energy = 750
 		}
 	}
 }

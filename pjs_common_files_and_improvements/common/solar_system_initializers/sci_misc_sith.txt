@@ -100,6 +100,7 @@ sci_misc_sith = {
                 set_planet_flag = megastructure
                 set_planet_flag = habitat
                 set_planet_flag = energy_habitat
+                add_deposit = d_dark_matter_mine_1
             }
         }
     }

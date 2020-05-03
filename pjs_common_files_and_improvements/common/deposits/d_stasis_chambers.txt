@@ -16,13 +16,12 @@ d_stasis_chambers = {
 	    create_pop = { species = owner }
 	    create_pop = { species = owner }
 	    create_pop = { species = owner }
-	    create_pop = { species = owner }
 
         owner = {
             add_resource = {
-                physics = 1000
-                society = 1000
-                engineering = 1000
+                physics = 2500
+                society = 2500
+                engineering = 2500
             }
         }
 	}
@@ -30,8 +29,7 @@ d_stasis_chambers = {
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 1600
-			minerals = 1600
+			energy = 1500
 		}
 	}
 }

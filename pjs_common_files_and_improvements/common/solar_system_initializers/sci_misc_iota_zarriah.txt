@@ -137,6 +137,7 @@ sci_misc_iota_zarriah = {
                 set_planet_flag = megastructure
                 set_planet_flag = habitat
                 set_planet_flag = mining_habitat
+                add_deposit = d_alloy_mine_1
             }
         }
     }
