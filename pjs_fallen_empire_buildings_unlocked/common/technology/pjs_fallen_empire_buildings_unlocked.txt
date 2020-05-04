@@ -117,6 +117,10 @@ tech_nourishment_center = {
         "tech_dimensional_fabricator"
 	}
 
+	potential = {
+		country_uses_food = yes
+	}
+
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NOURISHMENT_CENTER_TITLE"
@@ -166,6 +170,10 @@ tech_affluence_center = {
 	prerequisites = {
         "tech_class_4_singularity"
         "tech_dimensional_fabricator"
+	}
+
+	potential = {
+		country_uses_consumer_goods = yes
 	}
 
 	prereqfor_desc = {

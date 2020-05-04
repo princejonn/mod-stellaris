@@ -194,6 +194,7 @@ building_affluence_center = {
 
 	potential = {
         exists = owner
+        owner = { country_uses_consumer_goods = yes }
 	    OR = {
             owner = { is_fallen_empire = yes }
 	        owner = { has_technology = "tech_affluence_center" }
@@ -237,6 +238,7 @@ building_nourishment_center = {
 
 	potential = {
         exists = owner
+		owner = { country_uses_food = yes }
 	    OR = {
             owner = { is_fallen_empire = yes }
 	        owner = { has_technology = "tech_nourishment_center" }
