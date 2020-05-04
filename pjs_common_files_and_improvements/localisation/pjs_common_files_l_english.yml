@@ -18,6 +18,12 @@
   building_nanite_replicator_desc:0 "Exploiting a nearby §Y$d_nanites_mine_1$§! deposit."
   mod_building_nanite_replicator_max:0 "Max $building_nanite_replicator$"
 
+  building_overseer_1:0 "Overseer Depot"
+  building_overseer_1_desc:0 "These are the outposts from which $job_overseer_plural$ scan the Consciousness for signs of deficiency."
+
+  building_overseer_2:0 "Overseer Post"
+  building_overseer_2_desc:0 "These are the outposts from which $job_overseer_plural$ scan the Consciousness for signs of deficiency."
+
   building_zro_harvesters:0 "Zro Harvesters"
   building_zro_harvesters_desc:0 "Exploiting a nearby §Y$d_zro_mine_1$§! deposit."
   mod_building_zro_harvesters_max:0 "Max $building_zro_harvesters$"
@@ -171,6 +177,14 @@
   mod_job_nanite_replicator_droid_per_pop:0 "§G+1§! $job_nanite_replicator_droid$ Job per $VALUE$ Pops"
   mod_job_nanite_replicator_droid_per_pop_short:0 "\n§G+1§! £job_namod_job_nanite_replicator_droid_add£ per $VALUE$ £pop£"
 
+  job_overseer:0 "Overseer"
+  job_overseer_plural:0 "Overseers"
+  job_overseer_desc:0 "Scanning the Consciousness for signs of deficiency."
+  job_overseer_effect_desc:0 "£job_overseer£ $job_overseer_plural$ produce £amenities£ §Y$amenities$§!"
+  mod_job_overseer_add:0 "$job_overseer$ Jobs"
+  mod_job_overseer_per_pop:0 "§G+1§! $job_overseer$ Job per $VALUE$ Pops"
+  mod_job_overseer_per_pop_short:0 "\n§G+1§! £job_namod_job_overseer_add£ per $VALUE$ £pop£"
+
   job_zro_harvester:0 "Zro Harvester"
   job_zro_harvester_plural:0 "Zro Harvesters"
   job_zro_harvester_desc:0 "Harvesting Zro from a nearby deposit."
@@ -232,6 +246,12 @@
 
   tech_nanite_replicator:0 "Nanite Replicator"
   tech_nanite_replicator_desc:0 "Exploiting a nearby §Y$d_nanites_mine_1$§! deposits in your habitats."
+
+  tech_overseer_1:0 "Overseer Depots"
+  tech_overseer_1_desc:0 "$building_overseer_1_desc$"
+
+  tech_overseer_2:0 "Overseer Posts"
+  tech_overseer_2_desc:0 "$building_overseer_2_desc$"
 
   tech_zro_harvesters:0 "Zro Harvesters"
   tech_zro_harvesters_desc:0 "Exploiting a nearby §Y$d_zro_mine_1$§! deposits in your habitats."

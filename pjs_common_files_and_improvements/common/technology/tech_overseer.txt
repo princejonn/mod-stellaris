@@ -1,0 +1,52 @@
+tech_overseer_1 = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { statecraft }
+	tier = 0
+
+	potential = {
+		is_gestalt = yes
+	}
+}
+
+tech_overseer_2 = {
+	cost = @tier2cost3
+	area = society
+	category = { statecraft }
+	tier = 2
+	prerequisites = { "tech_overseer_1" }
+	weight = @tier2weight3
+
+	potential = {
+		is_gestalt = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_exotic_gases
+				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}

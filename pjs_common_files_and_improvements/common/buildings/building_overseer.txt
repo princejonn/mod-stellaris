@@ -1,0 +1,168 @@
+building_overseer_1 = {
+	base_buildtime = @b1_time
+
+	category = amenity
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = yes }
+	}
+
+	allow = {
+		OR = {
+			owner = { is_ai = no }
+			AND = {
+				buildings_simple_allow = yes
+				NOT = { has_building = building_overseer_1 }
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = { is_gestalt = yes }
+		}
+	}
+
+	planet_modifier = {
+		job_overseer_add = @b1_jobs
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	upgrades = {
+		"building_overseer_2"
+	}
+
+	prerequisites = {
+		"tech_overseer_1"
+	}
+
+	triggered_desc = {
+		text = job_overseer_effect_desc
+	}
+
+	show_tech_unlock_if = {
+		is_gestalt = yes
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 50
+			free_amenities < 5
+			OR = {
+				free_jobs < 3
+				NOT = { has_building = building_overseer_1 }
+				NOT = { has_building = building_overseer_2 }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				free_amenities > 20
+				has_building = building_overseer_1
+				has_building = building_overseer_2
+			}
+		}
+	}
+}
+
+building_overseer_2 = {
+	base_buildtime = @b2_time
+	can_build = no
+
+	category = amenity
+
+	potential = {
+		has_building = building_overseer_1
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+		buildings_upgrade_allow = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = { is_gestalt = yes }
+		}
+	}
+
+	planet_modifier = {
+		job_overseer_add = @b2_jobs
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
+		}
+	}
+
+	prerequisites = {
+		"tech_overseer_2"
+	}
+
+	triggered_desc = {
+		text = job_overseer_effect_desc
+	}
+
+	show_tech_unlock_if = {
+		is_gestalt = yes
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 50
+			free_amenities < 5
+			OR = {
+				free_jobs < 3
+				NOT = { has_building = building_overseer_2 }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				free_amenities > 20
+				has_building = building_overseer_2
+			}
+		}
+	}
+
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 390 } }
+		}
+		else = {
+			planet = {
+				owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 510 } }
+			}
+		}
+	}
+}

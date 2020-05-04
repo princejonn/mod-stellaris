@@ -1,0 +1,86 @@
+overseer = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_overseer_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			unity = 2
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+    planet_modifier = {
+        planet_amenities_no_happiness_add = 10
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_emotion_emulators
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_uncanny
+				has_trait = trait_repugnant
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = -1
+		}
+	}
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_robot_emotion_emulators
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_trait = trait_robot_uncanny
+				has_trait = trait_repugnant
+			}
+		}
+		modifier = {
+			factor = 1.1
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_job = maintenance_drone }
+			planet = {
+				free_amenities > 5
+			}
+		}
+	}
+}
