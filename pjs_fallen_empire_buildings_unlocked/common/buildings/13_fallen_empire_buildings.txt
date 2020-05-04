@@ -184,345 +184,6 @@ building_hab_fe_capital = {
 	}
 }
 
-
-building_affluence_center = {
-	base_buildtime = 600
-	can_build = yes
-	can_demolish = yes
-
-	category = resource
-
-	potential = {
-        exists = owner
-        owner = { country_uses_consumer_goods = yes }
-	    OR = {
-            owner = { is_fallen_empire = yes }
-	        owner = { has_technology = "tech_affluence_center" }
-	    }
-	}
-
-	resources = {
-		category = planet_buildings
-		produces = {
-			consumer_goods = 50
-		}
-		cost = {
-			minerals = 900
-			rare_crystals = 600
-		}
-		upkeep = {
-			minerals = 25
-			energy = 10
-		}
-	}
-
-	on_queued = {
-		owner = {
-			subtract_variable = { which = affluence_center_build_count value = 1 }
-		}
-	}
-
-	on_unqueued = {
-		owner = {
-			change_variable = { which = affluence_center_build_count value = 1 }
-		}
-	}
-}
-
-building_nourishment_center = {
-	base_buildtime = 600
-	can_build = yes
-	can_demolish = yes
-
-	category = resource
-
-	potential = {
-        exists = owner
-		owner = { country_uses_food = yes }
-	    OR = {
-            owner = { is_fallen_empire = yes }
-	        owner = { has_technology = "tech_nourishment_center" }
-	    }
-	}
-
-	resources = {
-		category = planet_buildings
-		produces = {
-			food = 100
-		}
-		cost = {
-			minerals = 900
-			exotic_gases = 600
-		}
-		upkeep = {
-			energy = 25
-		}
-	}
-
-	on_queued = {
-		owner = {
-			subtract_variable = { which = nourishment_center_build_count value = 1 }
-		}
-	}
-
-	on_unqueued = {
-		owner = {
-			change_variable = { which = nourishment_center_build_count value = 1 }
-		}
-	}
-}
-
-building_dimensional_fabricator = {
-	base_buildtime = 600
-	can_build = yes
-	can_demolish = yes
-
-	category = resource
-
-	potential = {
-        exists = owner
-	    OR = {
-            owner = { is_fallen_empire = yes }
-	        owner = { has_technology = "tech_dimensional_fabricator" }
-	    }
-	}
-
-	resources = {
-		category = planet_buildings
-		produces = {
-			minerals = 100
-			rare_crystals = 2
-			exotic_gases = 2
-			volatile_motes = 2
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { is_fallen_empire = yes }
-			}
-			sr_zro = 2
-			sr_dark_matter = 2
-			sr_living_metal = 2
-		}
-		cost = {
-			minerals = 900
-			sr_dark_matter = 300
-		}
-		upkeep = {
-			energy = 25
-		}
-	}
-
-	on_queued = {
-		owner = {
-			subtract_variable = { which = dimensional_fabricator_build_count value = 1 }
-		}
-	}
-
-	on_unqueued = {
-		owner = {
-			change_variable = { which = dimensional_fabricator_build_count value = 1 }
-		}
-	}
-}
-
-
-building_class_4_singularity = {
-	base_buildtime = 600
-	can_build = yes
-	can_demolish = yes
-
-	category = resource
-
-	potential = {
-        exists = owner
-	    OR = {
-            owner = { is_fallen_empire = yes }
-	        owner = { has_technology = "tech_class_4_singularity" }
-	    }
-	}
-
-	resources = {
-		category = planet_buildings
-		produces = {
-			energy = 250
-		}
-		cost = {
-			minerals = 900
-			sr_dark_matter = 300
-		}
-	}
-
-	on_queued = {
-		owner = {
-			subtract_variable = { which = class_4_singularity_build_count value = 1 }
-		}
-	}
-
-	on_unqueued = {
-		owner = {
-			change_variable = { which = class_4_singularity_build_count value = 1 }
-		}
-	}
-}
-
-building_nano_forge = {
-	base_buildtime = 600
-	can_build = yes
-	can_demolish = yes
-
-	category = resource
-
-	potential = {
-        exists = owner
-	    OR = {
-            owner = { is_fallen_empire = yes }
-	        owner = { has_technology = "tech_nano_forge" }
-	    }
-	}
-
-	resources = {
-		category = planet_buildings
-		produces = {
-			alloys = 25
-		}
-		cost = {
-			minerals = 900
-			sr_dark_matter = 300
-		}
-		upkeep = {
-			minerals = 50
-			energy = 10
-		}
-	}
-
-	on_queued = {
-		owner = {
-			subtract_variable = { which = nano_forge_build_count value = 1 }
-		}
-	}
-
-	on_unqueued = {
-		owner = {
-			change_variable = { which = nano_forge_build_count value = 1 }
-		}
-	}
-}
-
-building_master_archive = {
-	base_buildtime = 600
-	can_build = yes
-	can_demolish = yes
-
-	category = research
-
-	potential = {
-        exists = owner
-	    OR = {
-            owner = { is_fallen_empire = yes }
-	        owner = { has_technology = "tech_master_archive" }
-	    }
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_fallen_empire = yes }
-		}
-		job_fe_archivist_add = 10
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_regular_empire = yes
-            }
-		}
-		modifier = {
-			job_researcher_add = 5
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_regular_empire = yes
-            }
-		}
-		text = job_researcher_effect_desc
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_hive_empire = yes
-            }
-		}
-		modifier = {
-			job_brain_drone_add = 5
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_hive_empire = yes
-            }
-		}
-		text = job_brain_drone_effect_desc
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_machine_empire = yes
-            }
-		}
-		modifier = {
-			job_calculator_add = 5
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-			    is_fallen_empire = no
-			    is_machine_empire = yes
-            }
-		}
-		text = job_calculator_effect_desc
-	}
-
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 900
-			sr_dark_matter = 300
-		}
-		produces = {
-			physics_research = 100
-			society_research = 100
-			engineering_research = 100
-		}
-		upkeep = {
-			energy = 50
-		}
-	}
-}
-
 building_empyrean_shrine = {
 	base_buildtime = @b2_time
 	can_build = no
@@ -669,6 +330,365 @@ building_fe_dome = {
 	}
 }
 
+######################
+# Modified buildings #
+######################
+
+building_affluence_center = {
+	base_buildtime = 600
+	can_build = yes
+	can_demolish = yes
+
+	category = resource
+
+	potential = {
+        exists = owner
+        owner = { country_uses_consumer_goods = yes }
+        NOT = { has_modifier = penal_colony }
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+	    OR = {
+            owner = { is_fallen_empire = yes }
+	        owner = { has_technology = "tech_affluence_center" }
+	    }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			consumer_goods = 50
+		}
+		cost = {
+			minerals = 900
+			rare_crystals = 600
+		}
+		upkeep = {
+			minerals = 25
+			energy = 10
+		}
+	}
+
+	on_queued = {
+		owner = {
+			subtract_variable = { which = affluence_center_build_count value = 1 }
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = { which = affluence_center_build_count value = 1 }
+		}
+	}
+}
+
+building_class_4_singularity = {
+	base_buildtime = 600
+	can_build = yes
+	can_demolish = yes
+
+	category = resource
+
+	potential = {
+        exists = owner
+        NOT = { has_modifier = penal_colony }
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+	    OR = {
+            owner = { is_fallen_empire = yes }
+	        owner = { has_technology = "tech_class_4_singularity" }
+	    }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			energy = 250
+		}
+		cost = {
+			minerals = 900
+			sr_dark_matter = 300
+		}
+	}
+
+	on_queued = {
+		owner = {
+			subtract_variable = { which = class_4_singularity_build_count value = 1 }
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = { which = class_4_singularity_build_count value = 1 }
+		}
+	}
+}
+
+building_dimensional_fabricator = {
+	base_buildtime = 600
+	can_build = yes
+	can_demolish = yes
+
+	category = resource
+
+	potential = {
+        exists = owner
+        NOT = { has_modifier = penal_colony }
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+	    OR = {
+            owner = { is_fallen_empire = yes }
+	        owner = { has_technology = "tech_dimensional_fabricator" }
+	    }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			minerals = 100
+			rare_crystals = 2
+			exotic_gases = 2
+			volatile_motes = 2
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { is_fallen_empire = yes }
+			}
+			sr_zro = 2
+			sr_dark_matter = 2
+			sr_living_metal = 2
+		}
+		cost = {
+			minerals = 900
+			sr_dark_matter = 300
+		}
+		upkeep = {
+			energy = 25
+		}
+	}
+
+	on_queued = {
+		owner = {
+			subtract_variable = { which = dimensional_fabricator_build_count value = 1 }
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = { which = dimensional_fabricator_build_count value = 1 }
+		}
+	}
+}
+
+building_master_archive = {
+	base_buildtime = 600
+	can_build = yes
+	can_demolish = yes
+
+	category = research
+
+	potential = {
+        exists = owner
+        NOT = { has_modifier = penal_colony }
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+	    OR = {
+            owner = { is_fallen_empire = yes }
+	        owner = { has_technology = "tech_master_archive" }
+	    }
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire = yes }
+		}
+		job_fe_archivist_add = 10
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			    is_fallen_empire = no
+			    is_regular_empire = yes
+            }
+		}
+		modifier = {
+			job_researcher_add = 5
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+			    is_fallen_empire = no
+			    is_regular_empire = yes
+            }
+		}
+		text = job_researcher_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			    is_fallen_empire = no
+			    is_hive_empire = yes
+            }
+		}
+		modifier = {
+			job_brain_drone_add = 5
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+			    is_fallen_empire = no
+			    is_hive_empire = yes
+            }
+		}
+		text = job_brain_drone_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			    is_fallen_empire = no
+			    is_machine_empire = yes
+            }
+		}
+		modifier = {
+			job_calculator_add = 5
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+			    is_fallen_empire = no
+			    is_machine_empire = yes
+            }
+		}
+		text = job_calculator_effect_desc
+	}
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 900
+			sr_dark_matter = 300
+		}
+		produces = {
+			physics_research = 100
+			society_research = 100
+			engineering_research = 100
+		}
+		upkeep = {
+			energy = 50
+		}
+	}
+}
+
+building_nano_forge = {
+	base_buildtime = 600
+	can_build = yes
+	can_demolish = yes
+
+	category = resource
+
+	potential = {
+        exists = owner
+        NOT = { has_modifier = penal_colony }
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+	    OR = {
+            owner = { is_fallen_empire = yes }
+	        owner = { has_technology = "tech_nano_forge" }
+	    }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			alloys = 25
+		}
+		cost = {
+			minerals = 900
+			sr_dark_matter = 300
+		}
+		upkeep = {
+			minerals = 50
+			energy = 10
+		}
+	}
+
+	on_queued = {
+		owner = {
+			subtract_variable = { which = nano_forge_build_count value = 1 }
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = { which = nano_forge_build_count value = 1 }
+		}
+	}
+}
+
+building_nourishment_center = {
+	base_buildtime = 600
+	can_build = yes
+	can_demolish = yes
+
+	category = resource
+
+	potential = {
+        exists = owner
+		owner = { country_uses_food = yes }
+        NOT = { has_modifier = penal_colony }
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+	    OR = {
+            owner = { is_fallen_empire = yes }
+	        owner = { has_technology = "tech_nourishment_center" }
+	    }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			food = 100
+		}
+		cost = {
+			minerals = 900
+			exotic_gases = 600
+		}
+		upkeep = {
+			energy = 25
+		}
+	}
+
+	on_queued = {
+		owner = {
+			subtract_variable = { which = nourishment_center_build_count value = 1 }
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = { which = nourishment_center_build_count value = 1 }
+		}
+	}
+}
+
 building_fe_stronghold = {
 	base_buildtime = 600
 	can_build = yes
@@ -681,6 +701,9 @@ building_fe_stronghold = {
 
 	potential = {
 		exists = owner
+        NOT = { has_modifier = penal_colony }
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
 	    OR = {
             owner = { is_fallen_empire = yes }
 	        owner = { has_technology = "tech_fe_stronghold" }
