@@ -75,7 +75,11 @@ country_event = {
             remove_trait = leader_trait_agrarian_upbringing
             remove_trait = leader_trait_intellectual
             remove_trait = leader_trait_environmental_engineer
+            remove_trait = leader_trait_bureaucrat
             remove_trait = leader_trait_righteous
+            remove_trait = leader_trait_enclave_trader
+            remove_trait = leader_trait_waste_management_specialist
+            remove_trait = leader_trait_nuumismatic_priest
 
             remove_trait = leader_trait_governor_erudite
             remove_trait = leader_trait_governor_cyborg
@@ -84,6 +88,7 @@ country_event = {
             remove_trait = leader_trait_governor_chosen
             remove_trait = leader_trait_governor_brainslug
             remove_trait = leader_trait_governor_gray
+            remove_trait = leader_trait_governor_oracle
 
             remove_trait = leader_trait_adaptable
             remove_trait = leader_trait_resilient
@@ -301,6 +306,42 @@ country_event = {
             country_event = { id = "pjs_custom_governors_event.31" }
         }
     }
+    option = {
+        name = "pjs_custom_governors_leader_trait_enclave_trader_NAME"
+        custom_tooltip = "pjs_custom_governors_leader_trait_enclave_trader_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = governor }
+                add_trait = leader_trait_enclave_trader
+            }
+            country_event = { id = "pjs_custom_governors_event.31" }
+        }
+    }
+    option = {
+        name = "pjs_custom_governors_leader_trait_waste_management_specialist_NAME"
+        custom_tooltip = "pjs_custom_governors_leader_trait_waste_management_specialist_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = governor }
+                add_trait = leader_trait_waste_management_specialist
+            }
+            country_event = { id = "pjs_custom_governors_event.31" }
+        }
+    }
+    option = {
+        name = "pjs_custom_governors_leader_trait_nuumismatic_priest_NAME"
+        custom_tooltip = "pjs_custom_governors_leader_trait_nuumismatic_priest_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = governor }
+                add_trait = leader_trait_nuumismatic_priest
+            }
+            country_event = { id = "pjs_custom_governors_event.31" }
+        }
+    }
 
 
     option = {
@@ -398,6 +439,18 @@ country_event = {
             every_owned_leader = {
                 limit = { leader_class = governor }
                 add_trait = leader_trait_governor_gray
+            }
+            country_event = { id = "pjs_custom_governors_event.32" }
+        }
+    }
+    option = {
+        name = "pjs_custom_governors_leader_trait_governor_oracle_NAME"
+        custom_tooltip = "pjs_custom_governors_leader_trait_governor_oracle_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = governor }
+                add_trait = leader_trait_governor_oracle
             }
             country_event = { id = "pjs_custom_governors_event.32" }
         }

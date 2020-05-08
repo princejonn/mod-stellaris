@@ -12,32 +12,41 @@
 
   ## General
 
-  pjs_custom_scientists_leader_trait_meticulous_NAME:0 "Meticulous"
+  pjs_custom_scientists_leader_trait_meticulous_NAME:0 "$leader_trait_meticulous$"
   pjs_custom_scientists_leader_trait_meticulous_DESC:0 "Anomaly chance §G+10%§!"
 
-  pjs_custom_scientists_leader_trait_spark_of_genius_NAME:0 "Spark of Genius"
+  pjs_custom_scientists_leader_trait_spark_of_genius_NAME:0 "$leader_trait_spark_of_genius$"
   pjs_custom_scientists_leader_trait_spark_of_genius_DESC:0 "Research speed §G+10%§!"
 
-  pjs_custom_scientists_leader_trait_carefree_NAME:0 "Carefree"
+  pjs_custom_scientists_leader_trait_carefree_NAME:0 "$leader_trait_carefree$"
   pjs_custom_scientists_leader_trait_carefree_DESC:0 "Anomaly research speed §G+35%§!"
 
-  pjs_custom_scientists_leader_trait_roamer_NAME:0 "Roamer"
+  pjs_custom_scientists_leader_trait_roamer_NAME:0 "$leader_trait_roamer$"
   pjs_custom_scientists_leader_trait_roamer_DESC:0 "Survey speed §G+25%§!"
 
-  pjs_custom_scientists_leader_trait_archaeologist_NAME:0 "Archaeologist"
+  pjs_custom_scientists_leader_trait_archaeologist_NAME:0 "$leader_trait_archaeologist$"
   pjs_custom_scientists_leader_trait_archaeologist_DESC:0 "Precursor research speed §G+5%§!"
 
-  pjs_custom_scientists_leader_trait_maniacal_NAME:0 "Maniacal"
+  pjs_custom_scientists_leader_trait_maniacal_NAME:0 "$leader_trait_maniacal$"
   pjs_custom_scientists_leader_trait_maniacal_DESC:0 "Research speed §G+5%§!"
 
-  pjs_custom_scientists_leader_trait_custom_AI_assistant_NAME:0 "Custom AI assistant"
+  pjs_custom_scientists_leader_trait_custom_AI_assistant_NAME:0 "$leader_trait_custom_AI_assistant$"
   pjs_custom_scientists_leader_trait_custom_AI_assistant_DESC:0 "Research speed §G+5%§!\nSurvey speed §G+10%§!\nAnomaly research speed §G+15%§!"
 
-  pjs_custom_scientists_leader_trait_sapient_AI_assistant_NAME:0 "Sapient AI assistant"
+  pjs_custom_scientists_leader_trait_sapient_AI_assistant_NAME:0 "$leader_trait_sapient_AI_assistant$"
   pjs_custom_scientists_leader_trait_sapient_AI_assistant_DESC:0 "Research speed §G+10%§!\nSurvey speed §G+20%§!\nAnomaly research speed §G+30%§!"
 
-  pjs_custom_scientists_leader_trait_towel_NAME:0 "Towel"
+  pjs_custom_scientists_leader_trait_towel_NAME:0 "$leader_trait_towel$"
   pjs_custom_scientists_leader_trait_towel_DESC:0 "Survey speed §G+40%§!"
+
+  pjs_custom_scientists_leader_trait_inspired_archaeologist_NAME:0 "$leader_trait_inspired_archaeologist$"
+  pjs_custom_scientists_leader_trait_inspired_archaeologist_DESC:0 "Archaeological site excavation speed §G+30%§!"
+
+  pjs_custom_scientists_leader_trait_inspired_researcher_NAME:0 "$leader_trait_inspired_researcher$"
+  pjs_custom_scientists_leader_trait_inspired_researcher_DESC:0 "Technology research speed §G+10%§!"
+
+  pjs_custom_scientists_leader_trait_inspired_surveyor_NAME:0 "$leader_trait_inspired_surveyor$"
+  pjs_custom_scientists_leader_trait_inspired_surveyor_DESC:0 "Anomaly research speed §G+10%§!"
 
   ## Expertise
 

@@ -8,6 +8,7 @@ col_ring_arms_industry = {
 
 	planet_modifier = {
         planet_district_rw_arms_industry_build_speed_mult = 0.25
+        planet_metallurgists_produces_mult = 0.15
 	}
 
 	weight_modifier = {
@@ -33,6 +34,7 @@ col_ring_bureaucracy = {
 
 	planet_modifier = {
 		planet_district_rw_bureaucracy_build_speed_mult = 0.25
+        planet_bureaucrats_produces_mult = 0.15
 	}
 
 	weight_modifier = {
@@ -59,6 +61,7 @@ col_ring_civilian_industry = {
 
 	planet_modifier = {
 		planet_district_rw_civilian_industry_build_speed_mult = 0.25
+        planet_artisans_produces_mult = 0.15
 	}
 
 	weight_modifier = {
@@ -90,6 +93,42 @@ col_ring_culture = {
 		planet_district_rw_culture_build_speed_mult = 0.25
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			    is_gestalt = no
+			    is_spiritualist = no
+            }
+		}
+		modifier = {
+            planet_culture_workers_produces_mult = 0.15
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			    is_gestalt = no
+			    is_spiritualist = yes
+			}
+		}
+		modifier = {
+            planet_priests_produces_mult = 0.15
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+            planet_evaluators_produces_mult = 0.15
+		}
+	}
+
 	weight_modifier = {
 		base = 10
 		modifier = {
@@ -113,6 +152,9 @@ col_ring_refinery = {
 
 	planet_modifier = {
 		planet_district_rw_refinery_build_speed_mult = 0.25
+		planet_refiners_produces_mult = 0.15
+        planet_translucers_produces_mult = 0.15
+        planet_chemists_produces_mult = 0.15
 	}
 
 	weight_modifier = {

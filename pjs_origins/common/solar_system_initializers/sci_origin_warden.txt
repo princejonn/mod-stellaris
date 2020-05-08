@@ -197,7 +197,7 @@ sci_origin_warden = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { start_warden_zero ignore_startup_effect rw_spec_science }
+        flags = { start_warden_zero ignore_startup_effect decision_rw_spec_bureaucracy }
 
         starting_planet = yes
 
@@ -253,7 +253,7 @@ sci_origin_warden = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { start_warden_two rw_spec_arms_industry }
+        flags = { start_warden_two rw_spec_culture }
 
 		init_effect = {
 			prevent_anomaly = yes

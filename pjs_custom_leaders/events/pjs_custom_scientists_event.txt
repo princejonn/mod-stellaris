@@ -337,6 +337,42 @@ country_event = {
             country_event = { id = "pjs_custom_scientists_event.31" }
         }
     }
+    option = {
+        name = "pjs_custom_scientists_leader_trait_inspired_archaeologist_NAME"
+        custom_tooltip = "pjs_custom_scientists_leader_trait_inspired_archaeologist_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = scientist }
+                add_trait = leader_trait_inspired_archaeologist
+            }
+            country_event = { id = "pjs_custom_scientists_event.31" }
+        }
+    }
+    option = {
+        name = "pjs_custom_scientists_leader_trait_inspired_researcher_NAME"
+        custom_tooltip = "pjs_custom_scientists_leader_trait_inspired_researcher_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = scientist }
+                add_trait = leader_trait_inspired_researcher
+            }
+            country_event = { id = "pjs_custom_scientists_event.31" }
+        }
+    }
+    option = {
+        name = "pjs_custom_scientists_leader_trait_inspired_surveyor_NAME"
+        custom_tooltip = "pjs_custom_scientists_leader_trait_inspired_surveyor_DESC"
+
+        hidden_effect = {
+            every_owned_leader = {
+                limit = { leader_class = scientist }
+                add_trait = leader_trait_inspired_surveyor
+            }
+            country_event = { id = "pjs_custom_scientists_event.31" }
+        }
+    }
 
     option = {
         name = "pjs_custom_leaders_option_back"

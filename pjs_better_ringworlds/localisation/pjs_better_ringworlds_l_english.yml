@@ -62,20 +62,24 @@
   district_rw_arms_industry:0 "Foundry Segment"
   district_rw_arms_industry_plural:0 "Foundry Segments"
   district_rw_arms_industry_desc:0 "Geared towards military industries, this ringworld district is filled with the roar of smelters and the clang of metallurgies."
+  mod_planet_district_rw_arms_industry_build_speed_mult:0 "$district_rw_arms_industry$ Build Speed"
 
   ## TODO: Rename to district_rw_empire at 2.7
   district_rw_bureaucracy:0 "Empire Segment"
   district_rw_bureaucracy_plural:0 "Empire Segments"
   district_rw_bureaucracy_desc:0 "This segment is geared towards the running of the empire."
+  mod_planet_district_rw_bureaucracy_build_speed_mult:0 "$district_rw_bureaucracy$ Build Speed"
 
   district_rw_civilian_industry:0 "Industrial Segment"
   district_rw_civilian_industry_plural:0 "Industrial Segments"
   district_rw_civilian_industry_desc:0 "Workshops filled with artisans and civilian industries line the stacked streets of this district."
+  mod_planet_district_rw_civilian_industry_build_speed_mult:0 "$district_rw_civilian_industry$ Build Speed"
 
   ## TODO: Rename to district_rw_unity at 2.7
   district_rw_culture:0 "Unity Segment"
   district_rw_culture_plural:0 "Unity Segments"
   district_rw_culture_desc:0 "This segment is geared towards making the empire unified."
+  mod_planet_district_rw_culture_build_speed_mult:0 "$district_rw_culture$ Build Speed"
 
   district_rw_science:0 "Research Segment"
   district_rw_science_plural:0 "Research Segments"
@@ -84,6 +88,7 @@
   district_rw_refinery:0 "Refinery Segment"
   district_rw_refinery_plural:0 "Refinery Segments"
   district_rw_refinery_desc:0 "Refineries and Synthetic Plants of all kinds fill this Ring World segment."
+  mod_planet_district_rw_refinery_build_speed_mult:0 "$district_rw_refinery$ Build Speed"
 
   ## Static Modifiers
 

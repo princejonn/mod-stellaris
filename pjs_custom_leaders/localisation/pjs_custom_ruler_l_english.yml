@@ -56,35 +56,41 @@
 
   ## Military
 
-  pjs_custom_ruler_trait_ruler_corvette_focus_NAME:0 "Corvette Focus"
+  pjs_custom_ruler_trait_ruler_corvette_focus_NAME:0 "$trait_ruler_corvette_focus$"
   pjs_custom_ruler_trait_ruler_corvette_focus_DESC:0 "Corvette cost §G-20%§!"
 
-  pjs_custom_ruler_trait_ruler_destroyer_focus_NAME:0 "Destroyer Focus"
+  pjs_custom_ruler_trait_ruler_destroyer_focus_NAME:0 "$trait_ruler_destroyer_focus$"
   pjs_custom_ruler_trait_ruler_destroyer_focus_DESC:0 "Destroyer cost §G-20%§!"
 
-  pjs_custom_ruler_trait_ruler_cruiser_focus_NAME:0 "Cruiser Focus"
+  pjs_custom_ruler_trait_ruler_cruiser_focus_NAME:0 "$trait_ruler_cruiser_focus$"
   pjs_custom_ruler_trait_ruler_cruiser_focus_DESC:0 "Cruiser cost §G-20%§!"
 
-  pjs_custom_ruler_trait_ruler_battleship_focus_NAME:0 "Battleship Focus"
+  pjs_custom_ruler_trait_ruler_battleship_focus_NAME:0 "$trait_ruler_battleship_focus$"
   pjs_custom_ruler_trait_ruler_battleship_focus_DESC:0 "Battleship cost §G-20%§!"
 
-  pjs_custom_ruler_trait_ruler_recruiter_NAME:0 "Recruiter"
+  pjs_custom_ruler_trait_ruler_recruiter_NAME:0 "$trait_ruler_recruiter$"
   pjs_custom_ruler_trait_ruler_recruiter_DESC:0 "Army build speed §G+50%§! Army cost §G-20%§!"
 
-  pjs_custom_ruler_trait_ruler_from_the_ranks_NAME:0 "Ruler from the Ranks"
+  pjs_custom_ruler_trait_ruler_from_the_ranks_NAME:0 "$trait_ruler_from_the_ranks$"
   pjs_custom_ruler_trait_ruler_from_the_ranks_DESC:0 "Army morale §G+20%§! Army Experience gain §G+33%§!"
 
-  pjs_custom_ruler_trait_ruler_fortifier_NAME:0 "Fortifier"
+  pjs_custom_ruler_trait_ruler_fortifier_NAME:0 "$trait_ruler_fortifier$"
   pjs_custom_ruler_trait_ruler_fortifier_DESC:0 "Starbase upgrade cost §G-10%§! Military Station cost §G-33%§!"
 
-  pjs_custom_ruler_trait_ruler_logistic_understanding_NAME:0 "Logistic Understanding"
+  pjs_custom_ruler_trait_ruler_logistic_understanding_NAME:0 "$trait_ruler_logistic_understanding$"
   pjs_custom_ruler_trait_ruler_logistic_understanding_DESC:0 "Ship upkeep §G-5%§! Army upkeep §G-10%§!"
 
-  pjs_custom_ruler_trait_ruler_military_pioneer_NAME:0 "Military Pioneer"
+  pjs_custom_ruler_trait_ruler_military_pioneer_NAME:0 "$trait_ruler_military_pioneer$"
   pjs_custom_ruler_trait_ruler_military_pioneer_DESC:0 "Ship upgrade cost §G-10%§! Shipyard build cost §G-10%§!"
 
-  pjs_custom_ruler_trait_ruler_warlike_NAME:0 "Warlike"
+  pjs_custom_ruler_trait_ruler_warlike_NAME:0 "$trait_ruler_warlike$"
   pjs_custom_ruler_trait_ruler_warlike_DESC:0 "Weapon damage §G+5%§! Army damage §G+5%§!"
+
+  pjs_custom_ruler_leader_trait_fleet_organizer_NAME:0 "$leader_trait_fleet_organizer$"
+  pjs_custom_ruler_leader_trait_fleet_organizer_DESC:0 "Naval cap §G+15%§!"
+
+  pjs_custom_ruler_leader_trait_reformer_NAME:0 "$leader_trait_reformer$"
+  pjs_custom_ruler_leader_trait_reformer_DESC:0 "Unity §G+10%§!"
 
   ## Special
 

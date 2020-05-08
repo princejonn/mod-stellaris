@@ -22,7 +22,7 @@ sci_origin_warden_gamma = {
 	change_orbit = 45
 
 	planet = {
-		name = "Beta B-00"
+		name = "Gamma G-00"
 		class = "pc_ringworld_habitable"
 		orbit_angle = 30
 		orbit_distance = 0
@@ -36,7 +36,7 @@ sci_origin_warden_gamma = {
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 
-            add_building = building_dimensional_fabricator
+            add_building = building_class_4_singularity
 
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2
@@ -60,7 +60,7 @@ sci_origin_warden_gamma = {
 		orbit_distance = 0
 	}
 	planet = {
-		name = "Beta B-01"
+		name = "Gamma G-01"
 		class = "pc_ringworld_habitable"
 		orbit_angle = 30
 		orbit_distance = 0
@@ -99,13 +99,13 @@ sci_origin_warden_gamma = {
 		}
 	}
 	planet = {
-		name = "Beta B-02"
+		name = "Gamma G-02"
 		class = "pc_ringworld_habitable"
 		orbit_angle = 30
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
-        flags = { rw_spec_arms_industry }
+        flags = { rw_spec_refinery }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
@@ -133,13 +133,13 @@ sci_origin_warden_gamma = {
 		orbit_distance = 0
 	}
 	planet = {
-		name = "Beta B-03"
+		name = "Gamma G-03"
 		class = "pc_ringworld_habitable"
 		orbit_angle = 30
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
-        flags = { rw_spec_arms_industry }
+        flags = { rw_spec_refinery }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
@@ -148,7 +148,7 @@ sci_origin_warden_gamma = {
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
 
-            add_building = building_class_4_singularity
+            add_building = building_dimensional_fabricator
 
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2
