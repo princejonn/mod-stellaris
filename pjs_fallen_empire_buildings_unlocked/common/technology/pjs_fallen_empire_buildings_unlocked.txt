@@ -11,6 +11,8 @@ tech_class_4_singularity = {
         "tech_titans"
         "tech_mega_engineering"
         "tech_ascension_theory"
+        "tech_power_plant_4"
+        "tech_power_hub_2"
 	}
 
 	prereqfor_desc = {
@@ -64,6 +66,8 @@ tech_dimensional_fabricator = {
         "tech_titans"
         "tech_mega_engineering"
         "tech_ascension_theory"
+        "tech_mining_3"
+        "tech_mineral_purification_2"
 	}
 
 	prereqfor_desc = {
@@ -113,8 +117,12 @@ tech_nourishment_center = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_class_4_singularity"
-        "tech_dimensional_fabricator"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+        "tech_nutrient_replication"
+        "tech_food_processing_2"
 	}
 
 	potential = {
@@ -168,8 +176,11 @@ tech_affluence_center = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_class_4_singularity"
-        "tech_dimensional_fabricator"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+        "tech_luxuries_1"
 	}
 
 	potential = {
@@ -223,10 +234,11 @@ tech_nano_forge = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_class_4_singularity"
-        "tech_dimensional_fabricator"
-        "tech_nourishment_center"
-        "tech_affluence_center"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+        "tech_alloys_2"
 	}
 
 	prereqfor_desc = {
@@ -276,11 +288,12 @@ tech_master_archive = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_affluence_center"
-        "tech_nourishment_center"
-        "tech_dimensional_fabricator"
-        "tech_class_4_singularity"
-        "tech_nano_forge"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+        "tech_basic_science_lab_3"
+        "tech_global_research_initiative"
 	}
 
 	prereqfor_desc = {
@@ -384,11 +397,10 @@ tech_augural_manufactory = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_affluence_center"
-        "tech_nourishment_center"
-        "tech_dimensional_fabricator"
-        "tech_class_4_singularity"
-        "tech_nano_forge"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
 	}
 
 	prereqfor_desc = {
@@ -438,11 +450,10 @@ tech_germination_replicator = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_affluence_center"
-        "tech_nourishment_center"
-        "tech_dimensional_fabricator"
-        "tech_class_4_singularity"
-        "tech_nano_forge"
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
 	}
 
 	weight_modifier = {

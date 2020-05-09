@@ -12,13 +12,13 @@ col_ring_arms_industry = {
 	}
 
 	weight_modifier = {
-		base = 10
 		modifier = {
-			add = 5
+			add = 300
 			has_designation = col_ring_arms_industry
 		}
 		modifier = {
-			add = 6
+			add = 400
+			is_capital = no
 			num_districts = { type = district_rw_arms_industry value >= 2 }
 		}
 	}
@@ -38,13 +38,13 @@ col_ring_bureaucracy = {
 	}
 
 	weight_modifier = {
-		base = 10
 		modifier = {
-			add = 5
+			add = 300
 			has_designation = col_ring_bureaucracy
 		}
 		modifier = {
-			add = 6
+			add = 400
+			is_capital = no
 			num_districts = { type = district_rw_bureaucracy value >= 2 }
 		}
 	}
@@ -65,13 +65,13 @@ col_ring_civilian_industry = {
 	}
 
 	weight_modifier = {
-		base = 10
 		modifier = {
-			add = 5
+			add = 300
 			has_designation = col_ring_civilian_industry
 		}
 		modifier = {
-			add = 6
+			add = 400
+			is_capital = no
 			num_districts = { type = district_rw_civilian_industry value >= 2 }
 		}
 	}
@@ -130,13 +130,13 @@ col_ring_culture = {
 	}
 
 	weight_modifier = {
-		base = 10
 		modifier = {
-			add = 5
+			add = 300
 			has_designation = col_ring_culture
 		}
 		modifier = {
-			add = 6
+			add = 400
+			is_capital = no
 			num_districts = { type = district_rw_culture value >= 2 }
 		}
 	}
@@ -158,13 +158,13 @@ col_ring_refinery = {
 	}
 
 	weight_modifier = {
-		base = 10
 		modifier = {
-			add = 5
+			add = 300
 			has_designation = col_ring_refinery
 		}
 		modifier = {
-			add = 6
+			add = 400
+			is_capital = no
 			num_districts = { type = district_rw_refinery value >= 2 }
 		}
 	}

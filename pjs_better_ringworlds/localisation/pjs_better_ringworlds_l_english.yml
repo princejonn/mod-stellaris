@@ -106,19 +106,22 @@
   tech_rw_buildings:0 "$decision_rw_buildings$"
   tech_rw_buildings_desc:0 "$decision_rw_buildings_desc$"
 
-  tech_rw_spec_arms_industry:0 "Foundry Segments"
+  tech_rw_spec_arms_industry:0 "$district_rw_arms_industry_plural$"
   tech_rw_spec_arms_industry_desc:0 "$decision_rw_spec_arms_industry_desc$"
 
   ## TODO: Rename to tech_rw_spec_empire at 2.7
-  tech_rw_spec_bureaucracy:0 "Empire Segments"
+  tech_rw_spec_bureaucracy:0 "$district_rw_bureaucracy_plural$"
   tech_rw_spec_bureaucracy_desc:0 "$decision_rw_spec_bureaucracy_desc$"
 
-  tech_rw_spec_civilian_industry:0 "Industry Segments"
+  tech_rw_spec_civilian_industry:0 "$district_rw_civilian_industry_plural$"
   tech_rw_spec_civilian_industry_desc:0 "$decision_rw_spec_civilian_industry_desc$"
 
   ## TODO: Rename to tech_rw_spec_unity at 2.7
-  tech_rw_spec_culture:0 "Unity Segments"
+  tech_rw_spec_culture:0 "$district_rw_culture$"
   tech_rw_spec_culture_desc:0 "$decision_rw_spec_culture_desc$"
 
-  tech_rw_spec_science:0 "Science Segments"
+  tech_rw_spec_refinery:0 "$district_rw_refinery_plural$"
+  tech_rw_spec_refinery_desc:0 "$decision_rw_spec_science_desc$"
+
+  tech_rw_spec_science:0 "$district_rw_science_plural$"
   tech_rw_spec_science_desc:0 "$decision_rw_spec_science_desc$"
