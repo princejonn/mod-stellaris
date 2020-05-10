@@ -1,0 +1,36 @@
+introspection_drone = {
+	category = simple_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_introspection_center
+	is_capped_by_modifier = yes
+	can_set_priority = no
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			engineering_research = 1
+			unity = 1
+		}
+		upkeep = {
+		    energy = 4
+		}
+	}
+
+	possible = {
+		exists = owner
+		owner = { is_machine_empire = yes }
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	weight = { weight = 900 }
+}

@@ -64,12 +64,8 @@
   d_living_metal_mine_3:0 "$d_living_metal_mine_1$"
   d_living_metal_mine_3_desc:0 "$d_living_metal_mine_1_desc$"
 
-  d_nanites_mine_1:0 "Nanites Deposit"
-  d_nanites_mine_1_desc:0 "There is an exploitable source of nanites nearby, enabling you to build a special building."
-  d_nanites_mine_2:0 "$d_nanites_mine_1$"
-  d_nanites_mine_2_desc:0 "$d_nanites_mine_1_desc$"
-  d_nanites_mine_3:0 "$d_nanites_mine_1$"
-  d_nanites_mine_3_desc:0 "$d_nanites_mine_1_desc$"
+  d_nanites_mine:0 "Nanites Deposit"
+  d_nanites_mine_desc:0 "There is an exploitable source of nanites nearby, enabling you to build a special building."
 
   d_former_precursor_battlefield:0 "Former Precursor Battlefield"
   d_former_precursor_battlefield_desc:0 "Tens of thousands of burnt warmachines and the twisted skeletal remains of organic soldiers litter the ground at this former battlefield. Residual pockets of radiation interferes with most electronics."
@@ -86,6 +82,14 @@
   d_zro_mine_2_desc:0 "$d_zro_mine_1_desc$"
   d_zro_mine_3:0 "$d_zro_mine_1$"
   d_zro_mine_3_desc:0 "$d_zro_mine_1_desc$"
+
+  ## Districts
+
+  mod_planet_district_nexus_build_speed_mult:0 "$district_nexus$ Build Speed"
+  mod_planet_district_hive_build_speed_mult:0 "$district_hive$ Build Speed"
+  mod_planet_district_farming_uncapped_build_speed_mult:0 "Uncapped $district_farming_uncapped$ Build Speed"
+  mod_planet_district_generator_uncapped_build_speed_mult:0 "Uncapped $district_generator_uncapped$ Build Speed"
+  mod_planet_district_mining_uncapped_build_speed_mult:0 "Uncapped $district_mining_uncapped$ Build Speed"
 
   ## Jobs
 

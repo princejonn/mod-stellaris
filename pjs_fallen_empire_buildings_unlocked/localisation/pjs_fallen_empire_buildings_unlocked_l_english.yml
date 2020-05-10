@@ -8,23 +8,41 @@
   building_germination_replicator:0 "Germination Replicator"
   building_germination_replicator_desc:0 "How this replicator works is, to the common person, basically magic. None but a select few understand the inner workings of the replicator."
 
+  building_introspection_center:0 "Introspection Center"
+  building_introspection_center_desc:0 "Houses a multitude of ports for drones to perform introspection protocols."
+
   building_utopian_paradise_dome:0 "Utopian Paradise Dome"
   building_utopian_paradise_dome_desc:0 "A utopia maintained and supplied with extremely advanced technology. Inhabitants live in utter luxury - to the envy of our entire empire. Luckily, the dome is able to supply amenities for more than its inhabitants."
 
   ## Pop Categories
 
-  pop_cat_utopian_hedonist:0 "Hedonist"
-  pop_cat_utopian_hedonist_plural:0 "Hedonists"
+  pop_cat_utopian_hedonist:0 "$job_utopian_hedonist$"
+  pop_cat_utopian_hedonist_plural:0 "$job_utopian_hedonist_plural$"
   mod_pop_utopian_hedonist_political_power:0 "$pop_cat_utopian_hedonist$ Political Power"
   mod_pop_utopian_hedonist_happiness:0 "$pop_cat_utopian_hedonist$ Happiness"
-  pop_cat_utopian_hedonist_desc:0 "The dominant species in the empire, these hedonists live among technological marvels that the other races can only dream of."
+  pop_cat_utopian_hedonist_desc:0 "$job_utopian_hedonist_desc$"
+
+  pop_cat_introspection_drone:0 "$job_introspection_drone$"
+  pop_cat_introspection_drone_plural:0 "$job_introspection_drone_plural$"
+  mod_pop_introspection_drone_political_power:0 "$pop_cat_introspection_drone$ Political Power"
+  mod_pop_introspection_drone_happiness:0 "$pop_cat_introspection_drone$ Happiness"
+  pop_cat_introspection_drone_desc:0 "$job_introspection_drone_desc$"
 
   ## Pop Jobs
 
   job_utopian_hedonist:0 "$job_fe_hedonist$"
   job_utopian_hedonist_plural:0 "$job_fe_hedonist_plural$"
   job_utopian_hedonist_desc:0 "$job_fe_hedonist_desc$"
-  mod_job_utopian_hedonist_add:0 "$mod_job_fe_hedonist_add$"
+  mod_job_utopian_hedonist_add:0 "$job_utopian_hedonist$ Jobs"
+  mod_job_utopian_hedonist_per_pop:0 "§G+1§! $job_utopian_hedonist$ Job per $VALUE$ Pops"
+  mod_job_utopian_hedonist_per_pop_short:0 "\n§G+1§! £mod_job_utopian_hedonist_add£ per $VALUE$ £pop£"
+
+  job_introspection_drone:0 "Introspection Drone"
+  job_introspection_drone_plural:0 "Introspection Drones"
+  job_introspection_drone_desc:0 "These drones are assigned to spend all time in introspection mode to further the needs of the empire."
+  mod_job_introspection_drone_add:0 "$job_introspection_drone$ Jobs"
+  mod_job_introspection_drone_per_pop:0 "§G+1§! $job_introspection_drone$ Job per $VALUE$ Pops"
+  mod_job_introspection_drone_per_pop_short:0 "\n§G+1§! £mod_job_introspection_drone_add£ per $VALUE$ £pop£"
 
   ## Technology
 
@@ -55,8 +73,11 @@
   tech_germination_replicator:0 "$building_germination_replicator$"
   tech_germination_replicator_desc:0 "$building_germination_replicator_desc$"
 
-  tech_utopian_paradise_dome:0 "Utopian Architecture"
-  tech_utopian_paradise_dome_desc:0 "With the latest advances in architecture, landscaping and holographic technology, we shall build the homes of the future."
+  tech_introspection_center:0 "$building_introspection_center$"
+  tech_introspection_center_desc:0 "$building_introspection_center_desc$"
+
+  tech_utopian_paradise_dome:0 "$building_utopian_paradise_dome$"
+  tech_utopian_paradise_dome_desc:0 "$building_utopian_paradise_dome_desc$"
 
   ## Technology Unlock Description
 
@@ -83,6 +104,9 @@
 
   TECH_UNLOCK_AUGURAL_MANUFACTORY_TITLE:0 "§HUnlocks Building:§! $building_augural_manufactory$"
   TECH_UNLOCK_AUGURAL_MANUFACTORY_DESC:0 "$building_augural_manufactory_desc$"
+
+  TECH_UNLOCK_INTROSPECTION_CENTER_TITLE:0 "§HUnlocks Building:§! $building_introspection_center$"
+  TECH_UNLOCK_INTROSPECTION_CENTER_DESC:0 "$building_introspection_center_desc$"
 
   TECH_UNLOCK_UTOPIAN_PARADISE_DOME_TITLE:0 "§HUnlocks Building:§! $building_utopian_paradise_dome$"
   TECH_UNLOCK_UTOPIAN_PARADISE_DOME_DESC:0 "$building_utopian_paradise_dome_desc$"

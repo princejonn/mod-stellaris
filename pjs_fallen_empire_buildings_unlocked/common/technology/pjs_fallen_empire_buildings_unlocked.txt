@@ -507,20 +507,13 @@ tech_utopian_paradise_dome = {
 		is_regular_empire = yes
     }
 
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_UTOPIAN_PARADISE_DOME_TITLE"
-			desc = "TECH_UNLOCK_UTOPIAN_PARADISE_DOME_DESC"
-		}
-	}
-
 	weight_modifier = {
         modifier = {
             factor = 0
             end_game_years_passed < 20
             NOT = {
                 any_owned_planet = {
-                    has_building = building_utopian_paradise_dome
+                    has_building = building_fe_dome
                 }
             }
         }
@@ -537,7 +530,57 @@ tech_utopian_paradise_dome = {
             factor = 0.1
             mid_game_years_passed > 0
             any_owned_planet = {
-                has_building = building_utopian_paradise_dome
+                has_building = building_fe_dome
+            }
+        }
+	}
+
+	ai_weight = { weight = 1000 }
+}
+
+tech_introspection_center = {
+    area = society
+    cost = 300000
+    tier = 5
+    weight = 1
+    category = { statecraft }
+    is_rare = yes
+
+	prerequisites = {
+        "tech_gateway_construction"
+        "tech_titans"
+        "tech_mega_engineering"
+        "tech_ascension_theory"
+	}
+
+    potential = {
+		is_machine_empire = yes
+    }
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 20
+            NOT = {
+                any_owned_planet = {
+                    has_building = building_fe_dome
+                }
+            }
+        }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = society
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
+        modifier = {
+            factor = 0.1
+            mid_game_years_passed > 0
+            any_owned_planet = {
+                has_building = building_fe_dome
             }
         }
 	}

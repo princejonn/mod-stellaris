@@ -12,7 +12,6 @@ decision_planet_build_speed = {
 	    NOT = { has_planet_flag = planet_build_speed }
         NOR = {
             is_planet_class = pc_city
-            is_planet_class = pc_machine
             is_planet_class = pc_ringworld_habitable
             is_planet_class = pc_cybrex
             is_planet_class = pc_habitat

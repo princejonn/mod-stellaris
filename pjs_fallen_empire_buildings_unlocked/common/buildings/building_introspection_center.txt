@@ -1,4 +1,4 @@
-building_utopian_paradise_dome = {
+building_introspection_center = {
 	base_buildtime = 600
 	can_build = yes
 	can_demolish = yes
@@ -12,8 +12,8 @@ building_utopian_paradise_dome = {
 
 	planet_modifier = {
 		planet_housing_add = 20
-		planet_amenities_add = 20
-        job_utopian_hedonist_add = 40
+		planet_amenities_no_happiness_add = 20
+        job_introspection_drone_add = 40
 	}
 
 	resources = {
@@ -28,6 +28,6 @@ building_utopian_paradise_dome = {
 	}
 
 	prerequisites = {
-		"tech_utopian_paradise_dome"
+		"tech_introspection_center"
 	}
 }

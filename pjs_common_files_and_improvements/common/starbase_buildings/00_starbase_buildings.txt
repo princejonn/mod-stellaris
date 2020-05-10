@@ -33,6 +33,7 @@ hydroponics_bay = {
 	potential = {
 		exists = owner
 		owner = { has_technology = "tech_hydroponics" }
+        owner = { country_uses_food = yes }
 	}
 
 	resources = {
@@ -190,6 +191,7 @@ offworld_trading_company = {
 			has_technology = tech_space_trading
 			is_gestalt = no
 		}
+		has_starbase_module = trading_hub
 	}
 
 	possible = {
@@ -197,7 +199,6 @@ offworld_trading_company = {
 			fail_text = "requires_starport"
 			has_starbase_size >= starbase_starport
 		}
-		has_starbase_module = trading_hub
 	}
 
 	resources = {
@@ -319,9 +320,6 @@ fleet_academy = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_interstellar_fleet_traditions }
-	}
-
-	possible = {
 		has_starbase_module = shipyard
 	}
 
@@ -363,9 +361,6 @@ naval_logistics_office = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_interstellar_fleet_traditions }
-	}
-
-	possible = {
 		has_starbase_module = anchorage
 	}
 
@@ -404,6 +399,7 @@ titan_yards = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_titans }
+		has_starbase_module = shipyard
 	}
 
 	possible = {
@@ -411,7 +407,6 @@ titan_yards = {
 			fail_text = "requires_citadel"
 			has_starbase_size >= starbase_citadel
 		}
-		has_starbase_module = shipyard
 	}
 
 	resources = {
@@ -453,6 +448,7 @@ colossus_yards = {
 				has_technology = tech_juggernaut
 			}
 		}
+		has_starbase_module = shipyard
 	}
 
 	possible = {
@@ -460,7 +456,6 @@ colossus_yards = {
 			fail_text = "requires_citadel"
 			has_starbase_size >= starbase_citadel
 		}
-		has_starbase_module = shipyard
 	}
 
 	resources = {
