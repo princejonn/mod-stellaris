@@ -105,6 +105,7 @@ Overwriting the following files:
 
 [list]
   [*] /common/buildings/10_deposit_buildings.txt
+  [*] /common/species_archetypes/00_species_archetypes.txt
   [*] /common/species_rights/01_living_standards.txt
   [*] /common/starbase_buildings/00_starbase_buildings.txt
 [/list]
