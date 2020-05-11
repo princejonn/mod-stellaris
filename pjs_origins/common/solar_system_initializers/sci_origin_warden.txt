@@ -197,7 +197,7 @@ sci_origin_warden = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { start_warden_zero ignore_startup_effect decision_rw_spec_bureaucracy }
+        flags = { start_warden_zero ignore_startup_effect decision_rw_spec_empire }
 
         starting_planet = yes
 
@@ -224,7 +224,7 @@ sci_origin_warden = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { start_warden_one rw_spec_bureaucracy }
+        flags = { start_warden_one rw_spec_empire }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -253,7 +253,7 @@ sci_origin_warden = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { start_warden_two rw_spec_culture }
+        flags = { start_warden_two rw_spec_unity }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -282,7 +282,7 @@ sci_origin_warden = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { start_warden_three rw_spec_culture }
+        flags = { start_warden_three rw_spec_unity }
 
 		init_effect = {
 			prevent_anomaly = yes

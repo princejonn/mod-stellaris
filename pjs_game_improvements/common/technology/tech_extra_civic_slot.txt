@@ -1,0 +1,30 @@
+tech_extra_civic_slot = {
+	cost = 30000
+	area = society
+	tier = 5
+	category = { statecraft }
+	prerequisites = { "tech_galactic_administration" }
+	weight = 15
+	icon = "tech_galactic_administration"
+
+	gateway = capital
+
+	modifier = {
+		country_government_civic_points_add = 1
+	}
+
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 40
+	}
+}

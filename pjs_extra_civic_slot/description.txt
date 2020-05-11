@@ -1,3 +1,0 @@
-Adds a tier 5 technology that will give you one extra civic slot, making it a total of 4 slots. The technology will start appearing 25 years after mid game.
-
-Please comment on the cost vs benefit and if you feel this is balanced or way overpowered.

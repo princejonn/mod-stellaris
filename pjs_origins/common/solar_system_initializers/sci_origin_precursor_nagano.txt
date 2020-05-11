@@ -100,7 +100,7 @@ sci_origin_precursor_nagano = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-		flags = { rw_spec_bureaucracy }
+		flags = { rw_spec_empire }
 
 		init_effect = {
 			prevent_anomaly = yes

@@ -1,0 +1,121 @@
+﻿l_english:
+
+  ## Colony Types
+
+  col_ring_arms_industry:0 "Foundry Ring World"
+  col_ring_arms_industry_desc:0 "A ring world that specializes in the ceaseless production of alloys"
+
+  col_ring_civilian_industry:0 "Industrial Ring World"
+  col_ring_civilian_industry_desc:0 "A ring world that specializes in the ceaseless production of consumer goods"
+
+  col_ring_empire:0 "Bureaucratic Ring World"
+  col_ring_empire_desc:0 "A ring world that specializes in bureaucracy"
+
+  col_ring_refinery:0 "Refinery Ring World"
+  col_ring_refinery_desc:0 "A ring world that specializes in refineries"
+
+  col_ring_unity:0 "Cultural Ring World"
+  col_ring_unity_desc:0 "A ring world that specializes in culture"
+
+  ## Decisions
+
+  decision_rw_districts:0 "Ring World Mastery"
+  decision_rw_districts_effects_short:0 "§EThis is a Decision that permanently increases the maximum number of districts a Ring World can support by §Y1§!. It can only be performed once on each ring world.§!"
+  decision_rw_districts_desc:0 "Our population requires room to grow and work, and so we shall expand our §YRing World§!."
+
+  decision_rw_buildings:0 "Ring World Templates"
+  decision_rw_buildings_effects_short:0 "§EThis is a Decision that permanently increases the maximum number of buildings a Ring World can support by §Y4§!. It can only be performed once on each ring world.§!"
+  decision_rw_buildings_desc:0 "Our population requires room to grow and work, and so we shall expand the amount of buildings we can build on our §YRing World§!."
+
+  decision_rw_remove_spec:0 "§HDismantle Ring World Specialization§!"
+  decision_rw_remove_spec_effects_short:0 "Remove the current specialization frameworks"
+  decision_rw_remove_spec_desc:0 "It is time for a fresh start."
+
+  decision_rw_spec_arms_industry:0 "§HSpecialize Ring World§! $district_rw_arms_industry_plural$"
+  decision_rw_spec_arms_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_arms_industry_plural$§!."
+  decision_rw_spec_arms_industry_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_arms_industry_plural$§!."
+
+  decision_rw_spec_civilian_industry:0 "§HSpecialize Ring World§! $district_rw_civilian_industry_plural$"
+  decision_rw_spec_civilian_industry_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_civilian_industry_plural$§!."
+  decision_rw_spec_civilian_industry_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_civilian_industry_plural$§!."
+
+  decision_rw_spec_empire:0 "§HSpecialize Ring World§! $district_rw_empire_plural$"
+  decision_rw_spec_empire_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_empire_plural$§!."
+  decision_rw_spec_empire_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_empire_plural$§!."
+
+  decision_rw_spec_refinery:0 "§HSpecialize Ring World§! $district_rw_refinery_plural$"
+  decision_rw_spec_refinery_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_refinery_plural$§!."
+  decision_rw_spec_refinery_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_refinery_plural$§!."
+
+  decision_rw_spec_science:0 "§HSpecialize Ring World§! $district_rw_science_plural$"
+  decision_rw_spec_science_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_science_plural$§!."
+  decision_rw_spec_science_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_science_plural$§!."
+
+  decision_rw_spec_unity:0 "§HSpecialize Ring World§! $district_rw_unity$"
+  decision_rw_spec_unity_effects_short:0 "Add the required frameworks for the ringworld to build §Y$district_rw_unity_plural$§!."
+  decision_rw_spec_unity_desc:0 "Finalizes the Ring World construction and adds the required framework modules to build specialized §Y$district_rw_unity_plural$§!."
+
+  ## Districts
+
+  district_rw_arms_industry:0 "Foundry Segment"
+  district_rw_arms_industry_plural:0 "Foundry Segments"
+  district_rw_arms_industry_desc:0 "Geared towards military industries, this ringworld district is filled with the roar of smelters and the clang of metallurgies."
+  mod_planet_district_rw_arms_industry_build_speed_mult:0 "$district_rw_arms_industry$ Build Speed"
+
+  district_rw_civilian_industry:0 "Industrial Segment"
+  district_rw_civilian_industry_plural:0 "Industrial Segments"
+  district_rw_civilian_industry_desc:0 "Workshops filled with artisans and civilian industries line the stacked streets of this district."
+  mod_planet_district_rw_civilian_industry_build_speed_mult:0 "$district_rw_civilian_industry$ Build Speed"
+
+  district_rw_empire:0 "Empire Segment"
+  district_rw_empire_plural:0 "Empire Segments"
+  district_rw_empire_desc:0 "This segment is geared towards the running of the empire."
+  mod_planet_district_rw_empire_build_speed_mult:0 "$district_rw_empire$ Build Speed"
+
+  district_rw_refinery:0 "Refinery Segment"
+  district_rw_refinery_plural:0 "Refinery Segments"
+  district_rw_refinery_desc:0 "Refineries and Synthetic Plants of all kinds fill this Ring World segment."
+  mod_planet_district_rw_refinery_build_speed_mult:0 "$district_rw_refinery$ Build Speed"
+
+  district_rw_science:0 "Research Segment"
+  district_rw_science_plural:0 "Research Segments"
+  district_rw_science_desc:0 "Research facilities of all kinds fill this Ring World segment."
+
+  district_rw_unity:0 "Unity Segment"
+  district_rw_unity_plural:0 "Unity Segments"
+  district_rw_unity_desc:0 "This segment is geared towards making the empire unified."
+  mod_planet_district_rw_unity_build_speed_mult:0 "$district_rw_unity$ Build Speed"
+
+  ## Static Modifiers
+
+  rw_districts:0 "$decision_rw_districts$"
+  rw_districts_desc:0 "$decision_rw_districts_desc$"
+
+  rw_buildings:0 "$decision_rw_buildings$"
+  rw_buildings_desc:0 "$decision_rw_buildings_desc$"
+
+  ## Technology
+
+  tech_rw_districts:0 "$decision_rw_districts$"
+  tech_rw_districts_desc:0 "$decision_rw_districts_desc$"
+
+  tech_rw_buildings:0 "$decision_rw_buildings$"
+  tech_rw_buildings_desc:0 "$decision_rw_buildings_desc$"
+
+  tech_rw_spec_arms_industry:0 "$district_rw_arms_industry_plural$"
+  tech_rw_spec_arms_industry_desc:0 "$decision_rw_spec_arms_industry_desc$"
+
+  tech_rw_spec_civilian_industry:0 "$district_rw_civilian_industry_plural$"
+  tech_rw_spec_civilian_industry_desc:0 "$decision_rw_spec_civilian_industry_desc$"
+
+  tech_rw_spec_empire:0 "$district_rw_empire_plural$"
+  tech_rw_spec_empire_desc:0 "$decision_rw_spec_empire_desc$"
+
+  tech_rw_spec_refinery:0 "$district_rw_refinery_plural$"
+  tech_rw_spec_refinery_desc:0 "$decision_rw_spec_science_desc$"
+
+  tech_rw_spec_science:0 "$district_rw_science_plural$"
+  tech_rw_spec_science_desc:0 "$decision_rw_spec_science_desc$"
+
+  tech_rw_spec_unity:0 "$district_rw_unity$"
+  tech_rw_spec_unity_desc:0 "$decision_rw_spec_unity_desc$"

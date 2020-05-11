@@ -1,3 +1,0 @@
-on_game_start = {
-	events = { pjs_better_ringworlds_global.1 }
-}

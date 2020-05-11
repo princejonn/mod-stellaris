@@ -1,0 +1,3 @@
+on_game_start = {
+	events = { pjs_fallen_empire_overhaul_global.1 }
+}

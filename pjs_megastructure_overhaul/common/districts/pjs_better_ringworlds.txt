@@ -1,0 +1,699 @@
+@rw_cost = 1000
+@rw_cost_sr = 100
+@rw_maintenance = 10
+@rw_maintenance_sr = 2
+@rw_district_buildtime = 600
+
+district_rw_arms_industry = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_arms_industry
+	}
+
+	potential = {
+	    exists = owner
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_arms_industry
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = @rw_cost
+			volatile_motes = @rw_cost_sr
+		}
+		upkeep = {
+			energy = @rw_maintenance
+			volatile_motes = @rw_maintenance_sr
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_foundry_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_foundry_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_fabricator_add = 20
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+        }
+        text = job_fabricator_effect_desc
+    }
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_alloy_drone_add = 20
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+        }
+        text = job_alloy_drone_effect_desc
+    }
+
+
+	ai_weight = {
+		weight = 0
+
+		modifier = {
+			weight = 250
+			planet = {
+				num_districts = { type = district_rw_arms_industry value < 1 }
+			}
+		}
+		modifier = {
+			weight = 250
+
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+	}
+}
+
+district_rw_civilian_industry = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		from = { country_uses_consumer_goods = yes }
+        is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_civilian_industry
+	}
+
+	potential = {
+	    exists = owner
+		owner = { country_uses_consumer_goods = yes }
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_civilian_industry
+	}
+
+	convert_to = {
+		district_rw_generator
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = @rw_cost
+			rare_crystals = @rw_cost_sr
+		}
+		upkeep = {
+			energy = @rw_maintenance
+			rare_crystals = @rw_maintenance_sr
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_artisan_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_artisan_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_artisan_drone_add = 20
+		}
+	}
+    triggered_desc = {
+        trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+        }
+        text = job_artisan_drone_effect_desc
+    }
+
+
+	ai_weight = {
+		weight = 0
+
+		modifier = {
+			weight = 250
+			planet = {
+				num_districts = { type = district_rw_civilian_industry value < 1 }
+			}
+		}
+		modifier = {
+			weight = 250
+
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+	}
+}
+
+district_rw_empire = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_empire
+	}
+
+	potential = {
+	    exists = owner
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_empire
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = @rw_cost
+			rare_crystals = @rw_cost_sr
+		}
+		upkeep = {
+			energy = @rw_maintenance
+			rare_crystals = @rw_maintenance_sr
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_bureaucrat_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_bureaucrat_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		    owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_coordinator_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		    owner = { is_machine_empire = yes }
+		}
+		text = job_coordinator_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		    owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		    owner = { is_hive_empire = yes }
+		}
+		text = job_synapse_drone_effect_desc
+	}
+
+
+	ai_weight = {
+		weight = 0
+
+		modifier = {
+			weight = 250
+			planet = {
+				num_districts = { type = district_rw_empire value < 1 }
+			}
+		}
+		modifier = {
+			weight = 250
+
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+	}
+}
+
+district_rw_refinery = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_refinery
+	}
+
+	potential = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_refinery
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = @rw_cost
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = 25
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_gas_refiner_add = 6
+			job_chemist_add = 6
+			job_translucer_add = 6
+			job_technician_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_gas_refiner_effect_desc
+		text = job_chemist_effect_desc
+		text = job_translucer_effect_desc
+		text = job_technician_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_gas_refiner_drone_add = 6
+			job_chemist_drone_add = 6
+			job_translucer_drone_add = 6
+			job_technician_drone_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_gas_refiner_drone_effect_desc
+		text = job_chemist_drone_effect_desc
+		text = job_translucer_drone_effect_desc
+		text = job_technician_drone_effect_desc
+	}
+
+
+    ai_weight = {
+        weight = 0
+
+        modifier = {
+            weight = 20000
+            owner = {
+                has_monthly_income = {
+                    resource = consumer_goods
+                    value > 50
+                }
+            }
+        }
+		modifier = {
+			weight = 250
+
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 50
+				}
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+    }
+}
+
+district_rw_science = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_science
+	}
+
+	potential = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_science
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = @rw_cost
+			exotic_gases = @rw_cost_sr
+		}
+		upkeep = {
+			energy = @rw_maintenance
+			exotic_gases = @rw_maintenance_sr
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_researcher_add = 20
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = 20
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_calculator_add = 20
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_brain_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_calculator_effect_desc
+	}
+
+    ai_weight = {
+        weight = 0
+
+        modifier = {
+            weight = 20000
+            owner = {
+                has_monthly_income = {
+                    resource = consumer_goods
+                    value > 50
+                }
+            }
+        }
+		modifier = {
+			weight = 250
+
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 50
+				}
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+    }
+}
+
+district_rw_unity = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_unity
+	}
+
+	potential = {
+	    exists = owner
+	    is_planet_class = pc_ringworld_habitable
+	    has_planet_flag = rw_spec_unity
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = @rw_cost
+			rare_crystals = @rw_cost_sr
+		}
+		upkeep = {
+			energy = @rw_maintenance
+			rare_crystals = @rw_maintenance_sr
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+    			is_regular_empire = yes
+			    is_spiritualist = no
+		    }
+		}
+		modifier = {
+			job_culture_worker_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+    			is_regular_empire = yes
+			    is_spiritualist = no
+		    }
+		}
+		text = job_culture_worker_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+    			is_regular_empire = yes
+			    is_spiritualist = yes
+		    }
+		}
+		modifier = {
+			job_priest_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+    			is_regular_empire = yes
+			    is_spiritualist = yes
+		    }
+		}
+		text = job_priest_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_evaluator_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_evaluator_effect_desc
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		    owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = 20
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		    owner = { is_hive_empire = yes }
+		}
+		text = job_synapse_drone_effect_desc
+	}
+
+
+	ai_weight = {
+		weight = 0
+
+		modifier = {
+			weight = 250
+			planet = {
+				num_districts = { type = district_rw_unity value < 1 }
+			}
+		}
+		modifier = {
+			weight = 250
+
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+	}
+}

@@ -1,3 +1,0 @@
-on_game_start = {
-	events = { pjs_fallen_empire_ships_unlocked_global.1 }
-}

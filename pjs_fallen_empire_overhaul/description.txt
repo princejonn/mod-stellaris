@@ -1,0 +1,95 @@
+Reaching endgame can become rather dull and boring on the research side. You keep researching those repeatable techs, with no end in sight. I set out to change that. It stands to reason that because the fallen empires exist, they were once young as we were. It also stands to reason they have technologies that we should be able to realize by ourselves.
+
+If you manager to conquer a world that already have these buildings, you will be able to research them a bit sooner.
+
+Only the most [b]Genius[/b] scientists will be able to unlock the secrets of these buildings...
+
+With this mod you get access to the fallen empire buildings, as well as some new that I have added.
+
+
+[h1]Building Technologies[/h1]
+These techs will start appearing after the end game has begun. It took the fallen empires thousands of years to reach their technology level. It's only reasonable it takes you at least a couple of hundred in comparison.
+[list]
+    [*] Affluence Center
+    [*] Nourishment Center
+    [*] Dimensional Fabricator
+    [*] Class 4 Singularity
+    [*] Nano Forge
+    [*] Master Archive
+    [*] Aegis Complex
+    [*] Augural Manufactory (new)
+    [*] Germination Replicator (new)
+    [*] Introspection Center (new)
+    [*] Utopian Paradise Dome (new)
+[/list]
+
+
+[h1]Augural Manufactory[/h1]
+Creates Dark Matter, Zro, and Living Metal.
+
+
+[h1]Augural Manufactory[/h1]
+Creates huge amounts of Volatile Motes, Exotic Gas, and Rare Crystals.
+
+
+[h1]Introspection Center[/h1]
+Adds housing, amenities, and Introspection Drone Jobs. (Machine Empires)
+
+
+[h1]Utopian Paradise Dome[/h1]
+Adds housing, amenities, and Utopian Hedonist Jobs. (Regular Empires)
+
+
+[h1]Ships[/h1]
+With this mod you get access to the fallen empire ships (or at least my versions of them, keeping them separate so as to not overwrite too many things - staying compatible). You will also have access to the fallen empire ship components. If you have Transendence you will also see some very interesting technologies appear as well.
+
+Only the most [b]Genius[/b] scientists will be able to unlock the secrets of these ships...
+
+
+[h1]Ship Technologies[/h1]
+These techs will start appearing after the end game has begun. It took the fallen empires thousands of years to reach their technology level. It's only reasonable it takes you at least a couple of hundred in comparison.
+[list]
+    [*] Component: Dark Matter Deflector
+    [*] Component: Dark Matter Power Core
+    [*] Component: Dark Matter Propulsion
+    [*] Component: Enigmatic Decoder
+    [*] Component: Enigmatic Encoder
+    [*] Component: Precognition Interface
+    [*] Component: PSI Jump Drive
+    [*] Component: Psionic Shield
+    [*] Ship Type: Escort
+    [*] Ship Type: Battlecruiser
+[/list]
+
+
+[h1]New Ships[/h1]
+[list]
+    [*] Escort (Corvette/Destroyer)
+    [*] Battlecruiser (Cruiser/Battleship)
+[/list]
+
+
+[h1]Graphical culture[/h1]
+Upon researching the three prerequisite technologies, you will be asked if you want to shift your graphical culture to one of the fallen empire graphical cultures instead. You can of course get them from species creation as well!
+
+As you can see in my screenshots, you can be of the Fallen Empire graphical culture from the beginning, but that does not mean you are forced to. You can have classic mammalian ships and only use the FE culture on the new ones.
+
+
+[h1]Building the new Ships[/h1]
+You will be able to build your ships if you have an Enigmatic Assembly Yard (new building added when you get Escort technology)
+
+
+[h1]I want even more mods to become a Fallen Empire![/h1]
+Check out my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1765455383]Collection[/url]
+
+
+[h1]Limitations[/h1]
+All future ships should have the new graphical culture, but no ships you have built so far will be changed. This is not intentional, but seems to be a result of either me not understanding the game code correctly, or a bug.
+
+
+[h1]I want even more mods to become a Fallen Empire![/h1]
+Check out my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1765455383]Collection[/url]
+
+
+[h1]Compability[/h1]
+I am overriding quite many fallen empire buildings, which will make the new Ancient Relics fallen empire building thing a bit wonky, but that's the price you pay to get access to all of the buildings in an infinite supply I guess :)
