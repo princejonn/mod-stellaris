@@ -1,6 +1,7 @@
 name="PJs :: Game Improvements"
 tags={
 	"PJs"
+	"Overhaul"
 }
 picture="thumbnail.png"
 version="1"

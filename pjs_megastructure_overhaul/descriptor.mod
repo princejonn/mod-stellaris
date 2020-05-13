@@ -1,4 +1,4 @@
-name="PJs :: Better Megastructures"
+name="PJs :: Megastructure Overhaul"
 tags={
 	"PJs"
 	"Balance"

@@ -4,7 +4,7 @@ origin_adrift = {
 	picture = GFX_origin_adrift
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	starting_colony = pc_nuked
 	initializers = { sci_origin_adrift }
@@ -32,7 +32,7 @@ origin_cradle_of_creation = {
 	picture = GFX_origin_cradle_of_creation
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	starting_colony = pc_gaia
 	initializers = { sci_origin_cradle_of_creation }
@@ -58,7 +58,7 @@ origin_envy = {
 	picture = GFX_origin_envy
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	initializers = { sci_origin_envy }
 	preferred_planet_class_neighbor = no
@@ -76,7 +76,7 @@ origin_hive_assimilator = {
 	picture = GFX_origin_hive_assimilator
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	playable = {
 		host_has_dlc = "Utopia"
@@ -102,7 +102,7 @@ origin_holy_terra = {
 	picture = GFX_origin_holy_terra
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	starting_colony = pc_city
 	initializers = { sci_origin_holy_terra }
@@ -130,7 +130,7 @@ origin_loved_by_the_void = {
 	picture = GFX_origin_loved_by_the_void
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	initializers = { sci_origin_loved_by_the_void }
 	preferred_planet_class_neighbor = no
@@ -148,7 +148,7 @@ origin_precursor = {
 	picture = GFX_origin_precursor
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	starting_colony = pc_city
 	initializers = { sci_origin_precursor }
@@ -176,7 +176,7 @@ origin_solio_aeternitatis = {
 	picture = GFX_origin_solio_aeternitatis
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	starting_colony = pc_ringworld_habitable
 	initializers = { sci_origin_solio_aeternitatis }
@@ -195,7 +195,7 @@ origin_warden = {
 	picture = GFX_origin_warden
 
 	max_once_global = yes
-	advanced_start = yes
+	advanced_start = no
 
 	starting_colony = pc_ringworld_habitable
 	initializers = { sci_origin_warden }

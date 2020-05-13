@@ -65,10 +65,6 @@ think_tank_0 = {
                 NOT = { has_anomaly = yes }
             }
             custom_tooltip = {
-                fail_text = "requires_no_orbital_station"
-                has_orbital_station = no
-            }
-            custom_tooltip = {
                 fail_text = "requires_not_minor_planetary_body"
                 NOR = {
                     is_asteroid = yes
@@ -127,6 +123,14 @@ think_tank_0 = {
 			set_planet_flag = has_megastructure
 		}
 		from = { set_country_flag = built_think_tank }
+		fromfrom.planet = {
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
 	}
 }
 

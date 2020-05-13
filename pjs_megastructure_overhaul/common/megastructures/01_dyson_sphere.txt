@@ -97,10 +97,6 @@ dyson_sphere_0 = {
                 NOT = { has_anomaly = yes }
             }
             custom_tooltip = {
-                fail_text = "requires_no_orbital_station"
-                has_orbital_station = no
-            }
-            custom_tooltip = {
                 fail_text = "requires_no_existing_megastructure"
                 NOR = {
                     has_planet_flag = has_megastructure
@@ -141,6 +137,14 @@ dyson_sphere_0 = {
 				has_modifier = terraforming_candidate
 			}
 			remove_modifier = terraforming_candidate
+		}
+		fromfrom.planet = {
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
 		}
     }
 }

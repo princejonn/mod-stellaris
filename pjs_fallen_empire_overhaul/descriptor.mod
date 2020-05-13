@@ -1,9 +1,10 @@
-name="PJs :: Fallen Empire Buildings Unlocked"
+name="PJs :: Fallen Empire Overhaul"
 tags={
 	"PJs"
 	"Balance"
 	"Buildings"
 	"Economy"
+	"Overhaul"
 }
 picture="thumbnail.png"
 version="1"

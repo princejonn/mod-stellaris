@@ -68,10 +68,6 @@ interstellar_assembly_0 = {
                 NOT = { has_anomaly = yes }
             }
             custom_tooltip = {
-                fail_text = "requires_no_orbital_station"
-                has_orbital_station = no
-            }
-            custom_tooltip = {
                 fail_text = "requires_not_minor_planetary_body"
                 NOR = {
                     is_asteroid = yes
@@ -117,6 +113,14 @@ interstellar_assembly_0 = {
 	on_build_cancel = {}
 	on_build_complete = {
 		from = { set_country_flag = built_interstellar_assembly_site }
+		fromfrom.planet = {
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
 	}
 }
 
