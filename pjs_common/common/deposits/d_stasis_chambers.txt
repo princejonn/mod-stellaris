@@ -3,6 +3,7 @@ d_stasis_chambers = {
 	icon = d_bunker_door
 
 	is_for_colonizeable = yes
+	icon = "d_stasis_chambers"
 	category = deposit_cat_blockers
 
 	potential = { always = no }

@@ -1,7 +1,8 @@
-d_former_precursor_battlefield = {
+d_ruined_precursor_city = {
 	time = 400
 
 	is_for_colonizeable = yes
+	icon = "d_ruined_precursor_city"
 	category = deposit_cat_blockers
 
 	potential = { always = no }

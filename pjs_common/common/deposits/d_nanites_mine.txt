@@ -1,5 +1,6 @@
 d_nanites_mine = {
 	is_for_colonizeable = yes
+	icon = "d_nanites_mine"
 	category = deposit_cat_rare
 
 	potential = {

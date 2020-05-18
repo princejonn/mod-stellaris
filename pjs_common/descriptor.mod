@@ -1,9 +1,8 @@
-name="PJs :: Game Improvements"
+name="PJs :: Common"
 tags={
 	"PJs"
-	"Overhaul"
 }
 picture="thumbnail.png"
 version="1"
 supported_version="2.7.*"
-remote_file_id="2100725231"
+remote_file_id="1745182854"

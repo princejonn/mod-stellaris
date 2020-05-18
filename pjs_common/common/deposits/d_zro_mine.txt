@@ -1,5 +1,6 @@
 d_zro_mine_1 = {
 	is_for_colonizeable = yes
+	icon = "d_zro_mine"
 	category = deposit_cat_rare
 
 	potential = {
@@ -17,6 +18,7 @@ d_zro_mine_1 = {
 
 d_zro_mine_2 = {
 	is_for_colonizeable = yes
+	icon = "d_zro_mine"
 	category = deposit_cat_rare
 
 	potential = {
@@ -34,6 +36,7 @@ d_zro_mine_2 = {
 
 d_zro_mine_3 = {
 	is_for_colonizeable = yes
+	icon = "d_zro_mine"
 	category = deposit_cat_rare
 
 	potential = {
