@@ -171,11 +171,11 @@
 
   ## Events
 
-  pjs_enigmatic_ascension_event.2.name:0 "Fallen Empire Ships"
-  pjs_enigmatic_ascension_event.2.desc:0 "Do you want to change your graphical culture of your empire? This will (sadly) not affect your currently built ships or stations, but all new constructions will have the style you pick.\n\n(I have reported this as a bug. If you want to change all styles you can do so with the console command \"gfxculture fallen_empire_01\"."
-  pjs_enigmatic_ascension_event.2.a:0 "§EFallen Spiritualist Empire§!"
-  pjs_enigmatic_ascension_event.2.b:0 "§GFallen Materialist Empire§!"
-  pjs_enigmatic_ascension_event.2.c:0 "§BFallen Xenophile Empire§!"
-  pjs_enigmatic_ascension_event.2.d:0 "§RFallen Xenophobe Empire§!"
-  pjs_enigmatic_ascension_event.2.e:0 "§YFallen Machine Empire§!"
-  pjs_enigmatic_ascension_event.2.f:0 "No - Keep my current style"
+  pjs_fallen_empire_overhaul_event.2.name:0 "Fallen Empire Ships"
+  pjs_fallen_empire_overhaul_event.2.desc:0 "Do you want to change your graphical culture of your empire? This will (sadly) not affect your currently built ships or stations, but all new constructions will have the style you pick.\n\n(I have reported this as a bug. If you want to change all styles you can do so with the console command \"gfxculture fallen_empire_01\"."
+  pjs_fallen_empire_overhaul_event.2.a:0 "§EFallen Spiritualist Empire§!"
+  pjs_fallen_empire_overhaul_event.2.b:0 "§GFallen Materialist Empire§!"
+  pjs_fallen_empire_overhaul_event.2.c:0 "§BFallen Xenophile Empire§!"
+  pjs_fallen_empire_overhaul_event.2.d:0 "§RFallen Xenophobe Empire§!"
+  pjs_fallen_empire_overhaul_event.2.e:0 "§YFallen Machine Empire§!"
+  pjs_fallen_empire_overhaul_event.2.f:0 "No - Keep my current style"

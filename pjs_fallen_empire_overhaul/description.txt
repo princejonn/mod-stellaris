@@ -1,10 +1,14 @@
 Reaching endgame can become rather dull and boring on the research side. You keep researching those repeatable techs, with no end in sight. I set out to change that. It stands to reason that because the fallen empires exist, they were once young as we were. It also stands to reason they have technologies that we should be able to realize by ourselves.
 
-If you manager to conquer a world that already have these buildings, you will be able to research them a bit sooner.
-
-Only the most [b]Genius[/b] scientists will be able to unlock the secrets of these buildings...
-
 With this mod you get access to the fallen empire buildings, as well as some new that I have added.
+
+
+[h1]When will the technologies appear?[/h1]
+There are two requirements for the technologies to appear in your research view:
+[list]
+    [*] [b]End Game Year[/b] has been reached.
+    [*] Your research leader needs to have the [b]Spark of Genius[/b] trait.
+[/list]
 
 
 [h1]Building Technologies[/h1]
@@ -42,8 +46,6 @@ Adds housing, amenities, and Utopian Hedonist Jobs. (Regular Empires)
 
 [h1]Ships[/h1]
 With this mod you get access to the fallen empire ships (or at least my versions of them, keeping them separate so as to not overwrite too many things - staying compatible). You will also have access to the fallen empire ship components. If you have Transendence you will also see some very interesting technologies appear as well.
-
-Only the most [b]Genius[/b] scientists will be able to unlock the secrets of these ships...
 
 
 [h1]Ship Technologies[/h1]

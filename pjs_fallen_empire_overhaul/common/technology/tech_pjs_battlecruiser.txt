@@ -19,7 +19,7 @@ tech_pjs_battlecruiser = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 33
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0

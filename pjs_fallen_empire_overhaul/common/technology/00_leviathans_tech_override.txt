@@ -1,0 +1,77 @@
+tech_dragon_armor = {
+	area = engineering
+	cost = 50000
+	tier = 5
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = 0
+
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+tech_enigmatic_encoder = {
+	area = physics
+	cost = 90000
+	tier = 5
+	category = { computing }
+	ai_update_type = all
+	weight = 0
+	is_rare = yes
+
+	prerequisites = {
+	    "tech_dark_matter_deflector"
+	    "tech_dark_matter_power_core"
+	    "tech_dark_matter_propulsion"
+	}
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 3
+        }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = physics
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
+	}
+}
+
+tech_enigmatic_decoder = {
+	area = physics
+	cost = 90000
+	tier = 5
+	category = { computing }
+	ai_update_type = all
+	weight = 0
+	is_rare = yes
+
+	prerequisites = {
+	    "tech_dark_matter_deflector"
+	    "tech_dark_matter_power_core"
+	    "tech_dark_matter_propulsion"
+	}
+
+	weight_modifier = {
+        modifier = {
+            factor = 0
+            end_game_years_passed < 3
+        }
+		modifier = {
+			factor = 0
+			NOT = {
+                research_leader = {
+                    area = physics
+                    has_trait = "leader_trait_spark_of_genius"
+                }
+			}
+		}
+	}
+}

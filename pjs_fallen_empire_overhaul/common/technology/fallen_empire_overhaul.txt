@@ -7,10 +7,7 @@ tech_class_4_singularity = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_physics_3"
         "tech_power_plant_4"
         "tech_power_hub_2"
 	}
@@ -25,12 +22,7 @@ tech_class_4_singularity = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 5
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_class_4_singularity
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -41,20 +33,13 @@ tech_class_4_singularity = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_class_4_singularity
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
 }
 
 tech_dimensional_fabricator = {
-    area = physics
+    area = engineering
     cost = 300000
     tier = 5
     weight = 1
@@ -62,10 +47,7 @@ tech_dimensional_fabricator = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_engineering_3"
         "tech_mining_3"
         "tech_mineral_purification_2"
 	}
@@ -80,29 +62,17 @@ tech_dimensional_fabricator = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 5
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_dimensional_fabricator
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
 			NOT = {
                 research_leader = {
-                    area = physics
+                    area = engineering
                     has_trait = "leader_trait_spark_of_genius"
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_dimensional_fabricator
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -117,11 +87,7 @@ tech_nourishment_center = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
-        "tech_nutrient_replication"
+        "tech_society_3"
         "tech_food_processing_2"
 	}
 
@@ -139,12 +105,7 @@ tech_nourishment_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 10
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_nourishment_center
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -155,13 +116,6 @@ tech_nourishment_center = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_nourishment_center
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -176,10 +130,7 @@ tech_affluence_center = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_engineering_3"
         "tech_luxuries_1"
 	}
 
@@ -197,12 +148,7 @@ tech_affluence_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 10
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_affluence_center
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -213,13 +159,6 @@ tech_affluence_center = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_affluence_center
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -234,10 +173,7 @@ tech_nano_forge = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_engineering_3"
         "tech_alloys_2"
 	}
 
@@ -251,12 +187,7 @@ tech_nano_forge = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 20
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_nano_forge
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -267,13 +198,6 @@ tech_nano_forge = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_nano_forge
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -288,10 +212,7 @@ tech_master_archive = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_physics_3"
         "tech_basic_science_lab_3"
         "tech_global_research_initiative"
 	}
@@ -306,12 +227,7 @@ tech_master_archive = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 20
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_master_archive
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -322,13 +238,6 @@ tech_master_archive = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_master_archive
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -343,10 +252,7 @@ tech_fe_stronghold = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_society_3"
         "tech_global_defense_grid"
 	}
 
@@ -360,12 +266,7 @@ tech_fe_stronghold = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 20
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_fe_stronghold
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -376,13 +277,6 @@ tech_fe_stronghold = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_fe_stronghold
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -397,10 +291,7 @@ tech_augural_manufactory = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_physics_3"
 	}
 
 	prereqfor_desc = {
@@ -413,12 +304,7 @@ tech_augural_manufactory = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 20
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_augural_manufactory
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -429,13 +315,6 @@ tech_augural_manufactory = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_augural_manufactory
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -450,21 +329,13 @@ tech_germination_replicator = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_physics_3"
 	}
 
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 20
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_germination_replicator
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -475,13 +346,6 @@ tech_germination_replicator = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_germination_replicator
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -496,10 +360,7 @@ tech_utopian_paradise_dome = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_society_3"
         "tech_paradise_dome"
 	}
 
@@ -510,12 +371,7 @@ tech_utopian_paradise_dome = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 20
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_fe_dome
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -526,13 +382,6 @@ tech_utopian_paradise_dome = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_fe_dome
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
@@ -547,10 +396,7 @@ tech_introspection_center = {
     is_rare = yes
 
 	prerequisites = {
-        "tech_gateway_construction"
-        "tech_titans"
-        "tech_mega_engineering"
-        "tech_ascension_theory"
+        "tech_society_3"
 	}
 
     potential = {
@@ -560,12 +406,7 @@ tech_introspection_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 20
-            NOT = {
-                any_owned_planet = {
-                    has_building = building_fe_dome
-                }
-            }
+            end_game_years_passed < 3
         }
 		modifier = {
 			factor = 0
@@ -576,13 +417,6 @@ tech_introspection_center = {
                 }
 			}
 		}
-        modifier = {
-            factor = 0.1
-            mid_game_years_passed > 0
-            any_owned_planet = {
-                has_building = building_fe_dome
-            }
-        }
 	}
 
 	ai_weight = { weight = 1000 }
