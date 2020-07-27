@@ -14,6 +14,8 @@ This is a special tech that gives you a trait with the same name. You can find t
     [*] Asari
     [*] Eldar
     [*] Quarian
+    [*] Krogan
+    [*] Horror
     [*] Photosynthetic
     [*] Partial Photosynthetic
     [*] Psionic

@@ -13,6 +13,11 @@ trait_pjs_asari = {
 	    "trait_rapid_breeders"
 	    "trait_slow_breeders"
 	    "trait_pjs_psionic"
+
+        "trait_pjs_eldar"
+        "trait_pjs_quarian"
+        "trait_pjs_krogan"
+        "trait_pjs_horror"
     }
     modifier = {
         leader_age = 800
@@ -40,6 +45,11 @@ trait_pjs_eldar = {
         "trait_enduring"
         "trait_fleeting"
         "trait_pjs_psionic"
+
+        "trait_pjs_asari"
+        "trait_pjs_quarian"
+        "trait_pjs_krogan"
+        "trait_pjs_horror"
 	}
     modifier = {
         leader_age = 800
@@ -60,7 +70,12 @@ trait_pjs_quarian = {
 	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { }
+	opposites = {
+        "trait_pjs_asari"
+        "trait_pjs_eldar"
+        "trait_pjs_krogan"
+        "trait_pjs_horror"
+	}
     modifier = {
         planet_jobs_engineering_research_produces_mult = 0.2
         planet_jobs_physics_research_produces_mult = 0.05
@@ -91,6 +106,11 @@ trait_pjs_krogan = {
         "trait_weak"
         "trait_rapid_breeders"
         "trait_slow_breeders"
+
+        "trait_pjs_asari"
+        "trait_pjs_eldar"
+        "trait_pjs_quarian"
+        "trait_pjs_horror"
 	}
 	modifier = {
 		pop_environment_tolerance = 0.20
@@ -120,6 +140,11 @@ trait_pjs_horror = {
         "trait_very_strong"
         "trait_strong"
         "trait_weak"
+
+        "trait_pjs_asari"
+        "trait_pjs_eldar"
+        "trait_pjs_quarian"
+        "trait_pjs_krogan"
 	}
 	modifier = {
 		pop_environment_tolerance = 0.25
