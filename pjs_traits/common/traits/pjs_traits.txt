@@ -12,6 +12,7 @@ trait_pjs_asari = {
 	    "trait_fleeting"
 	    "trait_rapid_breeders"
 	    "trait_slow_breeders"
+
 	    "trait_pjs_psionic"
 
         "trait_pjs_eldar"
@@ -44,6 +45,7 @@ trait_pjs_eldar = {
         "trait_venerable"
         "trait_enduring"
         "trait_fleeting"
+
         "trait_pjs_psionic"
 
         "trait_pjs_asari"
