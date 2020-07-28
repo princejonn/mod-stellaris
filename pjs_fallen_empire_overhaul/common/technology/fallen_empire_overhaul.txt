@@ -7,6 +7,7 @@ tech_class_4_singularity = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_physics_3"
         "tech_power_plant_4"
         "tech_power_hub_2"
@@ -47,6 +48,7 @@ tech_dimensional_fabricator = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_engineering_3"
         "tech_mining_3"
         "tech_mineral_purification_2"
@@ -87,6 +89,7 @@ tech_nourishment_center = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_society_3"
         "tech_food_processing_2"
 	}
@@ -130,6 +133,7 @@ tech_affluence_center = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_engineering_3"
         "tech_luxuries_1"
 	}
@@ -173,6 +177,7 @@ tech_nano_forge = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_engineering_3"
         "tech_alloys_2"
 	}
@@ -212,6 +217,7 @@ tech_master_archive = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_physics_3"
         "tech_basic_science_lab_3"
         "tech_global_research_initiative"
@@ -252,6 +258,7 @@ tech_fe_stronghold = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_society_3"
         "tech_global_defense_grid"
 	}
@@ -291,6 +298,7 @@ tech_augural_manufactory = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_physics_3"
 	}
 
@@ -329,6 +337,7 @@ tech_germination_replicator = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_physics_3"
 	}
 
@@ -360,6 +369,7 @@ tech_utopian_paradise_dome = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_society_3"
         "tech_paradise_dome"
 	}
@@ -396,6 +406,7 @@ tech_introspection_center = {
     is_rare = yes
 
 	prerequisites = {
+        "tech_dark_matter_power_core"
         "tech_society_3"
 	}
 
