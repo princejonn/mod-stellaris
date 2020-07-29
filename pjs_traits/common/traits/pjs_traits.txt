@@ -28,7 +28,6 @@ trait_pjs_asari = {
         pop_environment_tolerance = 0.1
 		pop_happiness = 0.05
 		planet_jobs_unity_produces_mult = 0.1
-		pop_growth_speed = -0.1
     }
     ai_weight = { weight = 0 }
 }
@@ -120,7 +119,6 @@ trait_pjs_krogan = {
 		army_attack_damage_mult = 0.5
 	    armies_upkeep_mult = -0.25
 		army_disengage_chance_mult = -0.5
-		pop_growth_speed = -0.25
 	}
     ai_weight = { weight = 0 }
 }
@@ -156,10 +154,10 @@ trait_pjs_horror = {
 		army_defense_morale_mult = 0.1
 		army_health = 0.1
 		army_morale = 0.1
-		army_upkeep_mult = 0.25
+		army_upkeep_mult = 0.1
 		planet_jobs_minerals_produces_mult = 0.1
-		pop_food_mult = -0.25
-		pop_growth_speed = 0.25
+		pop_food_mult = -0.1
+		pop_growth_speed = 0.1
 	}
 	ai_weight = { weight = 0 }
 }
