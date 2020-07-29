@@ -180,6 +180,7 @@ origin_solio_aeternitatis = {
 
 	starting_colony = pc_ringworld_habitable
 	initializers = { sci_origin_solio_aeternitatis }
+	habitability_preference = pc_ringworld_habitable
 	preferred_planet_class_neighbor = no
 
 	description = origin_solio_aeternitatis_effects

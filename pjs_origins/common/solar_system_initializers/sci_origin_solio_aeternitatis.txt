@@ -35,7 +35,7 @@ sci_origin_solio_aeternitatis = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { start_solio_aeternitatis ignore_startup_effect rw_spec_science }
+        flags = { start_solio_aeternitatis ignore_startup_effect rw_spec_empire }
 
         starting_planet = yes
 
@@ -62,7 +62,7 @@ sci_origin_solio_aeternitatis = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { rw_spec_empire }
+        flags = { rw_spec_refinery }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
@@ -99,7 +99,6 @@ sci_origin_solio_aeternitatis = {
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
 
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2

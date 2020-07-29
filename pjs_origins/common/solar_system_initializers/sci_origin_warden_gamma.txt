@@ -70,7 +70,6 @@ sci_origin_warden_gamma = {
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers
@@ -143,7 +142,6 @@ sci_origin_warden_gamma = {
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
 
             add_deposit = d_stasis_chambers
             add_deposit = d_stasis_chambers

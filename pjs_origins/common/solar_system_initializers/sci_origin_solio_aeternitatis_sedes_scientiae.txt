@@ -60,11 +60,11 @@ sci_origin_solio_aeternitatis_sedes_scientiae = {
 		orbit_distance = 0
 		deposit_blockers = none
 		modifiers = none
-        flags = { rw_spec_science }
+        flags = { rw_spec_unity }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
+
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2
             add_deposit = d_decrepit_tunnels_3
@@ -93,7 +93,6 @@ sci_origin_solio_aeternitatis_sedes_scientiae = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
-        flags = { rw_spec_science }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
@@ -126,11 +125,10 @@ sci_origin_solio_aeternitatis_sedes_scientiae = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
-        flags = { rw_spec_science }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
-		    add_deposit = d_enigmatic_replicator
+
             add_deposit = d_decrepit_tunnels_1
             add_deposit = d_decrepit_tunnels_2
             add_deposit = d_decrepit_tunnels_3
