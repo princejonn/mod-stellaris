@@ -217,6 +217,7 @@ trait_pjs_psionic = {
 
 trait_pjs_spartans = {
 	cost = 4
+	initial = yes
 	randomized = no
 	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
@@ -232,6 +233,7 @@ trait_pjs_spartans = {
 
 trait_pjs_vaulters = {
 	cost = 4
+	initial = yes
 	randomized = no
 	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
@@ -246,6 +248,7 @@ trait_pjs_vaulters = {
 
 trait_pjs_artisans = {
 	cost = 2
+	initial = yes
 	randomized = no
 	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
@@ -259,6 +262,7 @@ trait_pjs_artisans = {
 
 trait_pjs_militarists = {
 	cost = 2
+	initial = yes
 	randomized = no
 	potential_crossbreeding_chance = 0.5
 	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }

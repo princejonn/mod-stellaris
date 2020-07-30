@@ -382,7 +382,8 @@ district_hab_commercial = {
 			owner = { is_fallen_empire_spiritualist = no }
 		}
 		modifier = {
-			job_clerk_add = 10
+            job_artisan_add = 2
+			job_clerk_add = 8
 		}
 	}
 
