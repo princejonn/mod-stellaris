@@ -20,6 +20,10 @@ decision_rw_districts = {
 		NOT = { has_modifier = rw_districts }
 	}
 
+	allow = {
+		free_district_slots = 0
+	}
+
 	effect = {
 		add_modifier = {
 			modifier = rw_districts

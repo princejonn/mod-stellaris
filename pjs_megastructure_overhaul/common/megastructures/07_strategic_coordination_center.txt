@@ -1,16 +1,20 @@
 @makeshift_naval_cap         = 25
+@makeshift_command_limit     = 10
 @makeshift_starbase_capacity = 1
 @makeshift_defense_platform  = 2
 @makeshift_ship_speed        = 0
 @stage_1_naval_cap           = 50
+@stage_1_command_limit       = 10
 @stage_1_starbase_capacity   = 2
 @stage_1_defense_platform    = 4
 @stage_1_ship_speed          = 0.05
 @stage_2_naval_cap           = 100
+@stage_2_command_limit       = 20
 @stage_2_starbase_capacity   = 4
 @stage_2_defense_platform    = 8
 @stage_2_ship_speed          = 0.10
 @stage_3_naval_cap           = 150
+@stage_3_command_limit       = 30
 @stage_3_starbase_capacity   = 6
 @stage_3_defense_platform    = 12
 @stage_3_ship_speed          = 0.15
@@ -158,6 +162,7 @@ strategic_coordination_center_1 = {
 
     country_modifier = {
         country_naval_cap_add = @stage_1_naval_cap
+        country_command_limit_add = @stage_1_command_limit
         country_starbase_capacity_add = @stage_1_starbase_capacity
         starbase_defense_platform_capacity_add = @stage_1_defense_platform
         ship_speed_mult = @stage_1_ship_speed
@@ -197,6 +202,7 @@ strategic_coordination_center_2 = {
 
     country_modifier = {
         country_naval_cap_add = @stage_2_naval_cap
+        country_command_limit_add = @stage_2_command_limit
         country_starbase_capacity_add = @stage_2_starbase_capacity
         starbase_defense_platform_capacity_add = @stage_2_defense_platform
         ship_speed_mult = @stage_2_ship_speed
@@ -236,6 +242,7 @@ strategic_coordination_center_3 = {
 
     country_modifier = {
         country_naval_cap_add = @stage_3_naval_cap
+        country_command_limit_add = @stage_3_command_limit
         country_starbase_capacity_add = @stage_3_starbase_capacity
         starbase_defense_platform_capacity_add = @stage_3_defense_platform
         ship_speed_mult = @stage_3_ship_speed
@@ -290,6 +297,7 @@ strategic_coordination_center_makeshift = {
 
     country_modifier = {
         country_naval_cap_add = @makeshift_naval_cap
+        country_command_limit_add = @makeshift_command_limit
         country_starbase_capacity_add = @makeshift_starbase_capacity
         starbase_defense_platform_capacity_add = @makeshift_defense_platform
         ship_speed_mult = @makeshift_ship_speed
@@ -335,6 +343,7 @@ strategic_coordination_center_restored = {
 
     country_modifier = {
         country_naval_cap_add = @stage_3_naval_cap
+        country_command_limit_add = @stage_3_command_limit
         country_starbase_capacity_add = @stage_3_starbase_capacity
         starbase_defense_platform_capacity_add = @stage_3_defense_platform
         ship_speed_mult = @stage_3_ship_speed
