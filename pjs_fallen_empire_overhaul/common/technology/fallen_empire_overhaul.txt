@@ -31,6 +31,7 @@ tech_class_4_singularity = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -72,6 +73,7 @@ tech_dimensional_fabricator = {
                 research_leader = {
                     area = engineering
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -116,6 +118,7 @@ tech_nourishment_center = {
                 research_leader = {
                     area = society
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -160,6 +163,7 @@ tech_affluence_center = {
                 research_leader = {
                     area = engineering
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -200,6 +204,7 @@ tech_nano_forge = {
                 research_leader = {
                     area = engineering
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -241,6 +246,7 @@ tech_master_archive = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -281,6 +287,7 @@ tech_fe_stronghold = {
                 research_leader = {
                     area = society
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -320,6 +327,7 @@ tech_augural_manufactory = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -352,6 +360,7 @@ tech_germination_replicator = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -389,6 +398,7 @@ tech_utopian_paradise_dome = {
                 research_leader = {
                     area = society
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -425,6 +435,7 @@ tech_introspection_center = {
                 research_leader = {
                     area = society
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}

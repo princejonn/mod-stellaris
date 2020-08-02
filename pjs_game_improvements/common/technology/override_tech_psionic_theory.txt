@@ -32,6 +32,7 @@ tech_psionic_theory = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_maniacal"
+				has_level > 2
 			}
 		}
 		modifier = {
@@ -39,6 +40,7 @@ tech_psionic_theory = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_psionics"
+				has_level > 2
 			}
 		}
 		modifier = {
@@ -78,6 +80,7 @@ tech_psionic_theory = {
 					research_leader = {
 						area = society
 						has_trait = "leader_trait_expertise_psionics"
+				        has_level > 2
 					}
 					any_owned_pop = {
 						pop_has_trait = trait_psionic

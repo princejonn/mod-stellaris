@@ -27,6 +27,7 @@ tech_climate_restoration = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_maniacal"
+				has_level > 2
 			}
 		}
 		modifier = {
@@ -34,6 +35,7 @@ tech_climate_restoration = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
+				has_level > 2
 			}
 		}
 		modifier = {
@@ -41,7 +43,7 @@ tech_climate_restoration = {
 			has_federation = yes
 			federation = {
 				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_psionic_theory }
+				any_member = { has_technology = tech_climate_restoration }
 			}
 		}
 	}

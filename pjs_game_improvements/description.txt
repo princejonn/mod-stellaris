@@ -99,10 +99,9 @@ Improving some buildings which I find are a bit too weak, or added at a too late
     [*] Xeno Zoo (+1 job)
 [/list]
 
-[h1]Modified technologies[/h1]
-Gene Tailoring, Droid Workers, and Psionic Theory have been moved to Tier 4.
 
-Glandular Acclimation, Synthetic Workers, and Synthetic Leaders have been moved to Tier 5.
+[h1]Modified technologies[/h1]
+All technologies related to ascension paths and terraforming have been made rare and moved to tier 4 and tier 5.
 
 
 [h1]Compability[/h1]

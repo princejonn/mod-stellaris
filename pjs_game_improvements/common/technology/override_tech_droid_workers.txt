@@ -16,6 +16,7 @@ tech_droid_workers = {
 	}
 
 	weight_modifier = {
+        factor = 0.5
 		modifier = {
 			factor = 0
 			has_policy_flag = robots_outlawed
@@ -39,11 +40,27 @@ tech_droid_workers = {
 			has_origin = origin_mechanists
 		}
 		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_industry"
 				has_level > 2
+			}
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_droid_workers }
 			}
 		}
 	}

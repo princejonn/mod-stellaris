@@ -29,6 +29,7 @@ tech_pjs_escort = {
                 research_leader = {
                     area = engineering
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}

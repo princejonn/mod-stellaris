@@ -38,6 +38,7 @@ tech_enigmatic_encoder = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
@@ -70,6 +71,7 @@ tech_enigmatic_decoder = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
+				    has_level > 2
                 }
 			}
 		}
