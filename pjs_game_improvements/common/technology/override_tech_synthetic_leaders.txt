@@ -1,0 +1,45 @@
+tech_synthetic_leaders = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { industry }
+	is_rare = yes
+	prerequisites = { "tech_synthetic_workers" }
+	weight = @tier5weight3
+
+	feature_flags = { robot_leaders }
+
+	## unlocks robot-leaders
+
+	potential = {
+		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			has_policy_flag = robots_outlawed
+		}
+		modifier = {
+			factor = 0
+			has_policy_flag = ai_outlawed
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+				has_level > 3
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			NOT = { has_ai_personality_behaviour = robot_exploiter }
+			NOT = { has_ai_personality_behaviour = robot_liberator }
+		}
+	}
+}

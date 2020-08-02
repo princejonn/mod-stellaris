@@ -1,14 +1,25 @@
-tech_glandular_acclimation = {
-	cost = @tier5cost3
+tech_gene_tailoring = {
+	cost = @tier4cost2
 	area = society
-	tier = 5
+	tier = 4
 	category = { biology }
 	is_rare = yes
-	prerequisites = { "tech_gene_tailoring" }
-	weight = @tier5weight3
+	prerequisites = { "tech_genome_mapping" }
+	weight = @tier4weight2
+
+	gateway = biological
+
+	modifier = {
+		description = tech_gene_tailoring_modifier_desc
+		description_parameters = {
+			POINTS = @tech_gene_tailoring_POINTS
+		}
+		BIOLOGICAL_species_trait_points_add = @tech_gene_tailoring_POINTS
+	}
 
 	feature_flags = {
-		habitability_gene_modding
+		modify_traits
+		pop_self_modification
 	}
 
 	potential = {
@@ -23,7 +34,11 @@ tech_glandular_acclimation = {
 		factor = 0.5
 		modifier = {
 			factor = 1.25
-			has_tradition = tr_expansion_adopt
+			has_authority = auth_hive_mind
+		}
+		modifier = {
+			factor = 1.25
+			is_xenophile = yes
 		}
 		modifier = {
 			factor = 2
