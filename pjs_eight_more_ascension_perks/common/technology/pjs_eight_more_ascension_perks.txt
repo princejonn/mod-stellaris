@@ -13,6 +13,7 @@ pjs_extra_ascension_perks_1 = {
 	}
 
 	weight_modifier = {
+		factor = 0.5
 		modifier = {
 			factor = 0
 			NOR = {
@@ -22,12 +23,32 @@ pjs_extra_ascension_perks_1 = {
 		}
         modifier = {
             factor = 0
-			years_passed < 100
+			end_game_years_passed < 25
         }
         modifier = {
             factor = 0
             num_ascension_perks < 6
         }
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+				has_level > 2
+			}
+		}
 	}
 
 	ai_weight = {
@@ -54,6 +75,7 @@ pjs_extra_ascension_perks_2 = {
 	}
 
 	weight_modifier = {
+		factor = 0.5
         modifier = {
             factor = 0
 			years_passed < 120
@@ -62,6 +84,26 @@ pjs_extra_ascension_perks_2 = {
             factor = 0
             num_ascension_perks < 6
         }
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+				has_level > 2
+			}
+		}
 	}
 
 	ai_weight = {
@@ -88,6 +130,7 @@ pjs_extra_ascension_perks_3 = {
 	}
 
 	weight_modifier = {
+		factor = 0.5
         modifier = {
             factor = 0
 			years_passed < 140
@@ -96,6 +139,26 @@ pjs_extra_ascension_perks_3 = {
             factor = 0
             num_ascension_perks < 6
         }
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+				has_level > 2
+			}
+		}
 	}
 
 	ai_weight = {
@@ -122,6 +185,7 @@ pjs_extra_ascension_perks_4 = {
 	}
 
 	weight_modifier = {
+		factor = 0.5
         modifier = {
             factor = 0
 			years_passed < 160
@@ -130,6 +194,26 @@ pjs_extra_ascension_perks_4 = {
             factor = 0
             num_ascension_perks < 6
         }
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+				has_level > 2
+			}
+		}
 	}
 
 	ai_weight = {
@@ -156,6 +240,7 @@ pjs_extra_ascension_perks_5 = {
 	}
 
 	weight_modifier = {
+		factor = 0.5
         modifier = {
             factor = 0
 			years_passed < 180
@@ -164,6 +249,26 @@ pjs_extra_ascension_perks_5 = {
             factor = 0
             num_ascension_perks < 8
         }
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+				has_level > 2
+			}
+		}
 	}
 
 	ai_weight = {
@@ -190,6 +295,7 @@ pjs_extra_ascension_perks_6 = {
 	}
 
 	weight_modifier = {
+		factor = 0.5
         modifier = {
             factor = 0
 			years_passed < 200
@@ -198,6 +304,26 @@ pjs_extra_ascension_perks_6 = {
             factor = 0
             num_ascension_perks < 8
         }
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+				has_level > 2
+			}
+		}
 	}
 
 	ai_weight = {
@@ -224,6 +350,7 @@ pjs_extra_ascension_perks_7 = {
 	}
 
 	weight_modifier = {
+		factor = 0.5
         modifier = {
             factor = 0
 			years_passed < 220
@@ -232,6 +359,26 @@ pjs_extra_ascension_perks_7 = {
             factor = 0
             num_ascension_perks < 8
         }
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+				has_level > 2
+			}
+		}
 	}
 
 	ai_weight = {
@@ -258,6 +405,7 @@ pjs_extra_ascension_perks_8 = {
 	}
 
 	weight_modifier = {
+		factor = 0.5
         modifier = {
             factor = 0
 			years_passed < 240
@@ -266,6 +414,26 @@ pjs_extra_ascension_perks_8 = {
             factor = 0
             num_ascension_perks < 8
         }
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+				has_level > 2
+			}
+		}
 	}
 
 	ai_weight = {

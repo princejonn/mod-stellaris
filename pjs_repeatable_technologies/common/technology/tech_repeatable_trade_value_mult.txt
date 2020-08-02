@@ -16,7 +16,7 @@ tech_repeatable_trade_value_mult = {
         }
         modifier = {
             factor = 0
-            years_passed < 100
+            end_game_years_passed < 25
         }
 	}
 

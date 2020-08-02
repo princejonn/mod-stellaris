@@ -23,7 +23,7 @@ tech_class_4_singularity = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -31,7 +31,7 @@ tech_class_4_singularity = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -65,7 +65,7 @@ tech_dimensional_fabricator = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -73,7 +73,7 @@ tech_dimensional_fabricator = {
                 research_leader = {
                     area = engineering
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -110,7 +110,7 @@ tech_nourishment_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -118,7 +118,7 @@ tech_nourishment_center = {
                 research_leader = {
                     area = society
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -155,7 +155,7 @@ tech_affluence_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -163,7 +163,7 @@ tech_affluence_center = {
                 research_leader = {
                     area = engineering
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -196,7 +196,7 @@ tech_nano_forge = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -204,7 +204,7 @@ tech_nano_forge = {
                 research_leader = {
                     area = engineering
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -238,7 +238,7 @@ tech_master_archive = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -246,7 +246,7 @@ tech_master_archive = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -279,7 +279,7 @@ tech_fe_stronghold = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -287,7 +287,7 @@ tech_fe_stronghold = {
                 research_leader = {
                     area = society
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -319,7 +319,7 @@ tech_augural_manufactory = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -327,7 +327,7 @@ tech_augural_manufactory = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -352,7 +352,7 @@ tech_germination_replicator = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -360,7 +360,7 @@ tech_germination_replicator = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -390,7 +390,7 @@ tech_utopian_paradise_dome = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -398,7 +398,7 @@ tech_utopian_paradise_dome = {
                 research_leader = {
                     area = society
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -427,7 +427,7 @@ tech_introspection_center = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -435,7 +435,7 @@ tech_introspection_center = {
                 research_leader = {
                     area = society
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}

@@ -20,6 +20,10 @@ decision_rw_buildings = {
 		NOT = { has_modifier = rw_buildings }
 	}
 
+	allow = {
+		num_pops > 100
+	}
+
 	effect = {
 		add_modifier = {
 			modifier = rw_buildings

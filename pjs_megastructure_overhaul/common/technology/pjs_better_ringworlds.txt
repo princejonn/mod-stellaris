@@ -1,3 +1,55 @@
+tech_rw_buildings = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	weight = @tier5weight3
+	is_rare = yes
+
+	prerequisites = {
+	    "tech_ring_world"
+	}
+
+	potential = {
+		has_ascension_perk = ap_master_builders
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
 tech_rw_districts = {
 	cost = @tier5cost3
 	area = engineering
@@ -14,32 +66,28 @@ tech_rw_districts = {
 		has_ascension_perk = ap_master_builders
 	}
 
-	ai_weight = {
-		factor = 25
+	weight_modifier = {
+		factor = 0.5
 		modifier = {
-			factor = 1.25
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
 			}
 		}
-	}
-}
-
-tech_rw_buildings = {
-	cost = @tier5cost3
-	area = engineering
-	tier = 5
-	category = { voidcraft }
-	weight = @tier5weight3
-	is_rare = yes
-
-	prerequisites = {
-	    "tech_ring_world"
-	}
-
-	potential = {
-		has_ascension_perk = ap_master_builders
 	}
 
 	ai_weight = {
@@ -72,35 +120,29 @@ tech_rw_spec_arms_industry = {
         has_ascension_perk = ap_master_builders
     }
 
-    ai_weight = {
-        factor = 25
-        modifier = {
-            factor = 1.25
-            research_leader = {
-                area = engineering
-                has_trait = "leader_trait_expertise_voidcraft"
-            }
-        }
-    }
-}
-
-tech_rw_spec_empire = {
-    cost = @tier5cost3
-    area = engineering
-    tier = 5
-    category = { voidcraft }
-    weight = @tier5weight3
-    is_rare = yes
-
-    prerequisites = {
-        "tech_rw_districts"
-        "tech_rw_buildings"
-        "tech_galactic_bureaucracy"
-    }
-
-    potential = {
-        has_ascension_perk = ap_master_builders
-    }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
+			}
+		}
+	}
 
     ai_weight = {
         factor = 25
@@ -132,6 +174,194 @@ tech_rw_spec_civilian_industry = {
         has_ascension_perk = ap_master_builders
 		country_uses_consumer_goods = yes
     }
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
+			}
+		}
+	}
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_voidcraft"
+            }
+        }
+    }
+}
+
+tech_rw_spec_empire = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { voidcraft }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+        "tech_rw_buildings"
+        "tech_galactic_bureaucracy"
+    }
+
+    potential = {
+        has_ascension_perk = ap_master_builders
+    }
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
+			}
+		}
+	}
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_voidcraft"
+            }
+        }
+    }
+}
+
+tech_rw_spec_refinery = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { materials }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+        "tech_rw_buildings"
+        "tech_exotic_gases"
+        "tech_volatile_motes"
+        "tech_rare_crystals"
+    }
+
+    potential = {
+        has_ascension_perk = ap_master_builders
+    }
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
+			}
+		}
+	}
+
+    ai_weight = {
+        factor = 25
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = engineering
+                has_trait = "leader_trait_expertise_materials"
+            }
+        }
+    }
+}
+
+tech_rw_spec_science = {
+    cost = @tier5cost3
+    area = engineering
+    tier = 5
+    category = { voidcraft }
+    weight = @tier5weight3
+    is_rare = yes
+
+    prerequisites = {
+        "tech_rw_districts"
+        "tech_rw_buildings"
+        "tech_basic_science_lab_3"
+    }
+
+    potential = {
+        has_ascension_perk = ap_master_builders
+    }
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
+			}
+		}
+	}
 
     ai_weight = {
         factor = 25
@@ -168,67 +398,29 @@ tech_rw_spec_unity = {
         }
     }
 
-    ai_weight = {
-        factor = 25
-        modifier = {
-            factor = 1.25
-            research_leader = {
-                area = engineering
-                has_trait = "leader_trait_expertise_voidcraft"
-            }
-        }
-    }
-}
-
-tech_rw_spec_refinery = {
-    cost = @tier5cost3
-    area = engineering
-    tier = 5
-    category = { materials }
-    weight = @tier5weight3
-    is_rare = yes
-
-    prerequisites = {
-        "tech_rw_districts"
-        "tech_rw_buildings"
-        "tech_exotic_gases"
-        "tech_volatile_motes"
-        "tech_rare_crystals"
-    }
-
-    potential = {
-        has_ascension_perk = ap_master_builders
-    }
-
-    ai_weight = {
-        factor = 25
-        modifier = {
-            factor = 1.25
-            research_leader = {
-                area = engineering
-                has_trait = "leader_trait_expertise_materials"
-            }
-        }
-    }
-}
-
-tech_rw_spec_science = {
-    cost = @tier5cost3
-    area = engineering
-    tier = 5
-    category = { voidcraft }
-    weight = @tier5weight3
-    is_rare = yes
-
-    prerequisites = {
-        "tech_rw_districts"
-        "tech_rw_buildings"
-        "tech_basic_science_lab_3"
-    }
-
-    potential = {
-        has_ascension_perk = ap_master_builders
-    }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
+			}
+		}
+	}
 
     ai_weight = {
         factor = 25

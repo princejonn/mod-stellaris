@@ -16,7 +16,7 @@ tech_repeatable_pop_growth_speed = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            years_passed < 175
+            end_game_years_passed < 25
         }
 	}
 

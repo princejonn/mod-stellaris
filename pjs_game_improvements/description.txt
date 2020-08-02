@@ -100,10 +100,6 @@ Improving some buildings which I find are a bit too weak, or added at a too late
 [/list]
 
 
-[h1]Modified technologies[/h1]
-All technologies related to ascension paths and terraforming have been made rare and moved to tier 4 and tier 5.
-
-
 [h1]Compability[/h1]
 Overwriting the following files:
 

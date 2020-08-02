@@ -12,7 +12,7 @@ tech_repeatable_country_resource_max_add = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            years_passed < 125
+            end_game_years_passed < 25
         }
 	}
 
@@ -37,6 +37,6 @@ tech_repeatable_country_resource_max_add = {
 	}
 
     modifier = {
-		country_resource_max_add = 5000
+		country_resource_max_add = 10000
     }
 }

@@ -12,7 +12,7 @@ tech_repeatable_planet_max_buildings_add = {
 	weight_modifier = {
         modifier = {
             factor = 0
-            years_passed < 125
+            end_game_years_passed < 25
         }
 	}
 

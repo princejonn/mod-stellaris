@@ -7,7 +7,7 @@ With this mod you get access to the fallen empire buildings, as well as some new
 There are two requirements for the technologies to appear in your research view:
 [list]
     [*] [b]End Game Year[/b] has been reached.
-    [*] Your research leader needs to have the [b]Spark of Genius[/b] trait.
+    [*] Your research leader needs to have the [b]Spark of Genius[/b] trait and be level 5+
 [/list]
 
 

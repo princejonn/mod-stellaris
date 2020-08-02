@@ -15,10 +15,19 @@ tech_asteroid_habitat = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
-			factor = 1.25
+			factor = 2
 			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 8
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+				has_level > 2
 			}
 		}
 	}

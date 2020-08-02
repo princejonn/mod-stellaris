@@ -22,15 +22,13 @@ tech_enigmatic_encoder = {
 	is_rare = yes
 
 	prerequisites = {
-	    "tech_dark_matter_deflector"
 	    "tech_dark_matter_power_core"
-	    "tech_dark_matter_propulsion"
 	}
 
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -38,7 +36,7 @@ tech_enigmatic_encoder = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
@@ -55,15 +53,13 @@ tech_enigmatic_decoder = {
 	is_rare = yes
 
 	prerequisites = {
-	    "tech_dark_matter_deflector"
 	    "tech_dark_matter_power_core"
-	    "tech_dark_matter_propulsion"
 	}
 
 	weight_modifier = {
         modifier = {
             factor = 0
-            end_game_years_passed < 3
+            end_game_years_passed < 5
         }
 		modifier = {
 			factor = 0
@@ -71,7 +67,7 @@ tech_enigmatic_decoder = {
                 research_leader = {
                     area = physics
                     has_trait = "leader_trait_spark_of_genius"
-				    has_level > 2
+				    has_level > 4
                 }
 			}
 		}
