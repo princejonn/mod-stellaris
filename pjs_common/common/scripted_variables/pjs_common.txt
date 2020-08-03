@@ -1,0 +1,17 @@
+# TECH COSTS
+@tier6cost1 = 56000
+@tier6cost2 = 62000
+@tier6cost3 = 70000
+
+@tier7cost1 = 78000
+@tier7cost2 = 86000
+@tier7cost3 = 92000
+
+# TECH WEIGHTS
+@tier6weight1 = 15
+@tier6weight2 = 10
+@tier6weight3 = 5
+
+@tier7weight1 = 3
+@tier7weight2 = 2
+@tier7weight3 = 1
