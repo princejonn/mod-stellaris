@@ -1,7 +1,7 @@
 tech_dragon_armor = {
 	area = engineering
-	cost = 50000
-	tier = 5
+	cost = @tier6cost1
+	tier = 6
 	is_rare = yes
 	category = { materials }
 	ai_update_type = all
@@ -14,11 +14,11 @@ tech_dragon_armor = {
 
 tech_enigmatic_encoder = {
 	area = physics
-	cost = 90000
-	tier = 5
+	cost = @tier6cost2
+	tier = 6
 	category = { computing }
 	ai_update_type = all
-	weight = 0
+	weight = @tier6weight2
 	is_rare = yes
 
 	prerequisites = {
@@ -45,11 +45,11 @@ tech_enigmatic_encoder = {
 
 tech_enigmatic_decoder = {
 	area = physics
-	cost = 90000
-	tier = 5
+	cost = @tier6cost2
+	tier = 6
 	category = { computing }
 	ai_update_type = all
-	weight = 0
+	weight = @tier6weight2
 	is_rare = yes
 
 	prerequisites = {

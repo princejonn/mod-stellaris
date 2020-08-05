@@ -1,13 +1,13 @@
 tech_class_4_singularity = {
     area = physics
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { field_manipulation }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_pjs_battlecruiser"
         "tech_physics_3"
         "tech_power_plant_4"
         "tech_power_hub_2"
@@ -42,14 +42,14 @@ tech_class_4_singularity = {
 
 tech_dimensional_fabricator = {
     area = engineering
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { materials }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_engineering_3"
         "tech_mining_3"
         "tech_mineral_purification_2"
@@ -84,14 +84,14 @@ tech_dimensional_fabricator = {
 
 tech_nourishment_center = {
     area = society
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { biology }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_society_3"
         "tech_food_processing_2"
 	}
@@ -129,14 +129,14 @@ tech_nourishment_center = {
 
 tech_affluence_center = {
     area = engineering
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { industry }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_engineering_3"
         "tech_luxuries_1"
 	}
@@ -174,14 +174,14 @@ tech_affluence_center = {
 
 tech_nano_forge = {
     area = engineering
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { materials }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_engineering_3"
         "tech_alloys_2"
 	}
@@ -215,17 +215,16 @@ tech_nano_forge = {
 
 tech_master_archive = {
     area = physics
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { computing }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_physics_3"
         "tech_basic_science_lab_3"
-        "tech_global_research_initiative"
 	}
 
 	prereqfor_desc = {
@@ -257,14 +256,14 @@ tech_master_archive = {
 
 tech_fe_stronghold = {
     area = society
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { military_theory }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_society_3"
         "tech_global_defense_grid"
 	}
@@ -298,14 +297,14 @@ tech_fe_stronghold = {
 
 tech_augural_manufactory = {
     area = physics
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { materials }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_physics_3"
 	}
 
@@ -338,14 +337,14 @@ tech_augural_manufactory = {
 
 tech_germination_replicator = {
     area = physics
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { materials }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_physics_3"
 	}
 
@@ -371,14 +370,14 @@ tech_germination_replicator = {
 
 tech_utopian_paradise_dome = {
     area = society
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { statecraft }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_society_3"
         "tech_paradise_dome"
 	}
@@ -409,14 +408,14 @@ tech_utopian_paradise_dome = {
 
 tech_introspection_center = {
     area = society
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost3
+    tier = 7
+    weight = @tier7weight3
     category = { statecraft }
     is_rare = yes
 
 	prerequisites = {
-        "tech_dark_matter_power_core"
+        "tech_class_4_singularity"
         "tech_society_3"
 	}
 

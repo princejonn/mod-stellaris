@@ -1,8 +1,8 @@
 tech_pjs_escort = {
     area = engineering
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost2
+    tier = 7
+    weight = @tier7weight2
     category = { voidcraft }
     is_rare = yes
 
@@ -12,6 +12,8 @@ tech_pjs_escort = {
         "tech_dark_matter_deflector"
         "tech_dark_matter_power_core"
         "tech_dark_matter_propulsion"
+        "tech_enigmatic_encoder"
+        "tech_enigmatic_decoder"
     }
 
 	prereqfor_desc = {
@@ -40,9 +42,9 @@ tech_pjs_escort = {
 
 tech_pjs_battlecruiser = {
     area = engineering
-    cost = 300000
-    tier = 5
-    weight = 1
+    cost = @tier7cost2
+    tier = 7
+    weight = @tier7weight2
     category = { voidcraft }
     is_rare = yes
 
