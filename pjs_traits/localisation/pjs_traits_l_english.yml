@@ -36,6 +36,9 @@ s
   trait_pjs_militarists:0 "Militarists"
   trait_pjs_militarists_desc:0 "§LThis species has been in endless wars, and battles. They constantly yearn for conflict and the entire society is built upon this common need. Wars are not necessarily out of hatred, but their need to compete. Maybe they get enjoyment from it as well?§!"
 
+  trait_pjs_extremely_nonadaptive:0 "Extremely Nonadaptive"
+  trait_pjs_extremely_nonadaptive_desc:0  "§LThis species does not adapt well to foreign environments.§!\n"
+
   trait_housing_hive:0 "Warren"
   trait_housing_hive_desc:0 "§LThis species lives very tightly together with others, and has little regard for housing luxuries.§!"
 

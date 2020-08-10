@@ -17,5 +17,5 @@ utopian_hedonist = {
 		}
 	}
 
-	weight = { weight = 900 }
+	weight = { weight = 1 }
 }

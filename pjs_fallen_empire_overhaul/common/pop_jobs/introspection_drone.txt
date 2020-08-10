@@ -32,5 +32,5 @@ introspection_drone = {
 		drone_job_check_trigger = yes
 	}
 
-	weight = { weight = 900 }
+	weight = { weight = 1 }
 }
