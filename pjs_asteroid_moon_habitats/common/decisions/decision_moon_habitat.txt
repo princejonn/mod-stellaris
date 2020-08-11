@@ -9,8 +9,8 @@ decision_moon_habitat = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 200
-			alloys = 2000
+			influence = 100
+			alloys = 1000
 		}
 	}
 

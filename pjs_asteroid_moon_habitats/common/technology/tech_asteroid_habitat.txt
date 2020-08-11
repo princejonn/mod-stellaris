@@ -1,11 +1,10 @@
 tech_asteroid_habitat = {
 	area = engineering
-	cost = @tier2cost3
+	cost = @tier1cost2
 	tier = 1
 	category = { new_worlds }
 	ai_update_type = all
-	prerequisites = { "tech_habitat_1" }
-	weight = @tier2weight3
+	weight = @tier1weight2
 	is_rare = yes
 
 	weight_modifier = {
