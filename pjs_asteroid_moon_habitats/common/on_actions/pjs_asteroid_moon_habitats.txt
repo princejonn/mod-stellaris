@@ -1,0 +1,13 @@
+empire_init_capital_planet = {
+	events = {
+		origin_beltalowda_event.1
+	}
+}
+
+empire_init_add_technologies = {
+	events = {
+		origin_beltalowda_event.2
+		origin_beltalowda_event.3
+		origin_beltalowda_event.4
+	}
+}

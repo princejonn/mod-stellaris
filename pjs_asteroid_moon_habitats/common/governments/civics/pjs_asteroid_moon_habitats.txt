@@ -1,0 +1,24 @@
+origin_beltalowda = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_beltalowda.dds"
+	picture = GFX_origin_beltalowda
+
+	max_once_global = yes
+	advanced_start = no
+
+	starting_colony = pc_asteroid_habitat
+	initializers = { sci_origin_beltalowda }
+	habitability_preference = pc_habitat
+	preferred_planet_class_neighbor = no
+
+	possible = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		civics = { NOT = { value = civic_agrarian_idyll } }
+	}
+
+	description = origin_beltalowda_effects
+
+	random_weight = {
+		base = 0
+	}
+}

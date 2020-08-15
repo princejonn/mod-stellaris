@@ -9,7 +9,7 @@ decision_moon_habitat = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 100
+			influence = 75
 			alloys = 1000
 		}
 	}
@@ -33,21 +33,24 @@ decision_moon_habitat = {
 	    ## specialization
 
 	    if = {
-	        limit = {
-                OR = {
-                    has_deposit = d_minerals_1
-                    has_deposit = d_minerals_2
-                    has_deposit = d_minerals_3
-                    has_deposit = d_minerals_4
-                    has_deposit = d_minerals_5
-                    has_deposit = d_minerals_6
-                    has_deposit = d_minerals_7
-                    has_deposit = d_minerals_8
-                    has_deposit = d_minerals_9
-                    has_deposit = d_minerals_10
-                }
-            }
-            set_planet_flag = moon_habitat_mining
+	        limit = { has_deposit = d_alloys_1 }
+            set_planet_flag = moon_hab_alloys_1
+	    }
+	    if = {
+	        limit = { has_deposit = d_alloys_2 }
+            set_planet_flag = moon_hab_alloys_2
+	    }
+	    if = {
+	        limit = { has_deposit = d_alloys_3 }
+            set_planet_flag = moon_hab_alloys_3
+	    }
+	    if = {
+	        limit = { has_deposit = d_alloys_4 }
+            set_planet_flag = moon_hab_alloys_4
+	    }
+	    if = {
+	        limit = { has_deposit = d_alloys_5 }
+            set_planet_flag = moon_hab_alloys_5
 	    }
 
 	    if = {
@@ -139,6 +142,32 @@ decision_moon_habitat = {
 	    }
 
 	    ## adding deposits
+
+	    if = {
+	        limit = { has_planet_flag = moon_hab_alloys_1 }
+            add_deposit = d_hab_alloy_1
+            add_deposit = d_alloy_mine_1
+	    }
+	    if = {
+	        limit = { has_planet_flag = moon_hab_alloys_2 }
+            add_deposit = d_hab_alloy_2
+            add_deposit = d_alloy_mine_2
+	    }
+	    if = {
+	        limit = { has_planet_flag = moon_hab_alloys_3 }
+            add_deposit = d_hab_alloy_3
+            add_deposit = d_alloy_mine_3
+	    }
+	    if = {
+	        limit = { has_planet_flag = moon_hab_alloys_4 }
+            add_deposit = d_hab_alloy_4
+            add_deposit = d_alloy_mine_4
+	    }
+	    if = {
+	        limit = { has_planet_flag = moon_hab_alloys_5 }
+            add_deposit = d_hab_alloy_5
+            add_deposit = d_alloy_mine_5
+	    }
 
 	    if = {
 	        limit = { has_planet_flag = moon_hab_gas_1 }

@@ -20,10 +20,6 @@
   district_asteroid_hab_energy_plural:0 "$district_hab_energy_plural$"
   district_asteroid_hab_energy_desc:0 "$district_hab_energy_desc$"
 
-  district_asteroid_hab_commercial:0 "$district_hab_commercial$"
-  district_asteroid_hab_commercial_plural:0 "$district_hab_commercial_plural$"
-  district_asteroid_hab_commercial_desc:0 "$district_hab_commercial_desc$"
-
   district_asteroid_hab_mining:0 "$district_hab_mining$"
   district_asteroid_hab_mining_plural:0 "$district_hab_mining_plural$"
   district_asteroid_hab_mining_desc:0 "$district_hab_mining_desc$"
@@ -36,17 +32,17 @@
   district_moon_hab_energy_plural:0 "$district_hab_energy_plural$"
   district_moon_hab_energy_desc:0 "$district_hab_energy_desc$"
 
-  district_moon_hab_commercial:0 "$district_hab_commercial$"
-  district_moon_hab_commercial_plural:0 "$district_hab_commercial_plural$"
-  district_moon_hab_commercial_desc:0 "$district_hab_commercial_desc$"
-
   district_moon_hab_hydroponics:0 "Hydroponics District"
   district_moon_hab_hydroponics_plural:0 "Hydroponics Districts"
   district_moon_hab_hydroponics_desc:0 "$building_hydroponics_farm_desc$"
 
-  district_moon_hab_mining:0 "$district_hab_mining$"
-  district_moon_hab_mining_plural:0 "$district_hab_mining_plural$"
-  district_moon_hab_mining_desc:0 "$district_hab_mining_desc$"
+  ## Governments ## Origins
+
+  origin_beltalowda:0 "Beltalowda"
+  origin_beltalowda_desc:0 "The inners obliterated each other long ago. We are all that stand."
+  origin_beltalowda_effects:0 "Start on the asteroid Ceres, with small colonies on Eros, Ganymede, and Europa."
+  sci_origin_beltalowda_NAME:0 "Beltalowda"
+  sci_origin_beltalowda_DESC:0 "$system_initializer_DESC$"
 
   ## Static Modifiers
 

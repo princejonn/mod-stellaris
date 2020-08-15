@@ -9,6 +9,7 @@ pc_molten_habitat = {
 
     habitat = yes
     colonizable = yes
+    district_set = moon_habitat
     #ideal = yes
     fixed_entity_scale = yes
 
@@ -41,6 +42,7 @@ pc_barren_habitat = {
 
     habitat = yes
     colonizable = yes
+    district_set = moon_habitat
     #ideal = yes
     fixed_entity_scale = yes
 
@@ -73,6 +75,7 @@ pc_barren_cold_habitat = {
 
     habitat = yes
     colonizable = yes
+    district_set = moon_habitat
     #ideal = yes
     fixed_entity_scale = yes
 
@@ -105,6 +108,7 @@ pc_toxic_habitat = {
 
     habitat = yes
     colonizable = yes
+    district_set = moon_habitat
     #ideal = yes
     fixed_entity_scale = yes
 
@@ -137,6 +141,7 @@ pc_frozen_habitat = {
 
     habitat = yes
     colonizable = yes
+    district_set = moon_habitat
     #ideal = yes
     fixed_entity_scale = yes
 

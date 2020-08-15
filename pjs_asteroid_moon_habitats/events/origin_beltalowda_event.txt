@@ -1,0 +1,181 @@
+namespace = origin_beltalowda_event
+
+planet_event = {
+    id = origin_beltalowda_event.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { has_planet_flag = origin_beltalowda_ceres }
+
+            set_planet_size = 3
+
+            set_name = "1 Ceres"
+
+            clear_deposits = yes
+            remove_all_buildings = yes
+            remove_all_districts = yes
+
+            add_modifier = { modifier = "asteroid_habitat" days = -1 }
+
+            add_district = district_asteroid_hab_housing
+            add_district = district_asteroid_hab_energy
+            add_district = district_asteroid_hab_mining
+
+            add_building = building_capital
+			add_building = building_bureaucratic_1
+			add_building = building_research_lab_1
+
+			while = {
+				count = 14
+				random_owned_pop = { kill_pop = yes }
+			}
+
+            owner = {
+                give_technology = { tech = "tech_mining_1" message = no }
+                give_technology = { tech = "tech_power_plant_1" message = no }
+                give_technology = { tech = "tech_eco_simulation" message = no }
+                give_technology = { tech = "tech_space_science_1" message = no }
+                give_technology = { tech = "tech_space_mining_1" message = no }
+                give_technology = { tech = "tech_asteroid_habitat" message = no }
+                give_technology = { tech = "tech_moon_habitat" message = no }
+            }
+        }
+    }
+}
+
+country_event = {
+	id = origin_beltalowda_event.2
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = origin_beltalowda_eros }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    set_name = "433 Eros"
+
+			        clear_blockers = yes
+			        clear_deposits = yes
+                    remove_all_buildings = yes
+                    remove_all_districts = yes
+
+                    add_modifier = { modifier = "asteroid_habitat" days = -1 }
+
+                    add_district = district_asteroid_hab_housing
+                    add_district = district_asteroid_hab_energy
+                    add_district = district_asteroid_hab_mining
+
+                    add_building = building_capital
+                    add_building = building_factory_1
+
+                    while = { count = 11
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = origin_beltalowda_event.3
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = origin_beltalowda_europa }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    set_name = "Europa"
+
+			        clear_blockers = yes
+			        clear_deposits = yes
+                    remove_all_buildings = yes
+                    remove_all_districts = yes
+
+                    add_modifier = { modifier = "moon_habitat" days = -1 }
+
+                    add_district = district_moon_hab_housing
+                    add_district = district_moon_hab_hydroponics
+                    add_district = district_moon_hab_hydroponics
+
+                    add_building = building_capital
+                    add_building = building_factory_1
+
+                    while = { count = 13
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = origin_beltalowda_event.4
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            solar_system = {
+                every_system_planet = {
+                    limit = { has_planet_flag = origin_beltalowda_ganymede }
+
+                    create_colony = {
+                        owner = root
+                        species = root.owner_species
+                        ethos = owner
+                    }
+
+                    set_name = "Ganymede"
+
+			        clear_blockers = yes
+			        clear_deposits = yes
+                    remove_all_buildings = yes
+                    remove_all_districts = yes
+
+                    add_modifier = { modifier = "moon_habitat" days = -1 }
+
+                    add_district = district_moon_hab_housing
+                    add_district = district_moon_hab_hydroponics
+                    add_district = district_moon_hab_hydroponics
+
+                    add_building = building_capital
+                    add_building = building_factory_1
+
+                    while = { count = 13
+                        create_pop = {
+                            species = owner
+                        }
+                    }
+                }
+            }
+	    }
+	}
+}
