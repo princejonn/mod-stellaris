@@ -1,0 +1,11 @@
+[h1]Compability[/h1]
+[list]
+    [*] /common/technology/tier/00_tier.txt
+    [*] /common/technology/00_eng_tech.txt
+    [*] /common/technology/00_eng_weapon_tech.txt
+    [*] /common/technology/00_megastructures.txt
+    [*] /common/technology/00_phys_tech.txt
+    [*] /common/technology/00_phys_weapon_tech.txt
+    [*] /common/technology/00_soc_tech.txt
+    [*] /common/technology/00_soc_weapon_tech.txt
+[/list]
