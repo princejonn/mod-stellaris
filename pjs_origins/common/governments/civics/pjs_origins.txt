@@ -114,7 +114,6 @@ origin_holy_terra = {
             NOT = { value = auth_hive_mind }
             NOT = { value = auth_machine_intelligence }
 		}
-		species = { value = BIOLOGICAL }
 	}
 
 	description = origin_holy_terra_effects
@@ -160,7 +159,6 @@ origin_precursor = {
             NOT = { value = auth_hive_mind }
             NOT = { value = auth_machine_intelligence }
 		}
-		species = { value = BIOLOGICAL }
 	}
 
 	description = origin_precursor_effects
