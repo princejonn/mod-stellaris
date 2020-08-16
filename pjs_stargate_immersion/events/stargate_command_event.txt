@@ -23,8 +23,8 @@ country_event = {
 
     immediate = {
         random_list = {
-            96 = {}
-            4 = { country_event = { id = stargate_command_event.3 } }
+            1 = {}
+            99 = { country_event = { id = stargate_command_event.3 } }
         }
     }
 }
@@ -35,34 +35,93 @@ country_event = {
 
     immediate = {
         random_list = {
-            5 = { country_event = { id = stargate_command_event.1000 days = 30 random 270 } }
-            5 = { country_event = { id = stargate_command_event.1001 days = 30 random 270 } }
-            5 = { country_event = { id = stargate_command_event.1002 days = 30 random 270 } }
-            5 = { country_event = { id = stargate_command_event.1003 days = 30 random 270 } }
-            5 = { country_event = { id = stargate_command_event.1004 days = 30 random 270 } }
-            4 = { country_event = { id = stargate_command_event.1005 days = 30 random 270 } }
-            4 = { country_event = { id = stargate_command_event.1006 days = 30 random 270 } }
-            4 = { country_event = { id = stargate_command_event.1007 days = 30 random 270 } }
-            3 = { country_event = { id = stargate_command_event.1008 days = 30 random 270 } }
-            3 = { country_event = { id = stargate_command_event.1009 days = 30 random 270 } }
-            3 = { country_event = { id = stargate_command_event.1010 days = 30 random 270 } }
-            2 = { country_event = { id = stargate_command_event.1011 days = 30 random 270 } }
-            2 = { country_event = { id = stargate_command_event.1012 days = 30 random 270 } }
-            2 = { country_event = { id = stargate_command_event.1013 days = 30 random 270 } }
-            1 = { country_event = { id = stargate_command_event.1014 days = 30 random 270 } }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_energy } }
+                    country_event = { id = stargate_command_event.1000 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_minerals } }
+                    country_event = { id = stargate_command_event.1001 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_food } }
+                    country_event = { id = stargate_command_event.1002 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_alloys } }
+                    country_event = { id = stargate_command_event.1003 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_consumer_goods } }
+                    country_event = { id = stargate_command_event.1004 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_volatile_motes } }
+                    country_event = { id = stargate_command_event.1005 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_exotic_gases } }
+                    country_event = { id = stargate_command_event.1006 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_rare_crystals } }
+                    country_event = { id = stargate_command_event.1007 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_sr_living_metal } }
+                    country_event = { id = stargate_command_event.1008 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_sr_zro } }
+                    country_event = { id = stargate_command_event.1009 days = 1 random 100 }
+                }
+            }
+            9 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_sr_dark_matter } }
+                    country_event = { id = stargate_command_event.1010 days = 1 random 100 }
+                }
+            }
+            1 = {
+                if = {
+                    limit = { NOT = { has_country_flag = stargate_produces_minor_artifacts } }
+                    country_event = { id = stargate_command_event.1011 days = 1 random 100 }
+                }
+            }
         }
     }
 }
-
-## generic resource gain
 
 country_event = {
     id = stargate_command_event.1000
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1000.name
+    desc = stargate_command_event.1000.desc
     picture = GFX_evt_stargate_gain_resources
+
+    immediate = {
+        set_country_flag = stargate_produces_energy
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -75,9 +134,13 @@ country_event = {
     id = stargate_command_event.1001
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1001.name
+    desc = stargate_command_event.1001.desc
     picture = GFX_evt_stargate_gain_resources
+
+    immediate = {
+        set_country_flag = stargate_produces_minerals
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -90,9 +153,13 @@ country_event = {
     id = stargate_command_event.1002
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1002.name
+    desc = stargate_command_event.1002.desc
     picture = GFX_evt_stargate_gain_resources
+
+    immediate = {
+        set_country_flag = stargate_produces_food
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -105,9 +172,13 @@ country_event = {
     id = stargate_command_event.1003
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1003.name
+    desc = stargate_command_event.1003.desc
     picture = GFX_evt_stargate_gain_resources
+
+    immediate = {
+        set_country_flag = stargate_produces_alloys
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -120,9 +191,13 @@ country_event = {
     id = stargate_command_event.1004
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1004.name
+    desc = stargate_command_event.1004.desc
     picture = GFX_evt_stargate_gain_resources
+
+    immediate = {
+        set_country_flag = stargate_produces_consumer_goods
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -135,9 +210,13 @@ country_event = {
     id = stargate_command_event.1005
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1005.name
+    desc = stargate_command_event.1005.desc
     picture = GFX_evt_stargate_gain_strategic
+
+    immediate = {
+        set_country_flag = stargate_produces_volatile_motes
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -150,9 +229,13 @@ country_event = {
     id = stargate_command_event.1006
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1006.name
+    desc = stargate_command_event.1006.desc
     picture = GFX_evt_stargate_gain_strategic
+
+    immediate = {
+        set_country_flag = stargate_produces_exotic_gases
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -165,9 +248,13 @@ country_event = {
     id = stargate_command_event.1007
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1007.name
+    desc = stargate_command_event.1007.desc
     picture = GFX_evt_stargate_gain_strategic
+
+    immediate = {
+        set_country_flag = stargate_produces_rare_crystals
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -180,9 +267,13 @@ country_event = {
     id = stargate_command_event.1008
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1008.name
+    desc = stargate_command_event.1008.desc
     picture = GFX_evt_stargate_gain_strategic
+
+    immediate = {
+        set_country_flag = stargate_produces_sr_living_metal
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -195,9 +286,13 @@ country_event = {
     id = stargate_command_event.1009
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1009.name
+    desc = stargate_command_event.1009.desc
     picture = GFX_evt_stargate_gain_strategic
+
+    immediate = {
+        set_country_flag = stargate_produces_sr_zro
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -210,9 +305,13 @@ country_event = {
     id = stargate_command_event.1010
     is_triggered_only = yes
 
-    title = stargate_command_event_generic_resource_gain_NAME
-    desc = stargate_command_event_generic_resource_gain_DESC
+    title = stargate_command_event.1010.name
+    desc = stargate_command_event.1010.desc
     picture = GFX_evt_stargate_gain_strategic
+
+    immediate = {
+        set_country_flag = stargate_produces_sr_dark_matter
+    }
 
     option = {
         name = stargate_immersion_option_generic_resource_gain_NAME
@@ -221,64 +320,17 @@ country_event = {
         }
     }
 }
-
-## generic research gain
-
 country_event = {
     id = stargate_command_event.1011
     is_triggered_only = yes
 
-    title = stargate_command_event_research_gain_NAME
-    desc = stargate_command_event_research_gain_DESC
-    picture = GFX_evt_stargate_gain_physics
-
-    option = {
-        name = stargate_immersion_option_research_gain_NAME
-		add_resource = {
-		    physics_research = 8000
-        }
-    }
-}
-country_event = {
-    id = stargate_command_event.1012
-    is_triggered_only = yes
-
-    title = stargate_command_event_research_gain_NAME
-    desc = stargate_command_event_research_gain_DESC
-    picture = GFX_evt_stargate_gain_society
-
-    option = {
-        name = stargate_immersion_option_research_gain_NAME
-		add_resource = {
-		    society_research = 8000
-        }
-    }
-}
-country_event = {
-    id = stargate_command_event.1013
-    is_triggered_only = yes
-
-    title = stargate_command_event_research_gain_NAME
-    desc = stargate_command_event_research_gain_DESC
-    picture = GFX_evt_stargate_gain_engineering
-
-    option = {
-        name = stargate_immersion_option_research_gain_NAME
-		add_resource = {
-		    engineering_research = 8000
-        }
-    }
-}
-
-## generic artifacts gain
-
-country_event = {
-    id = stargate_command_event.1014
-    is_triggered_only = yes
-
-    title = stargate_command_event_minor_artifacts_gain_NAME
-    desc = stargate_command_event_minor_artifacts_gain_DESC
+    title = stargate_command_event.1011.name
+    desc = stargate_command_event.1011.desc
     picture = GFX_evt_stargate_gain_minor_artifacts
+
+    immediate = {
+        set_country_flag = stargate_produces_minor_artifacts
+    }
 
     option = {
         name = stargate_immersion_option_minor_artifacts_gain_NAME

@@ -1,20 +1,37 @@
 ﻿l_english:
 
-  stargate_command_event_generic_resource_gain_NAME:0 "Resource cache"
-  stargate_command_event_generic_resource_gain_DESC:0 "A team at §Y$d_stargate_command$§! has returned with some resources."
+  stargate_command_event.1000.name:0 "Trading partner established"
+  stargate_command_event.1000.desc:0 "One of our SG-teams has returned with a new promising trade agreement.\n\n$d_stargate_command$ will produce §G+25§! §Y$energy$§!\nEvery $d_active_stargate$ will produce §G+5§! §Y$energy$§!"
 
-  stargate_immersion_option_generic_resource_gain_NAME:0 "Great"
+  stargate_command_event.1001.name:0 "Trading partner established"
+  stargate_command_event.1001.desc:0 "One of our SG-teams has returned with a new promising trade agreement.\n\n$d_stargate_command$ will produce §G+25§! §Y$minerals$§!\nEvery $d_active_stargate$ will produce §G+5§! §Y$minerals$§!"
 
+  stargate_command_event.1002.name:0 "Trading partner established"
+  stargate_command_event.1002.desc:0 "One of our SG-teams has returned with a new promising trade agreement.\n\n$d_stargate_command$ will produce §G+25§! §Y$food$§!\nEvery $d_active_stargate$ will produce §G+5§! §Y$food$§!"
 
+  stargate_command_event.1003.name:0 "Trading partner established"
+  stargate_command_event.1003.desc:0 "One of our SG-teams has returned with a new promising trade agreement.\n\n$d_stargate_command$ will produce §G+25§! §Y$alloys$§!\nEvery $d_active_stargate$ will produce §G+5§! §Y$alloys$§!"
 
-  stargate_command_event_research_gain_NAME:0 "Exciting discovery"
-  stargate_command_event_research_gain_DESC:0 "A team at §Y$d_stargate_command$§! has returned with an exciting discovery."
+  stargate_command_event.1004.name:0 "Trading partner established"
+  stargate_command_event.1004.desc:0 "One of our SG-teams has returned with a new promising trade agreement.\n\n$d_stargate_command$ will produce §G+25§! §Y$consumer_goods$§!\nEvery $d_active_stargate$ will produce §G+5§! §Y$consumer_goods$§!"
 
-  stargate_immersion_option_research_gain_NAME:0 "Exciting"
+  stargate_command_event.1005.name:0 "Mining colony created"
+  stargate_command_event.1005.desc:0 "Through diplomatic channels, we have now been able to establish a mining colony off-world.\n\n$d_stargate_command$ will produce §G+1§! §Y$volatile_motes$§!\nEvery $d_active_stargate$ will produce §G+1§! §Y$volatile_motes$§!"
 
+  stargate_command_event.1006.name:0 "Mining colony created"
+  stargate_command_event.1006.desc:0 "Through diplomatic channels, we have now been able to establish a mining colony off-world.\n\n$d_stargate_command$ will produce §G+1§! §Y$exotic_gases$§!\nEvery $d_active_stargate$ will produce §G+1§! §Y$exotic_gases$§!"
 
+  stargate_command_event.1007.name:0 "Mining colony created"
+  stargate_command_event.1007.desc:0 "Through diplomatic channels, we have now been able to establish a mining colony off-world.\n\n$d_stargate_command$ will produce §G+1§! §Y$rare_crystals$§!\nEvery $d_active_stargate$ will produce §G+1§! §Y$rare_crystals$§!"
 
-  stargate_command_event_minor_artifacts_gain_NAME:0 "Exotic artifacts"
-  stargate_command_event_minor_artifacts_gain_DESC:0 "A team at §Y$d_stargate_command$§! has returned with some exotic artifacts."
+  stargate_command_event.1008.name:0 "Off-world research center founded"
+  stargate_command_event.1008.desc:0 "We have established a new research center off-world.\n\n$d_stargate_command$ will produce §G+1§! §Y$sr_living_metal$§!\nEvery $d_active_stargate$ will produce §G+1§! §Y$sr_living_metal$§!"
 
-  stargate_immersion_option_minor_artifacts_gain_NAME:0 "Interesting"
+  stargate_command_event.1009.name:0 "Off-world research center founded"
+  stargate_command_event.1009.desc:0 "We have established a new research center off-world.\n\n$d_stargate_command$ will produce §G+1§! §Y$sr_zro$§!\nEvery $d_active_stargate$ will produce §G+1§! §Y$sr_zro$§!"
+
+  stargate_command_event.1010.name:0 "Off-world research center founded"
+  stargate_command_event.1010.desc:0 "We have established a new research center off-world.\n\n$d_stargate_command$ will produce §G+1§! §Y$sr_dark_matter$§!\nEvery $d_active_stargate$ will produce §G+1§! §Y$sr_dark_matter$§!"
+
+  stargate_command_event.1011.name:0 "Archaeological mother lode"
+  stargate_command_event.1011.desc:0 "Our primary SG-team has discovered an archaeological mother lode.\n\n$d_stargate_command$ is seeing a steady stream of incoming §Y$minor_artifacts$§!"

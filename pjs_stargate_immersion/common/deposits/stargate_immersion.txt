@@ -81,11 +81,168 @@ d_stargate_command = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = stargate_produces_energy }
+		}
+		modifier = {
+		    job_merchant_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = stargate_produces_minerals }
+		}
+		modifier = {
+		    job_merchant_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = stargate_produces_food }
+		}
+		modifier = {
+		    job_merchant_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = stargate_produces_alloys }
+		}
+		modifier = {
+		    job_merchant_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = stargate_produces_consumer_goods }
+		}
+		modifier = {
+		    job_merchant_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = stargate_produces_sr_living_metal }
+		}
+		modifier = {
+		    job_researcher_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = stargate_produces_sr_zro }
+		}
+		modifier = {
+		    job_researcher_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = stargate_produces_sr_dark_matter }
+		}
+		modifier = {
+		    job_researcher_add = 1
+		}
+	}
+
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			alloys = 40
-			energy = 40
+			alloys = 25
+			energy = 25
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_energy }
+			}
+			energy = 25
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_minerals }
+			}
+			minerals = 25
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_food }
+			}
+			food = 25
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_alloys }
+			}
+			alloys = 25
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_consumer_goods }
+			}
+			consumer_goods = 25
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_volatile_motes }
+			}
+			volatile_motes = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_exotic_gases }
+			}
+			exotic_gases = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_rare_crystals }
+			}
+			rare_crystals = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_sr_living_metal }
+			}
+			sr_living_metal = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_sr_zro }
+			}
+			sr_zro = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_sr_dark_matter }
+			}
+			sr_dark_matter = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_minor_artifacts }
+			}
+			minor_artifacts = 1
 		}
 	}
 
@@ -112,6 +269,77 @@ d_active_stargate = {
 		category = planet_deposits
 		upkeep = {
 			energy = 4
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_energy }
+			}
+			energy = 5
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_minerals }
+			}
+			minerals = 5
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_food }
+			}
+			food = 5
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_alloys }
+			}
+			alloys = 5
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_consumer_goods }
+			}
+			consumer_goods = 5
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_volatile_motes }
+			}
+			volatile_motes = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_exotic_gases }
+			}
+			exotic_gases = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_rare_crystals }
+			}
+			rare_crystals = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_sr_living_metal }
+			}
+			sr_living_metal = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_sr_zro }
+			}
+			sr_zro = 1
+		}
+		produces = {
+			trigger = {
+				owner = { has_country_flag = stargate_produces_sr_dark_matter }
+			}
+			sr_dark_matter = 1
 		}
 	}
 
