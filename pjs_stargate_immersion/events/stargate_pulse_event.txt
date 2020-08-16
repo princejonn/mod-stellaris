@@ -27,7 +27,7 @@ country_event = {
 
     immediate = {
         set_country_flag = stargate_pulse_start
-        country_event = { id = stargate_immersion_event.100 days = 1200 random = 12000 }
+        country_event = { id = stargate_immersion_event.100 days = 600 random = 12000 }
     }
 }
 
