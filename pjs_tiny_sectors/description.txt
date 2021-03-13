@@ -1,3 +1,0 @@
-Reduces the size of the core sector to the capital system and its direct neighbouring stars.
-
-Reduces the size of other sectors to the neighbours within 2 jumps.
