@@ -1,0 +1,69 @@
+DECADENT_CITY = {
+	randomized = no
+
+	graphical_culture = decadent_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+ELDER_CITY = {
+	randomized = no
+
+	graphical_culture = elder_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+INDUSTRIAL_CITY = {
+	randomized = no
+
+	graphical_culture = industrial_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+MATERIALIST_CITY = {
+	randomized = no
+
+	graphical_culture = materialist_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+MILITARIST_CITY = {
+	randomized = no
+
+	graphical_culture = militarist_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+MILLENNIUM_CITY = {
+	randomized = no
+
+	graphical_culture = millennium_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+PRISTINE_CITY = {
+	randomized = no
+
+	graphical_culture = pristine_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+PROGENITOR_CITY = {
+	randomized = no
+
+	graphical_culture = progenitor_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+SLATE_CITY = {
+	randomized = no
+
+	graphical_culture = slate_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+STELLAR_CITY = {
+	randomized = no
+
+	graphical_culture = stellar_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
