@@ -1,0 +1,118 @@
+portraits = {
+	rep9 = {	entity = "portrait_reptilian_09_entity"	clothes_selector = "reptilian_normal_clothes_01" hair_selector = "no_texture" 
+		greeting_sound = "reptilian_01_greetings"
+		character_textures = {
+			"gfx/models/portraits/reptilian/reptilian_normal_09_yellow.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_yellow.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_yellow.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_orange.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_orange.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_red.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_black.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_white.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_green.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_green.dds"
+				}
+
+	}
+	rep9_m = {	entity = "portrait_reptilian_09_entity"	clothes_selector = "reptilian_normal_clothes_01" hair_selector = "no_texture" 
+		greeting_sound = "reptilian_01_greetings"
+		character_textures = {
+			"gfx/models/portraits/reptilian/reptilian_normal_09_stripe_yellow.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_stripe_yellow.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_stripe_yellow.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_stripe_red.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_stripe_orange.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_stripe_orange.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_stripe_green.dds"
+			"gfx/models/portraits/reptilian/reptilian_normal_09_stripe_green.dds"
+				}
+
+	}
+}
+
+portrait_groups = {
+	rep9 = {
+
+		default = rep9
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					rep9_m
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					rep9
+				}
+			}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					rep9
+					rep9_m
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					rep9
+					rep9_m
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					rep9
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					rep9_m
+				}
+			}
+		}
+		
+
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					rep9
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					rep9_m
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,12 @@
+objectTypes = {
+	pdxmesh = {
+		name = "portrait_humanoid_hp_06_female_mesh"
+		file = "gfx/models/portraits/humanoid/humanoid_hp_06_female.mesh"
+		animation = { id = "idle"	type = "humanoid_hp_06_idle_animation" }
+		animation = { id = "idle2"	type = "humanoid_hp_06_idle_2_animation" }
+		animation = { id = "idle3"	type = "humanoid_hp_06_idle_3_animation" }
+		animation = { id = "idle4"	type = "humanoid_hp_06_idle_4_animation" }
+		scale = 0.85
+	}	
+	
+}

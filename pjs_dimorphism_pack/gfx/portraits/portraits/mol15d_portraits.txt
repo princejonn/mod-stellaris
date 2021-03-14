@@ -1,0 +1,114 @@
+portraits = {
+	mol15 = {	entity = "portrait_molluscoid_15_entity" clothes_selector = "molluscoid_massive_clothes_01" hair_selector = "no_texture"	greeting_sound = "molluscoid_01_greetings" 
+		character_textures = {
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_1_f.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_2_f.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_3_f.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_4_f.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_5_f.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_6_f.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_7_f.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_8_f.dds"	
+		}
+	}
+	mol15_m = {	entity = "portrait_molluscoid_15_entity" clothes_selector = "molluscoid_massive_clothes_01" hair_selector = "no_texture"	greeting_sound = "molluscoid_01_greetings" 
+		character_textures = {
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_1_m.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_2_m.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_3_m.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_4_m.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_5_m.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_6_m.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_7_m.dds"
+			"gfx/models/portraits/molluscoid/molluscoid_massive_15_8_m.dds"
+		}
+	}
+}
+
+portrait_groups = {
+	mol15 = {
+		default = mol15
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					mol15_m
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					mol15
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					mol15
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					mol15
+					mol15_m
+				}
+			}
+		}
+
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					mol15
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					mol15_m
+				}
+			}		
+		}
+		
+		#ruler scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					mol15
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					mol15_m
+				}
+			}
+		}
+	}
+}

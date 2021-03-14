@@ -1,0 +1,104 @@
+portraits = {
+	humanoid_hp_06 = {	entity = "humanoid_hp_06_entity"	clothes_selector = "mammalian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_c_male"
+			character_textures = {
+					"gfx/models/portraits/humanoid/humanoid_hp_06.dds"
+					"gfx/models/portraits/humanoid/humanoid_hp_06_orange.dds"
+					"gfx/models/portraits/humanoid/humanoid_hp_06_red.dds"
+					"gfx/models/portraits/humanoid/humanoid_hp_06_pink.dds"
+				}
+	}
+	humanoid_hp_06_female = {	entity = "humanoid_hp_06_entity" clothes_selector = "humanoid_hp_06_female_clothes_10" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_c_female"
+			character_textures = {
+					"gfx/models/portraits/humanoid/humanoid_hp_06_female.dds"
+					"gfx/models/portraits/humanoid/humanoid_hp_06_female_orange.dds"
+					"gfx/models/portraits/humanoid/humanoid_hp_06_female_red.dds"
+					"gfx/models/portraits/humanoid/humanoid_hp_06_female_pink.dds"
+				}
+	}
+}
+
+portrait_groups = {
+	humanoid_hp_06 = {
+		
+		default = humanoid_hp_06
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					humanoid_hp_06
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					humanoid_hp_06_female
+				}
+			}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					humanoid_hp_06_female
+					humanoid_hp_06
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					humanoid_hp_06_female
+					humanoid_hp_06
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					humanoid_hp_06_female
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					humanoid_hp_06
+				}
+			}		
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					humanoid_hp_06_female
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					humanoid_hp_06
+				}
+			}
+		}
+	}
+}
