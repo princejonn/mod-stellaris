@@ -1,7 +1,6 @@
 trait_housing_hive = {
 	cost = 2
 	randomized = no
-	must_match_primary_species = yes
 	potential_crossbreeding_chance = 0
 	allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
 	opposites = { "trait_communal" "trait_solitary" }
@@ -9,6 +8,7 @@ trait_housing_hive = {
 	    pop_housing_usage_mult = -0.5
 	}
     species_potential_add = {
+		exists = from
         from = { has_authority = "auth_hive_mind" }
     }
     ai_weight = { weight = 0 }
