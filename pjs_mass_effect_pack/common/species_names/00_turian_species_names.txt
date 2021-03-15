@@ -1,0 +1,9 @@
+TUR = {
+	turian = {
+		name = "Turian"
+		plural = "Turians"
+		home_planet = "Palaven"
+		home_system = "Trebia"
+		name_list = "turian_names"
+	}
+}

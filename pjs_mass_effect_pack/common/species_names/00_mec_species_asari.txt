@@ -1,0 +1,9 @@
+MECASA = {
+	mec_asari_species = {
+		name = "Asari"
+		plural = "Asari"
+		home_planet = "Thessia"
+		home_system = "Parnitha"
+		name_list = "mec_asari_names"
+	}
+}
