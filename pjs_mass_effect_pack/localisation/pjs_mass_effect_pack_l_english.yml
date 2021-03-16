@@ -1,5 +1,7 @@
 ﻿l_english:
 
+  ### Asari
+
   MECASA:0 "Asari"
   MECASA_desc:0 "Asari"
   MECASA_plural:0 "Asari"
@@ -20,6 +22,8 @@
   mec_asari_01:0 "Asari"
   name_list_mec_asari_names:0 "Asari"
 
+  ### Geth
+
   GETH:0 "Geth"
   GETH_desc:0 "Species Class has no effect on your Empire, but Machine-class Species may consider other Machines to be less alien than other Species Classes."
   GETH_plural:0 "Machines"
@@ -37,6 +41,8 @@
   GETH_organ:0 "motherboard"
   GETH_mouth:0 "energy intake port"
 
+  ### Krogan
+
   KRO:0 "Krogan"
   KRO_desc:0 "Krogan"
   KRO_plural:0 "Krogans"
@@ -53,6 +59,8 @@
   KRO_sound_05:0 "moaning"
   KRO_organ:0 "stomach"
   KRO_mouth:0 "mouth"
+
+  ### Quarian
 
   QRN:0 "Quarian"
   QRN_desc:0 "Quarian"
@@ -72,6 +80,8 @@
   QRN_mouth:0 "mouth"
 
   name_list_quarian_names:0 "Quarian"
+
+  ### Turian
 
   TUR:0 "Turian"
   TUR_desc:0 "Turian"
@@ -93,6 +103,7 @@
   turian_01:0 "Turian"
   name_list_turian_names:0 "Turian"
 
+  ### Systems Alliance
 
   SA:0 "Systems Alliance"
   SA_desc:1 "The ships and stations of the human Systems Alliance."
