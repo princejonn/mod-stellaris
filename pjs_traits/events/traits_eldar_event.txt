@@ -1,7 +1,7 @@
-namespace = pjs_traits_eldar_event
+namespace = traits_eldar_event
 
 event = {
-	id = pjs_traits_eldar_event.1
+	id = traits_eldar_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
@@ -9,13 +9,13 @@ event = {
 	immediate = {
 		every_country = {
 			limit = { is_eldar_trait = yes }
-			country_event = { id = pjs_traits_eldar_event.2 }
+			country_event = { id = traits_eldar_event.2 }
 		}
 	}
 }
 
 country_event = {
-	id = pjs_traits_eldar_event.2
+	id = traits_eldar_event.2
 
 	hide_window = yes
 	is_triggered_only = yes

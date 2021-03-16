@@ -1,21 +1,21 @@
-namespace = pjs_traits_psionic_event
+namespace = traits_inert_psionic_event
 
 event = {
-	id = pjs_traits_psionic_event.1
+	id = traits_inert_psionic_event.1
 
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
 		every_country = {
-			limit = { is_psionic_trait = yes }
-			country_event = { id = pjs_traits_psionic_event.2 }
+			limit = { is_inert_psionic_trait = yes }
+			country_event = { id = traits_inert_psionic_event.2 }
 		}
 	}
 }
 
 country_event = {
-	id = pjs_traits_psionic_event.2
+	id = traits_inert_psionic_event.2
 
 	hide_window = yes
 	is_triggered_only = yes

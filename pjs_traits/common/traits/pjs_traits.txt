@@ -1,236 +1,4 @@
-trait_pjs_asari = {
-    cost = 4
-    initial = yes
-    randomized = no
-    modification = no
-    potential_crossbreeding_chance = 0
-    allowed_archetypes = { BIOLOGICAL }
-    opposites = {
-        "trait_venerable"
-        "trait_enduring"
-        "trait_fleeting"
-        "trait_rapid_breeders"
-        "trait_slow_breeders"
-
-        "trait_pjs_psionic"
-
-        "trait_pjs_eldar"
-        "trait_pjs_quarian"
-        "trait_pjs_krogan"
-        "trait_pjs_horror"
-    }
-    modifier = {
-        leader_age = 800
-        planet_jobs_physics_research_produces_mult = 0.1
-        army_damage_mult = 0.1
-        pop_growth_from_immigration = 0.25
-        pop_happiness = 0.1
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_eldar = {
-    cost = 4
-    initial = yes
-    randomized = no
-    modification = no
-    potential_crossbreeding_chance = 0
-    allowed_archetypes = { BIOLOGICAL }
-    opposites = {
-        "trait_venerable"
-        "trait_enduring"
-        "trait_fleeting"
-
-        "trait_pjs_psionic"
-
-        "trait_pjs_asari"
-        "trait_pjs_quarian"
-        "trait_pjs_krogan"
-        "trait_pjs_horror"
-    }
-    modifier = {
-        leader_age = 800
-        army_damage_mult = 0.1
-        planet_jobs_society_research_produces_mult = 0.1
-        planet_pops_organics_food_upkeep_mult = -0.25
-        planet_pops_consumer_goods_upkeep_mult = -0.25
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_quarian = {
-    cost = 2
-    initial = yes
-    randomized = no
-    modification = no
-    potential_crossbreeding_chance = 0
-    allowed_archetypes = { BIOLOGICAL }
-    opposites = {
-        "trait_pjs_asari"
-        "trait_pjs_eldar"
-        "trait_pjs_krogan"
-        "trait_pjs_horror"
-    }
-    modifier = {
-        planet_jobs_engineering_research_produces_mult = 0.2
-        pop_growth_speed = 0.1
-        pop_migration_time = -0.5
-        pop_resettlement_cost_mult = -0.5
-        pop_happiness = 0.1
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_krogan = {
-    cost = 2
-    initial = yes
-    randomized = no
-    modification = no
-    potential_crossbreeding_chance = 0
-    allowed_archetypes = { BIOLOGICAL }
-    opposites = {
-        "trait_extremely_adaptive"
-        "trait_adaptive"
-        "trait_nonadaptive"
-        "trait_very_strong"
-        "trait_strong"
-        "trait_weak"
-        "trait_rapid_breeders"
-        "trait_slow_breeders"
-
-        "trait_pjs_asari"
-        "trait_pjs_eldar"
-        "trait_pjs_quarian"
-        "trait_pjs_horror"
-    }
-    modifier = {
-        pop_environment_tolerance = 0.20
-        army_health = 2.0
-        army_attack_damage_mult = 0.5
-        armies_upkeep_mult = -0.25
-        army_disengage_chance_mult = -0.5
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_horror = {
-    cost = 4
-    initial = yes
-    randomized = no
-    modification = no
-    modification = no
-    affected_by_radiation = no
-    forced_happiness = yes
-    allowed_archetypes = { BIOLOGICAL PLANTOID }
-    opposites = {
-        "trait_extremely_adaptive"
-        "trait_adaptive"
-        "trait_nonadaptive"
-        "trait_very_strong"
-        "trait_strong"
-        "trait_weak"
-
-        "trait_pjs_asari"
-        "trait_pjs_eldar"
-        "trait_pjs_quarian"
-        "trait_pjs_krogan"
-    }
-    modifier = {
-        pop_environment_tolerance = 0.25
-        pop_other_species_happiness = -0.75
-        army_attack_damage_mult = 0.1
-        army_defense_damage_mult = 0.1
-        army_defense_morale_mult = 0.1
-        army_health = 0.1
-        army_morale = 0.1
-        army_upkeep_mult = 0.1
-        planet_jobs_minerals_produces_mult = 0.1
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_photosynthetic = {
-    cost = 4
-    initial = yes
-    randomized = no
-    modification = no
-    potential_crossbreeding_chance = 0.25
-    allowed_archetypes = { BIOLOGICAL PLANTOID }
-    opposites = {
-        "trait_pjs_partial_photosynthetic"
-    }
-    modifier = {
-        planet_pops_organics_food_upkeep_mult = -1
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_partial_photosynthetic = {
-    cost = 2
-    initial = no
-    randomized = no
-    advanced_trait = yes
-    modification = yes
-    potential_crossbreeding_chance = 0.5
-    allowed_archetypes = { BIOLOGICAL PLANTOID }
-    opposites = {
-        "trait_pjs_photosynthetic"
-    }
-    modifier = {
-        planet_pops_organics_food_upkeep_mult = -0.5
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_psionic = {
-    cost = 2
-    initial = yes
-    randomized = no
-    modification = no
-    potential_crossbreeding_chance = 0
-    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
-    opposites = {
-        "trait_pjs_asari"
-        "trait_pjs_eldar"
-    }
-    modifier = {
-        planet_jobs_unity_produces_mult = 0.1
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_spartans = {
-    cost = 4
-    initial = yes
-    randomized = no
-    potential_crossbreeding_chance = 0.5
-    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
-    opposites = { }
-    modifier = {
-        pop_housing_usage_mult = -0.2
-        planet_amenities_no_happiness_mult = 0.2
-        planet_pops_consumer_goods_upkeep_mult = -0.2
-        planet_pops_organics_food_upkeep_mult = -0.2
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_vaulters = {
-    cost = 4
-    initial = yes
-    randomized = no
-    potential_crossbreeding_chance = 0.5
-    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
-    opposites = { }
-    modifier = {
-        army_defense_damage_mult = 0.25
-        planet_jobs_minerals_produces_mult = 0.1
-        pop_environment_tolerance = 0.1
-    }
-    ai_weight = { weight = 0 }
-}
-
-trait_pjs_artisans = {
+trait_artisan = {
     cost = 2
     initial = yes
     randomized = no
@@ -244,29 +12,69 @@ trait_pjs_artisans = {
     ai_weight = { weight = 0 }
 }
 
-trait_pjs_militarists = {
+trait_asari = {
     cost = 2
     initial = yes
     randomized = no
-    potential_crossbreeding_chance = 0.5
-    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    modification = no
+    potential_crossbreeding_chance = 0
+    allowed_archetypes = { BIOLOGICAL }
     opposites = {
-        "trait_very_strong"
-        "trait_strong"
-        "trait_weak"
+        "trait_venerable"
+        "trait_enduring"
+        "trait_fleeting"
+        "trait_rapid_breeders"
+        "trait_slow_breeders"
+
+        "trait_inert_psionic"
+
+        "trait_eldar"
+        "trait_krogan"
+        "trait_quarian"
+        "trait_turian"
     }
     modifier = {
-        army_attack_damage_mult = 0.1
-        army_health = 0.1
-        army_morale = 0.1
-        planet_army_build_speed_mult  = 0.1
-        armies_upkeep_mult = -0.1
-        army_disengage_chance_mult = -0.33
+        leader_age = 800
+        planet_jobs_physics_research_produces_mult = 0.1
+        army_damage_mult = 0.1
+        pop_growth_speed = -0.1
+        pop_growth_from_immigration = 0.25
+        pop_happiness = 0.1
     }
     ai_weight = { weight = 0 }
 }
 
-trait_pjs_extremely_nonadaptive = {
+trait_eldar = {
+    cost = 2
+    initial = yes
+    randomized = no
+    modification = no
+    potential_crossbreeding_chance = 0
+    allowed_archetypes = { BIOLOGICAL }
+    opposites = {
+        "trait_venerable"
+        "trait_enduring"
+        "trait_fleeting"
+
+        "trait_inert_psionic"
+
+        "trait_asari"
+        "trait_quarian"
+        "trait_krogan"
+        "trait_horror"
+    }
+    modifier = {
+        leader_age = 800
+        army_damage_mult = 0.1
+        pop_growth_speed = -0.1
+        planet_jobs_society_research_produces_mult = 0.1
+        planet_pops_organics_food_upkeep_mult = -0.25
+        planet_pops_consumer_goods_upkeep_mult = -0.25
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_extremely_nonadaptive = {
     cost = -4
     initial = yes
     randomized = no
@@ -284,6 +92,169 @@ trait_pjs_extremely_nonadaptive = {
     }
     slave_cost = {
         energy = -75
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_inert_psionic = {
+    cost = 2
+    initial = yes
+    randomized = no
+    modification = no
+    potential_crossbreeding_chance = 0
+    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    opposites = {
+        "trait_asari"
+        "trait_eldar"
+    }
+    modifier = {
+        planet_jobs_unity_produces_mult = 0.1
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_krogan = {
+    cost = 2
+    initial = yes
+    randomized = no
+    modification = no
+    potential_crossbreeding_chance = 0
+    allowed_archetypes = { BIOLOGICAL }
+    opposites = {
+        "trait_extremely_adaptive"
+        "trait_adaptive"
+        "trait_nonadaptive"
+        "trait_very_strong"
+        "trait_strong"
+        "trait_weak"
+        "trait_rapid_breeders"
+        "trait_slow_breeders"
+
+        "trait_asari"
+        "trait_eldar"
+        "trait_quarian"
+        "trait_turian"
+    }
+    modifier = {
+        pop_environment_tolerance = 0.20
+        army_health = 2.0
+        army_attack_damage_mult = 0.5
+        armies_upkeep_mult = -0.25
+        army_disengage_chance_mult = -0.5
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_partial_photosynthetic = {
+    cost = 1
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    modification = yes
+    potential_crossbreeding_chance = 0.5
+    allowed_archetypes = { BIOLOGICAL PLANTOID }
+    opposites = {
+        "trait_photosynthetic"
+    }
+    modifier = {
+        planet_pops_organics_food_upkeep_mult = -0.5
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_photosynthetic = {
+    cost = 2
+    initial = yes
+    randomized = no
+    modification = no
+    potential_crossbreeding_chance = 0.25
+    allowed_archetypes = { BIOLOGICAL PLANTOID }
+    opposites = {
+        "trait_partial_photosynthetic"
+    }
+    modifier = {
+        planet_pops_organics_food_upkeep_mult = -1
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_quarian = {
+    cost = 2
+    initial = yes
+    randomized = no
+    modification = no
+    potential_crossbreeding_chance = 0
+    allowed_archetypes = { BIOLOGICAL }
+    opposites = {
+        "trait_asari"
+        "trait_eldar"
+        "trait_krogan"
+        "trait_turian"
+    }
+    modifier = {
+        planet_jobs_engineering_research_produces_mult = 0.2
+        pop_growth_speed = 0.1
+        pop_migration_time = -0.5
+        pop_resettlement_cost_mult = -0.5
+        pop_happiness = 0.1
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_spartan = {
+    cost = 2
+    initial = yes
+    randomized = no
+    potential_crossbreeding_chance = 0.5
+    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    opposites = { }
+    modifier = {
+        pop_housing_usage_mult = -0.2
+        planet_amenities_no_happiness_mult = 0.2
+        planet_pops_consumer_goods_upkeep_mult = -0.2
+        planet_pops_organics_food_upkeep_mult = -0.2
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_turian = {
+    cost = 2
+    initial = yes
+    randomized = no
+    potential_crossbreeding_chance = 0.5
+    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    opposites = {
+        "trait_very_strong"
+        "trait_strong"
+        "trait_weak"
+
+        "trait_asari"
+        "trait_eldar"
+        "trait_krogan"
+        "trait_quarian"
+    }
+    modifier = {
+        army_attack_damage_mult = 0.1
+        army_health = 0.1
+        army_morale = 0.1
+        planet_army_build_speed_mult  = 0.1
+        armies_upkeep_mult = -0.1
+        army_disengage_chance_mult = -0.33
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_vaulter = {
+    cost = 2
+    initial = yes
+    randomized = no
+    potential_crossbreeding_chance = 0.5
+    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    opposites = { }
+    modifier = {
+        army_defense_damage_mult = 0.25
+        planet_jobs_minerals_produces_mult = 0.1
+        pop_environment_tolerance = 0.1
     }
     ai_weight = { weight = 0 }
 }

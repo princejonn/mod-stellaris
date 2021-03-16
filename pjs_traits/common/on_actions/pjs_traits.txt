@@ -1,7 +1,7 @@
 on_game_start = {
 	events = {
-		pjs_traits_asari_event.1
-		pjs_traits_eldar_event.1
-		pjs_traits_psionic_event.1
+		traits_asari_event.1
+		traits_eldar_event.1
+		traits_inert_psionic_event.1
 	}
 }

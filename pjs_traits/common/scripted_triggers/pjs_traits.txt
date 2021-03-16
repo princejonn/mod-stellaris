@@ -1,17 +1,17 @@
 is_asari_trait = {
 	owner_species = {
-		has_trait = trait_pjs_asari
+		has_trait = trait_asari
 	}
 }
 
 is_eldar_trait = {
 	owner_species = {
-		has_trait = trait_pjs_eldar
+		has_trait = trait_eldar
 	}
 }
 
-is_psionic_trait = {
+is_inert_psionic_trait = {
 	owner_species = {
-		has_trait = trait_pjs_psionic
+		has_trait = trait_inert_psionic
 	}
 }
