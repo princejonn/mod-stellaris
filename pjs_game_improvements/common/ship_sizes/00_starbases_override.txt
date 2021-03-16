@@ -14,8 +14,8 @@ starbase_citadel = {
 		starbase_trade_protection_add = 32
 	}
 	ship_modifier = {
-		ship_fire_rate_mult = 0.60
-		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.20
 	}
 	max_hitpoints = 88000
 	base_buildtime = 1440
