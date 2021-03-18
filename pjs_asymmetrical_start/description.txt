@@ -1,0 +1,1 @@
+This is a pretty basic mod, but I think it makes a lot of sense. At the start of the game, every country gets something extra in resources and something extra in research. The list is fully random, and can give you things like 2500 energy and the Automated Exploration research. I don't think this will affect balance that much, but it might tip the scales in some cases.

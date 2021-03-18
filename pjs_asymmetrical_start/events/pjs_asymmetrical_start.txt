@@ -1,0 +1,134 @@
+namespace = pjs_asymmetrical_start
+
+event = {
+    id = pjs_asymmetrical_start.1
+    is_triggered_only = yes
+	hide_window = yes
+
+    immediate = {
+        every_country = {
+            if = {
+                limit = { is_regular_empire = yes }
+                country_event = { id = pjs_asymmetrical_start.2 }
+                country_event = { id = pjs_asymmetrical_start.3 }
+            }
+            else = {
+                country_event = { id = pjs_asymmetrical_start.2 }
+                country_event = { id = pjs_asymmetrical_start.4 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = pjs_asymmetrical_start.2
+    is_triggered_only = yes
+	hide_window = yes
+
+    immediate = {
+        random_list = {
+            10 = {
+                give_technology = { tech = "tech_engineering_1" message = no }
+                give_technology = { tech = "tech_engineering_2" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_physics_1" message = no }
+                give_technology = { tech = "tech_physics_2" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_society_1" message = no }
+                give_technology = { tech = "tech_society_2" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_mining_1" message = no }
+                give_technology = { tech = "tech_mining_3" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_power_plant_2" message = no }
+                give_technology = { tech = "tech_power_plant_3" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_space_science_1" message = no }
+                give_technology = { tech = "tech_space_science_2" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_space_mining_1" message = no }
+                give_technology = { tech = "tech_space_mining_2" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_experimental_subspace_navigation" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_wormhole_stabilization" message = no }
+            }
+            10 = {
+                give_technology = { tech = "tech_automated_exploration" message = no }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = pjs_asymmetrical_start.3
+    is_triggered_only = yes
+	hide_window = yes
+
+    immediate = {
+        random_list = {
+            20 = {
+                add_resource = { energy = 2500 }
+            }
+            20 = {
+                add_resource = { minerals = 2500 }
+            }
+            20 = {
+                add_resource = { food = 2500 }
+            }
+            10 = {
+                add_resource = { alloys = 1000 }
+            }
+            10 = {
+                add_resource = { consumer_goods = 1000 }
+            }
+            10 = {
+                add_resource = { influence = 500 }
+            }
+            10 = {
+                add_resource = { unity = 1000 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = pjs_asymmetrical_start.4
+    is_triggered_only = yes
+	hide_window = yes
+
+    immediate = {
+        random_list = {
+            30 = {
+                add_resource = { energy = 2500 }
+            }
+            20 = {
+                add_resource = { minerals = 2500 }
+            }
+            20 = {
+                add_resource = { alloys = 1000 }
+            }
+            10 = {
+                add_resource = { influence = 500 }
+            }
+            10 = {
+                add_resource = { unity = 1000 }
+            }
+            10 = {
+                add_resource = {
+                    engineering_research = 1000
+                    physics_research = 1000
+                    society_research = 1000
+                }
+            }
+        }
+    }
+}
