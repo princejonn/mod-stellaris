@@ -1,19 +1,21 @@
 ﻿l_english:
 
-  ## Hive Traits
+  ## Species Traits
 
-  trait_housing_hive:0 "Warren"
-  trait_housing_hive_desc:0 "§LThis species lives very tightly together with others, and has little regard for housing luxuries.§!"
+  trait_asari:0 "Asari"
+  trait_asari_desc:0 "§LAsari have long lives and are naturally predisposed to interact with other intelligent species. On the other hand, their peculiar way of reproducing tends to make their communities plural and highly divergent in attitude and ideologies.§!"
 
-  ## Machine Traits
+  trait_eldar:0 "Eldar"
+  trait_eldar_desc:0 "§LEldar (singular Elda) was the name given to the Elves by the Vala Oromë when he first found them wandering in the starlight of Cuiviénen. At first, the name was applied to all Elves, but after the summons of the Valar, it came to be used only for the West-elves who followed the summons and began the Great Journey."
 
-  trait_housing_machine:0 "Compact Routines"
-  trait_housing_machine_desc:0 "§LThis machine operates very tightly together with others, and has little regard for housing luxuries.§!"
+  trait_krogan:0 "Krogan"
+  trait_krogan_desc:0 "§LThe krogan are a species of large reptilian bipeds raised on a world known for its harsh environments, scarce resources, and overabundance of vicious predators. The krogan managed to not only survive on their unforgiving homeworld, but actually thrived in the extreme conditions.§!"
 
-  ## Negative Traits
+  trait_quarian:0 "Quarian"
+  trait_quarian_desc:0 "§LThe quarians are a nomadic species of humanoid aliens known for their skills with technology and synthetic intelligence. Since their homeworld Rannoch was conquered, the quarians live aboard the Migrant Fleet, a huge collection of starships that travel as a single fleet.§!"
 
-  trait_extremely_nonadaptive:0 "Extremely Nonadaptive"
-  trait_extremely_nonadaptive_desc:0  "§LThis species does not adapt well to foreign environments.§!\n"
+  trait_turian:0 "Turian"
+  trait_turian_desc:0 "§LOriginally from the planet Palaven, turians are best known for their military role, particularly their contributions of soldiers and starships to the Citadel Fleet. They are respected for their public service ethic—it was the turians who first proposed creating C-Sec—but are sometimes seen as imperialist or rigid by other races.§!"
 
   ## Positive Traits
 
@@ -35,19 +37,44 @@
   trait_vaulter:0 "Vaulter"
   trait_vaulter_desc:0 "§LThis species, whily not noramlly an underground species, has adapted to it by choice. They have no fear of tight spaces, and built most of their civilization under the crust of their worlds. This gives them good protection from surface elements, and access to better materials from the deep realms.§!"
 
-  ## Species Traits
+  ## Machine Traits
 
-  trait_asari:0 "Asari"
-  trait_asari_desc:0 "§LAsari have long lives and are naturally predisposed to interact with other intelligent species. On the other hand, their peculiar way of reproducing tends to make their communities plural and highly divergent in attitude and ideologies.§!"
+  trait_housing_machine:0 "Compact Routines"
+  trait_housing_machine_desc:0 "§LThis machine operates very tightly together with others, and has little regard for housing luxuries.§!"
 
-  trait_eldar:0 "Eldar"
-  trait_eldar_desc:0 "§LEldar (singular Elda) was the name given to the Elves by the Vala Oromë when he first found them wandering in the starlight of Cuiviénen. At first, the name was applied to all Elves, but after the summons of the Valar, it came to be used only for the West-elves who followed the summons and began the Great Journey."
+  ## Hive Traits
 
-  trait_krogan:0 "Krogan"
-  trait_krogan_desc:0 "§LThe krogan are a species of large reptilian bipeds raised on a world known for its harsh environments, scarce resources, and overabundance of vicious predators. The krogan managed to not only survive on their unforgiving homeworld, but actually thrived in the extreme conditions.§!"
+  trait_housing_hive:0 "Warren"
+  trait_housing_hive_desc:0 "§LThis species lives very tightly together with others, and has little regard for housing luxuries.§!"
 
-  trait_quarian:0 "Quarian"
-  trait_quarian_desc:0 "§LThe quarians are a nomadic species of humanoid aliens known for their skills with technology and synthetic intelligence. Since their homeworld Rannoch was conquered, the quarians live aboard the Migrant Fleet, a huge collection of starships that travel as a single fleet.§!"
+  ## Negative Traits
 
-  trait_turian:0 "Turian"
-  trait_turian_desc:0 "§LOriginally from the planet Palaven, turians are best known for their military role, particularly their contributions of soldiers and starships to the Citadel Fleet. They are respected for their public service ethic—it was the turians who first proposed creating C-Sec—but are sometimes seen as imperialist or rigid by other races.§!"
+  trait_anemic:0 "Anemic"
+  trait_anemic_desc:0 "§LMembers of this species are physically weaker than average, making them poor fighters on the ground.§!\n"
+
+  trait_belligerent:0 "Belligerent"
+  trait_belligerent_desc:0 "§LWhile not inherently distrustful, members of this species are often socially combative.§!"
+
+  trait_careless:0 "Careless"
+  trait_careless_desc:0 "§LMembers of this species seemingly have no concept of frugality and are prone to useless consumption.§!\n"
+
+  trait_divergent:0 "Divergent"
+  trait_divergent_desc:0 "§LThese people are rebellious in nature and constantly try to challenge the status-quo.§!\n"
+
+  trait_ephemeral:0 "Ephemeral"
+  trait_ephemeral_desc:0 "§LTime is fleeting for this species. What they lack in longevity, they have to make up in other ways.§!\n"
+
+  trait_extremely_nonadaptive:0 "Extremely Nonadaptive"
+  trait_extremely_nonadaptive_desc:0  "§LThis species does not adapt well to foreign environments.§!\n"
+
+  trait_lethargic_breeders:0 "Lethargic Breeders"
+  trait_lethargic_breeders_desc:0 "§LThis species reproduces at a slow rate, lowering population growth.§!\n"
+
+  trait_obtuse:0 "Obtuse"
+  trait_obtuse_desc:0 "§LMembers of this species are slow to learn from their experiences.§!\n"
+
+  trait_rebellious:0 "Rebellious"
+  trait_rebellious_desc:0 "§LUnruly species are difficult to manage and organize. They do not like being told what to do, and are often quarrelsome or questioning.§!"
+
+  trait_sadist:0 "Sadist"
+  trait_sadist_desc:2 "§LThis species believes that whenever there is hard work that needs doing, that work is always best done by somebody else.§!\n"
