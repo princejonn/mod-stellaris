@@ -1,0 +1,94 @@
+trait_artisan = {
+    cost = 2
+    initial = yes
+    randomized = no
+    potential_crossbreeding_chance = 0.5
+    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    opposites = { }
+    modifier = {
+        planet_metallurgists_produces_mult = 0.05
+        planet_artisans_produces_mult = 0.05
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_inert_psionic = {
+    cost = 2
+    initial = yes
+    randomized = no
+    modification = no
+    potential_crossbreeding_chance = 0
+    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    opposites = {
+        "trait_asari"
+        "trait_eldar"
+    }
+    modifier = {
+        planet_jobs_unity_produces_mult = 0.1
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_partial_photosynthetic = {
+    cost = 1
+    initial = no
+    randomized = no
+    advanced_trait = yes
+    modification = yes
+    potential_crossbreeding_chance = 0.5
+    allowed_archetypes = { BIOLOGICAL PLANTOID }
+    opposites = {
+        "trait_photosynthetic"
+    }
+    modifier = {
+        planet_pops_organics_food_upkeep_mult = -0.5
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_photosynthetic = {
+    cost = 2
+    initial = yes
+    randomized = no
+    modification = no
+    potential_crossbreeding_chance = 0.25
+    allowed_archetypes = { BIOLOGICAL PLANTOID }
+    opposites = {
+        "trait_partial_photosynthetic"
+    }
+    modifier = {
+        planet_pops_organics_food_upkeep_mult = -1
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_spartan = {
+    cost = 2
+    initial = yes
+    randomized = no
+    potential_crossbreeding_chance = 0.5
+    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    opposites = { }
+    modifier = {
+        pop_housing_usage_mult = -0.2
+        planet_amenities_no_happiness_mult = 0.2
+        planet_pops_consumer_goods_upkeep_mult = -0.2
+        planet_pops_organics_food_upkeep_mult = -0.2
+    }
+    ai_weight = { weight = 0 }
+}
+
+trait_vaulter = {
+    cost = 2
+    initial = yes
+    randomized = no
+    potential_crossbreeding_chance = 0.5
+    allowed_archetypes = { BIOLOGICAL LITHOID PLANTOID }
+    opposites = { }
+    modifier = {
+        army_defense_damage_mult = 0.25
+        planet_jobs_minerals_produces_mult = 0.1
+        pop_environment_tolerance = 0.1
+    }
+    ai_weight = { weight = 0 }
+}
