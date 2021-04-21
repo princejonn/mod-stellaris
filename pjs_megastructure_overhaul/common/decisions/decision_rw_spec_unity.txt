@@ -22,9 +22,7 @@ decision_rw_spec_unity = {
         }
 		owner = { has_ascension_perk = ap_master_builders }
         AND = {
-            NOT = { has_planet_flag = rw_spec_arms_industry }
             NOT = { has_planet_flag = rw_spec_empire }
-            NOT = { has_planet_flag = rw_spec_civilian_industry }
             NOT = { has_planet_flag = rw_spec_unity }
             NOT = { has_planet_flag = rw_spec_refinery }
             NOT = { has_planet_flag = rw_spec_science }

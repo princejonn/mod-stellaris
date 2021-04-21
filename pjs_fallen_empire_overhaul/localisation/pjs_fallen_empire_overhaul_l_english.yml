@@ -2,9 +2,6 @@
 
   ## Buildings
 
-  building_augural_manufactory:0 "Augural Manufactory"
-  building_augural_manufactory_desc:0 "How this manufactory works is, to the common person, basically magic. None but a select few understand the inner workings of the manufactory."
-
   building_germination_replicator:0 "Germination Replicator"
   building_germination_replicator_desc:0 "How this replicator works is, to the common person, basically magic. None but a select few understand the inner workings of the replicator."
 
@@ -119,9 +116,6 @@
   tech_fe_stronghold:0 "$building_fe_stronghold$"
   tech_fe_stronghold_desc:0 "$building_fe_stronghold_desc$"
 
-  tech_augural_manufactory:0 "$building_augural_manufactory$"
-  tech_augural_manufactory_desc:0 "$building_augural_manufactory_desc$"
-
   tech_germination_replicator:0 "$building_germination_replicator$"
   tech_germination_replicator_desc:0 "$building_germination_replicator_desc$"
 
@@ -159,9 +153,6 @@
 
   TECH_UNLOCK_FE_STRONGHOLD_TITLE:0 "§HUnlocks Building:§! $tech_fe_stronghold$"
   TECH_UNLOCK_FE_STRONGHOLD_DESC:0 "$tech_fe_stronghold_desc$"
-
-  TECH_UNLOCK_AUGURAL_MANUFACTORY_TITLE:0 "§HUnlocks Building:§! $building_augural_manufactory$"
-  TECH_UNLOCK_AUGURAL_MANUFACTORY_DESC:0 "$building_augural_manufactory_desc$"
 
   TECH_UNLOCK_INTROSPECTION_CENTER_TITLE:0 "§HUnlocks Building:§! $building_introspection_center$"
   TECH_UNLOCK_INTROSPECTION_CENTER_DESC:0 "$building_introspection_center_desc$"

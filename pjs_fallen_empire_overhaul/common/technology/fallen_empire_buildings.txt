@@ -295,46 +295,6 @@ tech_fe_stronghold = {
 	ai_weight = { weight = 1000 }
 }
 
-tech_augural_manufactory = {
-    area = physics
-    cost = @tier7cost3
-    tier = 7
-    weight = @tier7weight3
-    category = { materials }
-    is_rare = yes
-
-	prerequisites = {
-        "tech_class_4_singularity"
-        "tech_physics_3"
-	}
-
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_AUGURAL_MANUFACTORY_TITLE"
-			desc = "TECH_UNLOCK_AUGURAL_MANUFACTORY_DESC"
-		}
-	}
-
-	weight_modifier = {
-        modifier = {
-            factor = 0
-            end_game_years_passed < 5
-        }
-		modifier = {
-			factor = 0
-			NOT = {
-                research_leader = {
-                    area = physics
-                    has_trait = "leader_trait_spark_of_genius"
-				    has_level > 4
-                }
-			}
-		}
-	}
-
-	ai_weight = { weight = 1000 }
-}
-
 tech_germination_replicator = {
     area = physics
     cost = @tier7cost3

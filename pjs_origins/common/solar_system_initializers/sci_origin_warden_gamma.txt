@@ -28,7 +28,6 @@ sci_origin_warden_gamma = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
-        flags = { rw_spec_arms_industry }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
@@ -66,7 +65,6 @@ sci_origin_warden_gamma = {
 		orbit_distance = 0
 		deposit_blockers = none
 		modifiers = none
-        flags = { rw_spec_arms_industry }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator

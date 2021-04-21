@@ -12,8 +12,6 @@ decision_rw_remove_spec = {
 	potential = {
         is_planet_class = pc_ringworld_habitable
         OR = {
-            has_planet_flag = rw_spec_arms_industry
-            has_planet_flag = rw_spec_civilian_industry
             has_planet_flag = rw_spec_empire
             has_planet_flag = rw_spec_refinery
             has_planet_flag = rw_spec_science
@@ -22,8 +20,6 @@ decision_rw_remove_spec = {
 	}
 
     effect = {
-        remove_planet_flag = rw_spec_arms_industry
-        remove_planet_flag = rw_spec_civilian_industry
         remove_planet_flag = rw_spec_empire
         remove_planet_flag = rw_spec_refinery
         remove_planet_flag = rw_spec_science

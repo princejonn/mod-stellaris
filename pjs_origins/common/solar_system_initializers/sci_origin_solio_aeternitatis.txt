@@ -95,7 +95,6 @@ sci_origin_solio_aeternitatis = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { rw_spec_civilian_industry }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator
@@ -128,7 +127,6 @@ sci_origin_solio_aeternitatis = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-        flags = { rw_spec_arms_industry }
 
 		init_effect = {
 		    add_deposit = d_arcane_generator

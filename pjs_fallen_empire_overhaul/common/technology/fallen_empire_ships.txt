@@ -1,79 +1,80 @@
-tech_pjs_escort = {
-    area = engineering
-    cost = @tier7cost1
-    tier = 7
-    weight = @tier7weight1
-    category = { voidcraft }
-    is_rare = yes
-
-    icon = "tech_ascension_theory"
-
-    prerequisites = {
-        "tech_dark_matter_deflector"
-        "tech_dark_matter_power_core"
-        "tech_dark_matter_propulsion"
-        "tech_enigmatic_encoder"
-        "tech_enigmatic_decoder"
-    }
-
-	prereqfor_desc = {
-		hide_prereq_for_desc = component
-	}
-
-	weight_modifier = {
-        modifier = {
-            factor = 0
-            end_game_years_passed < 5
-        }
-		modifier = {
-			factor = 0
-			NOT = {
-                research_leader = {
-                    area = engineering
-                    has_trait = "leader_trait_spark_of_genius"
-				    has_level > 4
-                }
-			}
-		}
-	}
-
-	ai_weight = { weight = 1 }
-}
-
-tech_pjs_battlecruiser = {
-    area = engineering
-    cost = @tier7cost1
-    tier = 7
-    weight = @tier7weight1
-    category = { voidcraft }
-    is_rare = yes
-
-    icon = "tech_ascension_theory"
-
-    prerequisites = {
-        "tech_pjs_escort"
-    }
-
-	prereqfor_desc = {
-		hide_prereq_for_desc = component
-	}
-
-	weight_modifier = {
-        modifier = {
-            factor = 0
-            end_game_years_passed < 5
-        }
-		modifier = {
-			factor = 0
-			NOT = {
-                research_leader = {
-                    area = engineering
-                    has_trait = "leader_trait_spark_of_genius"
-				    has_level > 4
-                }
-			}
-		}
-	}
-
-	ai_weight = { weight = 1 }
-}
+#tech_pjs_escort = {
+#    area = engineering
+#    cost = @tier7cost1
+#    tier = 7
+#    weight = @tier7weight1
+#    category = { voidcraft }
+#    is_rare = yes
+#
+#    icon = "tech_ascension_theory"
+#
+#    prerequisites = {
+#        "tech_dark_matter_deflector"
+#        "tech_dark_matter_power_core"
+#        "tech_dark_matter_propulsion"
+#        "tech_enigmatic_encoder"
+#        "tech_enigmatic_decoder"
+#    }
+#
+#	prereqfor_desc = {
+#		hide_prereq_for_desc = component
+#	}
+#
+#	weight_modifier = {
+#        modifier = {
+#            factor = 0
+#            end_game_years_passed < 5
+#        }
+#		modifier = {
+#			factor = 0
+#			NOT = {
+#                research_leader = {
+#                    area = engineering
+#                    has_trait = "leader_trait_spark_of_genius"
+#				    has_level > 4
+#                }
+#			}
+#		}
+#	}
+#
+#	ai_weight = { weight = 1 }
+#}
+#
+#tech_pjs_battlecruiser = {
+#    area = engineering
+#    cost = @tier7cost1
+#    tier = 7
+#    weight = @tier7weight1
+#    category = { voidcraft }
+#    is_rare = yes
+#
+#    icon = "tech_ascension_theory"
+#
+#    prerequisites = {
+#        "tech_pjs_escort"
+#    }
+#
+#	prereqfor_desc = {
+#		hide_prereq_for_desc = component
+#	}
+#
+#	weight_modifier = {
+#        modifier = {
+#            factor = 0
+#            end_game_years_passed < 5
+#        }
+#		modifier = {
+#			factor = 0
+#			NOT = {
+#                research_leader = {
+#                    area = engineering
+#                    has_trait = "leader_trait_spark_of_genius"
+#				    has_level > 4
+#                }
+#			}
+#		}
+#	}
+#
+#	ai_weight = { weight = 1 }
+#}
+#

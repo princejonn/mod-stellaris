@@ -28,7 +28,6 @@ sci_origin_precursor_nagano = {
 		orbit_distance = 0
 		modifiers = none
         deposit_blockers = none
-		flags = { rw_spec_arms_industry }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -66,7 +65,6 @@ sci_origin_precursor_nagano = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-		flags = { rw_spec_civilian_industry }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -137,7 +135,6 @@ sci_origin_precursor_nagano = {
         orbit_distance = 0
         modifiers = none
         deposit_blockers = none
-		flags = { rw_spec_civilian_industry }
 
 		init_effect = {
 			prevent_anomaly = yes

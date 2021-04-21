@@ -12,6 +12,7 @@ starbase_citadel = {
 		starbase_trade_collection_range_add = 1
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 32
+		ship_sensor_range_add = 1
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.50
@@ -52,6 +53,7 @@ starbase_citadel = {
 	flip_control_on_disable = yes
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 	prerequisites = { "tech_starbase_5" }
 	class = shipclass_starbase
 
@@ -63,4 +65,5 @@ starbase_citadel = {
 	build_block_radius = @build_block_radius_starbase
 	formation_priority = @starbase_formation_priority
 	icon_frame = 5
+	text_icon = military_size_8
 }
